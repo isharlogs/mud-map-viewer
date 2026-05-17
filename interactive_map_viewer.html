@@ -1453,11 +1453,17 @@
                 if (newZone && newZone !== state.currentZone) {
                     state.currentZone  = newZone;
                     state.currentFloor = 0;
-                    state.selectedRoom = null;
                     state.goPortalView = null;
+                    state.portalHistory = [];
                     document.getElementById('mapTitle').textContent = 'Loading…';
                     const data = await loadZoneData(newZone);
-                    if (data) { resetView(true); render(); }
+                    if (data) {
+                        // Explicitly select and center on the entry room
+                        const entryVnum = data.floors['0']?.entry_vnum;
+                        state.selectedRoom = entryVnum || null;
+                        resetView(true);
+                        render();
+                    }
                 }
             });
 
