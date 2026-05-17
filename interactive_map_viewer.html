@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUD Zone Explorer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            gap: 0;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: #1a1a1a;
+            border-right: 1px solid #333;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            padding: 1rem;
+        }
+
+        .sidebar h3 {
+            font-size: 12px;
+            font-weight: 600;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .zone-selector {
+            margin-bottom: 16px;
+        }
+
+        .zone-selector-label {
+            font-size: 12px;
+            font-weight: 500;
+            color: #888;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: block;
+        }
+
+        .zone-selector select {
+            width: 100%;
+            padding: 10px;
+            background: #252525;
+            border: 1px solid #444;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .zone-selector select:hover {
+            border-color: #0066cc;
+            background: #2a2a2a;
+        }
+
+        .zone-selector select:focus {
+            outline: none;
+            border-color: #0066cc;
+            box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+        }
+
+        .zone-label {
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 8px;
+            word-break: break-word;
+        }
+
+        .room-info {
+            background: #252525;
+            border: 1px solid #333;
+            border-radius: 6px;
+            padding: 12px;
+            margin-bottom: 1rem;
+        }
+
+        .room-name {
+            font-size: 15px;
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .room-desc {
+            font-size: 12px;
+            color: #aaa;
+            line-height: 1.4;
+            margin-bottom: 0;
+            max-height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .floor-tabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .floor-tab {
+            flex: 0 0 auto;
+            padding: 6px 12px;
+            background: transparent;
+            border: 1px solid #444;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #888;
+        }
+
+        .floor-tab:hover {
+            border-color: #666;
+            color: #aaa;
+        }
+
+        .floor-tab.active {
+            background: #0066cc;
+            border-color: #0066cc;
+            color: #fff;
+        }
+
+        .exits-section h4 {
+            font-size: 11px;
+            font-weight: 600;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            margin-top: 12px;
+        }
+
+        .exit-button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            background: transparent;
+            border: 1px solid #333;
+            border-radius: 4px;
+            padding: 8px 10px;
+            margin-bottom: 6px;
+            font-size: 13px;
+            color: #ccc;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+
+        .exit-button:hover {
+            background: #1a3a52;
+            border-color: #0066cc;
+            color: #fff;
+        }
+
+        .exit-button.cross-zone {
+            border-color: #ffaa00;
+            background: #1a1a1a;
+        }
+
+        .exit-button.cross-zone:hover {
+            background: #2a2a2a;
+            border-color: #ffdd00;
+            box-shadow: 0 0 8px rgba(255, 170, 0, 0.5);
+        }
+
+        .exit-button.portal-exit {
+            border-color: #44cc88;
+            background: #1a1a1a;
+        }
+
+        .exit-button.portal-exit:hover {
+            background: #2a2a2a;
+            border-color: #66ff99;
+            box-shadow: 0 0 8px rgba(68, 204, 136, 0.5);
+        }
+
+        .exit-direction {
+            font-weight: 600;
+            color: #0099ff;
+            margin-right: 6px;
+        }
+
+        .exit-button.cross-zone .exit-direction {
+            color: #ff9900;
+        }
+
+        .floor-info {
+            margin-top: auto;
+            background: #252525;
+            border: 1px solid #333;
+            border-radius: 6px;
+            padding: 12px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .floor-info-label {
+            color: #888;
+            font-size: 11px;
+            margin-bottom: 4px;
+        }
+
+        .floor-info-value {
+            font-size: 18px;
+            font-weight: 600;
+            color: #0099ff;
+        }
+
+        .canvas-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: #000;
+            overflow: hidden;
+        }
+
+        .map-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+            background: #111;
+            border-bottom: 1px solid #333;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .map-header-title {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .map-container {
+            flex: 1;
+            background: #030512;
+            position: relative;
+            overflow: hidden;
+            cursor: grab;
+        }
+
+        .map-container.dragging {
+            cursor: grabbing;
+        }
+
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .room-box {
+            fill: #353b52;
+            stroke: #ffffff;
+            stroke-width: 2;
+            cursor: pointer;
+            transition: fill 0.2s, stroke 0.2s;
+        }
+
+        .room-box:hover {
+            fill: #404854;
+            stroke-width: 2.5;
+        }
+
+        .room-box.selected {
+            fill: #1a6b9a;
+            stroke: #00ccff;
+            stroke-width: 2.5;
+        }
+
+        .room-text {
+            font-size: 11px;
+            fill: #ffffff;
+            pointer-events: none;
+            text-anchor: middle;
+            dominant-baseline: middle;
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+
+        .exit-line {
+            stroke-width: 2;
+            fill: none;
+            pointer-events: none;
+        }
+
+        .exit-line.cardinal-ns {
+            stroke: #e05555;
+        }
+
+        .exit-line.cardinal-ew {
+            stroke: #5588e0;
+        }
+
+        .exit-line.vertical {
+            stroke: #44cc88;
+        }
+
+        .exit-line.diagonal {
+            stroke: #e0cc44;
+        }
+
+        .controls {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            padding: 12px 16px;
+            background: #111;
+            border-top: 1px solid #333;
+            font-size: 12px;
+            color: #888;
+        }
+
+        .btn {
+            padding: 6px 12px;
+            background: transparent;
+            border: 1px solid #444;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #ccc;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+
+        .btn:hover {
+            background: #1a1a1a;
+            border-color: #666;
+            color: #fff;
+        }
+
+        .zoom-level {
+            font-size: 12px;
+            color: #666;
+            min-width: 40px;
+        }
+
+        .spacer {
+            flex: 1;
+        }
+
+        .hint {
+            font-size: 11px;
+            color: #555;
+        }
+
+        .no-rooms {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #555;
+            font-size: 14px;
+            text-align: center;
+            pointer-events: none;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #444;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- LEFT SIDEBAR -->
+        <div class="sidebar">
+            <h3>Zone</h3>
+            <div class="zone-selector">
+                <label class="zone-selector-label" for="zoneDropdown">Select Zone:</label>
+                <select id="zoneDropdown">
+                    <option value="">Loading zones...</option>
+                </select>
+            </div>
+            <div class="zone-label" id="zoneLabel">-</div>
+
+            <div class="room-info" id="roomInfo">
+                <div class="room-name">-</div>
+                <div class="room-desc">-</div>
+            </div>
+
+            <div class="floor-tabs" id="floorTabs"></div>
+
+            <div class="exits-section">
+                <h4>Exits</h4>
+                <div id="exitsList"></div>
+            </div>
+
+            <div class="floor-info">
+                <div class="floor-info-label">Current Floor</div>
+                <div class="floor-info-value" id="floorNumber">0 / 0</div>
+            </div>
+        </div>
+
+        <!-- RIGHT CANVAS -->
+        <div class="canvas-area">
+            <div class="map-header">
+                <div>
+                    <span class="map-header-title" id="mapTitle">Loading...</span>
+                </div>
+                <div id="roomCount" style="color: #666;">-</div>
+            </div>
+
+            <div class="map-container" id="mapContainer">
+                <svg id="mapSvg"></svg>
+                <div class="no-rooms" id="noRooms" style="display: none;">
+                    No rooms on this floor
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="btn" id="zoomOutBtn">− Zoom</button>
+                <span class="zoom-level" id="zoomLevel">100%</span>
+                <button class="btn" id="zoomInBtn">+ Zoom</button>
+                <button class="btn" id="resetBtn">Reset</button>
+                <button class="btn" id="returnBtn" style="display: none; background: #ff6644;">← Return</button>
+                <div class="spacer"></div>
+                <span class="hint" id="breadcrumb" style="font-size: 11px; color: #666;"></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Configuration
+        const ROOM_WIDTH = 120;
+        const ROOM_HEIGHT = 60;
+        const GRID_STEP_X = 220;
+        const GRID_STEP_Y = 180;
+        const PADDING = 50;
+        const MIN_ZOOM = 0.5;
+        const MAX_ZOOM = 1.8;
+        const ZOOM_STEP = 0.1;
+
+        // State
+        let state = {
+            allZones: {},
+            currentZone: null,
+            currentFloor: 0,
+            selectedRoom: null,
+            zoom: 1,
+            panX: 0,
+            panY: 0,
+            isDragging: false,
+            dragStart: null,
+            portalHistory: [],  // Track portal navigation: [{zone, room, exitDir}, ...]
+            isInPortal: false,  // Whether currently viewing a portal map
+            // go-portal view: null when not active, else { sourceVnum, portalVnum, direction }
+            goPortalView: null
+        };
+
+        // ============================================================================
+        // Data Loading
+        // ============================================================================
+
+        async function loadZoneData(zoneName) {
+            if (state.allZones[zoneName]) {
+                return state.allZones[zoneName];
+            }
+            try {
+                // Match the filename the exporter produces:
+                //   zone_name.lower().replace(' ','_').keep(alnum|_|-)
+                const filename = zoneName.toLowerCase()
+                    .replace(/\s+/g, '_')
+                    .replace(/[^\w\-]/g, '_')
+                    .replace(/_+/g, '_')
+                    .replace(/^_|_$/g, '')
+                    + '.json';
+
+                const response = await fetch(filename);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                const data = await response.json();
+                state.allZones[zoneName] = data;
+                return data;
+            } catch (error) {
+                console.error(`Failed to load zone "${zoneName}":`, error);
+                return null;
+            }
+        }
+
+        // ============================================================================
+        // UI Updates
+        // ============================================================================
+
+        function updateSidebar() {
+            if (!state.currentZone) return;
+
+            const zone = state.allZones[state.currentZone];
+            if (!zone) return;
+
+            // Go-portal view: sidebar shows portal room info, not the main floor
+            if (state.goPortalView) {
+                const { sourceVnum, portalVnum, direction } = state.goPortalView;
+                let floor = null;
+                for (const f of Object.values(zone.floors)) {
+                    if (f.rooms[String(sourceVnum)]) { floor = f; break; }
+                }
+                if (!floor) return;
+                const portalRoom = floor.rooms[String(portalVnum)];
+                if (!portalRoom) return;
+
+                document.getElementById('zoneLabel').textContent = state.currentZone;
+                document.getElementById('floorNumber').textContent = `Portal`;
+
+                // Hide floor tabs while in portal view
+                document.getElementById('floorTabs').innerHTML = '';
+
+                const roomInfo = document.getElementById('roomInfo');
+                roomInfo.innerHTML = `
+                    <div class="room-name">${escapeHtml(portalRoom.name)}</div>
+                    <div class="room-desc">${escapeHtml(portalRoom.description || '')}</div>
+                `;
+
+                // Show exits from portal room, excluding the back-exit to sourceVnum
+                const exitsList = document.getElementById('exitsList');
+                exitsList.innerHTML = '';
+                const EXIT_ORDER = ['u','d','n','ne','nw','e','w','se','sw','s'];
+                const exits = Object.entries(portalRoom.exits || {})
+                    .filter(([, ex]) => ex.to_vnum !== sourceVnum)
+                    .sort(([a], [b]) => {
+                        const ai = EXIT_ORDER.indexOf(a.toLowerCase());
+                        const bi = EXIT_ORDER.indexOf(b.toLowerCase());
+                        if (ai === -1 && bi === -1) return a.localeCompare(b);
+                        if (ai === -1) return 1;
+                        if (bi === -1) return -1;
+                        return ai - bi;
+                    });
+
+                if (exits.length === 0) {
+                    exitsList.innerHTML = '<div style="color: #666; font-size: 12px;">No onward exits</div>';
+                } else {
+                    exits.forEach(([dir, exitData]) => {
+                        const toZone = state.allZones[exitData.to_zone];
+                        const destRoom = toZone ? getRoom(toZone, exitData.to_vnum) : null;
+                        const destName = exitData.is_cross_zone
+                            ? exitData.to_zone
+                            : (destRoom ? destRoom.name : 'Unknown');
+
+                        const btn = document.createElement('button');
+                        btn.className = 'exit-button' + (exitData.is_cross_zone ? ' cross-zone' : '');
+                        btn.innerHTML = `<span class="exit-direction">[${escapeHtml(dir)}]</span> ${escapeHtml(destName)}`;
+                        btn.onclick = () => {
+                            // Leaving the portal: exit the mini-view then navigate to destination
+                            state.goPortalView = null;
+                            if (exitData.is_cross_zone) {
+                                navigateCrossZone(exitData.to_vnum, exitData.to_zone);
+                            } else {
+                                navigateToRoom(exitData.to_vnum, exitData.to_zone);
+                            }
+                        };
+                        exitsList.appendChild(btn);
+                    });
+                }
+                return;
+            }
+
+            const floor = zone.floors[String(state.currentFloor)];
+            if (!floor) return;
+
+            // Update zone label
+            document.getElementById('zoneLabel').textContent = state.currentZone;
+
+            // Update floor tabs
+            const tabsContainer = document.getElementById('floorTabs');
+            tabsContainer.innerHTML = '';
+            for (let f = 0; f < zone.floor_count; f++) {
+                const tab = document.createElement('button');
+                tab.className = `floor-tab ${f === state.currentFloor ? 'active' : ''}`;
+                tab.textContent = `F${f}`;
+                tab.onclick = () => switchFloor(f);
+                tabsContainer.appendChild(tab);
+            }
+
+            // Update floor info
+            document.getElementById('floorNumber').textContent = `${state.currentFloor} / ${zone.floor_count - 1}`;
+
+            // Update room info and exits
+            updateRoomInfo(floor);
+        }
+
+        function updateRoomInfo(floor) {
+            const rooms = floor.rooms;
+            let selectedRoom = null;
+
+            if (state.selectedRoom && rooms[String(state.selectedRoom)]) {
+                selectedRoom = rooms[String(state.selectedRoom)];
+            } else if (Object.keys(rooms).length > 0) {
+                selectedRoom = rooms[Object.keys(rooms)[0]];
+                state.selectedRoom = selectedRoom.vnum;
+            }
+
+            const roomInfo = document.getElementById('roomInfo');
+            const exitsList = document.getElementById('exitsList');
+
+            if (selectedRoom) {
+                roomInfo.innerHTML = `
+                    <div class="room-name">${escapeHtml(selectedRoom.name)}</div>
+                    <div class="room-desc">${escapeHtml(selectedRoom.description)}</div>
+                `;
+
+                exitsList.innerHTML = '';
+                const EXIT_ORDER = ['u','d','n','ne','nw','e','w','se','sw','s'];
+                const exits = Object.entries(selectedRoom.exits || {}).sort(([a], [b]) => {
+                    const ai = EXIT_ORDER.indexOf(a.toLowerCase());
+                    const bi = EXIT_ORDER.indexOf(b.toLowerCase());
+                    if (ai === -1 && bi === -1) return a.localeCompare(b);
+                    if (ai === -1) return 1;
+                    if (bi === -1) return -1;
+                    return ai - bi;
+                });
+
+                if (exits.length === 0) {
+                    exitsList.innerHTML = '<div style="color: #666; font-size: 12px;">No exits</div>';
+                } else {
+                    exits.forEach(([direction, exitData]) => {
+                        const btn = document.createElement('button');
+                        const classNames = ['exit-button'];
+                        if (exitData.is_cross_zone) classNames.push('cross-zone');
+                        if (exitData.is_portal) classNames.push('portal-exit');
+                        btn.className = classNames.join(' ');
+                        btn.setAttribute('data-is-portal', exitData.is_portal ? 'true' : 'false');
+                        btn.setAttribute('data-is-cross', exitData.is_cross_zone ? 'true' : 'false');
+                        
+                        let destName = '';
+                        
+                        // For cross-zone exits, show the zone name
+                        if (exitData.is_cross_zone) {
+                            destName = exitData.to_zone;
+                        } else {
+                            // For same-zone exits, try to get the room name
+                            const toZone = state.allZones[exitData.to_zone];
+                            const destRoom = toZone ? getRoom(toZone, exitData.to_vnum) : null;
+                            destName = destRoom ? destRoom.name : 'Unknown';
+                        }
+
+                        let suffix = '';
+                        if (exitData.is_portal) {
+                            suffix = ` <span style="color: #44cc88; font-size: 10px;">🚪</span>`;
+                        }
+                        if (exitData.is_cross_zone) {
+                            suffix += ` <span style="color: #ffaa00; font-size: 10px;">🌍</span>`;
+                        }
+
+                        btn.innerHTML = `<span class="exit-direction">[${escapeHtml(direction)}]</span> ${escapeHtml(destName)}${suffix}`;
+                        btn.onclick = () => {
+                            if (exitData.is_portal) {
+                                navigateToPortal(state.selectedRoom, exitData.to_vnum, direction);
+                            } else if (exitData.is_cross_zone) {
+                                navigateCrossZone(exitData.to_vnum, exitData.to_zone);
+                            } else {
+                                navigateToRoom(exitData.to_vnum, exitData.to_zone);
+                            }
+                        };
+                        exitsList.appendChild(btn);
+                    });
+                }
+            } else {
+                roomInfo.innerHTML = '<div class="room-name">No rooms</div>';
+                exitsList.innerHTML = '';
+            }
+        }
+
+        function getRoom(zone, vnum) {
+            for (let floor of Object.values(zone.floors)) {
+                if (floor.rooms[String(vnum)]) {
+                    return floor.rooms[String(vnum)];
+                }
+            }
+            return null;
+        }
+
+        async function navigateToRoom(toVnum, toZone) {
+            if (state.currentZone !== toZone) {
+                const data = await loadZoneData(toZone);
+                if (!data) return;
+                
+                state.currentZone = toZone;
+                
+                // Find the floor with this room
+                for (let f = 0; f < data.floor_count; f++) {
+                    if (data.floors[String(f)].rooms[String(toVnum)]) {
+                        state.currentFloor = f;
+                        break;
+                    }
+                }
+            } else {
+                // Same zone, find floor with this room
+                const zone = state.allZones[state.currentZone];
+                for (let f = 0; f < zone.floor_count; f++) {
+                    if (zone.floors[String(f)].rooms[String(toVnum)]) {
+                        state.currentFloor = f;
+                        break;
+                    }
+                }
+            }
+
+            state.selectedRoom = toVnum;
+            state.isInPortal = false;
+            state.portalHistory = [];
+            centerOnRoom(toVnum);
+            render();
+        }
+
+        async function navigateCrossZone(toVnum, toZone) {
+            // Load the destination zone if not already loaded
+            document.getElementById('mapTitle').textContent = `Loading ${toZone}…`;
+            const data = await loadZoneData(toZone);
+            if (!data) {
+                document.getElementById('mapTitle').textContent = `Failed to load ${toZone}`;
+                return;
+            }
+
+            // Find which floor contains the destination room
+            let destFloor = 0;
+            for (let f = 0; f < data.floor_count; f++) {
+                if (data.floors[String(f)].rooms[String(toVnum)]) {
+                    destFloor = f;
+                    break;
+                }
+            }
+
+            // Update zone dropdown to reflect new zone
+            const dropdown = document.getElementById('zoneDropdown');
+            if (dropdown) dropdown.value = toZone;
+
+            state.currentZone  = toZone;
+            state.currentFloor = destFloor;
+            state.selectedRoom = toVnum;
+            state.isInPortal   = false;
+            state.portalHistory = [];
+            // Reset zoom/pan but center on the actual destination vnum,
+            // not the floor entry_vnum (which resetView(true) would use).
+            state.zoom = 1.0;
+            state.panX = 0;
+            state.panY = 0;
+            updateZoomLevel();
+            centerOnRoom(toVnum);
+            render();
+        }
+
+        async function navigateToPortal(fromVnum, toVnum, exitDir) {
+            const isGoPortal = exitDir.toLowerCase().startsWith('go');
+
+            if (isGoPortal) {
+                // Pre-load the destination zones for all of the portal room's onward exits
+                // so the dummy node name is available immediately on the first visit.
+                const zone = state.allZones[state.currentZone];
+                if (zone) {
+                    let portalRoom = null;
+                    for (const f of Object.values(zone.floors)) {
+                        if (f.rooms[String(toVnum)]) { portalRoom = f.rooms[String(toVnum)]; break; }
+                    }
+                    if (portalRoom) {
+                        const loads = Object.values(portalRoom.exits || {})
+                            .filter(ex => ex.to_vnum !== fromVnum && !state.allZones[ex.to_zone])
+                            .map(ex => loadZoneData(ex.to_zone));
+                        if (loads.length) await Promise.all(loads);
+                    }
+                }
+
+                // "go X" portals: show an isolated mini-view, don't touch the main map.
+                state.goPortalView = { sourceVnum: fromVnum, portalVnum: toVnum, direction: exitDir };
+                render();
+                return;
+            }
+
+            // u/d portals: switch floors within the same zone (existing behaviour).
+            const zone = state.allZones[state.currentZone];
+            
+            // Find which floor the destination room is on
+            let destFloor = 0;
+            for (let f = 0; f < zone.floor_count; f++) {
+                if (zone.floors[String(f)].rooms[String(toVnum)]) {
+                    destFloor = f;
+                    break;
+                }
+            }
+
+            // Save to history: where we came from
+            state.portalHistory.push({
+                zone: state.currentZone,
+                room: fromVnum,
+                floor: state.currentFloor,
+                exitDir: exitDir
+            });
+
+            // Navigate to portal room
+            state.selectedRoom = toVnum;
+            state.currentFloor = destFloor;
+            state.isInPortal = true;
+            centerOnRoom(toVnum);
+            render();
+        }
+
+        function exitGoPortalView() {
+            // Return from go-portal mini-view back to the main map.
+            state.goPortalView = null;
+            render();
+        }
+
+        function returnFromPortal() {
+            // Return to previous room via Return button
+            if (state.portalHistory.length === 0) return;
+            
+            const prev = state.portalHistory.pop();
+            state.currentZone = prev.zone;
+            state.currentFloor = prev.floor;
+            state.selectedRoom = prev.room;
+            state.isInPortal = state.portalHistory.length > 0;
+            centerOnRoom(prev.room);
+            render();
+        }
+        function switchFloor(floor) {
+            state.currentFloor = floor;
+            state.selectedRoom = null;
+            state.goPortalView = null;
+            resetView(true);
+            render();
+        }
+
+        // ============================================================================
+        // Rendering
+        // ============================================================================
+
+        function render() {
+            updateSidebar();
+            updateBreadcrumb();
+            if (state.goPortalView) {
+                renderGoPortalView();
+            } else {
+                renderMap();
+            }
+        }
+
+        function edgeColor(dir) {
+            if (dir === 'n' || dir === 's') return '#e05555';
+            if (dir === 'e' || dir === 'w') return '#5588e0';
+            if (dir === 'u' || dir === 'd') return '#44cc88';
+            return '#e0cc44'; // diagonal / named exit
+        }
+
+        // Returns the set of vnums that are ONLY reachable via go-portal exits on this floor.
+        // These rooms are hidden on the main map and shown only in the mini portal-view.
+        function getGoPortalTargetVnums(floor) {
+            const rooms = floor.rooms;
+            // Build set of vnums reachable via non-portal exits on this floor
+            const reachableByCardinal = new Set();
+            Object.values(rooms).forEach(room => {
+                Object.values(room.exits || {}).forEach(ex => {
+                    if (!ex.is_portal && !ex.is_cross_zone) {
+                        reachableByCardinal.add(ex.to_vnum);
+                    }
+                });
+            });
+            // A go-portal target is: present on this floor, NOT reachable by any cardinal exit
+            // AND some room on this floor has a go-portal exit pointing to it
+            const goPortalTargets = new Set();
+            Object.values(rooms).forEach(room => {
+                Object.values(room.exits || {}).forEach(ex => {
+                    if (ex.is_portal && ex.direction && ex.direction.toLowerCase().startsWith('go')) {
+                        if (rooms[String(ex.to_vnum)] && !reachableByCardinal.has(ex.to_vnum)) {
+                            goPortalTargets.add(ex.to_vnum);
+                        }
+                    }
+                });
+            });
+            return goPortalTargets;
+        }
+
+        // Renders the isolated portal mini-view.
+        // Layout: Fountain (active, right) with its first onward exit as a dimmed
+        // dummy node above it — matching the fountain.png reference.
+        // The sourceVnum is never drawn; it's only used to filter the back-exit in the sidebar.
+        function renderGoPortalView() {
+            const { sourceVnum, portalVnum } = state.goPortalView;
+            const zone = state.allZones[state.currentZone];
+            if (!zone) return;
+
+            // Find the floor containing the portal room
+            let floor = null;
+            for (const f of Object.values(zone.floors)) {
+                if (f.rooms[String(portalVnum)]) { floor = f; break; }
+            }
+            if (!floor) return;
+
+            const portalRoom = floor.rooms[String(portalVnum)];
+            if (!portalRoom) return;
+
+            // Pick the first onward exit from the portal room (excluding back to sourceVnum)
+            const EXIT_ORDER = ['u','d','n','ne','nw','e','w','se','sw','s'];
+            const onwardExits = Object.entries(portalRoom.exits || {})
+                .filter(([, ex]) => ex.to_vnum !== sourceVnum)
+                .sort(([a], [b]) => {
+                    const ai = EXIT_ORDER.indexOf(a.toLowerCase());
+                    const bi = EXIT_ORDER.indexOf(b.toLowerCase());
+                    if (ai === -1 && bi === -1) return a.localeCompare(b);
+                    if (ai === -1) return 1; if (bi === -1) return -1;
+                    return ai - bi;
+                });
+
+            // The dummy node: first onward exit destination (may be null if portal is a dead-end)
+            const firstExit = onwardExits.length > 0 ? onwardExits[0] : null;
+            let dummyRoom = null;
+            let dummyDir  = null;
+            if (firstExit) {
+                const [dir, ex] = firstExit;
+                dummyDir = dir;
+                // Try to find the room object for the name label
+                const destZone = state.allZones[ex.to_zone];
+                dummyRoom = destZone ? getRoom(destZone, ex.to_vnum) : null;
+                // Fallback name if zone not loaded yet
+                if (!dummyRoom) dummyRoom = { name: ex.is_cross_zone ? ex.to_zone : `#${ex.to_vnum}` };
+            }
+
+            const svg = document.getElementById('mapSvg');
+            const container = svg.parentElement;
+            const W = container.clientWidth  || 800;
+            const H = container.clientHeight || 600;
+
+            svg.setAttribute('width',  W);
+            svg.setAttribute('height', H);
+            svg.innerHTML = '';
+
+            const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+
+            // Portal room centered in the canvas
+            const porX = (W - ROOM_WIDTH) / 2;
+            const porY = (H - ROOM_HEIGHT) / 2;
+
+            // Dummy node: above the portal room, separated by GRID_STEP_Y
+            const gap = GRID_STEP_Y;
+            const dumX = porX;
+            const dumY = porY - gap;
+
+            // Helper: draw a room box
+            function drawMiniRoom(x, y, room, dimmed) {
+                const grp = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+
+                const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+                rect.setAttribute('x', x); rect.setAttribute('y', y);
+                rect.setAttribute('width', ROOM_WIDTH); rect.setAttribute('height', ROOM_HEIGHT);
+                rect.setAttribute('rx', '4');
+                rect.setAttribute('fill',         dimmed ? '#1e2535' : '#1a6b9a');
+                rect.setAttribute('stroke',       dimmed ? '#555'    : '#00ccff');
+                rect.setAttribute('stroke-width', dimmed ? '1'       : '2');
+                grp.appendChild(rect);
+
+                const cx = x + ROOM_WIDTH / 2;
+                const words = room.name.split(' ');
+                let ln1 = '', ln2 = '';
+                for (const w of words) {
+                    if ((ln1 + ' ' + w).trim().length <= 14) ln1 = (ln1 + ' ' + w).trim();
+                    else if (!ln2) ln2 = w;
+                    else if ((ln2 + ' ' + w).length <= 14) ln2 = (ln2 + ' ' + w).trim();
+                }
+                if (ln2) {
+                    [[ln1, -8],[ln2, 8]].forEach(([txt, dy]) => {
+                        const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                        t.setAttribute('x', cx); t.setAttribute('y', y + ROOM_HEIGHT/2 + dy);
+                        t.setAttribute('class', 'room-text'); t.setAttribute('pointer-events','none');
+                        t.setAttribute('fill', dimmed ? '#888' : '#fff');
+                        t.textContent = txt; grp.appendChild(t);
+                    });
+                } else {
+                    const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                    t.setAttribute('x', cx); t.setAttribute('y', y + ROOM_HEIGHT/2 + 4);
+                    t.setAttribute('class', 'room-text'); t.setAttribute('pointer-events','none');
+                    t.setAttribute('fill', dimmed ? '#888' : '#fff');
+                    t.textContent = room.name.length <= 16 ? room.name : room.name.substring(0,15) + '…';
+                    grp.appendChild(t);
+                }
+                return grp;
+            }
+
+            // Draw dummy node and edge only if there's an onward exit
+            if (dummyRoom) {
+                // Dashed edge from portal room up to dummy node
+                const ln = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                ln.setAttribute('x1', porX + ROOM_WIDTH / 2); ln.setAttribute('y1', porY);
+                ln.setAttribute('x2', dumX + ROOM_WIDTH / 2); ln.setAttribute('y2', dumY + ROOM_HEIGHT);
+                ln.setAttribute('stroke', '#e0cc44'); ln.setAttribute('stroke-width', '2');
+                ln.setAttribute('stroke-opacity', '0.7'); ln.setAttribute('stroke-dasharray', '6 3');
+                g.appendChild(ln);
+
+                // Direction label on the edge
+                const lbX = porX + ROOM_WIDTH / 2 + 8;
+                const lbY = porY - gap / 2;
+                const lbl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                lbl.setAttribute('x', lbX); lbl.setAttribute('y', lbY);
+                lbl.setAttribute('font-size', '11'); lbl.setAttribute('fill', '#e0cc44');
+                lbl.setAttribute('pointer-events', 'none');
+                lbl.textContent = dummyDir;
+                g.appendChild(lbl);
+
+                g.appendChild(drawMiniRoom(dumX, dumY, dummyRoom, true));
+            }
+
+            // Portal room (active)
+            g.appendChild(drawMiniRoom(porX, porY, portalRoom, false));
+
+            svg.appendChild(g);
+        }
+
+        function renderMap() {
+            const zone = state.allZones[state.currentZone];
+            if (!zone) return;
+
+            const floor = zone.floors[String(state.currentFloor)];
+            if (!floor) return;
+
+            const svg = document.getElementById('mapSvg');
+            const rooms = floor.rooms;
+
+            // ── Use PER-FLOOR bounds (each floor is a separate 2D space) ──────────────
+            // This matches the deep-dive formula exactly:
+            //   originX = PAD - minX * STEP_X
+            //   width   = (maxX - minX + 2) * STEP_X + 2 * PAD
+            const b = floor.metadata;
+            const originX = PADDING - b.min_x * GRID_STEP_X;
+            const originY = PADDING - b.min_y * GRID_STEP_Y;
+            const width   = (b.max_x - b.min_x + 2) * GRID_STEP_X + 2 * PADDING;
+            const height  = (b.max_y - b.min_y + 2) * GRID_STEP_Y + 2 * PADDING;
+
+            // Size SVG to the VIEWPORT (container), not the map content.
+            // If we size it to the map content, rooms can be panned outside the SVG
+            // element boundary and get clipped by the container's overflow:hidden.
+            // The zoom/pan transform group handles all positioning internally.
+            const container = svg.parentElement;
+            svg.setAttribute('width',  container.clientWidth  || width);
+            svg.setAttribute('height', container.clientHeight || height);
+            svg.innerHTML = '';
+
+            // zoom/pan group
+            const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+            g.setAttribute('id', 'zoomPanGroup');
+            g.setAttribute('transform',
+                `translate(${state.panX}, ${state.panY}) scale(${state.zoom})`);
+
+            // ── Identify go-portal-target rooms (hidden from main map) ────
+            const goPortalTargets = getGoPortalTargetVnums(floor);
+
+            // ── Draw edges from the flat edge list (correct topology) ──────
+            // Only draw edges that belong to this floor; skip edges to/from go-portal targets
+            const floorEdges = (zone.edges || []).filter(e =>
+                e.floor === state.currentFloor &&
+                !goPortalTargets.has(e.from) &&
+                !goPortalTargets.has(e.to)
+            );
+            floorEdges.forEach(edge => {
+                // Centre of source box
+                const x1 = originX + edge.from_grid[0] * GRID_STEP_X + ROOM_WIDTH  / 2;
+                const y1 = originY + edge.from_grid[1] * GRID_STEP_Y + ROOM_HEIGHT / 2;
+                // Centre of dest box
+                const x2 = originX + edge.to_grid[0]   * GRID_STEP_X + ROOM_WIDTH  / 2;
+                const y2 = originY + edge.to_grid[1]   * GRID_STEP_Y + ROOM_HEIGHT / 2;
+
+                const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                line.setAttribute('x1', x1);
+                line.setAttribute('y1', y1);
+                line.setAttribute('x2', x2);
+                line.setAttribute('y2', y2);
+                line.setAttribute('stroke', edgeColor(edge.direction));
+                line.setAttribute('stroke-width', '2');
+                line.setAttribute('stroke-opacity', '0.7');
+                g.appendChild(line);
+            });
+
+            // ── Draw rooms ─────────────────────────────────────────────────
+            Object.entries(rooms).forEach(([vnumStr, room]) => {
+                const vnum = parseInt(vnumStr);
+                // Hide go-portal-target rooms from the main map
+                if (goPortalTargets.has(vnum)) return;
+                // pixel top-left of box
+                const px = originX + room.grid_x * GRID_STEP_X;
+                const py = originY + room.grid_y * GRID_STEP_Y;
+                const cx = px + ROOM_WIDTH  / 2;
+                const cy = py + ROOM_HEIGHT / 2;
+
+                const grp = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+                grp.style.cursor = 'pointer';
+                grp.onclick = () => { 
+                    state.selectedRoom = vnum; 
+                    centerOnRoom(vnum);
+                    render(); 
+                };
+
+                const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+                rect.setAttribute('x', px);
+                rect.setAttribute('y', py);
+                rect.setAttribute('width',  ROOM_WIDTH);
+                rect.setAttribute('height', ROOM_HEIGHT);
+                rect.setAttribute('class',
+                    `room-box ${state.selectedRoom === vnum ? 'selected' : ''}`);
+                grp.appendChild(rect);
+
+                // Room name — wrap across two lines if long
+                const words = room.name.split(' ');
+                let line1 = '', line2 = '';
+                for (const w of words) {
+                    if ((line1 + ' ' + w).trim().length <= 14) {
+                        line1 = (line1 + ' ' + w).trim();
+                    } else if (line2.length === 0) {
+                        line2 = w;
+                    } else if ((line2 + ' ' + w).length <= 14) {
+                        line2 = (line2 + ' ' + w).trim();
+                    }
+                }
+                if (line2) {
+                    const t1 = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                    t1.setAttribute('x', cx); t1.setAttribute('y', cy - 8);
+                    t1.setAttribute('class', 'room-text'); t1.setAttribute('pointer-events','none');
+                    t1.textContent = line1;
+                    grp.appendChild(t1);
+                    const t2 = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                    t2.setAttribute('x', cx); t2.setAttribute('y', cy + 8);
+                    t2.setAttribute('class', 'room-text'); t2.setAttribute('pointer-events','none');
+                    t2.textContent = line2;
+                    grp.appendChild(t2);
+                } else {
+                    const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                    t.setAttribute('x', cx); t.setAttribute('y', cy + 4);
+                    t.setAttribute('class', 'room-text'); t.setAttribute('pointer-events','none');
+                    t.textContent = room.name.length <= 16 ? room.name : room.name.substring(0,15) + '…';
+                    grp.appendChild(t);
+                }
+
+                // Check for portal and cross-zone exits
+                const hasPortalExit = Object.values(room.exits || {}).some(e => e.is_portal);
+                const hasCrossZoneExit = Object.values(room.exits || {}).some(e => e.is_cross_zone);
+                
+                let badgeX = px + ROOM_WIDTH - 12;
+                
+                // Portal badge (🚪 - door icon)
+                if (hasPortalExit) {
+                    const portalBadge = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+                    portalBadge.style.cursor = 'pointer';
+                    portalBadge.onclick = (e) => {
+                        e.stopPropagation();
+                        state.selectedRoom = vnum;
+                        render();
+                        setTimeout(() => {
+                            const exitsList = document.getElementById('exitsList');
+                            const portalExits = exitsList.querySelectorAll('[data-is-portal="true"]');
+                            if (portalExits.length > 0) {
+                                portalExits[0].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                                portalExits[0].style.outline = '2px solid #44cc88';
+                                setTimeout(() => portalExits[0].style.outline = '', 2000);
+                            }
+                        }, 100);
+                    };
+
+                    const portalBg = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                    portalBg.setAttribute('cx', badgeX);
+                    portalBg.setAttribute('cy', py + 10);
+                    portalBg.setAttribute('r', 10);
+                    portalBg.setAttribute('fill', '#44cc88');
+                    portalBg.setAttribute('opacity', '0.9');
+                    portalBadge.appendChild(portalBg);
+
+                    const portalText = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                    portalText.setAttribute('x', badgeX);
+                    portalText.setAttribute('y', py + 15);
+                    portalText.setAttribute('text-anchor', 'middle');
+                    portalText.setAttribute('font-size', '14');
+                    portalText.setAttribute('font-weight', 'bold');
+                    portalText.setAttribute('fill', '#000');
+                    portalText.setAttribute('pointer-events', 'none');
+                    portalText.textContent = '🚪';
+                    portalBadge.appendChild(portalText);
+
+                    grp.appendChild(portalBadge);
+                    badgeX -= 25;
+                }
+                
+                // Cross-zone badge (🌍 - globe icon)
+                if (hasCrossZoneExit) {
+                    const crossBadge = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+                    crossBadge.style.cursor = 'pointer';
+                    crossBadge.onclick = (e) => {
+                        e.stopPropagation();
+                        state.selectedRoom = vnum;
+                        render();
+                        setTimeout(() => {
+                            const exitsList = document.getElementById('exitsList');
+                            const crossExits = exitsList.querySelectorAll('[data-is-cross="true"]');
+                            if (crossExits.length > 0) {
+                                crossExits[0].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                                crossExits[0].style.outline = '2px solid #ffaa00';
+                                setTimeout(() => crossExits[0].style.outline = '', 2000);
+                            }
+                        }, 100);
+                    };
+
+                    const crossBg = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                    crossBg.setAttribute('cx', badgeX);
+                    crossBg.setAttribute('cy', py + 10);
+                    crossBg.setAttribute('r', 10);
+                    crossBg.setAttribute('fill', '#ffaa00');
+                    crossBg.setAttribute('opacity', '0.9');
+                    crossBadge.appendChild(crossBg);
+
+                    const crossText = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                    crossText.setAttribute('x', badgeX);
+                    crossText.setAttribute('y', py + 15);
+                    crossText.setAttribute('text-anchor', 'middle');
+                    crossText.setAttribute('font-size', '14');
+                    crossText.setAttribute('font-weight', 'bold');
+                    crossText.setAttribute('fill', '#000');
+                    crossText.setAttribute('pointer-events', 'none');
+                    crossText.textContent = '🌍';
+                    crossBadge.appendChild(crossText);
+
+                    grp.appendChild(crossBadge);
+                }
+
+                g.appendChild(grp);
+            });
+
+            svg.appendChild(g);
+
+            document.getElementById('mapTitle').textContent =
+                `${state.currentZone} — Floor ${state.currentFloor}`;
+            document.getElementById('roomCount').textContent =
+                `${Object.keys(rooms).length} rooms`;
+            document.getElementById('noRooms').style.display =
+                Object.keys(rooms).length === 0 ? 'block' : 'none';
+        }
+
+        // ============================================================================
+        // Zoom & Pan
+        // ============================================================================
+
+        function resetView(forceEntryRoom = false) {
+            state.zoom = 1.0;
+            state.panX = 0;
+            state.panY = 0;
+            updateZoomLevel();
+            // Center on a room after resetting zoom.
+            // forceEntryRoom=true: use the floor's entry_vnum (zone/floor switches).
+            // forceEntryRoom=false (default): keep state.selectedRoom so navigation
+            //   to a specific room doesn't get overwritten with the floor entry room.
+            const zone = state.allZones[state.currentZone];
+            if (zone) {
+                const floorData = zone.floors[String(state.currentFloor)];
+                let targetVnum;
+                if (forceEntryRoom) {
+                    targetVnum = (floorData && floorData.entry_vnum)
+                        ? floorData.entry_vnum
+                        : state.selectedRoom;
+                    if (targetVnum) state.selectedRoom = targetVnum;
+                } else {
+                    targetVnum = state.selectedRoom
+                        || (floorData && floorData.entry_vnum);
+                }
+                if (targetVnum) centerOnRoom(targetVnum);
+            }
+        }
+
+        function centerOnRoom(vnum) {
+            // Center the map on a specific room (used when clicking sidebar or node)
+            const zone = state.allZones[state.currentZone];
+            if (!zone) return;
+
+            const floor = zone.floors[String(state.currentFloor)];
+            if (!floor || !floor.rooms[String(vnum)]) return;
+
+            const room = floor.rooms[String(vnum)];
+            // Use PER-FLOOR bounds, not global bounds (each floor is its own 2D space)
+            const b = floor.metadata;
+            const originX = PADDING - b.min_x * GRID_STEP_X;
+            const originY = PADDING - b.min_y * GRID_STEP_Y;
+
+            // Room center in map coordinates
+            const roomCenterX = originX + room.grid_x * GRID_STEP_X + ROOM_WIDTH / 2;
+            const roomCenterY = originY + room.grid_y * GRID_STEP_Y + ROOM_HEIGHT / 2;
+
+            // Pan to center room in viewport (keep current zoom)
+            const svg = document.getElementById('mapSvg');
+            const containerWidth = svg.parentElement.clientWidth;
+            const containerHeight = svg.parentElement.clientHeight;
+
+            state.panX = (containerWidth / 2) - (roomCenterX * state.zoom);
+            state.panY = (containerHeight / 2) - (roomCenterY * state.zoom);
+        }
+
+        function updateZoomLevel() {
+            document.getElementById('zoomLevel').textContent = Math.round(state.zoom * 100) + '%';
+        }
+
+        document.getElementById('zoomInBtn').onclick = () => {
+            state.zoom = Math.min(MAX_ZOOM, Math.round((state.zoom + ZOOM_STEP) * 10) / 10);
+            updateZoomLevel();
+            render();
+        };
+
+        document.getElementById('zoomOutBtn').onclick = () => {
+            state.zoom = Math.max(MIN_ZOOM, Math.round((state.zoom - ZOOM_STEP) * 10) / 10);
+            updateZoomLevel();
+            render();
+        };
+
+        document.getElementById('resetBtn').onclick = () => {
+            resetView();
+            render();
+        };
+
+        document.getElementById('returnBtn').onclick = () => {
+            if (state.goPortalView) {
+                exitGoPortalView();
+            } else {
+                returnFromPortal();
+            }
+        };
+
+        // Update breadcrumb and Return button visibility
+        function updateBreadcrumb() {
+            const breadcrumbEl = document.getElementById('breadcrumb');
+            const returnBtn = document.getElementById('returnBtn');
+            
+            if (state.goPortalView) {
+                breadcrumbEl.textContent = `Portal: [${state.goPortalView.direction}]`;
+                returnBtn.style.display = 'block';
+            } else if (state.portalHistory.length === 0) {
+                breadcrumbEl.textContent = '';
+                returnBtn.style.display = 'none';
+            } else {
+                const path = state.portalHistory.map(h => h.exitDir.toUpperCase()).join(' > ');
+                breadcrumbEl.textContent = `Portal: ${path}`;
+                returnBtn.style.display = 'block';
+            }
+        }
+
+        // Zoom with mouse wheel — incremental steps clamped to [MIN_ZOOM, MAX_ZOOM]
+        document.getElementById('mapContainer').addEventListener('wheel', (e) => {
+            e.preventDefault();
+            const delta = e.deltaY < 0 ? ZOOM_STEP : -ZOOM_STEP;
+            state.zoom = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM,
+                Math.round((state.zoom + delta) * 10) / 10));
+            updateZoomLevel();
+            render();
+        });
+
+        // Pan with drag
+        const mapContainer = document.getElementById('mapContainer');
+        mapContainer.addEventListener('mousedown', (e) => {
+            state.isDragging = true;
+            state.dragStart = { x: e.clientX, y: e.clientY };
+            mapContainer.classList.add('dragging');
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (state.isDragging && state.dragStart) {
+                const dx = e.clientX - state.dragStart.x;
+                const dy = e.clientY - state.dragStart.y;
+                state.panX += dx;
+                state.panY += dy;
+                state.dragStart = { x: e.clientX, y: e.clientY };
+                render();
+            }
+        });
+
+        document.addEventListener('mouseup', () => {
+            state.isDragging = false;
+            mapContainer.classList.remove('dragging');
+        });
+
+        // ============================================================================
+        // Initialization
+        // ============================================================================
+
+        function escapeHtml(text) {
+            const map = {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            };
+            return text.replace(/[&<>"']/g, m => map[m]);
+        }
+
+        async function init() {
+            const zoneDropdown = document.getElementById('zoneDropdown');
+
+            // Try to fetch zones.json index (generated by exporter)
+            let zoneNames = [];
+            try {
+                const resp = await fetch('zones.json');
+                if (resp.ok) {
+                    zoneNames = await resp.json();   // expects ["Zone A", "Zone B", ...]
+                }
+            } catch (_) {}
+
+            if (zoneNames.length === 0) {
+                zoneDropdown.innerHTML =
+                    '<option value="">No zones.json found — run export script first</option>';
+                document.getElementById('mapTitle').textContent =
+                    'Run generate_json_proper.bat to generate zone data';
+                return;
+            }
+
+            // Populate dropdown
+            zoneDropdown.innerHTML = '';
+            zoneNames.forEach(name => {
+                const opt = document.createElement('option');
+                opt.value = name;
+                opt.textContent = name;
+                zoneDropdown.appendChild(opt);
+            });
+
+            // Change handler
+            zoneDropdown.addEventListener('change', async (e) => {
+                const newZone = e.target.value;
+                if (newZone && newZone !== state.currentZone) {
+                    state.currentZone  = newZone;
+                    state.currentFloor = 0;
+                    state.selectedRoom = null;
+                    state.goPortalView = null;
+                    document.getElementById('mapTitle').textContent = 'Loading…';
+                    const data = await loadZoneData(newZone);
+                    if (data) { resetView(true); render(); }
+                }
+            });
+
+            // Load first zone
+            const first = zoneNames[0];
+            state.currentZone = first;
+            zoneDropdown.value = first;
+            document.getElementById('mapTitle').textContent = 'Loading…';
+            const data = await loadZoneData(first);
+            if (data) { resetView(true); render(); }
+            else { document.getElementById('mapTitle').textContent = 'Error loading zone'; }
+        }
+
+        init();
+    </script>
+</body>
+</html>
