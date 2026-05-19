@@ -1,0 +1,1740 @@
+{
+  "zone_name": "Belly of the Beast",
+  "floor_count": 3,
+  "bounds": {
+    "min_x": -6,
+    "max_x": 6,
+    "min_y": -4,
+    "max_y": 240
+  },
+  "floors": {
+    "-2": {
+      "floor_id": -2,
+      "entry_vnum": 703,
+      "rooms": {
+        "703": {
+          "vnum": 703,
+          "name": "Within the Pit House",
+          "description": "The idea that something actually lives here is truly disturbing. The whole floor is covered with chewed bones and excrement; thankfully the smell is somewhat masked by the thick haze of smoke that fills the single room. Strange trinkets made of carved bone, shards of rock, tendon and other primitive materials are hung from the ceiling, catching on your clothes and rattling against each other every time you move.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {
+            "u": {
+              "to_vnum": 700,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Polluted Clearing",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Vile sea hag",
+              "description": "hit every branch on the way down.  She is hunchbacked and potbellied, with a tangle of hair the consistency of seaweed.",
+              "unique": true
+            }
+          ]
+        },
+        "711": {
+          "vnum": 711,
+          "name": "In the Soup",
+          "description": "This was a mistake. Dozens of bloated corpses line the bottom of the murky pool like some twisted larder, disturbing them sends more globs of fat floating off into the mire to further obscure vision. Odd currents eddy about here making it impossible to get ones bearing, even to tell up from down. Danger could come from any direction.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "u": {
+              "to_vnum": 710,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Deeper Water",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Hippogator",
+              "description": "",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 15,
+        "room_count": 2
+      }
+    },
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 700,
+      "rooms": {
+        "716": {
+          "vnum": 716,
+          "name": "The Esophagus",
+          "description": "No more stone coats the tunnel here just a solid layer of mucous, sticky and foul smelling. Hundreds of giant insects make this tunnel their home, many skitter about underfoot or attempt to hide in the shadows cast by torchlight. Not all of the beasties are timid or afraid mind you, battles between strange species you've never seen before rage on within the squirming masses, generally ending with the consumption of the defeated. You have lost 722 experience.",
+          "grid_x": 3,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 717,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Insectoids Run",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 715,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Stone to Flesh",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Spiderling",
+              "description": "creature seems to absorb light.  No eyes are visible, only two long white",
+              "unique": true
+            },
+            {
+              "name": "Tred horn",
+              "description": "Huge feet and an equally huge lance of a horn dominate the features of this irridescent green insect.  It rubs its flightless wings together in a shrill buzz as it lunges with rage at anyone nearby.",
+              "unique": false
+            }
+          ]
+        },
+        "723": {
+          "vnum": 723,
+          "name": "Wide Junction",
+          "description": "The tunnel enters into a wide chamber with a high ceiling. Though you haven't quite escaped the insectiod onslaught, their numbers here have lessened enough to be almost tolerable. Four tunnels lead away from this huge intersection.",
+          "grid_x": 5,
+          "grid_y": -3,
+          "exits": {
+            "ne": {
+              "to_vnum": 725,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Stomach Pit",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "se": {
+              "to_vnum": 724,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Collapsed Tunnel",
+              "direction": "se",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "700": {
+          "vnum": 700,
+          "name": "Polluted Clearing",
+          "description": "This large clearing is utterly filthy. Bones and refuse litter the ground everywhere, and something leeching into the soil has killed all the grass and turned the closest trees a sickly shade of brown. A thin plume of blue grey smoke rises from the centre of a mound in the middle of the clearing.",
+          "grid_x": -6,
+          "grid_y": 3,
+          "exits": {
+            "ne": {
+              "to_vnum": 701,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Sheltered Grove",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 703,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Within the Pit House",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "701": {
+          "vnum": 701,
+          "name": "Sheltered Grove",
+          "description": "Large stone bluffs protect a small stand of alder and willow from the raging sea winds. Not a single leaf is shifted by the nonexistent breeze, there are no animal sounds - in fact no evidence of animal habitation at all. Not even the hum of insects breaks the unnatural calm. The air is utterly silent and still, and though the trees seem quite content to flourish in the stagnant atmosphere, the sensation of claustrophobia is growing ever harder to ignore.",
+          "grid_x": -5,
+          "grid_y": 2,
+          "exits": {
+            "ne": {
+              "to_vnum": 702,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Between the Rocks",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "sw": {
+              "to_vnum": 700,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Polluted Clearing",
+              "direction": "sw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Will`o the wisp",
+              "description": "young fleshy types trespassing in HIS grove on HIS nice lawn.  So you better just move along, if you know what's good for you.",
+              "unique": true
+            }
+          ]
+        },
+        "702": {
+          "vnum": 702,
+          "name": "Between the Rocks",
+          "description": "A cramped passage between the bluffs saves you the effort of scaling the slippery rocks. Verdant green moss covers everything in a thick wet carpet, protecting you from the many jagged rocks pressing in from all sides. The musky smell of loam fills your nostrils as you brush past a particularly close outcropping of stone. The moss here has been pulled away in patches, leaving a haphazard message written on the rock.",
+          "grid_x": -4,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 704,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Blasted Fortification",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "sw": {
+              "to_vnum": 701,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Sheltered Grove",
+              "direction": "sw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "704": {
+          "vnum": 704,
+          "name": "Blasted Fortification",
+          "description": "Apparently some military force tried to establish a beachhead here where the stony hills open onto the shore. Wooden palisades and bags of sand form berms, walls, and other defensible positions - none of which appear to have done their builders any good at all. Some huge, apparently magical, force laid waste to this place long ago. Sand is melted into glass, huge char marks blacken the stones, and naught is left but the shattered skeleton of the outpost, though its garrison still keeps vigil over the beach.",
+          "grid_x": -4,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 705,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Deserted Beach",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 702,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Between the Rocks",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Cursed soldier",
+              "description": "Pallid skin sags and droops off rancid flesh, falling away in places to reveal the rotting musculature below.  His stench nearly turns your stomach though it might be quite appetizing to one who dines on such things...",
+              "unique": false
+            }
+          ]
+        },
+        "705": {
+          "vnum": 705,
+          "name": "Deserted Beach",
+          "description": "Driftwood and seaweed litters the otherwise barren stretch of sand leading up to the gaping sea cave. The world itself seems angry here, wind buffets your face and huge breakers crash against the shore, adding their mist to the thick marine fog blanketing the area. A foul odour wafting from the cave to the east hits you like a brick, stopping the weak of stomach in their tracks.",
+          "grid_x": -3,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 706,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Before a Sea Cave",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "706": {
+          "vnum": 706,
+          "name": "Before a Sea Cave",
+          "description": "A large cliff stretches high above your head. At its base is a huge opening in the rock, large enough to drive two teams of horses through abreast eachother. Your way is blocked south by stony bluffs and north by the raging sea.",
+          "grid_x": -2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 707,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Cavernous Maw",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Cursed soldier",
+              "description": "Pallid skin sags and droops off rancid flesh, falling away in places to reveal the rotting musculature below.  His stench nearly turns your stomach though it might be quite appetizing to one who dines on such things...",
+              "unique": false
+            },
+            {
+              "name": "Lieutenant Ironchin",
+              "description": "visage.  His lower jaw is gone, replaced by one of many cast-iron plates bolted directly to undead bone to hold limbs in place and cover old wounds.",
+              "unique": true
+            }
+          ]
+        },
+        "707": {
+          "vnum": 707,
+          "name": "Cavernous Maw",
+          "description": "Looking out from the cave, ankle deep in stagnant water, you imagine you are viewing the world from the inside of a great mouth. Strange rock formations become fangs... the noxious stench all around becomes the foul breath of something more foul by far. Did the tongue... errr ground you're standing on just shift? Nah...",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 712,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Nest of Bones",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 708,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "An Offering Place",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 706,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Before a Sea Cave",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "708": {
+          "vnum": 708,
+          "name": "An Offering Place",
+          "description": "The water in the cave is shallower here, with much of the ground above water level. It appears this corner of the cave was used in ancient times as a place of sacrifice. Smashed bits of pottery and destroyed tools are piled in mounds around a simple block of shaped stone, probably serving as an altar of sorts. Tiny humanoid bones are mixed among the other sacrifices, and though they could be hobbit, all the tools are made for human sized hands.",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 709,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Deep Water",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 707,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Cavernous Maw",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Barrow childe",
+              "description": "always aiming for the most vital, or most painful spots to latch on.  Its tiny, hollow eye sockets glow a soft green and it giggles gleefully.",
+              "unique": true
+            }
+          ]
+        },
+        "709": {
+          "vnum": 709,
+          "name": "Deep Water",
+          "description": "The floor drops off sharply here, making it barely possible to keep ones feet on the ground and head above water at the same time. The fetid brine splashes at your face, stinging your eyes and calling up bile in your throat. Nothing is going to get this stink out of your clothes.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 712,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Nest of Bones",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 710,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Deeper Water",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 708,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "An Offering Place",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "710": {
+          "vnum": 710,
+          "name": "Deeper Water",
+          "description": "Yep. You were right. It is deeper, a lot deeper. It also smells a lot worse, and there's a lot more disgusting flotsam being churned around by your presence, so what did that really solve? About the only thing more disgusting than this would be going down and looking for the bottom, and that would be just plain dumb.",
+          "grid_x": 0,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 709,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Deep Water",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 711,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "In the Soup",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "712": {
+          "vnum": 712,
+          "name": "Nest of Bones",
+          "description": "The entire area here is covered with a thick carpet of bones, so much so that standing on them allows you to get your feet out of the smelly water. They seem quite sturdy, compacted by the movements of something big and heavy. A smaller pile is pushed into one corner, making a sort of nest supported by the wall. Behind it is a hole, leading deeper into the cave system.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 713,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Curious Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "ne": {
+              "to_vnum": 713,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Curious Tunnel",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 709,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Deep Water",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 707,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Cavernous Maw",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "713": {
+          "vnum": 713,
+          "name": "Curious Tunnel",
+          "description": "This is clearly not a natural formation. No tunnel created by mother nature could be this uniform in height and girth. It drips with slime and descends steadily into the darkness like the gullet of some epic beast, down into the bowels of the world. Large slabs of stone lay strewn about the bottom of the passage, having fallen off the walls to reveal a strange brownish under-layer, oozing with puss and mucous.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 714,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Descending Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 712,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Nest of Bones",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "sw": {
+              "to_vnum": 712,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Nest of Bones",
+              "direction": "sw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Barbed teugan",
+              "description": "with large eyes hidden by defensive plates.  The spines rattle as it scurries towards you, surprisingly quickly for something that looks so",
+              "unique": true
+            },
+            {
+              "name": "Rockroach",
+              "description": "are formidable indeed.  It scours the cavern floor, munching on debris and occasionally fending off an attack from one of the more violent bugs.",
+              "unique": false
+            },
+            {
+              "name": "Tred horn",
+              "description": "Huge feet and an equally huge lance of a horn dominate the features of this irridescent green insect.  It rubs its flightless wings together in a shrill buzz as it lunges with rage at anyone nearby.",
+              "unique": false
+            }
+          ]
+        },
+        "714": {
+          "vnum": 714,
+          "name": "Descending Tunnel",
+          "description": "What you thought was just your imagination now becomes outright horror. The walls, stairs, ceiling, everything in this huge tunnel is coated with sticky mucous, and a rancid breeze wafts up and down the corridor. Occasionally you pass a bit of undigested food; a hand here, half a torso there. As you almost lose your footing on the slick, spongy floor for the third time you wonder, quite literally, what exactly it is you have got yourself INTO? A queen mantid's back arches in agony as a result of your GRUESOME backstab! (99) A queen mantid howls in pain and falls down, paralyzed! A queen mantid drifts forward and grazes you with her mandibles. (22)",
+          "grid_x": 2,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 715,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Stone to Flesh",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 713,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Curious Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "King mantid",
+              "description": "position,  the giant mantis is only visible when it moves.  Its forearms are twin blades, both razor sharp and serrated.",
+              "unique": true
+            },
+            {
+              "name": "Queen mantid",
+              "description": "The female of the species is far more humanoid than the male, sporting only one set of curiously shapely legs and hands instead of blades. It would be almost attractive - if it weren't a filthy, hell-spawned BUG!",
+              "unique": true
+            },
+            {
+              "name": "Rockroach",
+              "description": "are formidable indeed.  It scours the cavern floor, munching on debris and occasionally fending off an attack from one of the more violent bugs.",
+              "unique": false
+            }
+          ]
+        },
+        "725": {
+          "vnum": 725,
+          "name": "Stomach Pit",
+          "description": "Standing on a small ledge of... something hard, possibly bone, you look out upon a vast boiling lake far below you, great boulders and the hulls of unfortunate ships protruding above its surface. The ever present stench is replaced by an acidic tinge, causing your eyes to water, while an uncomfortable burning is felt upon exposed skin. You could probably slide safely down the mucous covered wall to the shore.",
+          "grid_x": 6,
+          "grid_y": -4,
+          "exits": {
+            "sw": {
+              "to_vnum": 723,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Wide Junction",
+              "direction": "sw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "go wall": {
+              "to_vnum": 726,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Bottom of the Slide",
+              "direction": "go wall",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "717": {
+          "vnum": 717,
+          "name": "Insectoids Run",
+          "description": "Whereas once the tunnel was covered in stone, now a thick carpet of giant bugs clings to every available surface. From time to time they plummet form the walls or ceiling above, crushing themselves or their brethren. The things seem to be feeding off the mucous secreted from the flesh, though you doubt many would have any qualms making a quick morsel out of you either. A mant misses you.",
+          "grid_x": 3,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 718,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "More Bugs",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 716,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "The Esophagus",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 715,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Stone to Flesh",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Carrion crawler",
+              "description": "its overgrow mandibles put this critter over the ten foot mark.",
+              "unique": true
+            },
+            {
+              "name": "Mant",
+              "description": "This humanoid ant is hunched over and spindly, though it moves with amazing grace and fluidity.  Two sets of arms are held close to its jet black body as it moves stealthily through the darkness.",
+              "unique": false
+            }
+          ]
+        },
+        "718": {
+          "vnum": 718,
+          "name": "More Bugs",
+          "description": "Even if you tried, you couldn't avoid stepping on the plethora of bugs scrambling about. Not that you'd want to avoid stepping on these hell spawned creatures, a boot big enough to crush 'em all would do you quite nicely about now. You have lost 2394 experience.",
+          "grid_x": 4,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 722,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Deep Throat",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 717,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Insectoids Run",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "719": {
+          "vnum": 719,
+          "name": "More Bugs",
+          "description": "Even if you tried, you couldn't avoid stepping on the plethora of bugs scrambling about. Not that you'd want to avoid stepping on these hell spawned creatures, a boot big enough to crush 'em all would do you quite nicely about now. You have lost 760 experience.",
+          "grid_x": 3,
+          "grid_y": -3,
+          "exits": {
+            "w": {
+              "to_vnum": 717,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Insectoids Run",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "715": {
+          "vnum": 715,
+          "name": "Stone to Flesh",
+          "description": "The tunnel, which is now clearly much more than just another underground passage, levels out here. All the stone has fallen off the walls and ceiling, littering the ground with thin, brittle flakes that crunch underfoot with each step. Left behind is pinkish brown flesh, pungent and mushy. A large, soft ball of flesh hangs from the ceiling.",
+          "grid_x": 2,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 716,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "The Esophagus",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 714,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Descending Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 720,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Chamber of Bone",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Levitas beetle",
+              "description": "through its translucent carapace.  It moves erratically, showering the area",
+              "unique": true
+            },
+            {
+              "name": "Mant",
+              "description": "This humanoid ant is hunched over and spindly, though it moves with amazing grace and fluidity.  Two sets of arms are held close to its jet black body as it moves stealthily through the darkness.",
+              "unique": false
+            }
+          ]
+        },
+        "722": {
+          "vnum": 722,
+          "name": "Deep Throat",
+          "description": "You've been walking for what seems like forever, several miles down the throat of whatever this thing is. It's been long, and hard, and you figure you're nearly poking 'er in the stomach by now, but still the tunnel shows no end. Well, the stomach may be a bit of an exaggeration, but you are likely very near the lungs.",
+          "grid_x": 5,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 723,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Wide Junction",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Gorion",
+              "description": "of the disc shaped bug.  Hundreds of tiny legs support it from below, scuttling this way and that down the tunnel.",
+              "unique": true
+            }
+          ]
+        },
+        "724": {
+          "vnum": 724,
+          "name": "Collapsed Tunnel",
+          "description": "The way forward is blocked, tons of rubble mixed with pulverized pink flesh litter the ground and prevent any further passage into the lung. The area about you is scattered with the mutilated and half eaten corpses of a variety of giant insects. The power of the ocean gradually subsides.",
+          "grid_x": 6,
+          "grid_y": -2,
+          "exits": {
+            "nw": {
+              "to_vnum": 723,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Wide Junction",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Manticore",
+              "description": "are also felinoid, but the face is that of a very ugly, and apparently very angry, old man.  His rear end sports a long barbed tail.",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -6,
+        "max_x": 6,
+        "min_y": -4,
+        "max_y": 3,
+        "room_count": 22
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 3539,
+      "rooms": {
+        "3539": {
+          "vnum": 3539,
+          "name": "Under the Pavilion",
+          "description": "Rows of stretchers are laid out here, covered in all manner of dried bodily fluids while the stench of burnt flesh and decay leaves a foul taste in your mouth. The ghosts of several nurses hover about, some burnt as badly as their bedridden charges.",
+          "grid_x": 2,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 733,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Perched on a Small Boulder",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Doctor",
+              "description": "boxer about him than a doctor.  His black military boots are polished to a mirror finish, and his white lab coat is embroidered with the name Sid.",
+              "unique": true
+            },
+            {
+              "name": "Stomach parasite",
+              "description": "many single celled organisms, and though it's the size of a house cat you",
+              "unique": false
+            }
+          ]
+        },
+        "3541": {
+          "vnum": 3541,
+          "name": "Slave Galley",
+          "description": "A dozen banks of oars line either side of the top deck. Manacles still hold several skeletons in slavery, apparently even death could not save them from their bondage. Though the square sailcloth is in tatters, the wood of the ship is unharmed. Looking closely you can see it has been treated with a glossy resin which has protected it from the lake. An odd presence pervades the ship, as though you are being watched.",
+          "grid_x": 3,
+          "grid_y": -1,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Tim Finnegan",
+              "description": "his dear brogue, not to mention missin' the drink.  Sad ol' bugger never even got home for a proper wake.",
+              "unique": true
+            }
+          ]
+        },
+        "3542": {
+          "vnum": 3542,
+          "name": "Out on the Ram Prow",
+          "description": "A tapered wedge protrudes from the front of the galley sheathed with metal and covered in various barbs and spikes. Connecting to another ship at top speed with this baby would definitely spell a watery grave for your foes. The sharp steel tip has torn a hole through the lining of the stomach.",
+          "grid_x": 0,
+          "grid_y": 75,
+          "exits": {},
+          "npcs": []
+        },
+        "729": {
+          "vnum": 729,
+          "name": "Upon the Acid Lake",
+          "description": "Huge stones swallowed by the creature, presumably to aid in digestion, pepper the boiling lake creating a treacherous path for those crazy enough to cross. Mind you, you're in the belly of a giant monster, so you probably already fit the bill. There seems to be a fairly safe path across the lake, and you could likely make your way to the smashed hull of a large galleon closest to what can only be considered the shore.",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 730,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Huge Boulder",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3545": {
+          "vnum": 3545,
+          "name": "Nearing the Heart",
+          "description": "The force at which you move forward increases with each pulse and in the distance a loud rushing, like the sound of falling water - or in this case blood - can be heard.",
+          "grid_x": 0,
+          "grid_y": 120,
+          "exits": {},
+          "npcs": []
+        },
+        "721": {
+          "vnum": 721,
+          "name": "The Great Brain",
+          "description": "The huge, throbbing mass of grey matter that dominates the chamber crackles with electricity. Visible arcs dance across its wrinkled surface, popping and giving off an acrid ozone smell. Drawing too near the brain causes your hair to stand on end, and touching it would likely net you a sharp jolt, if you were so inclined.",
+          "grid_x": -1,
+          "grid_y": 15,
+          "exits": {
+            "e": {
+              "to_vnum": 720,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Chamber of Bone",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Fink",
+              "description": "kind that grow to the size of small children and eat the cats sailors",
+              "unique": true
+            }
+          ]
+        },
+        "727": {
+          "vnum": 727,
+          "name": "Shore of the Acid Lake",
+          "description": "The powerful acid seems to have no effect on the flesh of the shore. Likely the film of mucous covering everything provides protection from the harsh chemical. Your exposed skin however, has no such slimy protection, and is quickly becomming dry and irritated by the vapors wafting in from the foul lake. The power of the ocean gradually subsides.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 726,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Bottom of the Slide",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 728,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "A Beached Clipper",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Stomach parasite",
+              "description": "many single celled organisms, and though it's the size of a house cat you",
+              "unique": false
+            }
+          ]
+        },
+        "720": {
+          "vnum": 720,
+          "name": "Chamber of Bone",
+          "description": "You stand in a large hollow area inside of a bone, the only likely place would be the skull. The walls are not the bleached yellow of dead bone, quite the contrary, they are made of what is very clearly living matter and are crisscrossed with thin, pulsing red veins. The chamber is lit by a bright glow coming from a hole in the western wall.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {
+            "w": {
+              "to_vnum": 721,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "The Great Brain",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 715,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Stone to Flesh",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "3538": {
+          "vnum": 3538,
+          "name": "Shore of the Acid Lake",
+          "description": "The ground here is red and inflamed, a sharp contrast to the soft pink of the walls and the ground farther west. Closer examination shows much of the protective mucous here has been scraped away, allowing the corrosive air to wreak havoc on the sensitive flesh.",
+          "grid_x": 0,
+          "grid_y": 60,
+          "exits": {},
+          "npcs": []
+        },
+        "3540": {
+          "vnum": 3540,
+          "name": "Centre of a Flat Rock",
+          "description": "Roughly ovoid, and flat on top, this stone is large and sturdy with plenty of room to stand and stretch out. One end touches up against the wall of the stomach near a curious valve.",
+          "grid_x": 3,
+          "grid_y": -2,
+          "exits": {
+            "s": {
+              "to_vnum": 3541,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Slave Galley",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "726": {
+          "vnum": 726,
+          "name": "Bottom of the Slide",
+          "description": "You stand at the base of a slimy wall. High above you protrudes a small ledge, likely providing an excellent view of the caverns vast bubbling lake. Not that you could get back up there of course, the walls are slick and covered by a thick layer of mucous. Before you stretches the stomach of the great beast, filled with a deadly flesh dissolving acid.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 727,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Shore of the Acid Lake",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "ne": {
+              "to_vnum": 729,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Upon the Acid Lake",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3543": {
+          "vnum": 3543,
+          "name": "Beside a River of Blood",
+          "description": "The ram of the ship has lodged itself within one of the creatures main veins. Viscous red blood pulses past you with surprising speed, carrying anything dropped into it away down the odd passageway, presumably into the heart.",
+          "grid_x": 0,
+          "grid_y": 90,
+          "exits": {},
+          "npcs": []
+        },
+        "3544": {
+          "vnum": 3544,
+          "name": "Bloodstream",
+          "description": "The current flows along to the beat of the distant heart, moving faster with each pulse, then steadily slowing down until the next. A humid coppery scent fills your nostrils, so thick the taste of blood invades your mouth.",
+          "grid_x": 0,
+          "grid_y": 105,
+          "exits": {},
+          "npcs": []
+        },
+        "728": {
+          "vnum": 728,
+          "name": "A Beached Clipper",
+          "description": "What was once a large and deadly warship is now little more than a rotted skeleton. A hundred feet of the keel extends before you on the shore, nothing but the spars remaining, like the spine and ribs of a huge wooden monstrosity. An immeasurable length continues out, under the surface of the lake.",
+          "grid_x": -1,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 727,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Shore of the Acid Lake",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Kenn Kray",
+              "description": "still carries an air of authority, even mutated as he is.  Long squidlike tentacles replace his arms, and several more grow out of his back.",
+              "unique": true
+            }
+          ]
+        },
+        "3546": {
+          "vnum": 3546,
+          "name": "Beating Heart",
+          "description": "Two raised mounds of flesh sit like islands in a pool of blood within the heart. The walls and ceiling expand and contract with each pulse, shaking the ground beneath your feet. The whole room thrums with a deep boom every time the heart beats, then all is silent but the crackle of arcane energy until the thunder drums on your ears again. A globe suspended above you pours forth orange light through the mist of blood.",
+          "grid_x": 0,
+          "grid_y": 150,
+          "exits": {},
+          "npcs": []
+        },
+        "3547": {
+          "vnum": 3547,
+          "name": "Before the Well of Souls",
+          "description": "This smaller mound of flesh is completely bare except for a circle of shaped red stones, fitted tightly together and roughly ten feet in diameter. The well itself is filled, almost to overflowing, with a freezing cold liquid metal. The air everywhere else is humid and muggy, but here you feel a chill reaching down to your very soul. Neptune shivers with cold!",
+          "grid_x": 0,
+          "grid_y": 165,
+          "exits": {},
+          "npcs": []
+        },
+        "732": {
+          "vnum": 732,
+          "name": "Captains Quarters",
+          "description": "This once lavish cabin is now little more than a decayed mess of smashed furniture and the rotted remains of plush rugs and tapestries. A large compass is mounted on one of the walls, the needle spinning incessantly 'round and You have lost 2850 experience.",
+          "grid_x": -1,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 731,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Pitted Deck",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 731,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Pitted Deck",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Roisin Dubh",
+              "description": "un-elven complexion.  Her exotic looks make her even more beautiful than most, and are obviously her namesake, Roisin Dubh - the Black Rose.",
+              "unique": false
+            }
+          ]
+        },
+        "3548": {
+          "vnum": 3548,
+          "name": "Astral Hub",
+          "description": "Endless white clouds roll off in every direction, including up and down, with unnatural speed. Behind you is a shimmering mirror, etched with a single large rune. You are standing on a road built of solid ectoplasm, formed to resemble grey paving stones.",
+          "grid_x": 0,
+          "grid_y": 135,
+          "exits": {},
+          "npcs": []
+        },
+        "3550": {
+          "vnum": 3550,
+          "name": "Childs Room",
+          "description": "You set foot in an utterly destroyed childs room. Toys are smashed, the bed is upturned, and the mattress torn to shreds. Stains cover the walls and floor, and leftover food is strewn about attracting pests. It would seem that someone had a temper tantrum, and judging by the damage done to walls, this is a very dangerous little child. The Id BRUTALLY smashes Flik's torso! Flik swings at the Id in vain.",
+          "grid_x": 0,
+          "grid_y": 180,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Id",
+              "description": "just taken away his favourite toy and then told him to go have a nap.  With the way he smashes things around and crashes into the walls, he could probably",
+              "unique": true
+            }
+          ]
+        },
+        "730": {
+          "vnum": 730,
+          "name": "Huge Boulder",
+          "description": "You leap from one stone to the next, questioning your sanity with every bound. The inorganic material is unaffected by the acid, and so your perch seems fairly safe for now. Just so long as you can keep your footing, of course.",
+          "grid_x": 1,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 733,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Perched on a Small Boulder",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 731,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Pitted Deck",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Roisin Dubh",
+              "description": "un-elven complexion.  Her exotic looks make her even more beautiful than most, and are obviously her namesake, Roisin Dubh - the Black Rose.",
+              "unique": false
+            }
+          ]
+        },
+        "3552": {
+          "vnum": 3552,
+          "name": "Distorted Hallway",
+          "description": "Some strange force distorts the rules of space and time in this immense hallway. Though you have barely taken a single step into it, you already seem far, far, away from archway through which you entered. Taking another step moves you within inches of the opposite entrance.",
+          "grid_x": 0,
+          "grid_y": 195,
+          "exits": {},
+          "npcs": []
+        },
+        "3553": {
+          "vnum": 3553,
+          "name": "In Limbo",
+          "description": "The subconscious to one direction, and the conscious mind of the beast on the other, you stand here in that hazy space between waking and sleep. It's a comfortable feeling, and the thought of moving on just to take out some horrible monster doesn't seem very appealing anymore.",
+          "grid_x": 0,
+          "grid_y": 210,
+          "exits": {},
+          "npcs": []
+        },
+        "3554": {
+          "vnum": 3554,
+          "name": "Conscious Thought",
+          "description": "You stand in another empty dome shaped room, with a pedestal similar to the one previous. This time, however, there are no confusing images of strife and hunger playing across the walls. Instead the thoughts of the creature are focused solely upon you, and a thousand visions of your possible demise dance upon the pastel walls before your very eyes.",
+          "grid_x": 0,
+          "grid_y": 225,
+          "exits": {},
+          "npcs": []
+        },
+        "3555": {
+          "vnum": 3555,
+          "name": "Eternal Sunshine",
+          "description": "You stand in a round courtyard in the centre of a huge graveyard. Rows of gravestones spread out in every direction, as far as the eye can see, all spotlessly whitewashed and shining in the endless sunlight. It's actually quite a pleasant place, for a graveyard, and you could certainly see yourself settling down here one day. Though not any time in the near future, you hope. Dark, twisting roots emerge from cracked stone, pulsing with unsettling energy.",
+          "grid_x": 0,
+          "grid_y": 240,
+          "exits": {},
+          "npcs": []
+        },
+        "733": {
+          "vnum": 733,
+          "name": "Perched on a Small Boulder",
+          "description": "Standing precariously atop an uncomfortably small boulder sticking out of the lake, you pray to whatever gods you know that your balance be true and the ground be solid. You have lost 2850 experience.",
+          "grid_x": 2,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 3540,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Centre of a Flat Rock",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3539,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Under the Pavilion",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "731": {
+          "vnum": 731,
+          "name": "Pitted Deck",
+          "description": "There are several spots that are clearly rotted away, but they are easy enough to avoid if you keep your wits about you. The ship lists badly for'ard, most of the forecastle submerged in the acidic depths. The bow cabins are still well above water, though they sit at an odd angle. On a plaque above the cabin door is the name of the old girl.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 730,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Huge Boulder",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 732,
+              "to_zone": "Belly of the Beast",
+              "to_room_name": "Captains Quarters",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3549": {
+          "vnum": 3549,
+          "name": "Road of Souls",
+          "description": "Countless transparent spectres shuffle past you, slack faced and silent, as though in a trance. They respond to no communication, and are completely intangible. Blankly they stare ahead, ceaselessly moving forward towards their inevitable consumption. Something about the futility of it all nags at your resolve, urging you to turn back while you still can.",
+          "grid_x": 0,
+          "grid_y": 30,
+          "exits": {},
+          "npcs": []
+        },
+        "3551": {
+          "vnum": 3551,
+          "name": "Tidy Office",
+          "description": "Everything seems to have a place in this immaculately neat office. Books on shelves are arranged both by size and alphabetical order. All furnishing is set parallel or at right angles with another piece, and every paper and folder on the large hardwood desk is stacked in neatly labeled piles.",
+          "grid_x": 0,
+          "grid_y": 45,
+          "exits": {},
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 3,
+        "min_y": -2,
+        "max_y": 240,
+        "room_count": 28
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 3539,
+      "to": 733,
+      "direction": "n",
+      "from_grid": [
+        2,
+        -1
+      ],
+      "to_grid": [
+        2,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3540,
+      "to": 3541,
+      "direction": "s",
+      "from_grid": [
+        3,
+        -2
+      ],
+      "to_grid": [
+        3,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 700,
+      "to": 701,
+      "direction": "ne",
+      "from_grid": [
+        -6,
+        3
+      ],
+      "to_grid": [
+        -5,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 701,
+      "to": 702,
+      "direction": "ne",
+      "from_grid": [
+        -5,
+        2
+      ],
+      "to_grid": [
+        -4,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 702,
+      "to": 704,
+      "direction": "n",
+      "from_grid": [
+        -4,
+        1
+      ],
+      "to_grid": [
+        -4,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 704,
+      "to": 705,
+      "direction": "e",
+      "from_grid": [
+        -4,
+        0
+      ],
+      "to_grid": [
+        -3,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 705,
+      "to": 706,
+      "direction": "e",
+      "from_grid": [
+        -3,
+        0
+      ],
+      "to_grid": [
+        -2,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 706,
+      "to": 707,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 707,
+      "to": 712,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 707,
+      "to": 708,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 708,
+      "to": 709,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 709,
+      "to": 712,
+      "direction": "n",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 709,
+      "to": 710,
+      "direction": "s",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 712,
+      "to": 713,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 713,
+      "to": 714,
+      "direction": "e",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        2,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 714,
+      "to": 715,
+      "direction": "n",
+      "from_grid": [
+        2,
+        0
+      ],
+      "to_grid": [
+        2,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 715,
+      "to": 716,
+      "direction": "e",
+      "from_grid": [
+        2,
+        -1
+      ],
+      "to_grid": [
+        3,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 716,
+      "to": 717,
+      "direction": "n",
+      "from_grid": [
+        3,
+        -1
+      ],
+      "to_grid": [
+        3,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 717,
+      "to": 718,
+      "direction": "e",
+      "from_grid": [
+        3,
+        -2
+      ],
+      "to_grid": [
+        4,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 717,
+      "to": 715,
+      "direction": "w",
+      "from_grid": [
+        3,
+        -2
+      ],
+      "to_grid": [
+        2,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 718,
+      "to": 722,
+      "direction": "e",
+      "from_grid": [
+        4,
+        -2
+      ],
+      "to_grid": [
+        5,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 719,
+      "to": 717,
+      "direction": "w",
+      "from_grid": [
+        3,
+        -3
+      ],
+      "to_grid": [
+        3,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 720,
+      "to": 721,
+      "direction": "w",
+      "from_grid": [
+        0,
+        15
+      ],
+      "to_grid": [
+        -1,
+        15
+      ],
+      "floor": 0
+    },
+    {
+      "from": 722,
+      "to": 723,
+      "direction": "n",
+      "from_grid": [
+        5,
+        -2
+      ],
+      "to_grid": [
+        5,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 723,
+      "to": 725,
+      "direction": "ne",
+      "from_grid": [
+        5,
+        -3
+      ],
+      "to_grid": [
+        6,
+        -4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 723,
+      "to": 724,
+      "direction": "se",
+      "from_grid": [
+        5,
+        -3
+      ],
+      "to_grid": [
+        6,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 726,
+      "to": 727,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 726,
+      "to": 729,
+      "direction": "ne",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 727,
+      "to": 728,
+      "direction": "w",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        -1,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 729,
+      "to": 730,
+      "direction": "n",
+      "from_grid": [
+        1,
+        -1
+      ],
+      "to_grid": [
+        1,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 730,
+      "to": 733,
+      "direction": "e",
+      "from_grid": [
+        1,
+        -2
+      ],
+      "to_grid": [
+        2,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 730,
+      "to": 731,
+      "direction": "w",
+      "from_grid": [
+        1,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 731,
+      "to": 732,
+      "direction": "w",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        -1,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 733,
+      "to": 3540,
+      "direction": "e",
+      "from_grid": [
+        2,
+        -2
+      ],
+      "to_grid": [
+        3,
+        -2
+      ],
+      "floor": 0
+    }
+  ]
+}

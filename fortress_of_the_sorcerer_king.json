@@ -1,0 +1,453 @@
+{
+  "zone_name": "Fortress of the Sorcerer King",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": -3,
+    "max_x": 0,
+    "min_y": -1,
+    "max_y": 21
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 2099,
+      "rooms": {
+        "2099": {
+          "vnum": 2099,
+          "name": "At The Green Shore",
+          "description": "Suddenly you stand at the edge of a tremendous moat. This can only be the fabled moat of the Sorceror King's fortress. He weaves powerful illusions to block sight of his home from a distance. The queerly green water laps against the shore with a clock's precision.",
+          "grid_x": -1,
+          "grid_y": 6,
+          "exits": {
+            "w": {
+              "to_vnum": 2100,
+              "to_zone": "Fortress of the Sorcerer King",
+              "to_room_name": "A Moat of the Darkest Green",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2100": {
+          "vnum": 2100,
+          "name": "A Moat of the Darkest Green",
+          "description": "The murky water laps rhythmically beneath your boat and continues to the shore as a peculiar shade of green. The whole scene feels very surreal. It doesn't really matter what way you go, but the shore looks to be just to your east.",
+          "grid_x": -2,
+          "grid_y": 6,
+          "exits": {
+            "nw": {
+              "to_vnum": 2101,
+              "to_zone": "Fortress of the Sorcerer King",
+              "to_room_name": "A Moat of the Darkest Green",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2101": {
+          "vnum": 2101,
+          "name": "A Moat of the Darkest Green",
+          "description": "The murky water laps rhythmically beneath your boat and continues to the shore as a peculiar shade of green. The whole scene feels very surreal. It doesn't really matter what way you go, for the shore looks equally far in every direction.",
+          "grid_x": -3,
+          "grid_y": 5,
+          "exits": {
+            "n": {
+              "to_vnum": 2102,
+              "to_zone": "Fortress of the Sorcerer King",
+              "to_room_name": "A Moat of the Darkest Green",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Alligator",
+              "description": "",
+              "unique": true
+            },
+            {
+              "name": "Black crocodile",
+              "description": "Its enormous size and girth fortunately make it a bit slower than you, and",
+              "unique": false
+            },
+            {
+              "name": "Ferocious tiger",
+              "description": "",
+              "unique": true
+            },
+            {
+              "name": "Grizzly bear",
+              "description": "",
+              "unique": true
+            },
+            {
+              "name": "Kappa",
+              "description": "live in moats and streams and in their spare time steal children.",
+              "unique": true
+            },
+            {
+              "name": "Schrangti",
+              "description": "You had considered them extinct!  What must be the last of its kind, the schrangti has traveled far over land and sea.  It is not a creature to",
+              "unique": true
+            }
+          ]
+        },
+        "2102": {
+          "vnum": 2102,
+          "name": "A Moat of the Darkest Green",
+          "description": "Your ship grinds to a halt aground on a rocky beach. A castle towers above a thin path leading up the shore. As you head up the path, howling gusts push at you and force you off shore.",
+          "grid_x": -3,
+          "grid_y": 4,
+          "exits": {
+            "u": {
+              "to_vnum": 2103,
+              "to_zone": "Fortress of the Sorcerer King",
+              "to_room_name": "At The Silvery Gates",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2103": {
+          "vnum": 2103,
+          "name": "At The Silvery Gates",
+          "description": "A pair of gates set into a fortress' walls gleam with a brilliant light. The silvery light does not seem to pierce the darkness beyond the entranceway. Genuine fear scrambles chillingly down your back.",
+          "grid_x": -3,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 2104,
+              "to_zone": "Fortress of the Sorcerer King",
+              "to_room_name": "The Maze of Mirrors",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2104": {
+          "vnum": 2104,
+          "name": "The Maze of Mirrors",
+          "description": "",
+          "grid_x": -2,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 2105,
+              "to_zone": "Fortress of the Sorcerer King",
+              "to_room_name": "The Main Hall",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Dancing sword",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "2105": {
+          "vnum": 2105,
+          "name": "The Main Hall",
+          "description": "A long banquet table covered in piles of food stretches around the curved hall. Though after having stared at yourself for so long in the Maze of Mirrors, you haven't much of an appetite. An equally long and beautiful carpet runs the length of the hall.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 2106,
+              "to_zone": "Fortress of the Sorcerer King",
+              "to_room_name": "The Festival Hall",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Swinging bastard sword",
+              "description": "Hrmm, you can't guarantee a stab at its back would hit anything vital. The sword mimics your stance and squares off with you.  En garde.",
+              "unique": true
+            }
+          ]
+        },
+        "2106": {
+          "vnum": 2106,
+          "name": "The Festival Hall",
+          "description": "Lamps and torches hang from the walls here lighting a magnificently tiled floor. The ceiling is decorated with colorful banners from wars long past. Moldy beer steins lay strewn about the hall adding to the air a pungent aroma. A swinging bastard sword floats in from the east.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 2108,
+              "to_zone": "Fortress of the Sorcerer King",
+              "to_room_name": "The Tournament Hall",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2105,
+              "to_zone": "Fortress of the Sorcerer King",
+              "to_room_name": "The Main Hall",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "sw": {
+              "to_vnum": 2109,
+              "to_zone": "Fortress of the Sorcerer King",
+              "to_room_name": "The Throne Room",
+              "direction": "sw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2107": {
+          "vnum": 2107,
+          "name": "The Entertainment Hall",
+          "description": "Tables with various sorts of board games covered with running games line the hallway. In the far west is a stage and a wooden rack of every sort of instrument you've heard of and several you haven't.",
+          "grid_x": -2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2105,
+              "to_zone": "Fortress of the Sorcerer King",
+              "to_room_name": "The Main Hall",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "se": {
+              "to_vnum": 2109,
+              "to_zone": "Fortress of the Sorcerer King",
+              "to_room_name": "The Throne Room",
+              "direction": "se",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Sultry concubine",
+              "description": "to match her smooth dark skin; deft and graceful command of the elements to match her piercing emerald gaze.  She will do anything to win the heart",
+              "unique": true
+            }
+          ]
+        },
+        "2108": {
+          "vnum": 2108,
+          "name": "The Tournament Hall",
+          "description": "Shelves of trophies line the walls and huge racks of ceremonial weapons are arranged in a circle in the center of the hall. Bales of hay for archery and torn remnants of combat dummies are scattered about.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "w": {
+              "to_vnum": 2106,
+              "to_zone": "Fortress of the Sorcerer King",
+              "to_room_name": "The Festival Hall",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2109": {
+          "vnum": 2109,
+          "name": "The Throne Room",
+          "description": "Two gem encrusted thrones shimmer from atop a velvet shrouded dais. Shimmering tapestries of far away places hang from walls and animal furs and skins line the floor.",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "nw": {
+              "to_vnum": 2107,
+              "to_zone": "Fortress of the Sorcerer King",
+              "to_room_name": "The Entertainment Hall",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Sorceror King",
+              "description": "had a hundred years to lose his sanity.  He wants you out of his castle.",
+              "unique": true
+            }
+          ]
+        },
+        "2110": {
+          "vnum": 2110,
+          "name": "Treasure Room",
+          "description": "The treasure glitters fantastically as it fades in and out of existance. Decaying corpses and no exit out make this room look as if it's used as a prison for those that would rob the Sorceror King. You have lost 3240 experience.",
+          "grid_x": 0,
+          "grid_y": 21,
+          "exits": {},
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -3,
+        "max_x": 0,
+        "min_y": -1,
+        "max_y": 21,
+        "room_count": 12
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 2099,
+      "to": 2100,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        6
+      ],
+      "to_grid": [
+        -2,
+        6
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2100,
+      "to": 2101,
+      "direction": "nw",
+      "from_grid": [
+        -2,
+        6
+      ],
+      "to_grid": [
+        -3,
+        5
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2101,
+      "to": 2102,
+      "direction": "n",
+      "from_grid": [
+        -3,
+        5
+      ],
+      "to_grid": [
+        -3,
+        4
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2103,
+      "to": 2104,
+      "direction": "e",
+      "from_grid": [
+        -3,
+        1
+      ],
+      "to_grid": [
+        -2,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2104,
+      "to": 2105,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        1
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2105,
+      "to": 2106,
+      "direction": "n",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2106,
+      "to": 2108,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2106,
+      "to": 2109,
+      "direction": "sw",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2107,
+      "to": 2105,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2107,
+      "to": 2109,
+      "direction": "se",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": 0
+    }
+  ]
+}

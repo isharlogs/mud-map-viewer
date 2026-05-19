@@ -1,0 +1,339 @@
+{
+  "zone_name": "City of Jular - Talrynian Forest",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": -2,
+    "max_x": 2,
+    "min_y": -2,
+    "max_y": 1
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 2868,
+      "rooms": {
+        "2868": {
+          "vnum": 2868,
+          "name": "At the Entrance to Jular",
+          "description": "The walls of the Talrynian capital stand proud and defiant, still strong after centuries of neglect. Massive doors, bound with heavy bands of iron, seal the city off to outsiders, and numerous spirits float aimlessly about, deep sunken eyes glaring at you with burning hatred.",
+          "grid_x": -2,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 2869,
+              "to_zone": "City of Jular - Talrynian Forest",
+              "to_room_name": "Within the Great Doors",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2869": {
+          "vnum": 2869,
+          "name": "Within the Great Doors",
+          "description": "You step cautiously into the city, glancing about for signs of danger. The great doors creak shut behind you, and the ominous sound of a key turning in the lock announces louder than words that you have been sealed within the city of Jular.",
+          "grid_x": -2,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 2870,
+              "to_zone": "City of Jular - Talrynian Forest",
+              "to_room_name": "Cobbled Road",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2870": {
+          "vnum": 2870,
+          "name": "Cobbled Road",
+          "description": "The destruction wrought by Hashak's armies is painfully obvious as you carefully step over mounds of rubble and shy away from crumbling buildings. Countless spirits phase into view around you, only to snap out of existence a moment later. A terrible wailing echoes from somewhere far inside the city, mourning eternally the loss of Jular to the savage hordes of Alestar.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2871,
+              "to_zone": "City of Jular - Talrynian Forest",
+              "to_room_name": "Cobbled Road",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2874,
+              "to_zone": "City of Jular - Talrynian Forest",
+              "to_room_name": "Within the Great Doors",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2871": {
+          "vnum": 2871,
+          "name": "Cobbled Road",
+          "description": "An enormous wooden structure on the side of the road sways dangerously in the whistling forest breezes, slowly toppling forward and then ponderously springing upright again. You stop for a moment to assess the building's condition, casting a judging glance over the whole affair, and decide it would probably be best to move on quickly before you become a permanent addition to the city.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2875,
+              "to_zone": "City of Jular - Talrynian Forest",
+              "to_room_name": "Between the Buildings",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2872,
+              "to_zone": "City of Jular - Talrynian Forest",
+              "to_room_name": "Cobbled Road",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2870,
+              "to_zone": "City of Jular - Talrynian Forest",
+              "to_room_name": "Cobbled Road",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2872": {
+          "vnum": 2872,
+          "name": "Cobbled Road",
+          "description": "The road narrows here as you approach the northern parts of the city, apparently the poorer half. Run down dwellings sit in shambles on either side of the street, and small lights wink at you from within darkened rooms. Anxious to be out of this place, you feel as though it would be best to press on.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 2873,
+              "to_zone": "City of Jular - Talrynian Forest",
+              "to_room_name": "Greatstone Monolith",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2871,
+              "to_zone": "City of Jular - Talrynian Forest",
+              "to_room_name": "Cobbled Road",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2873": {
+          "vnum": 2873,
+          "name": "Greatstone Monolith",
+          "description": "A towering stone block dominates this section of town, sealed by a casing of purest crystal. Peering carefully at the monolith, you can discern some small markings, but are unable to read them at this distance. You carefully walk around and are crestfallen to discover that the crystal encases it on all sides. The only apparent exit lies to the south.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "s": {
+              "to_vnum": 2872,
+              "to_zone": "City of Jular - Talrynian Forest",
+              "to_room_name": "Cobbled Road",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2874": {
+          "vnum": 2874,
+          "name": "Within the Great Doors",
+          "description": "You return to the city entrance, hoping that perhaps someone had unlocked the door while you were wandering about. Reaching forward to lift the bar, your heart sinks as you discover it is locked in place. It would appear that you'll have to find some other way to open the door.",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 2870,
+              "to_zone": "City of Jular - Talrynian Forest",
+              "to_room_name": "Cobbled Road",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2875": {
+          "vnum": 2875,
+          "name": "Between the Buildings",
+          "description": "You step into a small alley running perpendicular to the main avenue, gradually curving away from town and into the forest. A ramshackle building which has obviously seen better days slowly decays to the west, and the alley continues to the east.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2876,
+              "to_zone": "City of Jular - Talrynian Forest",
+              "to_room_name": "Shaded Trail",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2876": {
+          "vnum": 2876,
+          "name": "Shaded Trail",
+          "description": "Great oaks lean out over this path, blocking any light that might seek entry. The trail has been paved to the west, where it leads back to the city, and it gives way to a large clearing to the north. A strange sense of evil and horror afflicts you whenever you begin to step northward, and you stop to consider the wisdom of proceeding.",
+          "grid_x": 2,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 2875,
+              "to_zone": "City of Jular - Talrynian Forest",
+              "to_room_name": "Between the Buildings",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Ghostly talrynian defender",
+              "description": "and horror.  Grimly raising his hand, he moves to block the trail to the",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -2,
+        "max_x": 2,
+        "min_y": -2,
+        "max_y": 1,
+        "room_count": 9
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 2868,
+      "to": 2869,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        1
+      ],
+      "to_grid": [
+        -2,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2869,
+      "to": 2870,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2870,
+      "to": 2871,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2870,
+      "to": 2874,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2871,
+      "to": 2875,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2871,
+      "to": 2872,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2872,
+      "to": 2873,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2875,
+      "to": 2876,
+      "direction": "e",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        2,
+        0
+      ],
+      "floor": 0
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "zone_name": "Sea Dragon Lair - Undersea Caves",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": 0,
+    "max_x": 0,
+    "min_y": -1,
+    "max_y": 15
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 2961,
+      "rooms": {
+        "2960": {
+          "vnum": 2960,
+          "name": "Aqua Eerie",
+          "description": "The level of the floor is somewhat lower than that of the doorway. The room is filled with water which reaches to your knees. More water pours in through holes about halfway up the walls, but the water level in the room doesn't seem to be rising.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {
+            "s": {
+              "to_vnum": 2959,
+              "to_zone": "Sea Hag Coven - Undersea Caves",
+              "to_room_name": "Funnel`s Mouth",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Water weird",
+              "description": "It looks like a twisting, feverishly demented pillar of frothy brine. Wisps of mist spin off like translucent tentacles, only to be drawn back to",
+              "unique": true
+            }
+          ]
+        },
+        "2961": {
+          "vnum": 2961,
+          "name": "Smooth Passage",
+          "description": "You are moving along a smooth passage that leads north and south into darkness. You have lost 2520 experience.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 2962,
+              "to_zone": "Sea Dragon Lair - Undersea Caves",
+              "to_room_name": "Dragon`s Lair",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2962": {
+          "vnum": 2962,
+          "name": "Dragon`s Lair",
+          "description": "A rank, reptilian stench permeates this large, square chamber. Large bones, both old and fresh, are scattered about. A passage leads off to the south and you can see another chamber to the north.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Huge female dragon",
+              "description": "She is dark green as is her mate, and shares the same yellow eyes and sharp teeth.  The female of this species is much larger and more ferocious",
+              "unique": true
+            },
+            {
+              "name": "Sea-green dragon",
+              "description": "He is the dark green color of plankton rich sea.  His eyes are yellow and glare back at you angrily.  His teeth are also yellow and very sharp...",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": -1,
+        "max_y": 15,
+        "room_count": 3
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 2961,
+      "to": 2962,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    }
+  ]
+}

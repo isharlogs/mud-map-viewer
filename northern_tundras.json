@@ -1,0 +1,453 @@
+{
+  "zone_name": "Northern Tundras",
+  "floor_count": 2,
+  "bounds": {
+    "min_x": -1,
+    "max_x": 0,
+    "min_y": -1,
+    "max_y": 23
+  },
+  "floors": {
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 1152,
+      "rooms": {
+        "1152": {
+          "vnum": 1152,
+          "name": "Climbing the Cliff",
+          "description": "The path that winds up the mountainside is so narrow you can only shuffle along sideways, clinging desperately onto whatever handholds you can find on this unforgiving rock face. Blasts of cold wind threaten to dislodge you at any time, ice whipped viciously in your face.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "d": {
+              "to_vnum": 963,
+              "to_zone": "Northern Mountains",
+              "to_room_name": "High Mountain Pass",
+              "direction": "d",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 1153,
+              "to_zone": "Northern Tundras",
+              "to_room_name": "Edge of the Plateau",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1154,
+      "rooms": {
+        "1153": {
+          "vnum": 1153,
+          "name": "Edge of the Plateau",
+          "description": "You stand on the very edge of an icy plateau that seems to be the roof of the world itself. The clouds above seem closer than you have ever seen them, and the air is bitterly cold. The plateau extends north for endless miles, disappearing into the white void beyond. A tall stand of valerian sways gently, its pink flowers releasing a pungent odor.",
+          "grid_x": -1,
+          "grid_y": 23,
+          "exits": {
+            "n": {
+              "to_vnum": 1154,
+              "to_zone": "Northern Tundras",
+              "to_room_name": "In the Blizzards",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 1152,
+              "to_zone": "Northern Tundras",
+              "to_room_name": "Climbing the Cliff",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1154": {
+          "vnum": 1154,
+          "name": "In the Blizzards",
+          "description": "The winds are sharp and stinging, hurling painful gusts of snow and ice into your eyes. In every direction you look there is nothing but whiteness - you cannot see the sky, the horizon, or even your hand in front of your face. The blizzards howl mournfully as you stumble, blundering on into the cold. The sharp winds blast you with snow, blinding you to your direction.",
+          "grid_x": -1,
+          "grid_y": 22,
+          "exits": {
+            "n": {
+              "to_vnum": 1156,
+              "to_zone": "Valley of Teralea",
+              "to_room_name": "Dark Cave",
+              "direction": "n",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1153,
+              "to_zone": "Northern Tundras",
+              "to_room_name": "Edge of the Plateau",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1155": {
+          "vnum": 1155,
+          "name": "Abandoned Camp",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": 22,
+          "exits": {
+            "w": {
+              "to_vnum": 1154,
+              "to_zone": "Northern Tundras",
+              "to_room_name": "In the Blizzards",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3685": {
+          "vnum": 3685,
+          "name": "The Frozen Waste",
+          "description": "The frigid temperature turns your breath into frosty plumes with every exhalation. The ground is littered with head-sized chunks of ice and rock which make the footing treacherous. A light dusting of snow blankets everything and the wind has sculpted it into small drifts in many places. There is a small escarpment to the south.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 971,
+              "to_zone": "Northern Tundras",
+              "to_room_name": "The Frozen Waste",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 970,
+              "to_zone": "Northern Tundras",
+              "to_room_name": "The Frozen Waste",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "966": {
+          "vnum": 966,
+          "name": "Mountain Pass",
+          "description": "You have entered a narrow pass between some mountains. It is getting rather narrow here but the way seems to open to the north and south. To the north you can see other mountains bulking against the sky; to the south the land seems flatter, more open.",
+          "grid_x": -1,
+          "grid_y": 6,
+          "exits": {
+            "n": {
+              "to_vnum": 967,
+              "to_zone": "Northern Tundras",
+              "to_room_name": "High Mountain Pass",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "967": {
+          "vnum": 967,
+          "name": "High Mountain Pass",
+          "description": "You are quite high now and the air is getting thin. Your breath leaps from your mouth in frosty plumes and your feet slip on occasional patches of ice. The trail makes a sudden jog to the east here.",
+          "grid_x": -1,
+          "grid_y": 5,
+          "exits": {
+            "e": {
+              "to_vnum": 968,
+              "to_zone": "Northern Tundras",
+              "to_room_name": "Base of the Slide",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Wandering barbarian",
+              "description": "This sad fellow looks to have lost all lust for life.  Probably exiled from the clan for refusing to eat raw meat, he wanders the tundra dejected",
+              "unique": true
+            }
+          ]
+        },
+        "968": {
+          "vnum": 968,
+          "name": "Base of the Slide",
+          "description": "You stand at the foot of a rough slide of rocks, dead trees, and various other debris. The slide is steep but passable and appears to flatten out about a hundred feet up. A narrow trail leads west.",
+          "grid_x": 0,
+          "grid_y": 5,
+          "exits": {
+            "u": {
+              "to_vnum": 969,
+              "to_zone": "Northern Tundras",
+              "to_room_name": "Escarpment",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "969": {
+          "vnum": 969,
+          "name": "Escarpment",
+          "description": "You stand on an escarpment looking down on a frozen wasteland of rocks and snow. There are mountains in the far distance to the north and a steep slide leads down and south from here.",
+          "grid_x": 0,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 3685,
+              "to_zone": "Northern Tundras",
+              "to_room_name": "The Frozen Waste",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Snow cat",
+              "description": "her unblinking gaze back to the tundra.",
+              "unique": true
+            }
+          ]
+        },
+        "970": {
+          "vnum": 970,
+          "name": "The Frozen Waste",
+          "description": "The frigid temperature turns your breath into frosty plumes with every exhalation. The ground is littered with head-sized chunks of ice and rock which make the footing treacherous. A light dusting of snow blankets everything and the wind has sculpted it into small drifts in many places. You see mountains in the distance to the north, south and east. Dark iron streaks run thick through the rock.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 1618,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Narrow Canyon",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1015,
+              "to_zone": "Dragon Caves",
+              "to_room_name": "Cramped Cave",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Ice worm",
+              "description": "pure white backdrop of the snow.  It resembles a snake more than it does a worm except for its face, which is featureless except for the wide, gaping maw.",
+              "unique": true
+            },
+            {
+              "name": "White tiger",
+              "description": "surroundings.  Its coat is snowy white and its eyes electric blue.   It",
+              "unique": true
+            }
+          ]
+        },
+        "971": {
+          "vnum": 971,
+          "name": "The Frozen Waste",
+          "description": "The frigid temperature turns your breath into frosty plumes with every exhalation. The ground is littered with head-sized chunks of ice and rock which make the footing treacherous. A light dusting of snow blankets everything and the wind has sculpted it into small drifts in many places. You see mountains in the distance to the south.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 970,
+              "to_zone": "Northern Tundras",
+              "to_room_name": "The Frozen Waste",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 970,
+              "to_zone": "Northern Tundras",
+              "to_room_name": "The Frozen Waste",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "965": {
+          "vnum": 965,
+          "name": "Tundra",
+          "description": "It is colder here and the predominant vegetation has changed to low bushes and coarse grass. There are occasional patches of snow but over all the travel is fairly easy. The way continues toward some mountains to the north.",
+          "grid_x": -1,
+          "grid_y": 7,
+          "exits": {
+            "n": {
+              "to_vnum": 966,
+              "to_zone": "Northern Tundras",
+              "to_room_name": "Mountain Pass",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 0,
+        "min_y": -1,
+        "max_y": 23,
+        "room_count": 11
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1153,
+      "to": 1154,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        23
+      ],
+      "to_grid": [
+        -1,
+        22
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1155,
+      "to": 1154,
+      "direction": "w",
+      "from_grid": [
+        0,
+        22
+      ],
+      "to_grid": [
+        -1,
+        22
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3685,
+      "to": 971,
+      "direction": "n",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3685,
+      "to": 970,
+      "direction": "w",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 965,
+      "to": 966,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        7
+      ],
+      "to_grid": [
+        -1,
+        6
+      ],
+      "floor": 0
+    },
+    {
+      "from": 966,
+      "to": 967,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        6
+      ],
+      "to_grid": [
+        -1,
+        5
+      ],
+      "floor": 0
+    },
+    {
+      "from": 967,
+      "to": 968,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        5
+      ],
+      "to_grid": [
+        0,
+        5
+      ],
+      "floor": 0
+    },
+    {
+      "from": 969,
+      "to": 3685,
+      "direction": "n",
+      "from_grid": [
+        0,
+        2
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 971,
+      "to": 970,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    }
+  ]
+}

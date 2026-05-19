@@ -1,0 +1,43 @@
+{
+  "zone_name": "Pulses with mana, augmenting magical reserves.",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": 0,
+    "max_x": 0,
+    "min_y": 0,
+    "max_y": 0
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 3152,
+      "rooms": {
+        "3152": {
+          "vnum": 3152,
+          "name": "Greater Arcane Font",
+          "description": "Effects: It gives you an abundance of arcane energy. (+6% Spell Points) Disenchant: 55 You are the owner of a black gemmed ring. It is shrouded in ancient mystery.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 1484,
+              "to_zone": "City of Mareldja",
+              "direction": "n",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    }
+  },
+  "edges": []
+}

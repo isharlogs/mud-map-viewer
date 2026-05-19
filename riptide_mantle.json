@@ -1,0 +1,35 @@
+{
+  "zone_name": "Riptide Mantle",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": 0,
+    "max_x": 0,
+    "min_y": 0,
+    "max_y": 0
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1142,
+      "rooms": {
+        "1142": {
+          "vnum": 1142,
+          "name": "Shadowdance",
+          "description": "Permanent Infravision (60 renown) Permanent Detect Invisibility (20 renown) Critical Strike Chance Tier 4 (80 renown) Save All Tier 2 (20 renown) Attack Tier 9 (60 renown) Speed Tier 7 (240 renown) Armor Class Tier 2 (4 renown) HP Heal Tier 6 (90 renown) Third Eye (20 renown) Endure Elements (30 renown) Water Affinity (30 renown) Class Expertise Tier 5 (120 renown) Melee Damage Tier 5 (180 renown) Feather Fall (30 renown)",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {},
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    }
+  },
+  "edges": []
+}

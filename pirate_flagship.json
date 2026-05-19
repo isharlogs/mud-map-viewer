@@ -1,0 +1,705 @@
+{
+  "zone_name": "Pirate Flagship",
+  "floor_count": 6,
+  "bounds": {
+    "min_x": -1,
+    "max_x": 6,
+    "min_y": -3,
+    "max_y": 165
+  },
+  "floors": {
+    "-5": {
+      "floor_id": -5,
+      "entry_vnum": 2753,
+      "rooms": {
+        "2753": {
+          "vnum": 2753,
+          "name": "The Cargo Hold",
+          "description": "Hundreds of barrels containing food, water, rum and other looted necessities for the long periods between ports are all packed together in a large, dark, damp room.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "u": {
+              "to_vnum": 2749,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "Below Deck",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Drunken pirate",
+              "description": "Stumbing through the door, holding an empty bottle of rum, is a drunken pirate. He squints at you as if trying to decide whether or not you're real.",
+              "unique": true
+            },
+            {
+              "name": "Gharzon",
+              "description": "Gharzon has a sleek, dark tail that starkly contrasts against his silver-scaled chest, displaying the scars of many battles. His commanding presence is amplified by his intense black eyes.",
+              "unique": true
+            },
+            {
+              "name": "Pirate jailer",
+              "description": "Appointed to watch over the prisoners by Captain Flynn, he obviously does",
+              "unique": true
+            },
+            {
+              "name": "Wretched slave",
+              "description": "Staring at you through sunken eyes is a broken man. Surely at one point he was a proud, free citizen. But after years of physical abuse, you can't even say with certainty what race he is.",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    },
+    "-4": {
+      "floor_id": -4,
+      "entry_vnum": 2749,
+      "rooms": {
+        "2749": {
+          "vnum": 2749,
+          "name": "Below Deck",
+          "description": "Rows upon rows of bunks hang from the ceiling here, creaking gently as the winds drifts through the room. Above it all is a stench that comes from a few score men being at sea for months at a time. You have lost 1080 experience.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "d": {
+              "to_vnum": 2753,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "The Cargo Hold",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "u": {
+              "to_vnum": 2745,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "Beneath the Jolly Roger",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Drowsy pirate",
+              "description": "It is said that no one looks more at peace than when they sleep and looking at this pirate slumber, you can't help but agree. Seeing him dream, he almost looks as if he wouldn't turn on his own mother.",
+              "unique": true
+            },
+            {
+              "name": "Elite pirate",
+              "description": "Selected to be a member of Flynn's elite crew, this man looks like he knows his way around his blade as well as the ship. He grins at you wickedly as you",
+              "unique": false
+            },
+            {
+              "name": "First mate",
+              "description": "covers a brutal scar, which shows above his left eye. He approaches you with the slow, deliberate care of a man confident in his ability to end you.",
+              "unique": true
+            },
+            {
+              "name": "Massive cook",
+              "description": "Squinting at you with beady eyes is a gargantuan mass of a man. He waddles",
+              "unique": true
+            },
+            {
+              "name": "Pirate",
+              "description": "You seem to have caught him in the middle of eating, he doesn't look very happy to have had his meal interrupted.",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    },
+    "-3": {
+      "floor_id": -3,
+      "entry_vnum": 2745,
+      "rooms": {
+        "2745": {
+          "vnum": 2745,
+          "name": "Beneath the Jolly Roger",
+          "description": "You are standing before a great oaken mast, bringing the mind the towering trees of the gnomish homeland. High above flies the Jolly Roger, waving ominously. Nina follows in from the port side.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "d": {
+              "to_vnum": 2749,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "Below Deck",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "u": {
+              "to_vnum": 2746,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "Climbing the Mast",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    },
+    "-2": {
+      "floor_id": -2,
+      "entry_vnum": 2746,
+      "rooms": {
+        "2746": {
+          "vnum": 2746,
+          "name": "Climbing the Mast",
+          "description": "Looking down, you've noticed that you have climbed to dizzying heights. A fall from here would not be good. A little ways above you sits the crow's nest and salvation.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "d": {
+              "to_vnum": 2745,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "Beneath the Jolly Roger",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "u": {
+              "to_vnum": 2747,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "Crow's Nest",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    },
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 2747,
+      "rooms": {
+        "2747": {
+          "vnum": 2747,
+          "name": "Crow's Nest",
+          "description": "You stand near the top of the oaken mast, towering high above the ship. Looking to the west, you see the J'rel boat, other than that all around you are calm waters, if not for the chaos far below, it might actually be a relaxing sight. A little ways above you flies the Jolly Roger.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {
+            "d": {
+              "to_vnum": 2746,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "Climbing the Mast",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "u": {
+              "to_vnum": 2748,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "Before the Jolly Roger",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "754": {
+          "vnum": 754,
+          "name": "The Bow",
+          "description": "You now stand at the bow of the ship. Looking forward you are momentarily distracted by the beauty created by the light-dappled water. Returning to your surroundings, you notice the ships figurehead just below you and some stairs leading to a slightly raised platform behind you.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {},
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 15,
+        "room_count": 2
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 2748,
+      "rooms": {
+        "2748": {
+          "vnum": 2748,
+          "name": "Before the Jolly Roger",
+          "description": "Before you, flapping in the wind, is the very emblem of pirates everywhere. It is attached to the mast through a series of ropes which look to have begun fraying.",
+          "grid_x": 0,
+          "grid_y": 135,
+          "exits": {
+            "d": {
+              "to_vnum": 2747,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "Crow's Nest",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2750": {
+          "vnum": 2750,
+          "name": "Officer's Mess",
+          "description": "A clear step up from the sorry state of the regular galley, this room is for when the officers come to eat. Chairs and tables are set up around the room and there's a direct window to the kitchen complete with a calling bell.",
+          "grid_x": 0,
+          "grid_y": 150,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Butler",
+              "description": "This is the post given to whichever sorry sap falls into the captain's displeasure. He was probably caught sleeping on the job.",
+              "unique": true
+            }
+          ]
+        },
+        "2751": {
+          "vnum": 2751,
+          "name": "Starboard Slave Galley",
+          "description": "Bolted to the starboard wall of the ship are dozens of chains and an equal number of oars. The room is abustle with the rustle of iron, the straining of wood and the crack of a whip.",
+          "grid_x": 0,
+          "grid_y": 165,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Captured slave",
+              "description": "Once a free citizen, this young man was captured and put to work on the",
+              "unique": true
+            },
+            {
+              "name": "Pirate overseer",
+              "description": "A pirate overseer is a mighty warrior. He appears to be of human origin. You will receive normal XP for killing him. This pirate has been charged with the responsibility of over seeing the captured slaves and he enjoys it thoroughly.",
+              "unique": false
+            }
+          ]
+        },
+        "2752": {
+          "vnum": 2752,
+          "name": "Port Slave Galley",
+          "description": "Bolted to the port wall of the ship are dozens of chains and an equal number of oars. The room is abustle with the rustle of iron, the straining of wood and the crack of a whip.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Pirate overseer",
+              "description": "A pirate overseer is a mighty warrior. He appears to be of human origin. You will receive normal XP for killing him. This pirate has been charged with the responsibility of over seeing the captured slaves and he enjoys it thoroughly.",
+              "unique": false
+            }
+          ]
+        },
+        "2754": {
+          "vnum": 2754,
+          "name": "Guest Quarters",
+          "description": "While not the nicest room on the ship, it is a definite step up from the pirate's quarters. A chipped cupboard that looks to be made of the same wood as the floorboards lies in the corner nearest the door while the guest hammock is opposite. What seems to be a porthole is covered in a thick layer of grime, allowing almost no light to pass yet water leaks in at a steady pace. Nina follows in from the port side.",
+          "grid_x": 0,
+          "grid_y": 30,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "J'relian magician",
+              "description": "wonder what would make him seek a contract with pirates.",
+              "unique": true
+            },
+            {
+              "name": "Mercenary guard",
+              "description": "Hired by the noble to guard against the chance of double-crossing from",
+              "unique": false
+            }
+          ]
+        },
+        "2755": {
+          "vnum": 2755,
+          "name": "Captain's Cabin",
+          "description": "Obviously the finest room on the ship. Spread across the floor is a plush Barcian rug, complimenting the deep cherry walls. In the far corner of the room is a grand bed with a sweeping canopy of midnight blue. A massive desk dominates the center of the room. An incredibly detailed map of the known world hangs above the desk. Nina follows in from forward.",
+          "grid_x": 0,
+          "grid_y": 45,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Pirate Lord, Flynn",
+              "description": "fine leather, he carries himself with a confidence that demands obedience. However, as you look into his eyes, you see a darkness that requires retribution.",
+              "unique": true
+            }
+          ]
+        },
+        "2756": {
+          "vnum": 2756,
+          "name": "Aft Port Side",
+          "description": "The hull curves starboard side as it approaches the stern. Looking over the railing, you see the ocean far below. Nina follows in from forward.",
+          "grid_x": 0,
+          "grid_y": 60,
+          "exits": {},
+          "npcs": []
+        },
+        "2757": {
+          "vnum": 2757,
+          "name": "Port Side",
+          "description": "Looking around you, you take in the whole pirate ship. Directly starboard is the mast, forward along the ship you see the helm on a slight rise and over the port side railing, the ocean stretches as far as you can see. Nina follows in from aft.",
+          "grid_x": 0,
+          "grid_y": 75,
+          "exits": {},
+          "npcs": []
+        },
+        "2758": {
+          "vnum": 2758,
+          "name": "Forward Port Side",
+          "description": "The hull as a slight curve to it as it approaches the bow. Looking over the railing, there is ocean for as far as the eye can see.",
+          "grid_x": 0,
+          "grid_y": 90,
+          "exits": {
+            "u": {
+              "to_vnum": 753,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "The Helm",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "745": {
+          "vnum": 745,
+          "name": "The Open Sea",
+          "description": "You are far from the sight of land. The endless expanse of water and the constant tossing of the waves make it impossible to move in a straight line. As you scan the surrounding waters, you see a small shape in the distant west. Nina follows in from the west.",
+          "grid_x": 3,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 744,
+              "to_zone": "The Ocean",
+              "to_room_name": "The Open Sea",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2167,
+              "to_zone": "The Ocean",
+              "to_room_name": "The Open Sea",
+              "direction": "n",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 746,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "The Open Sea",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "746": {
+          "vnum": 746,
+          "name": "The Open Sea",
+          "description": "The distant ship does not appear to be coming any closer. Waves crash around you and the ocean surrounds you on all sides. Nina follows in from the west.",
+          "grid_x": 2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 745,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "The Open Sea",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2167,
+              "to_zone": "The Ocean",
+              "to_room_name": "The Open Sea",
+              "direction": "n",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 747,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "The Open Sea",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "747": {
+          "vnum": 747,
+          "name": "The Open Sea",
+          "description": "The distant ship is still little more than a brown blob on the horizon, but it is a welcome change in the scenery. Waves crash around you and the ocean surrounds you on every other side. Nina follows in from the northwest.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 746,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "The Open Sea",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "nw": {
+              "to_vnum": 748,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "The Open Sea",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "748": {
+          "vnum": 748,
+          "name": "The Open Sea",
+          "description": "You are now close enough to the distant ship to be able to make out more detail. Your eyes are instantly drawn to the raised flag above the mast - the Jolly Roger. It's not too late to turn back now. Nina follows in from the west.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 747,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "The Open Sea",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 749,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "Before the Pirate Ship",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "749": {
+          "vnum": 749,
+          "name": "Before the Pirate Ship",
+          "description": "You made it to the edge of the pirate ship alive. Looking back you can see the bare outline of a coast. Turning your attention back to the ship, you notice a rope ladder lowered down the barnacle encrusted side. Nina follows down from above.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 748,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "The Open Sea",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 750,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "Aft Starboard Side",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "750": {
+          "vnum": 750,
+          "name": "Aft Starboard Side",
+          "description": "The hull curves port side as it approaches the stern. Looking over the railing, there is ocean for as far as the eye can see. You have lost 2520 experience.",
+          "grid_x": -1,
+          "grid_y": -3,
+          "exits": {
+            "go over": {
+              "to_vnum": 749,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "Before the Pirate Ship",
+              "direction": "go over",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "go portal": {
+              "to_vnum": 547,
+              "to_zone": "City of J'rel",
+              "to_room_name": "J'rel Square",
+              "direction": "go portal",
+              "is_cross_zone": true,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Elite pirate",
+              "description": "Selected to be a member of Flynn's elite crew, this man looks like he knows his way around his blade as well as the ship. He grins at you wickedly as you",
+              "unique": false
+            }
+          ]
+        },
+        "751": {
+          "vnum": 751,
+          "name": "Starboard Side",
+          "description": "To your left a great oaken mast raises from the deck of the ship like a massive tree. Looking over the railing, there is ocean for as far as the eye can see. Nina follows in from the port side.",
+          "grid_x": 0,
+          "grid_y": 105,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Burly deckhand",
+              "description": "keepiing the ship moving the right direction. Captain Flynn only hires the best, so he needs minimal direction from the second mate.",
+              "unique": false
+            }
+          ]
+        },
+        "752": {
+          "vnum": 752,
+          "name": "Forward Starboard Side",
+          "description": "The hull has a slight curve to it as it approaches the bow. Looking over the railing, there is ocean for as far as the eye can see.",
+          "grid_x": 0,
+          "grid_y": 120,
+          "exits": {
+            "u": {
+              "to_vnum": 753,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "The Helm",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "753": {
+          "vnum": 753,
+          "name": "The Helm",
+          "description": "You stand on a slightly raised platform near the front of the ship. Situated in the center is the steering wheel.",
+          "grid_x": 6,
+          "grid_y": 88,
+          "exits": {
+            "d": {
+              "to_vnum": 754,
+              "to_zone": "Pirate Flagship",
+              "to_room_name": "The Bow",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Burly deckhand",
+              "description": "keepiing the ship moving the right direction. Captain Flynn only hires the best, so he needs minimal direction from the second mate.",
+              "unique": false
+            },
+            {
+              "name": "Second mate",
+              "description": "Captain Flynn's second officer, the second mate has been placed in charge of manning the wheel. It looks like he lost one leg at some point and a wooden peg has been crudely attached in its place.",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 6,
+        "min_y": -3,
+        "max_y": 165,
+        "room_count": 18
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 745,
+      "to": 746,
+      "direction": "w",
+      "from_grid": [
+        3,
+        0
+      ],
+      "to_grid": [
+        2,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 746,
+      "to": 747,
+      "direction": "w",
+      "from_grid": [
+        2,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 747,
+      "to": 748,
+      "direction": "nw",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 748,
+      "to": 749,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": 0
+    }
+  ]
+}

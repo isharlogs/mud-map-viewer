@@ -1,0 +1,35 @@
+{
+  "zone_name": "Radiates a sharper, ghostly light",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": 0,
+    "max_x": 0,
+    "min_y": 0,
+    "max_y": 0
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 2806,
+      "rooms": {
+        "2806": {
+          "vnum": 2806,
+          "name": "Moderate Spirit Edge",
+          "description": "Effects: It gives you a better chance of striking a vicious blow. (+2% Critical) Disenchant: 75 You are the owner of a frosted blue dagger.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {},
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    }
+  },
+  "edges": []
+}

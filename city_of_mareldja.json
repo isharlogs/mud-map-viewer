@@ -1,0 +1,5424 @@
+{
+  "zone_name": "City of Mareldja",
+  "floor_count": 3,
+  "bounds": {
+    "min_x": -6,
+    "max_x": 12,
+    "min_y": -5,
+    "max_y": 106
+  },
+  "floors": {
+    "-2": {
+      "floor_id": -2,
+      "entry_vnum": 738,
+      "rooms": {
+        "2255": {
+          "vnum": 2255,
+          "name": "The Spirit Nexus",
+          "description": "A sacred chamber, enshrined within the heart of the cavern, is veiled in the dim glow of bioluminescent fungi and mineral formations that cast an ethereal light. Here, the walls are inscribed with deep, primal runes that seem to pulse with the shamanic energies that course through the earth's veins. The air is thick with the power of the elements, each breath a mixture of damp earth and the electric charge of a storm held at bay. In this secluded refuge, the whispers of ancestral spirits resonate, enveloping Shamans in the embrace of ages past.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 2254,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Elemental Threshold",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1742": {
+          "vnum": 1742,
+          "name": "City Dump",
+          "description": "Piles of scorched junk rise about you, smelling of sewage, ashes, and burning metal. The walls of junk form a circle through which you can view the sky. Underfoot is a rusted grate, which you could probably pry open with little effort. A grouchy dragon hoses the area with a blast of raging fire! A sword of the Faithful is consumed by the flames.",
+          "grid_x": 0,
+          "grid_y": 30,
+          "exits": {
+            "u": {
+              "to_vnum": 1314,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Dump Area",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2254": {
+          "vnum": 2254,
+          "name": "The Elemental Threshold",
+          "description": "The tapestry of nature's forces weave together here in a delicate balance. Veins of shimmering minerals embedded within the cavern walls emit a soft radiance, creating an interplay of light and shadow. Here, the essence of the ocean's breath and the heartbeat of the earth mingle, suffusing the air with a symphony of natural sounds and scents. Mist hovers over the ground, and the whispering echo of the sea's waves feels like the world itself is speaking in hushed tones.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2255,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Spirit Nexus",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 738,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Cliff Steps",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "738": {
+          "vnum": 738,
+          "name": "Cliff Steps",
+          "description": "The steps are wide and even, winding back and forth along the cliff face in tight zigzags. A railing offers some safety from the heights, for the fall is quite considerable. The stairway climbs the cliff heights toward the city and descends down to the beach several hundred feet below. Nina follows up from below.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "d": {
+              "to_vnum": 739,
+              "to_zone": "Western Mareldja Coast - City of Mareldja",
+              "to_room_name": "By the Cliff",
+              "direction": "d",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "e": {
+              "to_vnum": 2254,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Elemental Threshold",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 737,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Landing",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Mordian",
+              "description": "",
+              "unique": true
+            },
+            {
+              "name": "Serilla Festa",
+              "description": "Serilla regards you from the end of a long patrician nose.  She snaps",
+              "unique": true
+            },
+            {
+              "name": "Zephyr Warden",
+              "description": "A mass of ever-shifting winds forms the silhouette of the Zephyr Warden. Twisting leaves and whispered gusts tell tales of distant storms, as its core glows with the captured essence of a tempest's heart.",
+              "unique": true
+            }
+          ]
+        },
+        "1299": {
+          "vnum": 1299,
+          "name": "Beneath the Temple",
+          "description": "Sconced torches, mounted equidistant upon the curving stone walls, light a low, wide chamber beneath the temple plaza. An overwhelming scent drifts through the air, of musk and spice. Several squarish patterns of similar design are etched into the floor, bordered by rows of tiny candles. Stairs lead up and out of the chamber.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {
+            "e": {
+              "to_vnum": 1300,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Beneath the Temple",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 1298,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Temple Plaza",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1300": {
+          "vnum": 1300,
+          "name": "Beneath the Temple",
+          "description": "A palpable silence hangs low in the room, blocking out sound to those sleeping on the nearby orange cots. A table is set up with some simple supplies free to the weary traveller. A wooden doorway leads west.",
+          "grid_x": 1,
+          "grid_y": 15,
+          "exits": {
+            "w": {
+              "to_vnum": 1299,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Beneath the Temple",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Kindly priest",
+              "description": "about the basement adjusting cots, providing food and water and offering words of advice and encouragement.  A true man for others.",
+              "unique": true
+            }
+          ]
+        },
+        "3034": {
+          "vnum": 3034,
+          "name": "The Enchanting Crypt",
+          "description": "Veiled in perpetual twilight, this ancient crypt serves as a sanctum for necromantic enchantment. The air is thick with a chilling silence, broken only by the occasional drip of unseen moisture. Stone slabs line the walls, each carved with esoteric symbols and faintly glowing with necrotic energy. A narrow pathway leads back to the musty alcove to the north, while an archway to the east shrouds a deeper darkness within. Here, the boundary between the living and the dead seems to blur, as if inviting the curious to delve into the forbidden arts of disenchantment.",
+          "grid_x": 0,
+          "grid_y": 45,
+          "exits": {
+            "u": {
+              "to_vnum": 1315,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Musty Alcove",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 1,
+        "min_y": 0,
+        "max_y": 45,
+        "room_count": 7
+      }
+    },
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 737,
+      "rooms": {
+        "2": {
+          "vnum": 2,
+          "name": "The Inn of the Golden Vanity",
+          "description": "The inside of this inn is decorated to resemble the inside of a ship. Nautical instruments and seascapes hang from the wall, and a much battered figurehead rests in a corner, a plaque above gleaming of polished brass. A wooden staircase leads up to the second floor, and a doorway leading west heads into a bright red room out of which come waves of heated air. More hospitable options lie east into the common room, or outside toward one of the city concourses. Reception Polished brass lanterns give this room a cheery glow. A desk rests against the eastern wall, covered with books and accounts, and a large picture on the opposite wall affords a view of a wrecked ship lying on a beach, its hull smashed in. An open window behind the desk allows the sounds of the street to filter up from below.",
+          "grid_x": 4,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1608,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Common Area",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 960,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Painters Boulevard",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Earth",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 4,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Earth and Painters",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 1,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Reception",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "3": {
+          "vnum": 3,
+          "name": "Concourse of Earth",
+          "description": "Tall, stately trees line the concourse as it runs form the city center out To the north is a square building with an anchor attached to the outside. A sign hanging next to the door bears the picture of a wrecked ship. You are riding atop a well-bred horse.",
+          "grid_x": 4,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 209,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Gate of Earth",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Inn of the Golden Vanity",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 4,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Earth and Painters",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "4": {
+          "vnum": 4,
+          "name": "At Earth and Painters",
+          "description": "The Boulevard of Painters' stretches away north and south from you. Stately scarlet-leaved trees line the concourse, bearing a hard orange fruit. The concourse leads west toward the city and east toward the gates. Flik goes west. You follow Flik west. Concourse of Earth The Concourse of Earth runs from the center of the city to the eastern gate. To the north stands the library of Mareldja, filled with knowledge both old and new. To the south you see a park surrounded by an old stone wall and a wrought iron gate filled with birds and ivy.",
+          "grid_x": 3,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 3,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Earth",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 960,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Painters Boulevard",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 7,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Painters Boulevard",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 5,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Earth",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Madraelthon",
+              "description": "Madraelthon has been hired by the Chancellor to assist in removing vile murderers from town.  He appears quite up to the task; perhaps you should leave this one, and his followers, alone.",
+              "unique": false
+            }
+          ]
+        },
+        "5": {
+          "vnum": 5,
+          "name": "Concourse of Earth",
+          "description": "The Concourse of Earth runs from the center of the city to the eastern gate. To the north stands the library of Mareldja, filled with knowledge both old and new. To the south you see a park surrounded by an old stone wall and a wrought iron gate filled with birds and ivy. You are riding atop a well-bred horse.",
+          "grid_x": 1,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 4,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Earth and Painters",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 30,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Library Steps",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 8,
+              "to_zone": "Mareldjan Park - City of Mareldja",
+              "to_room_name": "Park Path",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 6,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Central Plaza",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "6": {
+          "vnum": 6,
+          "name": "Central Plaza",
+          "description": "You stand in the center of a spacious plaza, its periphery adorned with potted plants and carved stone benches. People stroll about you, clad in bright silks and chatting amongst themselves. A bronze seal at your feet declares you to be in Mareldja, Crown on the Water. A breeze tinged with salt and brine blows eastward, and shorebirds wheel and dive gracefully overhead. Four wide streets lead from the plaza at each of the compass points. Thurvun has granted you the relic: the Gloves of the Silent Shadow! Thurvun has granted you the relic: Shadowdance! Thurvun has granted you the relic: Riptide Mantle! As you grow in skill and cunning, the Gloves of the Silent Shadow resonate with your newfound strength. The silver skulls on the fingers glint ominously, and a surge of energy courses through your hands, Shadowdance pulses with power! Riptide Mantle surges with the power of the sea! Zephyr's silk hood vibrates as a tempestuous wind billows around you, heightening your instincts.",
+          "grid_x": 0,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 5,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Earth",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 534,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Fire",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 60,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Air",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 59,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Water",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "go portal": {
+              "to_vnum": 547,
+              "to_zone": "City of J'rel",
+              "to_room_name": "J'rel Square",
+              "direction": "go portal",
+              "is_cross_zone": true,
+              "is_portal": true
+            },
+            "u": {
+              "to_vnum": 546,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Magnificent Floating Platform",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Madraelthon",
+              "description": "Madraelthon has been hired by the Chancellor to assist in removing vile murderers from town.  He appears quite up to the task; perhaps you should leave this one, and his followers, alone.",
+              "unique": false
+            },
+            {
+              "name": "Morimaere",
+              "description": "Though daemon, she possesses many human features.  Her pale skin is covered in intricate black tattoos that pulse with power.  Long black hair frames a beautiful face with blood red eyes.  She grins at you, baring fang-like teeth.",
+              "unique": false
+            }
+          ]
+        },
+        "7": {
+          "vnum": 7,
+          "name": "Painters Boulevard",
+          "description": "So named for the public frescoes adorning the walls of some of the buildings in this area, the Painters' Boulevard is a collective portfolio of the city's artists, both good and bad. A small shop lies to the east, its outside a mixture of ships and heraldic symbols. The boulevard continues north and south.",
+          "grid_x": 3,
+          "grid_y": 3,
+          "exits": {
+            "e": {
+              "to_vnum": 2247,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Jansen`s Bargains",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 4,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Earth and Painters",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 994,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Dreams and Painters",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "528": {
+          "vnum": 528,
+          "name": "Road of Tears",
+          "description": "Grasslands stretch away to the south, moving rhythmically under the hand of a mild breeze. A large, black gate intersects the road to the north and the Road of Tears continues west.",
+          "grid_x": 4,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 527,
+              "to_zone": "The Road of Tears",
+              "to_room_name": "Road of Tears",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1283,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Before the Iron Gate",
+              "direction": "n",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 529,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Road of Tears",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "529": {
+          "vnum": 529,
+          "name": "Road of Tears",
+          "description": "The voices of insects and birds are strangely absent here, as if they too share the somber mood of this ebony road. The walls of Mareldja can be seen in the distance to the west and the road continues to the east.",
+          "grid_x": 3,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 528,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Road of Tears",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 214,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Road of Tears",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "530": {
+          "vnum": 530,
+          "name": "Outside the City",
+          "description": "You find yourself outside the Gate of Fire, at the edge of a small park. A path winds through the grass to the edge of the cliff to the north, and a well- worn road travels east and west around the outer walls. The Gate of Fire lies to the south, allowing passage into Mareldja.",
+          "grid_x": 0,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 213,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Outer Road",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 998,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Garden",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 531,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Gate of Fire",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3678,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Outer Road",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "531": {
+          "vnum": 531,
+          "name": "The Gate of Fire",
+          "description": "The Gate of Fire sits astride the Concourse of Fire and allows passage through Mareldja's northern wall. It is a simple affair of wood bound in iron braces. Tiles glazed with reds and oranges adorn the archway. The Concourse leads north into the city cemetery and south toward the central plaza.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 530,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Outside the City",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 532,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Fire",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Squawking seagull",
+              "description": "Dieting primarily on the small crustaceans who live in the shallows and beaches of the great sea, this grey and white bird squawks loudly as it wheels",
+              "unique": false
+            }
+          ]
+        },
+        "532": {
+          "vnum": 532,
+          "name": "Concourse of Fire",
+          "description": "Trees bearing bright blue blossoms alternated with globes atop carved iron poles line the Concourse of Fire. The way extends north toward the gate and south toward a large open plaza. Gaily colored flowers in window boxes decorate houses built from great blocks of dusty beige stone.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 531,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Gate of Fire",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 533,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Market Square",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "533": {
+          "vnum": 533,
+          "name": "Market Square",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 956,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Avenue of Eternity",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 532,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Fire",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 534,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Fire",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1900,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Avenue of Eternity",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Naryas",
+              "description": "Naryas is a lissom girl with brown hair and grey eyes.  She wanders the market, basket in hand.  An aroma of spiced beef rises from it.",
+              "unique": true
+            }
+          ]
+        },
+        "534": {
+          "vnum": 534,
+          "name": "Concourse of Fire",
+          "description": "The concourse runs north and ends to the south at a central plaza. On either side rise stately buildings. To the east is the library, and to the west is the temple. Through the pillars you can see something gleaming.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 30,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Library Steps",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 533,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Market Square",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 6,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Central Plaza",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1297,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Temple Plaza",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Sailor",
+              "description": "rolling gait and appears more at home on sea than on land.",
+              "unique": true
+            }
+          ]
+        },
+        "535": {
+          "vnum": 535,
+          "name": "Weapons Smith",
+          "description": "The shop is neat and clean. Daggers, knives, and smaller axes cover two tables near the entrance, and larger weapons are displayed upon the walls. A counter runs across the room to the west, and past it you can see a furnace and table scattered with tools.",
+          "grid_x": -1,
+          "grid_y": 5,
+          "exits": {
+            "e": {
+              "to_vnum": 62,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Air",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Waysl",
+              "description": "Covered with soot, he flashes you a smile filled with white teeth.  His broad chest gleams with perspiration from the forge.",
+              "unique": true
+            }
+          ]
+        },
+        "536": {
+          "vnum": 536,
+          "name": "Avenue of Dreams",
+          "description": "The Avenue of Dreams passes to the south of the palace. Through the tall, iron fence, you can watch the gardeners work on the grounds, trimming hedges and pulling weeds. A dome rises from the palace center, leafed in gold and shining in the light. The street runs east and west. You have lost 3360 experience.",
+          "grid_x": -1,
+          "grid_y": 4,
+          "exits": {
+            "e": {
+              "to_vnum": 61,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Dreams and Air",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 537,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Dreams and Sorrows",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Madraelthon",
+              "description": "Madraelthon has been hired by the Chancellor to assist in removing vile murderers from town.  He appears quite up to the task; perhaps you should leave this one, and his followers, alone.",
+              "unique": false
+            },
+            {
+              "name": "Stray dog",
+              "description": "lolls from a canine mouth.",
+              "unique": false
+            }
+          ]
+        },
+        "537": {
+          "vnum": 537,
+          "name": "At Dreams and Sorrows",
+          "description": "The Avenue of Dreams meets with the Street of Sorrows, forming an elbow leading east and north. Brightly garbed inhabitants and exotic foreigners pass you under buildings of solid dusty stone. Laughter floats from a building to the south, and the sounds of a smithy to the west. con gru l gru",
+          "grid_x": -2,
+          "grid_y": 4,
+          "exits": {
+            "e": {
+              "to_vnum": 536,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Avenue of Dreams",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1301,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Street of Sorrows",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 538,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Steel Helm",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1312,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Farath`s Armory",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Arn Dravak",
+              "description": "Massively built, Arn eyes you calmly with the sure confidence of superior strength.  He stands about 6'8\" and weighs over three hundred",
+              "unique": true
+            },
+            {
+              "name": "City guard captain",
+              "description": "and benevolence as he wanders the city streets, protecting the innocent and",
+              "unique": true
+            },
+            {
+              "name": "Hired guard",
+              "description": "He eyes you warily and rests his hands on the haft of a thick cudgel at his hip. He looks quite experienced at his job.",
+              "unique": false
+            }
+          ]
+        },
+        "538": {
+          "vnum": 538,
+          "name": "The Steel Helm",
+          "description": "The bar is packed with fighter types smelling of sweat and steel and talking about the finer points of bash and parry. Tables bear the carved names of legends and all those who aspire to glory. The Steel Helm caters to members of the Guild of Fighters, providing a place to relax after practice sessions or catch up on the local gossip.",
+          "grid_x": -2,
+          "grid_y": 5,
+          "exits": {
+            "e": {
+              "to_vnum": 539,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Helm's Common Room",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 537,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Dreams and Sorrows",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2248,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Practice Yard",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2134,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Steel Helm",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Erin",
+              "description": "As fiery as her hair, Erin stands third in the Sword Guild, just behind Bartek and Arn.  Although she no longer adventures actively, her reflexes and her sword are as sharp as ever.",
+              "unique": true
+            }
+          ]
+        },
+        "539": {
+          "vnum": 539,
+          "name": "The Helm's Common Room",
+          "description": "Heavy oaken tables lay scattered about the room surrounded by chairs and benches, all facing the direction of an elevated stage on the eastern side. Various weapons and shields decorate the walls and groups of adventurers sit around tables chatting.",
+          "grid_x": -1,
+          "grid_y": 6,
+          "exits": {
+            "w": {
+              "to_vnum": 538,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Steel Helm",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Group of adventurers",
+              "description": "A group of adventuerers crowd one of the tables in the room and appear to be having a grand ol' time. One of them pinches the backside of a passing serving maid while the rest play at dice and carouse loudly.",
+              "unique": true
+            },
+            {
+              "name": "Guild member",
+              "description": "One of the younger guild members sits alone at a table, staring morosely into a cup of spiced wine. You wonder if he's okay...",
+              "unique": false
+            }
+          ]
+        },
+        "540": {
+          "vnum": 540,
+          "name": "Concourse of Air",
+          "description": "The city of Mareldja sits like a crown atop the cliff. A stiff breeze blows inland, smelling of salt and fish. Down on the harbor you can see the sails of merchant ships and pleasure craft. The Concourse of Air slopes steeply down to the docks and climbs up to the city proper. A seedy looking tavern sits to the south, and you see, hear, and smell stables to the north.",
+          "grid_x": -1,
+          "grid_y": 8,
+          "exits": {
+            "e": {
+              "to_vnum": 66,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Air",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2723,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Stables",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2723,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Stables",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2136,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Harbor",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "541": {
+          "vnum": 541,
+          "name": "The Cup and Tippler",
+          "description": "A cracked picture of a merry drunk sitting astride a barrel of ale hangs above the bar. Tables are close and crowded, and not very clean. The clientele is a rough lot consisting of sailors and local toughs. Several eye you speculatively.",
+          "grid_x": -1,
+          "grid_y": 9,
+          "exits": {
+            "n": {
+              "to_vnum": 540,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Air",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 542,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At the Bar",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Predatory-looking man",
+              "description": "The man says, \"You need some extra muscle?  Come to me.\"",
+              "unique": true
+            }
+          ]
+        },
+        "542": {
+          "vnum": 542,
+          "name": "At the Bar",
+          "description": "You find yourself crowded on both sides by unsavory looking characters. The bar consists of a few long planks covered with a dark, sticky layer. Odd looking bottles line the wall behind, some covered in dust but none of them very clean.",
+          "grid_x": -1,
+          "grid_y": 10,
+          "exits": {
+            "n": {
+              "to_vnum": 541,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Cup and Tippler",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Inconspicuous man",
+              "description": "hand.  He glances quickly about the room, his gaze sweeping over you more than once.  Looking at you, he motions you over with a slight nod of his head.",
+              "unique": true
+            }
+          ]
+        },
+        "30": {
+          "vnum": 30,
+          "name": "Library Steps",
+          "description": "The steps to the library are wide and shallow, containing bits of glass which sparkle in the light. The library is a plain structure, built of massive stone blocks that look as if they will withstand the ages. The steps lead down to the west and south, and a large wooden door to the east leads into the library.",
+          "grid_x": 1,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1282,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Library",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 5,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Earth",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 534,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Fire",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1570": {
+          "vnum": 1570,
+          "name": "Palace Gates",
+          "description": "",
+          "grid_x": -1,
+          "grid_y": 3,
+          "exits": {
+            "n": {
+              "to_vnum": 59,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Water",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1571,
+              "to_zone": "Royal Palace of Mareldja - City of Mareldja",
+              "to_room_name": "Palace Entrance",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1667,
+              "to_zone": "Mareldjan Guard Barracks - City of Mareldja",
+              "to_room_name": "Before the Barracks",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "59": {
+          "vnum": 59,
+          "name": "Concourse of Water",
+          "description": "The Concourse of Water bustles with pedestrian traffic to and from the palace to the south and the temple to the north. The concourse becomes a large plaza to the east and continues west toward the city gates. White pigeons wander underfoot, cooing and looking for crumbs. You are riding atop a well-bred horse.",
+          "grid_x": -1,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 6,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Central Plaza",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1297,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Temple Plaza",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1570,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Palace Gates",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 734,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Water and Sorrows",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Merchant",
+              "description": "",
+              "unique": true
+            },
+            {
+              "name": "Peasant",
+              "description": "",
+              "unique": true
+            },
+            {
+              "name": "Pigeon",
+              "description": "",
+              "unique": false
+            },
+            {
+              "name": "Scavenging waif",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "60": {
+          "vnum": 60,
+          "name": "Concourse of Air",
+          "description": "The Concourse of Air is a wide street lined with shady trees and globes atop carved iron poles. A palace rises to the west behind a fence, its design simple yet elegant. The concourse ends to the north at the central plaza and continues south toward the city gates. You are riding atop a well-bred horse.",
+          "grid_x": 0,
+          "grid_y": 3,
+          "exits": {
+            "n": {
+              "to_vnum": 6,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Central Plaza",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 61,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Dreams and Air",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Drunken warrior",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "61": {
+          "vnum": 61,
+          "name": "At Dreams and Air",
+          "description": "You are at the intersection between the Avenue of Dreams and the Concourse of Air. Inhabitants of the city pass you, conversing with one another and walking singly. A dog slinks across your path, and a hammering can be heard from the south, now faint, now loud. You are riding atop a well-bred horse.",
+          "grid_x": 0,
+          "grid_y": 4,
+          "exits": {
+            "e": {
+              "to_vnum": 997,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Avenue of Dreams",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 60,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Air",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 62,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Air",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 536,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Avenue of Dreams",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Pigeon",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "62": {
+          "vnum": 62,
+          "name": "Concourse of Air",
+          "description": "People brush past you clad in bright, flowing silks. From the shop to the west comes the sound of metal striking metal. Smoke pours from a sooty chimney and a sign over the doorway shows a pair of crossed halberds. The Concourse of Air passes through the city gate to the south and continues north toward the central plaza. An affluent-looking building stands to the east. You are riding atop a well-bred horse.",
+          "grid_x": 0,
+          "grid_y": 5,
+          "exits": {
+            "e": {
+              "to_vnum": 63,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Citybank",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 61,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Dreams and Air",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 64,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Gate of Air",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 535,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Weapons Smith",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Fool",
+              "description": "mindless.  You're not sure whether she's keyed into something profound or",
+              "unique": true
+            }
+          ]
+        },
+        "63": {
+          "vnum": 63,
+          "name": "Citybank",
+          "description": "The name inspires faith and trust in you, and you know that your savings will be safe here. The atmosphere of the room is cozy and self- satisfied. Well dressed tellers stand behind polished marble counters and await your business. The brass in the room bears no fingerprints.",
+          "grid_x": 1,
+          "grid_y": 5,
+          "exits": {
+            "s": {
+              "to_vnum": 62,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Air",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 62,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Air",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Well-dressed teller",
+              "description": "He looks very dapper in a silk striped robe and a pair of gold-rimmed spectacles.  His hands are long and dexterous as he handles the gold. You're sure that it takes lots of practice.  You wish you could learn too.",
+              "unique": true
+            }
+          ]
+        },
+        "64": {
+          "vnum": 64,
+          "name": "The Gate of Air",
+          "description": "The Gate of Air allows traffic to and from the southern part of Mareldja. painted with light blue and white whorls decorate the stone around the arch. A glowing fairy says, \"Going past these gates can prove to be dangerous.\"",
+          "grid_x": 0,
+          "grid_y": 6,
+          "exits": {
+            "n": {
+              "to_vnum": 62,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Air",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 65,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Outside the City",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "65": {
+          "vnum": 65,
+          "name": "Outside the City",
+          "description": "The Concourse of Air exits the city to the north and winds its way down to a cluster of buildings next to the harbor. Gulls drift back and forth on stiff wings, and the tang of brine is strong in the air. On either side of you rise the mansions of the noble and powerful of Mareldja, surrounded by high iron fences. You are riding atop a well-bred horse.",
+          "grid_x": 0,
+          "grid_y": 7,
+          "exits": {
+            "e": {
+              "to_vnum": 1915,
+              "to_zone": "Festa Manor - City of Mareldja",
+              "to_room_name": "Mansion Grounds",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 64,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Gate of Air",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 66,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Air",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 64,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Gate of Air",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "66": {
+          "vnum": 66,
+          "name": "Concourse of Air",
+          "description": "You follow the Concourse of Air as it travels north toward the city or west down to the harbor. Houses and mansions lie on either side of the road, though you can see that they get smaller as their distance from the city increases. Crossroads You stand just south of the southernmost end of the Concourse of Air. Looking north, you can see the Concourse leading toward the city of Mareldja. A country road heads east and the Coast road leads west.",
+          "grid_x": 0,
+          "grid_y": 8,
+          "exits": {
+            "e": {
+              "to_vnum": 68,
+              "to_zone": "Country Estates",
+              "to_room_name": "Country Road",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 65,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Outside the City",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 67,
+              "to_zone": "Country Estates",
+              "to_room_name": "Crossroads",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 540,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Air",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1608": {
+          "vnum": 1608,
+          "name": "Common Area",
+          "description": "People seated at tables about the room fill the air with quiet conversation. A large fire on the northern wall cooks a chunk of meat as a servant turns the spit. The wooden floor is swept clear of debris, and the tables are conscientiously wiped down.",
+          "grid_x": 5,
+          "grid_y": 1,
+          "exits": {
+            "w": {
+              "to_vnum": 2,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Inn of the Golden Vanity",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2132": {
+          "vnum": 2132,
+          "name": "The Green Tankard",
+          "description": "The common room is always filled with a mix of locals and travelers, who come to come to enjoy the friendly atmosphere, good food, and cold ale that the Green Tankard is known for. The room is often lively, with patrons chatting and laughing with each other, or engaging in games of chance or skill.",
+          "grid_x": -3,
+          "grid_y": 3,
+          "exits": {
+            "n": {
+              "to_vnum": 735,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Water",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2133,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Game Room",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Cassian",
+              "description": "Guard armor is dented and scratched, and he carries himself with an air of",
+              "unique": true
+            },
+            {
+              "name": "Grigs Grog",
+              "description": "Grigs says, \"What can I get you?\"",
+              "unique": true
+            },
+            {
+              "name": "Lucinde",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "2133": {
+          "vnum": 2133,
+          "name": "The Game Room",
+          "description": "The game room is a small, dingy space filled with tables and games. There are tables for cards, dice, and other games, as well as a billiards table and a dartboard. The room is filled with the sounds of laughter and curses, and the air is thick with the smells of tobacco and alcohol. Patrons can gamble or watch others play while enjoying a cheap drink. The atmosphere is rough and the stakes can be high.",
+          "grid_x": -4,
+          "grid_y": 4,
+          "exits": {
+            "w": {
+              "to_vnum": 2132,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Green Tankard",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Blackjack dealer",
+              "description": "and a sly smile. She moves with the grace and precision of a dancer as she shuffles and deals the cards, and her sharp mind is always one step ahead",
+              "unique": true
+            },
+            {
+              "name": "Gamblers",
+              "description": "room, gambling and chatting. They range from seasoned professionals to reckless novices, and are willing to risk their coin for money or",
+              "unique": true
+            },
+            {
+              "name": "Orwin",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "2134": {
+          "vnum": 2134,
+          "name": "The Steel Helm",
+          "description": "The polished wooden surface of the bar gleams in the flickering light of several iron lanterns, which hang around the room. The air smells of sweat, leather, ale and whatever the kitchens prepared for today as the sounds of merriment and conversation surround you.",
+          "grid_x": -3,
+          "grid_y": 5,
+          "exits": {
+            "e": {
+              "to_vnum": 538,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Steel Helm",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Bran the Barkeep",
+              "description": "Bustling around the Steel Helm, this well-padded man has a ready smile",
+              "unique": true
+            },
+            {
+              "name": "Off-duty city guard",
+              "description": "The Steel Helm is a popular after patrol destination for many off-duty",
+              "unique": true
+            }
+          ]
+        },
+        "2136": {
+          "vnum": 2136,
+          "name": "Harbor",
+          "description": "Waves lap against the wooden quay, flecks of foam bobbing up and down. Ships rock gently in the water, and gulls scream overhead. To the north is the harbormaster's office. The Concourse of Air climbs up the cliff to the southern gate of Mareldja.",
+          "grid_x": -2,
+          "grid_y": 8,
+          "exits": {
+            "e": {
+              "to_vnum": 540,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Air",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3678": {
+          "vnum": 3678,
+          "name": "The Outer Road",
+          "description": "The road runs around the city perimeter, heading east toward the northern gate and south along the western wall. The grass on the cliff is a deep and brilliant green, filled with small yellow and blue flowers.",
+          "grid_x": -1,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 530,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Outside the City",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3679,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Cantilevered Launch",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3679": {
+          "vnum": 3679,
+          "name": "The Cantilevered Launch",
+          "description": "An open field has had its grass cut, or trampled, and presses to the edge of the ragged cliff's edge. A strange wooden boardwalk begins nearby and runs directly to the edge 50 feet away, and continues smoothly out into free space another 30 feet with a rough truss supporting it from below.",
+          "grid_x": -2,
+          "grid_y": -3,
+          "exits": {
+            "s": {
+              "to_vnum": 3678,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Outer Road",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2153": {
+          "vnum": 2153,
+          "name": "Orca Sanctuary",
+          "description": "Deep beneath the ocean's surface, this sanctuary offers a serene and protected environment for orcas to thrive. The water here is illuminated by the soft glow of bioluminescent plants and corals. Scattered throughout the sanctuary are numerous underwater grottos and caves, providing orcas with safe spaces to retreat, rest, and raise their young.",
+          "grid_x": 0,
+          "grid_y": 25,
+          "exits": {
+            "u": {
+              "to_vnum": 2152,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Sparse Kelp Forests",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2168": {
+          "vnum": 2168,
+          "name": "Inside the Coastal Watchtower",
+          "description": "The base of the watchtower perfectly portrays the primary function of its construction: Efficiency. A large map can be seen against the south wall of the watchtower littered with several pins and markings. A simple wooden staircase offers a way to ascend the watchtower, and the vestibule extends to the north. The door exits out to the Concourse of Water's massive gate.",
+          "grid_x": -6,
+          "grid_y": 3,
+          "exits": {
+            "n": {
+              "to_vnum": 2171,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Coastal Watchtower Lobby",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 737,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Landing",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 2169,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Coastal Watchtower Staircase Landing",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2169": {
+          "vnum": 2169,
+          "name": "Coastal Watchtower Staircase Landing",
+          "description": "The staircase ascends to a landing surrounded by windows, or descends to the base of the tower that offers an exit to the Concourse. Only a couple torch sconces are placed along the wall next to the landing. A large window overlooks the city to the east.",
+          "grid_x": 12,
+          "grid_y": 8,
+          "exits": {
+            "d": {
+              "to_vnum": 2168,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Inside the Coastal Watchtower",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "u": {
+              "to_vnum": 2170,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Coastal Watchtower Lookout",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2171": {
+          "vnum": 2171,
+          "name": "Coastal Watchtower Lobby",
+          "description": "A massive table stands in the center of the room absent of chairs. It appears this extent of the building was designed for the sole purpose of brief collaboration between officials and dispatching. The walls are bare, devoid of any windows or notable decor. A couple shelves against the back wall are stacked with stationery, ink pens and a variety of other mundane accessories. The lobby extends south to a massive doorway and a wooden staircase.",
+          "grid_x": -6,
+          "grid_y": 1,
+          "exits": {
+            "s": {
+              "to_vnum": 2168,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Inside the Coastal Watchtower",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1672": {
+          "vnum": 1672,
+          "name": "Street of Sorrows",
+          "description": "The Street of Sorrows stretches out to the south and ends a little way to the north. To the west is a small shop with a picture of an open trunk on the sign before it. Brightly clad people pass you, heading north or south along the thoroughfare. You are riding atop a well-bred horse.",
+          "grid_x": -4,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 1673,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Eternity and Sorrows",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 734,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Water and Sorrows",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2463,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Borash`s General Supplies",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1673": {
+          "vnum": 1673,
+          "name": "At Eternity and Sorrows",
+          "description": "The Avenue of Eternity meets with the Street of Sorrows to form an elbow bending east and south. A stray tabby cat yowls beseechingly by your feet, and an ocean breeze sighs against your face. A stone well sits in the street center, carved with whorls and fish.",
+          "grid_x": -4,
+          "grid_y": 0,
+          "exits": {
+            "d": {
+              "to_vnum": 1674,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Well Bottom",
+              "direction": "d",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "e": {
+              "to_vnum": 1900,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Avenue of Eternity",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2246,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Wheel of Bread",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1672,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Street of Sorrows",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1684": {
+          "vnum": 1684,
+          "name": "Worn Trail",
+          "description": "The forest bulks large and gloomy to the east. Strange cries and soft, whispering moans occasionally come faintly from the wooded depths. The passage of your feet raises small clouds of dust from the road's packed and even surface. The road travels east to west. You are riding atop a well-bred horse.",
+          "grid_x": 7,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 1322,
+              "to_zone": "Western Jharet Forest - Jharet Forest",
+              "to_room_name": "The Edge of the Forest",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 210,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Outside the City",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1685": {
+          "vnum": 1685,
+          "name": "Weedy Track",
+          "description": "Unkempt weeds reach as high as your waist as you move along this rarely traveled road. Mareldja's outer wall bounds you on the west and looms high above your head. To the north you can see the eastern city gate while southward, the trail disappears into the choking vegetation.",
+          "grid_x": 6,
+          "grid_y": 3,
+          "exits": {
+            "n": {
+              "to_vnum": 210,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Outside the City",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1686,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Weedy Track",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1686": {
+          "vnum": 1686,
+          "name": "Weedy Track",
+          "description": "The weeds and brush are so thick that the trail you are following seems to be mostly imaginary. The imaginary trail seems a little more passable to the north and the east.",
+          "grid_x": 6,
+          "grid_y": 4,
+          "exits": {
+            "e": {
+              "to_vnum": 1687,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Dense Thicket",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1685,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Weedy Track",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1687": {
+          "vnum": 1687,
+          "name": "Dense Thicket",
+          "description": "You have come upon a thicket, densely populated with young birch trees. A few large oaks and elms block out parts of the sky, but that is only at the edges of the thicket. A weed-choked trail leads to the west and to the east is what looks to be a small clearing.",
+          "grid_x": 7,
+          "grid_y": 4,
+          "exits": {
+            "e": {
+              "to_vnum": 1688,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Clearing",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1686,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Weedy Track",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1688": {
+          "vnum": 1688,
+          "name": "Clearing",
+          "description": "",
+          "grid_x": 8,
+          "grid_y": 4,
+          "exits": {
+            "e": {
+              "to_vnum": 2278,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Clapboard Shack",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1689,
+              "to_zone": "Mareldjan Gardens - City of Mareldja",
+              "to_room_name": "Entrance to the Garden",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1687,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Dense Thicket",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2723": {
+          "vnum": 2723,
+          "name": "Stables",
+          "description": "The warm, organic smell of manure surrounds you in this open building, and your feet rustle against the straw and feathers littering the ground. Stalls containing different kinds of mounts extend out in rows.",
+          "grid_x": -1,
+          "grid_y": 7,
+          "exits": {
+            "s": {
+              "to_vnum": 540,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Air",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Denmar the stablehand",
+              "description": "Denmar has flaxen hair and bright, green eyes.  Day old stubble dots his chin, and he chews absentmindedly on his lower lip.  He looks rather",
+              "unique": true
+            }
+          ]
+        },
+        "2246": {
+          "vnum": 2246,
+          "name": "The Wheel of Bread",
+          "description": "The smell of baking bread makes your mouth water. A counter displays several types, ranging from small loaves to wheels of rye and sourdough. Flour seems to coat everything like dust.",
+          "grid_x": -4,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 1673,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Eternity and Sorrows",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Sarse",
+              "description": "Sarse is a large-boned woman in her late thirties.  Red hair is tied back from her face with a faded green scarf.  Her skin and clothing are dusted with a light coating of flour.",
+              "unique": true
+            }
+          ]
+        },
+        "2247": {
+          "vnum": 2247,
+          "name": "Jansen`s Bargains",
+          "description": "This shop is low and cluttered with various items, from swords to shields to cloaks to shoes. Light from an open window highlights the dust on the tables. Bright bits of paper attached to glasses, rings, boots, and weapons scream out their prices. A sign over the counter says in large letters, \"Jansen's Bargains: Best Prices in Town\".",
+          "grid_x": 4,
+          "grid_y": 3,
+          "exits": {
+            "s": {
+              "to_vnum": 7,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Painters Boulevard",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 7,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Painters Boulevard",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Jansen",
+              "description": "Jansen is a seedy man with narrow eyes and a thin mouth.  The rank smell of unwashed body hangs about him like a cloak, and you can almost *see*",
+              "unique": true
+            }
+          ]
+        },
+        "2248": {
+          "vnum": 2248,
+          "name": "Practice Yard",
+          "description": "An assortment of weapons, real and practice, fill portable racks along the outside wall. The ground is packed earth, trodden smooth by hundreds of booted feet. A canopy of oilcloth supported by high beams keeps the rain and beating sun from those who would better their martial skills.",
+          "grid_x": -2,
+          "grid_y": 6,
+          "exits": {
+            "n": {
+              "to_vnum": 538,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Steel Helm",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2249": {
+          "vnum": 2249,
+          "name": "Back Room",
+          "description": "Acting as a supply room for the Guild of Thieves, this room has a little of everything. Crates and boxes are stacked haphazardly along the walls. An assortment of hats lies in the corner, and a tray of disguising cosmetics sits balanced upon a box marked \"pocketed garments\". A curtained doorway stands to the south and another leads east to the shop.",
+          "grid_x": 3,
+          "grid_y": 7,
+          "exits": {
+            "e": {
+              "to_vnum": 1744,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Fenric`s Surplus",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2250,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Instruction Room",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2250": {
+          "vnum": 2250,
+          "name": "Instruction Room",
+          "description": "Various keys, picks, and practice locks lie atop a table positioned along the far wall, looking oiled and well used. A chest with a false bottom sits dismantled by the doorway, and lead-filled coins lie in a pile beside it. Light from a magical globe shines down upon you, illuminating everything in a quiet light.",
+          "grid_x": 3,
+          "grid_y": 8,
+          "exits": {
+            "n": {
+              "to_vnum": 2249,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Back Room",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2251": {
+          "vnum": 2251,
+          "name": "Chamber of Bones",
+          "description": "This stone chamber is dominated by a large obsidian dias that lies at its center, covered with etched runes of wicked import. A massive chandelier of intricately carved bone dangles from the ceiling, providing just enough flickering candlelight to permit study of any necromantic texts you might wish to peruse during your stay in this dank room of death. A rickety blackened sign hangs from a wall.",
+          "grid_x": 5,
+          "grid_y": 4,
+          "exits": {
+            "w": {
+              "to_vnum": 1315,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Musty Alcove",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2252": {
+          "vnum": 2252,
+          "name": "The Chamber of Stillness",
+          "description": "Books on every conceivable subject line the walls of this chamber, and an air of sanctity has settled like dust upon everything. Various holy vessels and symbols lie upon a rug, gleaming softly in the light. Spread out before the rug is a diagram of the universe.",
+          "grid_x": -3,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1302,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Priestly Compound",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2253,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Sanctum Sanctorum",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2253": {
+          "vnum": 2253,
+          "name": "Sanctum Sanctorum",
+          "description": "Blue tinged flames flicker over a small altar in the center of the room. You do not smell any smoke. Before the altar is draped a cloth of deep green velvet, embroidered with tiny silver leaves intertwined with holy symbols. A calmness lies about this room, and about your soul.",
+          "grid_x": -4,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 2252,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Chamber of Stillness",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1744": {
+          "vnum": 1744,
+          "name": "Fenric`s Surplus",
+          "description": "Fenric has his wares laid out on four wobbly tables, sorted by type. They look second hand, but serviceable for the most part. Flies buzz lazily overhead and a mangy dog lies in a corner. A doorway to the west leads to a back room, and another leads north to an alley.",
+          "grid_x": 4,
+          "grid_y": 6,
+          "exits": {
+            "e": {
+              "to_vnum": 2759,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Behind the Counter",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1313,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Narrow Alley",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2249,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Back Room",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Fenric",
+              "description": "Fenric is a burly guy with a beard and hair tied back in a sweaty bandana. Fenric says, \"Look, we buy and sell almost anything.\"",
+              "unique": true
+            },
+            {
+              "name": "Flanch",
+              "description": "Flanch manages to look indifferent while studying you very carefully. He is a nondescript person in threadbare brown and grey.  His face is",
+              "unique": true
+            }
+          ]
+        },
+        "210": {
+          "vnum": 210,
+          "name": "Outside the City",
+          "description": "Outside the Gate of Earth, the road winds eastward and downward to disappear into the Forest of Jharet a quarter mile away. To the west, the city of Mareldja crowns the cliff top, inviting you to enter and stay a while. You are riding atop a well-bred horse.",
+          "grid_x": 6,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 1684,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Worn Trail",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 211,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Outer Road",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1685,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Weedy Track",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 209,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Gate of Earth",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2256": {
+          "vnum": 2256,
+          "name": "The Chamber of Magic",
+          "description": "Bookshelves stuffed with books and arcane scrolls line the walls. In the corner is a desk piled high with inventory lists and mysterious curios. A globe suspended from the center of the room bathes the chamber in an eternal glow. A curtain to the west leads out to the shop area, and a stairway leads up to the second floor.",
+          "grid_x": 3,
+          "grid_y": -1,
+          "exits": {
+            "w": {
+              "to_vnum": 958,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Purple Flame",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 2257,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Inner Sanctum",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1745": {
+          "vnum": 1745,
+          "name": "The Enchanter's Study",
+          "description": "Dazzling lights hang around the room, bobbing gently in place. Rows upon rows of shelves line the walls, weighed down by countless objects of mystical importance. Robed students sit around and focus on various mundane items as they attempt to hone their enchantments under the watchful eye of an experienced guild member.",
+          "grid_x": 4,
+          "grid_y": 0,
+          "exits": {
+            "s": {
+              "to_vnum": 958,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Purple Flame",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "209": {
+          "vnum": 209,
+          "name": "The Gate of Earth",
+          "description": "Tiles glazed with earthy tones outline the gateway. Through it, the concourse enters the city to the west or heads out into the forest to the east. The forest covers the cliff as it drops, and looking out, you can see for a very long way. You are riding atop a well-bred horse. The sky lightens as Rymaras crosses the horizon. You have gained 1 karma.",
+          "grid_x": 5,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 210,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Outside the City",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Earth",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "214": {
+          "vnum": 214,
+          "name": "Road of Tears",
+          "description": "Sand grits under your feet as you move, making a slight grinding noise. In the distance to the north-east, you can see mountains raising their majestic heads against the sky. To your west, you can see the Outer Road running along the wall of Mareldja. The Road of Tears continues east. A path leads off through the grasses to the north.",
+          "grid_x": 2,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 529,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Road of Tears",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 215,
+              "to_zone": "The Hills North of Mareldja",
+              "to_room_name": "Trail North of Mareldja",
+              "direction": "n",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 213,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Outer Road",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "211": {
+          "vnum": 211,
+          "name": "The Outer Road",
+          "description": "Directly to the south, the road intersects with the Concourse of Earth as it Looking to the north, you can see how the cliff eventually ends and the land meets a blue, blue sky.",
+          "grid_x": 2,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 212,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Outer Road",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 210,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Outside the City",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "212": {
+          "vnum": 212,
+          "name": "The Outer Road",
+          "description": "Wide enough for two carts to pass each other, the road along the perimeter of Mareldja is hard and packed, filled with clay and tiny pebbles. The road runs north and south. To the east, you see the land carpeted in green as the cliff falls away to the Forest of Jharet. n n",
+          "grid_x": 1,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 213,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Outer Road",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 211,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Outer Road",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "213": {
+          "vnum": 213,
+          "name": "The Outer Road",
+          "description": "The walls of Mareldja are built from great blocks of beige stone, fitted together so precisely that the mortar never exceeds a half an inch in width. You think that it might even be unnecessary. The road continues to the west and south, following the perimeter of the city. Another road, paved with somber, black stones heads off to the east.",
+          "grid_x": 1,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 214,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Road of Tears",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 212,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Outer Road",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 530,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Outside the City",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "734": {
+          "vnum": 734,
+          "name": "At Water and Sorrows",
+          "description": "The Concourse of Water intersects with the Street of Sorrows, which runs from north to south. Upper level windows sport wooden boxes holding geraniums and snapdragons. Here and there a voice rings out in anger or in laughter, and people in bright silks pass you in the street. The concourse continues east and west. You are riding atop a well-bred horse. Jaxx is riding atop a well-bred horse.",
+          "grid_x": -2,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 59,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Water",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1672,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Street of Sorrows",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1301,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Street of Sorrows",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 735,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Water",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "City guard",
+              "description": "Clad in grey and a deep shade of turquoise, the guard walks the walls of Mareldja with a slow, measured tread.",
+              "unique": false
+            }
+          ]
+        },
+        "735": {
+          "vnum": 735,
+          "name": "Concourse of Water",
+          "description": "Laughter spills out from a building to your south where a green tankard is painted onto the sign above. A scruffy dog pokes its way through some garbage in a nearby alley, and gulls float lazily overhead. The concourse heads east and ends at the Gate of Water to the west. Nina follows in from the west.",
+          "grid_x": -3,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 734,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Water and Sorrows",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2132,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Green Tankard",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 736,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Gate of Water",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Lamplighter",
+              "description": "",
+              "unique": true
+            },
+            {
+              "name": "Stray dog",
+              "description": "lolls from a canine mouth.",
+              "unique": false
+            }
+          ]
+        },
+        "736": {
+          "vnum": 736,
+          "name": "The Gate of Water",
+          "description": "Ceramic tiles decorated with watery designs line the archway of this tiny gate. Out through the opening, you can see a landing at the edge of the cliff, and beyond it, the open sea. The Concourse of Water stretches out to the east, heading further into the city. Nina follows in from the west.",
+          "grid_x": -4,
+          "grid_y": 3,
+          "exits": {
+            "e": {
+              "to_vnum": 735,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Water",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 735,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Water",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 737,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Landing",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "go into": {
+              "to_vnum": 2168,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Inside the Coastal Watchtower",
+              "direction": "go into",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Madman",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "737": {
+          "vnum": 737,
+          "name": "Landing",
+          "description": "A wide landing sits at the top of a stairway heading down the cliff. Iron railings allow you to lean out and gaze at the sea, which glitters a deep turquoise far below. White shorebirds ride the currents above you, and you can hear the distant crash of the waves. The Gate of Water allows passage east into the city, and a road heads north around the outer walls. The gloves seem to meld into the shadows around you, your movements becoming nothing more than a whisper in the wind. Each step you take is light, effortless, as if the shadows themselves are guiding your path. You relax and return to a more normal gait.",
+          "grid_x": -5,
+          "grid_y": 3,
+          "exits": {
+            "e": {
+              "to_vnum": 736,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Gate of Water",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 738,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Cliff Steps",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Hired guard",
+              "description": "He eyes you warily and rests his hands on the haft of a thick cudgel at his hip. He looks quite experienced at his job.",
+              "unique": false
+            }
+          ]
+        },
+        "2278": {
+          "vnum": 2278,
+          "name": "Clapboard Shack",
+          "description": "A long counter runs the length of the room, its surface piled high with tanned furs and rough clothing. There is a pleasant smell in the air, one that reminds you of soft beds and warm fires on cold nights.",
+          "grid_x": 9,
+          "grid_y": 4,
+          "exits": {
+            "w": {
+              "to_vnum": 1688,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Clearing",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Furrier",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "1282": {
+          "vnum": 1282,
+          "name": "Library",
+          "description": "You are surrounded by books and scrolls, countless and diverse, of all shapes and subjects. The air in here has that dusty smell associated with books and paper. Light shines in from long, lancet windows. The exit lies to the west, and a doorway to the north leads to the archives.",
+          "grid_x": 2,
+          "grid_y": 2,
+          "exits": {
+            "w": {
+              "to_vnum": 30,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Library Steps",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Undertaker",
+              "description": "He is a grim, sallow faced chap as is fitting for one in his profession.",
+              "unique": true
+            }
+          ]
+        },
+        "1297": {
+          "vnum": 1297,
+          "name": "Temple Plaza",
+          "description": "The temple plaza is paved with red and brown cobblestones, all laid out in an intricate pattern. The plaza stretches magnificently to the north. Off to the west are the priests' and clerics' quarters. The Concourse of Fire lies to the east and the Concourse of Water to the south.",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 534,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Fire",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1298,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Temple Plaza",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 59,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Concourse of Water",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1302,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Priestly Compound",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Cityguard trainee",
+              "description": "and benevolence as he wanders the city streets, protecting the innocent and",
+              "unique": true
+            }
+          ]
+        },
+        "1298": {
+          "vnum": 1298,
+          "name": "Temple Plaza",
+          "description": "A winding cobblestone path meanders past sprawling gardens and bubbling fountains, terminating near an expanse of brightly colored tile, where a worn stretch of thick carpeting descends down a series of marble steps into an incensed basement. To the north, a magnificent black marble building rises majestically, its intricate details and striking dome catching the eye. Ceramic tiled steps lead west to the temple altar and you can see something gleaming from within. The temple plaza leads back out to the south.",
+          "grid_x": -2,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 1304,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Before the Mausoleum",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1297,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Temple Plaza",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1303,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Crystal Altar",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 1299,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Beneath the Temple",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1301": {
+          "vnum": 1301,
+          "name": "The Street of Sorrows",
+          "description": "The Street of Sorrows runs north and south. To the east is an old stone house, decayed and deserted. People pass you, singly or in pairs, going about their daily business. Bright silk whispers against dusty stone, and the smell of the sea is present in the air.",
+          "grid_x": -2,
+          "grid_y": 3,
+          "exits": {
+            "e": {
+              "to_vnum": 734,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Water and Sorrows",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 734,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Water and Sorrows",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 537,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Dreams and Sorrows",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1302": {
+          "vnum": 1302,
+          "name": "Priestly Compound",
+          "description": "The compound is spacious but sparse. Frescoes around the walls depict the gods and goddesses of the realm. A table near the entranceway holds several books of chants and prayers. Smoke from a cone of incense twirls lazily up toward the ceiling. The plaza lies to the east, and a small doorway, to the west, leads further into the compound.",
+          "grid_x": -2,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1297,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Temple Plaza",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2252,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Chamber of Stillness",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Melar",
+              "description": "Melar is clad in a simple green shift.  His hands are brown and strong,",
+              "unique": true
+            }
+          ]
+        },
+        "1303": {
+          "vnum": 1303,
+          "name": "The Crystal Altar",
+          "description": "Light refracts from the altar's facets and makes the whole thing seem to shimmer. Carved from a single slab, the altar is about four feet high and three feet on either side. Pale purple lilacs are spread upon it, offered by some unknown worshipper as a gift to the gods. After stepping down from the dais, east is your only exit.",
+          "grid_x": -3,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1298,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Temple Plaza",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1304": {
+          "vnum": 1304,
+          "name": "Before the Mausoleum",
+          "description": "The entrance to the mausoleum is grand and imposing, showcasing the intricate black marble that adorns its walls. A soaring dome stands at its center, surrounded by delicate stained glass windows that filter soft light into the room. The floor is made of the same ceramic tile as the rest of the temple structure. At the far end of the room, two large doors made of the same black marble as the walls stand ready to admit visitors to the mausoleum.",
+          "grid_x": -2,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 1298,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Temple Plaza",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2180,
+              "to_zone": "Submerged Tower - City of Mareldja",
+              "to_room_name": "Within the Mausoleum",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1312": {
+          "vnum": 1312,
+          "name": "Farath`s Armory",
+          "description": "The walls are covered with shields of bronze, wood, and steel. In a corner hang an assortment of gauntlets, helmets, and bracers, and in another, a half- finished breastplate. From a back room, you can hear pounding. A window in the east wall allows you to look out onto the street. No one found by that name. con sea",
+          "grid_x": -3,
+          "grid_y": 4,
+          "exits": {
+            "e": {
+              "to_vnum": 537,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Dreams and Sorrows",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 537,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Dreams and Sorrows",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Farath",
+              "description": "Farath wears a leather apron and breeches covered with tiny singe marks.",
+              "unique": true
+            }
+          ]
+        },
+        "1313": {
+          "vnum": 1313,
+          "name": "Narrow Alley",
+          "description": "The alley runs between shabby and neglected buildings. Broken bottles and bits of nameless debris litter the street and clog the gutter. A plain building to the south sports a faded sign painted with the words, \"Fenric's Surplus\". The alley runs east and west.",
+          "grid_x": 4,
+          "grid_y": 5,
+          "exits": {
+            "e": {
+              "to_vnum": 1314,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Dump Area",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1315,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Musty Alcove",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1744,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Fenric`s Surplus",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 995,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Narrow Alley",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1314": {
+          "vnum": 1314,
+          "name": "Dump Area",
+          "description": "",
+          "grid_x": 5,
+          "grid_y": 5,
+          "exits": {
+            "u": {
+              "to_vnum": 1743,
+              "to_zone": "The Rooftops - City of Mareldja",
+              "to_room_name": "Above the Alley",
+              "direction": "u",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1313,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Narrow Alley",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 1742,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "City Dump",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1315": {
+          "vnum": 1315,
+          "name": "Musty Alcove",
+          "description": "Ancient dust hangs in the air perpetually within this tiny alcove, tucked away in a little-explored corner of the city. Musty tomes have been piled all over the room, and it doesn't look like anyone has read them for centuries. A few faint chants can be heard from through an open doorway to the east, and the relatively fresh air of the alley lies to the south.",
+          "grid_x": 4,
+          "grid_y": 4,
+          "exits": {
+            "e": {
+              "to_vnum": 2251,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Chamber of Bones",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1313,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Narrow Alley",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 3034,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Enchanting Crypt",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Grungy rogue",
+              "description": "This fellow in his bland, dark garb, seems perpetually alert and extraordinarily aware of each and every delicate step he takes.  His body moves fluidly amidst the background, subtle efforts keep him always at the",
+              "unique": true
+            },
+            {
+              "name": "Mal",
+              "description": "This dark figure appears so gaunt and sickly you almost wonder if he's still alive.  Surely such a skeletal old man couldn't offer the",
+              "unique": true
+            }
+          ]
+        },
+        "1900": {
+          "vnum": 1900,
+          "name": "Avenue of Eternity",
+          "description": "A wooden sign painted with a lemniscate symbol indicates that you travel The Avenue of Eternity. Children run past you, laughing, and a dog noses its way through the gutter. The Avenue passes through a market to the east and ends further to the west. A shop with a dragonet painted on a sign stands to the north. Crude lettering above it spells out \"Pet Shop\".",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 533,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Market Square",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1901,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Pet Shop",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1901,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Pet Shop",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1901": {
+          "vnum": 1901,
+          "name": "Pet Shop",
+          "description": "Squawks and yowls fill this shop. Cages surround you containing animals both exotic and mundane. A sign above the counter says in crude lettering:",
+          "grid_x": -1,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 1900,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Avenue of Eternity",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Drunken warrior",
+              "description": "",
+              "unique": false
+            },
+            {
+              "name": "Falcon",
+              "description": "",
+              "unique": true
+            },
+            {
+              "name": "Farvik",
+              "description": "proudly around at his collection, guaranteeing that his animals will bring you companionship and protection for a small fee.",
+              "unique": true
+            },
+            {
+              "name": "Goose",
+              "description": "You see a great grey goose with a nasty glint in its eye.",
+              "unique": true
+            }
+          ]
+        },
+        "2463": {
+          "vnum": 2463,
+          "name": "Borash`s General Supplies",
+          "description": "Odds and ends are scattered chaotically on tables and benches. You see lengths of rope, barrels, trunks, bags and torches all mixed together in helpless piles. It seems that at one time someone made an effort to sort them onto their proper tables, but now everything is in disarray.",
+          "grid_x": -5,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1672,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Street of Sorrows",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Borash",
+              "description": "Borash is a large man of ruddy complexion and unkempt appearance.  Don't let his disorder fool you, though.  He has the position of all his goods",
+              "unique": true
+            }
+          ]
+        },
+        "956": {
+          "vnum": 956,
+          "name": "Avenue of Eternity",
+          "description": "The Avenue of Eternity is cobbled with the same beige stone that comprises the buildings and walls. Gutters on either side allow water to be washed through rusted iron grates. A small shop with a sign depicting a large eye with a diamond glittering in the center stands to the north, and the avenue continues east and west.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 957,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Eternity and Painters",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 959,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Glittering Eye",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 533,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Market Square",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 533,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Market Square",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "957": {
+          "vnum": 957,
+          "name": "At Eternity and Painters",
+          "description": "The Avenue of Eternity connects with the Painters' Boulevard here in this northeastern corner of the city, the former leading west and the latter leading south. A single purple flame dances in the window of a shop to the east, and above it, the cryptic symbol of the Mage's Guild. Above you hang garments on ropes stretched across from window to window.",
+          "grid_x": 2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 958,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Purple Flame",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 960,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Painters Boulevard",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 956,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Avenue of Eternity",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "958": {
+          "vnum": 958,
+          "name": "The Purple Flame",
+          "description": "The Purple Flame is owned and operated by the Guild of Mages. All manner of magical potions, wands, scrolls, rods and other impedimenta fill the walls around you. The smell of incense mingles with that of drying herbs and alchemical supplies. A large, disembodied eye floats about the shop, deterring thievery. Past the counter to the east is a little curtain leading further into the guild. The doorway is to the west.",
+          "grid_x": 3,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1745,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Enchanter's Study",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1745,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Enchanter's Study",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 957,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Eternity and Painters",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 957,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Eternity and Painters",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Alentys",
+              "description": "Alentys is a grim-faced man wearing a shirt and trousers of fine grey silk. He carries no visible weapons, but you instinctively know that he doesn't need any.  He studies his text so intently that he seems to ignore",
+              "unique": true
+            },
+            {
+              "name": "Disembodied eye",
+              "description": "",
+              "unique": true
+            },
+            {
+              "name": "Trier",
+              "description": "Trier happily tends the shop.  He is a younger elf with green eyes and blond hair.  Odds and ends overflow from his various pockets.",
+              "unique": true
+            }
+          ]
+        },
+        "959": {
+          "vnum": 959,
+          "name": "The Glittering Eye",
+          "description": "",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 956,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Avenue of Eternity",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 956,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Avenue of Eternity",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Muralain",
+              "description": "Clad in a pale lavender gown, Muralain is a striking woman with silver hair.  Her face is ageless and inscrutable.",
+              "unique": true
+            }
+          ]
+        },
+        "960": {
+          "vnum": 960,
+          "name": "Painters Boulevard",
+          "description": "Graceful purple and pink flowered trees line the street, and dusty stone buildings sport ledges of flowers and hanging pots. A few pigeons flap noisily away as you interrupt their search for food. The street continues north and intersects with the Concourse of Earth to the south.",
+          "grid_x": 2,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 957,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Eternity and Painters",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 4,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Earth and Painters",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 961,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Matchmaker's Shop",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "961": {
+          "vnum": 961,
+          "name": "The Matchmaker's Shop",
+          "description": "Large windows high in the wall let in a lot of natural light, brightening the space and complimenting an array of various flowers and potted plants scattered around the room. A large, brightly colored carpet covers the floor and paintings of different couples cover the walls.",
+          "grid_x": 1,
+          "grid_y": 3,
+          "exits": {
+            "e": {
+              "to_vnum": 960,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Painters Boulevard",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Isabella",
+              "description": "shopkeeper has traded matchmaking for a new passion. Dried herbs hang from the rafters, and her fingers are stained with the telltale greens and purples of alchemical work. She still overflows with enthusiasm, though now it's directed toward finding the perfect blend rather than the perfect match. A worn leather journal rests at her hip, bulging with pressed",
+              "unique": true
+            }
+          ]
+        },
+        "2004": {
+          "vnum": 2004,
+          "name": "The Red Room",
+          "description": "Deep crimson walls surrounding and supporting a vermilion floor and ceiling, coupled with an intense, but just barely tolerable heat, welcome you as you step inside. The room is rather bare, and seems to exist only to display a somewhat dubious looking bulletin board which stands at the center. It appears to have postings lining both faces, and has obviously suffered badly in this environment. Most of the exposed wood is blackened, nearly charred, though the various notes seem unaffected, despite being fully aflame....",
+          "grid_x": 3,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 2,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Inn of the Golden Vanity",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "994": {
+          "vnum": 994,
+          "name": "At Dreams and Painters",
+          "description": "The Painters' Boulevard, which leads north, meets with the Avenue of Dreams, which heads west. Pigeons flutter from an alley to the south, looking for food amongst some rubbish piles.",
+          "grid_x": 3,
+          "grid_y": 4,
+          "exits": {
+            "n": {
+              "to_vnum": 7,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Painters Boulevard",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 995,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Narrow Alley",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 997,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Avenue of Dreams",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "995": {
+          "vnum": 995,
+          "name": "Narrow Alley",
+          "description": "Heaps of junk are piled against each wall, consisting of scraps of fabric, broken pottery, and smashed bottles. White pigeons flap overhead and coo from their nesting places. The alley ends at a street to the north and makes a bend to the east.",
+          "grid_x": 3,
+          "grid_y": 5,
+          "exits": {
+            "e": {
+              "to_vnum": 1313,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Narrow Alley",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 994,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Dreams and Painters",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 996,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Fumbles` Fixit Shoppe",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "996": {
+          "vnum": 996,
+          "name": "Fumbles` Fixit Shoppe",
+          "description": "Bits of wire and pieces of leather and iron are scattered over the surface of the counter in front of you. Tools hang on pegs along the back wall, each of them showing much use but also loving care. There is a sign hanging on the east wall.",
+          "grid_x": 3,
+          "grid_y": 6,
+          "exits": {
+            "n": {
+              "to_vnum": 995,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Narrow Alley",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Fumbles",
+              "description": "His face is seamed with lines and his hands are rough from many years of his craft.  He enjoys his work though and wears a little smile as he",
+              "unique": true
+            }
+          ]
+        },
+        "997": {
+          "vnum": 997,
+          "name": "Avenue of Dreams",
+          "description": "The Avenue meets with the Concourse of Air to the west and continues to the east. Trees with white blossoms shower petals down upon you with every breath of wind. The roofs in this section contain plants in large urns, and with a little help, you could probably climb up if you wanted.",
+          "grid_x": 1,
+          "grid_y": 4,
+          "exits": {
+            "e": {
+              "to_vnum": 994,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Dreams and Painters",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 1305,
+              "to_zone": "The Rooftops - City of Mareldja",
+              "to_room_name": "Above the Avenue of Dreams",
+              "direction": "u",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 61,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Dreams and Air",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "998": {
+          "vnum": 998,
+          "name": "Garden",
+          "description": "A cobbled path leads through a small park north of the city. Trees on either side of you rustle in the breeze, and beds of flowers supply bursts of color to the greenness of the grass. A low stone wall encircles the area to the north, and a crossroads to the south lead around and into the city. A small wooden sign sprouts from a nearby bed of flowers.",
+          "grid_x": 0,
+          "grid_y": -4,
+          "exits": {
+            "d": {
+              "to_vnum": 1000,
+              "to_zone": "Rocky Coast",
+              "to_room_name": "Rocky Beach",
+              "direction": "d",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 999,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "By the Cliff",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 530,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Outside the City",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "999": {
+          "vnum": 999,
+          "name": "By the Cliff",
+          "description": "The cliff drops steeply away, presenting a dazzling view of the beach below. A low stone wall has crumbled along the border of the cliff, and gliding shorebirds have nested in the ruins. The sky overhead is a vast cobalt, vivid and endless. A stiff breeze blows inland, and a forest of hills and valleys carpets the land to the east.",
+          "grid_x": 0,
+          "grid_y": -5,
+          "exits": {
+            "d": {
+              "to_vnum": 1000,
+              "to_zone": "Rocky Coast",
+              "to_room_name": "Rocky Beach",
+              "direction": "d",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 998,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Garden",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -6,
+        "max_x": 12,
+        "min_y": -5,
+        "max_y": 25,
+        "room_count": 99
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1321,
+      "rooms": {
+        "1": {
+          "vnum": 1,
+          "name": "Reception",
+          "description": "Polished brass lanterns give this room a cheery glow. A desk rests against the eastern wall, covered with books and accounts, and a large picture on the opposite wall affords a view of a wrecked ship lying on a beach, its hull smashed in. An open window behind the desk allows the sounds of the street to filter up from below. Zephyr's silk hood vibrates as a tempestuous wind billows around you, heightening your instincts. Riptide Mantle surges with the power of the sea! As you grow in skill and cunning, the Gloves of the Silent Shadow resonate with your newfound strength. The silver skulls on the fingers glint ominously, and a surge of energy courses through your hands, Shadowdance pulses with power! You are Poundsy. You have the following money: You have 86131 obsidian coins on deposit. You carry a moderate load. You are a classic character. You are 28 years, 11 months and 0 days old. You logged in 1 second ago. You have played for 8 days and 23 hours. You have sacrificed 5% of what you need to gain divine favor. Your karma is good (3448) and Safety keeps you from attacking other players. Wimpy auto-flee set to 25% health. You are sneaking about. Global events currently active: Challenges Cycled! - 4 days and 18 hours Spells in effect: Bless 16 Attack 1 Save-Res 10m 19s",
+          "grid_x": 0,
+          "grid_y": 16,
+          "exits": {
+            "enter portal": {
+              "to_vnum": 547,
+              "to_zone": "City of J'rel",
+              "to_room_name": "J'rel Square",
+              "direction": "enter portal",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1892,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Donation Room",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 1758,
+              "to_zone": "The Rooftops - City of Mareldja",
+              "to_room_name": "Over the Golden Vanity",
+              "direction": "u",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 2,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Inn of the Golden Vanity",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Drake",
+              "description": "Drake looks to be around thirtyish with brown hair and a goatee.  He wears a red doublet and hose, and looks slightly out of place.",
+              "unique": true
+            }
+          ]
+        },
+        "546": {
+          "vnum": 546,
+          "name": "Magnificent Floating Platform",
+          "description": "You're not sure how this works, but the platform is floating above the Central Plaza of Mareldja. Looking over the edge, you can see the rooftops of the city and quite a ways past her gates. Shorebirds are perched on the edge, gawking and strutting around the perimeter. The platform is made up entirely out of polished bronze. In the center of the platform stands a flagpole waving the flag of Mareldja; a golden crown adorned with jewels floating above a body of water.",
+          "grid_x": 0,
+          "grid_y": 31,
+          "exits": {
+            "d": {
+              "to_vnum": 6,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Central Plaza",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2152": {
+          "vnum": 2152,
+          "name": "Sparse Kelp Forests",
+          "description": "Patches of dense kelp forests sway gently with the currents which offer shelter and food for countless marine species. These underwater gardens are home to a myriad of creatures, from tiny invertebrates to larger predators, contributing to the rich biodiversity of the area. During certain seasons, these waters becomes a bustling highway for migrating whales and fish.",
+          "grid_x": 0,
+          "grid_y": 76,
+          "exits": {
+            "u": {
+              "to_vnum": 744,
+              "to_zone": "The Ocean",
+              "to_room_name": "The Open Sea",
+              "direction": "u",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 2153,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Orca Sanctuary",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2170": {
+          "vnum": 2170,
+          "name": "Coastal Watchtower Lookout",
+          "description": "The landing is mostly bare, aside from the windows that line the entire perimeter. With the city far below, the tower offers a beautifully strategic vantage point. The vast ocean swells in from the west, the dense Jharet forest extends well beyond the city to the east, snowcapped mountains stand tall beyond grassy hills to the north and the country road is visible leading south to Oldgate in the distance alongside the Brown River Valley. The tower descends by the way of a wooden staircase in the center of the landing.",
+          "grid_x": 0,
+          "grid_y": 106,
+          "exits": {
+            "d": {
+              "to_vnum": 2169,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Coastal Watchtower Staircase Landing",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2721": {
+          "vnum": 2721,
+          "name": "Private Dining Room",
+          "description": "This quiet, private room is held away from the hustle and bustle of the lively tavern below. It is furnished with a long, polished wooden table that is surrounded by comfortable, upholstered chairs. The walls are adorned with simple, yet elegant tapestries and paintings that depict scenes of the city and its surrounding countryside. A fireplace at one end of the room provides a warm and cozy atmosphere, while a row of windows at the opposite end offers a view of the city below.",
+          "grid_x": 0,
+          "grid_y": 46,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Sir Gerard",
+              "description": "Sir Gerard is a tall, regal figure who exudes confidence and authority. Dressed in finely tailored clothes and adorned with a few well-chosen pieces of jewelry, he is the very embodiment of wealth and",
+              "unique": true
+            }
+          ]
+        },
+        "2724": {
+          "vnum": 2724,
+          "name": "The Harbormaster`s Office",
+          "description": "The office is decorated with functional nautical equipment and maps of every coastline imaginable. From the neatness of the office and its contents, you get the feeling that the harbormaster was once a captain of his own ship.",
+          "grid_x": 0,
+          "grid_y": 61,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Harbormaster",
+              "description": "The Harbormaster is tanned and muscular.  His dark hair is showing streaks of grey, and his eyes are rimmed with crowsfeet. He is clad in the loose",
+              "unique": true
+            }
+          ]
+        },
+        "2257": {
+          "vnum": 2257,
+          "name": "Inner Sanctum",
+          "description": "The floor is quite bare and bereft of decoration. Scorch marks on the walls attest silently to the power of the spells released here in the past. But, you wonder, toward what end? The room has no windows and is lit from no discernible light source.",
+          "grid_x": 0,
+          "grid_y": 91,
+          "exits": {
+            "d": {
+              "to_vnum": 2256,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "The Chamber of Magic",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1317": {
+          "vnum": 1317,
+          "name": "Rocky Slope",
+          "description": "A short, steep path leads down to join a pleasant country road to the south. A rock-strewn trail heads west for a short distance before it turns to the north. You are riding atop a well-bred horse.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "d": {
+              "to_vnum": 71,
+              "to_zone": "Country Estates",
+              "to_room_name": "Country Road",
+              "direction": "d",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1318,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Hillock",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1318": {
+          "vnum": 1318,
+          "name": "Hillock",
+          "description": "The path makes a sharp bend here, heading downslope as it moves north. To the east, the trail goes only a short distance before it turns south again. You are riding atop a well-bred horse.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1317,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Rocky Slope",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1319,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Forest Road",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1319": {
+          "vnum": 1319,
+          "name": "Forest Road",
+          "description": "The trail rises to the south as it climbs a small rocky hill. This way is a well trafficked road, however, so travel is easy. The road continues straight to the north. You are riding atop a well-bred horse.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 1320,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Forest Road",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1318,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Hillock",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1320": {
+          "vnum": 1320,
+          "name": "Forest Road",
+          "description": "The leaves rustle faintly as you move beneath the bows overhanging the roadway. The sounds of furtive movement seem to pace you, just out of sight behind the trees. Fortunately the road only skirts along the edge of the forest and doesn't actually go through it. You are riding atop a well-bred horse.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 1321,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Forest Road",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1319,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Forest Road",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1321": {
+          "vnum": 1321,
+          "name": "Forest Road",
+          "description": "The forest bulks large and gloomy to the east. Strange cries and soft, whispering moans occasionally come faintly from the wooded depths. The passage of your feet raises small clouds of dust from the road's packed and even surface. The road continues to the north and south. You are riding atop a well-bred horse.",
+          "grid_x": 0,
+          "grid_y": -3,
+          "exits": {
+            "n": {
+              "to_vnum": 1322,
+              "to_zone": "Western Jharet Forest - Jharet Forest",
+              "to_room_name": "The Edge of the Forest",
+              "direction": "n",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1320,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Forest Road",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1892": {
+          "vnum": 1892,
+          "name": "Donation Room",
+          "description": "This room is bare save for a small carved wooden sign mounted upon the rear wall. Scraps of used and broken equipment lay along the walls and in the corners, untouched. Through the doorway to the south is the Inn's reception.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {
+            "s": {
+              "to_vnum": 1,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Reception",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 1,
+        "min_y": -3,
+        "max_y": 106,
+        "room_count": 13
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1,
+      "to": 1892,
+      "direction": "n",
+      "from_grid": [
+        0,
+        16
+      ],
+      "to_grid": [
+        0,
+        15
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1282,
+      "to": 30,
+      "direction": "w",
+      "from_grid": [
+        2,
+        2
+      ],
+      "to_grid": [
+        1,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1297,
+      "to": 534,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1297,
+      "to": 1298,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        -2,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1297,
+      "to": 59,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        -1,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1297,
+      "to": 1302,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        -2,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1298,
+      "to": 1304,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        -2,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1298,
+      "to": 1303,
+      "direction": "w",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        -3,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1299,
+      "to": 1300,
+      "direction": "e",
+      "from_grid": [
+        0,
+        15
+      ],
+      "to_grid": [
+        1,
+        15
+      ],
+      "floor": -2
+    },
+    {
+      "from": 1301,
+      "to": 734,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        3
+      ],
+      "to_grid": [
+        -2,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1301,
+      "to": 537,
+      "direction": "s",
+      "from_grid": [
+        -2,
+        3
+      ],
+      "to_grid": [
+        -2,
+        4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1302,
+      "to": 2252,
+      "direction": "w",
+      "from_grid": [
+        -2,
+        1
+      ],
+      "to_grid": [
+        -3,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1312,
+      "to": 537,
+      "direction": "e",
+      "from_grid": [
+        -3,
+        4
+      ],
+      "to_grid": [
+        -2,
+        4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1313,
+      "to": 1314,
+      "direction": "e",
+      "from_grid": [
+        4,
+        5
+      ],
+      "to_grid": [
+        5,
+        5
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1313,
+      "to": 1315,
+      "direction": "n",
+      "from_grid": [
+        4,
+        5
+      ],
+      "to_grid": [
+        4,
+        4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1313,
+      "to": 1744,
+      "direction": "s",
+      "from_grid": [
+        4,
+        5
+      ],
+      "to_grid": [
+        4,
+        6
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1313,
+      "to": 995,
+      "direction": "w",
+      "from_grid": [
+        4,
+        5
+      ],
+      "to_grid": [
+        3,
+        5
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1315,
+      "to": 2251,
+      "direction": "e",
+      "from_grid": [
+        4,
+        4
+      ],
+      "to_grid": [
+        5,
+        4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1317,
+      "to": 1318,
+      "direction": "w",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1318,
+      "to": 1319,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1319,
+      "to": 1320,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1320,
+      "to": 1321,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1570,
+      "to": 59,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        3
+      ],
+      "to_grid": [
+        -1,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1608,
+      "to": 2,
+      "direction": "w",
+      "from_grid": [
+        5,
+        1
+      ],
+      "to_grid": [
+        4,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1672,
+      "to": 1673,
+      "direction": "n",
+      "from_grid": [
+        -4,
+        1
+      ],
+      "to_grid": [
+        -4,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1672,
+      "to": 734,
+      "direction": "s",
+      "from_grid": [
+        -4,
+        1
+      ],
+      "to_grid": [
+        -2,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1672,
+      "to": 2463,
+      "direction": "w",
+      "from_grid": [
+        -4,
+        1
+      ],
+      "to_grid": [
+        -5,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1673,
+      "to": 1900,
+      "direction": "e",
+      "from_grid": [
+        -4,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1673,
+      "to": 2246,
+      "direction": "n",
+      "from_grid": [
+        -4,
+        0
+      ],
+      "to_grid": [
+        -4,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1684,
+      "to": 210,
+      "direction": "w",
+      "from_grid": [
+        7,
+        2
+      ],
+      "to_grid": [
+        6,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1685,
+      "to": 210,
+      "direction": "n",
+      "from_grid": [
+        6,
+        3
+      ],
+      "to_grid": [
+        6,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1685,
+      "to": 1686,
+      "direction": "s",
+      "from_grid": [
+        6,
+        3
+      ],
+      "to_grid": [
+        6,
+        4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1686,
+      "to": 1687,
+      "direction": "e",
+      "from_grid": [
+        6,
+        4
+      ],
+      "to_grid": [
+        7,
+        4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1687,
+      "to": 1688,
+      "direction": "e",
+      "from_grid": [
+        7,
+        4
+      ],
+      "to_grid": [
+        8,
+        4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1688,
+      "to": 2278,
+      "direction": "e",
+      "from_grid": [
+        8,
+        4
+      ],
+      "to_grid": [
+        9,
+        4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1744,
+      "to": 2249,
+      "direction": "w",
+      "from_grid": [
+        4,
+        6
+      ],
+      "to_grid": [
+        3,
+        7
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1745,
+      "to": 958,
+      "direction": "s",
+      "from_grid": [
+        4,
+        0
+      ],
+      "to_grid": [
+        3,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1900,
+      "to": 533,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1900,
+      "to": 1901,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -1,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2,
+      "to": 960,
+      "direction": "n",
+      "from_grid": [
+        4,
+        1
+      ],
+      "to_grid": [
+        2,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "direction": "s",
+      "from_grid": [
+        4,
+        1
+      ],
+      "to_grid": [
+        4,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2,
+      "to": 4,
+      "direction": "w",
+      "from_grid": [
+        4,
+        1
+      ],
+      "to_grid": [
+        3,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2004,
+      "to": 2,
+      "direction": "e",
+      "from_grid": [
+        3,
+        1
+      ],
+      "to_grid": [
+        4,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 209,
+      "to": 210,
+      "direction": "e",
+      "from_grid": [
+        5,
+        2
+      ],
+      "to_grid": [
+        6,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 209,
+      "to": 3,
+      "direction": "w",
+      "from_grid": [
+        5,
+        2
+      ],
+      "to_grid": [
+        4,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 210,
+      "to": 211,
+      "direction": "n",
+      "from_grid": [
+        6,
+        2
+      ],
+      "to_grid": [
+        2,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 211,
+      "to": 212,
+      "direction": "n",
+      "from_grid": [
+        2,
+        -1
+      ],
+      "to_grid": [
+        1,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 212,
+      "to": 213,
+      "direction": "n",
+      "from_grid": [
+        1,
+        -2
+      ],
+      "to_grid": [
+        1,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 213,
+      "to": 214,
+      "direction": "e",
+      "from_grid": [
+        1,
+        -3
+      ],
+      "to_grid": [
+        2,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 213,
+      "to": 530,
+      "direction": "w",
+      "from_grid": [
+        1,
+        -3
+      ],
+      "to_grid": [
+        0,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2132,
+      "to": 735,
+      "direction": "n",
+      "from_grid": [
+        -3,
+        3
+      ],
+      "to_grid": [
+        -3,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2132,
+      "to": 2133,
+      "direction": "s",
+      "from_grid": [
+        -3,
+        3
+      ],
+      "to_grid": [
+        -4,
+        4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2134,
+      "to": 538,
+      "direction": "e",
+      "from_grid": [
+        -3,
+        5
+      ],
+      "to_grid": [
+        -2,
+        5
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2136,
+      "to": 540,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        8
+      ],
+      "to_grid": [
+        -1,
+        8
+      ],
+      "floor": -1
+    },
+    {
+      "from": 214,
+      "to": 529,
+      "direction": "e",
+      "from_grid": [
+        2,
+        -3
+      ],
+      "to_grid": [
+        3,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2168,
+      "to": 2171,
+      "direction": "n",
+      "from_grid": [
+        -6,
+        3
+      ],
+      "to_grid": [
+        -6,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2168,
+      "to": 737,
+      "direction": "w",
+      "from_grid": [
+        -6,
+        3
+      ],
+      "to_grid": [
+        -5,
+        3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2247,
+      "to": 7,
+      "direction": "s",
+      "from_grid": [
+        4,
+        3
+      ],
+      "to_grid": [
+        3,
+        3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2248,
+      "to": 538,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        6
+      ],
+      "to_grid": [
+        -2,
+        5
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2249,
+      "to": 2250,
+      "direction": "s",
+      "from_grid": [
+        3,
+        7
+      ],
+      "to_grid": [
+        3,
+        8
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2252,
+      "to": 2253,
+      "direction": "s",
+      "from_grid": [
+        -3,
+        1
+      ],
+      "to_grid": [
+        -4,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2254,
+      "to": 2255,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -2
+    },
+    {
+      "from": 2254,
+      "to": 738,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -2
+    },
+    {
+      "from": 2256,
+      "to": 958,
+      "direction": "w",
+      "from_grid": [
+        3,
+        -1
+      ],
+      "to_grid": [
+        3,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2723,
+      "to": 540,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        7
+      ],
+      "to_grid": [
+        -1,
+        8
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "direction": "w",
+      "from_grid": [
+        4,
+        2
+      ],
+      "to_grid": [
+        3,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 30,
+      "to": 5,
+      "direction": "s",
+      "from_grid": [
+        1,
+        1
+      ],
+      "to_grid": [
+        1,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 30,
+      "to": 534,
+      "direction": "w",
+      "from_grid": [
+        1,
+        1
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3678,
+      "to": 530,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        -3
+      ],
+      "to_grid": [
+        0,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3678,
+      "to": 3679,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        -3
+      ],
+      "to_grid": [
+        -2,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 4,
+      "to": 960,
+      "direction": "n",
+      "from_grid": [
+        3,
+        2
+      ],
+      "to_grid": [
+        2,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 4,
+      "to": 7,
+      "direction": "s",
+      "from_grid": [
+        3,
+        2
+      ],
+      "to_grid": [
+        3,
+        3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "direction": "w",
+      "from_grid": [
+        3,
+        2
+      ],
+      "to_grid": [
+        1,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "direction": "w",
+      "from_grid": [
+        1,
+        2
+      ],
+      "to_grid": [
+        0,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 528,
+      "to": 529,
+      "direction": "w",
+      "from_grid": [
+        4,
+        -3
+      ],
+      "to_grid": [
+        3,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 530,
+      "to": 998,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -3
+      ],
+      "to_grid": [
+        0,
+        -4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 530,
+      "to": 531,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -3
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 531,
+      "to": 532,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 532,
+      "to": 533,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 533,
+      "to": 956,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 533,
+      "to": 534,
+      "direction": "s",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 534,
+      "to": 6,
+      "direction": "s",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 535,
+      "to": 62,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        5
+      ],
+      "to_grid": [
+        0,
+        5
+      ],
+      "floor": -1
+    },
+    {
+      "from": 536,
+      "to": 61,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        4
+      ],
+      "to_grid": [
+        0,
+        4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 536,
+      "to": 537,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        4
+      ],
+      "to_grid": [
+        -2,
+        4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 537,
+      "to": 538,
+      "direction": "s",
+      "from_grid": [
+        -2,
+        4
+      ],
+      "to_grid": [
+        -2,
+        5
+      ],
+      "floor": -1
+    },
+    {
+      "from": 538,
+      "to": 539,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        5
+      ],
+      "to_grid": [
+        -1,
+        6
+      ],
+      "floor": -1
+    },
+    {
+      "from": 540,
+      "to": 66,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        8
+      ],
+      "to_grid": [
+        0,
+        8
+      ],
+      "floor": -1
+    },
+    {
+      "from": 541,
+      "to": 540,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        9
+      ],
+      "to_grid": [
+        -1,
+        8
+      ],
+      "floor": -1
+    },
+    {
+      "from": 541,
+      "to": 542,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        9
+      ],
+      "to_grid": [
+        -1,
+        10
+      ],
+      "floor": -1
+    },
+    {
+      "from": 59,
+      "to": 6,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        2
+      ],
+      "to_grid": [
+        0,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 59,
+      "to": 734,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        2
+      ],
+      "to_grid": [
+        -2,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 6,
+      "to": 60,
+      "direction": "s",
+      "from_grid": [
+        0,
+        2
+      ],
+      "to_grid": [
+        0,
+        3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 60,
+      "to": 61,
+      "direction": "s",
+      "from_grid": [
+        0,
+        3
+      ],
+      "to_grid": [
+        0,
+        4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 61,
+      "to": 997,
+      "direction": "e",
+      "from_grid": [
+        0,
+        4
+      ],
+      "to_grid": [
+        1,
+        4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 61,
+      "to": 62,
+      "direction": "s",
+      "from_grid": [
+        0,
+        4
+      ],
+      "to_grid": [
+        0,
+        5
+      ],
+      "floor": -1
+    },
+    {
+      "from": 62,
+      "to": 63,
+      "direction": "e",
+      "from_grid": [
+        0,
+        5
+      ],
+      "to_grid": [
+        1,
+        5
+      ],
+      "floor": -1
+    },
+    {
+      "from": 62,
+      "to": 64,
+      "direction": "s",
+      "from_grid": [
+        0,
+        5
+      ],
+      "to_grid": [
+        0,
+        6
+      ],
+      "floor": -1
+    },
+    {
+      "from": 64,
+      "to": 65,
+      "direction": "s",
+      "from_grid": [
+        0,
+        6
+      ],
+      "to_grid": [
+        0,
+        7
+      ],
+      "floor": -1
+    },
+    {
+      "from": 65,
+      "to": 66,
+      "direction": "s",
+      "from_grid": [
+        0,
+        7
+      ],
+      "to_grid": [
+        0,
+        8
+      ],
+      "floor": -1
+    },
+    {
+      "from": 7,
+      "to": 994,
+      "direction": "s",
+      "from_grid": [
+        3,
+        3
+      ],
+      "to_grid": [
+        3,
+        4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 734,
+      "to": 735,
+      "direction": "w",
+      "from_grid": [
+        -2,
+        2
+      ],
+      "to_grid": [
+        -3,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 735,
+      "to": 736,
+      "direction": "w",
+      "from_grid": [
+        -3,
+        2
+      ],
+      "to_grid": [
+        -4,
+        3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 736,
+      "to": 737,
+      "direction": "w",
+      "from_grid": [
+        -4,
+        3
+      ],
+      "to_grid": [
+        -5,
+        3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 956,
+      "to": 957,
+      "direction": "e",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        2,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 956,
+      "to": 959,
+      "direction": "n",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        1,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 957,
+      "to": 958,
+      "direction": "e",
+      "from_grid": [
+        2,
+        0
+      ],
+      "to_grid": [
+        3,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 957,
+      "to": 960,
+      "direction": "s",
+      "from_grid": [
+        2,
+        0
+      ],
+      "to_grid": [
+        2,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 960,
+      "to": 961,
+      "direction": "w",
+      "from_grid": [
+        2,
+        1
+      ],
+      "to_grid": [
+        1,
+        3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 994,
+      "to": 995,
+      "direction": "s",
+      "from_grid": [
+        3,
+        4
+      ],
+      "to_grid": [
+        3,
+        5
+      ],
+      "floor": -1
+    },
+    {
+      "from": 994,
+      "to": 997,
+      "direction": "w",
+      "from_grid": [
+        3,
+        4
+      ],
+      "to_grid": [
+        1,
+        4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 995,
+      "to": 996,
+      "direction": "s",
+      "from_grid": [
+        3,
+        5
+      ],
+      "to_grid": [
+        3,
+        6
+      ],
+      "floor": -1
+    },
+    {
+      "from": 998,
+      "to": 999,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -4
+      ],
+      "to_grid": [
+        0,
+        -5
+      ],
+      "floor": -1
+    }
+  ]
+}

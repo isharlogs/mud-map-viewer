@@ -1,0 +1,1311 @@
+{
+  "zone_name": "Grimkell Fortress",
+  "floor_count": 3,
+  "bounds": {
+    "min_x": -4,
+    "max_x": 4,
+    "min_y": -2,
+    "max_y": 21
+  },
+  "floors": {
+    "-2": {
+      "floor_id": -2,
+      "entry_vnum": 1269,
+      "rooms": {
+        "1269": {
+          "vnum": 1269,
+          "name": "The Fortress Crypt",
+          "description": "A hole gapes wide in the ceiling above you, leading away from this tomb carved in limestone. Your senses are overpowered with the scent of undead flesh and you wish now that you had chosen differently. Darkness awaits you to the north.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 1270,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "The Fortress Crypt",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Cursed banshee",
+              "description": "gaping mouths mimic her piercing scream.",
+              "unique": true
+            },
+            {
+              "name": "Grimkell the Shadow King",
+              "description": "and a half feet.  Fragments of nightmares swim through your mind as you face off against a supernatural foe.",
+              "unique": true
+            },
+            {
+              "name": "Half-decayed corpse",
+              "description": "female.  What remains of the skin is a bloated, larval white, and maggots wriggle in and out of its exposed muscles.",
+              "unique": false
+            },
+            {
+              "name": "Lost soul",
+              "description": "tortured soul.  As you turn your back on it, it pleads you - using your childhood name -- to release it from Grimkell's grasp.",
+              "unique": true
+            }
+          ]
+        },
+        "1270": {
+          "vnum": 1270,
+          "name": "The Fortress Crypt",
+          "description": "The limestone walls constrict, heightening your already intense hatred of this tomb. The smell of death is overwhelming your thoughts and your nerves are long since shot. Pure evil continues to streak toward you at blinding speed.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1271,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "The Fortress Crypt",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1272,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "The Fortress Crypt",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1269,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "The Fortress Crypt",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1271": {
+          "vnum": 1271,
+          "name": "The Fortress Crypt",
+          "description": "Intense spasms wrack your upper body as your mind is torn by accursed wails. You dig fingernails into the skin on your head, attempting to divert its attention from the pain and succeed for but a few seconds. Get out, now or never.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 1270,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "The Fortress Crypt",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1272": {
+          "vnum": 1272,
+          "name": "The Fortress Crypt",
+          "description": "Shadowy forms flicker into and out of sight as they hell about in the throes of a vulgar danse macabre. The crumbling stone of the tomb is engraved heavily in an indecipherable script that too seems to play and dance suggestively across the walls. The awesome power of aeon-dead realms seeps verily into your soul and clutches at your desire to live.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "w": {
+              "to_vnum": 1273,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Fortress Stash",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1273": {
+          "vnum": 1273,
+          "name": "Fortress Stash",
+          "description": "Piercing blue eyes watch you from under the sloping brow of a gargantuan gargoyle forged of blackened iron. Lesser gargoyles flank the tremendous beast and direct their watchful gaze toward its head. A stone coffin lies in the center of this musty tomb.",
+          "grid_x": -1,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 1274,
+              "to_zone": "Rondel's Forest Keep",
+              "to_room_name": "Rondel`s Keep",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Ravenous hellhound",
+              "description": "",
+              "unique": false
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 1,
+        "min_y": -1,
+        "max_y": 1,
+        "room_count": 5
+      }
+    },
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 1264,
+      "rooms": {
+        "1264": {
+          "vnum": 1264,
+          "name": "The Fortress Crypt",
+          "description": "The noise of your fall is swallowed in the blackness of the crypt. An unearthly howl surrounds you, tugging intently at your sanity. You scramble around the dusty tomb in a frantic search for the trapdoor that deposited you here but find only stone arches extending to the south.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 1265,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "The Fortress Crypt",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1265": {
+          "vnum": 1265,
+          "name": "The Fortress Crypt",
+          "description": "The hair on your neck stands on end as you eye the iron grates set in the west and east walls. The ancient ironwork creaks and groans nastily in its undying age. You can escape to the north and south.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1267,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Fortress Seclusion",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1264,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "The Fortress Crypt",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1268,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "The Fortress Crypt",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1266,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Fortress Seclusion",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Half-decayed corpse",
+              "description": "female.  What remains of the skin is a bloated, larval white, and maggots wriggle in and out of its exposed muscles.",
+              "unique": false
+            }
+          ]
+        },
+        "1266": {
+          "vnum": 1266,
+          "name": "Fortress Seclusion",
+          "description": "The moist limestone walls are host to a carpet of moss and fungus. A few stray cockroaches scuttle about feeding off decaying plants. An exit to the east leaves this musty chamber.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1265,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "The Fortress Crypt",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1267": {
+          "vnum": 1267,
+          "name": "Fortress Seclusion",
+          "description": "Deep slash marks scar this limestone hole. A violent stench belies a century of waste deposited in this wasteland. The only exit is west.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 1265,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "The Fortress Crypt",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1268": {
+          "vnum": 1268,
+          "name": "The Fortress Crypt",
+          "description": "Cold limestone walls coated with a lively coat of slime shimmer with faint phosphorescence. The stench of death hangs heavily in the air and you feel it crawling against your skin. A hole opens up beneath your feet, daring you to leap into its depths.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "d": {
+              "to_vnum": 1269,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "The Fortress Crypt",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 1,
+        "min_y": -1,
+        "max_y": 1,
+        "room_count": 5
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1240,
+      "rooms": {
+        "1240": {
+          "vnum": 1240,
+          "name": "Limestone Courtyard",
+          "description": "The rocky cliffside has been hollowed out and lined ceiling to floor with white limestone. Beds of the stone have been placed around the walls and act as planters for a sunless garden. A network of sickly stalks and tendrils have woven themselves across the walls.",
+          "grid_x": -4,
+          "grid_y": 21,
+          "exits": {
+            "n": {
+              "to_vnum": 1241,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Gardens",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Lesioned tentacle",
+              "description": "skin around you and strangle you!",
+              "unique": true
+            }
+          ]
+        },
+        "1241": {
+          "vnum": 1241,
+          "name": "Limestone Gardens",
+          "description": "Thick green vines criss and cross through the beds, gleaming nefariously with deep red thorns. Pausing briefly to admire the organic patterns, you hear a faint, but definite rustling from the limestone bed in front of you. You strain to see what it is but the vegetation is too thick.",
+          "grid_x": -4,
+          "grid_y": 20,
+          "exits": {
+            "se": {
+              "to_vnum": 1242,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Gardens",
+              "direction": "se",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1242": {
+          "vnum": 1242,
+          "name": "Limestone Gardens",
+          "description": "There is a break in the limestone beds to the northeast of here, though you didn't notice it from the courtyard. This is probably because the diseased florae also failed to take note and stretched messily across the floor to entangle itself with whatever is growing out of the other bed.",
+          "grid_x": -3,
+          "grid_y": 21,
+          "exits": {
+            "ne": {
+              "to_vnum": 1243,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Before the Iron Gate",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1243": {
+          "vnum": 1243,
+          "name": "Before the Iron Gate",
+          "description": "An immense and intricately ironworked gate controls the northeast. Iron poles as thick as your torso extend from ceiling to floor and wall to wall through a gigantic locking mechanism in the center. The keyhole is the size of your fist, though your hand doesn't seem to be properly keyed to open it.",
+          "grid_x": -2,
+          "grid_y": 20,
+          "exits": {
+            "ne": {
+              "to_vnum": 1244,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Passage",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1244": {
+          "vnum": 1244,
+          "name": "Limestone Passage",
+          "description": "Empty iron braziers hang uselessly from the otherwise empty stone walls. Deafening silence echoes the sound of your own pounding heart as you step cautiously down the passage. The limestone beneath your feet is treacherously slippery, coated with a thin layer of slime.",
+          "grid_x": 0,
+          "grid_y": 19,
+          "exits": {
+            "ne": {
+              "to_vnum": 1245,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Passage",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "nw": {
+              "to_vnum": 1247,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Passage",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1245": {
+          "vnum": 1245,
+          "name": "Limestone Passage",
+          "description": "Smooth limestone walls coax you further down the fortress passageway. Another wrought iron brazier hangs limp and useless to the northwest. Suddenly, briefly, the sound of your heartbeat is deadened by an eerie silence as a palpable sense from beyond the grave creeps up your spine. The stone wall to the southeast slowly slides open.",
+          "grid_x": 1,
+          "grid_y": 18,
+          "exits": {
+            "ne": {
+              "to_vnum": 1246,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Passage",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Slavering ghoul",
+              "description": "filled with rows of razor-sharp teeth.  His skin is a thick and fibrous",
+              "unique": true
+            }
+          ]
+        },
+        "1246": {
+          "vnum": 1246,
+          "name": "Limestone Passage",
+          "description": "A dextrous force smoothly carved into the granite cliff a northwesternly curve in the passageway and painstakingly fitted it with bricks of similarly sloping limestone. The cool, dry air deep within the fortress has kept the soft stone in pristine condition.",
+          "grid_x": 2,
+          "grid_y": 17,
+          "exits": {
+            "nw": {
+              "to_vnum": 1244,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Passage",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "sw": {
+              "to_vnum": 1245,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Passage",
+              "direction": "sw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1247": {
+          "vnum": 1247,
+          "name": "Limestone Passage",
+          "description": "You begin to wonder how long this passage can continue on for given that it is clearly spiraling toward a center point. Pondering then on the ramifications of why a fortress would be so laboriously constructed deep within a cliffside, you turn your thoughts to figuring out how quickly you could run past the gate, find your way to the courtyard and make it up to the surface.",
+          "grid_x": -1,
+          "grid_y": 18,
+          "exits": {
+            "sw": {
+              "to_vnum": 1248,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Passage",
+              "direction": "sw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1248": {
+          "vnum": 1248,
+          "name": "Limestone Passage",
+          "description": "Your footsteps echo with a nervous timbre as you round another smooth stone corner, spiraling effortlessly toward the center of the cliff. Unconsciously you stop in your tracks and deeply exchange the air in your lungs, steeling yourself for whatever will come.",
+          "grid_x": -2,
+          "grid_y": 19,
+          "exits": {
+            "se": {
+              "to_vnum": 1249,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Passage",
+              "direction": "se",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Mass of black tentacles",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "1249": {
+          "vnum": 1249,
+          "name": "Limestone Passage",
+          "description": "The limestone passage feints continuing to the northeast but ends before providing even one step of headway. Dead center at the end of the passageway a single stone block betrays the smooth continuity of the fortress walls and conspicuously protrudes a half inch. A bead of sweat rolls down your left temple and your pounding heart challenges your feet to a race out of this hellish fortress.",
+          "grid_x": -1,
+          "grid_y": 20,
+          "exits": {
+            "nw": {
+              "to_vnum": 1248,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Passage",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1250": {
+          "vnum": 1250,
+          "name": "Limestone Labyrinth",
+          "description": "The cold limestone twists confusingly into the darkness as a maze of corridors. Metallic clanking echoes through the passageways. You find no evidence of the trapdoor which entombed you in this accursed labyrinth. The labyrinth opens up to the north, south, east.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 1254,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1251,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Soulless shadow",
+              "description": "yours.  These are no more than a nuisance, just put it out of its misery.",
+              "unique": false
+            }
+          ]
+        },
+        "1251": {
+          "vnum": 1251,
+          "name": "Limestone Labyrinth",
+          "description": "The cold limestone twists confusingly into the darkness as a maze of corridors. Metallic clanking echoes through the passageways. You struggle to keep your mind focused and it feels as if whole days are slipping by. The labyrinth opens up to the north, east, south.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 1250,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1252,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1252": {
+          "vnum": 1252,
+          "name": "Limestone Labyrinth",
+          "description": "The cold limestone twists confusingly into the darkness as a maze of corridors. Metallic clanking echoes through the passageways. You struggle to keep your mind focused and it feels as if whole days are slipping by. The labyrinth opens up to the north, east.",
+          "grid_x": 0,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 1253,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1251,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Fluorescent mold",
+              "description": "the mold is invisible to all but the magical eye.  Be wary of this unique",
+              "unique": true
+            }
+          ]
+        },
+        "1253": {
+          "vnum": 1253,
+          "name": "Limestone Labyrinth",
+          "description": "The cold limestone twists confusingly into the darkness as a maze of corridors. Metallic clanking echoes through the passageways. You struggle to keep your mind focused and it feels as if whole days are slipping by. The labyrinth opens up to the west.",
+          "grid_x": 1,
+          "grid_y": 2,
+          "exits": {
+            "w": {
+              "to_vnum": 1252,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Soulless shadow",
+              "description": "yours.  These are no more than a nuisance, just put it out of its misery.",
+              "unique": false
+            }
+          ]
+        },
+        "1254": {
+          "vnum": 1254,
+          "name": "Limestone Labyrinth",
+          "description": "The cold limestone twists confusingly into the darkness as a maze of corridors. Metallic clanking echoes through the passageways. You struggle to keep your mind focused and it feels as if whole days are slipping by. The labyrinth opens up to the south, east.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 1255,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1255": {
+          "vnum": 1255,
+          "name": "Limestone Labyrinth",
+          "description": "The cold limestone twists confusingly into the darkness as a maze of corridors. Metallic clanking echoes through the passageways. You struggle to keep your mind focused and it feels as if whole days are slipping by. The labyrinth opens up to the west, east.",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 1256,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1256": {
+          "vnum": 1256,
+          "name": "Limestone Labyrinth",
+          "description": "The cold limestone twists confusingly into the darkness as a maze of corridors. Metallic clanking echoes through the passageways. You struggle to keep your mind focused and it feels as if whole days are slipping by. The labyrinth opens up to the west, east, north, south.",
+          "grid_x": 2,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 1260,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1257,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Ethereal light",
+              "description": "labyrinth.",
+              "unique": true
+            }
+          ]
+        },
+        "1257": {
+          "vnum": 1257,
+          "name": "Limestone Labyrinth",
+          "description": "The cold limestone twists confusingly into the darkness as a maze of corridors. Metallic clanking echoes through the passageways. You struggle to keep your mind focused and it feels as if whole days are slipping by. The labyrinth opens up to the south, west.",
+          "grid_x": 2,
+          "grid_y": -2,
+          "exits": {
+            "s": {
+              "to_vnum": 1256,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Animated iron armor",
+              "description": "stomps through the corridors.  With armor over an inch thick, this full suit of iron seems determined to grind you into the floor.",
+              "unique": true
+            },
+            {
+              "name": "Vile cockroach",
+              "description": "all kinds of filth including garbage, decaying organic matter and you.",
+              "unique": false
+            },
+            {
+              "name": "Yellow mold",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "1258": {
+          "vnum": 1258,
+          "name": "Limestone Labyrinth",
+          "description": "The cold limestone twists confusingly into the darkness as a maze of corridors. Metallic clanking echoes through the passageways. You struggle to keep your mind focused and it feels as if whole days are slipping by. The labyrinth opens up to the east, west. You have lost 1000 experience.",
+          "grid_x": 1,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 1257,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1259,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Vile cockroach",
+              "description": "all kinds of filth including garbage, decaying organic matter and you.",
+              "unique": false
+            }
+          ]
+        },
+        "1259": {
+          "vnum": 1259,
+          "name": "Limestone Labyrinth",
+          "description": "The cold limestone twists confusingly into the darkness as a maze of corridors. Metallic clanking echoes through the passageways. You struggle to keep your mind focused and it feels as if whole days are slipping by. The labyrinth opens up to the east.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 1258,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1260": {
+          "vnum": 1260,
+          "name": "Limestone Labyrinth",
+          "description": "The cold limestone twists confusingly into the darkness as a maze of corridors. Metallic clanking echoes through the passageways. You struggle to keep your mind focused and it feels as if whole days are slipping by. The labyrinth opens up to the west, east, south.",
+          "grid_x": 3,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 1261,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1256,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1261": {
+          "vnum": 1261,
+          "name": "Limestone Labyrinth",
+          "description": "The cold limestone twists confusingly into the darkness as a maze of corridors. Metallic clanking echoes through the passageways. You struggle to keep your mind focused and it feels as if whole days are slipping by. The labyrinth opens up to the west, south, north.",
+          "grid_x": 4,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 1262,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Blind salamander",
+              "description": "towards you.  Yellow stripes down its back suggest that it lives off the poisonous molds that flourish in this miserable place.",
+              "unique": true
+            },
+            {
+              "name": "Soulless shadow",
+              "description": "yours.  These are no more than a nuisance, just put it out of its misery.",
+              "unique": false
+            }
+          ]
+        },
+        "1262": {
+          "vnum": 1262,
+          "name": "Limestone Labyrinth",
+          "description": "The cold limestone twists confusingly into the darkness as a maze of corridors. Metallic clanking echoes through the passageways. You struggle to keep your mind focused and it feels as if whole days are slipping by. The labyrinth opens up to the north, south.",
+          "grid_x": 4,
+          "grid_y": 0,
+          "exits": {
+            "s": {
+              "to_vnum": 1263,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Labyrinth",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1263": {
+          "vnum": 1263,
+          "name": "Limestone Labyrinth",
+          "description": "The cold limestone twists confusingly into the darkness as a maze of corridors. Metallic clanking echoes through the passageways. Centered conspicuously in the floor is a large wooden trapdoor promising a way out. The labyrinth opens up to the north.",
+          "grid_x": 4,
+          "grid_y": 1,
+          "exits": {
+            "d": {
+              "to_vnum": 1264,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "The Fortress Crypt",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -4,
+        "max_x": 4,
+        "min_y": -2,
+        "max_y": 21,
+        "room_count": 24
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1240,
+      "to": 1241,
+      "direction": "n",
+      "from_grid": [
+        -4,
+        21
+      ],
+      "to_grid": [
+        -4,
+        20
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1241,
+      "to": 1242,
+      "direction": "se",
+      "from_grid": [
+        -4,
+        20
+      ],
+      "to_grid": [
+        -3,
+        21
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1242,
+      "to": 1243,
+      "direction": "ne",
+      "from_grid": [
+        -3,
+        21
+      ],
+      "to_grid": [
+        -2,
+        20
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1243,
+      "to": 1244,
+      "direction": "ne",
+      "from_grid": [
+        -2,
+        20
+      ],
+      "to_grid": [
+        0,
+        19
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1244,
+      "to": 1245,
+      "direction": "ne",
+      "from_grid": [
+        0,
+        19
+      ],
+      "to_grid": [
+        1,
+        18
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1244,
+      "to": 1247,
+      "direction": "nw",
+      "from_grid": [
+        0,
+        19
+      ],
+      "to_grid": [
+        -1,
+        18
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1245,
+      "to": 1246,
+      "direction": "ne",
+      "from_grid": [
+        1,
+        18
+      ],
+      "to_grid": [
+        2,
+        17
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1246,
+      "to": 1244,
+      "direction": "nw",
+      "from_grid": [
+        2,
+        17
+      ],
+      "to_grid": [
+        0,
+        19
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1247,
+      "to": 1248,
+      "direction": "sw",
+      "from_grid": [
+        -1,
+        18
+      ],
+      "to_grid": [
+        -2,
+        19
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1248,
+      "to": 1249,
+      "direction": "se",
+      "from_grid": [
+        -2,
+        19
+      ],
+      "to_grid": [
+        -1,
+        20
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1250,
+      "to": 1254,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1250,
+      "to": 1251,
+      "direction": "s",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1251,
+      "to": 1252,
+      "direction": "s",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1252,
+      "to": 1253,
+      "direction": "e",
+      "from_grid": [
+        0,
+        2
+      ],
+      "to_grid": [
+        1,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1254,
+      "to": 1255,
+      "direction": "e",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        1,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1255,
+      "to": 1256,
+      "direction": "e",
+      "from_grid": [
+        1,
+        -1
+      ],
+      "to_grid": [
+        2,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1256,
+      "to": 1260,
+      "direction": "e",
+      "from_grid": [
+        2,
+        -1
+      ],
+      "to_grid": [
+        3,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1256,
+      "to": 1257,
+      "direction": "n",
+      "from_grid": [
+        2,
+        -1
+      ],
+      "to_grid": [
+        2,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1258,
+      "to": 1257,
+      "direction": "e",
+      "from_grid": [
+        1,
+        -2
+      ],
+      "to_grid": [
+        2,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1258,
+      "to": 1259,
+      "direction": "w",
+      "from_grid": [
+        1,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1260,
+      "to": 1261,
+      "direction": "e",
+      "from_grid": [
+        3,
+        -1
+      ],
+      "to_grid": [
+        4,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1261,
+      "to": 1262,
+      "direction": "s",
+      "from_grid": [
+        4,
+        -1
+      ],
+      "to_grid": [
+        4,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1262,
+      "to": 1263,
+      "direction": "s",
+      "from_grid": [
+        4,
+        0
+      ],
+      "to_grid": [
+        4,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1264,
+      "to": 1265,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1265,
+      "to": 1267,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1265,
+      "to": 1268,
+      "direction": "s",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1265,
+      "to": 1266,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1269,
+      "to": 1270,
+      "direction": "n",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -2
+    },
+    {
+      "from": 1270,
+      "to": 1271,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -2
+    },
+    {
+      "from": 1270,
+      "to": 1272,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": -2
+    },
+    {
+      "from": 1272,
+      "to": 1273,
+      "direction": "w",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        -1,
+        -1
+      ],
+      "floor": -2
+    }
+  ]
+}

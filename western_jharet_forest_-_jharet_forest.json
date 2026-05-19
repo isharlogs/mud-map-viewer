@@ -1,0 +1,60 @@
+{
+  "zone_name": "Western Jharet Forest - Jharet Forest",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": 0,
+    "max_x": 0,
+    "min_y": 0,
+    "max_y": 0
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1322,
+      "rooms": {
+        "1322": {
+          "vnum": 1322,
+          "name": "The Edge of the Forest",
+          "description": "The forest to the east bristles with hoary trees, and little birds flutter south. The road you travel disappears into the forest and runs westward toward a city visible in the distance. A leafy plant with thick stems grows here, its roots bulging from the soil. Samu goes east.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1323,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "In The Forest",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1321,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Forest Road",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1684,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Worn Trail",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    }
+  },
+  "edges": []
+}

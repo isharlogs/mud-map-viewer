@@ -1,0 +1,1718 @@
+{
+  "zone_name": "Sskyth Treetop Village - Mt. M'chel Region",
+  "floor_count": 3,
+  "bounds": {
+    "min_x": -5,
+    "max_x": 10,
+    "min_y": -1,
+    "max_y": 75
+  },
+  "floors": {
+    "-2": {
+      "floor_id": -2,
+      "entry_vnum": 800,
+      "rooms": {
+        "800": {
+          "vnum": 800,
+          "name": "Atop a Rock Shelf",
+          "description": "Stopping to rest your arms and legs after your climb, you notice the rock beneath you is surprisingly cool, a nice break from the humid swamp below. From this vantage point, you can cleary see a complicated network of wooden platforms connected by swaying catwalks high in the trees. Just a few paces in front of you stands a gnarled tree which offers many handholds should you have the desire to scale it.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "d": {
+              "to_vnum": 799,
+              "to_zone": "Great Ancestral Swamp",
+              "to_room_name": "In the Swamp",
+              "direction": "d",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 801,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Up a Gnarled Tree",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    },
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 812,
+      "rooms": {
+        "801": {
+          "vnum": 801,
+          "name": "Up a Gnarled Tree",
+          "description": "You stand on a smallish platform built on the side of a sturdy, gnarled tree. Simple hand-rails rise from the floor, as it would be a long fall to the swamp below. Strange lizardmen walk around with long strides, glancing at you with suspicion as they go about their way.",
+          "grid_x": 0,
+          "grid_y": 21,
+          "exits": {
+            "n": {
+              "to_vnum": 802,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 800,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Atop a Rock Shelf",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Sskyyth guard",
+              "description": "You doubt he is accustomed to seeing many outlanders, but he appears to know how to deal with you none the less.",
+              "unique": true
+            }
+          ]
+        },
+        "802": {
+          "vnum": 802,
+          "name": "Along a Wooden Walkway",
+          "description": "The planks beneath your feet seem sturdy enough. But being this high above the ground doesn't put you at ease. Not to mention the strange creatures looking down their ... uhmmm, noses at you. The way to the east smells of the swamp, while to the northwest, you catch the strong scent of these lizard creatures.",
+          "grid_x": 0,
+          "grid_y": 20,
+          "exits": {
+            "e": {
+              "to_vnum": 803,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "nw": {
+              "to_vnum": 805,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 801,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Up a Gnarled Tree",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Lanky sskyyth",
+              "description": "slips out of his mouth to sniff the air periodically as his sharp reptillian eyes scan the walkways between the thick trees.",
+              "unique": true
+            }
+          ]
+        },
+        "803": {
+          "vnum": 803,
+          "name": "Along a Wooden Walkway",
+          "description": "It seems as though the traffic has decreased here. Less of the lizardfolk mill around this section of the over-head pathway. The trees are less dense here than they are at other sections of the village, allowing for a warm breeze to relieve you of some of the sweat condensed on your brow. The walkway sways ever so slightly.",
+          "grid_x": 1,
+          "grid_y": 20,
+          "exits": {
+            "w": {
+              "to_vnum": 802,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 804,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Observation Deck",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Burly sskyyth",
+              "description": "eyes feast on your flesh.",
+              "unique": true
+            }
+          ]
+        },
+        "805": {
+          "vnum": 805,
+          "name": "Platform",
+          "description": "This appears to be the equivalent of a town square for the lizard society. Many of them amble about, holding conversations with peers, gesturing rather impolitely at you. Others have come to take a rest from treading the long catwalks, cooling themselves on the ample shade provided by the dense foliage.",
+          "grid_x": 0,
+          "grid_y": 19,
+          "exits": {
+            "s": {
+              "to_vnum": 802,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 806,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "806": {
+          "vnum": 806,
+          "name": "Platform",
+          "description": "Little tables and benches fill this section of the large platform. The ones on the outside edges are all occupied, offering the most privacy and the best view. Some folk nibble at foods, others play at small games that in some fashion resemble dice and checkers, and some yet are merely chit-chatting the day away.",
+          "grid_x": -1,
+          "grid_y": 19,
+          "exits": {
+            "e": {
+              "to_vnum": 805,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 819,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Gossipy sskyyth",
+              "description": "lizard equivalent of a giggle as she lays eyes upon you.  Oh, how good it would feel to silence that forked toungue.",
+              "unique": true
+            }
+          ]
+        },
+        "807": {
+          "vnum": 807,
+          "name": "Platform",
+          "description": "The boards of the platform creak unassuringly under the weight of the massive crowd. Lizardmen stride about on the main platform, their arms full of recent purchases. It will take some doing to push through the crowd; it seems as though the entire village decides to do their shopping at one time.",
+          "grid_x": -3,
+          "grid_y": 18,
+          "exits": {
+            "e": {
+              "to_vnum": 808,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 806,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 809,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "808": {
+          "vnum": 808,
+          "name": "Platform",
+          "description": "Merchant stands are set up all along this northeastern corner of the large platform. The proprietors are hawking various goods, from clothing to the sweetened fruits that the lizardmen indulge on. Unfortunately, these primitive merchants sell nothing you see as useful, not to mention you have no earthly idea what this society's currency is.",
+          "grid_x": -3,
+          "grid_y": 19,
+          "exits": {
+            "w": {
+              "to_vnum": 807,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Sskyyth merchant",
+              "description": "for a lizard.  He smiles broadly at you as he hawks his wares, eager to make some sort of barter for foreign goods.",
+              "unique": true
+            },
+            {
+              "name": "Vain sskyyth",
+              "description": "upon her fellow Sskyyth in the same manner she would look down upon a warm-",
+              "unique": true
+            }
+          ]
+        },
+        "809": {
+          "vnum": 809,
+          "name": "Along a Wooden Walkway",
+          "description": "Most of the lizardmen are southbound to the market, or headed back to their homes to the west. They clutch their possessions tightly and quicken their pace as they near you, eager to be away. Glancing to the northwest, you notice that the small procession of lizards headed in that direction are dressed in their finest clothing.",
+          "grid_x": -4,
+          "grid_y": 18,
+          "exits": {
+            "nw": {
+              "to_vnum": 812,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 807,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 810,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Inside a Treeden",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Sskyyth girl",
+              "description": "are thick.  She runs quickly, ducked low, and looks back over her shoulder",
+              "unique": false
+            }
+          ]
+        },
+        "810": {
+          "vnum": 810,
+          "name": "Inside a Treeden",
+          "description": "Several small and, by the looks of them, hastily constructed, thatch roofed huts are jammed close together on this smallish platform. Clotheslines are set out, with garments drying on them. Lizard children play in the available space, while the adults converse in small groups. A seedy sskyyth says, \"You want it, don't you? You want the shiny?\"",
+          "grid_x": -5,
+          "grid_y": 18,
+          "exits": {
+            "e": {
+              "to_vnum": 809,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 811,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Inside a Treeden",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Battalion of sskyyth soldiers",
+              "description": "and people.  Determined.  Powerful. Like looking into a mirror, really.",
+              "unique": true
+            },
+            {
+              "name": "Pious sskyyth",
+              "description": "",
+              "unique": true
+            },
+            {
+              "name": "Seedy sskyyth",
+              "description": "off.  As he turns his gaze upon you, you catch the unmistakable glint of",
+              "unique": true
+            },
+            {
+              "name": "Sskyyth child",
+              "description": "than a child.",
+              "unique": false
+            },
+            {
+              "name": "Sskyyth female",
+              "description": "peeks in your direction.",
+              "unique": true
+            }
+          ]
+        },
+        "812": {
+          "vnum": 812,
+          "name": "Along a Wooden Walkway",
+          "description": "You find yourself almost alone as you traverse this walkway. The lizards' eyes are focused straight ahead, and none of them make even the tiniest of noises. A cool breeze which bears a multitude of scents blows gently through its music.",
+          "grid_x": -5,
+          "grid_y": 17,
+          "exits": {
+            "nw": {
+              "to_vnum": 818,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "se": {
+              "to_vnum": 809,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "se",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 813,
+              "to_zone": "Great Ancestral Swamp",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Sskyyth girl",
+              "description": "are thick.  She runs quickly, ducked low, and looks back over her shoulder",
+              "unique": false
+            }
+          ]
+        },
+        "818": {
+          "vnum": 818,
+          "name": "Platform",
+          "description": "A red carpet is laid upon ground leading to the north. Torches upon tripod stands run parallel to the carpet, casting long, slow-moving shadows. Leaves from the trees above float gently down, swaying about in the air before landing and dancing upon the platform, making the very floor itself seem alive.",
+          "grid_x": -5,
+          "grid_y": 19,
+          "exits": {
+            "s": {
+              "to_vnum": 812,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "se": {
+              "to_vnum": 812,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "se",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 806,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "819": {
+          "vnum": 819,
+          "name": "Platform",
+          "description": "Several of the lizardmen have their heads bent in prayer, paying respects to the simple statue of a strange looking Sskyyth who holds his hand up in a sign of benediction. All worshippers pay a tithe to the statue before being blessed by a priest, and continuing on their way.",
+          "grid_x": -1,
+          "grid_y": 18,
+          "exits": {
+            "nw": {
+              "to_vnum": 820,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Beneath the Spiral Stairway",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 806,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Sskyyth girl",
+              "description": "are thick.  She runs quickly, ducked low, and looks back over her shoulder",
+              "unique": false
+            },
+            {
+              "name": "Sskyyth priest",
+              "description": "as he honors his deities.",
+              "unique": true
+            }
+          ]
+        },
+        "820": {
+          "vnum": 820,
+          "name": "Beneath the Spiral Stairway",
+          "description": "This wooden walkway has been suspended between two gigantic trees, their diameters far exceeding any of the trees you have ever seen. Around the tree above you runs a wooden staircase, leading to platforms and walkways even higher up in the jungle canopy. You can make out the flickering lights of torches that run along the paths above you.",
+          "grid_x": -3,
+          "grid_y": 17,
+          "exits": {
+            "se": {
+              "to_vnum": 819,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "se",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 821,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Up the Spiral Stairway",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "822": {
+          "vnum": 822,
+          "name": "Above the Spiral Stairway",
+          "description": "This end of the village surrounds the stairway that links it with its cousin further down the rainforest trees. Small wooden houses surround this platform, almost growing into the thick foliage that pokes up through the gaps between the planks.",
+          "grid_x": 0,
+          "grid_y": 2,
+          "exits": {
+            "ne": {
+              "to_vnum": 823,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 821,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Up the Spiral Stairway",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "823": {
+          "vnum": 823,
+          "name": "Platform",
+          "description": "This wide platform is the centre of the treetop village's upper level, tall wooden longhouses surrounding it on every side. Lizardmen dressed in flowing robes and bearing the clasps of nobles march to and fro, carrying out important business, no doubt.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 829,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 824,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 822,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Above the Spiral Stairway",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "824": {
+          "vnum": 824,
+          "name": "Platform",
+          "description": "This corner of the platform is remarkably quiet, despite the activity to the east and south. Looking over the wooden balustrade, you can see another wide platform in the distance, atop which a long vaulted hall has been built. A wooden walkway bridges the gap between these two platforms.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 825,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 825,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 823,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 823,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "825": {
+          "vnum": 825,
+          "name": "Platform",
+          "description": "Several guards stand at attention in this corner of the platform, watching over a long wooden walkway that leads to the treetop fortress that overlooks both levels of the village.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 824,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "ne": {
+              "to_vnum": 826,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Canopy Fortress",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 829,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 824,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Sskyyth soldier",
+              "description": "the fortress, but remains perfectly still.  Ever watchful.",
+              "unique": true
+            }
+          ]
+        },
+        "826": {
+          "vnum": 826,
+          "name": "Canopy Fortress",
+          "description": "",
+          "grid_x": 2,
+          "grid_y": -1,
+          "exits": {
+            "sw": {
+              "to_vnum": 825,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "sw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 828,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Tower atop the Emergent",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "829": {
+          "vnum": 829,
+          "name": "Platform",
+          "description": "This platform is a hub of activity, this corner of it the location of an impromptu street market. Sskyyth tradesmen cry out, advertising their wares in their strange hissing language, blocking your progress by holding up odd looking antiques to you.",
+          "grid_x": 1,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 825,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "se": {
+              "to_vnum": 830,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "se",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 823,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "830": {
+          "vnum": 830,
+          "name": "Along a Wooden Walkway",
+          "description": "The walkway trembles slightly under your measured tread, spanning the tremendous gaps between platforms. The walkway takes an indirect route to the one you can make out amongst the foliage, crossing from tree to tree with elegant simplicity. Several sskyyth children point at you and giggle.",
+          "grid_x": 2,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 831,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "nw": {
+              "to_vnum": 829,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 829,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Platform",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Sskyyth spy",
+              "description": "as you wander about their treetop village.  Obviously there are some people here that do not welcome outsiders.  What is it they have to hide, anyway?",
+              "unique": true
+            }
+          ]
+        },
+        "831": {
+          "vnum": 831,
+          "name": "Along a Wooden Walkway",
+          "description": "As the walkway circles around the thick trunk of an enormous tree, the natural pillar is the support for several huts, which perch precariously between branches of glossy leaves. A narrow stairway leads up to this tiny community, while the walkway links it in both directions to other clusters of trees.",
+          "grid_x": 3,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 838,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 830,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 832,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "On a Wide Platform",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "832": {
+          "vnum": 832,
+          "name": "On a Wide Platform",
+          "description": "A large platform has been constructed in the crown of this swamp tree, where the trunk splits into several branches. It is much cooler in the dappled shade up here, a fresh breeze rustling the leaves. Four wooden huts have been built around this platform, perched on several smaller branches. The vine curtains in their windows are thrown open for air.",
+          "grid_x": 10,
+          "grid_y": 5,
+          "exits": {
+            "n": {
+              "to_vnum": 834,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Inside a Treeden",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "nw": {
+              "to_vnum": 833,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Inside a Treeden",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 836,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Inside a Treeden",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "sw": {
+              "to_vnum": 835,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Inside a Treeden",
+              "direction": "sw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 831,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Errant sskyyth child",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "833": {
+          "vnum": 833,
+          "name": "Inside a Treeden",
+          "description": "This is the only treeden with two storeys, with a narrow staircase in the corner leading up to the second floor. A long low table of dull wood has been placed in the centre of the room, surrounded by piles of fur that the Sskyyth use as seats. The plaited rush curtains have been drawn aside, allowing you to look out over the placid swamp below. Well aimed! A higher power shields a male sskyyth from the full force of your attack! (-20) You step intrepidly toward your foe and land a fatal blow on a male sskyyth! (39) A male sskyyth issues a bloodcurdling cry of pain! You get 396 obsidian coins from a corpse here.",
+          "grid_x": 9,
+          "grid_y": 4,
+          "exits": {
+            "se": {
+              "to_vnum": 832,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "On a Wide Platform",
+              "direction": "se",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Male sskyyth",
+              "description": "the family heirlooms on the wall.",
+              "unique": true
+            }
+          ]
+        },
+        "834": {
+          "vnum": 834,
+          "name": "Inside a Treeden",
+          "description": "Whoever owns this circular treeden must be very houseproud, for despite the obvious poverty of their condition, the simple furniture and decoration is kept clean and fresh. Vases of fruiting branches adorn the various tables, with bunches of fruit and drying meat hanging from the rafters. The low beds are positioned underneath a wide window, which overlooks the wooden walkway.",
+          "grid_x": 10,
+          "grid_y": 4,
+          "exits": {
+            "sw": {
+              "to_vnum": 832,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "On a Wide Platform",
+              "direction": "sw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "835": {
+          "vnum": 835,
+          "name": "Inside a Treeden",
+          "description": "This dwelling has only one storey because it has been built right on the edge of a branch. The roof above you has been made of enormous green leaves, woven together with creepers and coated with wax to make them waterproof. The room is sparsely decorated, with simple wooden furniture scattered about. The Sskyyth seem to sleep on wooden pallets, covered with the soft skins of furry swamp creatures.",
+          "grid_x": 9,
+          "grid_y": 6,
+          "exits": {
+            "ne": {
+              "to_vnum": 832,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "On a Wide Platform",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Sskyyth mother",
+              "description": "out more juice and seasoning the meat she has been cooking.  She would probably object to your presence more if she wasn't so busy.",
+              "unique": true
+            }
+          ]
+        },
+        "836": {
+          "vnum": 836,
+          "name": "Inside a Treeden",
+          "description": "This is the largest of the four treedens, and it is the home of a sskyyth herbalist. The first floor of his home is his surgery, with a row of chairs running along the wall for waiting patients. There are chests of herbs and roots of every description, and a large table covered with pestles, mortars, weighing scales and cauldrons of hot water. It seems the Sskyyth favour a natural solution to illness. A wooden stairway in the corner leads up to the herbalist's private chamber.",
+          "grid_x": 10,
+          "grid_y": 6,
+          "exits": {
+            "nw": {
+              "to_vnum": 832,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "On a Wide Platform",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 837,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Inside a Treeden",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "838": {
+          "vnum": 838,
+          "name": "Along a Wooden Walkway",
+          "description": "This section of the walkway passes through exceptionally dense lianas, draping you with creepers and sticky juices. The air is completely still, so thick and humid that it's practically solid. The reason for this, you notice, is the festering swamp below, which seems to be a lot higher up than you remember. The walkways must be lower down...",
+          "grid_x": 4,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 831,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "ne": {
+              "to_vnum": 839,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 831,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "839": {
+          "vnum": 839,
+          "name": "Along a Wooden Walkway",
+          "description": "As the trees become more sparse, the walkway crosses increasingly large gaps to link the various treetops. The way is much less crowded, only the odd sskyyth hurrying past with their eyes downturned. Several mangy-looking swamp birds birch on the balustrade.",
+          "grid_x": 5,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 840,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Beside a Longhouse",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "sw": {
+              "to_vnum": 838,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "sw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 838,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "840": {
+          "vnum": 840,
+          "name": "Beside a Longhouse",
+          "description": "The walkway runs alongside a longhouse, a wooden hall perched between two trees and on top of the tremendous joists suspended there. A thin trail of smoke floats from a hole in the leafed roof, and several sskyyth are sitting out on the veranda to the right. The walkway is drawing to an end as the swamp trees become too short to support the Sskyyth village.",
+          "grid_x": 5,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 841,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Inside a Longhouse",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 839,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "841": {
+          "vnum": 841,
+          "name": "Inside a Longhouse",
+          "description": "This longhouse is essentially a single room, with only flimsy partitions separating the sleeping spaces from the living area. Out in the centre of the house here, the bamboo floor is covered with broad woven leaf-mats, and simple furniture is scattered about. The occupants seem to be one whole family, with mothers nursing their children to one side, and elderly relations chattering amiably over glasses of cold juice. Bark paintings depict esteemed patriarchs and matriarchs of this clan.",
+          "grid_x": 6,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 843,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "The Longhouse Kitchen",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 842,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "The Longhouse Veranda",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 840,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Beside a Longhouse",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Sskyyth child",
+              "description": "than a child.",
+              "unique": false
+            },
+            {
+              "name": "Sskyyth father",
+              "description": "performing all those little tasks that need doing.",
+              "unique": true
+            },
+            {
+              "name": "Sskyyth grandmother",
+              "description": "with this matriarch would be remarkably unwise.  A sense of power and complete confidence radiates from her, silencing trouble-makers effortlessly.",
+              "unique": true
+            },
+            {
+              "name": "Sskyyth servant",
+              "description": "burning hatred of his masters.  However, as a result of so many years of servitude, he is too cowed to act on such passions.",
+              "unique": true
+            }
+          ]
+        },
+        "842": {
+          "vnum": 842,
+          "name": "The Longhouse Veranda",
+          "description": "A pleasant breeze ruffles the loose leaves that make up the woven roof, keeping the veranda cooler than most Sskyyth treedens. This must be the reason that so many of the longhouse's inhabitants have gathered out here, reclining on the many wooden benches. The view is pretty impressive as well, due to the fact that the swampland forests are becoming sparser as they draw closer to the mountain. Between the enormous trees below you, the ground is marshy, speckled with browns and greens, with patches of reeds and open water.",
+          "grid_x": 6,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 841,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Inside a Longhouse",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "843": {
+          "vnum": 843,
+          "name": "The Longhouse Kitchen",
+          "description": "This is not part of the longhouse itself, as the kitchen has been built on an open-air platform adjoining the house. In the centre, a raised dais of stones holds a mighty fire, with spits turning on top of it. The almost raw, barely cooked carcasses of swamp creatures spin laconically - you can recognise several birds among them. A leaf-covered table lies to one side.",
+          "grid_x": 6,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 841,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Inside a Longhouse",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -5,
+        "max_x": 10,
+        "min_y": -1,
+        "max_y": 21,
+        "room_count": 32
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 804,
+      "rooms": {
+        "804": {
+          "vnum": 804,
+          "name": "Observation Deck",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "d": {
+              "to_vnum": 803,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Along a Wooden Walkway",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "811": {
+          "vnum": 811,
+          "name": "Inside a Treeden",
+          "description": "Simple rugs litter the floor of the well kept home. Rough hewn wooden furniture is spread about, and a few of the chairs have animal hides draped upon them. Dozens of small candles provide ample light. A bowl of fresh fruit lies upon a small table in the middle of the room.",
+          "grid_x": 0,
+          "grid_y": 30,
+          "exits": {
+            "d": {
+              "to_vnum": 810,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Inside a Treeden",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "821": {
+          "vnum": 821,
+          "name": "Up the Spiral Stairway",
+          "description": "The stairway continues to wind itself around the trunk of the tree, joining the two levels of the Sskyyth village in a seemingly endless line of steps. Looking over the balustrade, you can see the lower level nestled amongst the shorter trees of the rainforest, small platforms dotted here and there and linked with walkways suspended from long ropes. Above you the second level of the village rests just below the canopy, the roof of the forest.",
+          "grid_x": 0,
+          "grid_y": 45,
+          "exits": {
+            "d": {
+              "to_vnum": 820,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Beneath the Spiral Stairway",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "u": {
+              "to_vnum": 822,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Above the Spiral Stairway",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "827": {
+          "vnum": 827,
+          "name": "War Council Chambers",
+          "description": "This circular chamber is dominated by an enormous table, surrounded by comfortable divans and stools. The roof of plaited leaves is shaped as a wide dome, the windows small and slit-like for protection. No-one has met here for a very long time, as the Sskyyth have not fought a full war for many centuries.",
+          "grid_x": 0,
+          "grid_y": 60,
+          "exits": {
+            "go out": {
+              "to_vnum": 826,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Canopy Fortress",
+              "direction": "go out",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "General Tassic",
+              "description": "to this continent, but they keep their forces well-trained.  Their commander",
+              "unique": true
+            }
+          ]
+        },
+        "828": {
+          "vnum": 828,
+          "name": "Tower atop the Emergent",
+          "description": "What a view! This wooden tower is taller than the rest, rising up out of the canopy and climbing alongside a tall emergent for support. The crowning platform has a spectacular command across the jungle, the dense green trees spreading out in all directions. You can see flights of birds swooping from emergent to emergent, spinning in the stiff breeze. Peering through the thick foliage, you can see the rest of the fortress below, other, small towers poking out of the canopy in shorter trees.",
+          "grid_x": 0,
+          "grid_y": 75,
+          "exits": {
+            "d": {
+              "to_vnum": 826,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Canopy Fortress",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Sskyyth scout",
+              "description": "the only movement that of his bright eyes, which flick back and forth over",
+              "unique": true
+            }
+          ]
+        },
+        "837": {
+          "vnum": 837,
+          "name": "Inside a Treeden",
+          "description": "The herbalist must be very greatly respected by the Sskyyth community, as an entire tabletop has been covered in scrolls of thanks, little presents and mementoes. Another large cupboard in the corner, which is heavily locked and barred, must hold the most potent of the herbs he works with, which might prove dangerous in certain cases. The walls are decorated with thick pelts of fur and stones collected from the river, which have been swirled and rounded by the water.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {
+            "d": {
+              "to_vnum": 836,
+              "to_zone": "Sskyth Treetop Village - Mt. M'chel Region",
+              "to_room_name": "Inside a Treeden",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Errant sskyyth child",
+              "description": "",
+              "unique": false
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 75,
+        "room_count": 6
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 801,
+      "to": 802,
+      "direction": "n",
+      "from_grid": [
+        0,
+        21
+      ],
+      "to_grid": [
+        0,
+        20
+      ],
+      "floor": -1
+    },
+    {
+      "from": 802,
+      "to": 803,
+      "direction": "e",
+      "from_grid": [
+        0,
+        20
+      ],
+      "to_grid": [
+        1,
+        20
+      ],
+      "floor": -1
+    },
+    {
+      "from": 802,
+      "to": 805,
+      "direction": "nw",
+      "from_grid": [
+        0,
+        20
+      ],
+      "to_grid": [
+        0,
+        19
+      ],
+      "floor": -1
+    },
+    {
+      "from": 805,
+      "to": 806,
+      "direction": "w",
+      "from_grid": [
+        0,
+        19
+      ],
+      "to_grid": [
+        -1,
+        19
+      ],
+      "floor": -1
+    },
+    {
+      "from": 806,
+      "to": 819,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        19
+      ],
+      "to_grid": [
+        -1,
+        18
+      ],
+      "floor": -1
+    },
+    {
+      "from": 807,
+      "to": 808,
+      "direction": "e",
+      "from_grid": [
+        -3,
+        18
+      ],
+      "to_grid": [
+        -3,
+        19
+      ],
+      "floor": -1
+    },
+    {
+      "from": 807,
+      "to": 806,
+      "direction": "s",
+      "from_grid": [
+        -3,
+        18
+      ],
+      "to_grid": [
+        -1,
+        19
+      ],
+      "floor": -1
+    },
+    {
+      "from": 807,
+      "to": 809,
+      "direction": "w",
+      "from_grid": [
+        -3,
+        18
+      ],
+      "to_grid": [
+        -4,
+        18
+      ],
+      "floor": -1
+    },
+    {
+      "from": 809,
+      "to": 812,
+      "direction": "nw",
+      "from_grid": [
+        -4,
+        18
+      ],
+      "to_grid": [
+        -5,
+        17
+      ],
+      "floor": -1
+    },
+    {
+      "from": 809,
+      "to": 810,
+      "direction": "w",
+      "from_grid": [
+        -4,
+        18
+      ],
+      "to_grid": [
+        -5,
+        18
+      ],
+      "floor": -1
+    },
+    {
+      "from": 812,
+      "to": 818,
+      "direction": "nw",
+      "from_grid": [
+        -5,
+        17
+      ],
+      "to_grid": [
+        -5,
+        19
+      ],
+      "floor": -1
+    },
+    {
+      "from": 818,
+      "to": 806,
+      "direction": "w",
+      "from_grid": [
+        -5,
+        19
+      ],
+      "to_grid": [
+        -1,
+        19
+      ],
+      "floor": -1
+    },
+    {
+      "from": 819,
+      "to": 820,
+      "direction": "nw",
+      "from_grid": [
+        -1,
+        18
+      ],
+      "to_grid": [
+        -3,
+        17
+      ],
+      "floor": -1
+    },
+    {
+      "from": 822,
+      "to": 823,
+      "direction": "ne",
+      "from_grid": [
+        0,
+        2
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 823,
+      "to": 829,
+      "direction": "e",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        1,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 823,
+      "to": 824,
+      "direction": "n",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 824,
+      "to": 825,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 825,
+      "to": 826,
+      "direction": "ne",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        2,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 825,
+      "to": 829,
+      "direction": "s",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        1,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 829,
+      "to": 830,
+      "direction": "se",
+      "from_grid": [
+        1,
+        1
+      ],
+      "to_grid": [
+        2,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 830,
+      "to": 831,
+      "direction": "e",
+      "from_grid": [
+        2,
+        1
+      ],
+      "to_grid": [
+        3,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 831,
+      "to": 838,
+      "direction": "e",
+      "from_grid": [
+        3,
+        1
+      ],
+      "to_grid": [
+        4,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 832,
+      "to": 834,
+      "direction": "n",
+      "from_grid": [
+        10,
+        5
+      ],
+      "to_grid": [
+        10,
+        4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 832,
+      "to": 833,
+      "direction": "nw",
+      "from_grid": [
+        10,
+        5
+      ],
+      "to_grid": [
+        9,
+        4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 832,
+      "to": 836,
+      "direction": "s",
+      "from_grid": [
+        10,
+        5
+      ],
+      "to_grid": [
+        10,
+        6
+      ],
+      "floor": -1
+    },
+    {
+      "from": 832,
+      "to": 835,
+      "direction": "sw",
+      "from_grid": [
+        10,
+        5
+      ],
+      "to_grid": [
+        9,
+        6
+      ],
+      "floor": -1
+    },
+    {
+      "from": 838,
+      "to": 839,
+      "direction": "ne",
+      "from_grid": [
+        4,
+        1
+      ],
+      "to_grid": [
+        5,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 839,
+      "to": 840,
+      "direction": "n",
+      "from_grid": [
+        5,
+        1
+      ],
+      "to_grid": [
+        5,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 840,
+      "to": 841,
+      "direction": "e",
+      "from_grid": [
+        5,
+        0
+      ],
+      "to_grid": [
+        6,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 841,
+      "to": 843,
+      "direction": "n",
+      "from_grid": [
+        6,
+        0
+      ],
+      "to_grid": [
+        6,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 841,
+      "to": 842,
+      "direction": "s",
+      "from_grid": [
+        6,
+        0
+      ],
+      "to_grid": [
+        6,
+        1
+      ],
+      "floor": -1
+    }
+  ]
+}

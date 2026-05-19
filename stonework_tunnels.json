@@ -1,0 +1,1352 @@
+{
+  "zone_name": "Stonework Tunnels",
+  "floor_count": 4,
+  "bounds": {
+    "min_x": -4,
+    "max_x": 4,
+    "min_y": -2,
+    "max_y": 48
+  },
+  "floors": {
+    "-3": {
+      "floor_id": -3,
+      "entry_vnum": 1748,
+      "rooms": {
+        "1748": {
+          "vnum": 1748,
+          "name": "In the Underground River",
+          "description": "Foul, murky water rushes by, pummeling you. Luck has smiled upon you this day, as you seem to have landed within a circle of jagged rocks which prevent the water from carrying you and your belongings off into oblivion. Mashed into crevices between the rocks here, are the remains of a skeleton. Over a series of loose stepping stones, it appears possible to reach a narrow staircase leading up into a tunnel of crafted stonework. You have lost 540 experience.",
+          "grid_x": 0,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 1755,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "A Narrow Cavern",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 1747,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Staircase",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Grue shaman",
+              "description": "slavering grue cocks a jaundiced eye at you as if appraising your value as lunch.  And it can cast spells.  Nasty ones.",
+              "unique": false
+            }
+          ]
+        },
+        "1755": {
+          "vnum": 1755,
+          "name": "A Narrow Cavern",
+          "description": "The waters of the underworld flow swiftly through a narrow cavern, having forked away from the primary course. To the south a jumbled pile of jagged rocks rise up from the churning river, and to the north this shallow tributary continues. You have lost 510 experience.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "s": {
+              "to_vnum": 1748,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "In the Underground River",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Puddle of nasty ooze",
+              "description": "The waters of the underworld flow swiftly through a narrow cavern, having forked away from the primary course.  To the south a jumbled pile of jagged rocks rise up from the churning river, and to the north this shallow tributary A nasty puddle of ooze has collected upon the floor here. A nasty puddle of ooze has collected upon the floor here. A nasty puddle of ooze has collected upon the floor here. A nasty puddle of ooze has collected upon the floor here. A nasty puddle of ooze has collected upon the floor here. A nasty puddle of ooze has collected upon the floor here.",
+              "unique": true
+            }
+          ]
+        },
+        "1756": {
+          "vnum": 1756,
+          "name": "Crumbled Passage",
+          "description": "A pile of rocks blocks further passage here. From the looks of them, its the result of a recent cave-in. Here and there a stray leg, head, or arm can be seen poking out from the pile, slowly being devoured by the multitude of insects inhabiting this dank little corner of the underworld. Warm gold veins gleam faintly beneath the surface. You would need a lot of luck. A grue shaman is a mystical shaman. He has rough, thick skin and glowing eyes. You will receive normal XP for killing him.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "s": {
+              "to_vnum": 1755,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "A Narrow Cavern",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Grue shaman",
+              "description": "slavering grue cocks a jaundiced eye at you as if appraising your value as lunch.  And it can cast spells.  Nasty ones.",
+              "unique": false
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 2,
+        "room_count": 3
+      }
+    },
+    "-2": {
+      "floor_id": -2,
+      "entry_vnum": 1747,
+      "rooms": {
+        "1747": {
+          "vnum": 1747,
+          "name": "Stonework Staircase",
+          "description": "Cracks appear in the steps to swallow the narrow rivulets of water streaming from above. The sound of rushing water echoes through the stepped passage, which terminates abruptly here. Beneath you can barely make out a jumble of rocks and the roil of water flowing past. It looks like you could jump safely down.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "d": {
+              "to_vnum": 1748,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "In the Underground River",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "u": {
+              "to_vnum": 1746,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Staircase",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    },
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 1746,
+      "rooms": {
+        "1746": {
+          "vnum": 1746,
+          "name": "Stonework Staircase",
+          "description": "Smoothly polished stones twist and curl downward, away from the tunnels beneath Napenthe. Trickles of fetid water stream across the steps, threatening to send you tumbling down into the vast darkness below. Dark iron streaks run thick through the rock.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "d": {
+              "to_vnum": 1747,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Staircase",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "u": {
+              "to_vnum": 471,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnel",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1751,
+      "rooms": {
+        "388": {
+          "vnum": 388,
+          "name": "Murky Pit",
+          "description": "The foul stench of murky green gas pervades this small pit. Nestled unobtrusively between a copse of small trees, you might easily have missed this place were it not for the nauseating aroma. You could clamber out of the pit and join the path to the south, or stay and play with its occupant.",
+          "grid_x": 0,
+          "grid_y": 18,
+          "exits": {
+            "s": {
+              "to_vnum": 386,
+              "to_zone": "Napenthe Colony",
+              "to_room_name": "Masindaar Path",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Dump daemon",
+              "description": "appear to be very intelligent or articulate; perhaps you should just drop",
+              "unique": true
+            }
+          ]
+        },
+        "469": {
+          "vnum": 469,
+          "name": "Stonework Tunnel",
+          "description": "Tunnels through the stonework beneath old Napenthe cross here, narrowing and widening at odd angles. The faint sound of rushing water echoes through the passages, and a distinct odor of decay wafts past. ba thi",
+          "grid_x": 3,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 471,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 470,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Chamber",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 468,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Darkling thief",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "471": {
+          "vnum": 471,
+          "name": "Stonework Tunnel",
+          "description": "A maze of narrow openings lead in several directions within this filthy tunnel beneath the stoneworks of old Napenthe. Most appear too narrow for travel. Through a smooth opening in the stone here, the sound of rushing water echoes, coupled with the clear and present scent of decay. A darkling thief's eyes roll back in his head as a result of your wicked backstab! (72) A darkling thief issues a bloodcurdling cry of pain! You have gained 6 alignment. You get a dagger from the corpse of a darkling thief. You get 414 obsidian coins from a corpse here.",
+          "grid_x": 4,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 1749,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Oddly Glowing Chamber",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 472,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Filthy Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 468,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 1746,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Staircase",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Clay ogre",
+              "description": "",
+              "unique": false
+            },
+            {
+              "name": "Razorbat",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "2243": {
+          "vnum": 2243,
+          "name": "Narrow Passage",
+          "description": "Layers of slime cover the rough stone walls of this narrow passage, which extends eastward away from a set of spiraling stairs. It ends before a poorly constructed door of rotting wood.",
+          "grid_x": 0,
+          "grid_y": 33,
+          "exits": {
+            "e": {
+              "to_vnum": 2244,
+              "to_zone": "Spunroot Tunnels - Napenthe Basin Forest",
+              "to_room_name": "Storage Chamber",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 497,
+              "to_zone": "Spunroot Tunnels - Napenthe Basin Forest",
+              "to_room_name": "Spiral Staircase",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "473": {
+          "vnum": 473,
+          "name": "Winding Ledge",
+          "description": "You tread lightly along a narrow, winding ledge in the darkness. Small winged creatures flit back and forth, occasionally diving at your intrusive form. Below, a pit of jagged spires can just barely be discerned. Passage is possible to the west and to the east. A small batwight is a shadowy necromancer standing here in extremely good condition, looking vigorous and surrounded by a very bright magical aura. It is a foul, half-rotted thing, and is shorter than you. Wearing: Nothing. You try to sneak a glance at its inventory...",
+          "grid_x": 2,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 470,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Chamber",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1751,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "A Pit of Spikes",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 474,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnels",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "466": {
+          "vnum": 466,
+          "name": "Before the Broken Gate",
+          "description": "Hanging crookedly from broken hinges are the remnants of a crude iron gate near the tunnel entrance. The odor of decay merges with the quiet tone of rushing water from afar, and through the gateway the tunnel splits.",
+          "grid_x": 4,
+          "grid_y": 3,
+          "exits": {
+            "n": {
+              "to_vnum": 467,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Filthy Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 465,
+              "to_zone": "Mount Skarag",
+              "to_room_name": "Tunnel Entrance",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "468": {
+          "vnum": 468,
+          "name": "Stonework Tunnel",
+          "description": "A maze of narrow openings lead in several directions within this filthy stonework tunnel. Ogre droppings and crushed bone litter the floor. Shifting its weight, a razorbat bumps you with its teeth. (2)",
+          "grid_x": 3,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 467,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Filthy Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 469,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1749,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Oddly Glowing Chamber",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "467": {
+          "vnum": 467,
+          "name": "Filthy Tunnel",
+          "description": "The rancid corpsi of small, mangled animals decay in piles along the walls of this filthy tunnel. Two passages lay open ahead, splitting east and west.",
+          "grid_x": 4,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 472,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Filthy Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 466,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Before the Broken Gate",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 468,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Razorbat",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "1749": {
+          "vnum": 1749,
+          "name": "Oddly Glowing Chamber",
+          "description": "Two passages within the stoneworks intersect here at a small chamber, its walls worn smooth. Along the northern wall are a series of evenly spaced banded markings, seven in total. Tiny pebbles are scattered at the base of the wall, and an odd chill seeps up from the ground here.",
+          "grid_x": 4,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 468,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 471,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "470": {
+          "vnum": 470,
+          "name": "Stonework Chamber",
+          "description": "",
+          "grid_x": 3,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 469,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 473,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Winding Ledge",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Clay ogre",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "1751": {
+          "vnum": 1751,
+          "name": "A Pit of Spikes",
+          "description": "Jagged conical spires rise from the floor of an acrid pit, full of decaying remains. Heat rises from the ground and soft gasps of steam erupt from cracks at irregular intervals. Something seems to be... flowing... just below the surface.",
+          "grid_x": 2,
+          "grid_y": -2,
+          "exits": {
+            "u": {
+              "to_vnum": 1750,
+              "to_zone": "Brimstone Depths - Stonework Tunnels",
+              "to_room_name": "Upon a Ledge",
+              "direction": "u",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "472": {
+          "vnum": 472,
+          "name": "Filthy Tunnel",
+          "description": "A maze of narrow openings lead in several directions within this filthy tunnel beneath the stoneworks of old Napenthe. Most appear too narrow for travel. Dark iron streaks run thick through the rock.",
+          "grid_x": 4,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 471,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 467,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Filthy Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "475": {
+          "vnum": 475,
+          "name": "Stonework Crawlspace",
+          "description": "The tunnel ends here in a miniscule crawlspace populated by the husks of small, formerly living things, and the dung of ogres and batwights. A tiny fissue in the ground forms a niche that appears as if it could contain a few small trinkets.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 474,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnels",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Saphor",
+              "description": "protrude from its mouths, along with the acrid scent of brimstone.  Its entire body is covered in spiked scales, yet it moves with alarming speed",
+              "unique": true
+            }
+          ]
+        },
+        "1754": {
+          "vnum": 1754,
+          "name": "Crumbled Passage",
+          "description": "A pile of rocks blocks further passage here. From the looks of them, its the result of a recent cave-in. Here and there a stray leg, head, or arm can be seen poking out from the pile, slowly being devoured by the multitude of insects inhabiting this dank little corner of the underworld. Warm gold veins gleam faintly beneath the surface. Ooops... you nearly set off the trap!",
+          "grid_x": 0,
+          "grid_y": 48,
+          "exits": {},
+          "npcs": []
+        },
+        "477": {
+          "vnum": 477,
+          "name": "Stonework Cavern",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 476,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnels",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1757,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stone Pit",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 483,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 478,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnels",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Ebon daemon",
+              "description": "the walls, staring directly upon you.",
+              "unique": true
+            }
+          ]
+        },
+        "1757": {
+          "vnum": 1757,
+          "name": "Stone Pit",
+          "description": "You've tumbled into a cramped stone pit within the tunnels. A scattering of typically gory muck and assorted bits of formerly living detrius cover the ground. The pit is deep, but perhaps not too deep to climb out of with some skill.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "u": {
+              "to_vnum": 477,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Cavern",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Pit wraith",
+              "description": "leering, angry wraith.   If you'd spent the last 500 years down here",
+              "unique": true
+            }
+          ]
+        },
+        "474": {
+          "vnum": 474,
+          "name": "Stonework Tunnels",
+          "description": "The tunnel ends abruptly here in a wide, convex ledge overlooking an endless darkness far below. A faint echo of rushing water drifts up from below. A narrow crawlspace lay adjacent to the west, and a slight blue aura surrounds the edges of the tunnel's end where open space begins. A nauseating odor wafts by. You have lost 850 experience.",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 473,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Winding Ledge",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 476,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnels",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 475,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Crawlspace",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "482": {
+          "vnum": 482,
+          "name": "Pit within the Stoneworks",
+          "description": "Crumbling blocks of sulpher are exposed here within an unnatural depression within the stonework tunnels. This musta been some blast.",
+          "grid_x": -3,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 481,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnels",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "483": {
+          "vnum": 483,
+          "name": "Stonework Tunnel",
+          "description": "You tread through a straight and cluttered tunnel travelling east and west, far beneath the earth. Ahead a narrow opening exits into a misty cavern of inteterminable size. Water drips freely from above, the echo of the falling drops the only sound present.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 477,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Cavern",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 484,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "484": {
+          "vnum": 484,
+          "name": "Stonework Tunnel",
+          "description": "A darkened and damp tunnel is blocked here by a solid old gate of iron set into the roughstone walls. The tunnel continues eastward, thin pools collecting upon the floor as water drips steadily from above. Further down the tunnel, the stonework begins to smooth into obviously crafted patterns.",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 483,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 483,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "476": {
+          "vnum": 476,
+          "name": "Stonework Tunnels",
+          "description": "A narrow passage through the stoneworks ventures west and north here, and from the north drifts a faint hint of rushing water. The floor here is well worn, and the remnants of a gate's bolting can be detected upon the walls.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 474,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnels",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 477,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Cavern",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "478": {
+          "vnum": 478,
+          "name": "Stonework Tunnels",
+          "description": "A narrow passage through the stonework tunnels goes east and west here, adjacent a large misty cavern. Thin tendrils of ebon mist creep along the walls, and here you feel slightly drained.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 477,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Cavern",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 479,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnels",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "479": {
+          "vnum": 479,
+          "name": "Stonework Tunnels",
+          "description": "Odd markings in even patterns cover the stonework surfaces of the walls here. To the north, a series of bars, also, stone, serve to form a gate through which can be seen a small, dingy cell. Exits through the tunnel lay to the east and to the west.",
+          "grid_x": -2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 478,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnels",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 480,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnels",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "480": {
+          "vnum": 480,
+          "name": "Stonework Tunnels",
+          "description": "Tunnels. Twists. Turns. Stone and more stone. It could go on forever, but you're sure it won't. Then again it may not matter; the creator of this particular place seems determined to see you die within it. Passages lead east and south.",
+          "grid_x": -3,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 479,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnels",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 481,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnels",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "481": {
+          "vnum": 481,
+          "name": "Stonework Tunnels",
+          "description": "Tunnels. Twists. Turns. Stone and more stone. It could go on forever, but you're sure it won't. Then again it may not matter; the creator of this particular place seems determined to see you die within it. A sulferous pit rests to the south, and passages offer further misery to the north and west.",
+          "grid_x": -3,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 480,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnels",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 482,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Pit within the Stoneworks",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1752,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnels",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1752": {
+          "vnum": 1752,
+          "name": "Stonework Tunnels",
+          "description": "A narrow tunnel provides passage west and east here within the stoneworks. Here and there along the walls are the remnants of age-old etchings, but what they depict remains a mystery.",
+          "grid_x": -4,
+          "grid_y": 1,
+          "exits": {
+            "w": {
+              "to_vnum": 481,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnels",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1753": {
+          "vnum": 1753,
+          "name": "Stonework Tunnels",
+          "description": "On an on the stonework tunnelwork twists and turns, finally coming to an abrupt end here before a large, rusty iron gate. A pale violet glow casts shadows from beyond the gate, and there's yet more of that damned translucent mist bothering itself with about your feet. You have lost 900 experience.",
+          "grid_x": -4,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 1752,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Stonework Tunnels",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -4,
+        "max_x": 4,
+        "min_y": -2,
+        "max_y": 48,
+        "room_count": 27
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1748,
+      "to": 1755,
+      "direction": "n",
+      "from_grid": [
+        0,
+        2
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1749,
+      "to": 468,
+      "direction": "e",
+      "from_grid": [
+        4,
+        -1
+      ],
+      "to_grid": [
+        3,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1749,
+      "to": 471,
+      "direction": "s",
+      "from_grid": [
+        4,
+        -1
+      ],
+      "to_grid": [
+        4,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1752,
+      "to": 481,
+      "direction": "w",
+      "from_grid": [
+        -4,
+        1
+      ],
+      "to_grid": [
+        -3,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1753,
+      "to": 1752,
+      "direction": "w",
+      "from_grid": [
+        -4,
+        0
+      ],
+      "to_grid": [
+        -4,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1756,
+      "to": 1755,
+      "direction": "s",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 466,
+      "to": 467,
+      "direction": "n",
+      "from_grid": [
+        4,
+        3
+      ],
+      "to_grid": [
+        4,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 467,
+      "to": 472,
+      "direction": "e",
+      "from_grid": [
+        4,
+        2
+      ],
+      "to_grid": [
+        4,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 467,
+      "to": 468,
+      "direction": "w",
+      "from_grid": [
+        4,
+        2
+      ],
+      "to_grid": [
+        3,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 468,
+      "to": 469,
+      "direction": "n",
+      "from_grid": [
+        3,
+        1
+      ],
+      "to_grid": [
+        3,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 469,
+      "to": 471,
+      "direction": "e",
+      "from_grid": [
+        3,
+        0
+      ],
+      "to_grid": [
+        4,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 469,
+      "to": 470,
+      "direction": "n",
+      "from_grid": [
+        3,
+        0
+      ],
+      "to_grid": [
+        3,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 470,
+      "to": 473,
+      "direction": "w",
+      "from_grid": [
+        3,
+        -1
+      ],
+      "to_grid": [
+        2,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 471,
+      "to": 472,
+      "direction": "s",
+      "from_grid": [
+        4,
+        0
+      ],
+      "to_grid": [
+        4,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 471,
+      "to": 468,
+      "direction": "w",
+      "from_grid": [
+        4,
+        0
+      ],
+      "to_grid": [
+        3,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 473,
+      "to": 1751,
+      "direction": "n",
+      "from_grid": [
+        2,
+        -1
+      ],
+      "to_grid": [
+        2,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 473,
+      "to": 474,
+      "direction": "w",
+      "from_grid": [
+        2,
+        -1
+      ],
+      "to_grid": [
+        1,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 474,
+      "to": 476,
+      "direction": "s",
+      "from_grid": [
+        1,
+        -1
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 474,
+      "to": 475,
+      "direction": "w",
+      "from_grid": [
+        1,
+        -1
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 476,
+      "to": 477,
+      "direction": "w",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 477,
+      "to": 1757,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 477,
+      "to": 483,
+      "direction": "s",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 477,
+      "to": 478,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 478,
+      "to": 479,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -2,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 479,
+      "to": 480,
+      "direction": "w",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        -3,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 480,
+      "to": 481,
+      "direction": "s",
+      "from_grid": [
+        -3,
+        0
+      ],
+      "to_grid": [
+        -3,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 481,
+      "to": 482,
+      "direction": "s",
+      "from_grid": [
+        -3,
+        1
+      ],
+      "to_grid": [
+        -3,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 483,
+      "to": 484,
+      "direction": "w",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": 0
+    }
+  ]
+}

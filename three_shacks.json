@@ -1,0 +1,485 @@
+{
+  "zone_name": "Three Shacks",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": -1,
+    "max_x": 1,
+    "min_y": -2,
+    "max_y": 17
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 622,
+      "rooms": {
+        "622": {
+          "vnum": 622,
+          "name": "Pushing Through Grasses",
+          "description": "",
+          "grid_x": -1,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 623,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Path to Three Shacks",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 621,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "A Vanishing Trail",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "623": {
+          "vnum": 623,
+          "name": "Path to Three Shacks",
+          "description": "Up ahead on the path you see three shacks surrounding a bit of farmland. It looks as if the inhabitants have cut a clearing out of the grass to create this hamlet.",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "ne": {
+              "to_vnum": 624,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Dirt Path",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 622,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Pushing Through Grasses",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "624": {
+          "vnum": 624,
+          "name": "Dirt Path",
+          "description": "This dirt path winds through the grass. The farmers have planted a hedge just to the south of the path, blocking travel in that direction. A casual observer might not even notice the existence of the shacks.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 625,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Dirt Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 623,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Path to Three Shacks",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "625": {
+          "vnum": 625,
+          "name": "Dirt Path",
+          "description": "The winding dirt path leads to an outhouse here. A thick hedge inhibits any further travel southward. The tall grass blocks both the wind and the sun from disturbing the outhouse.",
+          "grid_x": 1,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 627,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Dirt Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "go into": {
+              "to_vnum": 626,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Cramped Outhouse",
+              "direction": "go into",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Dirty farmer",
+              "description": "by the smell of him.  His clothes and hair seem permanently",
+              "unique": true
+            },
+            {
+              "name": "Scruffy dog",
+              "description": "give a slobbery lick to your face.",
+              "unique": false
+            }
+          ]
+        },
+        "626": {
+          "vnum": 626,
+          "name": "Cramped Outhouse",
+          "description": "Wooden construction is found everywhere. The walls are made of wood. The roof is made of wood. The seat is made of wood. The only things not made of wood are the hole in the seat and the pungent smell that emanates from it.",
+          "grid_x": 0,
+          "grid_y": 17,
+          "exits": {
+            "go out": {
+              "to_vnum": 625,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Dirt Path",
+              "direction": "go out",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "627": {
+          "vnum": 627,
+          "name": "Dirt Path",
+          "description": "Countless feet have trod the grasses into a dirt path. Clumsy children took advantage of the vertical support of three trees to create a crude fort of branches.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 628,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Disaster Shack",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 629,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Rows of Vegetables",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "628": {
+          "vnum": 628,
+          "name": "Disaster Shack",
+          "description": "You have stepped into what can only be called a disaster. The walls are dotted with a random assortment of dishes, clothes, and toys. The dirt on the floor is spread out in a spiral pattern along with some of the furniture. The crude chimney in the corner looks as if it is about to collapse.",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 627,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Dirt Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Vexed mother",
+              "description": "deeply lined face makes her look older than she really is.",
+              "unique": true
+            }
+          ]
+        },
+        "629": {
+          "vnum": 629,
+          "name": "Rows of Vegetables",
+          "description": "Many different vegetables can be found in this field. Carrots, potatoes, lettuce, tomatoes, radishes, and more are all lined up in neat little rows. It looks as if this is the only source of vegetables that the families in this community have.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 630,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Tall Grains",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "nw": {
+              "to_vnum": 632,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Poor Shack",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 624,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Dirt Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Leathery farmer",
+              "description": "the sun have given him a dark, leathery look.",
+              "unique": true
+            },
+            {
+              "name": "Plain mule",
+              "description": "may not be very fast or smart, but it can produce quite a kick.",
+              "unique": true
+            },
+            {
+              "name": "Scruffy dog",
+              "description": "give a slobbery lick to your face.",
+              "unique": false
+            },
+            {
+              "name": "Working woman",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "630": {
+          "vnum": 630,
+          "name": "Tall Grains",
+          "description": "Tall grains grow in thick rows from the rich soil of the field. It takes considerable effort to push between the rows of corn and wheat. Everything looks ready for the harvest.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 631,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Orderly Shack",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 629,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Rows of Vegetables",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Hardworking farmer",
+              "description": "in the field.  His shoulders are broad and his waist is thick. His heavy brows jut out over piercing eyes.",
+              "unique": true
+            }
+          ]
+        },
+        "631": {
+          "vnum": 631,
+          "name": "Orderly Shack",
+          "description": "Everything has its place, and everything is in its place. Clay dishes line the straight shelves. The chairs around the table are perfectly aligned. A level partition divides the living area from the sleeping area, where the beds are neatly made.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "s": {
+              "to_vnum": 630,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Tall Grains",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Wife and mother",
+              "description": "She raises the children.  Does she have a sister?",
+              "unique": true
+            }
+          ]
+        },
+        "632": {
+          "vnum": 632,
+          "name": "Poor Shack",
+          "description": "Only the bare essentials can be found in this shack. A sturdy table contains a dirty bowl and is surrounded by four rough chairs. A wash basin lies upside down in a corner. Straw beds are huddled in a corner.",
+          "grid_x": -1,
+          "grid_y": -1,
+          "exits": {
+            "se": {
+              "to_vnum": 629,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Rows of Vegetables",
+              "direction": "se",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Toddler",
+              "description": "eyes for his mother.",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 1,
+        "min_y": -2,
+        "max_y": 17,
+        "room_count": 11
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 622,
+      "to": 623,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        2
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 623,
+      "to": 624,
+      "direction": "ne",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 624,
+      "to": 625,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        1,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 625,
+      "to": 627,
+      "direction": "n",
+      "from_grid": [
+        1,
+        1
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 627,
+      "to": 628,
+      "direction": "n",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        1,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 627,
+      "to": 629,
+      "direction": "w",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 629,
+      "to": 630,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 629,
+      "to": 632,
+      "direction": "nw",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 629,
+      "to": 624,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 630,
+      "to": 631,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": 0
+    }
+  ]
+}

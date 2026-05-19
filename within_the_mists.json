@@ -1,0 +1,84 @@
+{
+  "zone_name": "Within the Mists",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": 0,
+    "max_x": 0,
+    "min_y": 0,
+    "max_y": 15
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 3617,
+      "rooms": {
+        "3617": {
+          "vnum": 3617,
+          "name": "Small Misty Cave",
+          "description": "A collection of oddly mismatched objects and broken furnishings fill this small cave at the bottom of the misty well. An assortment of hand-made tools lay upon a crooked desk of aging wood. Upon the cold stone floor is a thin bedroll next to a low, flat stone covered in melted wax.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3616,
+              "to_zone": "Caves of Esralen",
+              "to_room_name": "Bottom of a Mist-Filled Well",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Withered old man",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "3620": {
+          "vnum": 3620,
+          "name": "Hollowing Mists",
+          "description": "Rolling clouds of wispy vapour flow by, obscuring your view of the surroundings. You feel a floor beneath your feet but cannot touch it, sense walls about but cannot see them. Shadows cross your path at angles, the sources never viewed. Glimpses of other places can be had at the corners of your vision, yet focusing upon any you find only the hollowing mists.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {
+            "u": {
+              "to_vnum": 3616,
+              "to_zone": "Caves of Esralen",
+              "to_room_name": "Bottom of a Mist-Filled Well",
+              "direction": "u",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "High acolyte",
+              "description": "You see a shrouded, calm figure of indeterminable age.  As he passes by the markings upon his cloak and skin would suggest him as a cult member.",
+              "unique": true
+            },
+            {
+              "name": "Mist",
+              "description": "",
+              "unique": true
+            },
+            {
+              "name": "Translucent daemon",
+              "description": "It's... beautiful... and... HUNGRY.",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 15,
+        "room_count": 2
+      }
+    }
+  },
+  "edges": []
+}

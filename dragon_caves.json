@@ -1,0 +1,392 @@
+{
+  "zone_name": "Dragon Caves",
+  "floor_count": 2,
+  "bounds": {
+    "min_x": -2,
+    "max_x": 2,
+    "min_y": -3,
+    "max_y": 1
+  },
+  "floors": {
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 1017,
+      "rooms": {
+        "1017": {
+          "vnum": 1017,
+          "name": "Frozen Caves",
+          "description": "The freezing, arctic winds somehow find their way into this subterranean cave. The biting, cold winds seem to flow in from the north and find their way through cracks in the banded iron door to the south. On the ground you can make out a few frozen footprints, captured in the ice for all time. The caves lead to the north and east, and faint light creeps in through the doorway to the south.",
+          "grid_x": 1,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 1018,
+              "to_zone": "Dragon Caves",
+              "to_room_name": "Frozen Caves",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1016": {
+          "vnum": 1016,
+          "name": "Bone Cavern",
+          "description": "You find it difficult to move in this cavern because you are up to your hips in frost-covered bones! Most of the bones appear to be the remnants of sentient humanoids, and broken equipment lies amongst the piles. Perhaps these bones are all that remain of the generations of adventurers who have seen fit to tread the very path you now walk. The only way out lies to the west. The grate creaks above you and slams shut with an ominous thud.",
+          "grid_x": 2,
+          "grid_y": 1,
+          "exits": {
+            "w": {
+              "to_vnum": 1017,
+              "to_zone": "Dragon Caves",
+              "to_room_name": "Frozen Caves",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3033": {
+          "vnum": 3033,
+          "name": "Base of a Deep Pit",
+          "description": "As you enter the base of this enormous pit, you are unnerved by the sensation of your hair standing on end. Your softer garments crackle lightly as you move; they are clearly highly charged by something nearby. You manage a quick glance about and see that this pit serves as the home for something completely massive that must have flown in from above. A doorway to the south and a gateway to the west serve as your only means of escape. A pale metallic shimmer catches the light. Deep blue mineral veins pulse faintly with color. Well aimed! Brizzak's back is SEVERED in half by your horrifying backstab! (131) Brizzak howls in pain and falls down, paralyzed! Brizzak crouches and lands a blow on you. (8)",
+          "grid_x": -1,
+          "grid_y": -2,
+          "exits": {
+            "s": {
+              "to_vnum": 1021,
+              "to_zone": "Dragon Caves",
+              "to_room_name": "Base of a Deep Pit",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1023,
+              "to_zone": "Dragon Caves",
+              "to_room_name": "Base of a Deep Pit",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Brizzak",
+              "description": "electricity crackle across his scales as he regards you with a condescending gaze.  He reveals his teeth with a grin and leaps!",
+              "unique": false
+            }
+          ]
+        },
+        "1018": {
+          "vnum": 1018,
+          "name": "Frozen Caves",
+          "description": "This part of the cave seems to be especially covered in snow; so much so that you begin to wonder if it is the result of natural causes. Trudging knee deep in frozen snow and bracing yourself against the artic winds that flow in from the opening to the west, you can't help but think of your warm bed back home. But, such is the life of the adventurer! The caves continue to the south, and lead into the base of a large pit to the west. You have lost 2280 experience.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 1019,
+              "to_zone": "Dragon Caves",
+              "to_room_name": "Base of a Deep Pit",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1019": {
+          "vnum": 1019,
+          "name": "Base of a Deep Pit",
+          "description": "You find yourself at the base of an enormous pit that juts into the landscape of the northern mountain range. The walls of the pit are completely iced over and virtually featureless, and would be impossible to climb. A thick layer of snow coats the ground, and lies in large heaps in a few places. One particularly large heap appears to be the resting place of something quite massive... Crystalline fronds of frostfern spread across the frozen ground, glittering. You have lost 2400 experience.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1018,
+              "to_zone": "Dragon Caves",
+              "to_room_name": "Frozen Caves",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1020,
+              "to_zone": "Dragon Caves",
+              "to_room_name": "Base of a Deep Pit",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Palorak",
+              "description": "bears his razor-sharp fangs at you.  He emits a deafening shriek as he dives, talons first!",
+              "unique": true
+            }
+          ]
+        },
+        "1020": {
+          "vnum": 1020,
+          "name": "Base of a Deep Pit",
+          "description": "A few trickles of light make it down to the base of this pit from far above, where you can barely make out a dark layer of clouds. The walls of the pit are iced over and completely vertical; anything living here must have flown in. The ground is wet from melted snow, and in some places the rock itself appears to have been melted from some powerful toxin. Short of flight, the only way out lies through doorways set into the northern and eastern walls of the pit. You have lost 2520 experience.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 1021,
+              "to_zone": "Dragon Caves",
+              "to_room_name": "Base of a Deep Pit",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Slag",
+              "description": "swamps because there lurked the fabled black dragon, Slag.  Well, your parents were wrong because here he is and you've just woken him up!",
+              "unique": true
+            }
+          ]
+        },
+        "1021": {
+          "vnum": 1021,
+          "name": "Base of a Deep Pit",
+          "description": "The dank smell of mold invades your nostrils as you enter the base of this deep pit. Massive vertical walls draw your eyes to the heavens on all sides, and they constantly trickle with the run-off of melted snow. Covered with moss, these walls would be absolutely impossible to scale. A large pile of tree trunks can be seen in the middle of the pit's floor, which probably serves as a bed for something absolutely enormous... Hardy succulents cling to the rocky terrain, their thick leaves storing moisture. Verashimoros' back arches in agony as a result of your GRUESOME backstab! (88) Verashimoros howls in pain and falls down, paralyzed! Verashimoros swoops down from the sky, striking quickly before returning to the heights above. Balanced on one leg, Verashimoros swings her claws into you. (24)",
+          "grid_x": -1,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 3033,
+              "to_zone": "Dragon Caves",
+              "to_room_name": "Base of a Deep Pit",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Verashimoros",
+              "description": "bristles with spikes, and a large row of razor-sharp scales protrudes from her back all the way down the length of her body.",
+              "unique": true
+            }
+          ]
+        },
+        "1022": {
+          "vnum": 1022,
+          "name": "Base of a Deep Pit",
+          "description": "As you enter the base of this enormous pit, you are unnerved by the sensation of your hair standing on end. Your softer garments crackle lightly as you move; they are clearly highly charged by something nearby. You manage a quick glance about and see that this pit serves as the home for something completely massive that must have flown in from above. A doorway to the south and a gateway to the west serve as your only means of escape. A pale metallic shimmer catches the light. A windswept herb clings to the exposed ridge, its leaves crackling with static. Deep blue mineral veins pulse faintly with color.",
+          "grid_x": -2,
+          "grid_y": -3,
+          "exits": {
+            "w": {
+              "to_vnum": 1023,
+              "to_zone": "Dragon Caves",
+              "to_room_name": "Base of a Deep Pit",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Brizzak",
+              "description": "electricity crackle across his scales as he regards you with a condescending gaze.  He reveals his teeth with a grin and leaps!",
+              "unique": false
+            }
+          ]
+        },
+        "1023": {
+          "vnum": 1023,
+          "name": "Base of a Deep Pit",
+          "description": "Warm air lifts your spirits as you enter the base of this pit, in stark contrast to the freezing air that you would expect in such a clime. You can make out a few clouds above the opening of the pit, some half a mile above you. The walls are so absolutely vertical that you doubt even an insect could reach the top. The floor of the pit is relatively barren, except for a few tattered furs that have been strewn about to warm the rocky floor. The only way out lies through the gateway to the east. Fragments of a fallen star are embedded in the surrounding stone. Warm gold veins gleam faintly beneath the surface. A brilliant orange flower thrives here, its petals flickering like flame. Choke's back arches in agony as a result of your GRUESOME backstab! (84) Choke howls in pain and falls down, paralyzed! Choke swoops down from the sky, striking quickly before returning to the heights above. Shadows twist around Choke's attack and draw it off target. (14)",
+          "grid_x": -2,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 3033,
+              "to_zone": "Dragon Caves",
+              "to_room_name": "Base of a Deep Pit",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "go portal": {
+              "to_vnum": 1024,
+              "to_zone": "Kingdom of Jolnara",
+              "to_room_name": "Whirlpool Plaza",
+              "direction": "go portal",
+              "is_cross_zone": true,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Choke",
+              "description": "Flames spew forth from Choke's nostrils and blood oozes from her claws.  She sizes you up and is not at all impressed.  Rising to her full, massive height, she yawns and strides confidently towards you.",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -2,
+        "max_x": 2,
+        "min_y": -3,
+        "max_y": 1,
+        "room_count": 9
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1015,
+      "rooms": {
+        "1015": {
+          "vnum": 1015,
+          "name": "Cramped Cave",
+          "description": "You have found your way into a tiny cave in the mountain walls of the frozen wastelands. As you shiver from the cold, you are dismayed to find that there is barely enough room for you to stand or move about between the rime-covered walls of the cave. A small hole in the floor of the cave leads down to an ancient, iron, runed grate. To the east lies the stark bleakness of the northern tundra. A snow-covered sign has been hammered into a crack in the ground.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "d": {
+              "to_vnum": 1016,
+              "to_zone": "Dragon Caves",
+              "to_room_name": "Bone Cavern",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1016,
+      "to": 1017,
+      "direction": "w",
+      "from_grid": [
+        2,
+        1
+      ],
+      "to_grid": [
+        1,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1017,
+      "to": 1018,
+      "direction": "n",
+      "from_grid": [
+        1,
+        1
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1018,
+      "to": 1019,
+      "direction": "w",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1019,
+      "to": 1020,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1020,
+      "to": 1021,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -1,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1021,
+      "to": 3033,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        -1
+      ],
+      "to_grid": [
+        -1,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1022,
+      "to": 1023,
+      "direction": "w",
+      "from_grid": [
+        -2,
+        -3
+      ],
+      "to_grid": [
+        -2,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1023,
+      "to": 3033,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        -2
+      ],
+      "to_grid": [
+        -1,
+        -2
+      ],
+      "floor": -1
+    }
+  ]
+}

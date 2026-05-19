@@ -1,0 +1,246 @@
+{
+  "zone_name": "Rafalby's Laboratory - Jharet Forest",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": -2,
+    "max_x": 1,
+    "min_y": -1,
+    "max_y": 2
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1781,
+      "rooms": {
+        "1781": {
+          "vnum": 1781,
+          "name": "Deep Within the Roots",
+          "description": "The roots of a great oak tree form pillars thicker than your body that surge forth from the ceiling and walls and twist around before plunging deeper into the ground. The tree these monstrosities sustain must have been growing since the beginning of time. Through the roots to the south and east, you can see tunnels delving deeper into the earth. A chubby mandrake tracks in from the southwest. You BRUTALLY stab a sickly sunflower's root! (24) A sickly sunflower looks almost ready to expire. A tendrilled pea-plant misses you.",
+          "grid_x": -2,
+          "grid_y": 0,
+          "exits": {
+            "u": {
+              "to_vnum": 1780,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "u",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1782": {
+          "vnum": 1782,
+          "name": "A Root Lined Chamber",
+          "description": "The earthen walls of the chamber are on the verge of collapse, supported only by a net of straining roots and given structure by a crude floor that has been fashioned of wooden planks set into the earth. The roof is studded with hundreds of tiny crystals that pulse tiredly, but fail to provide any real light. You have lost 374 experience.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "ne": {
+              "to_vnum": 1783,
+              "to_zone": "Rafalby's Laboratory - Jharet Forest",
+              "to_room_name": "An Overgrown Nursery",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "sw": {
+              "to_vnum": 1784,
+              "to_zone": "Rafalby's Laboratory - Jharet Forest",
+              "to_room_name": "Loamy Tunnel",
+              "direction": "sw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1783": {
+          "vnum": 1783,
+          "name": "An Overgrown Nursery",
+          "description": "Clay planters have been set up in rows along the walls of this chamber, but the plants inside are withered and dying from neglect. The warmth and humidity of the room causes beads of sweat to break out on your forehead, and you wipe them hastily away. Green crystals pulse in time with your heart from where they are embedded into the walls and ceiling, illuminating the spaces in between the roots and casting long shadows across your face before plunging you into a hazy darkness. You roll your eyes and BRUTALLY stab a radish head with your dagger. (28) The ocean's energy begins to flow through you, granting you the speed of a gentle current.",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "sw": {
+              "to_vnum": 1782,
+              "to_zone": "Rafalby's Laboratory - Jharet Forest",
+              "to_room_name": "A Root Lined Chamber",
+              "direction": "sw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Radish head",
+              "description": "It uses its viney arms to drag itself across the floor with considerable",
+              "unique": true
+            },
+            {
+              "name": "Tendrilled pea-plant",
+              "description": "composed entirely of foliage.  Its mouth gapes open as it mimics your speech, revealing a few half-formed yellow teeth.",
+              "unique": true
+            }
+          ]
+        },
+        "1784": {
+          "vnum": 1784,
+          "name": "Loamy Tunnel",
+          "description": "This space is so damp and unstable you feel that a strong rain of any kind would serve to wipe it out. Mud-streaked green crystals litter the floor, some still pulsing feebly through the muck. Enormous millipedes dig in and out of the soil, and with every step you take you hear the subtle crunch of the exoskeletons of the less fortunate.",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "nw": {
+              "to_vnum": 1781,
+              "to_zone": "Rafalby's Laboratory - Jharet Forest",
+              "to_room_name": "Deep Within the Roots",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1785,
+              "to_zone": "Rafalby's Laboratory - Jharet Forest",
+              "to_room_name": "Between the Withering Roots",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1785": {
+          "vnum": 1785,
+          "name": "Between the Withering Roots",
+          "description": "The planks laid across the earth are as slippery with moss and humidity, and you skid forward a bit with each step. Shrunken roots dangle close to your face, their claw-like fingers reaching for you, leaving streaks of mud on your cheeks as you pass. A few long-legged centipedes wind their way down the roots from the dark recesses of the ceiling, curious about their new companion.",
+          "grid_x": -2,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1784,
+              "to_zone": "Rafalby's Laboratory - Jharet Forest",
+              "to_room_name": "Loamy Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1786,
+              "to_zone": "Rafalby's Laboratory - Jharet Forest",
+              "to_room_name": "Amongst the Rot",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1786": {
+          "vnum": 1786,
+          "name": "Amongst the Rot",
+          "description": "The smell of mold and rot assaults your nose and you cough as white powdery spores settle into your hair and clothing. Along a wall, several giant centipedes are making quick work of the corpse of a massive three- legged toad, tearing the putrefied flesh with their pincers. Rotten chunks of bark and wood molder on the ground, giving life to a flourishing assortment of noxious mushrooms and fungi.",
+          "grid_x": -2,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 1785,
+              "to_zone": "Rafalby's Laboratory - Jharet Forest",
+              "to_room_name": "Between the Withering Roots",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Ghost of Rafalby",
+              "description": "before melting back into obscurity with an audible hiss.  Tendrils of mist wrap around your arms and legs as if to assure itself of your continued",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -2,
+        "max_x": 1,
+        "min_y": -1,
+        "max_y": 2,
+        "room_count": 6
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1782,
+      "to": 1783,
+      "direction": "ne",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1782,
+      "to": 1784,
+      "direction": "sw",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1784,
+      "to": 1781,
+      "direction": "nw",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        -2,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1784,
+      "to": 1785,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        -2,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1785,
+      "to": 1786,
+      "direction": "s",
+      "from_grid": [
+        -2,
+        1
+      ],
+      "to_grid": [
+        -2,
+        2
+      ],
+      "floor": 0
+    }
+  ]
+}

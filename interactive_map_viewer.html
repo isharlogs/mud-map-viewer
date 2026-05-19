@@ -562,7 +562,7 @@
             border-radius: var(--radius-lg);
             padding: 11px 14px;
             min-width: 180px; max-width: 260px;
-            pointer-events: none;
+            pointer-events: auto;
             box-shadow: 0 4px 24px rgba(0,0,0,0.45);
             font-size: 12px;
         }
@@ -574,6 +574,13 @@
         .hc-row { color: var(--text-muted); margin-top: 3px; }
         .hc-row span { color: var(--accent); }
         .hc-row.gold span { color: var(--gold); }
+        .hc-loads { margin-top: 7px; display: flex; flex-wrap: wrap; gap: 3px; }
+        .hc-load-chip {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 2px 6px;
+            font-size: 11px; color: var(--gold); cursor: default;
+        }
+        .hc-load-chip:hover { border-color: var(--gold); }
 
         /* ── Mobile ────────────────────────────────────────────────────── */
         @media (max-width: 768px) {
@@ -792,9 +799,10 @@
             isInPortal: false,  // Whether currently viewing a portal map
             // go-portal view: null when not active, else { sourceVnum, portalVnum, direction }
             goPortalView: null,
-            showNpcs:     false,
-            npcData:      {},
-            itemData:     {}
+            showNpcs:         false,
+            npcData:          {},
+            itemData:         {},
+            _activeHoverNpc:  null
         };
 
         // ============================================================================
@@ -1033,23 +1041,52 @@
             card.style.top  = y + 'px';
         }
 
+        let _hideHoverTimeout = null;
         function hideHoverCard() {
             document.getElementById('hoverCard').style.display = 'none';
+            state._activeHoverNpc = null;
+        }
+        function scheduleHideHoverCard() {
+            _hideHoverTimeout = setTimeout(hideHoverCard, 350);
+        }
+        function cancelHideHoverCard() {
+            if (_hideHoverTimeout) { clearTimeout(_hideHoverTimeout); _hideHoverTimeout = null; }
+        }
+
+        function showMultiNpcHoverCard(uniqueNpcs, nums, event) {
+            const card = document.getElementById('hoverCard');
+            const items = uniqueNpcs.map((npc, i) =>
+                `<div class="hc-row"><span style="color:var(--npc-unique)">${nums[i] || i + 1}</span>  ${escapeHtml(npc.name)}</div>`
+            ).join('');
+            card.innerHTML = `<div class="hc-meta" style="margin-bottom:4px;">Unique NPCs</div>${items}`;
+            positionHoverCard(event);
+            card.style.display = 'block';
         }
 
         function showNpcHoverCard(npcName, event) {
             const data = state.npcData[npcName];
             if (!data) return;
+            state._activeHoverNpc = npcName;
             const meta = [data.level && `Lvl ${data.level}`, data['class'], data.race].filter(Boolean).join(' · ');
+            const loadsHtml = (data.loads || []).length > 0
+                ? `<div class="hc-loads">${data.loads.map(i =>
+                      `<span class="hc-load-chip" data-item="${escapeHtml(i)}">${escapeHtml(i)}</span>`
+                  ).join('')}</div>`
+                : '';
             const card = document.getElementById('hoverCard');
             card.innerHTML = `
                 <div class="hc-name">${escapeHtml(npcName)}</div>
                 ${meta ? `<div class="hc-meta">${escapeHtml(meta)}</div>` : ''}
                 <div class="hc-stats">
-                    ${data.hp  != null ? `<div class="hc-stat">HP <span>${data.hp}</span></div>` : ''}
-                    ${data.xp  != null ? `<div class="hc-stat">XP <span>${data.xp}</span></div>` : ''}
+                    ${data.hp != null ? `<div class="hc-stat">HP <span>${data.hp}</span></div>` : ''}
+                    ${data.xp != null ? `<div class="hc-stat">XP <span>${data.xp}</span></div>` : ''}
                 </div>
+                ${loadsHtml}
             `;
+            card.querySelectorAll('.hc-load-chip').forEach(el => {
+                el.addEventListener('mouseenter', e => { cancelHideHoverCard(); showItemHoverCard(el.dataset.item, e); });
+                el.addEventListener('mouseleave', e => { cancelHideHoverCard(); showNpcHoverCard(state._activeHoverNpc, e); });
+            });
             positionHoverCard(event);
             card.style.display = 'block';
         }
@@ -1118,8 +1155,8 @@
             `;
 
             content.querySelectorAll('.load-chip').forEach(el => {
-                el.addEventListener('mouseenter', e => showItemHoverCard(el.dataset.item, e));
-                el.addEventListener('mouseleave', hideHoverCard);
+                el.addEventListener('mouseenter', e => { cancelHideHoverCard(); showItemHoverCard(el.dataset.item, e); });
+                el.addEventListener('mouseleave', scheduleHideHoverCard);
                 el.addEventListener('mousemove',  e => positionHoverCard(e));
             });
 
@@ -1181,7 +1218,7 @@
                 ${npc.description ? `<div class="npc-desc">${escapeHtml(npc.description)}</div>` : ''}
             `;
             card.addEventListener('mouseenter', e => showNpcHoverCard(npc.name, e));
-            card.addEventListener('mouseleave', hideHoverCard);
+            card.addEventListener('mouseleave', scheduleHideHoverCard);
             card.addEventListener('mousemove',  e => positionHoverCard(e));
             card.onclick = () => showNpcModal(npc.name, npc.roomVnum, npc.floorId);
             return card;
@@ -1927,6 +1964,18 @@
                                 ?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                         }, 80);
                     };
+                    const uniqueNpcs = (room.npcs || []).filter(n => n.unique);
+                    const nums = npcNums[vnum] || [];
+                    npcG.addEventListener('mouseenter', e => {
+                        cancelHideHoverCard();
+                        if (uniqueNpcs.length === 1) {
+                            showNpcHoverCard(uniqueNpcs[0].name, e);
+                        } else {
+                            showMultiNpcHoverCard(uniqueNpcs, nums, e);
+                        }
+                    });
+                    npcG.addEventListener('mouseleave', scheduleHideHoverCard);
+                    npcG.addEventListener('mousemove',  e => positionHoverCard(e));
                     grp.appendChild(npcG);
                 }
 
@@ -2311,6 +2360,8 @@
         });
 
         // ── NPC toggle & search ───────────────────────────────────────────
+        document.getElementById('hoverCard').addEventListener('mouseenter', cancelHideHoverCard);
+        document.getElementById('hoverCard').addEventListener('mouseleave', scheduleHideHoverCard);
         document.getElementById('npcModalClose').onclick = hideNpcModal;
         document.getElementById('npcModal').addEventListener('click', e => {
             if (e.target === document.getElementById('npcModal')) hideNpcModal();

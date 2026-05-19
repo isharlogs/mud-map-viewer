@@ -1,0 +1,333 @@
+{
+  "zone_name": "The Village of Ingeen",
+  "floor_count": 2,
+  "bounds": {
+    "min_x": -1,
+    "max_x": 1,
+    "min_y": -2,
+    "max_y": 3
+  },
+  "floors": {
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 2028,
+      "rooms": {
+        "2028": {
+          "vnum": 2028,
+          "name": "Beside a Fallen Oak",
+          "description": "A scene of serenity envelops you deep within this forest; birds chirp musically, squirrels scurry along the ground, and vibrant purple lilacs create a pleasing scent. The passage to the south is blocked by a large fallen oak tree covered with grey moss. Perhaps if you could shift one of the large branches, you could make your way over the tree.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "s": {
+              "to_vnum": 2029,
+              "to_zone": "The Village of Ingeen",
+              "to_room_name": "Within Ingeen",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2027,
+              "to_zone": "Gnomish Oaks",
+              "to_room_name": "Among the Oaks",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2029": {
+          "vnum": 2029,
+          "name": "Within Ingeen",
+          "description": "A few small houses have been squeezed between the oaks in a small clearing here. A short wooden sign quietly declares that you have come upon the village of Ingeen. Hobbits wander about tending to their day- to-day chores, and darker hobbits clad in robes can be seen performing complex chants. Passage to the north is blocked by a fallen oak, but can be surpassed by shifting a large branch. Huts lie to the east and west, and the village opens out to the south.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 2028,
+              "to_zone": "The Village of Ingeen",
+              "to_room_name": "Beside a Fallen Oak",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2030,
+              "to_zone": "The Village of Ingeen",
+              "to_room_name": "Village Center",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2030": {
+          "vnum": 2030,
+          "name": "Village Center",
+          "description": "Ambling through the village, you walk out into a grassy clearing that serves as a community center for the hobbits of Ingeen. Four paths converge in the clearing, one leading from a group of huts to the north, another from a magnificent building to the southeast, a third from a two- story hut to the south, and the fourth from beneath a gargantuan oak tree to the west.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 2029,
+              "to_zone": "The Village of Ingeen",
+              "to_room_name": "Within Ingeen",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2031,
+              "to_zone": "The Village of Ingeen",
+              "to_room_name": "Ingeen School of Magic",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2033,
+              "to_zone": "The Village of Ingeen",
+              "to_room_name": "Beneath the Ingeen Tree",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2031": {
+          "vnum": 2031,
+          "name": "Ingeen School of Magic",
+          "description": "The interior of this small school calls to mind your early school days, only it is somehow strangely different. The desks float gently a few inches above the ground, the chalkboard glows with a soft blue light, and a faint hum can be heard in the air. A thin flight of stairs at the back of the room lead upward, the fresh air of the village center lies to the north, and a door engraved with three adjacent stars allows passage to the south. You have lost 1920 experience.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 2030,
+              "to_zone": "The Village of Ingeen",
+              "to_room_name": "Village Center",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2032,
+              "to_zone": "The Village of Ingeen",
+              "to_room_name": "Hobbit Council of Magic",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2032": {
+          "vnum": 2032,
+          "name": "Hobbit Council of Magic",
+          "description": "This room reeks of bureaucracy. Little stacks of paper have been piled on surfaces all over the room, save a large conference table in the middle. The table is surrounded by chairs where members of the Hobbit Council of Magic can come and argue about the same things every week and get nothing done. A door to the north allows escape.",
+          "grid_x": 0,
+          "grid_y": 2,
+          "exits": {},
+          "npcs": []
+        },
+        "2033": {
+          "vnum": 2033,
+          "name": "Beneath the Ingeen Tree",
+          "description": "Cool shade lends comfort as you wander beneath the massive oak known as the Ingeen Tree. Considered sacred, the Ingeen Tree is the destination of pilgrimage for hobbits from all of Ishar. A seemingly endless flight of wooden steps spirals up the trunk into a homey chapel set in the tree`s branches. To the south lies a modest house with a blackened lead front door. A pleasant clearing in the center of the village lies to the east.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2030,
+              "to_zone": "The Village of Ingeen",
+              "to_room_name": "Village Center",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 2034,
+              "to_zone": "The Village of Ingeen",
+              "to_room_name": "The Church of Ingeen",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2258": {
+          "vnum": 2258,
+          "name": "Ingeen Guard House",
+          "description": "As you enter the small hut and take in your surroundings, you realize it reminds you of a guard house back home. A bay window in the eastern wall allows a glimpse of the deep oak forest beyond the hut, and allows the guards to feel closer to their native element. The hut expands to the south, and to the west lies an opening leading back out into the village.",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "w": {
+              "to_vnum": 2029,
+              "to_zone": "The Village of Ingeen",
+              "to_room_name": "Within Ingeen",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 1,
+        "min_y": -2,
+        "max_y": 2,
+        "room_count": 7
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 2035,
+      "rooms": {
+        "2035": {
+          "vnum": 2035,
+          "name": "Deep Within the Ingeen Tree",
+          "description": "Your senses reel as your soul is immersed in the utter evil of this dank chamber. From here, the spirit of the tree manipulates the unsuspecting hobbits of Ingeen, using them for its own gains. The chamber is unbearably hot, and you feel a pulsing pain course rhythmically through your body like a diabolical heart beat. A wooden ladder fastened to the wall leads upward out of the darkness.",
+          "grid_x": 0,
+          "grid_y": 3,
+          "exits": {
+            "u": {
+              "to_vnum": 2034,
+              "to_zone": "The Village of Ingeen",
+              "to_room_name": "The Church of Ingeen",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2034": {
+          "vnum": 2034,
+          "name": "The Church of Ingeen",
+          "description": "The temperature within this holy place is comfortably warm, and heated by a fireplace set in the northern wall. Rows of pews line the small chapel, facing a modest altar and podium from which the High Priest gives his sermons. Occasionally, hobbits stop in to meditate and listen to the sacred instructions the tree gives them. A flight of stairs winds downward to the ground. You have lost 2640 experience.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "d": {
+              "to_vnum": 2033,
+              "to_zone": "The Village of Ingeen",
+              "to_room_name": "Beneath the Ingeen Tree",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "go the": {
+              "to_vnum": 2035,
+              "to_zone": "The Village of Ingeen",
+              "to_room_name": "Deep Within the Ingeen Tree",
+              "direction": "go the",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 3,
+        "room_count": 2
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 2028,
+      "to": 2029,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2029,
+      "to": 2030,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2030,
+      "to": 2031,
+      "direction": "s",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2030,
+      "to": 2033,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2031,
+      "to": 2032,
+      "direction": "s",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2258,
+      "to": 2029,
+      "direction": "w",
+      "from_grid": [
+        1,
+        -1
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": -1
+    }
+  ]
+}

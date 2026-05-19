@@ -1,0 +1,43 @@
+{
+  "zone_name": "Your choice of...",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": 0,
+    "max_x": 0,
+    "min_y": 0,
+    "max_y": 0
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 2367,
+      "rooms": {
+        "2367": {
+          "vnum": 2367,
+          "name": "Rewards",
+          "description": "a) a simple chain flail It is an above average (1d9+2 damage), bludgeoning weapon, which can be wielded in one hand. Your class is unfamiliar with the use of a simple chain flail. b) a finely forged sword of steel It is an above average (1d10+2 damage), slashing weapon, which can be wielded in one hand. Your class is unfamiliar with the use of a finely forged sword of steel. c) a twisted oaken staff It is an above average (2d4+2 damage), bludgeoning weapon, which requires both hands. A two-handed stance makes it easier to land critical hits (+3% Critical). Its swing is straight and true. (+2 Attack) Your class is unfamiliar with the use of a twisted oaken staff. d) a serrated hunting knife It is a potent (2d6+1 damage), stabbing weapon, which can be wielded in one hand. It can also be used to backstab an opponent. e) a set of steel claws They are above average (3d4+0 damage), dual stabbing weapons, which requires both hands. Attacking with both hands increases your attack speed. (-10% Speed). 100 Obsidian 700 Experience",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 173,
+              "to_zone": "City of Mareldja",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    }
+  },
+  "edges": []
+}
