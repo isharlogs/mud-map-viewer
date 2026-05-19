@@ -1,0 +1,221 @@
+{
+  "zone_name": "Ancient Woods - East",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": 0,
+    "max_x": 1,
+    "min_y": -1,
+    "max_y": 17
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 2468,
+      "rooms": {
+        "544": {
+          "vnum": 544,
+          "name": "Edlegreen Fields",
+          "description": "You tread upon a well tended field of short, bristling grass. Several targets stand in a ragged line to the east, and a semi-worn path continues toward a small cabin nestled at the edge of the southern wood. The expanse of the ocean continues westward as far as the eye can see.",
+          "grid_x": 0,
+          "grid_y": 16,
+          "exits": {
+            "n": {
+              "to_vnum": 543,
+              "to_zone": "Country Estates",
+              "to_room_name": "Coast Road",
+              "direction": "n",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 545,
+              "to_zone": "Ancient Woods - East",
+              "to_room_name": "Bedaelyn`s Cabin",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "545": {
+          "vnum": 545,
+          "name": "Bedaelyn`s Cabin",
+          "description": "You stand within a simple cabin of ancient wood. Several woodcarving tools are scattered about the small quarters. A large bay window provides a glorious view of the roiling seas to the west.",
+          "grid_x": 0,
+          "grid_y": 17,
+          "exits": {
+            "n": {
+              "to_vnum": 544,
+              "to_zone": "Ancient Woods - East",
+              "to_room_name": "Edlegreen Fields",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Bedaelyn",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "2468": {
+          "vnum": 2468,
+          "name": "Covered Clearing",
+          "description": "You stand in a small grassy clearing, surrounded completely by dense forest, except for a path that wanders off to the east. To the west, a windowless brick building stands there, looking strangely well-kept and unweathered for being in the middle of the woods. A set of large, ironwood doors on the eastern side look to be the only entrance. You are riding atop a well-bred horse.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2467,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2469,
+              "to_zone": "Ancient Woods - East",
+              "to_room_name": "Assassins Guild",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2469": {
+          "vnum": 2469,
+          "name": "Assassins Guild",
+          "description": "Dimly glowing orbs affixed to the walls illuminate what looks to be a meeting room of sorts. A long table of solid jharet oak predominates the room and is flanked by large chairs throughout its length. Adorning the room are various paintings of aging, grey haired men all wearing robes of black and a dire grimace. An archway to both the north and south lead off into well lit rooms, while a large set of double doors protect the the way to the east..",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2468,
+              "to_zone": "Ancient Woods - East",
+              "to_room_name": "Covered Clearing",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2471,
+              "to_zone": "Ancient Woods - East",
+              "to_room_name": "Assassins Guild",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2470": {
+          "vnum": 2470,
+          "name": "Assassins Guild",
+          "description": "A warm light emanates from a roaring fire along the east wall, bathing the room in a deep red glow. A pair of chairs placed in front of the fire seem to invite respite and contemplation.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 2469,
+              "to_zone": "Ancient Woods - East",
+              "to_room_name": "Assassins Guild",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2471": {
+          "vnum": 2471,
+          "name": "Assassins Guild",
+          "description": "Frayed straw matts cover the floors, and mock wooden weapons hang from racks along the walls in even rows. An assortment of weights piled into one corner obstruct access to a well-worn punching bag hanging directly above. A low table in another corner is littered with little glass vials containing sinister looking fluids.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 2469,
+              "to_zone": "Ancient Woods - East",
+              "to_room_name": "Assassins Guild",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 1,
+        "min_y": -1,
+        "max_y": 17,
+        "room_count": 6
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 2468,
+      "to": 2469,
+      "direction": "s",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2469,
+      "to": 2471,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2470,
+      "to": 2469,
+      "direction": "n",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 544,
+      "to": 545,
+      "direction": "s",
+      "from_grid": [
+        0,
+        16
+      ],
+      "to_grid": [
+        0,
+        17
+      ],
+      "floor": 0
+    }
+  ]
+}

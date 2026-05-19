@@ -1,0 +1,125 @@
+{
+  "zone_name": "Astorath's Maze",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": 0,
+    "max_x": 1,
+    "min_y": 0,
+    "max_y": 30
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1404,
+      "rooms": {
+        "3618": {
+          "vnum": 3618,
+          "name": "Misty Cave",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3619,
+              "to_zone": "Astorath's Maze",
+              "to_room_name": "Amethyst Arches",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3620,
+              "to_zone": "Within the Mists",
+              "to_room_name": "Hollowing Mists",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3619": {
+          "vnum": 3619,
+          "name": "Amethyst Arches",
+          "description": "Thorned bramble bushes merge with the covering ivy upon the widening arches here. Through the final amethyst arch ahead a quiet courtyard can be seen, surrounded by several dignified stone structures. The area here hums with a faint yet insistent arcane energy.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 3621,
+              "to_zone": "Napenthe Colony",
+              "to_room_name": "Guild Courtyard",
+              "direction": "n",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 434,
+              "to_zone": "Napenthe Colony",
+              "to_room_name": "Amethyst Arches",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "go the": {
+              "to_vnum": 3618,
+              "to_zone": "Astorath's Maze",
+              "to_room_name": "Misty Cave",
+              "direction": "go the",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1404": {
+          "vnum": 1404,
+          "name": "Shifting Stone Maze",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Small stone gargoyle",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "1405": {
+          "vnum": 1405,
+          "name": "Shifting Stone Maze",
+          "description": "Wearily you contine through the shifting stone passages. Everything seems the same, yet directions, passages and shapes continue to change all about. Piles of oddly shaped stones lay strewn about, looking as if once parts of a larger whole. You have lost 300 experience.",
+          "grid_x": 0,
+          "grid_y": 30,
+          "exits": {},
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 1,
+        "min_y": 0,
+        "max_y": 30,
+        "room_count": 4
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 3618,
+      "to": 3619,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": 0
+    }
+  ]
+}

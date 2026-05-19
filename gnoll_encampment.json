@@ -1,0 +1,44 @@
+{
+  "zone_name": "Gnoll Encampment",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": 0,
+    "max_x": 0,
+    "min_y": 0,
+    "max_y": 0
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 2186,
+      "rooms": {
+        "2186": {
+          "vnum": 2186,
+          "name": "Wooden Gateway",
+          "description": "A makeshift wall extends from north to south consisting of sharpened logs planted in the ground here. Grassy foothills surround the structure as a large wooden gateway dominates your view to the east. To the west lies a beaten path extending north and south overlooking the ocean.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 1008,
+              "to_zone": "Northwestern Coastline",
+              "to_room_name": "The Fertile Plains",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    }
+  },
+  "edges": []
+}

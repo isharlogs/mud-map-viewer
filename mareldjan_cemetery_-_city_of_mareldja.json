@@ -1,0 +1,2846 @@
+{
+  "zone_name": "Mareldjan Cemetery - City of Mareldja",
+  "floor_count": 4,
+  "bounds": {
+    "min_x": -4,
+    "max_x": 3,
+    "min_y": -7,
+    "max_y": 47
+  },
+  "floors": {
+    "-3": {
+      "floor_id": -3,
+      "entry_vnum": 1283,
+      "rooms": {
+        "1536": {
+          "vnum": 1536,
+          "name": "The Grass",
+          "description": "",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 1530,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Narrow Road",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1283": {
+          "vnum": 1283,
+          "name": "Before the Iron Gate",
+          "description": "A high, stone wall stretches away into the distance to the east and west. Passage beyond the wall is regulated by a large, black gate which stands immediately before you.",
+          "grid_x": 0,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 1284,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Cemetery Entrance",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 528,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Road of Tears",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1284": {
+          "vnum": 1284,
+          "name": "Cemetery Entrance",
+          "description": "The cemetery of Mareldja is filled with marble crypts, statues, and rows of gravestones. A white gravel path stretches through the grass to the north and ends at an iron gate to the south. You can tell by the elaborateness of the stones who was important and who was not. An ornate crypt lies to the west and a stout little shack is to the east.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1295,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Digger`s Shack",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1285,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Gravel Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1283,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Before the Iron Gate",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Little orphan boy",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "1285": {
+          "vnum": 1285,
+          "name": "Gravel Path",
+          "description": "The path tops a low rise as it stretches north and south. To the west a narrow cart-road meanders through the edge of this section.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3131,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Weedy Track",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1286,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Through the Trees",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1284,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Cemetery Entrance",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1530,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Narrow Road",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1288": {
+          "vnum": 1288,
+          "name": "Face Front",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 3137,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Beneath the Boughs",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1287,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Small Bridge",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1289,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Iron Gates",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1293": {
+          "vnum": 1293,
+          "name": "Base of the Stairs",
+          "description": "A narrow set of concrete steps leads up to a small oaken door. The path immediately becomes overgrown to the north, but you see that it curves away to the west.",
+          "grid_x": -1,
+          "grid_y": -5,
+          "exits": {
+            "n": {
+              "to_vnum": 1294,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Weedy Court",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1292,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Easy Curve",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 1537,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Before the Oaken Door",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1295": {
+          "vnum": 1295,
+          "name": "Digger`s Shack",
+          "description": "",
+          "grid_x": 1,
+          "grid_y": 1,
+          "exits": {
+            "w": {
+              "to_vnum": 1284,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Cemetery Entrance",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1292": {
+          "vnum": 1292,
+          "name": "Easy Curve",
+          "description": "A wide turn in the road causes it to change from east to south. A chill breeze always seems to blow through the thin weeds here.",
+          "grid_x": -2,
+          "grid_y": -5,
+          "exits": {
+            "e": {
+              "to_vnum": 1293,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Base of the Stairs",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1291,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Secluded Way",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3128": {
+          "vnum": 3128,
+          "name": "Cemetery Path",
+          "description": "The markers and monuments of this place lend a meager, illusory comfort of the permanence of stone to the mourners who pass this way. A wide gravel path starts to the east, while the markers stretch away to the west. To the north there is a relatively clear area.",
+          "grid_x": -1,
+          "grid_y": 2,
+          "exits": {
+            "w": {
+              "to_vnum": 3129,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Among the Dead",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Bat",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "3129": {
+          "vnum": 3129,
+          "name": "Among the Dead",
+          "description": "",
+          "grid_x": -2,
+          "grid_y": 2,
+          "exits": {
+            "w": {
+              "to_vnum": 3130,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Among the Recently Dead",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Mourner",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "3130": {
+          "vnum": 3130,
+          "name": "Among the Recently Dead",
+          "description": "Dirt clings to your feet from the digging that has so recently occurred here. The polished surfaces gleam on the stones, some of which are so new that you can see fine powder resting in their lettering.",
+          "grid_x": -3,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 3129,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Among the Dead",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1533,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Before the Chapel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Gravedigger",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "3131": {
+          "vnum": 3131,
+          "name": "Weedy Track",
+          "description": "The only maintenance to this road is performed by the masses of feet which pound the earth bare and hard. It leads east and west.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3132,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Cleared Land",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1285,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Gravel Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3132": {
+          "vnum": 3132,
+          "name": "Cleared Land",
+          "description": "This area has somewhat recently been plowed under in preparation for its new occupants. The dirt road continues east and west through here.",
+          "grid_x": 2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3133,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Paupers' Graves",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3131,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Weedy Track",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Gopher",
+              "description": "",
+              "unique": false
+            },
+            {
+              "name": "Gravedigger",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "3133": {
+          "vnum": 3133,
+          "name": "Paupers' Graves",
+          "description": "Wooden markers and painted stones are the only indication of those who have been laid to rest here. Glancing across the crude engraving, you see a large number of graves filled by children who lived but a few days.",
+          "grid_x": 3,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 3132,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Cleared Land",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Graverobber",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "3134": {
+          "vnum": 3134,
+          "name": "Cobbled Straight",
+          "description": "The carefully laid cobbles march straight toward the east, their course plotted with military precision. The cobbled road dead ends into another, larger path to the west. Trees line the road to the north and south.",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 3135,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Cobbled Straight",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1286,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Through the Trees",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3135": {
+          "vnum": 3135,
+          "name": "Cobbled Straight",
+          "description": "The road extends into the distance to the west, but to the east a small plaza is visible, its center occupied by a large, marble mausoleum. Neat rows of identical white stones are laid out in vast grids north and south of the road, each one a small monument to a soldier who paid the final price, and now stand eternal vigil.",
+          "grid_x": 2,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 3136,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Monument Square",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3134,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Cobbled Straight",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Soldier",
+              "description": "He looks very polished and professional in his uniform but the sadness in his eyes is poignointly human.",
+              "unique": true
+            }
+          ]
+        },
+        "3136": {
+          "vnum": 3136,
+          "name": "Monument Square",
+          "description": "A somber, inscriptionless monument of flawless marble has been erected here. It is topped with an exquisite carving of an eternal flame, and it has been tended meticulously.",
+          "grid_x": 3,
+          "grid_y": -1,
+          "exits": {
+            "w": {
+              "to_vnum": 3135,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Cobbled Straight",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3137": {
+          "vnum": 3137,
+          "name": "Beneath the Boughs",
+          "description": "Ancient trees spread verdant branches high over your head, protecting your frail body from the greater elements. The stately flagstone path leads to the east and to the west.",
+          "grid_x": 1,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 3138,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "At the Fountain",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1288,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Face Front",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3138": {
+          "vnum": 3138,
+          "name": "At the Fountain",
+          "description": "A copper fountain, painted in verdigris and fashioned in the shape of a dragon with its tail forming the wall of the basin while its head and neck point skyward to release a shower of foamy water, squats in the center of a small courtyard. Trees hover about the perimeter as if pressing against a magic circle of protection.",
+          "grid_x": 2,
+          "grid_y": -3,
+          "exits": {
+            "n": {
+              "to_vnum": 3139,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Small Court",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3137,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Beneath the Boughs",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3139": {
+          "vnum": 3139,
+          "name": "Small Court",
+          "description": "The flagstone path widens here into a small circle before continuing north. For the bereaved, this place is secluded enough to have a modicum of privacy while reflecting on their loss. For the trees, well, this is their home.",
+          "grid_x": 2,
+          "grid_y": -4,
+          "exits": {
+            "n": {
+              "to_vnum": 3140,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Flowered Walk",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3138,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "At the Fountain",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Bat",
+              "description": "",
+              "unique": false
+            },
+            {
+              "name": "Mareldjan woman",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "3140": {
+          "vnum": 3140,
+          "name": "Flowered Walk",
+          "description": "Looking like recent additions of the gardener's, lilies and orchids line this short walk. The flagstone path leads to a stair in the west and a small court to the south.",
+          "grid_x": 2,
+          "grid_y": -5,
+          "exits": {
+            "s": {
+              "to_vnum": 3139,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Small Court",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3141,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Foot of the Stairs",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3141": {
+          "vnum": 3141,
+          "name": "Foot of the Stairs",
+          "description": "You stand at the base of a triplet of smooth marble stairs. Flowers touch the edges of the lowest step, and a small landing upholds a large, magnificent door at the top. You are overwhelmed by the beauty of it all. Then again, maybe you hate it all, because the flowers' stench is too strong and the cheap middle step has a crack.",
+          "grid_x": 1,
+          "grid_y": -5,
+          "exits": {
+            "e": {
+              "to_vnum": 3140,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Flowered Walk",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 3142,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Before the Bronze Door",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1286": {
+          "vnum": 1286,
+          "name": "Through the Trees",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 3134,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Cobbled Straight",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1287,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Small Bridge",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1285,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Gravel Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1287": {
+          "vnum": 1287,
+          "name": "Small Bridge",
+          "description": "You are atop a small, and sturdy bridge made from ancient stone and faced with marble. It spans a narrow, deep canyon that runs from as far as you can see north to as far as you can see south.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 1288,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Face Front",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1286,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Through the Trees",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1289": {
+          "vnum": 1289,
+          "name": "Iron Gates",
+          "description": "Huge rusted gates are bolted into the wall of the large building to the north. To the east is a large sculpture engraved into the wall, and a serene and overgrown path leads away to the west.",
+          "grid_x": -1,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 1288,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Face Front",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1290,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Secluded Way",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1290": {
+          "vnum": 1290,
+          "name": "Secluded Way",
+          "description": "The corner of the building blocks out the wind and most of the light. The place is somewhat overgrown with weeds and berry-brambles.",
+          "grid_x": -2,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 1289,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Iron Gates",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1291,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Secluded Way",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1291": {
+          "vnum": 1291,
+          "name": "Secluded Way",
+          "description": "To the north the road curves out of sight, and to the south the path widens. This stretch looks poorly tended. It is full of small scraps of cloth and paper, and the brambles grow high on the western edge of the path.",
+          "grid_x": -2,
+          "grid_y": -4,
+          "exits": {
+            "n": {
+              "to_vnum": 1292,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Easy Curve",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1290,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Secluded Way",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1294": {
+          "vnum": 1294,
+          "name": "Weedy Court",
+          "description": "",
+          "grid_x": -1,
+          "grid_y": -6,
+          "exits": {
+            "s": {
+              "to_vnum": 1293,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Base of the Stairs",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1530": {
+          "vnum": 1530,
+          "name": "Narrow Road",
+          "description": "This cart road allows for the portage of those who have earned their final rest. It intersects with a gravel road to the east and it passes along a thicket of wild rose to the west.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1285,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Gravel Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1531,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Narrow Road",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Gopher",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "1531": {
+          "vnum": 1531,
+          "name": "Narrow Road",
+          "description": "The narrow road continues to the east and west. It follows the edge of a sharp declination leading to a narrow, wild, and beautiful valley.",
+          "grid_x": -2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1530,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Narrow Road",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1532,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Grateful Dead",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1532": {
+          "vnum": 1532,
+          "name": "The Grateful Dead",
+          "description": "Roses grow on the edge of a cliff which overlooks a steep and picturesque valley. A stream whispers below you, watering the wildflowers and brambles. A narrow road waits to take you away to the east, or you can pass among the graves to the south.",
+          "grid_x": -3,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1531,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Narrow Road",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1533,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Before the Chapel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Twirling Suzy",
+              "description": "She smells like patchouli, she's covered in dirt and multicolored garments, and she has the largest pupils that you have ever seen.  She",
+              "unique": true
+            }
+          ]
+        },
+        "1533": {
+          "vnum": 1533,
+          "name": "Before the Chapel",
+          "description": "",
+          "grid_x": -3,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1535,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Honored Dead",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1532,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Grateful Dead",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1534,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Chapel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1534": {
+          "vnum": 1534,
+          "name": "Chapel",
+          "description": "A pulpit stands above a long table intended for the display of those who have shuffled off their mortal coil. A small altar overlooks, through a large window, a deep valley and the western horizon. This is a perfect place to watch the setting of the sun.",
+          "grid_x": -4,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1533,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Before the Chapel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Hearse driver",
+              "description": "He is a surprisingly jolly fellow, with round, ruddy cheeks.  He has the build of a man who lifts things much of the day.",
+              "unique": true
+            }
+          ]
+        },
+        "1535": {
+          "vnum": 1535,
+          "name": "The Honored Dead",
+          "description": "The headstones give way to family monuments and crypts covered in finely detailed carvings of the famous, the rich, and the beautiful. The most recurring theme is that of the family crest.",
+          "grid_x": -2,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1536,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Grass",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -4,
+        "max_x": 3,
+        "min_y": -6,
+        "max_y": 2,
+        "room_count": 34
+      }
+    },
+    "-2": {
+      "floor_id": -2,
+      "entry_vnum": 1537,
+      "rooms": {
+        "1537": {
+          "vnum": 1537,
+          "name": "Before the Oaken Door",
+          "description": "A groined overhang of the roof covers this small area that is open on two sides. Directly to your east stands a stout oaken door. To the north a railed walkway ascends and a narrow set of concrete steps leads down to the west.",
+          "grid_x": -1,
+          "grid_y": -6,
+          "exits": {
+            "e": {
+              "to_vnum": 1538,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Arched Entry",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 1293,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Base of the Stairs",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1538": {
+          "vnum": 1538,
+          "name": "Arched Entry",
+          "description": "The small entry has a high, vaulted ceiling. There is a bronze door to the east and an oak door to the west. A steep flight of narrow stairs climbs up out of sight. There is an arched doorway to the south.",
+          "grid_x": 0,
+          "grid_y": -6,
+          "exits": {
+            "e": {
+              "to_vnum": 1539,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Arched Hallway",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3142,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Before the Bronze Door",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1539,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Arched Hallway",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1537,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Before the Oaken Door",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1539": {
+          "vnum": 1539,
+          "name": "Arched Hallway",
+          "description": "You stand in a wide hallway that runs north and south. Smaller hallways lead off to the east and west. Beyond the end of the hallway, to the south, a large room beckons, to the north is the entrance hall.",
+          "grid_x": 0,
+          "grid_y": -5,
+          "exits": {
+            "e": {
+              "to_vnum": 1540,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Memorial Hall",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1538,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Arched Entry",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1540,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Memorial Hall",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Young cleric",
+              "description": "Dressed in poor white vestments, this cleric seems extremely busy.  Much too busy to be bothered for penance.  (Which he'd be the first to say that you sorely need.)",
+              "unique": false
+            }
+          ]
+        },
+        "1543": {
+          "vnum": 1543,
+          "name": "Hallway",
+          "description": "You move along a wide, bright hallway which continues north and south. Brightly glowing orbs reside in iron sconces high up on the walls. There is no sound except the rhythmic slap of your feet on the hard floor.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 1542,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Hallway Intersection",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1544,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Hallway Bend",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1545": {
+          "vnum": 1545,
+          "name": "Embalming Room",
+          "description": "",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1544,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Hallway Bend",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Scrim",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "1544": {
+          "vnum": 1544,
+          "name": "Hallway Bend",
+          "description": "Coming in from the north, the white tiles of the hall turn east here. The pungent smell of embalming fluid wafts in from the west. There is a large, intriguing doorway to the south.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1546,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Wide Hall",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1543,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Hallway",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3144,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Office",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1545,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Embalming Room",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1542": {
+          "vnum": 1542,
+          "name": "Hallway Intersection",
+          "description": "A wide hallway leads off to the south and two smaller halls head off to the east and west. To the north you see a small wooden door with a brass knob and brass hinges.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 1541,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Near the Altar",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1543,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Hallway",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3143,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Sunset South",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1548": {
+          "vnum": 1548,
+          "name": "Coffin Maker`s",
+          "description": "Hinges, handles and other bits of hardware are sorted into bins against the south wall. Various wood stock and bolts of bright fabric fill a large set of shelves on the east.",
+          "grid_x": 1,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 1546,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Wide Hall",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Garvit",
+              "description": "His work is sound, but knocked together with the same attention to detail you'd expect for a cheap end table.",
+              "unique": true
+            },
+            {
+              "name": "Young cleric",
+              "description": "Dressed in poor white vestments, this cleric seems extremely busy.  Much too busy to be bothered for penance.  (Which he'd be the first to say that you sorely need.)",
+              "unique": false
+            }
+          ]
+        },
+        "3142": {
+          "vnum": 3142,
+          "name": "Before the Bronze Door",
+          "description": "A heavy door, made from wood encased in bronze, keeps out the weather and the night. It blocks your way to the west. To the north you see a small terrace with a wrought-iron railing. A set of steps lead down and to the east.",
+          "grid_x": 0,
+          "grid_y": -7,
+          "exits": {
+            "w": {
+              "to_vnum": 1538,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Arched Entry",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Gardener",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "1540": {
+          "vnum": 1540,
+          "name": "Memorial Hall",
+          "description": "This wide aisle travels the length of the room, from the wide doors at the north end, to the altar which dominates the southern part of the room. Rows of wooden benches flank the aisle along its entire length.",
+          "grid_x": 0,
+          "grid_y": -4,
+          "exits": {
+            "n": {
+              "to_vnum": 1539,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Arched Hallway",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1541,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Near the Altar",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3144": {
+          "vnum": 3144,
+          "name": "Office",
+          "description": "The air is musty, thick with the smell of decaying parchment. Bookshelves are against the east wall and the center of the room is dominated by a large desk, thick with papers.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 1544,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Hallway Bend",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Head cleric",
+              "description": "Clothed in the pure white vestments of his order, the head cleric seems thoroughly absorbed in whatever this here map is.",
+              "unique": true
+            }
+          ]
+        },
+        "3143": {
+          "vnum": 3143,
+          "name": "Sunset South",
+          "description": "You are afforded a gorgeous view of Mareldja out of a sizable bay window facing south. You can make out every tower and spire, and you can even see the city guards prowling up high on the walls around the city.",
+          "grid_x": -1,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 1542,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Hallway Intersection",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1541": {
+          "vnum": 1541,
+          "name": "Near the Altar",
+          "description": "The altar is actually more like a large table which is slanted so that its top faces toward the center of the hall. It is used during rites for the dead, during which the mortal remains of the deceased loved one is laid out for a final viewing.",
+          "grid_x": 0,
+          "grid_y": -3,
+          "exits": {
+            "n": {
+              "to_vnum": 1540,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Memorial Hall",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1542,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Hallway Intersection",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1546": {
+          "vnum": 1546,
+          "name": "Wide Hall",
+          "description": "",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 1547,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Mason`s Shop",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1548,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Coffin Maker`s",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1544,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Hallway Bend",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1547": {
+          "vnum": 1547,
+          "name": "Mason`s Shop",
+          "description": "Various sized blocks of marble and granite are stacked near the walls leaving the center of the room free for a work area. Jagged chips of stone litter the floor and you check to make sure you have some shoes with sturdy soles on before proceeding any further.",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 1546,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Wide Hall",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Gordig",
+              "description": "and deep, to stand the test of time.",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 1,
+        "min_y": -7,
+        "max_y": 1,
+        "room_count": 15
+      }
+    },
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 1549,
+      "rooms": {
+        "1549": {
+          "vnum": 1549,
+          "name": "Dark Stairwell",
+          "description": "The stairs creak and groan underneath your fat feet. Even though the entrance room is lit brightly, the stairwell rejects ambient illumination. It is so dark that you bump your head on the trapdoor, at the end of the staircase, above you.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {
+            "d": {
+              "to_vnum": 1538,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Arched Entry",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "u": {
+              "to_vnum": 1550,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Bell Tower",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1560": {
+          "vnum": 1560,
+          "name": "Down in the Hole",
+          "description": "You are up to the top of your head in slimy water. If you stand on your tippy toes you can get your nose above water. You feel a strong current coming from a hole at your feet, but the current is non-existent to the east where you can make out a dim doorway.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 1561,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Flooded Chamber",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 1562,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "In The Turbulent Water",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "u": {
+              "to_vnum": 1559,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Mortared Hole",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1561": {
+          "vnum": 1561,
+          "name": "The Flooded Chamber",
+          "description": "",
+          "grid_x": 1,
+          "grid_y": -2,
+          "exits": {
+            "w": {
+              "to_vnum": 1560,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Down in the Hole",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1562": {
+          "vnum": 1562,
+          "name": "In The Turbulent Water",
+          "description": "This place would make a lousy apartment. It's narrow, dark, and damp. Well, perhaps murky would be better. And it's not damp, really, but wet. Submersed. Plus you've got the current swirling around, you can't have friends over, and your next door neighbor is a man-eating shark. Maybe it's not so bad for a little visit? I don't know. You feel somewhat dizzy and confused.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1563,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Underwater Cell",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1565,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Runged Shaft",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 1560,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Down in the Hole",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1565": {
+          "vnum": 1565,
+          "name": "The Runged Shaft",
+          "description": "You grip tightly to the lower rungs of an iron ladder set into the walls of this narrow vertical room. You can feel the tug of current from below, but the swirling water above presents a tell-tale mirror that lets you know that there is a way out of your sodden condition.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 1562,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "In The Turbulent Water",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 1566,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Humid Chamber",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1564": {
+          "vnum": 1564,
+          "name": "The Scummy Cave",
+          "description": "You wander into this cave, having been spun senseless by the room next door. This is the perfect place for scum like you, because the walls are covered in it.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1562,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "In The Turbulent Water",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1563": {
+          "vnum": 1563,
+          "name": "The Underwater Cell",
+          "description": "This cell could be a metaphor for the chambers that house the souls of those who are unable to reach out to humanity to find the intimate embrace of friendship. Or it could be another stupid dead-end that you keep getting stuck in because you can't figure out what direction's what next door.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 1562,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "In The Turbulent Water",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Reanimated beast",
+              "description": "Row upon row of teeth jut from its pale jaws.  There is no question that the sole purpose of this beast is to eat.",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 1,
+        "min_y": -2,
+        "max_y": 15,
+        "room_count": 7
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1550,
+      "rooms": {
+        "1550": {
+          "vnum": 1550,
+          "name": "Bell Tower",
+          "description": "From this vantage, you have a good view in every direction. Mareldja bulks large to the south, and the ocean consumes the vista to the west. Through a thick, swirling fog to the north lies another cemetery, arranged haphazardly and long neglected.",
+          "grid_x": 0,
+          "grid_y": 32,
+          "exits": {
+            "d": {
+              "to_vnum": 1549,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Dark Stairwell",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1553": {
+          "vnum": 1553,
+          "name": "Dark Trail",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 1554,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Dark Trail",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1554": {
+          "vnum": 1554,
+          "name": "Dark Trail",
+          "description": "The ominous, thick fog hovers over you churning about slowly as if it were rubbing its hands together in patient anticipation of your death. It's difficult to see much in any direction, but it looks like spaces extend to the east and west, as well as south.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1556,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Marsh",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1553,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Dark Trail",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1555,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "At the Barrier",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Frog",
+              "description": "with mottles of pale green.  It's thick hind legs can propel it through",
+              "unique": true
+            }
+          ]
+        },
+        "1555": {
+          "vnum": 1555,
+          "name": "At the Barrier",
+          "description": "The fog congeals into a fetid, oily cloud and becomes very difficult to push through. The sound of your own movements is muffled by this lymphatic mass. East leads back to the less obscured trail while north continues on directly through the dense fog.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 1554,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Dark Trail",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1552": {
+          "vnum": 1552,
+          "name": "Overgrown Plaza",
+          "description": "Several flagstones set closely together have kept most of the weeds from this large open space. The dark thorny plants hover at the edges and patiently grind at the thick edges of the stones with their twisted roots. Slithering in from the north, an unearthly chill washes over you.",
+          "grid_x": 0,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 1553,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Dark Trail",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1558": {
+          "vnum": 1558,
+          "name": "The Eerie Pool",
+          "description": "A shallow pool stretches across the trail and strange currents carry the murky water over your boots. The reeds grow thick to the east and the splashing of small creatures can be heard in within them. Unless you wish to walk further north through the muddy pool south is the way out.",
+          "grid_x": 2,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 1559,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Mortared Hole",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1568,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Narrowing Banks",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1557,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Mud Track",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1556": {
+          "vnum": 1556,
+          "name": "The Marsh",
+          "description": "The fog wafts by in wisps and long streamers along the ground here. Your footsteps sink into the springy turf and fill with water as you leave them behind.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1557,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Mud Track",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1554,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Dark Trail",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Ghost of your dance instructor",
+              "description": "",
+              "unique": true
+            },
+            {
+              "name": "Leech",
+              "description": "Yuck.  It's almost a foot long.",
+              "unique": false
+            }
+          ]
+        },
+        "1559": {
+          "vnum": 1559,
+          "name": "The Mortared Hole",
+          "description": "A strange hole opens in the ground. It is ringed around with precisely cut stones, and mortared tightly. The water is kept out by the careful masonry, but you can see the glint of light on water at some distance below. A ladder leads down into the depths, and west through the reeds offers a way out.",
+          "grid_x": 3,
+          "grid_y": -1,
+          "exits": {
+            "w": {
+              "to_vnum": 1558,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Eerie Pool",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 1560,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "Down in the Hole",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1557": {
+          "vnum": 1557,
+          "name": "The Mud Track",
+          "description": "You slog through thick mud as you make your way across the marshland. Dozens of slick black leeches can be seen clinging to brush, logs, the mud itself.. just pretty much everything in sight.",
+          "grid_x": 2,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 1558,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Eerie Pool",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1556,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Marsh",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1566": {
+          "vnum": 1566,
+          "name": "The Humid Chamber",
+          "description": "Your breath bellows out in great plumes of frost in this musty antechamber. There is dim, evil light to the west, and rungs set into one wall lead under the water in a large, gurgling hole. You have lost 390 experience.",
+          "grid_x": 0,
+          "grid_y": 17,
+          "exits": {
+            "w": {
+              "to_vnum": 1567,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Horrid Chamber",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 1565,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Runged Shaft",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1567": {
+          "vnum": 1567,
+          "name": "The Horrid Chamber",
+          "description": "The Horror! The Horror! This room is saturated by a palpable evil. Your skin recoils from the very air here. You see the wretchedness of twisted, tortured animals in cages. You smell the burning of foul and evil incense. You smell the reek of severed human bowels.",
+          "grid_x": -1,
+          "grid_y": 17,
+          "exits": {
+            "e": {
+              "to_vnum": 1566,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Humid Chamber",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Unspeakable evil",
+              "description": "don't even need detect alignment!",
+              "unique": true
+            }
+          ]
+        },
+        "1568": {
+          "vnum": 1568,
+          "name": "The Narrowing Banks",
+          "description": "The banks of mud become narrow and rise steeply here. As the muddy rise continues north, you struggle to keep your hand from over your mouth. Something nearby is most certainly dead, and has most certainly not been buried. The reek lessens to the south.",
+          "grid_x": 2,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 1569,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The High Banks",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1558,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Eerie Pool",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Leech",
+              "description": "Yuck.  It's almost a foot long.",
+              "unique": false
+            },
+            {
+              "name": "Little wiry imp",
+              "description": "Sarse's 'specials'.  Thin, sharp hooves and long thin claws flail wildly",
+              "unique": true
+            }
+          ]
+        },
+        "1569": {
+          "vnum": 1569,
+          "name": "The High Banks",
+          "description": "The mud banks rise high into the air and suddenly fold back upon each other, leaving no discernible way out but south.",
+          "grid_x": 2,
+          "grid_y": -3,
+          "exits": {
+            "s": {
+              "to_vnum": 1568,
+              "to_zone": "Mareldjan Cemetery - City of Mareldja",
+              "to_room_name": "The Narrowing Banks",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1551": {
+          "vnum": 1551,
+          "name": "Through the Brush",
+          "description": "Innumerable thorns happily tear at your skin as you force your way through dense brush. You turn around for a moment to see how much flesh you're actually leaving behind, but are stopped suddenly as a particularly long thorn tickles your eyelashes and jabs directly into your now closed eyelid. Nice reflexes, but now where do you go?",
+          "grid_x": 0,
+          "grid_y": 47,
+          "exits": {},
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 3,
+        "min_y": -3,
+        "max_y": 47,
+        "room_count": 14
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1283,
+      "to": 1284,
+      "direction": "n",
+      "from_grid": [
+        0,
+        2
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1284,
+      "to": 1295,
+      "direction": "e",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        1,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1284,
+      "to": 1285,
+      "direction": "n",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1285,
+      "to": 3131,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1285,
+      "to": 1286,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1285,
+      "to": 1530,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1286,
+      "to": 3134,
+      "direction": "e",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        1,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1286,
+      "to": 1287,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1287,
+      "to": 1288,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -3
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1288,
+      "to": 3137,
+      "direction": "e",
+      "from_grid": [
+        0,
+        -3
+      ],
+      "to_grid": [
+        1,
+        -3
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1288,
+      "to": 1289,
+      "direction": "w",
+      "from_grid": [
+        0,
+        -3
+      ],
+      "to_grid": [
+        -1,
+        -3
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1289,
+      "to": 1290,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        -3
+      ],
+      "to_grid": [
+        -2,
+        -3
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1290,
+      "to": 1291,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        -3
+      ],
+      "to_grid": [
+        -2,
+        -4
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1291,
+      "to": 1292,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        -4
+      ],
+      "to_grid": [
+        -2,
+        -5
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1292,
+      "to": 1293,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        -5
+      ],
+      "to_grid": [
+        -1,
+        -5
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1293,
+      "to": 1294,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        -5
+      ],
+      "to_grid": [
+        -1,
+        -6
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1530,
+      "to": 1531,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -2,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1531,
+      "to": 1532,
+      "direction": "w",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        -3,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1532,
+      "to": 1533,
+      "direction": "s",
+      "from_grid": [
+        -3,
+        0
+      ],
+      "to_grid": [
+        -3,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1533,
+      "to": 1535,
+      "direction": "e",
+      "from_grid": [
+        -3,
+        1
+      ],
+      "to_grid": [
+        -2,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1533,
+      "to": 1534,
+      "direction": "w",
+      "from_grid": [
+        -3,
+        1
+      ],
+      "to_grid": [
+        -4,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1535,
+      "to": 1536,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        1
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1536,
+      "to": 1530,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 1537,
+      "to": 1538,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        -6
+      ],
+      "to_grid": [
+        0,
+        -6
+      ],
+      "floor": -2
+    },
+    {
+      "from": 1538,
+      "to": 1539,
+      "direction": "e",
+      "from_grid": [
+        0,
+        -6
+      ],
+      "to_grid": [
+        0,
+        -5
+      ],
+      "floor": -2
+    },
+    {
+      "from": 1538,
+      "to": 3142,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -6
+      ],
+      "to_grid": [
+        0,
+        -7
+      ],
+      "floor": -2
+    },
+    {
+      "from": 1539,
+      "to": 1540,
+      "direction": "e",
+      "from_grid": [
+        0,
+        -5
+      ],
+      "to_grid": [
+        0,
+        -4
+      ],
+      "floor": -2
+    },
+    {
+      "from": 1540,
+      "to": 1541,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -4
+      ],
+      "to_grid": [
+        0,
+        -3
+      ],
+      "floor": -2
+    },
+    {
+      "from": 1541,
+      "to": 1542,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -3
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": -2
+    },
+    {
+      "from": 1542,
+      "to": 1543,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": -2
+    },
+    {
+      "from": 1542,
+      "to": 3143,
+      "direction": "w",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        -1,
+        -2
+      ],
+      "floor": -2
+    },
+    {
+      "from": 1543,
+      "to": 1544,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -2
+    },
+    {
+      "from": 1544,
+      "to": 1546,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -2
+    },
+    {
+      "from": 1544,
+      "to": 3144,
+      "direction": "s",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": -2
+    },
+    {
+      "from": 1544,
+      "to": 1545,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -2
+    },
+    {
+      "from": 1546,
+      "to": 1547,
+      "direction": "n",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        1,
+        -1
+      ],
+      "floor": -2
+    },
+    {
+      "from": 1546,
+      "to": 1548,
+      "direction": "s",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        1,
+        1
+      ],
+      "floor": -2
+    },
+    {
+      "from": 1552,
+      "to": 1553,
+      "direction": "n",
+      "from_grid": [
+        0,
+        2
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1553,
+      "to": 1554,
+      "direction": "n",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1554,
+      "to": 1556,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1554,
+      "to": 1555,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1556,
+      "to": 1557,
+      "direction": "e",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        2,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1557,
+      "to": 1558,
+      "direction": "n",
+      "from_grid": [
+        2,
+        0
+      ],
+      "to_grid": [
+        2,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1558,
+      "to": 1559,
+      "direction": "e",
+      "from_grid": [
+        2,
+        -1
+      ],
+      "to_grid": [
+        3,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1558,
+      "to": 1568,
+      "direction": "n",
+      "from_grid": [
+        2,
+        -1
+      ],
+      "to_grid": [
+        2,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1560,
+      "to": 1561,
+      "direction": "e",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        1,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1562,
+      "to": 1563,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1562,
+      "to": 1565,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1564,
+      "to": 1562,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1566,
+      "to": 1567,
+      "direction": "w",
+      "from_grid": [
+        0,
+        17
+      ],
+      "to_grid": [
+        -1,
+        17
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1568,
+      "to": 1569,
+      "direction": "n",
+      "from_grid": [
+        2,
+        -2
+      ],
+      "to_grid": [
+        2,
+        -3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3128,
+      "to": 3129,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        2
+      ],
+      "to_grid": [
+        -2,
+        2
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3129,
+      "to": 3130,
+      "direction": "w",
+      "from_grid": [
+        -2,
+        2
+      ],
+      "to_grid": [
+        -3,
+        2
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3130,
+      "to": 1533,
+      "direction": "n",
+      "from_grid": [
+        -3,
+        2
+      ],
+      "to_grid": [
+        -3,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3131,
+      "to": 3132,
+      "direction": "e",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        2,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3132,
+      "to": 3133,
+      "direction": "e",
+      "from_grid": [
+        2,
+        0
+      ],
+      "to_grid": [
+        3,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3134,
+      "to": 3135,
+      "direction": "e",
+      "from_grid": [
+        1,
+        -1
+      ],
+      "to_grid": [
+        2,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3135,
+      "to": 3136,
+      "direction": "e",
+      "from_grid": [
+        2,
+        -1
+      ],
+      "to_grid": [
+        3,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3137,
+      "to": 3138,
+      "direction": "e",
+      "from_grid": [
+        1,
+        -3
+      ],
+      "to_grid": [
+        2,
+        -3
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3138,
+      "to": 3139,
+      "direction": "n",
+      "from_grid": [
+        2,
+        -3
+      ],
+      "to_grid": [
+        2,
+        -4
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3139,
+      "to": 3140,
+      "direction": "n",
+      "from_grid": [
+        2,
+        -4
+      ],
+      "to_grid": [
+        2,
+        -5
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3140,
+      "to": 3141,
+      "direction": "w",
+      "from_grid": [
+        2,
+        -5
+      ],
+      "to_grid": [
+        1,
+        -5
+      ],
+      "floor": -3
+    }
+  ]
+}

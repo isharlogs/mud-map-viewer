@@ -1,0 +1,3362 @@
+{
+  "zone_name": "Dwarven Demesne",
+  "floor_count": 4,
+  "bounds": {
+    "min_x": -6,
+    "max_x": 9,
+    "min_y": -5,
+    "max_y": 17
+  },
+  "floors": {
+    "-3": {
+      "floor_id": -3,
+      "entry_vnum": 3150,
+      "rooms": {
+        "3150": {
+          "vnum": 3150,
+          "name": "Dock on the Dark River",
+          "description": "You stand at a small dock on a wide river of black water. The water flows from the east and forks into a channel to the north and one to the west. Several small boats are moored at the dock, and the hollow banging as they knock against the stone echoes through the whole cavern. The air is fairly humid here, but a light breeze from the east cools you. A cluster of mushrooms glows with an eerie red light, pulsing faintly.",
+          "grid_x": 1,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 2529,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Fork of the Dark River",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3151": {
+          "vnum": 3151,
+          "name": "The Dark River",
+          "description": "The black waters are slow and silent here, flowing westward to the split. Far up river you see faint illuminations, perhaps from a phosphorescent moss. The river runs east and west, and you can travel in either direction. A sign hangs suspended from a chain above you...it has a soft glowing aura!",
+          "grid_x": 3,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 3152,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Dark River",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2529,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Fork of the Dark River",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3152": {
+          "vnum": 3152,
+          "name": "The Dark River",
+          "description": "The black waters surge slowly westward through the narrow channel. You are forced to duck down into your craft every so often as the roof comes down almost to the water. Up river you see a soft red glow along the walls, but here is nothing but the dark, silent river flowing from east to west.",
+          "grid_x": 4,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 3153,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Dark River",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3151,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Dark River",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3153": {
+          "vnum": 3153,
+          "name": "The Dark River",
+          "description": "The walls here glow with the faint red light of Blood Moss. The water below continues it's westward journey. To the east the moss dies out, but you notice some kind of glittering ropes lining the walls. You prepare yourself for the worst, thinking that perhaps you should return west with the black water.",
+          "grid_x": 5,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 3154,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Dark River",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3152,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Dark River",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3154": {
+          "vnum": 3154,
+          "name": "The Dark River",
+          "description": "You barely notice the dark waters beneath you as they slide smoothly along their course. Your attention is focused on the walls, which are literally covered with intricate patterns of silvery rope. Some of the patterns begin to mesmerize you, but you break your gaze and consider your alternatives: up the river and into the light of day, or back downstream into Dwarven territory.",
+          "grid_x": 6,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 3155,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Entrance to the Dwarven Demesne",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3153,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Dark River",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3155": {
+          "vnum": 3155,
+          "name": "Entrance to the Dwarven Demesne",
+          "description": "A patch of vibrant green watercress grows here, its leaves crisp and fresh.",
+          "grid_x": 7,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 3156,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The High Valley",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3154,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Dark River",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Adult reindeer",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "3156": {
+          "vnum": 3156,
+          "name": "The High Valley",
+          "description": "Although the plants here are scarce, you see that they still support a number of deer. The deer frolic about the valley, oblivious to your presence. You spot the remains of a less fortunate traveller propped up against the hillside rim of the valley. A river flows from the north, and enters into the mountain to the west. A little further east is the far edge of the valley. A graceful willow tree stands here, its trailing branches swaying gently.",
+          "grid_x": 8,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 3157,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Side of the Hill",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3158,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The High Valley",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3157": {
+          "vnum": 3157,
+          "name": "The Side of the Hill",
+          "description": "You climb up to the hillside until you can go no further. From this vantage point you can see the entire valley, from the lake that stretches across the northwest section, to a small white hut in the southwest, the cave entrance in the southern end, and the thick brush in the northeast portion. You may head in any direction but east, which is blocked by the hillside.",
+          "grid_x": 9,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 3159,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The High Valley",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3156,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The High Valley",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3158,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The High Valley",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Young reindeer",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "3158": {
+          "vnum": 3158,
+          "name": "The High Valley",
+          "description": "A short ways to the west, the wide muddy river flows southward. The valley floor is extraordinarily flat, and you see a number of deer all across the valley. Every direction is open.",
+          "grid_x": 8,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3157,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Side of the Hill",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3159": {
+          "vnum": 3159,
+          "name": "The High Valley",
+          "description": "The east bank of the Dark River is relatively steep, as if it were cut by man and not naturally formed. To the west and east the valley floor extends, while the river runs south. To the north the brush becomes fairly thick, and you would probably have trouble cutting far into it.",
+          "grid_x": 9,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 3160,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "On the Edge of a Small Lake",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3160": {
+          "vnum": 3160,
+          "name": "On the Edge of a Small Lake",
+          "description": "The brush near the edge of the lake is almost impenetrable, and as you hack a path for yourself, you think quietly that perhaps there is nothing more to see in this direction. To the west is the source of the dark river, marked by a fallen tree, while to the south the vegetation clears.",
+          "grid_x": 9,
+          "grid_y": -1,
+          "exits": {
+            "w": {
+              "to_vnum": 3161,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Source of the Dark River",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Baby blue dragon",
+              "description": "This little dragon is perhaps just playing with you, but play can be deadly when you have no resistance to electricity...",
+              "unique": true
+            }
+          ]
+        },
+        "3161": {
+          "vnum": 3161,
+          "name": "Source of the Dark River",
+          "description": "The ground here is quite soft, and your boots sink into the mud with each step. A huge tree trunk, ages old, rests on the edge of the lake and guides the water into the riverbed. Across the river, to the east, a number of large bushes obscure the hillside. The river flows south.",
+          "grid_x": 8,
+          "grid_y": -1,
+          "exits": {
+            "w": {
+              "to_vnum": 3162,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The High Valley",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Zombie",
+              "description": "looks like.  The tattered remains of donated leather goods hang from the ragged humanoid form.  Its eyes dart and its shoulders twitch in short,",
+              "unique": false
+            }
+          ]
+        },
+        "3162": {
+          "vnum": 3162,
+          "name": "The High Valley",
+          "description": "The shore curves slowly from the west to the north while the chill waters lap quietly against the sand. To the east you see the Dark River flowing southward, and to the south is the edge of the valley. North of here, by a fallen tree, is the source of the river.",
+          "grid_x": 7,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 3161,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Source of the Dark River",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3163,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The High Valley",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3163": {
+          "vnum": 3163,
+          "name": "The High Valley",
+          "description": "Here the lake meets the edge of the valley. You can proceed no further north, only east along the shoreline. To the south a small white hut lifts a tall column of smoke into the sky. The waters of the lake are placid, but very deep and cold. Even wading evades your thoughts.",
+          "grid_x": 6,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 3162,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The High Valley",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3164,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "By the Hut",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3164": {
+          "vnum": 3164,
+          "name": "By the Hut",
+          "description": "After much walking, you reach the hut. It is clearly built to house only a single person, and you doubt more than two people would fit into it at one time. From the apex of the roof, a narrow trail of wood smoke rises into the clear sky. A low chanting comes from inside, inviting you to enter...",
+          "grid_x": 6,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3166,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The High Valley",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3165,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The White Dwarf's Hut",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3165": {
+          "vnum": 3165,
+          "name": "The White Dwarf's Hut",
+          "description": "The inside of the hut is lined with deerskin. In the center, a small fire burns brightly, fueled by more than wood. Behind the fire sits a squat man in gleaming white plate mail. He smiles at you and motions for you to sit.",
+          "grid_x": 5,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3164,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "By the Hut",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Dwarf shaman",
+              "description": "The dwarf bears many scars, but has obviously given up his old warlike nature in favor of a peaceful approach to life.  Perhaps if you cross his palm with a reasonable amount of gold, he will share a tale with you.",
+              "unique": true
+            }
+          ]
+        },
+        "3166": {
+          "vnum": 3166,
+          "name": "The High Valley",
+          "description": "The hut is somewhat farther than you thought, and you feel no closer to it now than you did standing beside the river. The edge of the lake moves rapidly southward as you walk west, however, and you have a much clearer view of the water to the north.",
+          "grid_x": 7,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 3167,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The High Valley",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3167": {
+          "vnum": 3167,
+          "name": "The High Valley",
+          "description": "Standing on the west bank of the river, you notice a trail of smoke drifting into the sky to the west. By looking carefully, you make out a small white hut the east, or head west toward the hut.",
+          "grid_x": 8,
+          "grid_y": 2,
+          "exits": {
+            "s": {
+              "to_vnum": 3155,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Entrance to the Dwarven Demesne",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3168": {
+          "vnum": 3168,
+          "name": "Western Fork of the Dark River",
+          "description": "The dark water flows silently beneath your craft as you slide westward down the tunnel. Back upriver to the east you can make out a fork branching north and a small dock. To the west a narrow landing and a tunnel leading north are visible. The river continues its course. Suspended above you is a glowing wooden sign.",
+          "grid_x": 1,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 2529,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Fork of the Dark River",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3169,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Fork of the Dark River",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3169": {
+          "vnum": 3169,
+          "name": "Western Fork of the Dark River",
+          "description": "You arrive at a small landing cut into the north wall. A dark tunnel runs into the stone, and you can make out some kind of bars a short distance down the tunnel. The river continues is steady path from east to west.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 3168,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Fork of the Dark River",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3170,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Guarded Hallway",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3175,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Fork of the Dark River",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3170": {
+          "vnum": 3170,
+          "name": "Guarded Hallway",
+          "description": "The tunnel leads between two cages, one to the west and one to the east. Each is blocked off by a large portcullis, which can be opened, you suspect, by large levers nearby. In each cage, a huge mining lizard sits, eyeing you closely. In the rear of the west cell, a red key rests on the ground, while in the east cell lies a blue key. The tunnel continues north, and the Dark River is to the south.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3174,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Eastern Cage",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3171,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Glimmering Well",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3169,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Fork of the Dark River",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3173,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Cage",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Dwarven miner",
+              "description": "Although the dwarf is short, she is well-armoured and mean-looking. She would have little difficulty cleaving you in two...or perhaps three.",
+              "unique": true
+            }
+          ]
+        },
+        "3171": {
+          "vnum": 3171,
+          "name": "The Glimmering Well",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 3170,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Guarded Hallway",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3172,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Dwarven Quarters",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3172": {
+          "vnum": 3172,
+          "name": "Dwarven Quarters",
+          "description": "With a shrill cry, the dwarves yet remaining in these quarters rise and hurl themselves at you. Leaping over their bunks, they swing their axes wildly over their heads with the gleeful abandon of a dwarf in combat. A quick survey of the room discovers a tunnel to the north and an archway leading east.",
+          "grid_x": -1,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 3171,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Glimmering Well",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Mountain dwarf",
+              "description": "The mountain dwarves, although well armed and armoured, are the base of dwarven society.  They do most of the menial work, and are thus honored with the name 'mountain,' the lifeblood of the dwarves.",
+              "unique": true
+            }
+          ]
+        },
+        "3173": {
+          "vnum": 3173,
+          "name": "Western Cage",
+          "description": "This tiny cell houses the smaller of two mining lizards used by the dwarves. The lizard is currently set to guard a red key, which has been tossed to the ground near the rear of the cell. The exit is east.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3170,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Guarded Hallway",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Mining lizard",
+              "description": "The great lizard's slow and thoughtful pace belie its quick and deadly strike.  You hesitate to attack such a sturdy opponent.",
+              "unique": false
+            }
+          ]
+        },
+        "3174": {
+          "vnum": 3174,
+          "name": "Eastern Cage",
+          "description": "This small cell houses the larger of two mining lizards used by the dwarves. It peers at you, ready to strike if you make even the slightest mistake. Perhaps you should back out to the west.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 3170,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Guarded Hallway",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Mining lizard",
+              "description": "The great lizard's slow and thoughtful pace belie its quick and deadly strike.  You hesitate to attack such a sturdy opponent.",
+              "unique": false
+            }
+          ]
+        },
+        "3175": {
+          "vnum": 3175,
+          "name": "Western Fork of the Dark River",
+          "description": "You are startled by drops of water pelting you from above. Looking up, you see that small stalactites have begun to form on the ceiling here. You hope fearfully that the river has destroyed any stalagmites... The river continues east to west in silence.",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 3169,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Fork of the Dark River",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3176,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Fork of the Dark River",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3176": {
+          "vnum": 3176,
+          "name": "Western Fork of the Dark River",
+          "description": "The stalactites here are much larger, sometimes approaching the surface of the water and forcing you to wind your way through them. Fortunately, you have encountered no stalagmites or other problems from below, and your trip has been almost uneventful. The river bends here, flowing northward. Some faint light is visible a ways to the north, but only blackness lies upriver to the east.",
+          "grid_x": -2,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 3175,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Fork of the Dark River",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3177,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Fork of the Dark River",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3177": {
+          "vnum": 3177,
+          "name": "Western Fork of the Dark River",
+          "description": "An opening in the western wall draws your attention from the small and colorful stalactites above you. A short distance to the west you see some kind of temple, lit by torchlight and guarded by two husky humanoid silhouettes. The river runs south to north, carrying you ever so slowly past the gaze of the guards.",
+          "grid_x": -2,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 3185,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Fork of the Dark River",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3176,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Fork of the Dark River",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3178,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Entrance to the Temple of Korvakos",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3178": {
+          "vnum": 3178,
+          "name": "Entrance to the Temple of Korvakos",
+          "description": "You stand on a platform just off the Dark River to the east. Blocking your path to a torchlit temple are two husky guards. Beyond the guards, a small group of dwarves is being led in some bizarre ritual by a taller figure dressed in stone grey robes. At the far end of the temple, a huge statue shoots up and out of view.",
+          "grid_x": -3,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3177,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Fork of the Dark River",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3179,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Eastern Quadrant of the Temple of Korvakos",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Clay golem",
+              "description": "The golem stands fearless before the temple, prepared to give what life it has in defense of its god.",
+              "unique": true
+            }
+          ]
+        },
+        "3179": {
+          "vnum": 3179,
+          "name": "Eastern Quadrant of the Temple of Korvakos",
+          "description": "The dwarves here are hardly pleased with your intrusion. Or perhaps they are, as they realize that a human sacrifice could bring great favor from Korvakos. Across the temple you see the statue, terrifying in its stature. If you didn't know better, you might even think it was radiating darkness...",
+          "grid_x": -4,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3178,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Entrance to the Temple of Korvakos",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3180,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Northern Quadrant of the Temple of Korvakos",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Dwarf",
+              "description": "These dwarves are clearly not pleased by your intteruption of the ritual. You will be done away with shortly.",
+              "unique": false
+            }
+          ]
+        },
+        "3180": {
+          "vnum": 3180,
+          "name": "Northern Quadrant of the Temple of Korvakos",
+          "description": "As you approach the northern wall to get a better look at the tapestry, a huge pile of rocks rises up and blocks your path. You are allowed no closer to the wall, and you feel that any impropriety could earn you a speedy death.",
+          "grid_x": -5,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 3181,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Center of the Temple of Korvakos",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Earth Spirit",
+              "description": "The incarnation of Korvakos on Earth, these huge humanoid monstrosities bear more resemblance to a moving pile of rock than to their dwarven",
+              "unique": false
+            }
+          ]
+        },
+        "3181": {
+          "vnum": 3181,
+          "name": "Center of the Temple of Korvakos",
+          "description": "You advance to the center of the temple, where the High Priest awaits you. His eyes flash with the power of the Dark Gods as his mind races for a suitably humiliating demise for a defiler of the Temple. With a start, you realize that he has chosen one... you may flee in any direction, even to the statue to the west.",
+          "grid_x": -5,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3179,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Eastern Quadrant of the Temple of Korvakos",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3182,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Southern Quadrant of the Temple of Korvakos",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3183,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Quadrant of the Temple of Korvakos",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Kraagnokkynar",
+              "description": "Kraagnokkynar is not pleased with your intrusion!  His stone grey robes fly up dramatically as he prepares to burn you to death.",
+              "unique": true
+            }
+          ]
+        },
+        "3182": {
+          "vnum": 3182,
+          "name": "Southern Quadrant of the Temple of Korvakos",
+          "description": "Heading toward the wall and the tapestry, you are suddenly stopped by a pile of rocks thrusting upward before you. It seems unwilling for you to proceed further south. Anything but respect for the temple may cost you dearly.",
+          "grid_x": -5,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 3181,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Center of the Temple of Korvakos",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Earth Spirit",
+              "description": "The incarnation of Korvakos on Earth, these huge humanoid monstrosities bear more resemblance to a moving pile of rock than to their dwarven",
+              "unique": false
+            }
+          ]
+        },
+        "3183": {
+          "vnum": 3183,
+          "name": "Western Quadrant of the Temple of Korvakos",
+          "description": "The black statue rises above you, a symbol of the great power of the dwarves. It's glittering green eyes beckon to you, but although you see an easy way to ascend, sharp knives imbedded into the statue would prevent you from ever returning to the ground. To the east is the center of the temple, and to the north the walls are adorned with tapestries.",
+          "grid_x": -6,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3181,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Center of the Temple of Korvakos",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 3184,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Atop the Statue of Korvakos",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "3185": {
+          "vnum": 3185,
+          "name": "Western Fork of the Dark River",
+          "description": "The river bends again here, returning to its western course. Ahead you see the light of day, and the water begins a more rapid journey. You have little to fear, however--a thick bar blocks the way, and you are certain that at worst you will be jarred roughly. To the south you can see light emerging from the western wall, but the light is more somber than that to the west",
+          "grid_x": -2,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 3177,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Fork of the Dark River",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3186,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Fork of the Dark River",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3186": {
+          "vnum": 3186,
+          "name": "Western Fork of the Dark River",
+          "description": "Your craft comes to a halt with a sickening lurch. A short ways west the water disappears, presumably down into the valley below. The ledge is quite wide, and you might be able to climb out onto it with some caution. The way east looks like a fairly rigorous journey, and a breath of fresh air would do you no harm after your passage through this tunnel.",
+          "grid_x": -3,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 3185,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Fork of the Dark River",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3187,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Lair of the Wyvern",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3187": {
+          "vnum": 3187,
+          "name": "The Lair of the Wyvern",
+          "description": "Stepping out onto the ledge, your senses reel as you realize that you are not alone. This little ledge is occupied, and its occupant obviously doesn't feel that there's room enough for the both of you. Perhaps if you scramble you can get back into your boat in time",
+          "grid_x": -4,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 3186,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Fork of the Dark River",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Wyvern",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "3188": {
+          "vnum": 3188,
+          "name": "A Dank Cavern",
+          "description": "A short walk east brings you to a spacious cavern. The roof of the cavern high above you boasts small stalactites dripping water down into a pool in the center of the room. Around the edges of the room some rather large toadstools have clustered.",
+          "grid_x": 5,
+          "grid_y": -1,
+          "exits": {
+            "w": {
+              "to_vnum": 2533,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Branch in the Limestone Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3189": {
+          "vnum": 3189,
+          "name": "The Hall of Darkness",
+          "description": "You almost stumble to your knees when the rough limestone tunnel gives way to the smoothly cut floor of this cubic room. The walls are adorned with murals of assassination, and this seems to be some kind of shrine to the killer. Strangely placed, you think, until you notice the statue of Korvakos on a dias in the center of the room--how peculiar that you hadn't seen it when you entered. You shiver regretfully as the statue begins to advance on you...",
+          "grid_x": 3,
+          "grid_y": -4,
+          "exits": {
+            "s": {
+              "to_vnum": 2539,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "A Limestone Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3190": {
+          "vnum": 3190,
+          "name": "The Maze of Death",
+          "description": "This small green room is completely unremarkable. Two doors face each other",
+          "grid_x": -2,
+          "grid_y": -3,
+          "exits": {
+            "s": {
+              "to_vnum": 2546,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Maze of Death",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3191": {
+          "vnum": 3191,
+          "name": "The End of the Maze",
+          "description": "Stepping past the green door, you realize that you have passed the maze. A short tunnel leads west to a final wooden door. The sounds of heavy breathing drift from behind the door. You brace yourself for the final challenge-- perhaps the corpse of Salazar lies beyond.",
+          "grid_x": -3,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 3190,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Maze of Death",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3192,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Lair of the Dark One",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3192": {
+          "vnum": 3192,
+          "name": "The Lair of the Dark One",
+          "description": "Indeed there is no coffin here, but the lurker is nonetheless deadly. You glimpse around the damp cavern, hoping to understand the meaning of your soon- to-arrive death.",
+          "grid_x": -4,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 3191,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The End of the Maze",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Dark One",
+              "description": "Your only perception of this being is the pain of its rending talons.",
+              "unique": true
+            }
+          ]
+        },
+        "3193": {
+          "vnum": 3193,
+          "name": "Northern Fork of the Dark River",
+          "description": "You enter what is perhaps a small underground lake, or perhaps merely a very wide section of the river. You can no longer see the walls to the east and west --they have disappeared into the gloom. To the north and south the channel narrows.",
+          "grid_x": 2,
+          "grid_y": -3,
+          "exits": {
+            "n": {
+              "to_vnum": 3194,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Northern Fork of the Dark River",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3194": {
+          "vnum": 3194,
+          "name": "Northern Fork of the Dark River",
+          "description": "Flowing north beneath you, the black water nudges you further and further into the gloom. The way seems darker as you proceed, and the walls themselves seem to fade into the absolute night.",
+          "grid_x": 2,
+          "grid_y": -4,
+          "exits": {},
+          "npcs": []
+        },
+        "3195": {
+          "vnum": 3195,
+          "name": "Entrance to the Tomb of Salazar",
+          "description": "Beyond the door of black iron, a corridor of cut stone leads into a dank crypt. The ceiling is covered with Blood Moss, and the walls and floor glisten in the dim red light. Through an archway to the east you see your goal, the defiled coffin of the knight Salazar. But before you can accomplish your task, you must deal with the guardian.",
+          "grid_x": 2,
+          "grid_y": -5,
+          "exits": {
+            "e": {
+              "to_vnum": 3196,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Tomb of Salazar",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3194,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Northern Fork of the Dark River",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Guardian",
+              "description": "demon's build is broad and powerful and he looks none too friendly.",
+              "unique": false
+            }
+          ]
+        },
+        "3196": {
+          "vnum": 3196,
+          "name": "The Tomb of Salazar",
+          "description": "Here in the tomb the air is quite humid, and the Blood Moss covers not only the ceiling but the walls as well. The coffin is in the center of the room, placed atop a pedestal surrounded by Dwarven excrement. Above the coffin a narrow wisp of vapor trails to the ceiling.",
+          "grid_x": 3,
+          "grid_y": -5,
+          "exits": {
+            "w": {
+              "to_vnum": 3195,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Entrance to the Tomb of Salazar",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Ghost of salazar",
+              "description": "damage.  It hovers over the coffin, daring you to approach closer.",
+              "unique": true
+            }
+          ]
+        },
+        "2528": {
+          "vnum": 2528,
+          "name": "Dock on the Dark River",
+          "description": "You stand at a small dock on a wide river of black water. The water flows from the east and forks into a channel to the north and one to the west. Several small boats are moored at the dock, and the hollow banging as they knock against the stone echoes through the whole cavern. The air is fairly humid here, but a light breeze from the east cools you. *A cluster of mushrooms glows with an eerie red light, pulsing faintly.*",
+          "grid_x": 2,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 2529,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Fork of the Dark River",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 2527,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Winding Passage into the Mountain",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2529": {
+          "vnum": 2529,
+          "name": "Fork of the Dark River",
+          "description": "The dark waters fork into two branches, one flowing north and the second continuing west. To the south is a small dock where a few small boats are moored. A slight breeze blows from the east.",
+          "grid_x": 2,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 3151,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Dark River",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2530,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Northern Fork of the Dark River",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2528,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Dock on the Dark River",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3168,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Fork of the Dark River",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2530": {
+          "vnum": 2530,
+          "name": "Northern Fork of the Dark River",
+          "description": "The water in this channel flows more swiftly than the others, and your mind wanders to thought of waterfalls as you drift north on the current. The way is fairly wide and the river has smoothed the walls, but periodic rocks threaten to cripple your boat. You reach a small, glowing wooden sign suspended from a chain above. The river continues north, while back upriver to the south you see the fork and a small dock.",
+          "grid_x": 2,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 2531,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Northern Fork of the Dark River",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2529,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Fork of the Dark River",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2531": {
+          "vnum": 2531,
+          "name": "Northern Fork of the Dark River",
+          "description": "Sailing swiftly along the black water, you lapse into a dreamy state of thought. Perhaps this is a trap, this swiftly flowing river. Perhaps the dwarves have already sealed your fate. The river continues north, but you may still retreat to the south.",
+          "grid_x": 2,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 2532,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Behind the Blue Door",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2540,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Northern Fork of the Dark River",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2530,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Northern Fork of the Dark River",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2532": {
+          "vnum": 2532,
+          "name": "Behind the Blue Door",
+          "description": "Past the door of blue iron you find a wide tunnel leading east. The rock seems to be some kind of naturally formed limestone, and is slick to the touch. The air is still and somewhat foul.",
+          "grid_x": 3,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 2533,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Branch in the Limestone Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2531,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Northern Fork of the Dark River",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2533": {
+          "vnum": 2533,
+          "name": "Branch in the Limestone Tunnel",
+          "description": "You make your way carefully down the limestone tunnel. Here the way branches, the main tunnel running east and west and a somewhat narrower one shooting off to the north. A slow dripping sound from the east tickles your ears. You have lost 288 experience.",
+          "grid_x": 4,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 3188,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "A Dank Cavern",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2534,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "A Limestone Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2532,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Behind the Blue Door",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Cave troll",
+              "description": "This grotesque misanthrope hails from the dawn of the world, before the creation of Man.  He is clearly jealous of your fine form.",
+              "unique": false
+            },
+            {
+              "name": "Shrieker",
+              "description": "The shrieker is a large and generally harmless mushroom.  It's only fearsome property is its ability to emit a piercing shriek, which almost always brings hostile monsters to the scene.",
+              "unique": true
+            }
+          ]
+        },
+        "2534": {
+          "vnum": 2534,
+          "name": "A Limestone Tunnel",
+          "description": "The tunnel here leads north and south, meeting another wide tunnel of limestone to the east. Looking down this second tunnel, you see a dim illumination, perhaps from the torch of another brave soul.",
+          "grid_x": 4,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 2535,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Southern End of a Huge Cavern",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2533,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Branch in the Limestone Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2535": {
+          "vnum": 2535,
+          "name": "Southern End of a Huge Cavern",
+          "description": "The tunnel expands into a large cavern. Narrow trials wind through large clusters of huge stalagmites. The roof above is beyond your meager light. There is a strange silence here, and you feel that something is amiss.",
+          "grid_x": 5,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 2536,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Northern End of a Huge Cavern",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2536": {
+          "vnum": 2536,
+          "name": "Northern End of a Huge Cavern",
+          "description": "The stalagmites here are smaller than those to the south, but still manage to prevent you from seeing further than a few meters at any instant. A high archway, naturally formed, leads into a smaller cavern to the west.",
+          "grid_x": 5,
+          "grid_y": -3,
+          "exits": {
+            "n": {
+              "to_vnum": 2537,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Grok Headbasher's Pawn Shop",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2538,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Bridge Across the Treacherous Pit",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Cave troll",
+              "description": "This grotesque misanthrope hails from the dawn of the world, before the creation of Man.  He is clearly jealous of your fine form.",
+              "unique": false
+            }
+          ]
+        },
+        "2537": {
+          "vnum": 2537,
+          "name": "Grok Headbasher's Pawn Shop",
+          "description": "Although he's been warned not to trade with the infrequent adventurer who survives the caves, Grok Headbasher has never been one to listen, and still trades with anyone who'll sell cheap or buy high.",
+          "grid_x": 5,
+          "grid_y": -4,
+          "exits": {
+            "s": {
+              "to_vnum": 2536,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Northern End of a Huge Cavern",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Grok",
+              "description": "Grok is a powerful man, but is clearly impatient.  His eyes rest greedily on your pouch, calculating how much you can afford to pay.",
+              "unique": true
+            }
+          ]
+        },
+        "2538": {
+          "vnum": 2538,
+          "name": "Bridge Across the Treacherous Pit",
+          "description": "You advance cautiously across a narrow stone bridge. To either side, a purple gas rises slowly from the depths of the mountain. Despite your best efforts, you fail to see the bottom of this abyss. Dropping a small stone over the side of the bridge, you wait...and hear nothing. As long as you don't step off to the north or south, and as long as you can avoid the thick gas, you are safe...",
+          "grid_x": 4,
+          "grid_y": -3,
+          "exits": {
+            "w": {
+              "to_vnum": 2539,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "A Limestone Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2539": {
+          "vnum": 2539,
+          "name": "A Limestone Tunnel",
+          "description": "The tunnel continues north and south, with a wide crack in the eastern wall. From this crack a thick purple gas flows out and blocks the passage to the north. The gas looks fairly hazardous.",
+          "grid_x": 3,
+          "grid_y": -3,
+          "exits": {
+            "n": {
+              "to_vnum": 3189,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Hall of Darkness",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2534,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "A Limestone Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Statue of korvakos",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "2540": {
+          "vnum": 2540,
+          "name": "Northern Fork of the Dark River",
+          "description": ".....SPLASH! Your boat strikes a rock and glances aside, spraying you with the dark waters. You are unhurt but quite shaken. The water, however, is much calmer here, and the channel wider. The way north is curiously dark, and it is still possible to return south.",
+          "grid_x": 2,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 3193,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Northern Fork of the Dark River",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2531,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Northern Fork of the Dark River",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2541": {
+          "vnum": 2541,
+          "name": "Behind the Red Door",
+          "description": "Behind the red iron door a narrow hallway cut from the stone leads west. A short flight of stairs leads down into a small room with doors leading north and south. Back east is the Dark River.",
+          "grid_x": 1,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 2540,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Northern Fork of the Dark River",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2542,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Maze of Death",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2542": {
+          "vnum": 2542,
+          "name": "The Maze of Death",
+          "description": "You stand in a small room cut carefully from the stone of the mountain. To the north and south small wooden doors lead out, while a short flight of stairs to the east leads to a massive red iron door and the Dark River. On the west wall, someone has engraved some kind of symbol.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 2541,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Behind the Red Door",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2543,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Maze of Death",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2545,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Maze of Death",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2543": {
+          "vnum": 2543,
+          "name": "The Maze of Death",
+          "description": "Flinging the door open with your usual lack of caution, you are quite startled by the huge red dragon staring down at you. As you try to back out, you wonder how such a huge creature managed to get into such a small room. Doors lead north, west, and south...but perhaps you haven't the time to investigate any others.",
+          "grid_x": 0,
+          "grid_y": -3,
+          "exits": {
+            "n": {
+              "to_vnum": 2544,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Maze of Death",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2542,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Maze of Death",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Red dragon",
+              "description": "The majestic dragon rises high above you, scales glittering in your tiny light.  As he prepares to roast you in your armor, you look from side to",
+              "unique": true
+            }
+          ]
+        },
+        "2544": {
+          "vnum": 2544,
+          "name": "The Maze of Death",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": -4,
+          "exits": {
+            "s": {
+              "to_vnum": 2543,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Maze of Death",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Mighty beholder",
+              "description": "The beholder has a large central eye and ten long eyestalks.  Each eye contains a power, most of which could easily destroy you.",
+              "unique": true
+            }
+          ]
+        },
+        "2545": {
+          "vnum": 2545,
+          "name": "The Maze of Death",
+          "description": "You pass into another small red room, completely bare except for doors leading north, west, and south.",
+          "grid_x": -1,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 2542,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Maze of Death",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2546,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Maze of Death",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2546,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Maze of Death",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2546": {
+          "vnum": 2546,
+          "name": "The Maze of Death",
+          "description": "This small red room is home to a pair of ogres. They seem fairly indifferent to your presence at the moment, but perhaps they'll like you better roasted on a spit over the fire in the corner. Doors lead north and east, and it might be to your advantage to choose quickly.",
+          "grid_x": -2,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 2545,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Maze of Death",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3190,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Maze of Death",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Ogre",
+              "description": "",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -6,
+        "max_x": 9,
+        "min_y": -5,
+        "max_y": 2,
+        "room_count": 65
+      }
+    },
+    "-2": {
+      "floor_id": -2,
+      "entry_vnum": 2513,
+      "rooms": {
+        "2513": {
+          "vnum": 2513,
+          "name": "A Hole in the Wall",
+          "description": "You stand in a narrow cavity in the great granite cliff. A spiral staircase leads upward into darkness, an excellent place for an ambush. Perhaps Narcin died here...",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {
+            "s": {
+              "to_vnum": 2512,
+              "to_zone": "The Cursed Hills",
+              "to_room_name": "The Cursed Hills",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 2514,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Spiral Staircase",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2526": {
+          "vnum": 2526,
+          "name": "Winding Passage into the Mountain",
+          "description": "The faint banging becomes louder, and the air more humid. But the cool breeze smells almost fresh, and you forget your problems as you work slowly downward to the east. The passage also returns upward.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2527,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Winding Passage into the Mountain",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 2525,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Winding Passage into the Mountain",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2527": {
+          "vnum": 2527,
+          "name": "Winding Passage into the Mountain",
+          "description": "Below you the passage opens onto some kind of dock on a black river. Several boats are moored at the dock, banging periodically into the rock as the river moves them. The slick passage to the west winds up and out of the mountain.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 2526,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Winding Passage into the Mountain",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 3150,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Dock on the Dark River",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Rock dwarf",
+              "description": "The rock dwarf is the least fierce of all dwarves.  Many are simply underage dwarven warriors, while others are the more senior members of dwarven society who have never managed to achieve true status.",
+              "unique": false
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 1,
+        "min_y": 0,
+        "max_y": 15,
+        "room_count": 3
+      }
+    },
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 2514,
+      "rooms": {
+        "2514": {
+          "vnum": 2514,
+          "name": "The Spiral Staircase",
+          "description": "After hours of climbing stairs, you break for a bit. You imagine that the stairway will never end, and that you will starve here. The vision fades as you return to your feet and continue the climb.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {
+            "d": {
+              "to_vnum": 2513,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "A Hole in the Wall",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "u": {
+              "to_vnum": 2515,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Top of the Cliff",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2524": {
+          "vnum": 2524,
+          "name": "Winding Passage into the Mountain",
+          "description": "As you move slowly down the passage, you notice a soft breeze blowing up from the depths. A faint banging is audible to the silent listener. The passage continues west and up.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 2525,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Winding Passage into the Mountain",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 2523,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Winding Passage into the Mountain",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Rock dwarf",
+              "description": "The rock dwarf is the least fierce of all dwarves.  Many are simply underage dwarven warriors, while others are the more senior members of dwarven society who have never managed to achieve true status.",
+              "unique": false
+            }
+          ]
+        },
+        "2525": {
+          "vnum": 2525,
+          "name": "Winding Passage into the Mountain",
+          "description": "The passage drops sharply here, leading further down into the mountain. To the east it climbs upward. The rock is slick, and every step is a task.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2524,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Winding Passage into the Mountain",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 2526,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Winding Passage into the Mountain",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 15,
+        "room_count": 3
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 3184,
+      "rooms": {
+        "3184": {
+          "vnum": 3184,
+          "name": "Atop the Statue of Korvakos",
+          "description": "You foolishly ascend the statue, despite your misgivings about the knives. After a long effort, you pry one of the great emerald eyes loose. The other, you decide, is permanently set into the stone. It glitters maliciously at you as you contemplate descending, a descent that is sure to be your last.",
+          "grid_x": 0,
+          "grid_y": 17,
+          "exits": {
+            "go forehead": {
+              "to_vnum": 3183,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Western Quadrant of the Temple of Korvakos",
+              "direction": "go forehead",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2515": {
+          "vnum": 2515,
+          "name": "The Top of the Cliff",
+          "description": "You manage to beat the stairs and arrive at the top of the cliff. One glimpse down into the valley and you throw yourself against the mountain, trembling with fear. You have a distinct desire to stay away from the edge. A path to the east winds up into the mountain face.",
+          "grid_x": -2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2516,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Winding Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 2514,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Spiral Staircase",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Stone dwarf",
+              "description": "The stone dwarf is fully armed and armored, and would prove a",
+              "unique": false
+            }
+          ]
+        },
+        "2516": {
+          "vnum": 2516,
+          "name": "The Winding Path",
+          "description": "Various arctic wildflowers grow by the sides of the path, but you hardly glance at them as you trudge skyward. The path winds back to the west.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 2517,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Winding Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 2515,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Top of the Cliff",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Stone dwarf",
+              "description": "The stone dwarf is fully armed and armored, and would prove a",
+              "unique": false
+            }
+          ]
+        },
+        "2517": {
+          "vnum": 2517,
+          "name": "The Winding Path",
+          "description": "The air is getting quite thin here, and you must rest often. You have climbed above the clouds and look down upon them as if you ruled the earth. The sea of bluish white seems so soft and fluffy that you envision it as a gigantic feather bed just waiting for you to rest your weary body.",
+          "grid_x": -1,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 2518,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Winding Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 2516,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Winding Path",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Stone dwarf",
+              "description": "The stone dwarf is fully armed and armored, and would prove a",
+              "unique": false
+            }
+          ]
+        },
+        "2518": {
+          "vnum": 2518,
+          "name": "The Winding Path",
+          "description": "You are really beginning to tire of this climb. Perhaps vengeance is not always such a convenient motive. Besides, a curse is a curse, and even if you do kill the dwarves, so what? Nothing will live in those hills for centuries, anyway.",
+          "grid_x": 1,
+          "grid_y": 2,
+          "exits": {
+            "w": {
+              "to_vnum": 2519,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Winding Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 2517,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Winding Path",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2519": {
+          "vnum": 2519,
+          "name": "The Winding Path",
+          "description": "The path ends here before the mouth of a gigantic cave. Inside you see a dwarf or two milling about, minding his own greedy little business.",
+          "grid_x": 0,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 2520,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Cave of the Dwarves",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 2518,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Winding Path",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2520": {
+          "vnum": 2520,
+          "name": "The Cave of the Dwarves",
+          "description": "This vast cave was hewn from the stone eons ago and worn smooth with age. Although you had seen several dwarves earlier, few now remain. It seems as if you have disturbed them. To the north you see a small, dark alcove.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 2521,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Temple of Molokor",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2519,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Winding Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Granite dwarf",
+              "description": "The granite dwarf looks much hardier than those last few dwarves.",
+              "unique": true
+            }
+          ]
+        },
+        "2521": {
+          "vnum": 2521,
+          "name": "The Temple of Molokor",
+          "description": "You stand in the presence of Molokor, Dwarven God of Plagues and Death. His deep black eyes glow coldly as he stares at your puny mortality. Oh! It's just a statue! It seemed almost real for a second. Before the statue is a open chest of offerings, in which you see...",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2523,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Winding Passage into the Mountain",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2522,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Cramped Passage",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2520,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Cave of the Dwarves",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2522": {
+          "vnum": 2522,
+          "name": "Cramped Passage",
+          "description": "Squeezing into the narrow crack, you find a passage leading eastward. The air is hot and humid, and the walls slick with algae, but you have little enough trouble moving--as long as you're alone.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 2523,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Winding Passage into the Mountain",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2521,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "The Temple of Molokor",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2523": {
+          "vnum": 2523,
+          "name": "Winding Passage into the Mountain",
+          "description": "The passage drops steeply down here, and you nearly lose your footing as you wind back around.",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "w": {
+              "to_vnum": 2522,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Cramped Passage",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 2524,
+              "to_zone": "Dwarven Demesne",
+              "to_room_name": "Winding Passage into the Mountain",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Rock dwarf",
+              "description": "The rock dwarf is the least fierce of all dwarves.  Many are simply underage dwarven warriors, while others are the more senior members of dwarven society who have never managed to achieve true status.",
+              "unique": false
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -2,
+        "max_x": 1,
+        "min_y": -1,
+        "max_y": 17,
+        "room_count": 10
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 2515,
+      "to": 2516,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2516,
+      "to": 2517,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -1,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2517,
+      "to": 2518,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        2
+      ],
+      "to_grid": [
+        1,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2518,
+      "to": 2519,
+      "direction": "w",
+      "from_grid": [
+        1,
+        2
+      ],
+      "to_grid": [
+        0,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2519,
+      "to": 2520,
+      "direction": "n",
+      "from_grid": [
+        0,
+        2
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2520,
+      "to": 2521,
+      "direction": "n",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2521,
+      "to": 2523,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2521,
+      "to": 2522,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2522,
+      "to": 2523,
+      "direction": "e",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        1,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2524,
+      "to": 2525,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2526,
+      "to": 2527,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -2
+    },
+    {
+      "from": 2528,
+      "to": 2529,
+      "direction": "n",
+      "from_grid": [
+        2,
+        2
+      ],
+      "to_grid": [
+        2,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2529,
+      "to": 3151,
+      "direction": "e",
+      "from_grid": [
+        2,
+        1
+      ],
+      "to_grid": [
+        3,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2529,
+      "to": 2530,
+      "direction": "n",
+      "from_grid": [
+        2,
+        1
+      ],
+      "to_grid": [
+        2,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2529,
+      "to": 3168,
+      "direction": "w",
+      "from_grid": [
+        2,
+        1
+      ],
+      "to_grid": [
+        1,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2530,
+      "to": 2531,
+      "direction": "n",
+      "from_grid": [
+        2,
+        0
+      ],
+      "to_grid": [
+        2,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2531,
+      "to": 2532,
+      "direction": "e",
+      "from_grid": [
+        2,
+        -1
+      ],
+      "to_grid": [
+        3,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2531,
+      "to": 2540,
+      "direction": "n",
+      "from_grid": [
+        2,
+        -1
+      ],
+      "to_grid": [
+        2,
+        -2
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2532,
+      "to": 2533,
+      "direction": "e",
+      "from_grid": [
+        3,
+        -1
+      ],
+      "to_grid": [
+        4,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2533,
+      "to": 3188,
+      "direction": "e",
+      "from_grid": [
+        4,
+        -1
+      ],
+      "to_grid": [
+        5,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2533,
+      "to": 2534,
+      "direction": "n",
+      "from_grid": [
+        4,
+        -1
+      ],
+      "to_grid": [
+        4,
+        -2
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2534,
+      "to": 2535,
+      "direction": "e",
+      "from_grid": [
+        4,
+        -2
+      ],
+      "to_grid": [
+        5,
+        -2
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2535,
+      "to": 2536,
+      "direction": "n",
+      "from_grid": [
+        5,
+        -2
+      ],
+      "to_grid": [
+        5,
+        -3
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2536,
+      "to": 2537,
+      "direction": "n",
+      "from_grid": [
+        5,
+        -3
+      ],
+      "to_grid": [
+        5,
+        -4
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2536,
+      "to": 2538,
+      "direction": "w",
+      "from_grid": [
+        5,
+        -3
+      ],
+      "to_grid": [
+        4,
+        -3
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2538,
+      "to": 2539,
+      "direction": "w",
+      "from_grid": [
+        4,
+        -3
+      ],
+      "to_grid": [
+        3,
+        -3
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2539,
+      "to": 3189,
+      "direction": "n",
+      "from_grid": [
+        3,
+        -3
+      ],
+      "to_grid": [
+        3,
+        -4
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2539,
+      "to": 2534,
+      "direction": "s",
+      "from_grid": [
+        3,
+        -3
+      ],
+      "to_grid": [
+        4,
+        -2
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2540,
+      "to": 3193,
+      "direction": "n",
+      "from_grid": [
+        2,
+        -2
+      ],
+      "to_grid": [
+        2,
+        -3
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2541,
+      "to": 2540,
+      "direction": "e",
+      "from_grid": [
+        1,
+        -2
+      ],
+      "to_grid": [
+        2,
+        -2
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2541,
+      "to": 2542,
+      "direction": "w",
+      "from_grid": [
+        1,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2542,
+      "to": 2543,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -3
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2542,
+      "to": 2545,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        -1,
+        -2
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2543,
+      "to": 2544,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -3
+      ],
+      "to_grid": [
+        0,
+        -4
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2545,
+      "to": 2546,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        -2
+      ],
+      "to_grid": [
+        -2,
+        -2
+      ],
+      "floor": -3
+    },
+    {
+      "from": 2546,
+      "to": 3190,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        -2
+      ],
+      "to_grid": [
+        -2,
+        -3
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3150,
+      "to": 2529,
+      "direction": "n",
+      "from_grid": [
+        1,
+        2
+      ],
+      "to_grid": [
+        2,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3151,
+      "to": 3152,
+      "direction": "e",
+      "from_grid": [
+        3,
+        1
+      ],
+      "to_grid": [
+        4,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3152,
+      "to": 3153,
+      "direction": "e",
+      "from_grid": [
+        4,
+        1
+      ],
+      "to_grid": [
+        5,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3153,
+      "to": 3154,
+      "direction": "e",
+      "from_grid": [
+        5,
+        1
+      ],
+      "to_grid": [
+        6,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3154,
+      "to": 3155,
+      "direction": "e",
+      "from_grid": [
+        6,
+        1
+      ],
+      "to_grid": [
+        7,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3155,
+      "to": 3156,
+      "direction": "e",
+      "from_grid": [
+        7,
+        1
+      ],
+      "to_grid": [
+        8,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3156,
+      "to": 3157,
+      "direction": "e",
+      "from_grid": [
+        8,
+        1
+      ],
+      "to_grid": [
+        9,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3156,
+      "to": 3158,
+      "direction": "n",
+      "from_grid": [
+        8,
+        1
+      ],
+      "to_grid": [
+        8,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3157,
+      "to": 3159,
+      "direction": "n",
+      "from_grid": [
+        9,
+        1
+      ],
+      "to_grid": [
+        9,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3157,
+      "to": 3158,
+      "direction": "w",
+      "from_grid": [
+        9,
+        1
+      ],
+      "to_grid": [
+        8,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3159,
+      "to": 3160,
+      "direction": "n",
+      "from_grid": [
+        9,
+        0
+      ],
+      "to_grid": [
+        9,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3160,
+      "to": 3161,
+      "direction": "w",
+      "from_grid": [
+        9,
+        -1
+      ],
+      "to_grid": [
+        8,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3161,
+      "to": 3162,
+      "direction": "w",
+      "from_grid": [
+        8,
+        -1
+      ],
+      "to_grid": [
+        7,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3162,
+      "to": 3163,
+      "direction": "w",
+      "from_grid": [
+        7,
+        -1
+      ],
+      "to_grid": [
+        6,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3163,
+      "to": 3164,
+      "direction": "s",
+      "from_grid": [
+        6,
+        -1
+      ],
+      "to_grid": [
+        6,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3164,
+      "to": 3166,
+      "direction": "e",
+      "from_grid": [
+        6,
+        0
+      ],
+      "to_grid": [
+        7,
+        2
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3164,
+      "to": 3165,
+      "direction": "w",
+      "from_grid": [
+        6,
+        0
+      ],
+      "to_grid": [
+        5,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3166,
+      "to": 3167,
+      "direction": "e",
+      "from_grid": [
+        7,
+        2
+      ],
+      "to_grid": [
+        8,
+        2
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3167,
+      "to": 3155,
+      "direction": "s",
+      "from_grid": [
+        8,
+        2
+      ],
+      "to_grid": [
+        7,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3168,
+      "to": 3169,
+      "direction": "w",
+      "from_grid": [
+        1,
+        1
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3169,
+      "to": 3170,
+      "direction": "n",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3169,
+      "to": 3175,
+      "direction": "w",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3170,
+      "to": 3174,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3170,
+      "to": 3171,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3170,
+      "to": 3173,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3171,
+      "to": 3172,
+      "direction": "w",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        -1,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3175,
+      "to": 3176,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        -2,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3176,
+      "to": 3177,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        1
+      ],
+      "to_grid": [
+        -2,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3177,
+      "to": 3185,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        -2,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3177,
+      "to": 3178,
+      "direction": "w",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        -3,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3178,
+      "to": 3179,
+      "direction": "w",
+      "from_grid": [
+        -3,
+        0
+      ],
+      "to_grid": [
+        -4,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3179,
+      "to": 3180,
+      "direction": "n",
+      "from_grid": [
+        -4,
+        0
+      ],
+      "to_grid": [
+        -5,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3180,
+      "to": 3181,
+      "direction": "s",
+      "from_grid": [
+        -5,
+        -1
+      ],
+      "to_grid": [
+        -5,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3181,
+      "to": 3179,
+      "direction": "e",
+      "from_grid": [
+        -5,
+        0
+      ],
+      "to_grid": [
+        -4,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3181,
+      "to": 3182,
+      "direction": "s",
+      "from_grid": [
+        -5,
+        0
+      ],
+      "to_grid": [
+        -5,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3181,
+      "to": 3183,
+      "direction": "w",
+      "from_grid": [
+        -5,
+        0
+      ],
+      "to_grid": [
+        -6,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3185,
+      "to": 3186,
+      "direction": "w",
+      "from_grid": [
+        -2,
+        -1
+      ],
+      "to_grid": [
+        -3,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3186,
+      "to": 3187,
+      "direction": "w",
+      "from_grid": [
+        -3,
+        -1
+      ],
+      "to_grid": [
+        -4,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3191,
+      "to": 3190,
+      "direction": "e",
+      "from_grid": [
+        -3,
+        -3
+      ],
+      "to_grid": [
+        -2,
+        -3
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3191,
+      "to": 3192,
+      "direction": "w",
+      "from_grid": [
+        -3,
+        -3
+      ],
+      "to_grid": [
+        -4,
+        -3
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3193,
+      "to": 3194,
+      "direction": "n",
+      "from_grid": [
+        2,
+        -3
+      ],
+      "to_grid": [
+        2,
+        -4
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3195,
+      "to": 3196,
+      "direction": "e",
+      "from_grid": [
+        2,
+        -5
+      ],
+      "to_grid": [
+        3,
+        -5
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3195,
+      "to": 3194,
+      "direction": "w",
+      "from_grid": [
+        2,
+        -5
+      ],
+      "to_grid": [
+        2,
+        -4
+      ],
+      "floor": -3
+    }
+  ]
+}

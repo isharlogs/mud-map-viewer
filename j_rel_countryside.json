@@ -1,0 +1,1503 @@
+{
+  "zone_name": "J'rel Countryside",
+  "floor_count": 2,
+  "bounds": {
+    "min_x": -4,
+    "max_x": 2,
+    "min_y": -7,
+    "max_y": 15
+  },
+  "floors": {
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 614,
+      "rooms": {
+        "640": {
+          "vnum": 640,
+          "name": "Foot of the Mountain",
+          "description": "Rock rises from the earth here as if placed on top of the countryside, not perceptibly disturbing the level terrain surrounding. Narrow steps have been cut from the apparently uneroded rock and warm hues of gemstone glitter from the hewn edges. They rise steeply up the mountainside forcing the miners to use them like a ladder.",
+          "grid_x": -4,
+          "grid_y": -4,
+          "exits": {
+            "e": {
+              "to_vnum": 639,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Miner's Camp",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Stern miner",
+              "description": "parent might warn a child away from danger.",
+              "unique": true
+            }
+          ]
+        },
+        "641": {
+          "vnum": 641,
+          "name": "The Green Hilly Plain",
+          "description": "",
+          "grid_x": -2,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 633,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "A Muddy Trail",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 642,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "The Green Hilly Plain",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Luukir",
+              "description": "rear legs are dominant and it sometimes uses them exclusively.  Its body is covered by short brown unkempt fur except for its fleshy, sloth-like",
+              "unique": true
+            },
+            {
+              "name": "Luukir calf",
+              "description": "The proportions of a baby luukir look even more foolish than an adult's.  Its fur is prickly and light colored and its oversized head features a mouth looking like a stupid frozen smile.",
+              "unique": true
+            }
+          ]
+        },
+        "642": {
+          "vnum": 642,
+          "name": "The Green Hilly Plain",
+          "description": "It's not apparent that anything would be gained by heading much further west and you're afraid you might lose your way. There is however something of a landmark to the south.",
+          "grid_x": -3,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 641,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "The Green Hilly Plain",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 643,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Skirting the Hill",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "643": {
+          "vnum": 643,
+          "name": "Skirting the Hill",
+          "description": "You hike your way around an incongruously steep hill, a most unapolegetic mound. A hint of a ridge is visible around to the west or the way southward looks to lead closer to town. Looking away, swells of plainsland fade into the horizon.",
+          "grid_x": -3,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 756,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Southern Reaches of the Plain",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 642,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "The Green Hilly Plain",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 644,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "A Mossy Hollow",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "644": {
+          "vnum": 644,
+          "name": "A Mossy Hollow",
+          "description": "Invisible from the other side of this hill, a strange depression in the hillside has created here a vast hollow. A backbone of bedrock to the west curves above and around you, the resulting windbreak allowing trees to flourish densely, their trunks covered in blue-green moss. This oasis of life manages to make the surrounding plains seem a desert in comparison.",
+          "grid_x": -4,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 643,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Skirting the Hill",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 646,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "A Rough Stone Chamber",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "u": {
+              "to_vnum": 645,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "A Green Hilltop",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "646": {
+          "vnum": 646,
+          "name": "A Rough Stone Chamber",
+          "description": "This is no mine or natural cave, the interior of this hill has obviously been crudely fashioned into a fortress, but one long since abaondoned. This large low-ceilinged chamber has the remains of wooden cots, tables, and chairs scattered violently about the stone floor. Passages leave to the west and south.",
+          "grid_x": -3,
+          "grid_y": 5,
+          "exits": {
+            "s": {
+              "to_vnum": 647,
+              "to_zone": "Frektal River Valley",
+              "to_room_name": "A Supplies Storage Chamber",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 648,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "A Decaying Armory",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 644,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "A Mossy Hollow",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Pale lizard",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "648": {
+          "vnum": 648,
+          "name": "A Decaying Armory",
+          "description": "Racks that once lined the walls have been thrown to the ground, shards of wood and metal barely recognizable as the weapons they bore. There don't seem to be any swords... why would there be any need for them in here. A ladder on the west wall ascends to a hatch in the ceiling.",
+          "grid_x": -4,
+          "grid_y": 5,
+          "exits": {
+            "e": {
+              "to_vnum": 646,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "A Rough Stone Chamber",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 649,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Earthen Battlement",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "650": {
+          "vnum": 650,
+          "name": "Grassy Hills",
+          "description": "The game trail that led you into the hills, far from town, is completely gone now. It's not like you could really get lost out here with all the high ground to get your bearings, but it definitely feels like you're out in the middle of nowhere. The spoor of some carnivorous animal litters the area.",
+          "grid_x": -1,
+          "grid_y": -4,
+          "exits": {
+            "ne": {
+              "to_vnum": 651,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Rocky Dell",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "651": {
+          "vnum": 651,
+          "name": "Rocky Dell",
+          "description": "Here in this shallow patch of land, the pastel green hills begin to give way to the stony foothills east of Mount M'chel. Most of the area is still verdant and grassy, but a large patch in front of a cave in a stone bluff has been tramped flat by passage of many paws.",
+          "grid_x": 0,
+          "grid_y": -5,
+          "exits": {
+            "e": {
+              "to_vnum": 654,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Stony Foothills",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "nw": {
+              "to_vnum": 652,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Cramped Tunnel",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "652": {
+          "vnum": 652,
+          "name": "Cramped Tunnel",
+          "description": "The opening of the cave was deceptively large, and you find the tunnel quickly closing in on you. Eventually it becomes necessary to lay flat and wriggle your way along. Better hope you don't meet up with the cave's occupant, unless you think you can fight it off with your face.",
+          "grid_x": -1,
+          "grid_y": -6,
+          "exits": {
+            "n": {
+              "to_vnum": 653,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Coyote's Den",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "se": {
+              "to_vnum": 651,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Rocky Dell",
+              "direction": "se",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "653": {
+          "vnum": 653,
+          "name": "Coyote's Den",
+          "description": "The cramped tunnel opens up into a cozy little chamber in the natural rock. Dried grass lines most of the floor, and a natural chimney leading to a tiny opening above you lets in a little fresh air. Several mewling pups roll about in a fluffy pile.",
+          "grid_x": -1,
+          "grid_y": -7,
+          "exits": {
+            "s": {
+              "to_vnum": 652,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Cramped Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "654": {
+          "vnum": 654,
+          "name": "Stony Foothills",
+          "description": "You are surprised to be following a path all the way out here in the boonies. The ground is rocky with sparse vegetation, and the trail is not the result of any passing game. The way is picked out with determined thought, and marked periodically with piles of stones.",
+          "grid_x": 1,
+          "grid_y": -5,
+          "exits": {
+            "nw": {
+              "to_vnum": 655,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Winding Trail",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "655": {
+          "vnum": 655,
+          "name": "Winding Trail",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": -6,
+          "exits": {
+            "ne": {
+              "to_vnum": 656,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Narrow Vale",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "656": {
+          "vnum": 656,
+          "name": "Narrow Vale",
+          "description": "The twisting path straightens out as it leads into a small vale. The path ahead is obscured by a rise in the terrain, but farther along a thin pillar of natural looking stone rises up into the sky. Many of the trees in this area have been felled and dragged away, likely to build shelters.",
+          "grid_x": 1,
+          "grid_y": -7,
+          "exits": {
+            "n": {
+              "to_vnum": 657,
+              "to_zone": "Jrel Frontier Settlement - Mt. M'chel Region",
+              "to_room_name": "Near the Settlement",
+              "direction": "n",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1683": {
+          "vnum": 1683,
+          "name": "The Green Hilly Plain",
+          "description": "Hills of grassy green flow in all directions like huge earthen ocean swells. Thinking about them in these terms makes you suddenly feel very much like you've been left in the middle of the sea on a tiny raft, except there's no such thing as a land shark. Well, not around Mareldja there isn't.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 620,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Trail Fork",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 633,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "A Muddy Trail",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 755,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "The Green Hilly Plain",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "614": {
+          "vnum": 614,
+          "name": "Path Away from J'rel",
+          "description": "Green. An even carpet of it, made of low grassy growth, is the canvas upon which little detail is painted. A gradual rise succeeds in concealing the town of J'rel, and away from it Luukir dot the landscape sparsely. The trail continues to the north, the only path worth following, and a dusty point of gathering is ahead.",
+          "grid_x": 1,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 617,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Further Along the Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "se": {
+              "to_vnum": 613,
+              "to_zone": "City of J'rel",
+              "to_room_name": "Atop a Rise",
+              "direction": "se",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "617": {
+          "vnum": 617,
+          "name": "Further Along the Path",
+          "description": "Reserved merriment shows on the faces of dusty figures gathered outside a strange outpost. A roof rises from the plain itself as if peeled up and propped up in place by an angled wooden structure. More heavily used path continues interminably to the northwest.",
+          "grid_x": 1,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 618,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Visite Appraisal and Trading Post",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "nw": {
+              "to_vnum": 619,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Into the Hilly Plain",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 614,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Path Away from J'rel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 619,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Into the Hilly Plain",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "go into": {
+              "to_vnum": 618,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Visite Appraisal and Trading Post",
+              "direction": "go into",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Bulky miner",
+              "description": "to hear.  He wears the same miner's clothing as the others, but less dusty",
+              "unique": true
+            },
+            {
+              "name": "Chatty miner",
+              "description": "to know everybody that passes by and has at least a few words to say to",
+              "unique": true
+            }
+          ]
+        },
+        "618": {
+          "vnum": 618,
+          "name": "Visite Appraisal and Trading Post",
+          "description": "",
+          "grid_x": 2,
+          "grid_y": 0,
+          "exits": {
+            "go out": {
+              "to_vnum": 617,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Further Along the Path",
+              "direction": "go out",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Efferentha Gho",
+              "description": "maintains an appealing thin frame and an engaging smile.  She could however kick your armored ass without mussing her hair.  Do not ever call her Effie.",
+              "unique": true
+            }
+          ]
+        },
+        "619": {
+          "vnum": 619,
+          "name": "Into the Hilly Plain",
+          "description": "Gentle grassy hill country spreads forth in all directions save that of the trail to J'rel southward. The main trail presses purposefully to the north, skirting rougher and denser grasses that rise eastward, presumably toward the sea. The only other choice of interest would be to strike out to the west.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 617,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Further Along the Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 620,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Trail Fork",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "se": {
+              "to_vnum": 617,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Further Along the Path",
+              "direction": "se",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 755,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "The Green Hilly Plain",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "620": {
+          "vnum": 620,
+          "name": "Trail Fork",
+          "description": "You come to something of a fork in the trail. The main trail, worn but narrower, seems to follow a trickle of water from the northwest. Another more faint but wider path moves eastward, following the brook distantly seaward. The way to J'rel remains to the south.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 621,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "A Vanishing Trail",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 621,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "A Vanishing Trail",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "nw": {
+              "to_vnum": 633,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "A Muddy Trail",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 619,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Into the Hilly Plain",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "621": {
+          "vnum": 621,
+          "name": "A Vanishing Trail",
+          "description": "As you move away from the main trail, what seemed to be a promising path fades to nothing and you soon find yourself waist-deep in moist grasses. All you can see ahead are occasional birds of the field fluttering in and out of their natural cover.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "ne": {
+              "to_vnum": 622,
+              "to_zone": "Three Shacks",
+              "to_room_name": "Pushing Through Grasses",
+              "direction": "ne",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 620,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Trail Fork",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "755": {
+          "vnum": 755,
+          "name": "The Green Hilly Plain",
+          "description": "You hike comfortably across the plain, the soft moist grasses springy underfoot. The soft rush of the wind is barely broken by the distant call of a gull that has drifted further inland from the city than is practical.",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 619,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Into the Hilly Plain",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 756,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Southern Reaches of the Plain",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "756": {
+          "vnum": 756,
+          "name": "Southern Reaches of the Plain",
+          "description": "As the distance from the main trail increases it becomes clear that travel to the south will become no more practical or appealing, the grasses giving way to clumpy weeds in a muddier terrain. You can easily continue to the west or around one of the furthest remaining hills to the northwest.",
+          "grid_x": -2,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 755,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "The Green Hilly Plain",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 755,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "The Green Hilly Plain",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 757,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Southern Reaches of the Plain",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "757": {
+          "vnum": 757,
+          "name": "Southern Reaches of the Plain",
+          "description": "The hill to the north rises more steeply than you had perceived from afar, obscuring your view of the plain temporarily. The land to the south becomes decidedly marshy and a comically eerie mist seeps out over it, seemingly from within. If you hear a wolf howl from that direction, you'll almost certainly offend it with laughter.",
+          "grid_x": -3,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 756,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Southern Reaches of the Plain",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 758,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Southern Reaches of the Plain",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "758": {
+          "vnum": 758,
+          "name": "Southern Reaches of the Plain",
+          "description": "Ambient light seems to dim and soften and the green grasses take on a more sickly hue moving around the south of the hill. Your feet squish and sink into wet earth as you walk. Fog begins to press against the base of the hill which you'll have to skirt to the northwest -- or else head back to the east.",
+          "grid_x": -4,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 757,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Southern Reaches of the Plain",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "nw": {
+              "to_vnum": 759,
+              "to_zone": "Great Ancestral Swamp",
+              "to_room_name": "Into the Swamplands",
+              "direction": "nw",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 759,
+              "to_zone": "Great Ancestral Swamp",
+              "to_room_name": "Into the Swamplands",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "633": {
+          "vnum": 633,
+          "name": "A Muddy Trail",
+          "description": "Weaving among the bases of gently rolling hills alongside a tiny brook, the trail leads on. Tiny frogs croak happily in the shallow water and a soft breeze barely makes a sound.",
+          "grid_x": -1,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 634,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Bend at the Pond",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1683,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "The Green Hilly Plain",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 641,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "The Green Hilly Plain",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "634": {
+          "vnum": 634,
+          "name": "Bend at the Pond",
+          "description": "A shallow depression in the land creates a still pond here, only a trickle of water keeping it from stagnancy. Small birds rest and refresh themselves and you feel you might do the same. The trail diverges sharply from the brook here, heading purposefully to the west, while thickening underbrush does little to obscure the rockier hills distantly to the north.",
+          "grid_x": -1,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 635,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Along a Game Trail",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 633,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "A Muddy Trail",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 636,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "A Muddy Trail",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "635": {
+          "vnum": 635,
+          "name": "Along a Game Trail",
+          "description": "Unseen shapes skitter into undergrowth at your approach. The area around you is all low rolling hills, perfect habitat for the multitude of small animals living here, and the larger ones that hunt them.",
+          "grid_x": -1,
+          "grid_y": -3,
+          "exits": {
+            "n": {
+              "to_vnum": 650,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Grassy Hills",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 634,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Bend at the Pond",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Coyote",
+              "description": "you if you keep on your way.",
+              "unique": true
+            }
+          ]
+        },
+        "636": {
+          "vnum": 636,
+          "name": "A Muddy Trail",
+          "description": "There can be no question now that this trail is leading to the mountain you saw all the way back from J'rel. This is a trade road and there must be something in that mountain that men and elves come to steal for money. There isn't a hint of entering the rocky foothills however.",
+          "grid_x": -2,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 634,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Bend at the Pond",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "nw": {
+              "to_vnum": 637,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Approaching an Encampment",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "637": {
+          "vnum": 637,
+          "name": "Approaching an Encampment",
+          "description": "The mountain looms large now, rising abruptly from the plain into a layer of fog and out of sight. Just ahead to the north, a small encampment seems to cower in its shadow. Just off the trail, a small patch of land is delicately fenced off.",
+          "grid_x": -3,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 638,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "A Small Graveyard",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 639,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Miner's Camp",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "se": {
+              "to_vnum": 636,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "A Muddy Trail",
+              "direction": "se",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Half-elf miner",
+              "description": "He counts his meager riches and and smiles, cracking caked-on dust. Looks like he'll be looking for a good time tonight.",
+              "unique": false
+            }
+          ]
+        },
+        "638": {
+          "vnum": 638,
+          "name": "A Small Graveyard",
+          "description": "Bent ironwork, fine and low, somberly defines this area from the surrounding plain as a graveyard. Several score headstones fill it save a very few empty patches. This place must be reserved for miners, as you gather that J'relians typically cremate, but how many must work here for there to be so many dead?",
+          "grid_x": -2,
+          "grid_y": -3,
+          "exits": {
+            "w": {
+              "to_vnum": 637,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Approaching an Encampment",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Lone chaplain",
+              "description": "as if conferring with the dead.  A hood pulled low gives his thin frame and narrow face an aura of unboastful power.",
+              "unique": true
+            }
+          ]
+        },
+        "639": {
+          "vnum": 639,
+          "name": "Miner's Camp",
+          "description": "A couple dozen shacks with sod roofs which slope to the ground are arranged in a circle here. To the west a trail leads to the mountain which rises abruptly from the grassy plain and into a white mist which hangs low over the camp. Dust-covered miners go between the camp and the mountain, their faces eerily expressionless as if in deep concentration.",
+          "grid_x": -3,
+          "grid_y": -4,
+          "exits": {
+            "s": {
+              "to_vnum": 637,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Approaching an Encampment",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 640,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "Foot of the Mountain",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Cooky",
+              "description": "bushy black eyebrows.  A luukir-hide wraps around his impressive girth, stained from his duties as butcher.  He chews thoughtfully on a wad of",
+              "unique": true
+            },
+            {
+              "name": "Half-elf miner",
+              "description": "He counts his meager riches and and smiles, cracking caked-on dust. Looks like he'll be looking for a good time tonight.",
+              "unique": false
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -4,
+        "max_x": 2,
+        "min_y": -7,
+        "max_y": 5,
+        "room_count": 32
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 645,
+      "rooms": {
+        "645": {
+          "vnum": 645,
+          "name": "A Green Hilltop",
+          "description": "You ascend the hillside and are rewarded with a diverse panorama. Far to the southeast the bustling town of J'rel stands. On its outskirts and moving out to your east and north as far as you can see lie rolling green hills, which you traversed in part to get here. To the northwest a great mountain rises into the clouds -- surely the hub of many lands. And just to your west and south a murky fog spreads forth until it distantly meets the river Frektal.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {
+            "d": {
+              "to_vnum": 644,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "A Mossy Hollow",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "649": {
+          "vnum": 649,
+          "name": "Earthen Battlement",
+          "description": "Although nearly overgrown now, you can see where narrow slots were cut that puncture the west-facing side of the hill; they're probably completely invisible from the outside. Peering out, you see a deep marshland -- quite a bit different than the rolling hills you traversed coming here from the east.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "d": {
+              "to_vnum": 648,
+              "to_zone": "J'rel Countryside",
+              "to_room_name": "A Decaying Armory",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 15,
+        "room_count": 2
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1683,
+      "to": 620,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1683,
+      "to": 633,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -1,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1683,
+      "to": 755,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 614,
+      "to": 617,
+      "direction": "n",
+      "from_grid": [
+        1,
+        2
+      ],
+      "to_grid": [
+        1,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 617,
+      "to": 618,
+      "direction": "n",
+      "from_grid": [
+        1,
+        1
+      ],
+      "to_grid": [
+        2,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 617,
+      "to": 619,
+      "direction": "nw",
+      "from_grid": [
+        1,
+        1
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 619,
+      "to": 620,
+      "direction": "n",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 619,
+      "to": 755,
+      "direction": "w",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 620,
+      "to": 621,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 620,
+      "to": 633,
+      "direction": "nw",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 633,
+      "to": 634,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        -1
+      ],
+      "to_grid": [
+        -1,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 633,
+      "to": 641,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        -1
+      ],
+      "to_grid": [
+        -2,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 634,
+      "to": 635,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        -2
+      ],
+      "to_grid": [
+        -1,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 634,
+      "to": 636,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        -2
+      ],
+      "to_grid": [
+        -2,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 635,
+      "to": 650,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        -3
+      ],
+      "to_grid": [
+        -1,
+        -4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 636,
+      "to": 637,
+      "direction": "nw",
+      "from_grid": [
+        -2,
+        -2
+      ],
+      "to_grid": [
+        -3,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 637,
+      "to": 638,
+      "direction": "e",
+      "from_grid": [
+        -3,
+        -3
+      ],
+      "to_grid": [
+        -2,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 637,
+      "to": 639,
+      "direction": "n",
+      "from_grid": [
+        -3,
+        -3
+      ],
+      "to_grid": [
+        -3,
+        -4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 639,
+      "to": 640,
+      "direction": "w",
+      "from_grid": [
+        -3,
+        -4
+      ],
+      "to_grid": [
+        -4,
+        -4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 641,
+      "to": 642,
+      "direction": "w",
+      "from_grid": [
+        -2,
+        -1
+      ],
+      "to_grid": [
+        -3,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 642,
+      "to": 643,
+      "direction": "s",
+      "from_grid": [
+        -3,
+        -1
+      ],
+      "to_grid": [
+        -3,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 643,
+      "to": 756,
+      "direction": "e",
+      "from_grid": [
+        -3,
+        0
+      ],
+      "to_grid": [
+        -2,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 643,
+      "to": 644,
+      "direction": "w",
+      "from_grid": [
+        -3,
+        0
+      ],
+      "to_grid": [
+        -4,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 646,
+      "to": 648,
+      "direction": "w",
+      "from_grid": [
+        -3,
+        5
+      ],
+      "to_grid": [
+        -4,
+        5
+      ],
+      "floor": -1
+    },
+    {
+      "from": 650,
+      "to": 651,
+      "direction": "ne",
+      "from_grid": [
+        -1,
+        -4
+      ],
+      "to_grid": [
+        0,
+        -5
+      ],
+      "floor": -1
+    },
+    {
+      "from": 651,
+      "to": 654,
+      "direction": "e",
+      "from_grid": [
+        0,
+        -5
+      ],
+      "to_grid": [
+        1,
+        -5
+      ],
+      "floor": -1
+    },
+    {
+      "from": 651,
+      "to": 652,
+      "direction": "nw",
+      "from_grid": [
+        0,
+        -5
+      ],
+      "to_grid": [
+        -1,
+        -6
+      ],
+      "floor": -1
+    },
+    {
+      "from": 652,
+      "to": 653,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        -6
+      ],
+      "to_grid": [
+        -1,
+        -7
+      ],
+      "floor": -1
+    },
+    {
+      "from": 654,
+      "to": 655,
+      "direction": "nw",
+      "from_grid": [
+        1,
+        -5
+      ],
+      "to_grid": [
+        0,
+        -6
+      ],
+      "floor": -1
+    },
+    {
+      "from": 655,
+      "to": 656,
+      "direction": "ne",
+      "from_grid": [
+        0,
+        -6
+      ],
+      "to_grid": [
+        1,
+        -7
+      ],
+      "floor": -1
+    },
+    {
+      "from": 755,
+      "to": 756,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        -2,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 756,
+      "to": 757,
+      "direction": "w",
+      "from_grid": [
+        -2,
+        1
+      ],
+      "to_grid": [
+        -3,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 757,
+      "to": 758,
+      "direction": "w",
+      "from_grid": [
+        -3,
+        1
+      ],
+      "to_grid": [
+        -4,
+        1
+      ],
+      "floor": -1
+    }
+  ]
+}

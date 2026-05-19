@@ -1,0 +1,2511 @@
+{
+  "zone_name": "City of Cadain",
+  "floor_count": 2,
+  "bounds": {
+    "min_x": -4,
+    "max_x": 4,
+    "min_y": -6,
+    "max_y": 46
+  },
+  "floors": {
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 1633,
+      "rooms": {
+        "3105": {
+          "vnum": 3105,
+          "name": "Temple Ramluf",
+          "description": "",
+          "grid_x": 1,
+          "grid_y": -2,
+          "exits": {
+            "w": {
+              "to_vnum": 304,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Ramluf Plaza",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Dwarven acolyte",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "3106": {
+          "vnum": 3106,
+          "name": "The Gardens",
+          "description": "A tiny pond teeming with life lies next to you, giving rise to thousands of mushrooms growing thirstily at its side. An oortaag pauses to take a long drink from the pool, and then brushes past your leg amiably as it moves westward, toward Ramluf Plaza.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "s": {
+              "to_vnum": 308,
+              "to_zone": "City of Cadain",
+              "to_room_name": "East Garden Entrance",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Motile fungus",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "3108": {
+          "vnum": 3108,
+          "name": "The Gilded Boar",
+          "description": "A smoky haze fills this spacious hollow, filling your nose with a tingling sensation that makes you feel perpetually on the verge of sneezing. Several fireplaces filled with burning logs ward off the chill of the caverns, surrounded by the drunken dwarves which lay sprawled about the establishment. Busty tavern wenches amble about, their eyes closing with exhaustion as they scrounge for a few obsidian.",
+          "grid_x": -1,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 313,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Walk of Vanari",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Tipsy veteran",
+              "description": "Buy him another round and he's your best friend until he passes out",
+              "unique": true
+            }
+          ]
+        },
+        "3109": {
+          "vnum": 3109,
+          "name": "Jova Street",
+          "description": "A broad avenue runs perpendicular to the Walk of Vanari, passing numerous dwellings carved into the rock. The glow of burning fires fills most of the curtained windows along the street, giving the area a pleasant feel despite the perpetual twilight of the underground city.",
+          "grid_x": -2,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 312,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Walk of Vanari",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3112,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Jova Street",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3112": {
+          "vnum": 3112,
+          "name": "Jova Street",
+          "description": "",
+          "grid_x": -2,
+          "grid_y": 3,
+          "exits": {
+            "e": {
+              "to_vnum": 3113,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Jova Street",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3113": {
+          "vnum": 3113,
+          "name": "Jova Street",
+          "description": "You trudge quietly along the lengthy street, a bit perturbed by the odd silence that hangs over this part of the city. A decidedly seedy establishment reeking of ale warns you away to the south, and Jova Street continues to the east and west.",
+          "grid_x": -1,
+          "grid_y": 3,
+          "exits": {
+            "e": {
+              "to_vnum": 3114,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Banyor's Way",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3114": {
+          "vnum": 3114,
+          "name": "Banyor's Way",
+          "description": "You walk along a narrow street, choking slightly at the musty fragrance of the underground gardens that flourish to the northeast. The sounds of quiet conversation and an occasional peal of silvery laughter drift in from your surroundings, offering snatches of the simple lives of the humble Vanari.",
+          "grid_x": 0,
+          "grid_y": 3,
+          "exits": {
+            "e": {
+              "to_vnum": 353,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Banyor's Way",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "299": {
+          "vnum": 299,
+          "name": "Abandoned Mining Tunnels",
+          "description": "The sounds of mining echo from the north, a patternless repetition of steel striking stone. Fresh air also drifts in from that direction, indicating the tunnel's end. You are riding atop a well-bred horse.",
+          "grid_x": 2,
+          "grid_y": -5,
+          "exits": {
+            "n": {
+              "to_vnum": 298,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Dwarven Excavation",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 300,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Abandoned Mining Tunnels",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "300": {
+          "vnum": 300,
+          "name": "Abandoned Mining Tunnels",
+          "description": "Forgotten tunnels surround you, nearly all of which have been allowed to cave in after their yields petered out. The main thoroughfare continues to the west and east. You are riding atop a well-bred horse.",
+          "grid_x": 1,
+          "grid_y": -5,
+          "exits": {
+            "e": {
+              "to_vnum": 299,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Abandoned Mining Tunnels",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 301,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Abandoned Mining Tunnels",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Old miner",
+              "description": "He's seen a lot more than you have, youngster.",
+              "unique": true
+            }
+          ]
+        },
+        "301": {
+          "vnum": 301,
+          "name": "Abandoned Mining Tunnels",
+          "description": "The walls of the tunnel are cracked and broken from persistent hammering in search of mineral deposits. Numerous similar tunnels branch off from here, but almost all have been boarded shut. You are riding atop a well-bred horse.",
+          "grid_x": 0,
+          "grid_y": -5,
+          "exits": {
+            "e": {
+              "to_vnum": 300,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Abandoned Mining Tunnels",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 302,
+              "to_zone": "City of Cadain",
+              "to_room_name": "North Gate",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "298": {
+          "vnum": 298,
+          "name": "Dwarven Excavation",
+          "description": "A choking cloud of dust hangs heavily in the air, sending your nose to immediate twitching. Dwarven miners are clustered at the walls of the pit, hammering mechanically at the stone. A crude wooden ladder leans precariously against the east face, offering escape from the dust. You are riding atop a well-bred horse.",
+          "grid_x": 2,
+          "grid_y": -6,
+          "exits": {
+            "s": {
+              "to_vnum": 299,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Abandoned Mining Tunnels",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 297,
+              "to_zone": "Northern Mountains",
+              "to_room_name": "Brink",
+              "direction": "u",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Burly dwarf",
+              "description": "Looks like hot work.",
+              "unique": false
+            }
+          ]
+        },
+        "302": {
+          "vnum": 302,
+          "name": "North Gate",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": -4,
+          "exits": {
+            "n": {
+              "to_vnum": 301,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Abandoned Mining Tunnels",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 303,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Ramluf Plaza",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "303": {
+          "vnum": 303,
+          "name": "Ramluf Plaza",
+          "description": "Maybe it wasn't such a good idea to enter the merchant quarter. If you remain here much longer some sharp-minded businessman is sure to sucker you into a purchase that you're not ready for. Wringing your hands anxiously, you cast about in search of a way out. You are riding atop a well-bred horse.",
+          "grid_x": 0,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 2262,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Outdoor Outfitters",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 302,
+              "to_zone": "City of Cadain",
+              "to_room_name": "North Gate",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 304,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Ramluf Plaza",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Vagrant xymoh",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "306": {
+          "vnum": 306,
+          "name": "North Garden Entrance",
+          "description": "A series of gaudily colored fungi sprout all about your feet, scrambling for the height needed for proper spore distribution. Tiny insects flit about, finding food among the dense fungal bloom. Ramluf Plaza teems with equal activity to the north.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3106,
+              "to_zone": "City of Cadain",
+              "to_room_name": "The Gardens",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 305,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Ramluf Plaza",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 307,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Centre of the Gardens",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3106,
+              "to_zone": "City of Cadain",
+              "to_room_name": "The Gardens",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Curious holiim",
+              "description": "eyes that constitute most of its face.  Apparently no one told it how",
+              "unique": false
+            },
+            {
+              "name": "Yowling laarnog",
+              "description": "You have repeatedly thought that the caverns never fail to produce odd beasts, and the little laarnog standing before you seems to confirm your beliefs.  You really don't want to know how such a thing was created.",
+              "unique": true
+            }
+          ]
+        },
+        "307": {
+          "vnum": 307,
+          "name": "Centre of the Gardens",
+          "description": "Lolara plants grow all about you, reaching far above the ground to brush at the cavern ceiling high above. How anything can grow to such astounding heights in this underground atmosphere is incomprehensible. Indistinct paths of trampled moss lead off in all directions, wandering about to other areas of the gardens.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 308,
+              "to_zone": "City of Cadain",
+              "to_room_name": "East Garden Entrance",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 306,
+              "to_zone": "City of Cadain",
+              "to_room_name": "North Garden Entrance",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3106,
+              "to_zone": "City of Cadain",
+              "to_room_name": "The Gardens",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 311,
+              "to_zone": "City of Cadain",
+              "to_room_name": "West Garden Entrance",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Mysterious traveling merchant",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "308": {
+          "vnum": 308,
+          "name": "East Garden Entrance",
+          "description": "Tiny creepers work their way about the plant life here, winding around the local flora with surprising tenacity. A mavloor stumbles past, screeching insanely as it trips along. Muradian Avenue lies to the east, marking an abrupt end to the lush vegetation.",
+          "grid_x": 1,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 309,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Muradian Avenue",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3106,
+              "to_zone": "City of Cadain",
+              "to_room_name": "The Gardens",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3106,
+              "to_zone": "City of Cadain",
+              "to_room_name": "The Gardens",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 307,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Centre of the Gardens",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "309": {
+          "vnum": 309,
+          "name": "Muradian Avenue",
+          "description": "The fanciful stonework surrounding you speaks of great wealth; there is little doubt in your mind as to which of the three classes holds most of the money. A part of you wonders how this came to be, but you decide that it would probably be best to avoid involving yourself in the hectic politics of the dwarves.",
+          "grid_x": 2,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1632,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Muradian Avenue",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 310,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Realm of Wizardry",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 308,
+              "to_zone": "City of Cadain",
+              "to_room_name": "East Garden Entrance",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Curious holiim",
+              "description": "eyes that constitute most of its face.  Apparently no one told it how",
+              "unique": false
+            },
+            {
+              "name": "Roaming oortaag",
+              "description": "pausing now and then to sniff the air with its snouts.",
+              "unique": true
+            }
+          ]
+        },
+        "304": {
+          "vnum": 304,
+          "name": "Ramluf Plaza",
+          "description": "Officious merchants amble about at a stately pace, obviously far too important to move along at a decent rate. You begin to feel a bit insecure about the size of your purse as you run your eyes over the expensively furnished stores arranged about the plaza, wondering if you'll be able to afford a trinket of some sort to impress the folks back home.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 3105,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Temple Ramluf",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 303,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Ramluf Plaza",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 305,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Ramluf Plaza",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Bumbling mavloor",
+              "description": "it's very happy doing just whatever it's doing, so why not leave it be?",
+              "unique": false
+            }
+          ]
+        },
+        "305": {
+          "vnum": 305,
+          "name": "Ramluf Plaza",
+          "description": "Apprentices scramble about you, running from place to place as they attempt to complete the impossible tasks laid upon them by their masters. You stumble over a young fellow who has long since passed out from exhaustion, thoughtfully flip him an obsidian, and set off with your nose twitching in anticipation of striking a bargain in the bustling merchant quarter.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 304,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Ramluf Plaza",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 306,
+              "to_zone": "City of Cadain",
+              "to_room_name": "North Garden Entrance",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Taciturn dwarven merchant",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "310": {
+          "vnum": 310,
+          "name": "Realm of Wizardry",
+          "description": "Rows of potions lie in a neatly arranged fashion, accompanied by carefully labelled bags of reagents and other magical oddities. Wands of varying colors and sizes stand side by side in a rack set against the wall, and wax-sealed scrolls occupy a few small barrels tucked into a corner.",
+          "grid_x": 2,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 309,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Muradian Avenue",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "312": {
+          "vnum": 312,
+          "name": "Walk of Vanari",
+          "description": "A lazy air hangs over the Vanari's part of the city, seemingly unmindful of the pressing concerns of the other classes. The sprawling underground gardens that the dwarves have cultivated over the years spread out to your east, and Banyor's Way wanders off to the north and south, skirting the carefully planted vegetation.",
+          "grid_x": -2,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 311,
+              "to_zone": "City of Cadain",
+              "to_room_name": "West Garden Entrance",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 314,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Common Market",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3109,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Jova Street",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 317,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Vanari Gatehouse",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Frolicsome dwarven lad",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "314": {
+          "vnum": 314,
+          "name": "Common Market",
+          "description": "",
+          "grid_x": -2,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 315,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Common Market",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 312,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Walk of Vanari",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "315": {
+          "vnum": 315,
+          "name": "Common Market",
+          "description": "The clamorous cacophony of the crowd assaults your ears as you wander the market, eagerly hunting for a bargain. Brightly colored bolts of cloth and odd little trinkets are stacked everywhere, accompanied by platoons of yowling dwarves hoping to make a sale. Pleased with yourself for avoiding the third- rate shops offering worthless junk, you turn about in search of a quality establishment. A bumbling mavloor stumbles in from the east.",
+          "grid_x": -2,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 316,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Varli's House of Genuine Magical Paraphernalia",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 314,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Common Market",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Burly guardsman",
+              "description": "It would probably be best to avoid arousing his anger.  He's probably ready to burst, judging by the way he grimaces and mutters as he shifts",
+              "unique": true
+            },
+            {
+              "name": "Sharp-tongued peddler",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "316": {
+          "vnum": 316,
+          "name": "Varli's House of Genuine Magical Paraphernalia",
+          "description": "Astounding! Stupendous! You are simply amazed at how this old bugger has managed to stay in business! Untold hundreds of useless, \"magical\" items festooned with reflecting quartz stones and glittering glass \"gems\" wink at you from their positions atop the shelves, supervised by the roving eye of old Varli the Magician.",
+          "grid_x": -1,
+          "grid_y": -1,
+          "exits": {
+            "w": {
+              "to_vnum": 315,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Common Market",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "317": {
+          "vnum": 317,
+          "name": "Vanari Gatehouse",
+          "description": "Monolithic walls rise about you; these, coupled with the heavy portcullis that rests above, would prevent all possible entry into the city should the dwarves decide that visitors are unwelcome. Awed by such solid construction, you stare about in respectful silence.",
+          "grid_x": -3,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 312,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Walk of Vanari",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 318,
+              "to_zone": "City of Cadain",
+              "to_room_name": "West Gate",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "313": {
+          "vnum": 313,
+          "name": "Walk of Vanari",
+          "description": "The banter of old warriors fills the air here, setting your ears aflame with their offensive subjects. No, you just won't believe it. There's simply no way one dwarf could have been involved with that many women. Shaking your head at such foolishness, you hurry by the crowd of lounging veterans positioned outside a shabby tavern.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 312,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Walk of Vanari",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2263,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Vanari Courthouse",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3108,
+              "to_zone": "City of Cadain",
+              "to_room_name": "The Gilded Boar",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 312,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Walk of Vanari",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Bumbling mavloor",
+              "description": "it's very happy doing just whatever it's doing, so why not leave it be?",
+              "unique": false
+            }
+          ]
+        },
+        "311": {
+          "vnum": 311,
+          "name": "West Garden Entrance",
+          "description": "A lush, mossy vegetation grows beneath your feet, spreading to cover every inch of unplanted ground. The heady aroma of countless fungi assails your nose, making thought difficult. A narrow path offers egress to the west.",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 307,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Centre of the Gardens",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3106,
+              "to_zone": "City of Cadain",
+              "to_room_name": "The Gardens",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3106,
+              "to_zone": "City of Cadain",
+              "to_room_name": "The Gardens",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 312,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Walk of Vanari",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "318": {
+          "vnum": 318,
+          "name": "West Gate",
+          "description": "Stocky dwarves push past you as you stand before the gate, straining to enter the bustling city. Thickly muscled watchmen supervise the flow of citizenry, fingering their cudgels and eyeing your movements carefully. Cavern walls worn smooth by the constant press of dwarves prevent travel to the north and south, a well-lit passage runs west, and the city buzzes with activity to the east. The gloves seem to meld into the shadows around you, your movements becoming nothing more than a whisper in the wind. Each step you take is light, effortless, as if the shadows themselves are guiding your path. You relax and return to a more normal gait.",
+          "grid_x": -4,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 317,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Vanari Gatehouse",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 319,
+              "to_zone": "Cadain Fortifications - City of Cadain",
+              "to_room_name": "Meandering Path Through Rock",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "330": {
+          "vnum": 330,
+          "name": "Submerged Grotto",
+          "description": "The current swirls about you, pulling you toward the south wall as it dashes along. You glance above you and notice a long shaft driving upward, perhaps it leads to the surface?",
+          "grid_x": 0,
+          "grid_y": 22,
+          "exits": {
+            "w": {
+              "to_vnum": 331,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Submerged Grotto",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Playful tuvik",
+              "description": "of the tuvik that are not covered with a luxurious fur coat.",
+              "unique": false
+            },
+            {
+              "name": "Slothful mavjir",
+              "description": "suddenly lethargic.",
+              "unique": false
+            }
+          ]
+        },
+        "331": {
+          "vnum": 331,
+          "name": "Submerged Grotto",
+          "description": "The water to the east bears an almost imperceptible tinge of light, although perhaps it is merely your imagination fabricating the image which you are eagerly praying for. The grotto winds west and south into darkness, making the east path a much more attractive option.",
+          "grid_x": -1,
+          "grid_y": 22,
+          "exits": {
+            "w": {
+              "to_vnum": 332,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Submerged Grotto",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "332": {
+          "vnum": 332,
+          "name": "Submerged Grotto",
+          "description": "Silence reigns in this corner of the grotto, encompassing you in a suffocating shroud of absolute stillness. The sound of your passage is muffled by an unseen force, maintaining the solemn aura of the area.",
+          "grid_x": -2,
+          "grid_y": 22,
+          "exits": {
+            "s": {
+              "to_vnum": 333,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Submerged Grotto",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Kyagh",
+              "description": "gills that lines his body convinces you that he descended from some long",
+              "unique": true
+            }
+          ]
+        },
+        "333": {
+          "vnum": 333,
+          "name": "Submerged Grotto",
+          "description": "The walls here are scarred and pitted, and chunks of broken rock lie scattered at your feet. A moss-like substance clings tenaciously to the ceiling, trailing long creepers into the sluggish current here in the grotto.",
+          "grid_x": -2,
+          "grid_y": 23,
+          "exits": {
+            "e": {
+              "to_vnum": 334,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Submerged Grotto",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Playful tuvik",
+              "description": "of the tuvik that are not covered with a luxurious fur coat.",
+              "unique": false
+            },
+            {
+              "name": "Xanig the Hammerfisted",
+              "description": "impressively muscled arms terminate in blocklike hands that can pulverize",
+              "unique": true
+            }
+          ]
+        },
+        "334": {
+          "vnum": 334,
+          "name": "Submerged Grotto",
+          "description": "The utter blackness that surrounds you deep in the caverns defies description. All sense of motion is lost as you trudge along in the unchanging darkness, hoping to escape this featureless hell.",
+          "grid_x": -1,
+          "grid_y": 23,
+          "exits": {
+            "e": {
+              "to_vnum": 335,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Submerged Grotto",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "335": {
+          "vnum": 335,
+          "name": "Submerged Grotto",
+          "description": "The faint lapping of water against an exposed surface is barely audible here, seemingly originating from somewhere above you. You peer upward, and are surprised to find that the water's limit is no more than a few feet above your head. Kicking off the cavern floor in anticipation of a welcome breath of air, you swim toward the surface.",
+          "grid_x": 0,
+          "grid_y": 23,
+          "exits": {
+            "s": {
+              "to_vnum": 336,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Submerged Grotto",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 337,
+              "to_zone": "City of Cadain",
+              "to_room_name": "An Unexpected Discovery",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "336": {
+          "vnum": 336,
+          "name": "Submerged Grotto",
+          "description": "The stark cavern walls seem to press in on you as you stare at the unrelieved expanse of barren stone. An occasional fish swims past, probably as anxious as you to leave these monotonous surroundings.",
+          "grid_x": 0,
+          "grid_y": 24,
+          "exits": {
+            "n": {
+              "to_vnum": 335,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Submerged Grotto",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 338,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Submerged Grotto",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "338": {
+          "vnum": 338,
+          "name": "Submerged Grotto",
+          "description": "You stumble along the broken floor of the grotto, cursing a long stream of bubbles every time your foot slips on the treacherous, gravelly bits of rock. Preoccupied with inventing new expletives, you finally look up and watch with mounting horror as a fish with gaping jaws emerges from a hole in the cavern wall and swims toward you with terrifying speed.",
+          "grid_x": -1,
+          "grid_y": 24,
+          "exits": {
+            "s": {
+              "to_vnum": 339,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Submerged Grotto",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Spearfish",
+              "description": "blinding speed, its powerful tail flicking from side to side as it",
+              "unique": true
+            }
+          ]
+        },
+        "339": {
+          "vnum": 339,
+          "name": "Submerged Grotto",
+          "description": "The water is oddly still here; the familiar tug of the gentle currents is entirely absent. The underwater caverns continue to the north, or you may escape to the lake bottom to the south.",
+          "grid_x": -1,
+          "grid_y": 25,
+          "exits": {
+            "s": {
+              "to_vnum": 340,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Before an Opening",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "340": {
+          "vnum": 340,
+          "name": "Before an Opening",
+          "description": "A monolithic mountain of stone has shouldered its way up into the lake to the north, making further travel in that direction impossible unless you wish to risk whatever dangers lurk in the underwater grotto that winds into the rock. A meandering mavjir pauses to study you; its single eye seems to dare you to enter. Thrusting your jaw out pugnaciously at the offensive beast, you move forward to investigate the entrance.",
+          "grid_x": -1,
+          "grid_y": 26,
+          "exits": {
+            "w": {
+              "to_vnum": 341,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Lake Bottom",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "341": {
+          "vnum": 341,
+          "name": "Lake Bottom",
+          "description": "The current tugs at you quite strongly here, pulling you away from the wall of broken stone rising to the north. Digging your feet into the sandy floor to maintain your position, you stop to consider if it might be possible to somehow proceed past the rock.",
+          "grid_x": -2,
+          "grid_y": 26,
+          "exits": {
+            "e": {
+              "to_vnum": 340,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Before an Opening",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 342,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Lake Bottom",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Slothful mavjir",
+              "description": "suddenly lethargic.",
+              "unique": false
+            }
+          ]
+        },
+        "342": {
+          "vnum": 342,
+          "name": "Lake Bottom",
+          "description": "You stand on the shifting sands that comprise the floor of the lake, watching the activity of the fishes around you in fascination. You notice a thick stalk rising from beneath the sand, and are then transfixed with terror as its bulbous top slides open to reveal a luminous eye staring directly at you. Flight seems prudent right now.",
+          "grid_x": -2,
+          "grid_y": 27,
+          "exits": {
+            "n": {
+              "to_vnum": 341,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Lake Bottom",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 343,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Swimming in Lake Cadain",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Rahljia",
+              "description": "imaginary creatures that parents use to scare their children into",
+              "unique": true
+            }
+          ]
+        },
+        "2262": {
+          "vnum": 2262,
+          "name": "Outdoor Outfitters",
+          "description": "General supplies of all sorts have been hung on pegs driven into the cavern wall. Small traveling packs, waterskins, and lanterns all lie within easy reach, and at reasonable prices. That's quite surprising, considering some of the costs you've seen in other areas of the merchant quarter. You are riding atop a well-bred horse.",
+          "grid_x": 1,
+          "grid_y": -3,
+          "exits": {
+            "w": {
+              "to_vnum": 303,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Ramluf Plaza",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "346": {
+          "vnum": 346,
+          "name": "Lake Bottom",
+          "description": "Tall, aquatic plants wave languidly in the gentle currents at the bottom of the lake, swaying in an endless dance. Tiny crustaceans scuttle about the sandy floor, their movements amazingly swift in the cumbersome environment. A tuvik swims past, flapping one fin-like paw at you as it heads toward a cave entrance just barely perceptible to the north.",
+          "grid_x": -1,
+          "grid_y": 27,
+          "exits": {
+            "w": {
+              "to_vnum": 342,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Lake Bottom",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "347": {
+          "vnum": 347,
+          "name": "Adrift on Lake Cadain",
+          "description": "Phosphorescent fish leap merrily about your boat, slipping in and out of the water with ease. The cavern ceiling is lost from view far above you, and for a moment you feel almost as though you were back outside, away from this subterranean gloom.",
+          "grid_x": 2,
+          "grid_y": 7,
+          "exits": {
+            "w": {
+              "to_vnum": 348,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Adrift on Lake Cadain",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "348": {
+          "vnum": 348,
+          "name": "Adrift on Lake Cadain",
+          "description": "Your craft spins about in lazy circles, tracing an errant path across the shifting waters. You wouldn't mind floating about for hours were it not for that fact that the whistling winds threaten to capsize you at any minute.",
+          "grid_x": 1,
+          "grid_y": 7,
+          "exits": {
+            "n": {
+              "to_vnum": 349,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Floating Just Offshore",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "349": {
+          "vnum": 349,
+          "name": "Floating Just Offshore",
+          "description": "My but it's cold out here. The wind certainly whips across the water's surface at a good clip. Shivering in your flimsy craft, you wonder whether the tepid waters might offer some relief.",
+          "grid_x": 1,
+          "grid_y": 6,
+          "exits": {
+            "e": {
+              "to_vnum": 350,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Drifting About",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 351,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Shores of Lake Cadain",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "350": {
+          "vnum": 350,
+          "name": "Drifting About",
+          "description": "The roaming currents of Lake Cadain slip beneath you, swirling about randomly. A few fishermen float past, huddling for warmth in their thick cloaks. You don't see how it's possible for them to catch anything, why would surface?",
+          "grid_x": 2,
+          "grid_y": 6,
+          "exits": {
+            "w": {
+              "to_vnum": 349,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Floating Just Offshore",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "351": {
+          "vnum": 351,
+          "name": "Shores of Lake Cadain",
+          "description": "You sit upon a mossy rock, dangling your toes in the silvery water of the lake and drinking in the beauty of your surroundings. The troubles of your journeys slip from your mind as you gaze across the unbroken expanse of rippling waters, dreaming of exploring their depths or floating across their delicate surface. The lonesome cry of a bird on the wing reaches your ears, ghosting in from far above the lake.",
+          "grid_x": 1,
+          "grid_y": 5,
+          "exits": {
+            "n": {
+              "to_vnum": 352,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Path to Lake Cadain",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1632": {
+          "vnum": 1632,
+          "name": "Muradian Avenue",
+          "description": "A broad staircase climbs the side of a building, leading up to a small landing just barely visible above. The clang of a hammer striking steel disturbs your contemplation of the stairs; you turn to the north and spy a craftsman working on an adventurer's breastplate to improve the fit.",
+          "grid_x": 3,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1633,
+              "to_zone": "City of Cadain",
+              "to_room_name": "East Gate",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 309,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Muradian Avenue",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 1634,
+              "to_zone": "City of Cadain",
+              "to_room_name": "The Dwelling of Dolmir",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Riding bird",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "353": {
+          "vnum": 353,
+          "name": "Banyor's Way",
+          "description": "A leashed oortaag stumps along determinedly, followed by a little dwarf frantically trying to keep up with his pet. Smiling in spite of yourself, you pause to watch the comical procession until the pair disappear around a corner. Wistfully thinking of the carefree days of youth, you turn your gaze to the silvery lake south of the city.",
+          "grid_x": 1,
+          "grid_y": 3,
+          "exits": {
+            "e": {
+              "to_vnum": 354,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Banyor's Way",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "354": {
+          "vnum": 354,
+          "name": "Banyor's Way",
+          "description": "Several dwarves wander past you, strolling along in pairs and enjoying the quiet beauty of the gardens visible to the northwest. The breathtaking sight of Lake Cadain captures your eye to the south, and the dim cavern-city spreads on all other sides.",
+          "grid_x": 3,
+          "grid_y": 3,
+          "exits": {
+            "n": {
+              "to_vnum": 355,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Banyor's Way",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "355": {
+          "vnum": 355,
+          "name": "Banyor's Way",
+          "description": "The stylish Muradian section of the city offers amazing sights to the northeast, pleasing the eye with its graceful statues and tasteful houses speckled with precious stones. You are again struck by the odd nature of the dwellings carved deep below the ground, but cannot help admiring the craftsmanship of the dwarven stonemasons.",
+          "grid_x": 3,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 309,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Muradian Avenue",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1633": {
+          "vnum": 1633,
+          "name": "East Gate",
+          "description": "A heavy gate which appears to be crafted from solid gold has been thrown open to allow the few dwarves entering and leaving the city to pass. You stare at the gates for a long moment, and reluctantly come to the conclusion that they're far too heavy to steal.",
+          "grid_x": 4,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 2226,
+              "to_zone": "Golgar's Lair",
+              "to_room_name": "Riverbank",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1632,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Muradian Avenue",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "352": {
+          "vnum": 352,
+          "name": "Path to Lake Cadain",
+          "description": "The fungal vegetation of the caves springs up all about you, covering local rocks with a spongy coating that would doubtless be exceedingly comfortable to sleep upon. A profound stillness hangs in the air, as if nature had recognized this place as being far too holy to profane with the sound of worldly creatures. The lake beckons to the south.",
+          "grid_x": 1,
+          "grid_y": 4,
+          "exits": {
+            "n": {
+              "to_vnum": 353,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Banyor's Way",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2263": {
+          "vnum": 2263,
+          "name": "Vanari Courthouse",
+          "description": "Polished benches line the floor of this neat little building, facing a tall podium from which a fat little dwarf wearing a ridiculous wig passes judgement on the petty criminals sprawled about the room. He doesn't appear to be going over their crimes very carefully. In fact, he seems to be more interested in the keg of ale standing conveniently at his side. An occasional hiccup reaches your ears.",
+          "grid_x": -1,
+          "grid_y": -2,
+          "exits": {
+            "s": {
+              "to_vnum": 313,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Walk of Vanari",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -4,
+        "max_x": 4,
+        "min_y": -6,
+        "max_y": 27,
+        "room_count": 54
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 3115,
+      "rooms": {
+        "3107": {
+          "vnum": 3107,
+          "name": "The Shining Stone",
+          "description": "Wooden tables covered with fine cloth dominate the room, upon most of which the jewels that Nolfar currently has the pleasure of inspecting have been laid out. Occasionally he has been known to make a purchase when a gem strikes his fancy; maybe he might be interested in something you have.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {
+            "s": {
+              "to_vnum": 1634,
+              "to_zone": "City of Cadain",
+              "to_room_name": "The Dwelling of Dolmir",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3115": {
+          "vnum": 3115,
+          "name": "Boatyard",
+          "description": "Shirtless dwarves laboriously haul heavy saws back and forth, cutting beams for construction. Unfinished skeletons lie amid the broken remains of ancient craft. Sweeping your eyes over the assorted woodwork, you look for something usable.",
+          "grid_x": 0,
+          "grid_y": 31,
+          "exits": {
+            "s": {
+              "to_vnum": 2226,
+              "to_zone": "Golgar's Lair",
+              "to_room_name": "Riverbank",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Sawyer",
+              "description": "Aren't you glad you chose the life of an adventurer?  It certainly",
+              "unique": true
+            }
+          ]
+        },
+        "345": {
+          "vnum": 345,
+          "name": "Swimming in Lake Cadain",
+          "description": "It's rather peaceful here; there's nothing to disturb you except for the occasional inquisitive tuvik. You giggle foolishly as one of the furry little rascals brushes your leg as it passes, and then, with cheeks flaming in mortification, you glance around to see if anyone noticed your childish outburst.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 343,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Swimming in Lake Cadain",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 346,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Lake Bottom",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "u": {
+              "to_vnum": 347,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Adrift on Lake Cadain",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "337": {
+          "vnum": 337,
+          "name": "An Unexpected Discovery",
+          "description": "You shiver in the chill air, perplexed by the existence of this small cave which the water failed to claim. Your teeth chatter violently as you rise from the gloomy depths of the grotto, hoping to find some material that might fuel a small fire to warm your frigid bones.",
+          "grid_x": 0,
+          "grid_y": 46,
+          "exits": {
+            "d": {
+              "to_vnum": 335,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Submerged Grotto",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Hideous muck leech",
+              "description": "wriggles towards you with mindless determination.",
+              "unique": true
+            }
+          ]
+        },
+        "344": {
+          "vnum": 344,
+          "name": "In the Waters of Lake Cadain",
+          "description": "You drift through the silent waters of Cadain, floating effortlessly in your serene surroundings. You pitch forward with a gentle stroke and stare in fascination at the liquid depths beneath you.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 343,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Swimming in Lake Cadain",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "343": {
+          "vnum": 343,
+          "name": "Swimming in Lake Cadain",
+          "description": "Schools of fish swim solemnly about in the cool waters of the lake, seemingly content to spend their lives wandering aimlessly. What a terrible thing it must be to do nothing but go from place to place and attack other creatures.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 345,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Swimming in Lake Cadain",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 344,
+              "to_zone": "City of Cadain",
+              "to_room_name": "In the Waters of Lake Cadain",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 342,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Lake Bottom",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1634": {
+          "vnum": 1634,
+          "name": "The Dwelling of Dolmir",
+          "description": "You follow the stairway to a small landing, and then duck through a low doorway into a pavilion set up above the Artificer's workshop. Thick rugs have been strewn all over the floor for comfort, and iron braziers filled with burning coals add both warmth and a considerable amount of smoke to the little home.",
+          "grid_x": 0,
+          "grid_y": 16,
+          "exits": {
+            "n": {
+              "to_vnum": 3107,
+              "to_zone": "City of Cadain",
+              "to_room_name": "The Shining Stone",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 1632,
+              "to_zone": "City of Cadain",
+              "to_room_name": "Muradian Avenue",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 1,
+        "min_y": -1,
+        "max_y": 46,
+        "room_count": 7
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1632,
+      "to": 1633,
+      "direction": "e",
+      "from_grid": [
+        3,
+        1
+      ],
+      "to_grid": [
+        4,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1632,
+      "to": 309,
+      "direction": "w",
+      "from_grid": [
+        3,
+        1
+      ],
+      "to_grid": [
+        2,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1634,
+      "to": 3107,
+      "direction": "n",
+      "from_grid": [
+        0,
+        16
+      ],
+      "to_grid": [
+        0,
+        15
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2262,
+      "to": 303,
+      "direction": "w",
+      "from_grid": [
+        1,
+        -3
+      ],
+      "to_grid": [
+        0,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2263,
+      "to": 313,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        -2
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 298,
+      "to": 299,
+      "direction": "s",
+      "from_grid": [
+        2,
+        -6
+      ],
+      "to_grid": [
+        2,
+        -5
+      ],
+      "floor": -1
+    },
+    {
+      "from": 299,
+      "to": 300,
+      "direction": "w",
+      "from_grid": [
+        2,
+        -5
+      ],
+      "to_grid": [
+        1,
+        -5
+      ],
+      "floor": -1
+    },
+    {
+      "from": 300,
+      "to": 301,
+      "direction": "w",
+      "from_grid": [
+        1,
+        -5
+      ],
+      "to_grid": [
+        0,
+        -5
+      ],
+      "floor": -1
+    },
+    {
+      "from": 301,
+      "to": 302,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -5
+      ],
+      "to_grid": [
+        0,
+        -4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 302,
+      "to": 303,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -4
+      ],
+      "to_grid": [
+        0,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 303,
+      "to": 304,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -3
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 304,
+      "to": 3105,
+      "direction": "e",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        1,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 304,
+      "to": 305,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 305,
+      "to": 306,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 306,
+      "to": 3106,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 306,
+      "to": 307,
+      "direction": "s",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 307,
+      "to": 308,
+      "direction": "e",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        1,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 307,
+      "to": 3106,
+      "direction": "s",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 307,
+      "to": 311,
+      "direction": "w",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 308,
+      "to": 309,
+      "direction": "e",
+      "from_grid": [
+        1,
+        1
+      ],
+      "to_grid": [
+        2,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 308,
+      "to": 3106,
+      "direction": "n",
+      "from_grid": [
+        1,
+        1
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 309,
+      "to": 310,
+      "direction": "s",
+      "from_grid": [
+        2,
+        1
+      ],
+      "to_grid": [
+        2,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3108,
+      "to": 313,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        2
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3109,
+      "to": 312,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        2
+      ],
+      "to_grid": [
+        -2,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3109,
+      "to": 3112,
+      "direction": "s",
+      "from_grid": [
+        -2,
+        2
+      ],
+      "to_grid": [
+        -2,
+        3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 311,
+      "to": 3106,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 311,
+      "to": 312,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        -2,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3112,
+      "to": 3113,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        3
+      ],
+      "to_grid": [
+        -1,
+        3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3113,
+      "to": 3114,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        3
+      ],
+      "to_grid": [
+        0,
+        3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3114,
+      "to": 353,
+      "direction": "e",
+      "from_grid": [
+        0,
+        3
+      ],
+      "to_grid": [
+        1,
+        3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 312,
+      "to": 314,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        1
+      ],
+      "to_grid": [
+        -2,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 312,
+      "to": 317,
+      "direction": "w",
+      "from_grid": [
+        -2,
+        1
+      ],
+      "to_grid": [
+        -3,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 313,
+      "to": 312,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -2,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 314,
+      "to": 315,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        -2,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 315,
+      "to": 316,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        -1
+      ],
+      "to_grid": [
+        -1,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 317,
+      "to": 318,
+      "direction": "w",
+      "from_grid": [
+        -3,
+        1
+      ],
+      "to_grid": [
+        -4,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 330,
+      "to": 331,
+      "direction": "w",
+      "from_grid": [
+        0,
+        22
+      ],
+      "to_grid": [
+        -1,
+        22
+      ],
+      "floor": -1
+    },
+    {
+      "from": 331,
+      "to": 332,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        22
+      ],
+      "to_grid": [
+        -2,
+        22
+      ],
+      "floor": -1
+    },
+    {
+      "from": 332,
+      "to": 333,
+      "direction": "s",
+      "from_grid": [
+        -2,
+        22
+      ],
+      "to_grid": [
+        -2,
+        23
+      ],
+      "floor": -1
+    },
+    {
+      "from": 333,
+      "to": 334,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        23
+      ],
+      "to_grid": [
+        -1,
+        23
+      ],
+      "floor": -1
+    },
+    {
+      "from": 334,
+      "to": 335,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        23
+      ],
+      "to_grid": [
+        0,
+        23
+      ],
+      "floor": -1
+    },
+    {
+      "from": 335,
+      "to": 336,
+      "direction": "s",
+      "from_grid": [
+        0,
+        23
+      ],
+      "to_grid": [
+        0,
+        24
+      ],
+      "floor": -1
+    },
+    {
+      "from": 336,
+      "to": 338,
+      "direction": "w",
+      "from_grid": [
+        0,
+        24
+      ],
+      "to_grid": [
+        -1,
+        24
+      ],
+      "floor": -1
+    },
+    {
+      "from": 338,
+      "to": 339,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        24
+      ],
+      "to_grid": [
+        -1,
+        25
+      ],
+      "floor": -1
+    },
+    {
+      "from": 339,
+      "to": 340,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        25
+      ],
+      "to_grid": [
+        -1,
+        26
+      ],
+      "floor": -1
+    },
+    {
+      "from": 340,
+      "to": 341,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        26
+      ],
+      "to_grid": [
+        -2,
+        26
+      ],
+      "floor": -1
+    },
+    {
+      "from": 341,
+      "to": 342,
+      "direction": "s",
+      "from_grid": [
+        -2,
+        26
+      ],
+      "to_grid": [
+        -2,
+        27
+      ],
+      "floor": -1
+    },
+    {
+      "from": 343,
+      "to": 345,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 343,
+      "to": 344,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 346,
+      "to": 342,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        27
+      ],
+      "to_grid": [
+        -2,
+        27
+      ],
+      "floor": -1
+    },
+    {
+      "from": 347,
+      "to": 348,
+      "direction": "w",
+      "from_grid": [
+        2,
+        7
+      ],
+      "to_grid": [
+        1,
+        7
+      ],
+      "floor": -1
+    },
+    {
+      "from": 348,
+      "to": 349,
+      "direction": "n",
+      "from_grid": [
+        1,
+        7
+      ],
+      "to_grid": [
+        1,
+        6
+      ],
+      "floor": -1
+    },
+    {
+      "from": 349,
+      "to": 350,
+      "direction": "e",
+      "from_grid": [
+        1,
+        6
+      ],
+      "to_grid": [
+        2,
+        6
+      ],
+      "floor": -1
+    },
+    {
+      "from": 349,
+      "to": 351,
+      "direction": "n",
+      "from_grid": [
+        1,
+        6
+      ],
+      "to_grid": [
+        1,
+        5
+      ],
+      "floor": -1
+    },
+    {
+      "from": 351,
+      "to": 352,
+      "direction": "n",
+      "from_grid": [
+        1,
+        5
+      ],
+      "to_grid": [
+        1,
+        4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 352,
+      "to": 353,
+      "direction": "n",
+      "from_grid": [
+        1,
+        4
+      ],
+      "to_grid": [
+        1,
+        3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 353,
+      "to": 354,
+      "direction": "e",
+      "from_grid": [
+        1,
+        3
+      ],
+      "to_grid": [
+        3,
+        3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 354,
+      "to": 355,
+      "direction": "n",
+      "from_grid": [
+        3,
+        3
+      ],
+      "to_grid": [
+        3,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 355,
+      "to": 309,
+      "direction": "n",
+      "from_grid": [
+        3,
+        2
+      ],
+      "to_grid": [
+        2,
+        1
+      ],
+      "floor": -1
+    }
+  ]
+}

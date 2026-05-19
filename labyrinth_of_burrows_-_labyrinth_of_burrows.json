@@ -1,0 +1,681 @@
+{
+  "zone_name": "Labyrinth of Burrows - Labyrinth of Burrows",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": -2,
+    "max_x": 3,
+    "min_y": -4,
+    "max_y": 5
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 2196,
+      "rooms": {
+        "2560": {
+          "vnum": 2560,
+          "name": "Hall of Armor",
+          "description": "Here at the northern end of this wide hall, the damage becomes even greater than that to the south. Broken shards of stone litter the ground, and even the upper walls are scarred with patches of grey. The paintings here are badly damaged, and only parts of the images are recognizable. A doorway leads to the east, and the hall continues south.",
+          "grid_x": 0,
+          "grid_y": 3,
+          "exits": {
+            "e": {
+              "to_vnum": 2559,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Chamber of the Eye",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2561,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Hall of Armor",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2561": {
+          "vnum": 2561,
+          "name": "Hall of Armor",
+          "description": "You reach the middle of the hall, which continues to the north and south. Something has damaged the white stones of the floor, leaving several cracked and buckled, showing grey stone and earth beneath. The lower half of each wall has suffered similar damage, but the paintings remain unharmed. You can travel north or south along the hall or enter a doorway to the west.",
+          "grid_x": 0,
+          "grid_y": 4,
+          "exits": {
+            "n": {
+              "to_vnum": 2560,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Hall of Armor",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2562,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Hall of Armor",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2564,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Shrine of Reflection",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2562": {
+          "vnum": 2562,
+          "name": "Hall of Armor",
+          "description": "You stand in a wide hallway running north and south. Every few meters, columns rise on either side of the hall, curving to meet at the apex of the arched ceiling, high above you. The white walls boast designs of inlaid silver and gold surrounding detailed paintings. The color of these works has faded and dulled with age, but you can still make out a few of the scenes. A doorway leads west, and the hall continues to the north.",
+          "grid_x": 0,
+          "grid_y": 5,
+          "exits": {
+            "n": {
+              "to_vnum": 2561,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Hall of Armor",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2563,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Room of Red Tile",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2563": {
+          "vnum": 2563,
+          "name": "Room of Red Tile",
+          "description": "Blood red tiles surround you, covering the walls on all sides with their hive- like hexagonal faces. A wide doorway opens in the eastern wall, leading to a broad hall in which you see scattered bits of armor. A faint odor reminds you of damp wood, but the area is devoid of any plant matter or water.",
+          "grid_x": -1,
+          "grid_y": 5,
+          "exits": {
+            "e": {
+              "to_vnum": 2562,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Hall of Armor",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2564": {
+          "vnum": 2564,
+          "name": "Shrine of Reflection",
+          "description": "Your own image looks back on you from every direction, supported by the hundreds of mirrors lining the walls. The air feels cold, and an eerie silence pervades the room. You feel as though the mirrors reflect not only light but thoughts, sound, emotions, and indeed your very being. Fortunately, the doorway leading back into the hall is quite plainly visible.",
+          "grid_x": -1,
+          "grid_y": 4,
+          "exits": {
+            "e": {
+              "to_vnum": 2561,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Hall of Armor",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2245": {
+          "vnum": 2245,
+          "name": "Labyrinth of Burrows",
+          "description": "Three directions lie open to you, here in the lair of the weasels. To the north, a cramped passageway runs to an intersection from which comes frequent gusts of wind laden with the smell of grass. To the south, a wider tunnel leads into darkness. A tunnel to the west soon reaches a dead end. You have lost 528 experience.",
+          "grid_x": 3,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 2196,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Labyrinth of Burrows",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2196": {
+          "vnum": 2196,
+          "name": "Labyrinth of Burrows",
+          "description": "Several cramped, twisting passages offer to lead you to other cramped, twisting passages nearby. You quickly lose your sense of direction, and orient yourself only by the relationships between the various tunnels. The tunnels range between a meter and two meters in diameter, and here lead east, south, and west. A small tunnel leads up out of the burrows. The giant weasel misses you. You stab the giant weasel's belly! (22) The ocean's energy begins to flow through you, granting you the speed of a gentle current.",
+          "grid_x": 3,
+          "grid_y": -3,
+          "exits": {
+            "w": {
+              "to_vnum": 2549,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Labyrinth of Burrows",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "go out": {
+              "to_vnum": 2195,
+              "to_zone": "Grasslands",
+              "to_room_name": "Grasslands",
+              "direction": "go out",
+              "is_cross_zone": true,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2549": {
+          "vnum": 2549,
+          "name": "Labyrinth of Burrows",
+          "description": "The tunnel curves from east to north, leading you from one section of the burrows into another. The air here smell strongly of weasel spoor, and you frequently hear them racing through the nearby tunnels, or spot a glimpse of their light brown fur ahead of you.",
+          "grid_x": 2,
+          "grid_y": -3,
+          "exits": {
+            "n": {
+              "to_vnum": 2550,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Labyrinth of Burrows",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2550": {
+          "vnum": 2550,
+          "name": "Labyrinth of Burrows",
+          "description": "Three tunnels meet where you stand. A wide passage runs from the south and curves westward, branching off a narrow passage to the north. Although dominated by the rich brown earth, a section of the eastern wall is made up of whitish clay.",
+          "grid_x": 2,
+          "grid_y": -4,
+          "exits": {
+            "n": {
+              "to_vnum": 2551,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Labyrinth of Burrows",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2551": {
+          "vnum": 2551,
+          "name": "Labyrinth of Burrows",
+          "description": "Crouched under the low ceiling of this small cave, you are nearly overwhelmed by the odor of the weasels. Their spoor covers the floor, and they constantly pass by you as they run down the nearby tunnels. The only exit lies to the west.",
+          "grid_x": 2,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 2245,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Labyrinth of Burrows",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2553,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Labyrinth of Burrows",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2552": {
+          "vnum": 2552,
+          "name": "Labyrinth of Burrows",
+          "description": "The passage bends from south to east here, with a second tunnel leading to the west. From this offshoot come strange clicking sounds, as the sound of bone struck upon bone. The weasels run the main corridor, but seem to avoid the western tunnel.",
+          "grid_x": 2,
+          "grid_y": -1,
+          "exits": {
+            "w": {
+              "to_vnum": 2551,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Labyrinth of Burrows",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2553": {
+          "vnum": 2553,
+          "name": "Labyrinth of Burrows",
+          "description": "The cramped tunnel in which you stand bends from east to south. The humid air smells strongly of decaying plants, making you fairly nauseous as you crawl along. From the south, you hear an occasional chittering sound.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "s": {
+              "to_vnum": 2554,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Labyrinth of Burrows",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2554": {
+          "vnum": 2554,
+          "name": "Labyrinth of Burrows",
+          "description": "You crouch beneath the low dirt ceiling, choosing between the tunnels that lead away from this intersection. A low, wide passageway makes it way from the south to the east, carrying the spoor of huge weasels. A narrow passage to the west calls you to with faint clicking sounds as it descends deeper into the earth.",
+          "grid_x": -2,
+          "grid_y": -2,
+          "exits": {
+            "s": {
+              "to_vnum": 2555,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Labyrinth of Burrows",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2555": {
+          "vnum": 2555,
+          "name": "Labyrinth of Burrows",
+          "description": "This intersection allows travel to the east or south through high, relatively spacious tunnels, or passage to the north through a more cramped burrow. A soft, warm breeze from the north brings with it the unpleasant aroma of decay.",
+          "grid_x": -2,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 2556,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Labyrinth of Burrows",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2556": {
+          "vnum": 2556,
+          "name": "Labyrinth of Burrows",
+          "description": "The passage here curves from north to east as it avoids a wall of thick roots to the west. The roots weave together, forming a tight mesh to prevent passage. Pulling away the weakest, you find only more roots underneath, and you sense that the wall of roots is quite thick. You can travel north or east, following the tunnel.",
+          "grid_x": -2,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 2557,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Labyrinth of Burrows",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2557": {
+          "vnum": 2557,
+          "name": "Labyrinth of Burrows",
+          "description": "With plenty of space to walk comfortably through this tunnel curving from north to west, you find yourself reluctant to explore the cramped passageway branching to the east. The air here is cool and dry, but grows more humid to the north. The spoor of the weasels are everywhere.",
+          "grid_x": -1,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 2558,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Labyrinth of Burrows",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2558": {
+          "vnum": 2558,
+          "name": "Labyrinth of Burrows",
+          "description": "The light brown dirt of this narrow tunnel provides excellent camouflage for the huge weasels that stalk the area. Their spoor coats your garments as you crawl along, pausing now and then to rest on the warm, dry earth. From the intersection in which you sit, tunnels lead north, east, and west.",
+          "grid_x": 1,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 2551,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Labyrinth of Burrows",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2559,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Chamber of the Eye",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2559": {
+          "vnum": 2559,
+          "name": "Chamber of the Eye",
+          "description": "You step into a strange chamber. Ceiling, walls, and floor are covered with sea-blue tiles, and the air smells faintly of rancid meat. A hole opens in the center of the eastern wall, near the floor. Roughly thirty centimeters in diameter, the hole is cut into the grey stone of the wall behind the tile. The only exit lies to the west, back into the hallway.",
+          "grid_x": 1,
+          "grid_y": 3,
+          "exits": {
+            "n": {
+              "to_vnum": 2558,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Labyrinth of Burrows",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2560,
+              "to_zone": "Labyrinth of Burrows - Labyrinth of Burrows",
+              "to_room_name": "Hall of Armor",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -2,
+        "max_x": 3,
+        "min_y": -4,
+        "max_y": 5,
+        "room_count": 18
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 2196,
+      "to": 2549,
+      "direction": "w",
+      "from_grid": [
+        3,
+        -3
+      ],
+      "to_grid": [
+        2,
+        -3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2245,
+      "to": 2196,
+      "direction": "n",
+      "from_grid": [
+        3,
+        -2
+      ],
+      "to_grid": [
+        3,
+        -3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2549,
+      "to": 2550,
+      "direction": "n",
+      "from_grid": [
+        2,
+        -3
+      ],
+      "to_grid": [
+        2,
+        -4
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2550,
+      "to": 2551,
+      "direction": "n",
+      "from_grid": [
+        2,
+        -4
+      ],
+      "to_grid": [
+        2,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2551,
+      "to": 2245,
+      "direction": "e",
+      "from_grid": [
+        2,
+        2
+      ],
+      "to_grid": [
+        3,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2551,
+      "to": 2553,
+      "direction": "w",
+      "from_grid": [
+        2,
+        2
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2552,
+      "to": 2551,
+      "direction": "w",
+      "from_grid": [
+        2,
+        -1
+      ],
+      "to_grid": [
+        2,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2553,
+      "to": 2554,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        -2,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2554,
+      "to": 2555,
+      "direction": "s",
+      "from_grid": [
+        -2,
+        -2
+      ],
+      "to_grid": [
+        -2,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2555,
+      "to": 2556,
+      "direction": "s",
+      "from_grid": [
+        -2,
+        -1
+      ],
+      "to_grid": [
+        -2,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2556,
+      "to": 2557,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        2
+      ],
+      "to_grid": [
+        -1,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2557,
+      "to": 2558,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        2
+      ],
+      "to_grid": [
+        1,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2558,
+      "to": 2551,
+      "direction": "e",
+      "from_grid": [
+        1,
+        2
+      ],
+      "to_grid": [
+        2,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2558,
+      "to": 2559,
+      "direction": "s",
+      "from_grid": [
+        1,
+        2
+      ],
+      "to_grid": [
+        1,
+        3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2559,
+      "to": 2560,
+      "direction": "w",
+      "from_grid": [
+        1,
+        3
+      ],
+      "to_grid": [
+        0,
+        3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2560,
+      "to": 2561,
+      "direction": "s",
+      "from_grid": [
+        0,
+        3
+      ],
+      "to_grid": [
+        0,
+        4
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2561,
+      "to": 2562,
+      "direction": "s",
+      "from_grid": [
+        0,
+        4
+      ],
+      "to_grid": [
+        0,
+        5
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2561,
+      "to": 2564,
+      "direction": "w",
+      "from_grid": [
+        0,
+        4
+      ],
+      "to_grid": [
+        -1,
+        4
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2562,
+      "to": 2563,
+      "direction": "w",
+      "from_grid": [
+        0,
+        5
+      ],
+      "to_grid": [
+        -1,
+        5
+      ],
+      "floor": 0
+    }
+  ]
+}

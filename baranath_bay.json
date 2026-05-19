@@ -1,0 +1,295 @@
+{
+  "zone_name": "Baranath Bay",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": -1,
+    "max_x": 0,
+    "min_y": 0,
+    "max_y": 21
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1691,
+      "rooms": {
+        "1577": {
+          "vnum": 1577,
+          "name": "The Open Sea",
+          "description": "Out of sight of the mainland, your only marker is the rocky headland to your southeast. No landing seems possible from this angle, though presumably the long peninsula meets the mainland at some point.",
+          "grid_x": 0,
+          "grid_y": 18,
+          "exits": {
+            "s": {
+              "to_vnum": 1578,
+              "to_zone": "Baranath Bay",
+              "to_room_name": "West of the Peninsula",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2167,
+              "to_zone": "The Ocean",
+              "to_room_name": "The Open Sea",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1578": {
+          "vnum": 1578,
+          "name": "West of the Peninsula",
+          "description": "The water here is shallow as part of the peninsula to your east slowly descends into the ocean, yet no actual landing is possible due to the steep gradient to the top. In all other directions, water laps in dull repetition.",
+          "grid_x": 0,
+          "grid_y": 19,
+          "exits": {
+            "s": {
+              "to_vnum": 1579,
+              "to_zone": "Baranath Bay",
+              "to_room_name": "West of the Peninsula",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1579": {
+          "vnum": 1579,
+          "name": "West of the Peninsula",
+          "description": "A spit of land rises out of the water to the east, red earth topped high above with lush grasses. It is impassible for its height, leaving only watery routes in all other directions. To the west, the measureless sea roars forebodingly and without mercy.",
+          "grid_x": 0,
+          "grid_y": 20,
+          "exits": {
+            "s": {
+              "to_vnum": 1580,
+              "to_zone": "Baranath Bay",
+              "to_room_name": "The Open Sea",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1580": {
+          "vnum": 1580,
+          "name": "The Open Sea",
+          "description": "The only land you can see is the peninsula to your northeast, and even that is receding into the distance. It would be wise to approach it to the north or to the east rather than to risk getting lost at sea.",
+          "grid_x": 0,
+          "grid_y": 21,
+          "exits": {
+            "s": {
+              "to_vnum": 1581,
+              "to_zone": "The Ocean",
+              "to_room_name": "The Open Sea",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1691": {
+          "vnum": 1691,
+          "name": "Dry Riverbed",
+          "description": "The arid channel marking the former passage of the Dreck winds through the countryside south of Mareldja here. A few trees, small yet clearly gnarled with age line the riverbank, growing denser and somewhat larger to the west.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 1692,
+              "to_zone": "Baranath Bay",
+              "to_room_name": "Dry Riverbed",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1692": {
+          "vnum": 1692,
+          "name": "Dry Riverbed",
+          "description": "Fallen leaves and other decaying plant matter line the riverbed beneath your feet. A long time ago, the waters of the River Dreck would have carried this debris into the Chardaleth Sea, but they no longer do. For countless generations the river has maintained utter inaction in natural eulogy to Thurvun's most notorious servant.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "s": {
+              "to_vnum": 1693,
+              "to_zone": "Baranath Bay",
+              "to_room_name": "Dry Riverbed",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1693": {
+          "vnum": 1693,
+          "name": "Dry Riverbed",
+          "description": "The slim lining of brush and trees around the riverbed is not particularly thick or extensive, yet it feels as though it acutely isolates and engulfs the area, breaking it free from time and space. Drifting faintly on the breeze, you think you hear faint bursts of abrasive noise in the distance - the baying of hounds, perhaps? It must just be your imagination.",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "s": {
+              "to_vnum": 1694,
+              "to_zone": "Baranath Bay",
+              "to_room_name": "Sub-Mareldjan Meadowland",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1694": {
+          "vnum": 1694,
+          "name": "Sub-Mareldjan Meadowland",
+          "description": "Probably once a device helping to feed the mouths of Mareldja's public, this broad, featureless plain is not currently in use. Thick blades of grass sway in the gentle breezes with the natural dignity derived from the prolonged absence of mankind. The air is salty and has a certain marine chill to it, though the latter is not particularly acute.",
+          "grid_x": -1,
+          "grid_y": 2,
+          "exits": {
+            "s": {
+              "to_vnum": 1695,
+              "to_zone": "Baranath Bay",
+              "to_room_name": "North of the Estuary",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1695": {
+          "vnum": 1695,
+          "name": "North of the Estuary",
+          "description": "The ground here is marshy, saturated with the water of the Brown River, whose mouth lies to your south, the fresh and salt waters mingling and floating out to sea. The Brown River is fresh water only in the sense that it is free from salt - the sludge and Oldgate sewage from which it derives its moniker are still clearly visible, even this far downstream. Your way to the east is blocked by the thick undergrowth from which the river ejects, but open countryside dotted with occasional groves of trees rolls northward, and in the distance you see the faint outlines of a large settlement - most likely Marledja.",
+          "grid_x": -1,
+          "grid_y": 3,
+          "exits": {
+            "s": {
+              "to_vnum": 1696,
+              "to_zone": "River Bruenor",
+              "to_room_name": "Estuary",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 21,
+        "room_count": 9
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1577,
+      "to": 1578,
+      "direction": "s",
+      "from_grid": [
+        0,
+        18
+      ],
+      "to_grid": [
+        0,
+        19
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1578,
+      "to": 1579,
+      "direction": "s",
+      "from_grid": [
+        0,
+        19
+      ],
+      "to_grid": [
+        0,
+        20
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1579,
+      "to": 1580,
+      "direction": "s",
+      "from_grid": [
+        0,
+        20
+      ],
+      "to_grid": [
+        0,
+        21
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1691,
+      "to": 1692,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1692,
+      "to": 1693,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1693,
+      "to": 1694,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        -1,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1694,
+      "to": 1695,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        2
+      ],
+      "to_grid": [
+        -1,
+        3
+      ],
+      "floor": 0
+    }
+  ]
+}

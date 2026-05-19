@@ -1,0 +1,50 @@
+{
+  "zone_name": "Tomb of Antryg - Three Shadows Mountains",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": 0,
+    "max_x": 0,
+    "min_y": 0,
+    "max_y": 0
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1931,
+      "rooms": {
+        "1931": {
+          "vnum": 1931,
+          "name": "Within a Cramped Mountain Cave",
+          "description": "You stand beneath a crescent archway carved into the face of mount Taelabilreth's foot. Steps lead down at a precarious angle, descending further into the darkness.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1930,
+              "to_zone": "Three Shadows Mountains",
+              "to_room_name": "Among the Mountains",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Tomb guardian",
+              "description": "",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    }
+  },
+  "edges": []
+}
