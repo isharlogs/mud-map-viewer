@@ -1,0 +1,455 @@
+{
+  "zone_name": "Cleft Tunnels",
+  "floor_count": 2,
+  "bounds": {
+    "min_x": -2,
+    "max_x": 2,
+    "min_y": -1,
+    "max_y": 2
+  },
+  "floors": {
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 1796,
+      "rooms": {
+        "1795": {
+          "vnum": 1795,
+          "name": "Steep Tunnel",
+          "description": "The misshapen rocks jutting out along this steep passage make for secure hand and footholds as you work your way along. Irregular streams of water flow from above, having seeped through the ceiling. Below the passage levels, and turns eastward. You have lost 608 experience.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1796,
+              "to_zone": "Cleft Tunnels",
+              "to_room_name": "Before a Tremendous Cavern",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 1794,
+              "to_zone": "Cleft Tunnels",
+              "to_room_name": "Low Tunnel",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "1796": {
+          "vnum": 1796,
+          "name": "Before a Tremendous Cavern",
+          "description": "You stand before a huge, gaping cavern under the earth, extending far beyond the limits of sight. A noxious scent fills the air. In the distance you can see a wide, rushing river, which passes through a jumbled collection of odd buildings further eastward.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1797,
+              "to_zone": "Hedros City",
+              "to_room_name": "Outside the Iron Gate",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1795,
+              "to_zone": "Cleft Tunnels",
+              "to_room_name": "Steep Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 1,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 2
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1787,
+      "rooms": {
+        "1792": {
+          "vnum": 1792,
+          "name": "Obsidian Shrine",
+          "description": "Deep with the maw of the obsidian beast lies a cramped and resplendent shrine hewn into the rock. The altar's surface, and a patch of ground in front of it, have been polished to a lustrous, black shine. Centered on the altar, a single smokeless candle burns, its flame calmly waving in the crisp, dry air.",
+          "grid_x": 2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2068,
+              "to_zone": "Fateweavers Domain",
+              "to_room_name": "The Hall of Learning",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1791,
+              "to_zone": "Cleft Tunnels",
+              "to_room_name": "Low Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1793": {
+          "vnum": 1793,
+          "name": "Dead End Tunnel",
+          "description": "You have come to a dead end in the rough, low tunnels. Rocks appear to have caved in, blocking further passage. This tunnel exits to the south, where it turns westward. The film covering the surfaces here is thicker, long left undisturbed.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 1790,
+              "to_zone": "Cleft Tunnels",
+              "to_room_name": "Low Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Rattling skeleton",
+              "description": "them.  Malignant red coals glow within the dark pits which once held eyes.",
+              "unique": false
+            }
+          ]
+        },
+        "1794": {
+          "vnum": 1794,
+          "name": "Low Tunnel",
+          "description": "The tunnel comes to a quick halt here, turning sharply downward. An ill draft flows by, heading east and out of the tunnels. The steep passage down echoes with muted cries as the rough walls around you shake with frequent tremors.",
+          "grid_x": -2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1789,
+              "to_zone": "Cleft Tunnels",
+              "to_room_name": "A Split in the Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 1795,
+              "to_zone": "Cleft Tunnels",
+              "to_room_name": "Steep Tunnel",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Barrow wight",
+              "description": "long and clawed, covered with silvery white fur.  Its malignant expression of hatred for the living bodes evil for you.",
+              "unique": true
+            }
+          ]
+        },
+        "1787": {
+          "vnum": 1787,
+          "name": "At the Bottom of the Cleft",
+          "description": "",
+          "grid_x": -1,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 1788,
+              "to_zone": "Cleft Tunnels",
+              "to_room_name": "Low Tunnel into the Rock",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1788": {
+          "vnum": 1788,
+          "name": "Low Tunnel into the Rock",
+          "description": "A thin, putrid film covers the surfaces of this low, rocky tunnel venturing northward into the rocks. Southward the tunnel opens to a gathering of loose rocks, where the mountain winds swirl, pulling the fetid stench of these tunnels out and up.",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 1789,
+              "to_zone": "Cleft Tunnels",
+              "to_room_name": "A Split in the Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1787,
+              "to_zone": "Cleft Tunnels",
+              "to_room_name": "At the Bottom of the Cleft",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Chicrea",
+              "description": "clicking noise as they beat madly at the air.  It bears a small black bow in one horny hand and it nocks an arrow even as you watch.",
+              "unique": false
+            },
+            {
+              "name": "Darkling scout",
+              "description": "Everything she encounters is recorded in the depths of her liquid black",
+              "unique": false
+            },
+            {
+              "name": "Rattling skeleton",
+              "description": "them.  Malignant red coals glow within the dark pits which once held eyes.",
+              "unique": false
+            }
+          ]
+        },
+        "1789": {
+          "vnum": 1789,
+          "name": "A Split in the Tunnel",
+          "description": "At this point the foul tunnel splits, heading west and east. Hordes of tiny insects traverse the filmy surfaces, consuming anything they can find. A warm draft rushes through the tunnels, carrying a nauseous scent. The passage west echoes with ominous, mournful cries.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1790,
+              "to_zone": "Cleft Tunnels",
+              "to_room_name": "Low Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1794,
+              "to_zone": "Cleft Tunnels",
+              "to_room_name": "Low Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Huge boring beetle",
+              "description": "powerful legs churn madly and its powerful mandibles crunch large pieces of rock to gravel.  It ignores you completely, intent only on its digging.",
+              "unique": true
+            }
+          ]
+        },
+        "1790": {
+          "vnum": 1790,
+          "name": "Low Tunnel",
+          "description": "Jagged rocks loom dangerously low from above, and you must crouch to pass by. A rush of white noise echoes here, as the tunnel turns to the north. The loose stones and debris along the floor shake slightly with tremors that seem to be originating from far below. A formation of stalactites and stalagmites line a wide crevice leading east, deeper into the rock. A pale metallic shimmer catches the light.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1791,
+              "to_zone": "Cleft Tunnels",
+              "to_room_name": "Low Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1793,
+              "to_zone": "Cleft Tunnels",
+              "to_room_name": "Dead End Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1789,
+              "to_zone": "Cleft Tunnels",
+              "to_room_name": "A Split in the Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Blood leech",
+              "description": "merely a rubbery-lipped slash with a single large fang in it.",
+              "unique": true
+            }
+          ]
+        },
+        "1791": {
+          "vnum": 1791,
+          "name": "Low Tunnel",
+          "description": "",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1792,
+              "to_zone": "Cleft Tunnels",
+              "to_room_name": "Obsidian Shrine",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1790,
+              "to_zone": "Cleft Tunnels",
+              "to_room_name": "Low Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Chicrea",
+              "description": "clicking noise as they beat madly at the air.  It bears a small black bow in one horny hand and it nocks an arrow even as you watch.",
+              "unique": false
+            },
+            {
+              "name": "Undead dwarf",
+              "description": "Some sort of fungus is growing on his face and he is missing three fingers from his left hand.  He also stinks horribly of the grave.",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -2,
+        "max_x": 2,
+        "min_y": -1,
+        "max_y": 2,
+        "room_count": 8
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1787,
+      "to": 1788,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        2
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1788,
+      "to": 1789,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1789,
+      "to": 1790,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1789,
+      "to": 1794,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -2,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1790,
+      "to": 1791,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1790,
+      "to": 1793,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1791,
+      "to": 1792,
+      "direction": "e",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        2,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1795,
+      "to": 1796,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -1
+    }
+  ]
+}

@@ -1,0 +1,2003 @@
+{
+  "zone_name": "The Sewers - City of Mareldja",
+  "floor_count": 3,
+  "bounds": {
+    "min_x": -3,
+    "max_x": 7,
+    "min_y": -5,
+    "max_y": 67
+  },
+  "floors": {
+    "-2": {
+      "floor_id": -2,
+      "entry_vnum": 3035,
+      "rooms": {
+        "3035": {
+          "vnum": 3035,
+          "name": "Inside the Stalagmite",
+          "description": "The inside of the stalagmite is much larger than you would have thought possible by viewing it from the outside. The walls are painted a bright red. A stairway twists up to the second floor, and a stone archway leads north into a work area.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 3038,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Workshop",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "go out": {
+              "to_vnum": 2601,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Circular Cavern",
+              "direction": "go out",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "u": {
+              "to_vnum": 3036,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "On the Staircase",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "3038": {
+          "vnum": 3038,
+          "name": "Workshop",
+          "description": "You see lots of glassware and bubbling vats. The vats are all filled with a whitish, viscous liquid that gives off a horrible, pungent reek. On a low table lie several man-like forms composed of wooden sticks strung together with twine. A doorway leads back south.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 3035,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Inside the Stalagmite",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Cloanthus",
+              "description": "Self-styled Archmage of the Underworld, Cloanthus appears in black robes embroidered with little evil runes.  He wields a skull-topped staff, and dead animals dangle from his belt.  But you've seen it all before. How droll.",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": -1,
+        "max_y": 0,
+        "room_count": 2
+      }
+    },
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 2581,
+      "rooms": {
+        "2581": {
+          "vnum": 2581,
+          "name": "Bottom of the Stair",
+          "description": "More of the tiny globes pepper the walls of the landing at the bottom of the wide stone stair. Their placement, however, is much more erratic, and several have been smashed out. Pools of stagnant water gather in recesses on the smooth floor, spawning all manner of creeping slime. Gnawed remains of fish and rats litter the area, attracting flies. You have lost 702 experience.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 2582,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Moldering Hall",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 2580,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "At the Top of the Staircase",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Emaciated ghoul",
+              "description": "A pair of glowing irises stare at you from deep in the shadows.  What little flesh remains to the creature is rotting away.  Its movements are quick and",
+              "unique": true
+            }
+          ]
+        },
+        "2582": {
+          "vnum": 2582,
+          "name": "Moldering Hall",
+          "description": "Rich tapestries once lined this low hallway, but have reached such a state of decay that they are now little more than a continuous carpet of mold, broken only by an archway on the northern wall. Debris, mostly destroyed furniture, but also pieces of several corpses - human and otherwise - are mixed among the detritus. A ghoul wight strikes at you in vain. You jump to the side and press your attack home! (23) The ocean's energy begins to flow through you, granting you the speed of a gentle current.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2581,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Bottom of the Stair",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2583,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Flooded Apartment",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Ghoul wight",
+              "description": "Both eyes are missing, and the flesh from one leg has been chewed away, possibly by his brethren.  A swarm of rats and flies follow in his wake.",
+              "unique": true
+            },
+            {
+              "name": "Pale ghoul",
+              "description": "Small and thin, with webbed hands and feet, the horrible little creature hisses with a watery gurgle, then lunges for your neck.",
+              "unique": false
+            }
+          ]
+        },
+        "2583": {
+          "vnum": 2583,
+          "name": "Flooded Apartment",
+          "description": "A sewer main running above the ceiling of this room has worn through the stone, and now leaks steadily into this abandoned study. The water damaged remains of a bed, and probably a dresser - or cabinet - are all that is left of the furnishings, the rest plundered or smashed to rubble long ago. Dark mushrooms cluster in the shadows, their caps dusted with pale spores.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 2582,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Moldering Hall",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Pale ghoul",
+              "description": "Small and thin, with webbed hands and feet, the horrible little creature hisses with a watery gurgle, then lunges for your neck.",
+              "unique": false
+            },
+            {
+              "name": "Snaggle-toothed ghoul",
+              "description": "Nasty little beastie, isn't he?  He's pale and covered in sewer filth, and gurgles like a plugged drain as you interrupt his meal - half a rotted",
+              "unique": true
+            }
+          ]
+        },
+        "3036": {
+          "vnum": 3036,
+          "name": "On the Staircase",
+          "description": "The stairway climbs around a pole. After the first couple rotations, your view of the ground floor disappears and you can see the floor of the upper level. The wall adjoining the staircase is painted with garish whorls. You think it's supposed to have some deeper significance, but you aren't finding one.",
+          "grid_x": -1,
+          "grid_y": 15,
+          "exits": {
+            "d": {
+              "to_vnum": 3035,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Inside the Stalagmite",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "u": {
+              "to_vnum": 3037,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Cloanthus`s Chamber",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "3039": {
+          "vnum": 3039,
+          "name": "Treasure Room",
+          "description": "Mirrors line all four walls and the ceiling overhead, multiplying the gold and riches you see tenfold. Considering that half the items on the floor are mere baubles, you are not impressed.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {
+            "w": {
+              "to_vnum": 3036,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "On the Staircase",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 1,
+        "min_y": -1,
+        "max_y": 15,
+        "room_count": 5
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1674,
+      "rooms": {
+        "1680": {
+          "vnum": 1680,
+          "name": "Small Tunnel",
+          "description": "The tunnel weaves back and forth so you are forced to constantly double back on your steps, going east and west for every step north and south you take. You think you hear voices in the distance, but you cannot be sure.",
+          "grid_x": 0,
+          "grid_y": -3,
+          "exits": {
+            "n": {
+              "to_vnum": 1681,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Large Cavern",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1679,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Small Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Thief",
+              "description": "He's dressed in dark colors, and you wouldn't notice him in this light unless you were really looking for him.",
+              "unique": false
+            }
+          ]
+        },
+        "1674": {
+          "vnum": 1674,
+          "name": "Well Bottom",
+          "description": "The well bottom is dry and littered with junk. Small animal skeletons crunch under your feet, and rats squeak angrily from the darkness. A tunnel has been cut into the well wall, leading north. Light from the surface shines faintly down, a small circle way overhead.",
+          "grid_x": -2,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 1675,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Small Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 1673,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "At Eternity and Sorrows",
+              "direction": "u",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1675": {
+          "vnum": 1675,
+          "name": "Small Tunnel",
+          "description": "The tunnel is rough hewn and filled with more garbage. A hole in the southern wall leads out to a small room. The tunnel continues eastward, meandering from side to side. Your feet strike against a skeleton, half buried in the debris.",
+          "grid_x": -2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1676,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Small Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1674,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Well Bottom",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Ardast",
+              "description": "Lank and greasy hair frames a face full of suspicion.  Ardast is a shifty- eyed man in rumpled and stained clothing.  Ill luck seems to hang over him",
+              "unique": true
+            }
+          ]
+        },
+        "1676": {
+          "vnum": 1676,
+          "name": "Small Tunnel",
+          "description": "Bits of wood, broken crockery, and rotting burlap litter the ground. Here and there you can see some animal bones, mostly mouse and rat. The tunnel extends to the west and east, barely high enough for you to stand.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1677,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1675,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Small Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1677": {
+          "vnum": 1677,
+          "name": "Rocky Tunnel",
+          "description": "The floor was hewn from the same rock as the rest of the tunnel, but the passage of many feet has worn down its rougher edges. You are at the center of a T junction, one tunnel leading north, another east, and a smaller one going west.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2587,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1678,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Round Chamber",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1676,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Small Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1678": {
+          "vnum": 1678,
+          "name": "Round Chamber",
+          "description": "Tunnels lead off in four directions from this point: north, south, east, and west. The ceiling lifts away from the surrounding walls to form a small dome, and the room itself is about thirty feet across. Painted overhead is a crude representation of the heavens, day and night circling each other in endless dance. Samu goes south. You follow Samu south. Rocky Tunnel The floor was hewn from the same rock as the rest of the tunnel, but the passage of many feet has worn down its rougher edges. You are at the center of a T junction, one tunnel leading north, another east, and a smaller one going west.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 1679,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Small Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1677,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2588,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rough Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1679": {
+          "vnum": 1679,
+          "name": "Small Tunnel",
+          "description": "The ceiling hangs very low here, forcing you to stoop as you travel through the passageway. The tunnel twists and winds, but eventually leads north and south. You cannot see before or behind you for very far. n",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 1680,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Small Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1678,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Round Chamber",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2576": {
+          "vnum": 2576,
+          "name": "Rocky Tunnel",
+          "description": "The passageway makes an elbow here, one half going north and the other east. To the west you see a dark landing built from polished stones and lit by tiny colored globes.",
+          "grid_x": 2,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 2577,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2579,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2580,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "At the Top of the Staircase",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Thief",
+              "description": "He's dressed in dark colors, and you wouldn't notice him in this light unless you were really looking for him.",
+              "unique": false
+            }
+          ]
+        },
+        "1681": {
+          "vnum": 1681,
+          "name": "Large Cavern",
+          "description": "A large chamber has been carved out of the cliff rock. Columns of stone left in place form pillars, four on either side. Torches affixed to these cast the room in a flickering light. Gold statues around the perimeter gleam occasionally, almost ready to come to life. Doorways lead off to the west, south, and east. You have lost 756 experience.",
+          "grid_x": 0,
+          "grid_y": -4,
+          "exits": {
+            "e": {
+              "to_vnum": 2593,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Arched Passageway",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1680,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Small Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1682,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Council Chamber",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Darvas",
+              "description": "Darvas is an older, somewhat pretentious man wrapped in black silk. He strokes his long moustache and tries to look official as he glares",
+              "unique": true
+            },
+            {
+              "name": "Gold statue",
+              "description": "It looks like a little gold man with small horns on his forehead.",
+              "unique": true
+            }
+          ]
+        },
+        "1682": {
+          "vnum": 1682,
+          "name": "Council Chamber",
+          "description": "A large, circular table sits in the center of the room, cluttered with maps and papers. Around it sit eight places, each with a small silver ink pot and quill feather pen. Built into the center, a small rounded coffer rises up about a foot or so. Lighting the room are round globes which have been fastened to the walls at regular intervals. Beneath all this the floor is covered with a plush carpet.",
+          "grid_x": -1,
+          "grid_y": -4,
+          "exits": {
+            "e": {
+              "to_vnum": 1681,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Large Cavern",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Ankhartas",
+              "description": "Swarthy and angular, Ankhartas sits by the head of the table and is very smug about this fact.  You wonder how many he has stepped on to get there.",
+              "unique": true
+            },
+            {
+              "name": "Faliah",
+              "description": "She has her arms crossed against her chest.  She regards Ankhartas with cool dislike and Radnor with open disdain.  Every time he eyes the coffer,",
+              "unique": true
+            },
+            {
+              "name": "Radnor",
+              "description": "Easily the weakest member of the council, Radnor relies solely on his total lack of morals and shame.  He stepped over his mother to get here.",
+              "unique": true
+            }
+          ]
+        },
+        "2577": {
+          "vnum": 2577,
+          "name": "Rocky Tunnel",
+          "description": "The tunnel is uneven, its walls sloping at odd angles and its ceiling dipping and rising erratically. You find yourself in a corner with one tunnel leading south and the other west.",
+          "grid_x": 3,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 2578,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2576,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2580": {
+          "vnum": 2580,
+          "name": "At the Top of the Staircase",
+          "description": "A dark balustrade carved from the rock overlooks a flight of stairs curving gracefully down into the depths. The chamber is lit by hundreds of tiny globes set into the rock in wild, flowing patterns. Two braziers at either side of the top step burn purple from an unseen fuel source. A tunnel to the east leads away from the light.",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 2576,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 2581,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Bottom of the Stair",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Slime golem",
+              "description": "It's about six feet tall and constructed from slime.  You wonder",
+              "unique": false
+            }
+          ]
+        },
+        "2578": {
+          "vnum": 2578,
+          "name": "Rocky Tunnel",
+          "description": "The air is stifling, and every breath you take seems to rasp loudly down the tunnel. The walls are smoothed here, and you see a curious drawing to the east. Passageways lead away from you to the north, west and south.",
+          "grid_x": 3,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 2577,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2595,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rough Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2584,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2579": {
+          "vnum": 2579,
+          "name": "Rocky Tunnel",
+          "description": "You find yourself at a T junction with tunnels leading north, east and south. From the eastern tunnel, you can see a strange glow. The earth seems to weigh down upon you, and you catch yourself unconsciously stooping.",
+          "grid_x": 2,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 2601,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Circular Cavern",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2602,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2576,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Slime golem",
+              "description": "It's about six feet tall and constructed from slime.  You wonder",
+              "unique": false
+            }
+          ]
+        },
+        "2584": {
+          "vnum": 2584,
+          "name": "Rocky Tunnel",
+          "description": "Your footsteps send crazy echoes down through the stone corridors. At times, you hear the chittering of rats, or the scrape of a foot against stone. The tunnel turns, heading south and east.",
+          "grid_x": 2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2578,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2585,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2585": {
+          "vnum": 2585,
+          "name": "Rocky Tunnel",
+          "description": "The tunnel makes a bend here, heading north and west. The rock is rough and cold to the touch. It juts out at unexpected places, as if a simple passage through was deemed good enough.",
+          "grid_x": 2,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 2584,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2586,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2586": {
+          "vnum": 2586,
+          "name": "Rocky Tunnel",
+          "description": "The tunnel widens and narrows in a haphazard fashion, sometimes large enough for two people, sometimes barely large enough for one. The way twists and winds, heading vaguely north and east.",
+          "grid_x": 1,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 2585,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2587,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Slime golem",
+              "description": "It's about six feet tall and constructed from slime.  You wonder",
+              "unique": false
+            }
+          ]
+        },
+        "2587": {
+          "vnum": 2587,
+          "name": "Rocky Tunnel",
+          "description": "A large iron lever stands out from a rough corner. It looks quite old, but you can't detect any rust. The tunnel continues to the west and south.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "s": {
+              "to_vnum": 2586,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1677,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2588": {
+          "vnum": 2588,
+          "name": "Rough Tunnel",
+          "description": "The tunnel opens up to a chamber to the east and continues southward. The chilly air makes your skin clammy. You can detect a faintly unpleasant odor emanating from the south, though you think you hear voices to the east. Tall stalks of hemlock rise from damp ground, white flowers deceptively delicate.",
+          "grid_x": -1,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 1678,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Round Chamber",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2589,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rough Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2589": {
+          "vnum": 2589,
+          "name": "Rough Tunnel",
+          "description": "The tunnel snakes its way through the rock, heading roughly north and south. The walls slant toward each other, forming a crude triangle. You can hear rats moving around in the darkness about you.",
+          "grid_x": -3,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 2588,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rough Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2590,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rough Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2592": {
+          "vnum": 2592,
+          "name": "Messy Lair",
+          "description": "The musky odor is almost overpowering. You see a roughly circular chamber, covered in dung and scattered with bits of gnawed bone. In the center is a bed of mouldering cloth. You wonder how many people died to contribute their clothing to that disgusting pile.",
+          "grid_x": -2,
+          "grid_y": 2,
+          "exits": {
+            "w": {
+              "to_vnum": 2591,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rough Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Giant rat",
+              "description": "Its head is about the same size as your head. Its teeth are as long as your fingers.",
+              "unique": false
+            }
+          ]
+        },
+        "2593": {
+          "vnum": 2593,
+          "name": "Arched Passageway",
+          "description": "The tunnel is carved to resemble an arched passageway. A blue carpet follows the stone corridor as it extends to the north and west. In the corner where the two sides meet you see a white marble pedestal holding a large crystal ball.",
+          "grid_x": 1,
+          "grid_y": -4,
+          "exits": {
+            "n": {
+              "to_vnum": 2594,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Esvar`s Chamber",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1681,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Large Cavern",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2594": {
+          "vnum": 2594,
+          "name": "Esvar`s Chamber",
+          "description": "",
+          "grid_x": 1,
+          "grid_y": -5,
+          "exits": {
+            "s": {
+              "to_vnum": 2593,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Arched Passageway",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Guardian spirit",
+              "description": "It towers above you, looking translucent and quite magical.",
+              "unique": true
+            }
+          ]
+        },
+        "2590": {
+          "vnum": 2590,
+          "name": "Rough Tunnel",
+          "description": "You can definitely hear squeaking here. Something scurries from your approach and scolds you from a distance. The tunnels form a T here, going north, east, and south. A strong musky odor flows from the southern tunnel.",
+          "grid_x": -3,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 2589,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rough Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2591,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rough Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2591": {
+          "vnum": 2591,
+          "name": "Rough Tunnel",
+          "description": "Garbage lies strewn around the area. Bits of cloth, scraps of metal, and gnawed bones festoon the tunnel floor in dubious splendor. You kick against a loose rock, only to recognize it as a human skull. The tunnel leads to the north and east. A stale, musky odor wafts from the east.",
+          "grid_x": -3,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 2592,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Messy Lair",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2590,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rough Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Large rat",
+              "description": "Hm.  Black, furry body.  Long, naked tail.  Pointed nose.  Beady eyes. Sharp teeth.  Sharp claws.  Yup, it's a rat, but boy, is it BIG!",
+              "unique": true
+            }
+          ]
+        },
+        "2595": {
+          "vnum": 2595,
+          "name": "Rough Tunnel",
+          "description": "The walls seem to close in on you more readily within this passage. The tunnel is somewhat triangular, narrowing considerably at the top just above your head. You can walk either north or south.",
+          "grid_x": 3,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 2578,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2596,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rough Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2596": {
+          "vnum": 2596,
+          "name": "Rough Tunnel",
+          "description": "Your footsteps seem to echo dangerously loud as you trip over the uneven floor. Sometimes your feet crunch against tiny animal bones, and the sound makes your bones feel brittle as well. The tunnel turns here heading north and west.",
+          "grid_x": 3,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 2595,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rough Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2597,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rough Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2597": {
+          "vnum": 2597,
+          "name": "Rough Tunnel",
+          "description": "From somewhere, you can hear the chittering and squeaking of rats, but you're not sure from which direction it comes. The air is rank and sour--very pungent. The tunnel continues west and east. You see a small crack to the south, but it's much too narrow to fit through.",
+          "grid_x": 2,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 2596,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rough Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2598,
+              "to_zone": "Ridgetuck Villa - Country Estates",
+              "to_room_name": "Tunnel Entrance",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2601": {
+          "vnum": 2601,
+          "name": "Circular Cavern",
+          "description": "You see a large, round chamber carved from the rock. The walls are polished to a sheen, and little patches of fungi dot the floor in an abstract pattern. In the exact center rises a column of black stone. Carved to look like a stalagmite, it succeeds only in looking stupidly artificial. A tunnel leads west from the cave.",
+          "grid_x": 3,
+          "grid_y": -2,
+          "exits": {
+            "w": {
+              "to_vnum": 2579,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Rocky Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "go into": {
+              "to_vnum": 3035,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Inside the Stalagmite",
+              "direction": "go into",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Slime golem",
+              "description": "It's about six feet tall and constructed from slime.  You wonder",
+              "unique": false
+            }
+          ]
+        },
+        "2602": {
+          "vnum": 2602,
+          "name": "Rocky Tunnel",
+          "description": "Passages lead west and south, and a narrow staircase leads around and up through the stone. Wandering these tunnels, you wonder if worms have ever felt that the earth might suddenly close in and crush them.",
+          "grid_x": 2,
+          "grid_y": -3,
+          "exits": {
+            "u": {
+              "to_vnum": 2603,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Stairway",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2603": {
+          "vnum": 2603,
+          "name": "Stairway",
+          "description": "The stairway twists around in a tight spiral. Somewhere on the other side of the rock wall you can hear roaring water. At the top you find a door outlined in the stone.",
+          "grid_x": 7,
+          "grid_y": -2,
+          "exits": {},
+          "npcs": []
+        },
+        "2604": {
+          "vnum": 2604,
+          "name": "Dark Waterfall",
+          "description": "Two streams meet here as the floor makes a sudden plunge down to the next level. A narrow ledge leads east and west across the gushing waters. The walls are mossy with slime, and a terrible stink wafts up from below. An old ladder next to the waterfall allows you to descend.",
+          "grid_x": 0,
+          "grid_y": 17,
+          "exits": {
+            "e": {
+              "to_vnum": 2605,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "Under Eternity",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Black rat",
+              "description": "Hm.  Black, furry body.  Long, naked tail.  Pointed nose.  Beady eyes. Sharp teeth.  Sharp claws.  Yup, it's a rat, all right.",
+              "unique": true
+            },
+            {
+              "name": "Scavenger",
+              "description": "He carries a bag filled with items he has fished out of the water.",
+              "unique": false
+            }
+          ]
+        },
+        "2605": {
+          "vnum": 2605,
+          "name": "Under Eternity",
+          "description": "A set of iron spikes driven into the wall serves as a makeshift ladder up to a large grate set in the street above. Sewer water filled with bits of garbage flows from the east and south to the west, where you can hear a dull roaring.",
+          "grid_x": 1,
+          "grid_y": 17,
+          "exits": {
+            "e": {
+              "to_vnum": 2606,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "City Sewers",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2606": {
+          "vnum": 2606,
+          "name": "City Sewers",
+          "description": "Light shines down from the occasional grate, illuminating a stream of polluted water and dripping, algae-covered walls. The shadows cast by the grates remind you of bars and prisons. Not a nice association. The sewer tunnel runs east and west.",
+          "grid_x": 2,
+          "grid_y": 17,
+          "exits": {
+            "e": {
+              "to_vnum": 2607,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "City Sewers",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2607": {
+          "vnum": 2607,
+          "name": "City Sewers",
+          "description": "Water flows by you from the west to the south, sometimes gushing and sometimes almost without a ripple, depending on the width of the trough at your feet. The stones are slick with moisture, and an organic funk permeates the air.",
+          "grid_x": 3,
+          "grid_y": 17,
+          "exits": {
+            "s": {
+              "to_vnum": 2608,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "City Sewers",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2608": {
+          "vnum": 2608,
+          "name": "City Sewers",
+          "description": "The air smells of stale feces and old rain water. The stones of the walls are covered with a thick carpet of slippery algae, but at one point seem scraped clean. The sewer trough runs north and west.",
+          "grid_x": 3,
+          "grid_y": 18,
+          "exits": {
+            "e": {
+              "to_vnum": 2609,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "City Sewers",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2609": {
+          "vnum": 2609,
+          "name": "City Sewers",
+          "description": "The sewers are filled with a constant gurgle as rain water mixed with sewage flows ever southward. Bits of debris float on top of the surface, and the smell is very organic. The tunnel makes a bend to the west, its stones covered with slimy and stringy algae.",
+          "grid_x": 4,
+          "grid_y": 18,
+          "exits": {
+            "s": {
+              "to_vnum": 2610,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "City Sewers",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2610": {
+          "vnum": 2610,
+          "name": "City Sewers",
+          "description": "Two streams of oily water meet to flow southward, one from the north and the other from the west. A narrow ledge on either side of the water allows you to remain relatively dry, but it will still take a day to air the greasy stink out of your clothes.",
+          "grid_x": 4,
+          "grid_y": 19,
+          "exits": {
+            "s": {
+              "to_vnum": 2611,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "City Sewers",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2611": {
+          "vnum": 2611,
+          "name": "City Sewers",
+          "description": "Water mixed with sewage and small bits of garbage flows from the north toward a large intersection to the west. Looking closely, you can see scummy white patches, bits of wood, and was that a hand that just floated by?",
+          "grid_x": 4,
+          "grid_y": 20,
+          "exits": {
+            "w": {
+              "to_vnum": 2612,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "The Quadruple Junction Under the Dump",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2612": {
+          "vnum": 2612,
+          "name": "The Quadruple Junction Under the Dump",
+          "description": "Three streams of dark and noxious water meet at this junction and flow to the north. Upon slimy stones glow a few choice epitaphs, painted onto the walls with a foul, mashed fungus paste. A ladder bolted to one of the walls leads up through a layer of garbage, and a ledge to each side allows you to traverse the tunnels without wading.",
+          "grid_x": 3,
+          "grid_y": 20,
+          "exits": {
+            "s": {
+              "to_vnum": 2613,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "City Sewers",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2613": {
+          "vnum": 2613,
+          "name": "City Sewers",
+          "description": "A stream of polluted water runs inside a wide stone trough through a tunnel system beneath the city. The oily water flows from the south to join with other tunnels at a large junction directly to the north. You feel a slight breeze coming from a small side tunnel to the west.",
+          "grid_x": 3,
+          "grid_y": 21,
+          "exits": {
+            "s": {
+              "to_vnum": 2614,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "City Sewers",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Half-decayed corpse",
+              "description": "female.  What remains of the skin is a bloated, larval white, and maggots wriggle in and out of its exposed muscles.",
+              "unique": false
+            },
+            {
+              "name": "Scavenger",
+              "description": "He carries a bag filled with items he has fished out of the water.",
+              "unique": false
+            }
+          ]
+        },
+        "2614": {
+          "vnum": 2614,
+          "name": "City Sewers",
+          "description": "Dark water mixed with sewage and debris flows from the west to the north with a sullen burble. Large coagulations of scum float past you occasionally, looking almost ready to evolve into a rudimentary life form.",
+          "grid_x": 3,
+          "grid_y": 22,
+          "exits": {},
+          "npcs": []
+        },
+        "2615": {
+          "vnum": 2615,
+          "name": "Cramped Passageway",
+          "description": "The passageway angles sharply up from here and narrows to the east, where you can hear the flow of water. A damp unwholesome odor flows from that direction as well, making you unconsciously wince. Rubble is piled around a low doorway in the southern wall of the tunnel.",
+          "grid_x": 0,
+          "grid_y": 37,
+          "exits": {},
+          "npcs": []
+        },
+        "2759": {
+          "vnum": 2759,
+          "name": "Behind the Counter",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": 52,
+          "exits": {
+            "u": {
+              "to_vnum": 1744,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Fenric`s Surplus",
+              "direction": "u",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3037": {
+          "vnum": 3037,
+          "name": "Cloanthus`s Chamber",
+          "description": "You see a large room furnished with heavy, baroque furniture. In the center is a glass aquarium housing two tentacled fish. Chains and hooks dangle from one corner. The bed is covered with animal pelts, the dresser with a dusty collection of human skulls. You find this room a very good example of its type.",
+          "grid_x": 0,
+          "grid_y": 67,
+          "exits": {
+            "d": {
+              "to_vnum": 3036,
+              "to_zone": "The Sewers - City of Mareldja",
+              "to_room_name": "On the Staircase",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -3,
+        "max_x": 7,
+        "min_y": -5,
+        "max_y": 67,
+        "room_count": 45
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1674,
+      "to": 1675,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        1
+      ],
+      "to_grid": [
+        -2,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1675,
+      "to": 1676,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1676,
+      "to": 1677,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1677,
+      "to": 2587,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1677,
+      "to": 1678,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1678,
+      "to": 1679,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1678,
+      "to": 2588,
+      "direction": "w",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        -1,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1679,
+      "to": 1680,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1680,
+      "to": 1681,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -3
+      ],
+      "to_grid": [
+        0,
+        -4
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1681,
+      "to": 2593,
+      "direction": "e",
+      "from_grid": [
+        0,
+        -4
+      ],
+      "to_grid": [
+        1,
+        -4
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1681,
+      "to": 1682,
+      "direction": "w",
+      "from_grid": [
+        0,
+        -4
+      ],
+      "to_grid": [
+        -1,
+        -4
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2576,
+      "to": 2577,
+      "direction": "e",
+      "from_grid": [
+        2,
+        -1
+      ],
+      "to_grid": [
+        3,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2576,
+      "to": 2579,
+      "direction": "n",
+      "from_grid": [
+        2,
+        -1
+      ],
+      "to_grid": [
+        2,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2576,
+      "to": 2580,
+      "direction": "w",
+      "from_grid": [
+        2,
+        -1
+      ],
+      "to_grid": [
+        1,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2577,
+      "to": 2578,
+      "direction": "s",
+      "from_grid": [
+        3,
+        -1
+      ],
+      "to_grid": [
+        3,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2578,
+      "to": 2595,
+      "direction": "s",
+      "from_grid": [
+        3,
+        0
+      ],
+      "to_grid": [
+        3,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2578,
+      "to": 2584,
+      "direction": "w",
+      "from_grid": [
+        3,
+        0
+      ],
+      "to_grid": [
+        2,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2579,
+      "to": 2601,
+      "direction": "e",
+      "from_grid": [
+        2,
+        -2
+      ],
+      "to_grid": [
+        3,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2579,
+      "to": 2602,
+      "direction": "n",
+      "from_grid": [
+        2,
+        -2
+      ],
+      "to_grid": [
+        2,
+        -3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2581,
+      "to": 2582,
+      "direction": "w",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2582,
+      "to": 2583,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2584,
+      "to": 2585,
+      "direction": "s",
+      "from_grid": [
+        2,
+        0
+      ],
+      "to_grid": [
+        2,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2585,
+      "to": 2586,
+      "direction": "w",
+      "from_grid": [
+        2,
+        1
+      ],
+      "to_grid": [
+        1,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2586,
+      "to": 2587,
+      "direction": "n",
+      "from_grid": [
+        1,
+        1
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2588,
+      "to": 2589,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        -1
+      ],
+      "to_grid": [
+        -3,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2589,
+      "to": 2590,
+      "direction": "s",
+      "from_grid": [
+        -3,
+        0
+      ],
+      "to_grid": [
+        -3,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2590,
+      "to": 2591,
+      "direction": "s",
+      "from_grid": [
+        -3,
+        1
+      ],
+      "to_grid": [
+        -3,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2591,
+      "to": 2592,
+      "direction": "e",
+      "from_grid": [
+        -3,
+        2
+      ],
+      "to_grid": [
+        -2,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2593,
+      "to": 2594,
+      "direction": "n",
+      "from_grid": [
+        1,
+        -4
+      ],
+      "to_grid": [
+        1,
+        -5
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2595,
+      "to": 2596,
+      "direction": "s",
+      "from_grid": [
+        3,
+        1
+      ],
+      "to_grid": [
+        3,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2596,
+      "to": 2597,
+      "direction": "w",
+      "from_grid": [
+        3,
+        2
+      ],
+      "to_grid": [
+        2,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2604,
+      "to": 2605,
+      "direction": "e",
+      "from_grid": [
+        0,
+        17
+      ],
+      "to_grid": [
+        1,
+        17
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2605,
+      "to": 2606,
+      "direction": "e",
+      "from_grid": [
+        1,
+        17
+      ],
+      "to_grid": [
+        2,
+        17
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2606,
+      "to": 2607,
+      "direction": "e",
+      "from_grid": [
+        2,
+        17
+      ],
+      "to_grid": [
+        3,
+        17
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2607,
+      "to": 2608,
+      "direction": "s",
+      "from_grid": [
+        3,
+        17
+      ],
+      "to_grid": [
+        3,
+        18
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2608,
+      "to": 2609,
+      "direction": "e",
+      "from_grid": [
+        3,
+        18
+      ],
+      "to_grid": [
+        4,
+        18
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2609,
+      "to": 2610,
+      "direction": "s",
+      "from_grid": [
+        4,
+        18
+      ],
+      "to_grid": [
+        4,
+        19
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2610,
+      "to": 2611,
+      "direction": "s",
+      "from_grid": [
+        4,
+        19
+      ],
+      "to_grid": [
+        4,
+        20
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2611,
+      "to": 2612,
+      "direction": "w",
+      "from_grid": [
+        4,
+        20
+      ],
+      "to_grid": [
+        3,
+        20
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2612,
+      "to": 2613,
+      "direction": "s",
+      "from_grid": [
+        3,
+        20
+      ],
+      "to_grid": [
+        3,
+        21
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2613,
+      "to": 2614,
+      "direction": "s",
+      "from_grid": [
+        3,
+        21
+      ],
+      "to_grid": [
+        3,
+        22
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3035,
+      "to": 3038,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": -2
+    },
+    {
+      "from": 3039,
+      "to": 3036,
+      "direction": "w",
+      "from_grid": [
+        0,
+        15
+      ],
+      "to_grid": [
+        -1,
+        15
+      ],
+      "floor": -1
+    }
+  ]
+}

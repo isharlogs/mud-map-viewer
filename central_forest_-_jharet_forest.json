@@ -1,0 +1,2002 @@
+{
+  "zone_name": "Central Forest - Jharet Forest",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": -4,
+    "max_x": 8,
+    "min_y": -5,
+    "max_y": 5
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1323,
+      "rooms": {
+        "3592": {
+          "vnum": 3592,
+          "name": "The Boar Track",
+          "description": "Hundreds of hoof prints indicate the presence of a group of boars. The bark of the trees have bristle hairs stuck onto them. Half eaten roots lie about in profusion.",
+          "grid_x": -2,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 3593,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "The Boar Track",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1338,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Tusker Turn",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3593": {
+          "vnum": 3593,
+          "name": "The Boar Track",
+          "description": "The ground is uneven and rutted. Offal covers the way, and a strong odor emanates from the soil. A few mushrooms lie half consumed by a nearby tree trunk.",
+          "grid_x": -2,
+          "grid_y": -3,
+          "exits": {
+            "n": {
+              "to_vnum": 3594,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "The Boar Track",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3592,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "The Boar Track",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3594": {
+          "vnum": 3594,
+          "name": "The Boar Track",
+          "description": "Hoof prints and piles of porcine patties are here in profusion. The smell of urine permeates the air. Small snuffling noises echo through the air.",
+          "grid_x": -2,
+          "grid_y": -4,
+          "exits": {
+            "n": {
+              "to_vnum": 3599,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Boar Bend",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3593,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "The Boar Track",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3595": {
+          "vnum": 3595,
+          "name": "Lupine Corner",
+          "description": "The markings of a wolf clan along the base of the trees, and the tell tale scent of male wolf musk, make this turn in the path a sign to all travelers to beware.",
+          "grid_x": 6,
+          "grid_y": 4,
+          "exits": {
+            "s": {
+              "to_vnum": 3596,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Wolf Hollow",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1334,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3596": {
+          "vnum": 3596,
+          "name": "Wolf Hollow",
+          "description": "A small hollow, lined with trees, shows the markings of a wolf clan. Trees that have spray stains and torn up moss indicate the possibility of wolves in this part of the forest.",
+          "grid_x": 6,
+          "grid_y": 5,
+          "exits": {
+            "e": {
+              "to_vnum": 3597,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Wolf Hollow",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3595,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Lupine Corner",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3597": {
+          "vnum": 3597,
+          "name": "Wolf Hollow",
+          "description": "The path runs through the bottom of a small hollow that has all the indications of wolves. Spoor and spray are scattered throughout the fringes of the trail.",
+          "grid_x": 7,
+          "grid_y": 5,
+          "exits": {
+            "e": {
+              "to_vnum": 3598,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Wolf Hollow",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3596,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Wolf Hollow",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3598": {
+          "vnum": 3598,
+          "name": "Wolf Hollow",
+          "description": "Numerous wolf tracks run along the side of the path. A series of skeletal remains are faintly visible in the underbrush at the base of the trees.",
+          "grid_x": 8,
+          "grid_y": 5,
+          "exits": {
+            "w": {
+              "to_vnum": 3597,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Wolf Hollow",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Wolf",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "3599": {
+          "vnum": 3599,
+          "name": "Boar Bend",
+          "description": "Huge ruts in the ground and prints show that a group of wild pigs have been here recently. Most of the vegetation is missing from around the base of the surrounding trees.",
+          "grid_x": -2,
+          "grid_y": -5,
+          "exits": {
+            "s": {
+              "to_vnum": 3594,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "The Boar Track",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2464": {
+          "vnum": 2464,
+          "name": "Forest Path",
+          "description": "Trees and more trees. The forest is impenetrable except along the narrow path that leads north and south. Acorns from the surrounding trees lay strewn across the overgrown footpath. You are riding atop a well-bred horse. A firefly goes south.",
+          "grid_x": 2,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 2465,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1776,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2465": {
+          "vnum": 2465,
+          "name": "Forest Path",
+          "description": "Thick growth along the path makes all movement off it impossible. A few great limbs hang over the path and seem to cradle the sky. You are riding atop a well-bred horse.",
+          "grid_x": 2,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 2466,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2464,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2466": {
+          "vnum": 2466,
+          "name": "Forest Path",
+          "description": "Acorns are spread along the path and show evidence of animal movement. A few pieces of barren ground poke out through the carpet of leaves and stare up to the sky. You are riding atop a well-bred horse.",
+          "grid_x": 2,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 2465,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2467,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2467": {
+          "vnum": 2467,
+          "name": "Forest Path",
+          "description": "Here along the path through Jharet, a great root reaches its fingers up into the air, its gnarled surface eerily alive, then arches and dives back into the fertile forest soil. *A graceful willow tree stands here, its trailing branches swaying gently.* You are riding atop a well-bred horse.",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "w": {
+              "to_vnum": 2468,
+              "to_zone": "Ancient Woods - East",
+              "to_room_name": "Covered Clearing",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2472": {
+          "vnum": 2472,
+          "name": "Forest Path",
+          "description": "Here along the path through Jharet, a great root reaches its fingers up into the air, its gnarled surface eerily alive, then arches and dives back into the fertile forest soil. You are riding atop a well-bred horse.",
+          "grid_x": 1,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 2466,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2473": {
+          "vnum": 2473,
+          "name": "Forest Path",
+          "description": "The dark, green cool settles down from the branches overhead. A multitude of interlaced branches make an impenetrable wall along the edges of the path, which splits here to venture east, south, and westward through the ancient forest of Jharet. *A graceful willow tree stands here, its trailing branches swaying gently.* You are riding atop a well-bred horse.",
+          "grid_x": 1,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 1332,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1330,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1323": {
+          "vnum": 1323,
+          "name": "In The Forest",
+          "description": "Tall trees loom over your head as the canopy of the forest attempts to climb to the sun. Small birds and playful squirrels cavort through the upper parts of these imperious trees. You are riding atop a well-bred horse.",
+          "grid_x": -4,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1324,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "In The Forest",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1322,
+              "to_zone": "Western Jharet Forest - Jharet Forest",
+              "to_room_name": "The Edge of the Forest",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Rabbit",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "1324": {
+          "vnum": 1324,
+          "name": "In The Forest",
+          "description": "A blending of oak and pine make this bit of forest a vibrant green with a myriad of tree shapes and sizes. Birds chirp merrily amongst the sheltering branches. A graceful willow tree stands here, its trailing branches swaying gently.",
+          "grid_x": -3,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1325,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "In The Forest",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1323,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "In The Forest",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1325": {
+          "vnum": 1325,
+          "name": "In The Forest",
+          "description": "Oak and pine trees blend together in harmonious union with their branches combining to make a ceiling of green. A multitude of forest dwelling animals crowd among the leaves. You are riding atop a well-bred horse.",
+          "grid_x": -2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1326,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "The Split Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1324,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "In The Forest",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Brigand",
+              "description": "He looks pretty scraggly with his patched jerkin and week-old beard.",
+              "unique": false
+            }
+          ]
+        },
+        "1326": {
+          "vnum": 1326,
+          "name": "The Split Path",
+          "description": "The trees seem to part here and a small path, that seems more like an animals track, heads off both north and south. There is abundant animal life all about the edges of this small trail, but the way east is blocked by dense, seemingly impassable growth. A graceful willow tree stands here, its trailing branches swaying gently.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 1336,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Leafy Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1327,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Leafy Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1325,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "In The Forest",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1327": {
+          "vnum": 1327,
+          "name": "Leafy Path",
+          "description": "Small trees fight for growth underneath the green canopy above. A few branches lie strewn about, and the moss and lichens are making a slow lunch of a fallen tree on the side of the way. You are riding atop a well-bred horse.",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 1326,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "The Split Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1328,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "The Sharp Turn",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Rabbit",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "1328": {
+          "vnum": 1328,
+          "name": "The Sharp Turn",
+          "description": "A sudden turn in the path makes travel difficult here. To the north, the path seems to be traversable, but to the east, the way seems less clear. A large tree bars your way south and west. You are riding atop a well-bred horse.",
+          "grid_x": -1,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 1329,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1327,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Leafy Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Brigand",
+              "description": "He looks pretty scraggly with his patched jerkin and week-old beard.",
+              "unique": false
+            },
+            {
+              "name": "Tree sprite",
+              "description": "Small and quick, she seems to blend into the folliage around her.  She has a mirthful grin that probably means you no good.",
+              "unique": false
+            }
+          ]
+        },
+        "1329": {
+          "vnum": 1329,
+          "name": "Forest Path",
+          "description": "Dark conifers line the edges of the path and needles make the ground a soft bed of decaying vegetation. Fungus and lichens cover the base of the trees and provide a varied surface on which countless insects make their abodes. You are riding atop a well-bred horse.",
+          "grid_x": 0,
+          "grid_y": 4,
+          "exits": {
+            "e": {
+              "to_vnum": 1330,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1328,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "The Sharp Turn",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Brigand",
+              "description": "He looks pretty scraggly with his patched jerkin and week-old beard.",
+              "unique": false
+            },
+            {
+              "name": "Lithe pixie",
+              "description": "",
+              "unique": false
+            },
+            {
+              "name": "Panath",
+              "description": "Hugely muscled, and clad in naught but breeches, Panath - Slayer of Wild Beasts - and self proclaimed master huntsman, stalks the forest in search of his next prey.  Who knows, it could be you.",
+              "unique": false
+            }
+          ]
+        },
+        "1330": {
+          "vnum": 1330,
+          "name": "Forest Path",
+          "description": "The darkness to the south and east indicate an impenetrable mass of trees. To the north and west, however, the path continues under the outspread limbs of the knotted pines. *A graceful willow tree stands here, its trailing branches swaying gently.* You are riding atop a well-bred horse.",
+          "grid_x": 1,
+          "grid_y": 4,
+          "exits": {
+            "n": {
+              "to_vnum": 1331,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1329,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Jharet nymph",
+              "description": "",
+              "unique": false
+            },
+            {
+              "name": "Tree sprite",
+              "description": "Small and quick, she seems to blend into the folliage around her.  She has a mirthful grin that probably means you no good.",
+              "unique": false
+            }
+          ]
+        },
+        "1331": {
+          "vnum": 1331,
+          "name": "Forest Path",
+          "description": "The dark, green cool settles down from the branches overhead. A multitude of interlaced branches make an impenetrable wall along the edges of the path, which splits here to venture east, south, and westward through the ancient forest of Jharet. A graceful willow tree stands here, its trailing branches swaying gently.",
+          "grid_x": 3,
+          "grid_y": 3,
+          "exits": {
+            "e": {
+              "to_vnum": 1332,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1330,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Firefly",
+              "description": "It's a happy little bug.",
+              "unique": false
+            }
+          ]
+        },
+        "1332": {
+          "vnum": 1332,
+          "name": "Forest Path",
+          "description": "Large trees loom above and create a ceiling of green. The forbidding, dense foliage seems impenetrable and it imparts an ethereal sense of stillness to Jharet. Worn footpaths meander through the ancient woods, which seem to go on endlessly.",
+          "grid_x": 4,
+          "grid_y": 3,
+          "exits": {
+            "s": {
+              "to_vnum": 1333,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1331,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Firefly",
+              "description": "It's a happy little bug.",
+              "unique": false
+            },
+            {
+              "name": "Tree sprite",
+              "description": "Small and quick, she seems to blend into the folliage around her.  She has a mirthful grin that probably means you no good.",
+              "unique": false
+            }
+          ]
+        },
+        "1333": {
+          "vnum": 1333,
+          "name": "Forest Path",
+          "description": "The smell of growth and decay permeate the air with a scent as deep as the forest itself. Branches creak and groan as the wind shifts them slowly against each other. The path leads north and east with a small clearing to the south.",
+          "grid_x": 4,
+          "grid_y": 4,
+          "exits": {
+            "e": {
+              "to_vnum": 1334,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1332,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1335,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Small Clearing",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Jharet imp",
+              "description": "",
+              "unique": true
+            },
+            {
+              "name": "Rabbit",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "1334": {
+          "vnum": 1334,
+          "name": "Forest Path",
+          "description": "The forest almost seems alive as the trees combine together in an almost imperceptible sway. Occasional birds burst forth into the air and flutter from one tree to another. A graceful willow tree stands here, its trailing branches swaying gently.",
+          "grid_x": 5,
+          "grid_y": 4,
+          "exits": {
+            "e": {
+              "to_vnum": 3595,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Lupine Corner",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1333,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1335": {
+          "vnum": 1335,
+          "name": "Small Clearing",
+          "description": "A mouldering skeleton lies pinned to a tree with an arrow through its ribcage. Tatters of cloth wave slowly in the breeze, and the sound of locusts fills the air with a rich hum. A butterfly alights on the skull, completing the mood of peaceful serenity here.",
+          "grid_x": 4,
+          "grid_y": 5,
+          "exits": {
+            "n": {
+              "to_vnum": 1333,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Dappled unicorn",
+              "description": "fearless eyes and calmly noses around the leaves for some more moss.",
+              "unique": true
+            }
+          ]
+        },
+        "1336": {
+          "vnum": 1336,
+          "name": "Leafy Path",
+          "description": "A cluster of mushrooms glows with an eerie red light, pulsing faintly.",
+          "grid_x": -1,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 1337,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Leafy Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1326,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "The Split Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1338,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Tusker Turn",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Brigand",
+              "description": "He looks pretty scraggly with his patched jerkin and week-old beard.",
+              "unique": false
+            },
+            {
+              "name": "Lithe pixie",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "1337": {
+          "vnum": 1337,
+          "name": "Leafy Path",
+          "description": "Piles of leaves make passage here a noisy proposition. Branches and twigs strewn upon the ground add to the cacophony of forest noise. A large crow sits aloft the branch of an old oak to the side of the path. You are riding atop a well-bred horse.",
+          "grid_x": -1,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 1339,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Conifer Curve",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1336,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Leafy Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Brigand",
+              "description": "He looks pretty scraggly with his patched jerkin and week-old beard.",
+              "unique": false
+            }
+          ]
+        },
+        "1338": {
+          "vnum": 1338,
+          "name": "Tusker Turn",
+          "description": "Cloven hoof marks have scored the ground here. Tusk marks are scored deep into the bark of the trees that make this turn. Deep ruts are in evidence everywhere.",
+          "grid_x": -2,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 1336,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Leafy Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3592,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "The Boar Track",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1340,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "The Warren",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Jharet nymph",
+              "description": "",
+              "unique": false
+            },
+            {
+              "name": "Panath",
+              "description": "Hugely muscled, and clad in naught but breeches, Panath - Slayer of Wild Beasts - and self proclaimed master huntsman, stalks the forest in search of his next prey.  Who knows, it could be you.",
+              "unique": false
+            }
+          ]
+        },
+        "1339": {
+          "vnum": 1339,
+          "name": "Conifer Curve",
+          "description": "One large pine tree stands here with branches spread. The dense needles make the path veer to the west and stop travel to the north. The path continues to the south. You are riding atop a well-bred horse.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "s": {
+              "to_vnum": 1341,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1337,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Leafy Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Deer",
+              "description": "away at the first hint of danger.",
+              "unique": false
+            }
+          ]
+        },
+        "1340": {
+          "vnum": 1340,
+          "name": "The Warren",
+          "description": "The most southern edge of the warren has the tell tale signs of marked territory. Rabbit droppings are scattered about in symbolic designs near the edges of the path.",
+          "grid_x": -3,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 1338,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Tusker Turn",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1341": {
+          "vnum": 1341,
+          "name": "Forest Path",
+          "description": "A copse of trees almost obscure the small path that leads through the forest. A few birds chirp and dance among the leaves. *A graceful willow tree stands here, its trailing branches swaying gently.* You are riding atop a well-bred horse.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 1339,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Conifer Curve",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1342,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1342": {
+          "vnum": 1342,
+          "name": "Forest Path",
+          "description": "Many branches reach down and interlock in a graceful design. The interwoven leaves almost give the appearance of an arched ceiling. To the east, you see a small cabin. You are riding atop a well-bred horse.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2760,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Finwald Forester`s Cabin",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1341,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1343,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1341,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1343": {
+          "vnum": 1343,
+          "name": "Forest Path",
+          "description": "The path winds north and south. However, travel to the other directions is cut off by the entangled limbs of the trees along the path. You are riding atop a well-bred horse.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 1342,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1344,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1344": {
+          "vnum": 1344,
+          "name": "Forest Path",
+          "description": "The path extends among the trees to the north and to the south. A slight breeze wafts among the trees. A graceful willow tree stands here, its trailing branches swaying gently.",
+          "grid_x": 0,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 1343,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1345,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1345": {
+          "vnum": 1345,
+          "name": "Forest Path",
+          "description": "The trail leads only north and east. An enormous tree stands here blocking the way west. You are riding atop a well-bred horse.",
+          "grid_x": 0,
+          "grid_y": 3,
+          "exits": {
+            "e": {
+              "to_vnum": 1346,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1344,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1346": {
+          "vnum": 1346,
+          "name": "Forest Path",
+          "description": "A small tree leans out into the path trying to gather any sunlight or water it can. A nest is nestled in a bough near its trunk. You are riding atop a well-bred horse.",
+          "grid_x": 1,
+          "grid_y": 3,
+          "exits": {
+            "e": {
+              "to_vnum": 1347,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1345,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1347": {
+          "vnum": 1347,
+          "name": "Forest Path",
+          "description": "Great trees line the path that runs along the forest floor. Leaves are scattered on the forest floor and tiny creatures snack on the decaying matter. A small, almost hidden path leads south. You are riding atop a well-bred horse.",
+          "grid_x": 2,
+          "grid_y": 3,
+          "exits": {
+            "n": {
+              "to_vnum": 1776,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1348,
+              "to_zone": "Bruenor's Canyon",
+              "to_room_name": "Forest Path",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1346,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2760": {
+          "vnum": 2760,
+          "name": "Finwald Forester`s Cabin",
+          "description": "This is definitely the cabin of a forester. Axes of all sizes hang from the walls along with many different hunting implements. The head of a great stag deer is mounted above a meager fire place. The skull of a bear sits with mouth agape on the mantle.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 1342,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Finwald the Forester",
+              "description": "Hale and hearty, Finwald exemplifies all the things Sierra Club members would like to be.  All the way down to the axe with which to chop those",
+              "unique": true
+            },
+            {
+              "name": "Nederic Nedaris",
+              "description": "favor.  He looks around huffily for someone with whom to share his",
+              "unique": false
+            },
+            {
+              "name": "Panath",
+              "description": "Hugely muscled, and clad in naught but breeches, Panath - Slayer of Wild Beasts - and self proclaimed master huntsman, stalks the forest in search of his next prey.  Who knows, it could be you.",
+              "unique": false
+            },
+            {
+              "name": "Vaelis Thirien",
+              "description": "This haughty elf dressed in Evermore noble garb carries an air of confidence about him. He is determined to convey the will of King Eldraen with little sympathy for the challenges of his opponent's position.",
+              "unique": true
+            }
+          ]
+        },
+        "1776": {
+          "vnum": 1776,
+          "name": "Forest Path",
+          "description": "There seems to be a break in the forest, and a small path runs to the east. The path also continues to the south and north amongst the trees. You are riding atop a well-bred horse.",
+          "grid_x": 2,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 1777,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2464,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1347,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Brigand",
+              "description": "He looks pretty scraggly with his patched jerkin and week-old beard.",
+              "unique": false
+            },
+            {
+              "name": "Deer",
+              "description": "away at the first hint of danger.",
+              "unique": false
+            },
+            {
+              "name": "Quest knight",
+              "description": "a very courtly bearing, a pure heart, and is equipped like a noble.",
+              "unique": true
+            }
+          ]
+        },
+        "1777": {
+          "vnum": 1777,
+          "name": "Forest Path",
+          "description": "The forest looks different here. The growth is extreme, and a presence exudes from the trees. The path runs east and west. The sound of water can be heard from deep within the woods. You have lost 32 experience.",
+          "grid_x": 3,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 1778,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1776,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1778": {
+          "vnum": 1778,
+          "name": "Forest Path",
+          "description": "The trees are dark and foreboding. Their bark is smooth and seem to have some indescribable quality.",
+          "grid_x": 4,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 1779,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1777,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1779": {
+          "vnum": 1779,
+          "name": "Forest Path",
+          "description": "There are no sounds here, only eerie silence. The trees seem to suck up all noise. The trees almost leer down at the path with disgust.",
+          "grid_x": 5,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 1780,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1778,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1780": {
+          "vnum": 1780,
+          "name": "Forest Path",
+          "description": "A terrible silence screams out to the forest. No animals make noise here, enormous knot at the base of a colossal tree.",
+          "grid_x": 6,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 1781,
+              "to_zone": "Rafalby's Laboratory - Jharet Forest",
+              "to_room_name": "Deep Within the Roots",
+              "direction": "n",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1779,
+              "to_zone": "Central Forest - Jharet Forest",
+              "to_room_name": "Forest Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -4,
+        "max_x": 8,
+        "min_y": -5,
+        "max_y": 5,
+        "room_count": 45
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1323,
+      "to": 1324,
+      "direction": "e",
+      "from_grid": [
+        -4,
+        0
+      ],
+      "to_grid": [
+        -3,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1324,
+      "to": 1325,
+      "direction": "e",
+      "from_grid": [
+        -3,
+        0
+      ],
+      "to_grid": [
+        -2,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1325,
+      "to": 1326,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1326,
+      "to": 1336,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -1,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1326,
+      "to": 1327,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1327,
+      "to": 1328,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        -1,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1328,
+      "to": 1329,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        2
+      ],
+      "to_grid": [
+        0,
+        4
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1329,
+      "to": 1330,
+      "direction": "e",
+      "from_grid": [
+        0,
+        4
+      ],
+      "to_grid": [
+        1,
+        4
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1330,
+      "to": 1331,
+      "direction": "n",
+      "from_grid": [
+        1,
+        4
+      ],
+      "to_grid": [
+        3,
+        3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1331,
+      "to": 1332,
+      "direction": "e",
+      "from_grid": [
+        3,
+        3
+      ],
+      "to_grid": [
+        4,
+        3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1332,
+      "to": 1333,
+      "direction": "s",
+      "from_grid": [
+        4,
+        3
+      ],
+      "to_grid": [
+        4,
+        4
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1333,
+      "to": 1334,
+      "direction": "e",
+      "from_grid": [
+        4,
+        4
+      ],
+      "to_grid": [
+        5,
+        4
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1333,
+      "to": 1335,
+      "direction": "s",
+      "from_grid": [
+        4,
+        4
+      ],
+      "to_grid": [
+        4,
+        5
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1334,
+      "to": 3595,
+      "direction": "e",
+      "from_grid": [
+        5,
+        4
+      ],
+      "to_grid": [
+        6,
+        4
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1336,
+      "to": 1337,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        -1
+      ],
+      "to_grid": [
+        -1,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1336,
+      "to": 1338,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        -1
+      ],
+      "to_grid": [
+        -2,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1337,
+      "to": 1339,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1338,
+      "to": 3592,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        -1
+      ],
+      "to_grid": [
+        -2,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1338,
+      "to": 1340,
+      "direction": "w",
+      "from_grid": [
+        -2,
+        -1
+      ],
+      "to_grid": [
+        -3,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1339,
+      "to": 1341,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1341,
+      "to": 1342,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1342,
+      "to": 2760,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1342,
+      "to": 1343,
+      "direction": "s",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1343,
+      "to": 1344,
+      "direction": "s",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1344,
+      "to": 1345,
+      "direction": "s",
+      "from_grid": [
+        0,
+        2
+      ],
+      "to_grid": [
+        0,
+        3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1345,
+      "to": 1346,
+      "direction": "e",
+      "from_grid": [
+        0,
+        3
+      ],
+      "to_grid": [
+        1,
+        3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1346,
+      "to": 1347,
+      "direction": "e",
+      "from_grid": [
+        1,
+        3
+      ],
+      "to_grid": [
+        2,
+        3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1347,
+      "to": 1776,
+      "direction": "n",
+      "from_grid": [
+        2,
+        3
+      ],
+      "to_grid": [
+        2,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1776,
+      "to": 1777,
+      "direction": "e",
+      "from_grid": [
+        2,
+        2
+      ],
+      "to_grid": [
+        3,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1776,
+      "to": 2464,
+      "direction": "n",
+      "from_grid": [
+        2,
+        2
+      ],
+      "to_grid": [
+        2,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1777,
+      "to": 1778,
+      "direction": "e",
+      "from_grid": [
+        3,
+        2
+      ],
+      "to_grid": [
+        4,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1778,
+      "to": 1779,
+      "direction": "e",
+      "from_grid": [
+        4,
+        2
+      ],
+      "to_grid": [
+        5,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1779,
+      "to": 1780,
+      "direction": "e",
+      "from_grid": [
+        5,
+        2
+      ],
+      "to_grid": [
+        6,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2464,
+      "to": 2465,
+      "direction": "n",
+      "from_grid": [
+        2,
+        1
+      ],
+      "to_grid": [
+        2,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2465,
+      "to": 2466,
+      "direction": "n",
+      "from_grid": [
+        2,
+        0
+      ],
+      "to_grid": [
+        2,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2466,
+      "to": 2467,
+      "direction": "w",
+      "from_grid": [
+        2,
+        -1
+      ],
+      "to_grid": [
+        1,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2472,
+      "to": 2466,
+      "direction": "e",
+      "from_grid": [
+        1,
+        -2
+      ],
+      "to_grid": [
+        2,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2473,
+      "to": 1332,
+      "direction": "e",
+      "from_grid": [
+        1,
+        2
+      ],
+      "to_grid": [
+        4,
+        3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2473,
+      "to": 1330,
+      "direction": "s",
+      "from_grid": [
+        1,
+        2
+      ],
+      "to_grid": [
+        1,
+        4
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3592,
+      "to": 3593,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        -2
+      ],
+      "to_grid": [
+        -2,
+        -3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3593,
+      "to": 3594,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        -3
+      ],
+      "to_grid": [
+        -2,
+        -4
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3594,
+      "to": 3599,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        -4
+      ],
+      "to_grid": [
+        -2,
+        -5
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3595,
+      "to": 3596,
+      "direction": "s",
+      "from_grid": [
+        6,
+        4
+      ],
+      "to_grid": [
+        6,
+        5
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3596,
+      "to": 3597,
+      "direction": "e",
+      "from_grid": [
+        6,
+        5
+      ],
+      "to_grid": [
+        7,
+        5
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3597,
+      "to": 3598,
+      "direction": "e",
+      "from_grid": [
+        7,
+        5
+      ],
+      "to_grid": [
+        8,
+        5
+      ],
+      "floor": 0
+    }
+  ]
+}

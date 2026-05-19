@@ -1,0 +1,2095 @@
+{
+  "zone_name": "Tynum Bar",
+  "floor_count": 2,
+  "bounds": {
+    "min_x": -4,
+    "max_x": 7,
+    "min_y": -2,
+    "max_y": 22
+  },
+  "floors": {
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 3273,
+      "rooms": {
+        "3273": {
+          "vnum": 3273,
+          "name": "Under the Altar",
+          "description": "The air is dank and stale in this small chamber. A set of stone stairs climb up into darkness and a narrow hallway is to your north. From somewhere you hear water dripping.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 3274,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Tunnel Intersection",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 3272,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "By the Temple Altar",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "3274": {
+          "vnum": 3274,
+          "name": "Tunnel Intersection",
+          "description": "You stand at a tunnel intersection. To the south, east and west tunnels lead off into darkness. Immediately to your north is a large, ornate door.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3279,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "East Tunnel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3277,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Cleric`s Quarters",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3273,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Under the Altar",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3275,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Dim Tunnel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Temple guard",
+              "description": "He looks like a strong, fit guard and has the look of one who has been",
+              "unique": false
+            }
+          ]
+        },
+        "3275": {
+          "vnum": 3275,
+          "name": "Dim Tunnel",
+          "description": "The torches are fewer here though there is still adequate light to see by. The walls here are unadorned and damp to the touch. Tunnels lead off to the north and east.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3274,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Tunnel Intersection",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3276,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "North End of Dim Tunnel",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3276": {
+          "vnum": 3276,
+          "name": "North End of Dim Tunnel",
+          "description": "The tunnel comes to an end here. You can see brightly lit chambers to your north and to your west. The tunnel extends to the south.",
+          "grid_x": -1,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 3275,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Dim Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Temple guard",
+              "description": "He looks like a strong, fit guard and has the look of one who has been",
+              "unique": false
+            }
+          ]
+        },
+        "3277": {
+          "vnum": 3277,
+          "name": "Cleric`s Quarters",
+          "description": "This chamber, though austere, is spacious and comfortable. There are beds against the east and west walls and a large chest of drawers against the north wall. There are rugs on the floor and murals decorating the walls.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 3274,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Tunnel Intersection",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Temple priest",
+              "description": "of his station and smells faintly of garlic.",
+              "unique": true
+            }
+          ]
+        },
+        "3278": {
+          "vnum": 3278,
+          "name": "Guards Quarters",
+          "description": "Everything here is neat and tidy; a testament to the discipline of the temple guards. There are several beds lined up against one wall, a small table in the corner and a chest of drawers opposite the beds.",
+          "grid_x": -1,
+          "grid_y": -2,
+          "exits": {
+            "s": {
+              "to_vnum": 3276,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "North End of Dim Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3279": {
+          "vnum": 3279,
+          "name": "East Tunnel",
+          "description": "The air is damp and musty here and feels heavy in your lungs. You can see moisture glistening on the tunnel walls. The purpose of this passage is unclear as it doesn't seem to go anywhere.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 3280,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Secret Chamber",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3274,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Tunnel Intersection",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3280": {
+          "vnum": 3280,
+          "name": "Secret Chamber",
+          "description": "This chamber is entirely featureless with the exception of the door to the south and a very formidable door to the north.",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 3281,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Inside the Vault",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3279,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "East Tunnel",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3281": {
+          "vnum": 3281,
+          "name": "Inside the Vault",
+          "description": "This is the place where the Priests of Tynum Bar have been storing away their riches. The walls are composed of some hard substance which is not stone and isn't metal either.",
+          "grid_x": 1,
+          "grid_y": -2,
+          "exits": {
+            "s": {
+              "to_vnum": 3280,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Secret Chamber",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Guardian demon",
+              "description": "noticeable features of the guardian demon.  His eyes are fixed on yours.",
+              "unique": false
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 1,
+        "min_y": -2,
+        "max_y": 1,
+        "room_count": 9
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1618,
+      "rooms": {
+        "3282": {
+          "vnum": 3282,
+          "name": "South Palace Way",
+          "description": "You stand at the western end of South Palace Way. You can see mountains to the south but the intervening terrain will not allow you to go that way. A square is to your north.",
+          "grid_x": 4,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 3292,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "South Palace Way",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3270,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Temple Square",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3287": {
+          "vnum": 3287,
+          "name": "Smithy",
+          "description": "The heat of the forge has warmed this room to an uncomfortable degree. Bars of iron, copper and unidentifiable alloys are stacked in neat piles. A barrel of groat shoes sits in one corner and a workbench holding some of the work in progress is against the east wall.",
+          "grid_x": 0,
+          "grid_y": 3,
+          "exits": {
+            "n": {
+              "to_vnum": 3286,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Rombard Road",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Treegol the Smith",
+              "description": "breaks chains for sport in a tavern somewhere.",
+              "unique": true
+            }
+          ]
+        },
+        "1619": {
+          "vnum": 1619,
+          "name": "Small Valley",
+          "description": "You have entered a small, bowl shaped valley. High Mountains surround you on all sides except the north where a small canyon mouth gapes, and the east where a gradual slope climbs to what looks to be a plateau.",
+          "grid_x": -4,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1620,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Plateau",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3288": {
+          "vnum": 3288,
+          "name": "South End of Western Avenue",
+          "description": "Western Avenue proper terminates here but the path south continues into a narrow alley. The high wall to your west marches off to the north and south. Another road heads off to the east here.",
+          "grid_x": -1,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 3286,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Rombard Road",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3289,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Narrow Alley",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3290": {
+          "vnum": 3290,
+          "name": "The Groat Pens",
+          "description": "The ground is torn and rutted from the trampling of the huge beasts, which serve as both saddle and draft animals to the warriors of Tynum Bar. The walls of rock form a natural corral which is broken by doorways to the north and east, and by a gate to the west.",
+          "grid_x": -1,
+          "grid_y": 4,
+          "exits": {
+            "e": {
+              "to_vnum": 3291,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Hostler`s Shop",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3289,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Narrow Alley",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Vicious groat",
+              "description": "are the most salient qualities of these animals.  They always see to be in",
+              "unique": true
+            }
+          ]
+        },
+        "3292": {
+          "vnum": 3292,
+          "name": "South Palace Way",
+          "description": "You are half way between the east and west ends of South Palace Way. To A featureless expanse of building prevents travel to the north. To your south you see a small house.",
+          "grid_x": 5,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 3294,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "South Palace Way",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3294": {
+          "vnum": 3294,
+          "name": "South Palace Way",
+          "description": "You are at the eastern end of South Palace Way. The street heads off to the west. To your east are formal gardens hidden behind a high stone wall. A large square is to the north.",
+          "grid_x": 7,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 3295,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Palace Square",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3264": {
+          "vnum": 3264,
+          "name": "A Side Street",
+          "description": "This little street runs from the Square of Heros on the north to Procession Path on the south. A large hillock of ice prevents travel to the west and the terrain to the east is too rough and uneven to allow passage.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 1624,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Plaza of Heroes",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3265": {
+          "vnum": 3265,
+          "name": "Lancing Lane",
+          "description": "This is a fairly hum drum little street. It leads to the Plaza of Heros on the west and continues to the east.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3266,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Lancing Lane",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3266": {
+          "vnum": 3266,
+          "name": "Lancing Lane",
+          "description": "This is the eastern end of Lancing Lane. To the west you can see the lane running all the way to a distant plaza. Tynum Bar Blvd. is immediately to the south.",
+          "grid_x": 2,
+          "grid_y": 0,
+          "exits": {
+            "s": {
+              "to_vnum": 3267,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Procession Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3267": {
+          "vnum": 3267,
+          "name": "Procession Path",
+          "description": "This is an intersection of Procession Path, Lancing Lane on the north and Rombard Way on the south. To the east you can see a large, festive square. Procession Path continues to the west.",
+          "grid_x": 2,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 3269,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Procession Square",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3268,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Rombard Road",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3268": {
+          "vnum": 3268,
+          "name": "Rombard Road",
+          "description": "This is the far east extremity of Rombard Road. To the north you see Procession Path making its way from east to west. To your south is a large, drab looking building. The road continues west.",
+          "grid_x": 2,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 3267,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Procession Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3284,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Arms Academy",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3285,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Rombard Road",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3269": {
+          "vnum": 3269,
+          "name": "Procession Square",
+          "description": "This large square is the staging area for royal processions westward to the gate. It also serves as the conclusion of returning soldiers' victory march through the streets following a successful campaign. Temple square is to the east.",
+          "grid_x": 3,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 3270,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Temple Square",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3283,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Slave Chamber",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3267,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Procession Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3270": {
+          "vnum": 3270,
+          "name": "Temple Square",
+          "description": "You have come to a large square with exits in all four directions. To the east is a large, formidable looking pile with a large arched doorway. Roads lead off to the north, south and west.",
+          "grid_x": 4,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 3271,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Temple of Tynum Bar",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3282,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "South Palace Way",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3269,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Procession Square",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3271": {
+          "vnum": 3271,
+          "name": "Temple of Tynum Bar",
+          "description": "The temple is a small amphitheater with many benches all facing toward a large stage to the east. In the center of the stage is a large altar.",
+          "grid_x": 5,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 3272,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "By the Temple Altar",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3270,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Temple Square",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3272": {
+          "vnum": 3272,
+          "name": "By the Temple Altar",
+          "description": "Though there are many grand mosaics on the walls and many curious artifacts here, it is the altar that immediately grabs your attention. Not that it is particularly grand, but rather because of all the rusty, brown stains all over it; LOTS of them.",
+          "grid_x": 6,
+          "grid_y": 1,
+          "exits": {
+            "w": {
+              "to_vnum": 3271,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Temple of Tynum Bar",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 3273,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Under the Altar",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Temple acolyte",
+              "description": "He is dressed in the gray and green robes of his office.  His current task is to keep the stage nice and tidy; it doesn't look as if he has",
+              "unique": true
+            }
+          ]
+        },
+        "1618": {
+          "vnum": 1618,
+          "name": "Narrow Canyon",
+          "description": "Your footsteps strike a hollow, lonely cadence in this dim narrow crack. The walls press in on you as if they were about to slam together and spread you very thinly indeed. There is are openings to the north and south. A windswept herb clings to the exposed ridge, its leaves crackling with static.",
+          "grid_x": -4,
+          "grid_y": 0,
+          "exits": {
+            "s": {
+              "to_vnum": 1619,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Small Valley",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3283": {
+          "vnum": 3283,
+          "name": "Slave Chamber",
+          "description": "Straw ticks are the only furnishings in this miserable little place. The walls are of unfinished wood as is the floor. The air smells of urine and and quiet desperation.",
+          "grid_x": 3,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 3269,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Procession Square",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Slave",
+              "description": "beaten a few too many times; who has been broken by the lash.",
+              "unique": true
+            }
+          ]
+        },
+        "3284": {
+          "vnum": 3284,
+          "name": "Arms Academy",
+          "description": "This place bears all the trappings of a warrior's academy. Depictions of proper fighting stances cover the walls, tumbling mats are on the floor and some charts showing strategic troop placement are tacked to a board in a corner.",
+          "grid_x": 2,
+          "grid_y": 3,
+          "exits": {
+            "n": {
+              "to_vnum": 3268,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Rombard Road",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Kremdon the Weaponsmaster",
+              "description": "does it WELL.",
+              "unique": true
+            },
+            {
+              "name": "Student of kremdon",
+              "description": "He looks mighty serious about his subject and I dont think he likes",
+              "unique": true
+            }
+          ]
+        },
+        "1621": {
+          "vnum": 1621,
+          "name": "Inside the Gates of Tynum Bar",
+          "description": "You are at a crossing of ways. To the north and south you see Western Avenue extending into the distance. Another main thoroughfare heads east and to the west is the great outdoors.",
+          "grid_x": -2,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1622,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Western Avenue",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Frost hound",
+              "description": "the loyal friend and companion of its master.  It growls as its eyes bore",
+              "unique": true
+            },
+            {
+              "name": "warrior of Tynum Bar",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "1620": {
+          "vnum": 1620,
+          "name": "Plateau",
+          "description": "",
+          "grid_x": -3,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1621,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Inside the Gates of Tynum Bar",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Gateguard",
+              "description": "seriously.",
+              "unique": true
+            }
+          ]
+        },
+        "1623": {
+          "vnum": 1623,
+          "name": "North End of Western Avenue",
+          "description": "Western Avenue ends its northerly progress here and you can see it extending to the south. There is a small plaza directly to the east.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1624,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Plaza of Heroes",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1624": {
+          "vnum": 1624,
+          "name": "Plaza of Heroes",
+          "description": "The main feature of this plaza is a crude statue depicting a ferocious battle waged between two warriors. There is a bench before the statue suggesting that someone might actually want to sit on it and look at the hideous thing. The entrance to a small building is to the north.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3265,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Lancing Lane",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1625,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Small Foyer",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3264,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "A Side Street",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3289": {
+          "vnum": 3289,
+          "name": "Narrow Alley",
+          "description": "You have entered a narrow alley formed between buildings to your east and the wall along Western Avenue to your west. A breeze blows from the south and it carries the scent of livestock. The south end of Western Avenue is to your north.",
+          "grid_x": -1,
+          "grid_y": 3,
+          "exits": {
+            "n": {
+              "to_vnum": 3288,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "South End of Western Avenue",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3290,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "The Groat Pens",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3285": {
+          "vnum": 3285,
+          "name": "Rombard Road",
+          "description": "You have traversed roughly half the length of Rombard Road. In the distance to the north, you can see a wide road that appears to run from east to west. The smell of coal smoke and penned animals comes to you on a wind from the southwest.",
+          "grid_x": 1,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 3268,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Rombard Road",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3286,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Rombard Road",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3291": {
+          "vnum": 3291,
+          "name": "Hostler`s Shop",
+          "description": "Saddles, bridles and various other pieces of tack and harness fill racks and shelves in this room. To the west is the groat pens.",
+          "grid_x": 0,
+          "grid_y": 4,
+          "exits": {
+            "w": {
+              "to_vnum": 3290,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "The Groat Pens",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Hostler",
+              "description": "He seems rather unexcitable, probably a good thing since he works with",
+              "unique": true
+            }
+          ]
+        },
+        "3286": {
+          "vnum": 3286,
+          "name": "Rombard Road",
+          "description": "You can see Rombard Road's entire length marching away to the east from this vantage at its' western end. There a a small, blocky building directly to your south from the open door of which you feel a hot, dry rush of air. You can see Western Avenue directly to your west.",
+          "grid_x": 0,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 3285,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Rombard Road",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3287,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Smithy",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3288,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "South End of Western Avenue",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3293": {
+          "vnum": 3293,
+          "name": "Karvak`s Home",
+          "description": "",
+          "grid_x": 5,
+          "grid_y": 3,
+          "exits": {
+            "n": {
+              "to_vnum": 3292,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "South Palace Way",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Lieutenant Karvak",
+              "description": "nature of Lieutenant Karvak.  He looks tough and capable.",
+              "unique": true
+            }
+          ]
+        },
+        "1625": {
+          "vnum": 1625,
+          "name": "Small Foyer",
+          "description": "This is a small, square room. There is a picture on the north wall and a small writing desk against the west wall. A curtained doorway leads to the east.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 1626,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Womens Quarters",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1624,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Plaza of Heroes",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3295": {
+          "vnum": 3295,
+          "name": "Palace Square",
+          "description": "You find yourself in a large square. To the west you can see what appears to be a large temple beyond an intervening stone wall. To the east is the entrance to what is undoubtedly a palace. Streets lead off to the north and south.",
+          "grid_x": 7,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 3296,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "North Palace Way",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3296": {
+          "vnum": 3296,
+          "name": "North Palace Way",
+          "description": "The road turns south here to enter a town square. To the east, the palace grounds are separated from the outside world by a high stone wall. North Palace way extends off to the west.",
+          "grid_x": 7,
+          "grid_y": 0,
+          "exits": {
+            "s": {
+              "to_vnum": 3295,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Palace Square",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3297,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "North Palace Way",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3297": {
+          "vnum": 3297,
+          "name": "North Palace Way",
+          "description": "The road extends east and west from here. To the north is a small house.",
+          "grid_x": 6,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3296,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "North Palace Way",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3298,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Kolvak`s Home",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3298": {
+          "vnum": 3298,
+          "name": "Kolvak`s Home",
+          "description": "",
+          "grid_x": 6,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 3297,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "North Palace Way",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Lieutenant Kolvak",
+              "description": "it should be.  His face bears a look of vacuous cruelty.",
+              "unique": true
+            }
+          ]
+        },
+        "3299": {
+          "vnum": 3299,
+          "name": "Antechamber",
+          "description": "This small chamber is lavishly decorated with plush carpets and rich tapestries. There is a heavy looking, intricately carved bronze door set in to the west wall and a doorway to the east.",
+          "grid_x": -1,
+          "grid_y": 20,
+          "exits": {
+            "e": {
+              "to_vnum": 3300,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Foyer",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3300": {
+          "vnum": 3300,
+          "name": "Foyer",
+          "description": "This is obviously the entrance foyer to the apartments of someone of great importance. Sounds are muted by thick carpets and wall hangings of richness and great beauty. There is a door to the north and doorways leading to the south and east.",
+          "grid_x": 0,
+          "grid_y": 20,
+          "exits": {
+            "e": {
+              "to_vnum": 3303,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Audience Chamber",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3303,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Audience Chamber",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3302,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Sitting Room",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Maldor`s secretary",
+              "description": "out in front to screen out pests.  Think it will work on you?",
+              "unique": true
+            }
+          ]
+        },
+        "3301": {
+          "vnum": 3301,
+          "name": "Guard room",
+          "description": "This room is small, square and utterly functional. None of the opulence of the outer apartments have intruded here. Everything is scrupulously clean and tidy. The floor and walls are clean, smoothed stone.",
+          "grid_x": 0,
+          "grid_y": 19,
+          "exits": {
+            "s": {
+              "to_vnum": 3300,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Foyer",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "King`s bodyguard",
+              "description": "is a lot more trouble to kill than it is worth.  His quiet confidence strikes you as being the attitude of a man who knows what he can do.",
+              "unique": true
+            }
+          ]
+        },
+        "3302": {
+          "vnum": 3302,
+          "name": "Sitting Room",
+          "description": "A rather nice and functional sitting room. Low divans are against the walls and there is a large table and chairs in the center of the room. The east wall is dominated by a large brick fireplace.",
+          "grid_x": 0,
+          "grid_y": 21,
+          "exits": {
+            "n": {
+              "to_vnum": 3300,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Foyer",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Courier",
+              "description": "one who has been in many dangerious situations.  He impatiently awaits",
+              "unique": true
+            }
+          ]
+        },
+        "3303": {
+          "vnum": 3303,
+          "name": "Audience Chamber",
+          "description": "This large chamber is where Maldor, King of Tynum Bar, holds court. The rich trappings of royalty surround you and leave you breathless. A huge gold inlaid, marble throne dominates the north end of the room. Thickly padded chairs provide capacity for large numbers of onlookers but (fortunately for you) they are empty right now.",
+          "grid_x": 1,
+          "grid_y": 20,
+          "exits": {
+            "s": {
+              "to_vnum": 3304,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Hallway",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3300,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Foyer",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Dragonet",
+              "description": "graceful and its talons sharp.  It looks like miniature dragon.",
+              "unique": true
+            },
+            {
+              "name": "King Maldor",
+              "description": "sharp, cruel features and burning eyes are offset by a wide, moist mouth. He touches his tongue to his lips and smiles.",
+              "unique": true
+            },
+            {
+              "name": "Rumpkin",
+              "description": "When your glances lock his eyes slide away.",
+              "unique": true
+            }
+          ]
+        },
+        "3304": {
+          "vnum": 3304,
+          "name": "Hallway",
+          "description": "A tightly woven and colorful runner marches away to the north and south. To the north you can see the audience chamber and to the south you can see that the hallway continues to terminate at two doorways.",
+          "grid_x": 1,
+          "grid_y": 21,
+          "exits": {
+            "s": {
+              "to_vnum": 3305,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Hallway Terminus",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3305": {
+          "vnum": 3305,
+          "name": "Hallway Terminus",
+          "description": "This hallway extends to the north. To the south is what appears to be a store room. The room to the east looks to be an office.",
+          "grid_x": 1,
+          "grid_y": 22,
+          "exits": {
+            "e": {
+              "to_vnum": 3306,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Maldor`s Office",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3306": {
+          "vnum": 3306,
+          "name": "Maldor`s Office",
+          "description": "The dominant feature of this room is the large, cluttered desk occupying its center. There are some paintings on the walls, one of them especially grand.",
+          "grid_x": 2,
+          "grid_y": 22,
+          "exits": {
+            "n": {
+              "to_vnum": 3307,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Alcove",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3307": {
+          "vnum": 3307,
+          "name": "Alcove",
+          "description": "You in a small room at the north end of a south running hall. You can a desk poking into you view when you look into the room at the south end of the hall.",
+          "grid_x": 2,
+          "grid_y": 20,
+          "exits": {
+            "w": {
+              "to_vnum": 3303,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Audience Chamber",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1622": {
+          "vnum": 1622,
+          "name": "Western Avenue",
+          "description": "You stand on Western Avenue, which continues north and south from here. To the south you can see the gates of Tynum Bar, to the north you see that the road makes an abrupt turn to the east.",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 1623,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "North End of Western Avenue",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1626": {
+          "vnum": 1626,
+          "name": "Womens Quarters",
+          "description": "The floor is carpeted here giving the place a soft, comfortable atmosphere. Small wicker tables and chairs are scattered throughout and cheerful, vacuous artwork adorns the walls. There is a smell of tea and baked goods in the air.",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "w": {
+              "to_vnum": 1625,
+              "to_zone": "Tynum Bar",
+              "to_room_name": "Small Foyer",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Servant",
+              "description": "beaten a few too many times; who has been broken by the lash.",
+              "unique": false
+            },
+            {
+              "name": "matron of Tynum Bar",
+              "description": "",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -4,
+        "max_x": 7,
+        "min_y": -1,
+        "max_y": 22,
+        "room_count": 44
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1618,
+      "to": 1619,
+      "direction": "s",
+      "from_grid": [
+        -4,
+        0
+      ],
+      "to_grid": [
+        -4,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1619,
+      "to": 1620,
+      "direction": "e",
+      "from_grid": [
+        -4,
+        1
+      ],
+      "to_grid": [
+        -3,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1620,
+      "to": 1621,
+      "direction": "e",
+      "from_grid": [
+        -3,
+        1
+      ],
+      "to_grid": [
+        -2,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1621,
+      "to": 1622,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        1
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1622,
+      "to": 1623,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1623,
+      "to": 1624,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1624,
+      "to": 3265,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1624,
+      "to": 1625,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1624,
+      "to": 3264,
+      "direction": "s",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1625,
+      "to": 1626,
+      "direction": "e",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        1,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3265,
+      "to": 3266,
+      "direction": "e",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        2,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3266,
+      "to": 3267,
+      "direction": "s",
+      "from_grid": [
+        2,
+        0
+      ],
+      "to_grid": [
+        2,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3267,
+      "to": 3269,
+      "direction": "e",
+      "from_grid": [
+        2,
+        1
+      ],
+      "to_grid": [
+        3,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3267,
+      "to": 3268,
+      "direction": "s",
+      "from_grid": [
+        2,
+        1
+      ],
+      "to_grid": [
+        2,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3268,
+      "to": 3284,
+      "direction": "s",
+      "from_grid": [
+        2,
+        2
+      ],
+      "to_grid": [
+        2,
+        3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3268,
+      "to": 3285,
+      "direction": "w",
+      "from_grid": [
+        2,
+        2
+      ],
+      "to_grid": [
+        1,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3269,
+      "to": 3270,
+      "direction": "e",
+      "from_grid": [
+        3,
+        1
+      ],
+      "to_grid": [
+        4,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3269,
+      "to": 3283,
+      "direction": "s",
+      "from_grid": [
+        3,
+        1
+      ],
+      "to_grid": [
+        3,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3270,
+      "to": 3271,
+      "direction": "e",
+      "from_grid": [
+        4,
+        1
+      ],
+      "to_grid": [
+        5,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3270,
+      "to": 3282,
+      "direction": "s",
+      "from_grid": [
+        4,
+        1
+      ],
+      "to_grid": [
+        4,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3271,
+      "to": 3272,
+      "direction": "e",
+      "from_grid": [
+        5,
+        1
+      ],
+      "to_grid": [
+        6,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3273,
+      "to": 3274,
+      "direction": "n",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3274,
+      "to": 3279,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3274,
+      "to": 3277,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3274,
+      "to": 3275,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3275,
+      "to": 3276,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -1,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3278,
+      "to": 3276,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        -2
+      ],
+      "to_grid": [
+        -1,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3279,
+      "to": 3280,
+      "direction": "n",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        1,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3280,
+      "to": 3281,
+      "direction": "n",
+      "from_grid": [
+        1,
+        -1
+      ],
+      "to_grid": [
+        1,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3282,
+      "to": 3292,
+      "direction": "e",
+      "from_grid": [
+        4,
+        2
+      ],
+      "to_grid": [
+        5,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3285,
+      "to": 3286,
+      "direction": "w",
+      "from_grid": [
+        1,
+        2
+      ],
+      "to_grid": [
+        0,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3286,
+      "to": 3287,
+      "direction": "s",
+      "from_grid": [
+        0,
+        2
+      ],
+      "to_grid": [
+        0,
+        3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3286,
+      "to": 3288,
+      "direction": "w",
+      "from_grid": [
+        0,
+        2
+      ],
+      "to_grid": [
+        -1,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3288,
+      "to": 3289,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        2
+      ],
+      "to_grid": [
+        -1,
+        3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3289,
+      "to": 3290,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        3
+      ],
+      "to_grid": [
+        -1,
+        4
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3290,
+      "to": 3291,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        4
+      ],
+      "to_grid": [
+        0,
+        4
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3292,
+      "to": 3294,
+      "direction": "e",
+      "from_grid": [
+        5,
+        2
+      ],
+      "to_grid": [
+        7,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3293,
+      "to": 3292,
+      "direction": "n",
+      "from_grid": [
+        5,
+        3
+      ],
+      "to_grid": [
+        5,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3294,
+      "to": 3295,
+      "direction": "n",
+      "from_grid": [
+        7,
+        2
+      ],
+      "to_grid": [
+        7,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3295,
+      "to": 3296,
+      "direction": "n",
+      "from_grid": [
+        7,
+        1
+      ],
+      "to_grid": [
+        7,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3296,
+      "to": 3297,
+      "direction": "w",
+      "from_grid": [
+        7,
+        0
+      ],
+      "to_grid": [
+        6,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3297,
+      "to": 3298,
+      "direction": "n",
+      "from_grid": [
+        6,
+        0
+      ],
+      "to_grid": [
+        6,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3299,
+      "to": 3300,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        20
+      ],
+      "to_grid": [
+        0,
+        20
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3300,
+      "to": 3303,
+      "direction": "e",
+      "from_grid": [
+        0,
+        20
+      ],
+      "to_grid": [
+        1,
+        20
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3300,
+      "to": 3302,
+      "direction": "s",
+      "from_grid": [
+        0,
+        20
+      ],
+      "to_grid": [
+        0,
+        21
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3301,
+      "to": 3300,
+      "direction": "s",
+      "from_grid": [
+        0,
+        19
+      ],
+      "to_grid": [
+        0,
+        20
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3303,
+      "to": 3304,
+      "direction": "s",
+      "from_grid": [
+        1,
+        20
+      ],
+      "to_grid": [
+        1,
+        21
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3304,
+      "to": 3305,
+      "direction": "s",
+      "from_grid": [
+        1,
+        21
+      ],
+      "to_grid": [
+        1,
+        22
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3305,
+      "to": 3306,
+      "direction": "e",
+      "from_grid": [
+        1,
+        22
+      ],
+      "to_grid": [
+        2,
+        22
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3306,
+      "to": 3307,
+      "direction": "n",
+      "from_grid": [
+        2,
+        22
+      ],
+      "to_grid": [
+        2,
+        20
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3307,
+      "to": 3303,
+      "direction": "w",
+      "from_grid": [
+        2,
+        20
+      ],
+      "to_grid": [
+        1,
+        20
+      ],
+      "floor": 0
+    }
+  ]
+}

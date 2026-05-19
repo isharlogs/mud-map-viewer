@@ -1,0 +1,93 @@
+{
+  "zone_name": "The Road of Tears",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": -1,
+    "max_x": 0,
+    "min_y": 0,
+    "max_y": 0
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 526,
+      "rooms": {
+        "526": {
+          "vnum": 526,
+          "name": "Road of Tears",
+          "description": "Here before a small pool of still water ends the Road of Tears. Ahead a thin trail veers northeast into the rolling hills; a small wooden sign stands tilted at the beginning of the trail. The thick tangle of wood and weed which forms a wall to the south and east could only be the edge of the forests of Jharet.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 525,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Lowode Clearing",
+              "direction": "n",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 527,
+              "to_zone": "The Road of Tears",
+              "to_room_name": "Road of Tears",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "527": {
+          "vnum": 527,
+          "name": "Road of Tears",
+          "description": "The road of Tears continues eastward here, rising slightly above the darkened expanse of the forests of Jharet. Strange lights zip past high overhead, traveling from the forest to the cemetary just north and east of here. Low, rolling hills begin slightly to the north and east, and a trail and be seen leading through them.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 526,
+              "to_zone": "The Road of Tears",
+              "to_room_name": "Road of Tears",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 528,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Road of Tears",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 2
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 526,
+      "to": 527,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": 0
+    }
+  ]
+}

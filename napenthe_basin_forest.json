@@ -1,0 +1,1503 @@
+{
+  "zone_name": "Napenthe Basin Forest",
+  "floor_count": 5,
+  "bounds": {
+    "min_x": -4,
+    "max_x": 2,
+    "min_y": -4,
+    "max_y": 95
+  },
+  "floors": {
+    "-4": {
+      "floor_id": -4,
+      "entry_vnum": 1390,
+      "rooms": {
+        "512": {
+          "vnum": 512,
+          "name": "Path-stones",
+          "description": "You pause in the middle of the path to observe a low, constant rumble within the ground. Few signs of life venture out of the forest at this particular turn. The path leads north, and turns to the southwest.",
+          "grid_x": 0,
+          "grid_y": -3,
+          "exits": {
+            "n": {
+              "to_vnum": 511,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Path-stones",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 513,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Path-stones",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "sw": {
+              "to_vnum": 513,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Path-stones",
+              "direction": "sw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "513": {
+          "vnum": 513,
+          "name": "Path-stones",
+          "description": "Traveling further into the forested basin you are drained by the tropical heat and humid air. Reptilian things creep across the path-stones ahead, pausing to lend you an icy leer before dodging into the brush. The path turns northeast, and a thin trail heads west.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 512,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Path-stones",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "ne": {
+              "to_vnum": 512,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Path-stones",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 486,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Path-stones",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2236,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Thin Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "514": {
+          "vnum": 514,
+          "name": "Circular Clearing",
+          "description": "Shifting mists billow about, partially obscuring your view. At your feet is a huge circular stone bearing a complex set of etchings. A multitude of path- stones join together forming a route north into the forest. Dozens of blue globes flit about the area, glowing brightly.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 486,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Path-stones",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 515,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Bottom of Steps",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "515": {
+          "vnum": 515,
+          "name": "Bottom of Steps",
+          "description": "The steps end here, at the bottom of a steep hill. Impenetrable forest seems to block your way in all directions, however a dim bluish light beckons from a small break to the north. A thin layer of black moss trails toward the cracked steps from the west.",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 514,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Circular Clearing",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 516,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Cracked Steps",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Gich",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "3127": {
+          "vnum": 3127,
+          "name": "In the Forest",
+          "description": "Near the end of a cracked and crumbled series of stone steps winding down from above, a narrow footpath rounds out beneath five redwood goliaths. The great old trunks plunge into the earth, splitting into a snarl of thick, entangled roots. A heavy layer of blackened moss adheres to the eastern side of each tree.",
+          "grid_x": -2,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 515,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Bottom of Steps",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2236": {
+          "vnum": 2236,
+          "name": "Thin Path",
+          "description": "Ancient trees surround you in this damp, humid forest. A slight rustling is heard among the undergrowth from time to time, as if something were hunting you. The way west appears passable, and a glimpse of path-stones is had to the east.",
+          "grid_x": -1,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 513,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Path-stones",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2237,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Thin Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2237": {
+          "vnum": 2237,
+          "name": "Thin Path",
+          "description": "The path winds through the misted basin forest, passing by a low archway covered in creeping vines to the north. Rotted wood and dead leaves collect upon the ground to soften your footfalls as you pass an overgrown trail heading south.",
+          "grid_x": -2,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 2236,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Thin Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3125,
+              "to_zone": "Midor House - Napenthe Basin Forest",
+              "to_room_name": "Under the Arch",
+              "direction": "n",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2238,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "In the Forest",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2238": {
+          "vnum": 2238,
+          "name": "In the Forest",
+          "description": "The gloom thickens as mist pours forth from the surrounding trees along this overgrown path through the forest. Pairs of eyes peer and blink as you pass by, the path turning to the west and north.",
+          "grid_x": -2,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 2237,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Thin Path",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2239,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "In the Forest",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2239": {
+          "vnum": 2239,
+          "name": "In the Forest",
+          "description": "Creatures stir within their abodes as you push your way further into the forested basin, to reach what appears to be a dead end. Drops of water fall",
+          "grid_x": -3,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 2238,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "In the Forest",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "sw": {
+              "to_vnum": 2240,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "In the Forest",
+              "direction": "sw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2240": {
+          "vnum": 2240,
+          "name": "In the Forest",
+          "description": "Having struggled past the dense vegetation you reach a tiny patch of cleared land far into the basin. The terrain rises sharply to the west, and travel is prevented in all directions save that from which you came.",
+          "grid_x": -4,
+          "grid_y": 0,
+          "exits": {
+            "ne": {
+              "to_vnum": 2239,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "In the Forest",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "go cave": {
+              "to_vnum": 2241,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Inside a Small Cave",
+              "direction": "go cave",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "486": {
+          "vnum": 486,
+          "name": "Path-stones",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 487,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Path-stones",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 513,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Path-stones",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 514,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Circular Clearing",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "go into": {
+              "to_vnum": 488,
+              "to_zone": "Napenthe Colony",
+              "to_room_name": "Inside a Fallen Tree",
+              "direction": "go into",
+              "is_cross_zone": true,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Slimy newt",
+              "description": "Some say that an angry witch will turn one into such a foul creature. You don't know if it was once like you, but you know you don't want to be",
+              "unique": true
+            }
+          ]
+        },
+        "487": {
+          "vnum": 487,
+          "name": "Path-stones",
+          "description": "You emerge from the tunnel of vines still surrounded by mammoth old growth trees, and still feeling the firm path-stones beneath your feet. A pungent, semisweet fragrance fills the area, which becomes slightly less overgrown to the west where the stones lead. A foot-worn trail appears to lead northeast.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1389,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "In the Forest",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 486,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Path-stones",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "ne": {
+              "to_vnum": 1389,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "In the Forest",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 486,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Path-stones",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 486,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Path-stones",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1389": {
+          "vnum": 1389,
+          "name": "In the Forest",
+          "description": "A worn footpath leads through the forest here, meeting a set of pathstones to the southwest. The worn path continues eastward, winding its way among the thickly overgrown edges of a rising slope to the north.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1390,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "In the Forest",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "sw": {
+              "to_vnum": 487,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Path-stones",
+              "direction": "sw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 487,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Path-stones",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1390": {
+          "vnum": 1390,
+          "name": "In the Forest",
+          "description": "The forest path thins as it approaches a small break in the trees at the edge of a murky, stillwater lake. All about tower the old-growth redwoods of the basin, considerably denser to the south and west.",
+          "grid_x": 2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1391,
+              "to_zone": "Lake Brecilande - Napenthe Basin Forest",
+              "to_room_name": "Western Shore",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1389,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "In the Forest",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "511": {
+          "vnum": 511,
+          "name": "Path-stones",
+          "description": "Hushed voices momentarily carry down from the gargantuan trees above as you make your way along the path-stones to Napenthe. They continue to the east, through a tunnel of hanging vines.",
+          "grid_x": 0,
+          "grid_y": -4,
+          "exits": {
+            "e": {
+              "to_vnum": 504,
+              "to_zone": "Napenthe Colony",
+              "to_room_name": "Path-stones",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 512,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Path-stones",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Pugnatious little orc",
+              "description": "",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -4,
+        "max_x": 2,
+        "min_y": -4,
+        "max_y": 1,
+        "room_count": 15
+      }
+    },
+    "-3": {
+      "floor_id": -3,
+      "entry_vnum": 516,
+      "rooms": {
+        "516": {
+          "vnum": 516,
+          "name": "Cracked Steps",
+          "description": "The steps continue downward through the hillside forest. The sky is gone, replaced by the canopies of huge, ancient trees, well-fed for thousands of years by the constant rains. Dull gray tin flecks are scattered through the stone.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "d": {
+              "to_vnum": 515,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Bottom of Steps",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "u": {
+              "to_vnum": 517,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Cracked Steps",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    },
+    "-2": {
+      "floor_id": -2,
+      "entry_vnum": 517,
+      "rooms": {
+        "517": {
+          "vnum": 517,
+          "name": "Cracked Steps",
+          "description": "The brush quickly thickens around these steps, preventing travel into the surrounding forest on the hill. The billowing mist and humid air combine and soak you to the bone. A step here appears loose.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "s": {
+              "to_vnum": 518,
+              "to_zone": "Midor House - Napenthe Basin Forest",
+              "to_room_name": "Under the Steps",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 516,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Cracked Steps",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "u": {
+              "to_vnum": 519,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Top of the Steps",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Aged halfling",
+              "description": "",
+              "unique": true
+            },
+            {
+              "name": "Vido",
+              "description": "",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    },
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 519,
+      "rooms": {
+        "519": {
+          "vnum": 519,
+          "name": "Top of the Steps",
+          "description": "",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 520,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Wooded Slope",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 517,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Cracked Steps",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "520": {
+          "vnum": 520,
+          "name": "Wooded Slope",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 519,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Top of the Steps",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 521,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Wooded Slope",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2242": {
+          "vnum": 2242,
+          "name": "In the Mire",
+          "description": "You thrash about within a pool of fetid water, the surface above littered with hollowed, broken bones floating amongst the visible excrement of gryphons. Small, thin waterborn parasites adhere to your exposed flesh here, where the only exit appears to be up and out.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {
+            "u": {
+              "to_vnum": 2241,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Inside a Small Cave",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Parasite",
+              "description": "",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 15,
+        "room_count": 3
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 2708,
+      "rooms": {
+        "521": {
+          "vnum": 521,
+          "name": "Wooded Slope",
+          "description": "The terrain drops sharply here along a thickly wooded slope south of a series of rolling hills. Mist wraps itself about your feet, and the air is dense with moisture.",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 522,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Lowode's Edge",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 520,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Wooded Slope",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "522": {
+          "vnum": 522,
+          "name": "Lowode's Edge",
+          "description": "",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 521,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Wooded Slope",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 523,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Lowode Hills",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "523": {
+          "vnum": 523,
+          "name": "Lowode Hills",
+          "description": "The trail thins as it makes a final turn through the Lowode. Perhaps fewer have been the number to pass this far. Ahead through the hills the terrain can be seen to drop sharply and the air is noticeably rich in moisture.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 522,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Lowode's Edge",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 522,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Lowode's Edge",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 524,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Lowode Hills",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "524": {
+          "vnum": 524,
+          "name": "Lowode Hills",
+          "description": "Shedevat's trail through the Lowode expertly weaves through the thickly overgrown hills, and comes to a rough end before a large clearing of loosely packed, mineral-rich soil. The path continues further south, and retreats back into the forest to the northeast. A narrow seam of copper glints from the rock face.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 523,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Lowode Hills",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 525,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Lowode Clearing",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "525": {
+          "vnum": 525,
+          "name": "Lowode Clearing",
+          "description": "Tendrils of steam rise up from cracks in the ground here among the Lowode hills. The area appears to have been recently filled in with fresh soil. Small saplings and sprouts struggle for life and light within the loosely packed, mineral-rich earth. Paths lead north and south.",
+          "grid_x": 0,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 524,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Lowode Hills",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 526,
+              "to_zone": "The Road of Tears",
+              "to_room_name": "Road of Tears",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2704": {
+          "vnum": 2704,
+          "name": "In the Forest",
+          "description": "Great gnarled roots writhe upward from the ground here among some of the tallest of the ancient redwoods, which continue their prevalence despite the steadily rising terrain to the east. A thin trail begins here, working its way eastward, and eventually up along the ridge. Off to the southwest arcs a collosal root, framing a passage into the forested basin. The power of the ocean gradually subsides.",
+          "grid_x": 0,
+          "grid_y": 95,
+          "exits": {
+            "sw": {
+              "to_vnum": 2705,
+              "to_zone": "Lake Brecilande - Napenthe Basin Forest",
+              "to_room_name": "Beneath the Root",
+              "direction": "sw",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2706": {
+          "vnum": 2706,
+          "name": "In the Forest",
+          "description": "A thin path winds through the forest, approaching a large, stillwater body northward, upon which is reflected the rocky shapes of the ridge and mountains which loom northeast.",
+          "grid_x": 0,
+          "grid_y": 35,
+          "exits": {
+            "e": {
+              "to_vnum": 2705,
+              "to_zone": "Lake Brecilande - Napenthe Basin Forest",
+              "to_room_name": "Beneath the Root",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2707,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "In the Forest",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2707": {
+          "vnum": 2707,
+          "name": "In the Forest",
+          "description": "Leaves cascade in a ceaseless dance from the ancient forest trees about you here, deep within the basin. A slight breeze brushes against your cheek, flowing off the surface of a murky, stillwater lake. The shore lies to your north, and a passable trail winds westward, marked by a rotting sign, half obscured by leaves and ivy.",
+          "grid_x": 0,
+          "grid_y": 34,
+          "exits": {
+            "n": {
+              "to_vnum": 2708,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Southern Shore",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2706,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "In the Forest",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Knight-errant",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "2708": {
+          "vnum": 2708,
+          "name": "Southern Shore",
+          "description": "Forest growth merges with the muddy shores of a cold stillwater lake. Large, scaly black backs cut the darkwater surface before slipping below. Across the water a small, overgrown isle perches upon the surface in the centre of the landlocked body.",
+          "grid_x": 0,
+          "grid_y": 33,
+          "exits": {
+            "n": {
+              "to_vnum": 1401,
+              "to_zone": "Lake Brecilande - Napenthe Basin Forest",
+              "to_room_name": "Southern Shallows",
+              "direction": "n",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2707,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "In the Forest",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2241": {
+          "vnum": 2241,
+          "name": "Inside a Small Cave",
+          "description": "Unnaturally smooth and rounded walls make up the interior of this small cave, hidden from outside view by creeping foliage upon the ever rising terrain. The cave dead-ends abruptly, a stinking pool of fetid water filled with gryphon's dung and victim's bone at its farthest corner.",
+          "grid_x": 0,
+          "grid_y": 50,
+          "exits": {
+            "d": {
+              "to_vnum": 2242,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "In the Mire",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "go out": {
+              "to_vnum": 2240,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "In the Forest",
+              "direction": "go out",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Gryphon",
+              "description": "Sparks and flames issue forth from a head resembling an eagle upon the body of a lion.  The Gryphon of legends past paws the ground and prepares",
+              "unique": true
+            }
+          ]
+        },
+        "454": {
+          "vnum": 454,
+          "name": "Hidden Sanctum",
+          "description": "This tiny room is cleverly hidden below the holy altar, a private place to study holy texts; and, more recently it would seem, books of a much darker origin. Writings on disease and necromancy line a small shelf on one wall, while others are stacked on the meager desk. A ring of pale, translucent mushrooms grows here, faintly luminous. Pure white blossoms grow here, radiating a soft divine light.",
+          "grid_x": 0,
+          "grid_y": 65,
+          "exits": {
+            "u": {
+              "to_vnum": 453,
+              "to_zone": "Napenthe Cathedral - Napenthe Colony",
+              "to_room_name": "Garden Stand",
+              "direction": "u",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "458": {
+          "vnum": 458,
+          "name": "Baptistry",
+          "description": "A large, shallow pool dominates the expanse of the cathedral baptistry, flanked by twin sets of candles generating fiery reflections upon the water. Beyond the pool there is a statue of a lean, robed figure, gesturing downward.",
+          "grid_x": 0,
+          "grid_y": 80,
+          "exits": {
+            "s": {
+              "to_vnum": 456,
+              "to_zone": "Napenthe Cathedral - Napenthe Colony",
+              "to_room_name": "Cathedral West",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "go into": {
+              "to_vnum": 459,
+              "to_zone": "Napenthe Cathedral - Napenthe Colony",
+              "to_room_name": "Baptismal Pool",
+              "direction": "go into",
+              "is_cross_zone": true,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "505": {
+          "vnum": 505,
+          "name": "In the Forest",
+          "description": "Working your way through the thick forest undergrowth you find it possible to continue west, east, or southeast. It is darker here, amongst the ancient basin trees.",
+          "grid_x": -2,
+          "grid_y": 17,
+          "exits": {
+            "s": {
+              "to_vnum": 504,
+              "to_zone": "Napenthe Colony",
+              "to_room_name": "Path-stones",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Ugly little gnoll",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "506": {
+          "vnum": 506,
+          "name": "In the Forest",
+          "description": "Huge leaves swirl downward from the trees above to collect in rotting piles upon the forest floor. Passages through the trees lead in several directions from this point, yet where they lead cannot be seen.",
+          "grid_x": -1,
+          "grid_y": 17,
+          "exits": {
+            "s": {
+              "to_vnum": 507,
+              "to_zone": "Lake Brecilande - Napenthe Basin Forest",
+              "to_room_name": "In the Forest",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 505,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "In the Forest",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "508": {
+          "vnum": 508,
+          "name": "Clearing",
+          "description": "You work your way through the dense vegetation and arrive at this modest clearing beneath the trees. Several treestumps rest here, most burnt at the tops while a few have been entirely uprooted. A meager path offers exit to the east.",
+          "grid_x": 0,
+          "grid_y": 18,
+          "exits": {
+            "d": {
+              "to_vnum": 3116,
+              "to_zone": "Lake Brecilande - Napenthe Basin Forest",
+              "to_room_name": "Beneath a Treestump",
+              "direction": "d",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "e": {
+              "to_vnum": 509,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "In the Forest",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 510,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "In the Forest",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "509": {
+          "vnum": 509,
+          "name": "In the Forest",
+          "description": "The dense growth lightens somewhat as you venture through the basin, and the trees seem further apart. Or perhaps they're getting closer -- it's all really subjective, if you think about it. A cleared patch of land lay just east, and a single, massive root arcs overhead to the north.",
+          "grid_x": 1,
+          "grid_y": 18,
+          "exits": {
+            "w": {
+              "to_vnum": 508,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "Clearing",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Ugly little gnoll",
+              "description": "",
+              "unique": false
+            },
+            {
+              "name": "Wodgolum",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "510": {
+          "vnum": 510,
+          "name": "In the Forest",
+          "description": "A narrow path between the elder trees turns south and west here, skirting a loose pile of blackstone rubble barely visible beneath the burgeoning forest growth. The edge of a small clearing can be discerned southward.",
+          "grid_x": 0,
+          "grid_y": 17,
+          "exits": {
+            "w": {
+              "to_vnum": 506,
+              "to_zone": "Napenthe Basin Forest",
+              "to_room_name": "In the Forest",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -2,
+        "max_x": 1,
+        "min_y": -1,
+        "max_y": 95,
+        "room_count": 17
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1389,
+      "to": 1390,
+      "direction": "e",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        2,
+        0
+      ],
+      "floor": -4
+    },
+    {
+      "from": 1389,
+      "to": 487,
+      "direction": "sw",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2236,
+      "to": 513,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2236,
+      "to": 2237,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        -2
+      ],
+      "to_grid": [
+        -2,
+        -2
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2237,
+      "to": 2238,
+      "direction": "s",
+      "from_grid": [
+        -2,
+        -2
+      ],
+      "to_grid": [
+        -2,
+        -1
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2238,
+      "to": 2239,
+      "direction": "w",
+      "from_grid": [
+        -2,
+        -1
+      ],
+      "to_grid": [
+        -3,
+        -1
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2239,
+      "to": 2240,
+      "direction": "sw",
+      "from_grid": [
+        -3,
+        -1
+      ],
+      "to_grid": [
+        -4,
+        0
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2706,
+      "to": 2707,
+      "direction": "n",
+      "from_grid": [
+        0,
+        35
+      ],
+      "to_grid": [
+        0,
+        34
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2707,
+      "to": 2708,
+      "direction": "n",
+      "from_grid": [
+        0,
+        34
+      ],
+      "to_grid": [
+        0,
+        33
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3127,
+      "to": 515,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        1
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": -4
+    },
+    {
+      "from": 486,
+      "to": 487,
+      "direction": "e",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -4
+    },
+    {
+      "from": 486,
+      "to": 513,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": -4
+    },
+    {
+      "from": 486,
+      "to": 514,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -4
+    },
+    {
+      "from": 506,
+      "to": 505,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        17
+      ],
+      "to_grid": [
+        -2,
+        17
+      ],
+      "floor": 0
+    },
+    {
+      "from": 508,
+      "to": 509,
+      "direction": "e",
+      "from_grid": [
+        0,
+        18
+      ],
+      "to_grid": [
+        1,
+        18
+      ],
+      "floor": 0
+    },
+    {
+      "from": 508,
+      "to": 510,
+      "direction": "n",
+      "from_grid": [
+        0,
+        18
+      ],
+      "to_grid": [
+        0,
+        17
+      ],
+      "floor": 0
+    },
+    {
+      "from": 510,
+      "to": 506,
+      "direction": "w",
+      "from_grid": [
+        0,
+        17
+      ],
+      "to_grid": [
+        -1,
+        17
+      ],
+      "floor": 0
+    },
+    {
+      "from": 511,
+      "to": 512,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -4
+      ],
+      "to_grid": [
+        0,
+        -3
+      ],
+      "floor": -4
+    },
+    {
+      "from": 512,
+      "to": 513,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -3
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": -4
+    },
+    {
+      "from": 514,
+      "to": 515,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": -4
+    },
+    {
+      "from": 519,
+      "to": 520,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 521,
+      "to": 522,
+      "direction": "s",
+      "from_grid": [
+        1,
+        -1
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 522,
+      "to": 523,
+      "direction": "w",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 523,
+      "to": 524,
+      "direction": "s",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 524,
+      "to": 525,
+      "direction": "s",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        2
+      ],
+      "floor": 0
+    }
+  ]
+}

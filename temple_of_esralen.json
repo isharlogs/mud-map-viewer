@@ -1,0 +1,553 @@
+{
+  "zone_name": "Temple of Esralen",
+  "floor_count": 2,
+  "bounds": {
+    "min_x": -2,
+    "max_x": 1,
+    "min_y": -3,
+    "max_y": 30
+  },
+  "floors": {
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 96,
+      "rooms": {
+        "96": {
+          "vnum": 96,
+          "name": "Storage Chamber",
+          "description": "A small trapdoor hangs above you in this cramped storage chamber below the living quarters. Piles of sawdust and rodent droppings litter the floor beneath your feet. There is barely enough for one to move here in this dark, damp little room.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {
+            "u": {
+              "to_vnum": 95,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Living Quarters",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "91": {
+          "vnum": 91,
+          "name": "Burning Pit",
+          "description": "Barely large enough for a body, the pit within the meditation chamber is filled with slowly, softly burning coals beneath a thick layer of chalky ash. Your flesh begins to sear in the heat. The walls are cracked stone, steam pouring out of the breaks.",
+          "grid_x": 0,
+          "grid_y": 30,
+          "exits": {
+            "u": {
+              "to_vnum": 90,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Meditation Chamber",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "92": {
+          "vnum": 92,
+          "name": "Temple Library",
+          "description": "The temple library consists of little more than two long, low cases of books against the polar walls, facing one another. Perusing the titles as you pass toward the scribe's quarters to the west, you realize they are all in an ancient language, the time of its use long passed. An iron stair at the eastern end of the hall shakes briefly as the library hall hums softly with the energy of the collected knowledge present within the volumes.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 93,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Scribe`s Quarters",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 89,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Within the Temple of Esralen",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "93": {
+          "vnum": 93,
+          "name": "Scribe`s Quarters",
+          "description": "The Scribe's quarters are modest, a dusty square of stone filled by a small cot, an old ink-spotted wooden tabletop, and several rows of scroll-filled glass shelves. A copper pot of ink rests upon the table with a quill, along with a row of small candles, each having a distinct colour and mark. Behind the table sits a plain round stool.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 92,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Temple Library",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Scribe`s familiar",
+              "description": "",
+              "unique": true
+            },
+            {
+              "name": "Urwode the Scribe",
+              "description": "",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 30,
+        "room_count": 4
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 85,
+      "rooms": {
+        "97": {
+          "vnum": 97,
+          "name": "Ritual Chamber",
+          "description": "Greater counterparts to the glowing fixtures found in the temple entrance line the smooth, curving walls of the ritual chamber, bathing the area in a violent red hue. The chamber is large, rounded, and its walls extend far upward. At the centre stand a trio of square stone pillars, from which a sextet of shackles hangs loosely. The floor is composed of oddly patterned marble. At the northern end of the chamber, a warm draft tinged with ash drifts from a wide, gated cave opening which turns east.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 98,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Temple Cave",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 94,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Temple Hall",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "98": {
+          "vnum": 98,
+          "name": "Temple Cave",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": -3,
+          "exits": {
+            "s": {
+              "to_vnum": 97,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Ritual Chamber",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "85": {
+          "vnum": 85,
+          "name": "Before the Temple of Esralen",
+          "description": "Two solid columns of curved stone rise from the floor here at the end of a wide tunnel travelling north and south. Hinged upon the columns is a sturdy iron gate. Masses of twisting, spindly roots creep out of the earthen ceiling to drape down over the temple entrance, nearly obscuring the carved wooden dragonshead which rests above the gate.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {
+            "s": {
+              "to_vnum": 84,
+              "to_zone": "Daemonwood",
+              "to_room_name": "Narrow Steps into the Earth",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "go into": {
+              "to_vnum": 86,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Within the Temple of Esralen",
+              "direction": "go into",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "86": {
+          "vnum": 86,
+          "name": "Within the Temple of Esralen",
+          "description": "A short hallway past the gates terminates in this hollow chamber. Small reddish globes rest upon silvered dragonsclaws affixed to the walls bathing the cold stone walls in a disturbing shade. A low, arched opening holds a door to the east, and a short flight of steps climb up to the west. A hint of brimstone drifts by through a curtain of stone beads veiling a narrow hallway travelling north.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 89,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Within the Temple of Esralen",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 94,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Temple Hall",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 87,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Within the Temple of Esralen",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "go out": {
+              "to_vnum": 85,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Before the Temple of Esralen",
+              "direction": "go out",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "87": {
+          "vnum": 87,
+          "name": "Within the Temple of Esralen",
+          "description": "A short flight of steps end here before a wide door of solid stained oak to the north. Mounted upon the door are a pair of iron dragon's wings, stained glass filling the segments. The steps lead down to the east into the temple entrance.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 86,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Within the Temple of Esralen",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 88,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Within the Temple of Esralen",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "88": {
+          "vnum": 88,
+          "name": "Within the Temple of Esralen",
+          "description": "The wide oak doorway opens up to an oddly shaped room, the eastern wall curving inward, bearing evenly spaced windows of stained glass. A low glass table lay in the centre of the otherwise rectangular chamber, several stuffed canvas seats surrounding it. The room is strangely quiet.",
+          "grid_x": -2,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 87,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Within the Temple of Esralen",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "89": {
+          "vnum": 89,
+          "name": "Within the Temple of Esralen",
+          "description": "You step along a short curving hallway within the temple. At the corner of the hall an iron staircase winds downward through the stone floor. The hall curves to the north, toward the source of a steady, gutteral chant which rolls through the temple. A sturdy wooden doorway stands west.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 90,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Meditation Chamber",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 86,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Within the Temple of Esralen",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 92,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Temple Library",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "90": {
+          "vnum": 90,
+          "name": "Meditation Chamber",
+          "description": "You stand within a broad, low chamber. A muted red seeps through thin black cloaks which cover glowing globes; a quintet of them evenly spaced along the walls. Within a charred diamond-shaped pit in the centre of the chamber burns a heady, pungent sacrament. The ceiling is plain earth, having been left open to allow the roots of the forest above to dangle, dry, and die in the arid room.",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 89,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Within the Temple of Esralen",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 91,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Burning Pit",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            },
+            "go into": {
+              "to_vnum": 91,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Burning Pit",
+              "direction": "go into",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Cult member",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "94": {
+          "vnum": 94,
+          "name": "Temple Hall",
+          "description": "Sooty walls of bricked stone form a narrow hall. Ahead, a spacious circular chamber is filled with drifting smoke which glows a dull, angry red. From elsewhere in the temple a monotonous, gutteral chant rolls through the stonework. Long-ago faded paintings line the curved walls here, broken by a rounded wooden door to the west.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 97,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Ritual Chamber",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 86,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Within the Temple of Esralen",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 95,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Living Quarters",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "95": {
+          "vnum": 95,
+          "name": "Living Quarters",
+          "description": "A series of linen and wood cots line the walls along the length of the living quarters. A narrow table cuts down the middle of the room, and at the end rests a large stone basin. Stationed between the cots along, upon the walls are small brass oil lamps. Squares of oddly decorated carpet cover portions of the floor.",
+          "grid_x": -1,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 94,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Temple Hall",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 96,
+              "to_zone": "Temple of Esralen",
+              "to_room_name": "Storage Chamber",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Soft whisper",
+              "description": "",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -2,
+        "max_x": 1,
+        "min_y": -3,
+        "max_y": 15,
+        "room_count": 10
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 86,
+      "to": 89,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 86,
+      "to": 94,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 86,
+      "to": 87,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 87,
+      "to": 88,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -2,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 89,
+      "to": 90,
+      "direction": "n",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        1,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 92,
+      "to": 93,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 94,
+      "to": 97,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 94,
+      "to": 95,
+      "direction": "w",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        -1,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 97,
+      "to": 98,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -3
+      ],
+      "floor": 0
+    }
+  ]
+}

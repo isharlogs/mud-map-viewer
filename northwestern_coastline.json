@@ -1,0 +1,268 @@
+{
+  "zone_name": "Northwestern Coastline",
+  "floor_count": 2,
+  "bounds": {
+    "min_x": -1,
+    "max_x": 1,
+    "min_y": -1,
+    "max_y": 16
+  },
+  "floors": {
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 1238,
+      "rooms": {
+        "1238": {
+          "vnum": 1238,
+          "name": "The Coast",
+          "description": "A beautiful beach extends along the coastline. However, the sparkling sands end at the base of a towering cliff. This cliff looks forbidding and looks like it will impede travel northwards, at least by land, although there seems to be a small crack in the foot of the cliff directly northeast. Looking out over the glittering blue ocean to the west, you can just make out what looks like a tremendous galleon.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "ne": {
+              "to_vnum": 1239,
+              "to_zone": "Northwestern Coastline",
+              "to_room_name": "Small Cave",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2163,
+              "to_zone": "The Ocean",
+              "to_room_name": "The Deep, Azure Sea",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1239": {
+          "vnum": 1239,
+          "name": "Small Cave",
+          "description": "You duck your head down to fit into this small rocky cave. The recently hewn granite walls are still sharp to the touch; you make a mental note to watch what you touch. Littered across the floor of the cave is the brown fur of some hairy creature.",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "d": {
+              "to_vnum": 1240,
+              "to_zone": "Grimkell Fortress",
+              "to_room_name": "Limestone Courtyard",
+              "direction": "d",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Brown nong",
+              "description": "distant cousin, the mog.  Its face is characteristically dominated by a large, toothed mouth and it peers up at you from eyes on the back of its hands.",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 1,
+        "min_y": -1,
+        "max_y": 0,
+        "room_count": 2
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1006,
+      "rooms": {
+        "1006": {
+          "vnum": 1006,
+          "name": "The Rolling Hills",
+          "description": "A perpetual haze makes this place seem as though it had a roof. The mist comes from the sea to the south and west. To the north the hills submerge into a sea of grass which stretches far out ahead of you.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 1007,
+              "to_zone": "Northwestern Coastline",
+              "to_room_name": "The Seas of Grass",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1005,
+              "to_zone": "Rocky Coast",
+              "to_room_name": "Seawood Trail",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1007": {
+          "vnum": 1007,
+          "name": "The Seas of Grass",
+          "description": "The softly waving tall grasses make you feel as if you stand in the middle of a great sea. Birds of prey hover high in the azure heavens. There are highlands far to the north and the south.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 1008,
+              "to_zone": "Northwestern Coastline",
+              "to_room_name": "The Fertile Plains",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1006,
+              "to_zone": "Northwestern Coastline",
+              "to_room_name": "The Rolling Hills",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1008": {
+          "vnum": 1008,
+          "name": "The Fertile Plains",
+          "description": "The vegetation becomes more green, more firm, and more abundant here. A small spring bubbles into a glittering pool, but the ground quickly swallows its moisture. The road extends into the north and south. *A leafy plant with thick stems grows here, its roots bulging from the soil.*",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 2186,
+              "to_zone": "Gnoll Encampment",
+              "to_room_name": "Wooden Gateway",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1009,
+              "to_zone": "Northern Mountains",
+              "to_room_name": "The Inclined Plains",
+              "direction": "n",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1007,
+              "to_zone": "Northwestern Coastline",
+              "to_room_name": "The Seas of Grass",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1236": {
+          "vnum": 1236,
+          "name": "Narrow Canyon",
+          "description": "The canyon narrows at the top such that a narrow strip of sky is all that is visible as you look up. To the south, a broad plain stretches into the distance. An eyebrow of a trail can be seen descending to the west.",
+          "grid_x": 0,
+          "grid_y": 16,
+          "exits": {
+            "w": {
+              "to_vnum": 1237,
+              "to_zone": "Northwestern Coastline",
+              "to_room_name": "The Long Slope",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1237": {
+          "vnum": 1237,
+          "name": "The Long Slope",
+          "description": "You stand upon a steep slope which descends to a white sand beach. The slope is comfortable as it heads down but narrows considerably as it climbs into the mountains to the east.",
+          "grid_x": -1,
+          "grid_y": 16,
+          "exits": {
+            "d": {
+              "to_vnum": 1238,
+              "to_zone": "Northwestern Coastline",
+              "to_room_name": "The Coast",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 0,
+        "min_y": -1,
+        "max_y": 16,
+        "room_count": 5
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1006,
+      "to": 1007,
+      "direction": "n",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1007,
+      "to": 1008,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1236,
+      "to": 1237,
+      "direction": "w",
+      "from_grid": [
+        0,
+        16
+      ],
+      "to_grid": [
+        -1,
+        16
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1238,
+      "to": 1239,
+      "direction": "ne",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        -1
+      ],
+      "floor": -1
+    }
+  ]
+}

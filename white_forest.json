@@ -1,0 +1,365 @@
+{
+  "zone_name": "White Forest",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": 0,
+    "max_x": 0,
+    "min_y": 0,
+    "max_y": 540
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 3584,
+      "rooms": {
+        "3584": {
+          "vnum": 3584,
+          "name": "Along a Tranquil River",
+          "description": "The forest begins to grow in closer to the river here. In fact, it is so close that in some places low branches begin to reach into the river. A thin layer of snow collects atop each of these small branches, and the river is more than calm enough for you to admire the majestic beauty of the snow and frost covered trees as you pass them. Reminix follows in from the south. Gronk follows in from the south. Kazzter follows in from the south. Samu follows in from the south. Truth follows in from the south.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {},
+          "npcs": []
+        },
+        "3585": {
+          "vnum": 3585,
+          "name": "In the White Forest",
+          "description": "Here the forest grows up close against the river, with some even dipping into the water with their branches. Perfect, undisturbed crystals of ice have formed on most of these branches, with light snow dusting the top, looking very much like the heavens have been showering precious jewels on the simple evergreens. Reminix follows in from the west. Gronk follows in from the west. Kazzter follows in from the west. Samu follows in from the west. Truth follows in from the west.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {},
+          "npcs": []
+        },
+        "3586": {
+          "vnum": 3586,
+          "name": "In the White Forest",
+          "description": "Just to the southeast the sound of a river is quite clear. In fact, it's a little odd you didn't hear it from even further away with how quiet the forest is. Snow crunches and ice cracks under your boots as you turn about to see every direction looking the same, but the sound of the river at least provides a kind of landmark. Reminix follows in from the south. Gronk follows in from the south. Kazzter follows in from the south. Samu follows in from the south. Truth follows in from the south.",
+          "grid_x": 0,
+          "grid_y": 30,
+          "exits": {},
+          "npcs": []
+        },
+        "3587": {
+          "vnum": 3587,
+          "name": "In the White Forest",
+          "description": "Nearby to the north is strange, circular stone structure, nearly hidden in the forest. From here you can see that drifted snow has piled up against it, and like everything else in these woods it isn't likely anyone has been there in a while. In all other directions, snow covered evergreens block your view for more than a few feet. Bast follows in from the west. Reminix follows in from the west. Gronk follows in from the west. Kazzter follows in from the west. Samu follows in from the west. Truth follows in from the west.",
+          "grid_x": 0,
+          "grid_y": 45,
+          "exits": {},
+          "npcs": []
+        },
+        "3588": {
+          "vnum": 3588,
+          "name": "Outside a Stone Temple",
+          "description": "You stand outside a large circular building made of stone. No path leads here, and any that would have been beaten out by hundreds of feet making the journey has long since been blown over by the snow that drifts ceaselessly from the sky. The stones are all perfectly cut, and the building lacks any sense of the modesty and simplicity that dominates the rest of the structures in the forest. Bast follows in from the south. Reminix follows in from the south. Gronk follows in from the south. Kazzter follows in from the south. Samu follows in from the south. Truth follows in from the south.",
+          "grid_x": 0,
+          "grid_y": 60,
+          "exits": {},
+          "npcs": []
+        },
+        "3589": {
+          "vnum": 3589,
+          "name": "Inside the Stone Temple",
+          "description": "One large circular room makes up the inside of the stone temple. The tiled stone floors are of magnificent beauty - they are unadorned, yet the stone is so perfectly cut and laid. Wooden tables and chairs are scattered about the room, and the walls are mostly lined by alternating lavish tapestries and bookcases full of holy writings and treatises on magic. Two stone stairways opposite each other spiral upwards and downwards, indicating multiple levels. Bast follows in from the south. Reminix follows in from the south. Gronk follows in from the south. Kazzter follows in from the south. Samu follows in from the south. Truth follows in from the south.",
+          "grid_x": 0,
+          "grid_y": 75,
+          "exits": {},
+          "npcs": []
+        },
+        "3590": {
+          "vnum": 3590,
+          "name": "Under the Stone Temple",
+          "description": "You stand in a small antechamber of plain grey stone. A few wooden chairs line the walls, and to the south a great stone door stands in a wide doorway which has torches set at either side. Examining the doorway, you notice it seems to have no handles or keyholes, only a star-shaped indentation in the very center. Bast follows in from the north. Reminix follows in from the north. Gronk follows in from the north. Kazzter follows in from the north. Samu follows in from the north. Truth follows in from the north.",
+          "grid_x": 0,
+          "grid_y": 90,
+          "exits": {},
+          "npcs": []
+        },
+        "3591": {
+          "vnum": 3591,
+          "name": "Under the Stone Temple",
+          "description": "This room is quite vast, maybe as large as the temple above it. It is made entirely of stone, and is silent save for the echoes that cascade around you in response to even your slightest move. Five torches spread evenly along the walls burn dully, casting small pools of light in the otherwise pitch black room. The flickering light plays across strange blue runes painted in a perfect circle on the floor. At the south end of the room a narrow spiral staircase with an ornate twisted metal banister leads down into deeper darkness. Bast follows in from the north. Reminix follows in from the north. Gronk follows in from the north. Kazzter follows in from the north. Samu follows in from the north. Truth follows in from the north.",
+          "grid_x": 0,
+          "grid_y": 105,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Morimaere",
+              "description": "Though daemon, she possesses many human features.  Her pale skin is covered in intricate black tattoos that pulse with power.  Long black hair frames a beautiful face with blood red eyes.  She grins at you, baring fang-like teeth.",
+              "unique": false
+            }
+          ]
+        },
+        "3575": {
+          "vnum": 3575,
+          "name": "In the White Forest",
+          "description": "To the north and east off in the distance you can hear the distinctive sound of a rushing river. As you peer through the trees to the south and west, it seems as though they thin out considerably, instead of growing in thicker as you would expect. Bast follows in from the east. Reminix follows in from the east. Kazzter follows in from the east. A darkling cleric gasps as Gilrin dodges his fist. Gilrin brings his sword down on a darkling cleric.",
+          "grid_x": 0,
+          "grid_y": 420,
+          "exits": {},
+          "npcs": []
+        },
+        "3556": {
+          "vnum": 3556,
+          "name": "In the White Forest",
+          "description": "The path lies to the north and to the west, still visible from where you stand. To the south and east the forest seems to grow in much thicker, and you're unsure how much longer you can make progress in those directions. Bast follows in from the west. Reminix follows in from the west. Gronk follows in from the west. Kazzter follows in from the west. Samu follows in from the west. Truth follows in from the west.",
+          "grid_x": 0,
+          "grid_y": 135,
+          "exits": {},
+          "npcs": []
+        },
+        "3557": {
+          "vnum": 3557,
+          "name": "In the White Forest",
+          "description": "Minding your footing in the deep snow, you gaze south momentarily and notice that you can barely make out the vast and tall mountains now a bit distant in that direction. Too many trees now lie in between you and their rocky faces to get a good view. Bast follows in from the north. Reminix follows in from the north. Gronk follows in from the north. Kazzter follows in from the north. Samu follows in from the north. Truth follows in from the north.",
+          "grid_x": 0,
+          "grid_y": 150,
+          "exits": {},
+          "npcs": []
+        },
+        "3558": {
+          "vnum": 3558,
+          "name": "In the White Forest",
+          "description": "As you trudge along, you can just make out the sound of a thin sheet of ice cracking under your feet with each step. As if the footing wasn't treacherous enough with all this forsaken snow. The forest continues on in all directions, blocking your sight for more than a few meters. Bast follows in from the west. Reminix follows in from the west. Gronk follows in from the west. Kazzter follows in from the west. Samu follows in from the west. Truth follows in from the west.",
+          "grid_x": 0,
+          "grid_y": 165,
+          "exits": {},
+          "npcs": []
+        },
+        "2279": {
+          "vnum": 2279,
+          "name": "A Vast Laboratory",
+          "description": "Strange magical runes and symbols are etched into every inch of stone in this large room. It appears to be some sort of laboratory, as several tables bear glass containers full of strange chemicals. There seems to be no light source anywhere in the room. Against the far wall stand several large glass cylinders, each containing a human-like creature suspended in some unidentifiable liquid... Homunculi! Dozens of them! What an incredible affront to the gods! An eagle-emblazoned totem pulses with a serene, mystical energy. Truth removes a tooth-shaped cobalt pendant.",
+          "grid_x": 0,
+          "grid_y": 180,
+          "exits": {},
+          "npcs": []
+        },
+        "3559": {
+          "vnum": 3559,
+          "name": "In the White Forest",
+          "description": "Some fallen branches and tree trunks slow your progress here. The trees seem quite a bit thinner here, and for a moment you can stop and enjoy the beauty of the forest. The ice-covered branches shimmer as light hits them, and the snow all around you glistens to dazzling effect. The forest seems a bit thinner to the east, but continues on as normal in all other directions. Bast follows in from the west. Reminix follows in from the west. Gronk follows in from the west. Kazzter follows in from the west. Samu follows in from the west. Truth follows in from the west.",
+          "grid_x": 0,
+          "grid_y": 195,
+          "exits": {},
+          "npcs": []
+        },
+        "3560": {
+          "vnum": 3560,
+          "name": "In the White Forest",
+          "description": "You notice as you trudge along that the ground seems to slope downward to the southeast, though trees continue to grow in those directions and block your view. To the north, the forest seems to thin out a bit, and to the west the trees remain just as crowded as ever. Bast follows in from the north. Reminix follows in from the north. Gronk follows in from the north. Kazzter follows in from the north. Samu follows in from the north. Truth follows in from the north. Remembrance of the Zephyr is no longer on cooldown!",
+          "grid_x": 0,
+          "grid_y": 210,
+          "exits": {},
+          "npcs": []
+        },
+        "3561": {
+          "vnum": 3561,
+          "name": "In the White Forest",
+          "description": "Trudging along, you almost don't notice the long drop that suddenly opened in the ground. One step further, and your foot would've met naught but air. It looks to be nothing more than a vast ditch, but the multitude of dead tree trunks could make the fall potentially lethal. To the north and west the forest appears navigable, assuming you remain cautious of course. Bast follows in from the north. Reminix follows in from the north. Gronk follows in from the north. Kazzter follows in from the north. Samu follows in from the north. Truth follows in from the north. The soothing rain washes over Bast. Bast looks better.",
+          "grid_x": 0,
+          "grid_y": 225,
+          "exits": {},
+          "npcs": []
+        },
+        "3562": {
+          "vnum": 3562,
+          "name": "In the White Forest",
+          "description": "You notice as you trudge along that the ground seems to slope downward to the southeast, though trees continue to grow in those directions and block your view. To the north, the forest seems to thin out a bit, and to the west the trees remain just as crowded as ever. Bast follows in from the south. Reminix follows in from the south. Gronk follows in from the south. Kazzter follows in from the south. Samu follows in from the south. Truth follows in from the south.",
+          "grid_x": 0,
+          "grid_y": 240,
+          "exits": {},
+          "npcs": []
+        },
+        "3563": {
+          "vnum": 3563,
+          "name": "In the White Forest",
+          "description": "To the south, any progress is halted by a large sink in the ground. A fall there would dash your body against countless tree trunks and would likely prove fatal. To the east, the strangest sight- a giant impact crater, like something had fallen from the heavens and crashed into the ground. The crater is so large that you cannot see the other side. Bast follows in from the west. Reminix follows in from the west. Gronk follows in from the west. Kazzter follows in from the west. Samu follows in from the west. Truth follows in from the west.",
+          "grid_x": 0,
+          "grid_y": 255,
+          "exits": {},
+          "npcs": []
+        },
+        "3564": {
+          "vnum": 3564,
+          "name": "In the White Forest",
+          "description": "The way to the east is blocked by an enormous impact crater, far too wide and deep to traverse. You doubt that you could climb your way back out if you fell in. The forest seems to continue on endlessly in all other directions. Bast follows in from the south. Reminix follows in from the south. Gronk follows in from the south. Kazzter follows in from the south. Samu follows in from the south. Truth follows in from the south. Bast takes a drink from a waterskin.",
+          "grid_x": 0,
+          "grid_y": 270,
+          "exits": {},
+          "npcs": []
+        },
+        "3565": {
+          "vnum": 3565,
+          "name": "In the White Forest",
+          "description": "The trees are quite thick here, almost too thick to navigate through. Each step is heavily labored as branches and roots grab at you from all directions. To the north and west, the forest does begin to grow in too thick to fit more than a limb through the branches. Bast follows in from the south. Reminix follows in from the south. Gronk follows in from the south. Kazzter follows in from the south. Samu follows in from the south. Truth follows in from the south.",
+          "grid_x": 0,
+          "grid_y": 285,
+          "exits": {},
+          "npcs": []
+        },
+        "3566": {
+          "vnum": 3566,
+          "name": "In the White Forest",
+          "description": "To the south and east a gigantic impact crater prevents you from exploring further. However, the forest grows in thick to the north and west, and though you can't see much, they're better options than hurling yourself to your likely demise. Bast follows in from the west. Reminix follows in from the west. Gronk follows in from the west. Kazzter follows in from the west. Samu follows in from the west. Truth follows in from the west.",
+          "grid_x": 0,
+          "grid_y": 300,
+          "exits": {},
+          "npcs": []
+        },
+        "3567": {
+          "vnum": 3567,
+          "name": "In the White Forest",
+          "description": "To the north and west the thick patch of trees stops you from even considering trying to make progress in those directions. To the south and east the forest is still densely populated by trees, but not so much as to completely prevent travel. Bast follows in from the south. Reminix follows in from the south. Gronk follows in from the south. Kazzter follows in from the south. Samu follows in from the south. Truth follows in from the south.",
+          "grid_x": 0,
+          "grid_y": 315,
+          "exits": {},
+          "npcs": []
+        },
+        "3568": {
+          "vnum": 3568,
+          "name": "In the White Forest",
+          "description": "Your only options for travel here are the thick forest to the north and west, as to the south and east lies the mysterious giant crater. Idly you wonder how many dead, crushed trees are buried under the snow that settled since the massive crater was formed. Bast follows in from the west. Reminix follows in from the west. Gronk follows in from the west. Kazzter follows in from the west. Samu follows in from the west.",
+          "grid_x": 0,
+          "grid_y": 330,
+          "exits": {},
+          "npcs": []
+        },
+        "3569": {
+          "vnum": 3569,
+          "name": "In the White Forest",
+          "description": "The sound of snow crunching under your feet has begun to sound like some sort of mantra, rhythmic and soft. To the east, a blotch of blackness obstructs your view as the branches of countless trees wind together. The forest appears relatively inviting in all other directions. Bast follows in from the south. Reminix follows in from the south. Gronk follows in from the south. Kazzter follows in from the south. Samu follows in from the south. Truth follows in from the south.",
+          "grid_x": 0,
+          "grid_y": 345,
+          "exits": {},
+          "npcs": []
+        },
+        "3570": {
+          "vnum": 3570,
+          "name": "In the White Forest",
+          "description": "You stand at the brink of a gigantic impact crater. Minding your step near the edge, you gaze down to discern what appears to be a large meteor in the center. The crater is so large that you cannot further explore it. If you managed to survive the fall down, you likely wouldn't be able to find a way back out. Bast follows in from the west. Reminix follows in from the west. Gronk follows in from the west. Kazzter follows in from the west. Samu follows in from the west. Truth follows in from the west.",
+          "grid_x": 0,
+          "grid_y": 360,
+          "exits": {},
+          "npcs": []
+        },
+        "3571": {
+          "vnum": 3571,
+          "name": "In the White Forest",
+          "description": "An incredibly deep crater prevents any travel to the south, which is just as well, as all you can make out on the horizon is more jagged and snowy peaks. To the east you can make out the sound of a flowing river, and to the north a few thin trees still stand. Bast follows in from the west. Reminix follows in from the west. Gronk follows in from the west. Kazzter follows in from the west. Samu follows in from the west. Truth follows in from the west.",
+          "grid_x": 0,
+          "grid_y": 375,
+          "exits": {},
+          "npcs": []
+        },
+        "3572": {
+          "vnum": 3572,
+          "name": "In the White Forest",
+          "description": "You stand at the brink of a gigantic impact crater. Minding your step near the edge, you gaze down to discern what appears to be a large meteor in the center. The crater is so large that you cannot further explore it. If you managed to survive the fall down, you likely wouldn't be able to find a way back out. Bast follows in from the east. Reminix follows in from the east. Gronk follows in from the east. Kazzter follows in from the east. Samu follows in from the east. Truth follows in from the east.",
+          "grid_x": 0,
+          "grid_y": 390,
+          "exits": {},
+          "npcs": []
+        },
+        "3573": {
+          "vnum": 3573,
+          "name": "In the White Forest",
+          "description": "To the north and east off in the distance you can hear the distinctive sound of a rushing river. As you peer through the trees to the south and west, it seems as though they thin out considerably, instead of growing in thicker as you would expect. Bast follows in from the south. Reminix follows in from the south. Gronk follows in from the south. Kazzter follows in from the south. Samu follows in from the south. Truth follows in from the south.",
+          "grid_x": 0,
+          "grid_y": 405,
+          "exits": {},
+          "npcs": []
+        },
+        "3574": {
+          "vnum": 3574,
+          "name": "In the White Forest",
+          "description": "The river courses swiftly to the north, though it wouldn't be too difficult to safely push a watercraft in. The forest is quite thin here and seems to remain that way to the east and west, yet to the south the trees seem to die out entirely. Bast follows in from the west. Reminix follows in from the west. Kazzter follows in from the west.",
+          "grid_x": 0,
+          "grid_y": 435,
+          "exits": {},
+          "npcs": []
+        },
+        "3576": {
+          "vnum": 3576,
+          "name": "In the White Forest",
+          "description": "The trees are a bit thin here, a small distance away from the forest path. Looking about, you're afforded a view of naught but trees in all directions. They all look pretty much the same. Try not to get lost. Bast follows in from the east. Reminix follows in from the east. Gronk follows in from the east. Kazzter follows in from the east. Samu follows in from the east. Truth follows in from the east.",
+          "grid_x": 0,
+          "grid_y": 120,
+          "exits": {},
+          "npcs": []
+        },
+        "3577": {
+          "vnum": 3577,
+          "name": "In the White Forest",
+          "description": "To the north and west you can make out the path just beyond a line of trees, and off in the distance to the northeast you can just hear the distinctive sound of rushing water. The trees continue to the south and east preventing you from observing your surroundings for more than a few feet. Bast follows in from the south. Reminix follows in from the south. Gronk follows in from the south. Kazzter follows in from the south. Samu follows in from the south. Truth follows in from the south. Truth moves quickly to protect Kazzter from an ice elemental! An ice elemental swings wildly and misses. An ice elemental's blood freezes and skin frosts where a frosted blue dagger strikes them! Ice crystals fly as Truth blasts a wall of cold at an ice elemental!",
+          "grid_x": 0,
+          "grid_y": 450,
+          "exits": {},
+          "npcs": []
+        },
+        "3578": {
+          "vnum": 3578,
+          "name": "In the White Forest",
+          "description": "The trees are a bit thin here, a small distance away from the forest path. Looking about, you're afforded a view of naught but trees in all directions. They all look pretty much the same. Try not to get lost. Bast follows in from the north. Reminix follows in from the north. Gronk follows in from the north. Kazzter follows in from the north. Samu follows in from the north. Truth follows in from the north.",
+          "grid_x": 0,
+          "grid_y": 465,
+          "exits": {},
+          "npcs": []
+        },
+        "3579": {
+          "vnum": 3579,
+          "name": "In the White Forest",
+          "description": "To the north and east off in the distance you can hear the distinctive sound of a rushing river. As you peer through the trees to the south and west, it seems as though they thin out considerably, instead of growing in thicker as you would expect. Bast follows in from the west. Reminix follows in from the west. Gronk follows in from the west. Kazzter follows in from the west. Samu follows in from the west. Truth follows in from the west.",
+          "grid_x": 0,
+          "grid_y": 480,
+          "exits": {},
+          "npcs": []
+        },
+        "3580": {
+          "vnum": 3580,
+          "name": "In the White Forest",
+          "description": "The river courses swiftly to the north, though it wouldn't be too difficult to safely push a watercraft in. The forest is quite thin here and seems to remain that way to the east and west, yet to the south the trees seem to die out entirely. Bast follows in from the west. Reminix follows in from the west. Gronk follows in from the west. Kazzter follows in from the west. Samu follows in from the west. Truth follows in from the west.",
+          "grid_x": 0,
+          "grid_y": 495,
+          "exits": {},
+          "npcs": []
+        },
+        "3581": {
+          "vnum": 3581,
+          "name": "In the White Forest",
+          "description": "An incredibly deep crater prevents any travel to the south, which is just as well, as all you can make out on the horizon is more jagged and snowy peaks. To the east you can make out the sound of a flowing river, and to the north a few thin trees still stand. Bast follows in from the north. Reminix follows in from the north. Gronk follows in from the north. Kazzter follows in from the north. Samu follows in from the north. Truth follows in from the north.",
+          "grid_x": 0,
+          "grid_y": 510,
+          "exits": {},
+          "npcs": []
+        },
+        "3582": {
+          "vnum": 3582,
+          "name": "In the White Forest",
+          "description": "Here a few dead trees have fallen into the river to the east. The river seems to be moving slowly enough to allow you to enter or cross without danger, as long as you are mindful of the strong currents caused by the thick trunks sticking out of the waters. Bast follows in from the west. Reminix follows in from the west. Gronk follows in from the west. Kazzter follows in from the west. Samu follows in from the west. Truth follows in from the west.",
+          "grid_x": 0,
+          "grid_y": 525,
+          "exits": {},
+          "npcs": []
+        },
+        "3583": {
+          "vnum": 3583,
+          "name": "Along a Tranquil River",
+          "description": "Here a few trees have actually died and fallen into the river. Luckily the river is slightly wider here, and so navigating around the fallen trees isn't impossible but merely a tiresome nuisance. The water crashes into these dead logs, spraying you with cold water despite your best efforts to remain dry. Reminix follows in from the west. Gronk follows in from the west. Kazzter follows in from the west. Samu follows in from the west. Truth follows in from the west.",
+          "grid_x": 0,
+          "grid_y": 540,
+          "exits": {},
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 540,
+        "room_count": 37
+      }
+    }
+  },
+  "edges": []
+}

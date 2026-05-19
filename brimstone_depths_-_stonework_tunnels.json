@@ -1,0 +1,52 @@
+{
+  "zone_name": "Brimstone Depths - Stonework Tunnels",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": 0,
+    "max_x": 0,
+    "min_y": 0,
+    "max_y": 0
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1750,
+      "rooms": {
+        "1750": {
+          "vnum": 1750,
+          "name": "Upon a Ledge",
+          "description": "A narrow ledge protrudes here, affording just enough space for one to land or stand upon. Significantly below wait multiple stone spires within an acrid pit for those unfortunate -- or unwise -- enough to take a step in the wrong direction. A small tunnel leads east. You have lost 1080 experience.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 1751,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "A Pit of Spikes",
+              "direction": "n",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 473,
+              "to_zone": "Stonework Tunnels",
+              "to_room_name": "Winding Ledge",
+              "direction": "u",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    }
+  },
+  "edges": []
+}

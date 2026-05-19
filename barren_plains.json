@@ -1,0 +1,333 @@
+{
+  "zone_name": "Barren Plains",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": 0,
+    "max_x": 3,
+    "min_y": 0,
+    "max_y": 6
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1934,
+      "rooms": {
+        "1934": {
+          "vnum": 1934,
+          "name": "Edge of the Barren Plains",
+          "description": "The remnants of northern winds flow across the edge of the barren plains, swirling as they meet the warm currents of air from the south. A threadbare footpath winds through the plains, away from the towering gate of stones standing to the west.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "s": {
+              "to_vnum": 1935,
+              "to_zone": "Barren Plains",
+              "to_room_name": "The Barren Plains",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1935": {
+          "vnum": 1935,
+          "name": "The Barren Plains",
+          "description": "The barren plains stretch out all around you, a broad portrait of utter desolation spanning one's entire field of vision. A few clumps of dry grass huddle beside the occasional boulder protruding from the ground, or in patches at the bases of the withered, long-dead trees dotting the landscape.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1936,
+              "to_zone": "Barren Plains",
+              "to_room_name": "The Barren Plains",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1936": {
+          "vnum": 1936,
+          "name": "The Barren Plains",
+          "description": "Dry, empty plains surround you, the surface broken only by a nearby canyon to the east. Far northward lay the rocky hills, and a jagged mountain range. The plains extend for miles southward.",
+          "grid_x": 1,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1937,
+              "to_zone": "Barren Plains",
+              "to_room_name": "Canyons Edge",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1937": {
+          "vnum": 1937,
+          "name": "Canyons Edge",
+          "description": "A stiff breeze flows by, here at the edge of a gaping canyon in the barren plains. Mountains rise further northward, and across this great split in the land can be seen the remnants of a city upon the plains.",
+          "grid_x": 2,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1938,
+              "to_zone": "Barren Plains",
+              "to_room_name": "Canyons Edge",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1938": {
+          "vnum": 1938,
+          "name": "Canyons Edge",
+          "description": "You stand at the edge of a tremendous canyon splitting the surface of the barren plains. Far across the gaping chasm the plains are seen to continue toward mountains in the north and northeast. Dark iron streaks run thick through the rock.",
+          "grid_x": 3,
+          "grid_y": 1,
+          "exits": {
+            "s": {
+              "to_vnum": 1939,
+              "to_zone": "Barren Plains",
+              "to_room_name": "The Barren Plains",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1939": {
+          "vnum": 1939,
+          "name": "The Barren Plains",
+          "description": "You tread wearily upon the lifeless surface of the barren plains, finding little of interest. Far, far in the northern distance rises a jagged range of snow- capped mountains. The ground here is streaked with red, and marked with the signs of an epic battle, long ago won and lost.",
+          "grid_x": 3,
+          "grid_y": 2,
+          "exits": {
+            "s": {
+              "to_vnum": 1940,
+              "to_zone": "Barren Plains",
+              "to_room_name": "The Barren Plains",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1940": {
+          "vnum": 1940,
+          "name": "The Barren Plains",
+          "description": "A dry, dusty depression in the land here marks where once a pool of water lay. The skeletal remains of several wild creatures are crumpled here at the edge of the dried up reservior, and windswept plains extend in all directions.",
+          "grid_x": 3,
+          "grid_y": 3,
+          "exits": {
+            "s": {
+              "to_vnum": 1941,
+              "to_zone": "Barren Plains",
+              "to_room_name": "The Barren Plains",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1941": {
+          "vnum": 1941,
+          "name": "The Barren Plains",
+          "description": "The plains descend here, yet little changes. Scatterings of old, dried bones lay in dusty piles among brownish patches of grass. Many sets of oddly shaped tracks cross each other here, leading off through the plains.",
+          "grid_x": 3,
+          "grid_y": 4,
+          "exits": {
+            "s": {
+              "to_vnum": 1942,
+              "to_zone": "Barren Plains",
+              "to_room_name": "The Barren Plains",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1942": {
+          "vnum": 1942,
+          "name": "The Barren Plains",
+          "description": "A rutted path here widens, forming a road southward through the plains, which at this point begin to appear less desolate. High stalks of grain gather in places, dry and golden, and a darkened forest of emerald can be seen far to the southeast.",
+          "grid_x": 3,
+          "grid_y": 5,
+          "exits": {
+            "s": {
+              "to_vnum": 1943,
+              "to_zone": "Barren Plains",
+              "to_room_name": "Edge of the Barren Plains",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1943": {
+          "vnum": 1943,
+          "name": "Edge of the Barren Plains",
+          "description": "Small stones have been aligned to mark a road, of sorts, beginning here and venturing further south, away from the barren plains. In the distance, an arched bridge rests over a shallow river to the southeast.",
+          "grid_x": 3,
+          "grid_y": 6,
+          "exits": {
+            "s": {
+              "to_vnum": 1944,
+              "to_zone": "Ruins of Cormanthus",
+              "to_room_name": "Southern Plains Road",
+              "direction": "s",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 3,
+        "min_y": 0,
+        "max_y": 6,
+        "room_count": 10
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1934,
+      "to": 1935,
+      "direction": "s",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1935,
+      "to": 1936,
+      "direction": "e",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        1,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1936,
+      "to": 1937,
+      "direction": "e",
+      "from_grid": [
+        1,
+        1
+      ],
+      "to_grid": [
+        2,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1937,
+      "to": 1938,
+      "direction": "e",
+      "from_grid": [
+        2,
+        1
+      ],
+      "to_grid": [
+        3,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1938,
+      "to": 1939,
+      "direction": "s",
+      "from_grid": [
+        3,
+        1
+      ],
+      "to_grid": [
+        3,
+        2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1939,
+      "to": 1940,
+      "direction": "s",
+      "from_grid": [
+        3,
+        2
+      ],
+      "to_grid": [
+        3,
+        3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1940,
+      "to": 1941,
+      "direction": "s",
+      "from_grid": [
+        3,
+        3
+      ],
+      "to_grid": [
+        3,
+        4
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1941,
+      "to": 1942,
+      "direction": "s",
+      "from_grid": [
+        3,
+        4
+      ],
+      "to_grid": [
+        3,
+        5
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1942,
+      "to": 1943,
+      "direction": "s",
+      "from_grid": [
+        3,
+        5
+      ],
+      "to_grid": [
+        3,
+        6
+      ],
+      "floor": 0
+    }
+  ]
+}

@@ -1,0 +1,3821 @@
+{
+  "zone_name": "Port City of Barcas",
+  "floor_count": 5,
+  "bounds": {
+    "min_x": -3,
+    "max_x": 8,
+    "min_y": -4,
+    "max_y": 15
+  },
+  "floors": {
+    "-4": {
+      "floor_id": -4,
+      "entry_vnum": 2878,
+      "rooms": {
+        "2878": {
+          "vnum": 2878,
+          "name": "Wide Berth",
+          "description": "The floating piers and walkways have been removed from this part of the enormous harbor, to make room for several ships which appear to be waiting for repair. One lists badly, while another appears to be sinking at a near-visible rate.",
+          "grid_x": 1,
+          "grid_y": 7,
+          "exits": {
+            "n": {
+              "to_vnum": 2879,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Junction",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2882": {
+          "vnum": 2882,
+          "name": "Watch Post",
+          "description": "Directly between the entrance to the shipyard and the naval base, a large stone rampart juts out of the northern wall, upon which is mounted an gargantuan ballista. Any ships wishing to enter either of the guarded areas must pass it by, at point blank range. Luckily for you it would be useless against your tiny craft.",
+          "grid_x": 4,
+          "grid_y": 6,
+          "exits": {
+            "e": {
+              "to_vnum": 2887,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Guarded Channel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2883,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Floating Shipyard",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2881,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Outside the Shipyards",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Infantryman",
+              "description": "The twenty second naval infantry are the roughest, meanest, fightin'est unit in the Barcian navy; generally sent to board enemy ships at sea, they are the scourge of any boat they set foot on.",
+              "unique": false
+            }
+          ]
+        },
+        "2918": {
+          "vnum": 2918,
+          "name": "The Quilted Duck",
+          "description": "The quaint little shop has a very homey feel, all sorts of knickknacks cluttering the shelves between piles of linen and bolts of cloth. The owner seems to have some sort of affinity for ducks, as several of the noisome beasts waddle about the store, dressed in little bonnets and petticoats.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2916,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Market Street",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Brundii",
+              "description": "She rocks back and forth in her chair, humming some familiar, motherly",
+              "unique": true
+            },
+            {
+              "name": "Large tomcat",
+              "description": "as such they have populated the island as well.  Some are house pets, while",
+              "unique": true
+            }
+          ]
+        },
+        "3428": {
+          "vnum": 3428,
+          "name": "Within the Vault",
+          "description": "The vault is one of many, a series of guarded chambers that honeycomb the inside of the Barcane. Currency from all manner of foreign cities, some you recognice and others you don't, fill boxes and sit in haphazard piles on the ground. Gems, priceless pieces of art, and other treasures are also stored nearby, though much of it would be simply too conspicuous to try and carry out with you.",
+          "grid_x": 2,
+          "grid_y": 0,
+          "exits": {
+            "s": {
+              "to_vnum": 2896,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "The Municipal Vault",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 3427,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Office of the Council Treasurer",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2921": {
+          "vnum": 2921,
+          "name": "Corner of the Wall",
+          "description": "You stand in the corner made by two of the cities outer walls, a small garden planted next to the road. Children scamper through the flowers as their mothers stroll about nearby. Front street runs off eastward, and market street bustles to the north.",
+          "grid_x": 0,
+          "grid_y": 3,
+          "exits": {
+            "e": {
+              "to_vnum": 2897,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Front Street",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2920,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Market Street",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3418": {
+          "vnum": 3418,
+          "name": "Top of the Slipway",
+          "description": "The huge ramp extends into the water of the bay to the west, great logs set into the bottom as rollers. Repaired ships can slide easily back into the water, and the next can be pulled up and in with a series of pulleys and a good tide.",
+          "grid_x": 3,
+          "grid_y": 9,
+          "exits": {
+            "w": {
+              "to_vnum": 3419,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Bottom of the Slipway",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2910": {
+          "vnum": 2910,
+          "name": "Avenues and Alleyways",
+          "description": "Each dirty street resembles the last, as do the poor folk living in squalor along them. The place is a stark contrast to the prim and polished city above you, but these are just second class citizens, they're not real people anyway, right?",
+          "grid_x": 2,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 2909,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Poortown",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2911,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Outside the Shaded Stone",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2912": {
+          "vnum": 2912,
+          "name": "Inside the Shaded Stone",
+          "description": "The lights are dim and the atmosphere thick with smoke within the ramshackle tavern. If you want a seat, you'll likely have to take it from someone else, as none of the patrons appear ready to receive your company. Along one wall is a long stone bar, lined with stools all occupied by surly looking thugs.",
+          "grid_x": 1,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 2911,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Outside the Shaded Stone",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Darcy",
+              "description": "The nimble young lass lends a smile and a sympathetic ear where she can as she scurries about behind the bar.",
+              "unique": true
+            }
+          ]
+        },
+        "2877": {
+          "vnum": 2877,
+          "name": "Receiving",
+          "description": "A large platform has been set up in the middle of the harbor, around which circle different vessels, all being directed to various parts of the shipyard by members of the port authority. Even the largest ships seem to be moving about impossibly smoothly, almost as though propelled by some unseen force beneath the waves.",
+          "grid_x": 1,
+          "grid_y": 8,
+          "exits": {
+            "n": {
+              "to_vnum": 2878,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Wide Berth",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Water elemental",
+              "description": "So this is the creature - or one like it - that has been gently ushering you forward in the otherwise calm harbor, somehow under the thrall of the",
+              "unique": false
+            }
+          ]
+        },
+        "2879": {
+          "vnum": 2879,
+          "name": "Junction",
+          "description": "This lane of the harbor is kept open, and generally free of traffic. Small ferries carry those with business within the city walls to the gates northward, but for the most part it is reserved for quick and smooth passage of vessels in and out of the shipyards and naval base to the east.",
+          "grid_x": 1,
+          "grid_y": 6,
+          "exits": {
+            "e": {
+              "to_vnum": 2880,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "First Garrison",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2892,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Majestic Landing",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2880": {
+          "vnum": 2880,
+          "name": "First Garrison",
+          "description": "Four small warships sit at the ready, prepared to weigh anchor at a moments notice and dart to any part of the harbor under the guidance of one of the many water elementals that roam the depths. There is a clear channel between them for passage into the shipyards, their armed ballistae sending a clear message to anyone passing through.",
+          "grid_x": 2,
+          "grid_y": 6,
+          "exits": {
+            "e": {
+              "to_vnum": 2881,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Outside the Shipyards",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2879,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Junction",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2881": {
+          "vnum": 2881,
+          "name": "Outside the Shipyards",
+          "description": "The natural harbor has been extended eastward past the furthest inland point, almost doubling its size. To the west and south is the commerce harbor and free port, while to the east in the manmade portion, are the floating shipyards and beyond that the impregnable naval base, both off limits to the public.",
+          "grid_x": 3,
+          "grid_y": 6,
+          "exits": {
+            "e": {
+              "to_vnum": 2882,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Watch Post",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2880,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "First Garrison",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2883": {
+          "vnum": 2883,
+          "name": "Floating Shipyard",
+          "description": "The entire Barcian shipyards are built upon massive floating barges. Full dry docks and slipways, sawmills and carpentry shops, everything a shipwright could possibly need to repair or even build a brand new ship is readily available - for a price.",
+          "grid_x": 4,
+          "grid_y": 7,
+          "exits": {
+            "n": {
+              "to_vnum": 2882,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Watch Post",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2884,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Floating Shipyard",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2884": {
+          "vnum": 2884,
+          "name": "Floating Shipyard",
+          "description": "The shipyard is a complex network of passages, quays, and berths, with more than half of the area covered by some form or another of floating walkway. Ships moving to and from repair stations make impossibly tight maneuvers under the guidance of water elementals while workers busy themselves with the task at hand.",
+          "grid_x": 4,
+          "grid_y": 8,
+          "exits": {
+            "n": {
+              "to_vnum": 2883,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Floating Shipyard",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2885,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Covered Drydock",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Infantryman",
+              "description": "The twenty second naval infantry are the roughest, meanest, fightin'est unit in the Barcian navy; generally sent to board enemy ships at sea, they are the scourge of any boat they set foot on.",
+              "unique": false
+            }
+          ]
+        },
+        "2885": {
+          "vnum": 2885,
+          "name": "Covered Drydock",
+          "description": "",
+          "grid_x": 4,
+          "grid_y": 9,
+          "exits": {
+            "n": {
+              "to_vnum": 2884,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Floating Shipyard",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2886,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Quartermasters Office",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3418,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Top of the Slipway",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2886": {
+          "vnum": 2886,
+          "name": "Quartermasters Office",
+          "description": "From here the day to day administration of the port and shipyard is overseen. Dark veneer covers the hardwood desk and matching furniture while a deep green carpet dresses the stone floor. The office is held by a retired captain in the Barcian navy, and memorabilia from successful campaigns tastefully decorates the walls.",
+          "grid_x": 4,
+          "grid_y": 10,
+          "exits": {
+            "n": {
+              "to_vnum": 2885,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Covered Drydock",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Heimd the quartermaster",
+              "description": "The quartermaster is an imposing, forceful man.  He keeps everything running smoothly not because it's his job, but because that's the way he",
+              "unique": true
+            }
+          ]
+        },
+        "2887": {
+          "vnum": 2887,
+          "name": "Guarded Channel",
+          "description": "Fortunately for you, the defenses lining this channel are meant to stop warships, not rowboats. Two huge chains, each link bigger than you and your boat are suspended across the water, and can be lowered to the seabed below to allow passage out of the naval base. Docks run parallel to either wall, leading up to the mechanisms that raise and lower the great chains.",
+          "grid_x": 5,
+          "grid_y": 6,
+          "exits": {
+            "e": {
+              "to_vnum": 2888,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Guarded Channel",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2882,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Watch Post",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2888": {
+          "vnum": 2888,
+          "name": "Guarded Channel",
+          "description": "The channel bottlenecks here, wide enough for just one ship to pass through. The rest of the water is covered in floating platforms, connected up to the vast walkway network. Troops patrol this area day and night, and any ship passing through unannounced will be boarded, whether they like it or not.",
+          "grid_x": 6,
+          "grid_y": 6,
+          "exits": {
+            "e": {
+              "to_vnum": 2889,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Naval Base",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2887,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Guarded Channel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2889": {
+          "vnum": 2889,
+          "name": "Naval Base",
+          "description": "Berthed all around you is the better part of the Barcian navy. Countless warships, from small sleek cutters to massive three decked galleons, armed to the teeth with ballistae and catapults fill the water. Grim faced soldiers patrol the floating walkways, eager to sound the alarm at the first sign of trouble.",
+          "grid_x": 7,
+          "grid_y": 6,
+          "exits": {
+            "e": {
+              "to_vnum": 2890,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Aboard the Einhorn",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3420,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Naval Base",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2888,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Guarded Channel",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2890": {
+          "vnum": 2890,
+          "name": "Aboard the Einhorn",
+          "description": "The flagship of the Barcian fleet, the Einhorn is the pinnacle of their engineering and shipbuilding skill. Though not the biggest, she is quick enough to sail circles around larger ships, and her twin ballista decks can cripple an enemy in one pass. A massive ram prow, capped in polished silver is her namesake.",
+          "grid_x": 8,
+          "grid_y": 6,
+          "exits": {
+            "n": {
+              "to_vnum": 2891,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Aboard the Einhorn",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2889,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Naval Base",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Nibelung",
+              "description": "He is a lithe, wiry fellow with skin weathered and tanned from so many years at sea.  His sharp eyes seem to notice everything, near and far as",
+              "unique": true
+            }
+          ]
+        },
+        "2891": {
+          "vnum": 2891,
+          "name": "Aboard the Einhorn",
+          "description": "",
+          "grid_x": 8,
+          "grid_y": 5,
+          "exits": {
+            "s": {
+              "to_vnum": 2890,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Aboard the Einhorn",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Kvalsis",
+              "description": "Captain Kvalsis stands proud and tall, a master of wind and sea.  He feels at home upon the waves, and stories say he hasn't set foot on land",
+              "unique": true
+            }
+          ]
+        },
+        "2892": {
+          "vnum": 2892,
+          "name": "Majestic Landing",
+          "description": "Clearly the elaborate wood and marble quay, with all its finely polished walkways and amazingly engineered supports was designed to awe and impress those arriving at the city, no less exquisite than the legendary golden gates of Cadain. Multiple covered walkways and pavilions grace the extensive structure, all decorated with bright tapestries flapping in the breeze.",
+          "grid_x": 1,
+          "grid_y": 5,
+          "exits": {
+            "n": {
+              "to_vnum": 2893,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Gateway to Barcas",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2879,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Junction",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2893": {
+          "vnum": 2893,
+          "name": "Gateway to Barcas",
+          "description": "In a wide courtyard before the open gates grows an immense and old arbutus tree, its rusty red bark constantly peeling away to reveal the fresh smooth growth beneath. The tree has been the symbol of Barcas since the city was founded, and is one of the few places in the known world where the rare species still flourishes.",
+          "grid_x": 1,
+          "grid_y": 4,
+          "exits": {
+            "n": {
+              "to_vnum": 2894,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Inside the Gates",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Military policeman",
+              "description": "The laws of Barcas are not to be taken lightly, and the peace officers have almost limitless power with which to uphold them.",
+              "unique": false
+            }
+          ]
+        },
+        "2894": {
+          "vnum": 2894,
+          "name": "Inside the Gates",
+          "description": "Inside the gates of Barcas, the city spreads out before you in precise order. The main avenue runs a circuit around the city, parallel with the walls, streets leading off of it in a grid pattern into the bustling centre of the populace. At its heart is the imposing hill of the Barcane, home of the nobles and ruling class.",
+          "grid_x": 2,
+          "grid_y": 3,
+          "exits": {
+            "n": {
+              "to_vnum": 2895,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Foot of the Barcane",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2897,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Front Street",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2897,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Front Street",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Barcian lad",
+              "description": "at the other child; who coincidentally does not seem to be enjoying the",
+              "unique": true
+            }
+          ]
+        },
+        "2895": {
+          "vnum": 2895,
+          "name": "Foot of the Barcane",
+          "description": "Monumentous stairs have been carved into the side of the great hill. They are capped with thick marble, the colors alternating from black to white on each step, veins of gold running through them all. High above your head the rich and noble folk make their homes and livings away from the hustle and bustle of the city below.",
+          "grid_x": 2,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 2896,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "The Municipal Vault",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2922,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Terrace on the Great Stair",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 2922,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Terrace on the Great Stair",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2896": {
+          "vnum": 2896,
+          "name": "The Municipal Vault",
+          "description": "The vault itself is dug into the hill of the Barcane, connected via a tunnel somewhere within the bowels of the hill. The part in which you stand has been converted into a public bank. The decor is white marble, fluted columns rise upward to the ceiling, while heavy blocks, spaced widely apart, have been tooled into booths for the tellers.",
+          "grid_x": 2,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 3428,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Within the Vault",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2895,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Foot of the Barcane",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 2895,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Foot of the Barcane",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Bubbly teller",
+              "description": "This attractive young lady is much too happy and helpful not to be faking it.  Nobody enjoys themselves this much at work.",
+              "unique": true
+            },
+            {
+              "name": "Citizen of barcas",
+              "description": "clothes, and is certainly not paying any attention to scruffy looking",
+              "unique": false
+            },
+            {
+              "name": "Military policeman",
+              "description": "The laws of Barcas are not to be taken lightly, and the peace officers have almost limitless power with which to uphold them.",
+              "unique": false
+            },
+            {
+              "name": "Stone elemental",
+              "description": "The hulking conglomeration of broken stone stands unmoving before the massive vault door, with it's incomprehensible locking mechanism.",
+              "unique": true
+            }
+          ]
+        },
+        "2897": {
+          "vnum": 2897,
+          "name": "Front Street",
+          "description": "The island of Barcas is actually quite barren, mostly low rocky hills, but the people have managed to flourish upon it, carving their homes into the stone, and using the excavated material to build their strong walls. Rusty red arbutus trees cling to the bluffs between buildings, their wiry branches providing shade overhead.",
+          "grid_x": 1,
+          "grid_y": 3,
+          "exits": {
+            "e": {
+              "to_vnum": 2894,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Inside the Gates",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2894,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Inside the Gates",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Gavric",
+              "description": "A tall, imposing human trader with a well-groomed beard and a keen eye for profitable deals. He wears a fine silk tunic and several rings adorned with precious stones, showcasing his success in the trading business.",
+              "unique": true
+            },
+            {
+              "name": "Military policeman",
+              "description": "The laws of Barcas are not to be taken lightly, and the peace officers have almost limitless power with which to uphold them.",
+              "unique": false
+            }
+          ]
+        },
+        "2898": {
+          "vnum": 2898,
+          "name": "Front Street",
+          "description": "The smell of jam and baking wafts from an unseen windowsill in one of the many homes lining front street. Clothes dangle from lines stretched between buildings and the wall, flapping and drying in the mild sea breeze. The mischievous laughter of children is followed shortly by a sharp scolding from a motherly voice.",
+          "grid_x": 2,
+          "grid_y": 4,
+          "exits": {
+            "e": {
+              "to_vnum": 2900,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Front Street",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2897,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Front Street",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2899": {
+          "vnum": 2899,
+          "name": "Freynya's Bunkhouse",
+          "description": "Several cots are set out in the large foyer, while private rooms can be rented on the floors above. All are cleaned daily, and a hot meal is provided for in the costs. Baths are extra, and unless you're renting a private suite, you may find yourself with a smelly roommate.",
+          "grid_x": 1,
+          "grid_y": 2,
+          "exits": {
+            "s": {
+              "to_vnum": 2898,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Front Street",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Freynya",
+              "description": "Freynya is a bit plain, rather homely looking actually, but one couldn't quite call her ugly either.  She keeps her establishment clean and takes",
+              "unique": true
+            }
+          ]
+        },
+        "2900": {
+          "vnum": 2900,
+          "name": "Front Street",
+          "description": "Several homes are clustered together near the corner where the east and south walls meet, sharing a communal garden of tended salal and spindly arbutus. Citizens wander the streets, chatting amicably amongst themselves, but keeping a weary eye on you - an obvious outsider.",
+          "grid_x": 3,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 2901,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Outside the Mages Guild",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2898,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Front Street",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2901": {
+          "vnum": 2901,
+          "name": "Outside the Mages Guild",
+          "description": "Your hair stands on end as you pass by the entrance to the mages guild, not from fear, but from some curious static charge in the air. Pondering it's source, you notice several tiny arcs of electricity dancing across your skin before a tremendous bang and a blinding flash issue from an upstairs window, followed by a string of colorful language, obviously picked up from the abundance of sailors in the city.",
+          "grid_x": 3,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 2903,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Guild Quarter",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2900,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Front Street",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2902,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Inside the Mages Guild",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Hulking automaton",
+              "description": "The automaton is powered by arcane ritual, an ethereal looking cord of silv'ry gossamer connecting it to its controller hidden somewhere within",
+              "unique": true
+            }
+          ]
+        },
+        "2902": {
+          "vnum": 2902,
+          "name": "Inside the Mages Guild",
+          "description": "Students are hunched over desks, endlessly repeating words of power, trying to get the tone and diction just right as their teachers scold them for slips of the tongue. More experienced members conjure daemons and magical fire, straining to keep the arcane energies in check.",
+          "grid_x": 2,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 2901,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Outside the Mages Guild",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Heikat",
+              "description": "She is vaguely humanoid, but her form seems to shift and grow through some arcane fog, distorting her age and features.",
+              "unique": true
+            }
+          ]
+        },
+        "2903": {
+          "vnum": 2903,
+          "name": "Guild Quarter",
+          "description": "More large guild halls are erected along the street, some being shared by several smaller guilds working in cooperation. The taverners, vinters, and entertainers guilds share a large, run down hall that looks more like a twenty- four hour party house than anything else, while their neighbors, the quilters, make daily requests to the authorities to have them shut down.",
+          "grid_x": 3,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 2904,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Outside the Pugilist's Hall",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2901,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Outside the Mages Guild",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2904": {
+          "vnum": 2904,
+          "name": "Outside the Pugilist's Hall",
+          "description": "Dozens of prospects duke it out in the streets before the hall, beating each other senseless in their attempts to gain the notice and sponsorship of a current member. Usually this is nothing more than entertainment to those inside, but from time to time one of the truly bloodthirsty are led in to join their ranks.",
+          "grid_x": 4,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 2906,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Guild Quarter",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2903,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Guild Quarter",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Guild member",
+              "description": "One of the younger guild members sits alone at a table, staring morosely into a cup of spiced wine. You wonder if he's okay...",
+              "unique": false
+            }
+          ]
+        },
+        "2905": {
+          "vnum": 2905,
+          "name": "Inside the Pugilist's Hall",
+          "description": "The guild is one wide open room, the floor covered in mats from wall to wall. Off to one side a few members sleep off their weariness, but most of the space is taken up by combatants practicing various martial disciplines.",
+          "grid_x": 3,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 2904,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Outside the Pugilist's Hall",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Ulfhendar",
+              "description": "They say he's part wolf, and by the way he savages his foes - always bare handed - few doubt the fact.  Sharpened canines slip out from behind",
+              "unique": true
+            }
+          ]
+        },
+        "2906": {
+          "vnum": 2906,
+          "name": "Guild Quarter",
+          "description": "The halls of all of the local guilds line this street running through the guild quarter, which occupies the east side of town. Nearby are the coopers and shrubbers guilds, and across the street from them the scrimshanders hall, it's doorway flanked by two huge carved whale ribs.",
+          "grid_x": 4,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 2907,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Poortown",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2904,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Outside the Pugilist's Hall",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2907": {
+          "vnum": 2907,
+          "name": "Poortown",
+          "description": "The residents of poortown seem, for the most part, resigned to their fate. Those who have not given up on getting out of the slums often turn to crime as a source of easy money, and inevitably only tie themselves closer to the place from which they were trying to escape. Speaking of crime, have you checked your purse lately?",
+          "grid_x": 4,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 2908,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Poortown Slum",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2906,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Guild Quarter",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Lowkey",
+              "description": "This skinny little outcast goes where he pleases when he pleases, and is seldom noticed by anyone until he decides to play one of his tricks on them.  For the right price, he'll teach you one or two.",
+              "unique": true
+            }
+          ]
+        },
+        "2908": {
+          "vnum": 2908,
+          "name": "Poortown Slum",
+          "description": "This is the corner of the north wall that joins with the east wall. It is a precarious junction in the outer defense of the city, where high above sentries patrol the parapet. Here far below the cities poor and downtrodden eke out what miserable living they can in the near permanent shade between the wall and the Barcane.",
+          "grid_x": 4,
+          "grid_y": -3,
+          "exits": {
+            "s": {
+              "to_vnum": 2907,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Poortown",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2909,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Poortown",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Inebriated man",
+              "description": "His clothes are stained with a disgusting cocktail of bodily fluids, and you wisely give the walking biohazard a wide berth as he passes by, a swarm",
+              "unique": true
+            }
+          ]
+        },
+        "2909": {
+          "vnum": 2909,
+          "name": "Poortown",
+          "description": "The streets near the north wall are clearly shabbier than those to the south, unkempt and in disrepair. Graffiti mars the walls, and it appears as though the military police do not bother to patrol this part of town at all, probably an arrangement favored just as much by the residents of the area.",
+          "grid_x": 3,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 2908,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Poortown Slum",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2910,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Avenues and Alleyways",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3419": {
+          "vnum": 3419,
+          "name": "Bottom of the Slipway",
+          "description": "At high tide, this part of the slipway is submerged, along with a large cart which is lowered down beforehand. A ship is sailed or towed into position, and then simply pulled up the ramp and set on blocks for repairs.",
+          "grid_x": 1,
+          "grid_y": 9,
+          "exits": {
+            "n": {
+              "to_vnum": 2877,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Receiving",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2911": {
+          "vnum": 2911,
+          "name": "Outside the Shaded Stone",
+          "description": "A building beside the road sits in the permanent shadow of the north wall, the sounds of drunken revelry echoing from within. From time to time an intoxicated patron is ejected from the shadows behind the doorway, to join a pile of his comrades in the gutter.",
+          "grid_x": 1,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 2910,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Avenues and Alleyways",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2912,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Inside the Shaded Stone",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2913,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Poortown Slum",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2913": {
+          "vnum": 2913,
+          "name": "Poortown Slum",
+          "description": "A river of dirty faces washes past you, each quickly lost to the anonymity of poverty. The shadowy alleyways between the rundown buildings look especially squalid, and certainly none too inviting. Unless you're looking for trouble, this probably isn't a good place to be loitering about.",
+          "grid_x": 0,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 2911,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Outside the Shaded Stone",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2914,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Poortown",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2914": {
+          "vnum": 2914,
+          "name": "Poortown",
+          "description": "Like most cities, the poor and downtrodden of Barcas are cloistered away in the oldest part of town, between the north wall and the hill of the Barcane, and generally shunned by the genteel public. Of course this creates a vicious circle of crime and poverty, but so long as they don't have to see it, the rest of the populace could care less.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "n": {
+              "to_vnum": 2913,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Poortown Slum",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2915,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Dirty Street",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3420": {
+          "vnum": 3420,
+          "name": "Naval Base",
+          "description": "There is less room taken up in the base with walkways and barges, almost all possible space is filled efficiently with Barcian warships, waiting to set sail. The crews call the ships home while on duty, so there is no need to crowd space with barracks or mess halls.",
+          "grid_x": 7,
+          "grid_y": 5,
+          "exits": {
+            "s": {
+              "to_vnum": 2889,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Naval Base",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Infantryman",
+              "description": "The twenty second naval infantry are the roughest, meanest, fightin'est unit in the Barcian navy; generally sent to board enemy ships at sea, they are the scourge of any boat they set foot on.",
+              "unique": false
+            }
+          ]
+        },
+        "2917": {
+          "vnum": 2917,
+          "name": "Smoky Smithery",
+          "description": "Wood is a scarce resource on the island, most of it being commandeered by the navy and shipyard, so the smiths burn coal for fuel, which produces much more, much dirtier smoke, as is evidenced by the thick layer of soot coating everything not used daily within the forge works.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 2916,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Market Street",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Anduvarii",
+              "description": "The dwarf is hunchbacked and grotesquely ugly, but he is a master smith unrivaled by any locals, and most foreigners as well.",
+              "unique": true
+            }
+          ]
+        },
+        "2922": {
+          "vnum": 2922,
+          "name": "Terrace on the Great Stair",
+          "description": "If you counted the stairs, you would find that you are exactly halfway up the hill. This step has been widened into a large terrace replete with benches and exotic looking plants, to provide a place of repose for those making the climb up to the shops and homes above.",
+          "grid_x": 3,
+          "grid_y": 3,
+          "exits": {
+            "u": {
+              "to_vnum": 2923,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Top of the Great Stair",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2915": {
+          "vnum": 2915,
+          "name": "Dirty Street",
+          "description": "The clutter of market street to the south seems to have spilled over into this seedy looking part of town and never been removed. The contrast is almost like night and day between the city to your south and the slums pressed against the northern wall, but they are at least within protection of the city.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 2914,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Poortown",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2916,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Market Street",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2916": {
+          "vnum": 2916,
+          "name": "Market Street",
+          "description": "More pushy salesmen attempt to usher you up to their stalls, each claiming to be able to beat the next in both price and quality. At times the competition gets quite heated, with fights even breaking loose, though it is about the only time you can get a little peace from their constant harassment.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2917,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Smoky Smithery",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2915,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Dirty Street",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2919,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Market Street",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2918,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "The Quilted Duck",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Military policeman",
+              "description": "The laws of Barcas are not to be taken lightly, and the peace officers have almost limitless power with which to uphold them.",
+              "unique": false
+            }
+          ]
+        },
+        "2920": {
+          "vnum": 2920,
+          "name": "Market Street",
+          "description": "Peddlers call at you to sample their wares from open fronted stores and wheeled carts. Others have set up shop - if you could call it that - on any open patch of ground available, spreading out their goods to cover as much space as possible and elbow out the competition.",
+          "grid_x": 0,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 2919,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Market Street",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2921,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Corner of the Wall",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Citizen of barcas",
+              "description": "clothes, and is certainly not paying any attention to scruffy looking",
+              "unique": false
+            },
+            {
+              "name": "City custodian",
+              "description": "any litter.  They aren't paid well, but are allowed to keep any valuables",
+              "unique": true
+            },
+            {
+              "name": "Muncel",
+              "description": "Muncel knows sausage; sweet, spicy, breakfast, you name it he's made it. He waves you over with wrinkled, greasy fingers that somewhat resemble",
+              "unique": true
+            }
+          ]
+        },
+        "2919": {
+          "vnum": 2919,
+          "name": "Market Street",
+          "description": "Exotic animals are penned or chained up, crowding this part of the street and reeking awfully. Several unhappy looking fellows are navigating the throng, cleaning up after the beasts. Criers boast of the prowess and bloodthirstiness of one, and the gentleness and docility of another in the same breath.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 2916,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Market Street",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2920,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Market Street",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Hyena",
+              "description": "The beast is half starved and you can tell by the way its eyes track your movements that it considers you a potential meal.",
+              "unique": true
+            },
+            {
+              "name": "Mjenla",
+              "description": "She is clad in tight leathers, where she is clad at all, and decorated in strings of claws and teeth.  The way she moves makes you wonder what else she may have for sale.",
+              "unique": true
+            },
+            {
+              "name": "Off-duty sailor",
+              "description": "pays you no heed as he rushes by, clearly his mind is occupied with",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -1,
+        "max_x": 8,
+        "min_y": -3,
+        "max_y": 10,
+        "room_count": 50
+      }
+    },
+    "-3": {
+      "floor_id": -3,
+      "entry_vnum": 3429,
+      "rooms": {
+        "3429": {
+          "vnum": 3429,
+          "name": "Hallway in the Rock",
+          "description": "The rock of the hallway has been carved to resemble brick and mortar, appearing as though it was built here instead of tunneled into the hill. The council chambers are to the north, while a wide archway at the southern end of the hall leads outside onto the top of the seawall.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 3425,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Council Hall",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3431,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Outside the Council Chambers",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3426": {
+          "vnum": 3426,
+          "name": "Orators Platform",
+          "description": "Councilmen who whish to address their peers do so from this raised platform, allowed to present their orations without interruption, the penalty for which is often quite severe. Thick red carpet covers the dais and runs eastward down the centre of the room.",
+          "grid_x": -2,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 3425,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Council Hall",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Aggressive councilman",
+              "description": "and forth on the platform as he delivers his speech.",
+              "unique": true
+            }
+          ]
+        },
+        "3430": {
+          "vnum": 3430,
+          "name": "Office of the Captain-General",
+          "description": "",
+          "grid_x": -2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3429,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Hallway in the Rock",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Volsung",
+              "description": "square chin and hard grey eyes.  He's been leading armies to war since before you were born, trifle with him and he'll continue to do so after",
+              "unique": true
+            }
+          ]
+        },
+        "3431": {
+          "vnum": 3431,
+          "name": "Outside the Council Chambers",
+          "description": "A stone causeway leaps in a gravity defying arc from a balcony outside the council chambers, overtop of front street, to the south wall of the city, which is also the north wall of the harbor. Gulls squawk high above you as they soar through the salty air.",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 3429,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Hallway in the Rock",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3432,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Bridge on the Wall",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3427": {
+          "vnum": 3427,
+          "name": "Office of the Council Treasurer",
+          "description": "The coldly impersonal office is filled with neatly labeled cabinets and papers arranged in equally neat piles on a large stone desk. Several complex adding machines dominate most of the room, unseen gears whirring and humming within their metallic shells.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "w": {
+              "to_vnum": 3425,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Council Hall",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 3428,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Within the Vault",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Treasurer",
+              "description": "complex equations at once, all flawlessly.",
+              "unique": true
+            }
+          ]
+        },
+        "3425": {
+          "vnum": 3425,
+          "name": "Council Hall",
+          "description": "The military junta that governs Barcas discusses any important matters concerning the city, both foreign and domestic, here in this rather spartan hall. There are no tables or chairs, just tiered steps carved into the long walls to be used as seats. Torches burn in iron sconces bolted to the walls at regular intervals, the smoke curling out through narrow vents above your head.",
+          "grid_x": -1,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 3427,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Office of the Council Treasurer",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3429,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Hallway in the Rock",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Sleepy councilman",
+              "description": "affairs is more than just a little boring, but of course somebody has to",
+              "unique": true
+            }
+          ]
+        },
+        "3437": {
+          "vnum": 3437,
+          "name": "Over the Harbor Mouth",
+          "description": "The only break in the wall is below you, at the entrance to the harbor. The battlement however, spans the gap, allowing the guards to patrol in a constant circuit. Several massive blocks hang over the lip of the wall, ready to be tumbled down onto any foes passing below with the help of a simple lever and a few strong backs.",
+          "grid_x": 0,
+          "grid_y": 4,
+          "exits": {
+            "w": {
+              "to_vnum": 3438,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Over The Harbor Mouth",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3438": {
+          "vnum": 3438,
+          "name": "Over The Harbor Mouth",
+          "description": "Arching more than a hundred feet over top of the entrance to the huge harbor, all must pass under the wide span to gain access to the port. Enemy ships attempting to run the gauntlet would suffer massive damage from overhead bombardment, if they ever made it this close.",
+          "grid_x": -1,
+          "grid_y": 4,
+          "exits": {
+            "w": {
+              "to_vnum": 3439,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Western Seawall",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Spirit of the Harbor",
+              "description": "Barcas, living in harmony with them, ensuring favorable winds for merchants and conjuring storms to smite the enemies of HER people.",
+              "unique": true
+            }
+          ]
+        },
+        "3432": {
+          "vnum": 3432,
+          "name": "Bridge on the Wall",
+          "description": "An arcing stone bridge spans the gap between the wall and the Barcane to the north, terminating at a balcony about halfway up the hill. Pennants flap in the sea breeze, displaying a red arbutus tree, the standard of the city.",
+          "grid_x": -1,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 3433,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "City Wall",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3431,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Outside the Council Chambers",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3433": {
+          "vnum": 3433,
+          "name": "City Wall",
+          "description": "The south wall of the city is also the northern extremity of the harbor, level with the sea walls and slightly lower than the parapets of the city. Crenellated battlements run the length of the wall, and continue around on all sides.",
+          "grid_x": 0,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 3434,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Corner of the Wall",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3434": {
+          "vnum": 3434,
+          "name": "Corner of the Wall",
+          "description": "The wall turns at a right angle here, continuing out into the sea. Wind buffets you in short gusts, blowing in off the water and bringing with it a slight chill. Whitecaps dance atop the ocean in the distance, and several sails can be seen on the horizon.",
+          "grid_x": 1,
+          "grid_y": 2,
+          "exits": {
+            "s": {
+              "to_vnum": 3435,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Eastern Seawall",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3436": {
+          "vnum": 3436,
+          "name": "Eastern Seawall",
+          "description": "The harbor is bustling far below you, so much of the city's commerce happening on the docks right before your eyes. Cargo is loaded and unloaded, bought and sold, at a rate that is only really noticeable from this high vantage.",
+          "grid_x": 1,
+          "grid_y": 4,
+          "exits": {
+            "w": {
+              "to_vnum": 3437,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Over the Harbor Mouth",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3441": {
+          "vnum": 3441,
+          "name": "Corner of the Wall",
+          "description": "The city wall turns and becomes the seawall here, leading out into the breakers and encircling the harbor like a protective arm. Below you in the harbor ships and sailors go about their business under the watchful eye of the port authority.",
+          "grid_x": -2,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 3442,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "City Wall",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Barcian hoplite",
+              "description": "with spears - the phalanx - and to use the press of battle to slowly advance forward over their foes, one step at a time.",
+              "unique": false
+            }
+          ]
+        },
+        "3442": {
+          "vnum": 3442,
+          "name": "City Wall",
+          "description": "The walkway atop the wall is kept clean and unobstructed at all times, a speedy defense of the harbor being paramount in the case of invasion, which is always a looming possibility. It is wide enough for three men to walk abreast, and is patrolled twenty four hours a day.",
+          "grid_x": -1,
+          "grid_y": 3,
+          "exits": {
+            "e": {
+              "to_vnum": 3432,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Bridge on the Wall",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3435": {
+          "vnum": 3435,
+          "name": "Eastern Seawall",
+          "description": "Ballistae are mounted into the wall at regular intervals, positioned to aim downward into the harbor and protected by the high battlements. Catapults and onagers opposite them face seaward ready to bombard any incoming ships deemed hazardous or unfriendly by the council.",
+          "grid_x": 1,
+          "grid_y": 3,
+          "exits": {
+            "s": {
+              "to_vnum": 3436,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Eastern Seawall",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3439": {
+          "vnum": 3439,
+          "name": "Western Seawall",
+          "description": "Defensive weapons line the wall, catapults, ballistae and various other pieces of siege equipment retooled to assault ships instead of cities. Several chutes also jut out from the wall for a more crude, but equally deadly bombardment with stones or boiling oil.",
+          "grid_x": -2,
+          "grid_y": 4,
+          "exits": {
+            "n": {
+              "to_vnum": 3440,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Western Seawall",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Barcian hoplite",
+              "description": "with spears - the phalanx - and to use the press of battle to slowly advance forward over their foes, one step at a time.",
+              "unique": false
+            }
+          ]
+        },
+        "3440": {
+          "vnum": 3440,
+          "name": "Western Seawall",
+          "description": "Far below you on the seaward side of the wall waves crash into its jagged, rocky base and throw spray high into the air before sucking back outwards with a loud whoosh. A Barcian man-o-war can be seen sailing in from the distance, escorted by two smaller ships.",
+          "grid_x": -2,
+          "grid_y": 3,
+          "exits": {
+            "n": {
+              "to_vnum": 3441,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Corner of the Wall",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -2,
+        "max_x": 1,
+        "min_y": -1,
+        "max_y": 4,
+        "room_count": 17
+      }
+    },
+    "-2": {
+      "floor_id": -2,
+      "entry_vnum": 3424,
+      "rooms": {
+        "3424": {
+          "vnum": 3424,
+          "name": "Spiral Stair",
+          "description": "The metal staircase is quite steep and the vertical shaft it fills very tight. There is barely room for one to squeeze down the cramped passage.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "d": {
+              "to_vnum": 3425,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Council Hall",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    },
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 2923,
+      "rooms": {
+        "2923": {
+          "vnum": 2923,
+          "name": "Top of the Great Stair",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 2924,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Canopied Causeway",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3423": {
+          "vnum": 3423,
+          "name": "Above the Council Chambers",
+          "description": "The chambers where the ruling military council convene to run the daily affairs of the city are dug into the hill itself, deep bunkers fortified with walls of natural rock. The only entrances are here down a spiraling metal staircase, and on the seaward side, from the top of the sheer seawall.",
+          "grid_x": 0,
+          "grid_y": -4,
+          "exits": {
+            "d": {
+              "to_vnum": 3424,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Spiral Stair",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "3421": {
+          "vnum": 3421,
+          "name": "The Pimrii Bazaar",
+          "description": "The business in the bazaar is much more relaxed than that of market street. There is none of the loud haggling or pestering of merchants to bring you closer to their stalls. The salespeople here are confident that their wares will sell, and truth be told most are rich enough not to care if they don't anyway.",
+          "grid_x": -1,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 2936,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Fountain on the Dais",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Young militant",
+              "description": "youth spend some time in military service, and this one has clearly taken",
+              "unique": true
+            }
+          ]
+        },
+        "3422": {
+          "vnum": 3422,
+          "name": "Behind the Dais",
+          "description": "This rather unassuming entryway leads into one of the most important strategic points in Barcas, the council chambers, from which the administration of the entire city is overseen, as well as being the only point of access to the critical defensive positions atop the seawall.",
+          "grid_x": 0,
+          "grid_y": -3,
+          "exits": {
+            "n": {
+              "to_vnum": 3423,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Above the Council Chambers",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2924": {
+          "vnum": 2924,
+          "name": "Canopied Causeway",
+          "description": "The short causeway between the great stair and the bazaar is shaded by the boughs of several elder arbutus trees, their scaly bark littering the ground and crunching underfoot with each step. Richly dressed nobles breeze past you, laughing haughtily.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 2925,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Paved Crossroad",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Tipsy officer",
+              "description": "The officer is quite clearly drunk, and is quite clearly trying to hide that fact as he staggers home from a night of carousing.",
+              "unique": true
+            }
+          ]
+        },
+        "2927": {
+          "vnum": 2927,
+          "name": "Central Courtyard",
+          "description": "The juxtaposition of light and dark seems odd at first, but the Barcians have realized that the two are simply different sides of the same coin, one cannot be defined without the other, and a simple respect for balance should override both. The temple of light is an imposing structure of solid white marble to the north, while to the south the temple of dark, with its tall spires and gothic arches is an illusion of negative space. You have lost 2040 experience.",
+          "grid_x": -2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2926,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Ouside the Temple Complex",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2928,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Before the Temple of Light",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2930,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Before the Temple of Dark",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2928": {
+          "vnum": 2928,
+          "name": "Before the Temple of Light",
+          "description": "The temple is an impregnable fortress, a testament to the steadfastness and strength of the light. Crenellated battlements and evenly spaced turrets line the wall in all directions, pennants of silver and gold flapping in the sea breeze atop them. Two massive iron doors are thrust open, welcoming the faithful.",
+          "grid_x": -3,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 2929,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Inside the Temple of Light",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2927,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Central Courtyard",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Military policeman",
+              "description": "The laws of Barcas are not to be taken lightly, and the peace officers have almost limitless power with which to uphold them.",
+              "unique": false
+            },
+            {
+              "name": "Shining one",
+              "description": "Looking directly at the creature is somewhat painful, akin to staring at the sun.  It emits a soothing warmth, calming your soul.",
+              "unique": true
+            }
+          ]
+        },
+        "2930": {
+          "vnum": 2930,
+          "name": "Before the Temple of Dark",
+          "description": "The cathedral towers over you like a shadowy spider, spindly gothic arches stretching out at impossible angles from the deceivingly small central building. Massive spires reach upward and terminate in needle points high above you, glowing with purplish fire. Wails of lamentation echo out from within the stone entryway.",
+          "grid_x": -2,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 2927,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Central Courtyard",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2931,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Within the Temple of Dark",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Predatory daemon",
+              "description": "The creature is vaguely reptilian in build, walking upright but crouched low to the ground.  Two tongues flicker in and out of its mouth as it",
+              "unique": true
+            }
+          ]
+        },
+        "2936": {
+          "vnum": 2936,
+          "name": "Fountain on the Dais",
+          "description": "At the northern end of the bazaar is a raised semicircular dais that serves as a public gathering place and fountain, as well as obscuring the entrance to the council offices and sea wall. Several contented looking citizens lounge on the steps, listening to the burbling of the fountain.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 2937,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "The Pimrii Bazaar",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 3422,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Behind the Dais",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 3421,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "The Pimrii Bazaar",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Thracyll",
+              "description": "The scars of countless battles decorate the six and a half foot frame of the grim faced warmarshal.  He is a strict but able leader, and his",
+              "unique": true
+            }
+          ]
+        },
+        "2934": {
+          "vnum": 2934,
+          "name": "Residence of Jetis",
+          "description": "The room of the respected general is all you would expect of a stern military commander. Little can be seen in the way of luxury items, but everything that would be needed for day to day life is here and in perfect order. It is, in a single word, efficient.",
+          "grid_x": -2,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 2933,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "The Pimrii Bazaar",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 2935,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Brynweinn's Room",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Jetis",
+              "description": "An air of command hangs about the stern looking man pacing across the room, deep in contemplation of tactics and strategy.  Jetis is a master of war, on both a large, and a more personal scale.",
+              "unique": true
+            }
+          ]
+        },
+        "2938": {
+          "vnum": 2938,
+          "name": "Home of Gondlir",
+          "description": "The first thing of notice within the spacious home is the large kitchen. Several stoves, each of which are covered in various pots and pans, throw off near uncomfortable heat. All of the counter space is filled with mortars, pestles, and countless packets of exotic ingredients; the tools of an alchemist.",
+          "grid_x": 2,
+          "grid_y": -2,
+          "exits": {
+            "w": {
+              "to_vnum": 2937,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "The Pimrii Bazaar",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Hlenka",
+              "description": "The pudgy old woman looks quite a home in a kitchen, spinning this way and that as she stirs pots and stokes fires.",
+              "unique": true
+            }
+          ]
+        },
+        "2940": {
+          "vnum": 2940,
+          "name": "A Helping Hand",
+          "description": "This small shop is devoted to the sale of quality gloves, gauntlets, and other handwear. Though the clientele consists mostly of the wives of councilors and other such wealthy women, a healthy selection of more combat ready goods are available for the discerning buyer.",
+          "grid_x": 2,
+          "grid_y": -1,
+          "exits": {
+            "w": {
+              "to_vnum": 2939,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "The Pimrii Bazaar",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Kasine",
+              "description": "The woman is quite animated, gesturing grandly with her hands as she speaks and almost slapping a passing customer on more than one occasion.",
+              "unique": true
+            }
+          ]
+        },
+        "2925": {
+          "vnum": 2925,
+          "name": "Paved Crossroad",
+          "description": "A smaller road intersects the Barcane's main street here, leading between her famous zoo to the east and the temple complex to the west. Where the two meet, both are expanded into a wide circle ringed with benches. At its centre a modest fountain burbles out a rainbow of dyed water.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2941,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Zoo Gates",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 2932,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "The Pimrii Bazaar",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2924,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Canopied Causeway",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2926,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Ouside the Temple Complex",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2937": {
+          "vnum": 2937,
+          "name": "The Pimrii Bazaar",
+          "description": "Two wide rugs are laid out before a low stone house on the eastern side of the bazaar. Racks filled with all manner of wands and staves, lined up in neat rows, are perused by Barcian nobles; many of which have to be politely warned not to touch the merchandise. Misfires in such crowded areas cause so many unneeded problems.",
+          "grid_x": 1,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 2938,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Home of Gondlir",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2939,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "The Pimrii Bazaar",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2936,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Fountain on the Dais",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Gondlir the Old",
+              "description": "The old man is simply dressed in leather sandals and a cotton robe, and leans heavily on his staff.  His wrinkled face lights up with a fatherly",
+              "unique": true
+            }
+          ]
+        },
+        "2926": {
+          "vnum": 2926,
+          "name": "Ouside the Temple Complex",
+          "description": "To the west are the two huge temples of light and dark, standing majestic against the skyline. A steady flow of people, rich and poor, citizen and foreigner alike move in and out of the courtyard, mingling closely but still clearly segregated, their class too often the first measure of their faith.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2925,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Paved Crossroad",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2927,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Central Courtyard",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2939": {
+          "vnum": 2939,
+          "name": "The Pimrii Bazaar",
+          "description": "Several stalls in the area are selling rich looking clothes, most of which appear none too practical, or even all that comfortable. A group of ladies discuss the latest in fashions, debating whether those coming in from Mareldja or J'rel are truly in the height of style.",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 2940,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "A Helping Hand",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2932,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "The Pimrii Bazaar",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2941": {
+          "vnum": 2941,
+          "name": "Zoo Gates",
+          "description": "The two wrought iron gates filling the entrance to the zoo are forged in the likeness of twisting vines, while living versions are planted nearby, giving a wild and overgrown appearance. Being such an important stopping point for trading ships, countless exotic animals find their way to the island, and eventually to this zoo.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2942,
+              "to_zone": "Zoo at Barcas",
+              "to_room_name": "Zoo Entrance",
+              "direction": "e",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2925,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Paved Crossroad",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Foreign diplomat",
+              "description": "before entering the city, but you can tell he's not from around here just",
+              "unique": true
+            }
+          ]
+        },
+        "2929": {
+          "vnum": 2929,
+          "name": "Inside the Temple of Light",
+          "description": "The temple is hardly like any others you've been in. Just as the military influences so many aspects of Barcian life, so too is its touch felt here. The temple is as much a fortress as a place of worship, if not more - as it is clear much more attention has been paid to the battlement than the altar.",
+          "grid_x": -3,
+          "grid_y": -2,
+          "exits": {
+            "s": {
+              "to_vnum": 2928,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Before the Temple of Light",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Soldier-priest",
+              "description": "The Barcian clergy are taught to go into battle with a spell in their hands and a song on their lips, bolstering the spirits of their fellow soldiers and calling down the wrath of the gods upon their foes.",
+              "unique": true
+            }
+          ]
+        },
+        "2931": {
+          "vnum": 2931,
+          "name": "Within the Temple of Dark",
+          "description": "The inside of the temple reflects the outer facade, dark and solemn, the air thick with sickly sweet incense. Groups of cowled acolytes in the wings intone dark verses to a building crescendo, while several peasants prepare a number of oxen for sacrifice.",
+          "grid_x": -2,
+          "grid_y": 2,
+          "exits": {
+            "n": {
+              "to_vnum": 2930,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Before the Temple of Dark",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Demagogue",
+              "description": "He is naked to the waist, and spattered with the blood of a fresh sacrifice.  A halo of dark flame encircles his brow, flickering lazily.",
+              "unique": true
+            }
+          ]
+        },
+        "2932": {
+          "vnum": 2932,
+          "name": "The Pimrii Bazaar",
+          "description": "Various kiosks and stalls line either side of the well tended plaza. The litter seen in city below is curiously absent, as are the pickpockets and miscreants who generally ply their trade such bustling centers of commerce. As you catch the stern eye of one of the cities many military police, you are reminded why.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 2936,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Fountain on the Dais",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2925,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Paved Crossroad",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2933,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "The Pimrii Bazaar",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2933": {
+          "vnum": 2933,
+          "name": "The Pimrii Bazaar",
+          "description": "You are near the western edge of the bazaar, just outside a two story residence built atop a terraced garden. The bottom terrace incorporates a small stall shaded by a cloth awning and a spindly arbutus tree into the rockwork, creating a pleasant little place of business.",
+          "grid_x": -1,
+          "grid_y": -1,
+          "exits": {
+            "e": {
+              "to_vnum": 2932,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "The Pimrii Bazaar",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 2934,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Residence of Jetis",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Brynweinn",
+              "description": "The woman is fair skinned with striking blue eyes.  Auburn hair hangs to",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -3,
+        "max_x": 2,
+        "min_y": -4,
+        "max_y": 2,
+        "room_count": 21
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 2157,
+      "rooms": {
+        "2157": {
+          "vnum": 2157,
+          "name": "Loading Dock",
+          "description": "Longshoremen work diligently loading and unloading cargo in an endless stream from the merchant vessels anchored in the Mareldja harbor. Opportunistic seabirds circle above you, near a group of fishing boats, swooping in from time to time to scoop up the cast off heads and entrails.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 2156,
+              "to_zone": "Mareldja Harbor - City of Mareldja",
+              "to_room_name": "The Northern Extend of Mareldja Harbor",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2935": {
+          "vnum": 2935,
+          "name": "Brynweinn's Room",
+          "description": "Potted flowers crowd the room, blooming and filling it with a wonderful aroma. The sea breeze blows in from an open window to the east, beautiful golden blossoms growing in a box hanging outside the sill. A large bed is pushed against one wall, beside a tall dresser.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {
+            "d": {
+              "to_vnum": 2934,
+              "to_zone": "Port City of Barcas",
+              "to_room_name": "Residence of Jetis",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 15,
+        "room_count": 2
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 2877,
+      "to": 2878,
+      "direction": "n",
+      "from_grid": [
+        1,
+        8
+      ],
+      "to_grid": [
+        1,
+        7
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2878,
+      "to": 2879,
+      "direction": "n",
+      "from_grid": [
+        1,
+        7
+      ],
+      "to_grid": [
+        1,
+        6
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2879,
+      "to": 2880,
+      "direction": "e",
+      "from_grid": [
+        1,
+        6
+      ],
+      "to_grid": [
+        2,
+        6
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2879,
+      "to": 2892,
+      "direction": "n",
+      "from_grid": [
+        1,
+        6
+      ],
+      "to_grid": [
+        1,
+        5
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2880,
+      "to": 2881,
+      "direction": "e",
+      "from_grid": [
+        2,
+        6
+      ],
+      "to_grid": [
+        3,
+        6
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2881,
+      "to": 2882,
+      "direction": "e",
+      "from_grid": [
+        3,
+        6
+      ],
+      "to_grid": [
+        4,
+        6
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2882,
+      "to": 2887,
+      "direction": "e",
+      "from_grid": [
+        4,
+        6
+      ],
+      "to_grid": [
+        5,
+        6
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2882,
+      "to": 2883,
+      "direction": "s",
+      "from_grid": [
+        4,
+        6
+      ],
+      "to_grid": [
+        4,
+        7
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2883,
+      "to": 2884,
+      "direction": "s",
+      "from_grid": [
+        4,
+        7
+      ],
+      "to_grid": [
+        4,
+        8
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2884,
+      "to": 2885,
+      "direction": "s",
+      "from_grid": [
+        4,
+        8
+      ],
+      "to_grid": [
+        4,
+        9
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2885,
+      "to": 2886,
+      "direction": "s",
+      "from_grid": [
+        4,
+        9
+      ],
+      "to_grid": [
+        4,
+        10
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2885,
+      "to": 3418,
+      "direction": "w",
+      "from_grid": [
+        4,
+        9
+      ],
+      "to_grid": [
+        3,
+        9
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2887,
+      "to": 2888,
+      "direction": "e",
+      "from_grid": [
+        5,
+        6
+      ],
+      "to_grid": [
+        6,
+        6
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2888,
+      "to": 2889,
+      "direction": "e",
+      "from_grid": [
+        6,
+        6
+      ],
+      "to_grid": [
+        7,
+        6
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2889,
+      "to": 2890,
+      "direction": "e",
+      "from_grid": [
+        7,
+        6
+      ],
+      "to_grid": [
+        8,
+        6
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2889,
+      "to": 3420,
+      "direction": "n",
+      "from_grid": [
+        7,
+        6
+      ],
+      "to_grid": [
+        7,
+        5
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2890,
+      "to": 2891,
+      "direction": "n",
+      "from_grid": [
+        8,
+        6
+      ],
+      "to_grid": [
+        8,
+        5
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2892,
+      "to": 2893,
+      "direction": "n",
+      "from_grid": [
+        1,
+        5
+      ],
+      "to_grid": [
+        1,
+        4
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2893,
+      "to": 2894,
+      "direction": "n",
+      "from_grid": [
+        1,
+        4
+      ],
+      "to_grid": [
+        2,
+        3
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2894,
+      "to": 2895,
+      "direction": "n",
+      "from_grid": [
+        2,
+        3
+      ],
+      "to_grid": [
+        2,
+        2
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2894,
+      "to": 2897,
+      "direction": "s",
+      "from_grid": [
+        2,
+        3
+      ],
+      "to_grid": [
+        1,
+        3
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2895,
+      "to": 2896,
+      "direction": "n",
+      "from_grid": [
+        2,
+        2
+      ],
+      "to_grid": [
+        2,
+        1
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2895,
+      "to": 2922,
+      "direction": "s",
+      "from_grid": [
+        2,
+        2
+      ],
+      "to_grid": [
+        3,
+        3
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2896,
+      "to": 3428,
+      "direction": "n",
+      "from_grid": [
+        2,
+        1
+      ],
+      "to_grid": [
+        2,
+        0
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2898,
+      "to": 2900,
+      "direction": "e",
+      "from_grid": [
+        2,
+        4
+      ],
+      "to_grid": [
+        3,
+        2
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2898,
+      "to": 2897,
+      "direction": "w",
+      "from_grid": [
+        2,
+        4
+      ],
+      "to_grid": [
+        1,
+        3
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2899,
+      "to": 2898,
+      "direction": "s",
+      "from_grid": [
+        1,
+        2
+      ],
+      "to_grid": [
+        2,
+        4
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2900,
+      "to": 2901,
+      "direction": "n",
+      "from_grid": [
+        3,
+        2
+      ],
+      "to_grid": [
+        3,
+        1
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2901,
+      "to": 2903,
+      "direction": "n",
+      "from_grid": [
+        3,
+        1
+      ],
+      "to_grid": [
+        3,
+        0
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2901,
+      "to": 2902,
+      "direction": "w",
+      "from_grid": [
+        3,
+        1
+      ],
+      "to_grid": [
+        2,
+        -1
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2903,
+      "to": 2904,
+      "direction": "n",
+      "from_grid": [
+        3,
+        0
+      ],
+      "to_grid": [
+        4,
+        0
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2904,
+      "to": 2906,
+      "direction": "n",
+      "from_grid": [
+        4,
+        0
+      ],
+      "to_grid": [
+        4,
+        -1
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2905,
+      "to": 2904,
+      "direction": "e",
+      "from_grid": [
+        3,
+        -1
+      ],
+      "to_grid": [
+        4,
+        0
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2906,
+      "to": 2907,
+      "direction": "n",
+      "from_grid": [
+        4,
+        -1
+      ],
+      "to_grid": [
+        4,
+        -2
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2907,
+      "to": 2908,
+      "direction": "n",
+      "from_grid": [
+        4,
+        -2
+      ],
+      "to_grid": [
+        4,
+        -3
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2908,
+      "to": 2909,
+      "direction": "w",
+      "from_grid": [
+        4,
+        -3
+      ],
+      "to_grid": [
+        3,
+        -3
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2909,
+      "to": 2910,
+      "direction": "w",
+      "from_grid": [
+        3,
+        -3
+      ],
+      "to_grid": [
+        2,
+        -3
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2910,
+      "to": 2911,
+      "direction": "w",
+      "from_grid": [
+        2,
+        -3
+      ],
+      "to_grid": [
+        1,
+        -3
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2911,
+      "to": 2912,
+      "direction": "s",
+      "from_grid": [
+        1,
+        -3
+      ],
+      "to_grid": [
+        1,
+        -2
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2911,
+      "to": 2913,
+      "direction": "w",
+      "from_grid": [
+        1,
+        -3
+      ],
+      "to_grid": [
+        0,
+        -3
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2913,
+      "to": 2914,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -3
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2914,
+      "to": 2915,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2915,
+      "to": 2916,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2916,
+      "to": 2917,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2916,
+      "to": 2919,
+      "direction": "s",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2916,
+      "to": 2918,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2919,
+      "to": 2920,
+      "direction": "s",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        2
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2920,
+      "to": 2921,
+      "direction": "s",
+      "from_grid": [
+        0,
+        2
+      ],
+      "to_grid": [
+        0,
+        3
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2921,
+      "to": 2897,
+      "direction": "e",
+      "from_grid": [
+        0,
+        3
+      ],
+      "to_grid": [
+        1,
+        3
+      ],
+      "floor": -4
+    },
+    {
+      "from": 2923,
+      "to": 2924,
+      "direction": "n",
+      "from_grid": [
+        0,
+        2
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2924,
+      "to": 2925,
+      "direction": "n",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2925,
+      "to": 2941,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2925,
+      "to": 2932,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2925,
+      "to": 2926,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2926,
+      "to": 2927,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -2,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2927,
+      "to": 2928,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        -3,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2927,
+      "to": 2930,
+      "direction": "s",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        -2,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2928,
+      "to": 2929,
+      "direction": "n",
+      "from_grid": [
+        -3,
+        -1
+      ],
+      "to_grid": [
+        -3,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2930,
+      "to": 2931,
+      "direction": "s",
+      "from_grid": [
+        -2,
+        1
+      ],
+      "to_grid": [
+        -2,
+        2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2932,
+      "to": 2936,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2932,
+      "to": 2933,
+      "direction": "w",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        -1,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2933,
+      "to": 2934,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        -1
+      ],
+      "to_grid": [
+        -2,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2936,
+      "to": 2937,
+      "direction": "e",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        1,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2936,
+      "to": 3422,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2936,
+      "to": 3421,
+      "direction": "w",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        -1,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2937,
+      "to": 2938,
+      "direction": "e",
+      "from_grid": [
+        1,
+        -2
+      ],
+      "to_grid": [
+        2,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2937,
+      "to": 2939,
+      "direction": "s",
+      "from_grid": [
+        1,
+        -2
+      ],
+      "to_grid": [
+        1,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2939,
+      "to": 2940,
+      "direction": "e",
+      "from_grid": [
+        1,
+        -1
+      ],
+      "to_grid": [
+        2,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 2939,
+      "to": 2932,
+      "direction": "w",
+      "from_grid": [
+        1,
+        -1
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3418,
+      "to": 3419,
+      "direction": "w",
+      "from_grid": [
+        3,
+        9
+      ],
+      "to_grid": [
+        1,
+        9
+      ],
+      "floor": -4
+    },
+    {
+      "from": 3419,
+      "to": 2877,
+      "direction": "n",
+      "from_grid": [
+        1,
+        9
+      ],
+      "to_grid": [
+        1,
+        8
+      ],
+      "floor": -4
+    },
+    {
+      "from": 3422,
+      "to": 3423,
+      "direction": "n",
+      "from_grid": [
+        0,
+        -3
+      ],
+      "to_grid": [
+        0,
+        -4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 3425,
+      "to": 3427,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        -1
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3425,
+      "to": 3429,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        -1
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3426,
+      "to": 3425,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        -1
+      ],
+      "to_grid": [
+        -1,
+        -1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3429,
+      "to": 3431,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3430,
+      "to": 3429,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3431,
+      "to": 3432,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        -1,
+        2
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3432,
+      "to": 3433,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        2
+      ],
+      "to_grid": [
+        0,
+        2
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3433,
+      "to": 3434,
+      "direction": "e",
+      "from_grid": [
+        0,
+        2
+      ],
+      "to_grid": [
+        1,
+        2
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3434,
+      "to": 3435,
+      "direction": "s",
+      "from_grid": [
+        1,
+        2
+      ],
+      "to_grid": [
+        1,
+        3
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3435,
+      "to": 3436,
+      "direction": "s",
+      "from_grid": [
+        1,
+        3
+      ],
+      "to_grid": [
+        1,
+        4
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3436,
+      "to": 3437,
+      "direction": "w",
+      "from_grid": [
+        1,
+        4
+      ],
+      "to_grid": [
+        0,
+        4
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3437,
+      "to": 3438,
+      "direction": "w",
+      "from_grid": [
+        0,
+        4
+      ],
+      "to_grid": [
+        -1,
+        4
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3438,
+      "to": 3439,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        4
+      ],
+      "to_grid": [
+        -2,
+        4
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3439,
+      "to": 3440,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        4
+      ],
+      "to_grid": [
+        -2,
+        3
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3440,
+      "to": 3441,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        3
+      ],
+      "to_grid": [
+        -2,
+        2
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3441,
+      "to": 3442,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        2
+      ],
+      "to_grid": [
+        -1,
+        3
+      ],
+      "floor": -3
+    },
+    {
+      "from": 3442,
+      "to": 3432,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        3
+      ],
+      "to_grid": [
+        -1,
+        2
+      ],
+      "floor": -3
+    }
+  ]
+}

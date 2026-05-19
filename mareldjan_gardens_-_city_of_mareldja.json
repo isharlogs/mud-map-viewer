@@ -1,0 +1,494 @@
+{
+  "zone_name": "Mareldjan Gardens - City of Mareldja",
+  "floor_count": 1,
+  "bounds": {
+    "min_x": -2,
+    "max_x": 1,
+    "min_y": -4,
+    "max_y": 48
+  },
+  "floors": {
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 1689,
+      "rooms": {
+        "2272": {
+          "vnum": 2272,
+          "name": "Grassy Trail",
+          "description": "You stand at the northern end of a grassy trail that stretches off to the south. Directly to your north is a abandoned shack with a large rent in the side beckoning you.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 2273,
+              "to_zone": "Mareldjan Gardens - City of Mareldja",
+              "to_room_name": "Grassy Trail",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Black beetle",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "2273": {
+          "vnum": 2273,
+          "name": "Grassy Trail",
+          "description": "You have come to a small intersection. From here you see a wide trail leading north and south. To the east you see large, white and grey figures standing out sharply against the distant green of plant life. You have lost 54 experience.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 2274,
+              "to_zone": "Mareldjan Gardens - City of Mareldja",
+              "to_room_name": "Statuary Garden",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2275,
+              "to_zone": "Mareldjan Gardens - City of Mareldja",
+              "to_room_name": "Grassy Trail",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2274": {
+          "vnum": 2274,
+          "name": "Statuary Garden",
+          "description": "Statues, carved from white and grey stone, surround you on every side. Some of them look very old and are extremely weathered. Others seem to be newer as the detail stands out a bit more crisply on them. A path offers exit to the west and the garden continues to the south.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {},
+          "npcs": []
+        },
+        "2275": {
+          "vnum": 2275,
+          "name": "Grassy Trail",
+          "description": "You stand in the center of a north and south running trail. To your south the trail terminates in a small clearing while the trail continues to the north.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {},
+          "npcs": []
+        },
+        "2276": {
+          "vnum": 2276,
+          "name": "Small Clearing",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": 33,
+          "exits": {
+            "e": {
+              "to_vnum": 2277,
+              "to_zone": "Mareldjan Gardens - City of Mareldja",
+              "to_room_name": "Statuary Garden",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2277": {
+          "vnum": 2277,
+          "name": "Statuary Garden",
+          "description": "You stand at the southern end of a large clearing which is filled with statues. They seem to follow your every move with empty eyes.",
+          "grid_x": 1,
+          "grid_y": 33,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Hedgehog",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "2266": {
+          "vnum": 2266,
+          "name": "Garden Trail",
+          "description": "You stand on a narrow garden trail which continues to the north and south. To the north you can see a small courtyard and at a distance to the south you notice that the trail makes an abrupt turn to the west.",
+          "grid_x": 0,
+          "grid_y": 18,
+          "exits": {},
+          "npcs": []
+        },
+        "1689": {
+          "vnum": 1689,
+          "name": "Entrance to the Garden",
+          "description": "This is the entrance to what was once a beautiful, formal garden. Time has not been kind however, and the garden has become overgrown and wild. What were once tidy, cobbled paths have been reduced to narrow, gloomy tracks where animals roam and thorned branches reach to grasp you. Paths lead to the east and west.",
+          "grid_x": -1,
+          "grid_y": 16,
+          "exits": {
+            "e": {
+              "to_vnum": 2264,
+              "to_zone": "Mareldjan Gardens - City of Mareldja",
+              "to_room_name": "Garden Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1688,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Clearing",
+              "direction": "n",
+              "is_cross_zone": true,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1690,
+              "to_zone": "Mareldjan Gardens - City of Mareldja",
+              "to_room_name": "Garden Path",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2264": {
+          "vnum": 2264,
+          "name": "Garden Path",
+          "description": "The trail is narrow and gloomy here and the cobblestones are uneven beneath your feet. Hedgerows press in on you to the north and east. To the south you can see a small courtyard, the garden entrance is to the west.",
+          "grid_x": 0,
+          "grid_y": 16,
+          "exits": {
+            "s": {
+              "to_vnum": 2265,
+              "to_zone": "Mareldjan Gardens - City of Mareldja",
+              "to_room_name": "East Courtyard",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1689,
+              "to_zone": "Mareldjan Gardens - City of Mareldja",
+              "to_room_name": "Entrance to the Garden",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2265": {
+          "vnum": 2265,
+          "name": "East Courtyard",
+          "description": "This courtyard was once a cheerful, tidy place but brambles and crawling vines have covered nearly everything, enmeshing the court in a leafy embrace. Garden paths lead north and south. From the west you smell the sweet scent of roses. A graceful willow tree stands here, its trailing branches swaying gently.",
+          "grid_x": 0,
+          "grid_y": 17,
+          "exits": {
+            "s": {
+              "to_vnum": 2266,
+              "to_zone": "Mareldjan Gardens - City of Mareldja",
+              "to_room_name": "Garden Trail",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Hedgehog",
+              "description": "",
+              "unique": false
+            }
+          ]
+        },
+        "1690": {
+          "vnum": 1690,
+          "name": "Garden Path",
+          "description": "Rank weeds have taken root in the cracks between the cobble stones; your feet make a swishing sound as you pass through. You can see a small courtyard to the south and the garden entrance to the east. A graceful willow tree stands here, its trailing branches swaying gently.",
+          "grid_x": -2,
+          "grid_y": 16,
+          "exits": {
+            "e": {
+              "to_vnum": 1689,
+              "to_zone": "Mareldjan Gardens - City of Mareldja",
+              "to_room_name": "Entrance to the Garden",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2267": {
+          "vnum": 2267,
+          "name": "Bend in the Trail",
+          "description": "You stand at a bend in the trail. To your west you can see a wide cobbled path heading off to the south. Another garden path makes its way to the north from here.",
+          "grid_x": 0,
+          "grid_y": 48,
+          "exits": {},
+          "npcs": []
+        },
+        "2268": {
+          "vnum": 2268,
+          "name": "Promenade",
+          "description": "From here you can see the cobbled Promenade extending to the south. To the east you see another, smaller garden trail marching off to the north.",
+          "grid_x": -1,
+          "grid_y": -4,
+          "exits": {
+            "s": {
+              "to_vnum": 2269,
+              "to_zone": "Mareldjan Gardens - City of Mareldja",
+              "to_room_name": "Promenade",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Quick, brown fox",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "2269": {
+          "vnum": 2269,
+          "name": "Promenade",
+          "description": "The Promenade is intersected here by another trail that makes its way toward some tall hedges to the west. The Promenade itself continues to the north and south.",
+          "grid_x": -1,
+          "grid_y": -3,
+          "exits": {
+            "s": {
+              "to_vnum": 2270,
+              "to_zone": "Mareldjan Gardens - City of Mareldja",
+              "to_room_name": "Promenade",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2270": {
+          "vnum": 2270,
+          "name": "Promenade",
+          "description": "From here you can see the Promenade stretching away to the north. A doorway to your east offers entrance to a tumble-down shack. Dense foliage prevents passage to the south and west.",
+          "grid_x": -1,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 2271,
+              "to_zone": "Mareldjan Gardens - City of Mareldja",
+              "to_room_name": "Ruined Shack",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2271": {
+          "vnum": 2271,
+          "name": "Ruined Shack",
+          "description": "This evidently used to be a gardener's supply shed. The bare walls are lined with hooks and pegs which had evidently once been used to hold gardening tools. The doorway is to the west but a large hole in the south wall offers egress in that direction. You have lost 18 experience.",
+          "grid_x": 0,
+          "grid_y": -2,
+          "exits": {
+            "s": {
+              "to_vnum": 2272,
+              "to_zone": "Mareldjan Gardens - City of Mareldja",
+              "to_room_name": "Grassy Trail",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -2,
+        "max_x": 1,
+        "min_y": -4,
+        "max_y": 48,
+        "room_count": 16
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1689,
+      "to": 2264,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        16
+      ],
+      "to_grid": [
+        0,
+        16
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1689,
+      "to": 1690,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        16
+      ],
+      "to_grid": [
+        -2,
+        16
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2264,
+      "to": 2265,
+      "direction": "s",
+      "from_grid": [
+        0,
+        16
+      ],
+      "to_grid": [
+        0,
+        17
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2265,
+      "to": 2266,
+      "direction": "s",
+      "from_grid": [
+        0,
+        17
+      ],
+      "to_grid": [
+        0,
+        18
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2268,
+      "to": 2269,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        -4
+      ],
+      "to_grid": [
+        -1,
+        -3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2269,
+      "to": 2270,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        -3
+      ],
+      "to_grid": [
+        -1,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2270,
+      "to": 2271,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2271,
+      "to": 2272,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -2
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2272,
+      "to": 2273,
+      "direction": "s",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2273,
+      "to": 2274,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2273,
+      "to": 2275,
+      "direction": "s",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 2276,
+      "to": 2277,
+      "direction": "e",
+      "from_grid": [
+        0,
+        33
+      ],
+      "to_grid": [
+        1,
+        33
+      ],
+      "floor": 0
+    }
+  ]
+}

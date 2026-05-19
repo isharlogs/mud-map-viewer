@@ -1,0 +1,776 @@
+{
+  "zone_name": "Forest of Evermore",
+  "floor_count": 2,
+  "bounds": {
+    "min_x": -3,
+    "max_x": 0,
+    "min_y": -7,
+    "max_y": 16
+  },
+  "floors": {
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 3085,
+      "rooms": {
+        "3085": {
+          "vnum": 3085,
+          "name": "A Submerged Tunnel",
+          "description": "As you paddle in the dark tunnel you feel the pull of the current urging you northward. You are careful not to veer too close to any of the walls as jagged rocks protrude throughout the tunnel. A strange, cold, pulsing chills you to the bone.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "u": {
+              "to_vnum": 3086,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "An Opaque Pool",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Kial",
+              "description": "Having seen the world in ages long past, Kial is an ancient shadow that practices arts unseen by man for eons. Looking into your eyes his gaze pierces into you, passing judgment upon your soul.",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": 0,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 0,
+        "room_count": 1
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 2616,
+      "rooms": {
+        "3072": {
+          "vnum": 3072,
+          "name": "Before a Stone Cottage",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "n": {
+              "to_vnum": 3074,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "The Forest of Evermore",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3073,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "A Cozy Stone Cottage",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3073": {
+          "vnum": 3073,
+          "name": "A Cozy Stone Cottage",
+          "description": "The room here opens up with enough space to house fifty inhabitants. In the center of the room is a large table set with platefuls of delicious looking cakes and two steaming soup bowls. Along the walls, shelves house many meticulously arranged jars and specimens. Axes and other foresting tools rest neatly upon a rack in the corner of the room.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 3072,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "Before a Stone Cottage",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Aiel",
+              "description": "Having worked hard all day Aiel the caretakers' wife stands here sweating profusely. Yet in all of her daily labors she retains a beauty and nobility that leaves you envious of the recipient of her affections.",
+              "unique": true
+            },
+            {
+              "name": "Almezar",
+              "description": "Charged with protecting the forest, Almezar has been working here for all of his life and loves it dearly. He has sworn to uphold the purity and sanctity of the life in this wood, he views it as his duty and honor to Isvaelin.",
+              "unique": true
+            }
+          ]
+        },
+        "3074": {
+          "vnum": 3074,
+          "name": "The Forest of Evermore",
+          "description": "Pine needles rain down upon the trail as the wind rustles through tree the branches. Mosses grow on some of the trees while insects burrow into the pines, making their homes. The trail continues to the west, as well as south towards a small stone cottage.",
+          "grid_x": 0,
+          "grid_y": -1,
+          "exits": {
+            "w": {
+              "to_vnum": 3075,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "The Forest of Evermore",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3075": {
+          "vnum": 3075,
+          "name": "The Forest of Evermore",
+          "description": "You come to another intersection of trails between the massive pines. Leading off in several different directions, the paths are swept clear of any large debris. Each path is clearly well defined by small blue stones that mark the edges along each path.",
+          "grid_x": -1,
+          "grid_y": -1,
+          "exits": {
+            "n": {
+              "to_vnum": 3076,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "The Forest of Evermore",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3076": {
+          "vnum": 3076,
+          "name": "The Forest of Evermore",
+          "description": "As you proceed through the forest you stumble upon a small stream. Flowing quietly through the wood, the stream is frequented by all of the local forest life. The rustle of pines and the trickle of the stream are quite soothing.",
+          "grid_x": -1,
+          "grid_y": -2,
+          "exits": {
+            "w": {
+              "to_vnum": 3077,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "The Forest of Evermore",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Faerie Queen",
+              "description": "The faerie is scintillatingly beautiful; she flits about energetically attempting to avoid your gaze.  You have found the elusive faerie queen.",
+              "unique": true
+            },
+            {
+              "name": "Faerie guard",
+              "description": "The faerie guard looks big and intimidating, at least for a faerie anyways.",
+              "unique": true
+            }
+          ]
+        },
+        "3077": {
+          "vnum": 3077,
+          "name": "The Forest of Evermore",
+          "description": "The colossal pines reach far up into the heavens as if they seek to touch the sky and become immortal themselves. In the trees above, you observe the antics of squirrels and the busy chattering of many small animals, hardly distinguishable from this distance. The trail continues on to the south and to the east.",
+          "grid_x": -2,
+          "grid_y": -2,
+          "exits": {
+            "e": {
+              "to_vnum": 3076,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "The Forest of Evermore",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3078,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "The Forest of Evermore",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3078": {
+          "vnum": 3078,
+          "name": "The Forest of Evermore",
+          "description": "The pines continue on and the surrounding foliage flourishes. Animal calls are heard from every quarter of the wood within earshot. The forest teems with life all around you, a sanctuary obviously protected by the gods.",
+          "grid_x": -2,
+          "grid_y": -1,
+          "exits": {
+            "nw": {
+              "to_vnum": 3079,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "The Forest of Evermore",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 2616,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "The Forest of Evermore",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3079": {
+          "vnum": 3079,
+          "name": "The Forest of Evermore",
+          "description": "A worn path meanders through the pines here, making its way through the forest. The path is kept remarkably clear of any debris, small blue stones them.",
+          "grid_x": -3,
+          "grid_y": -2,
+          "exits": {
+            "nw": {
+              "to_vnum": 3080,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "The Forest of Evermore",
+              "direction": "nw",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "se": {
+              "to_vnum": 3078,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "The Forest of Evermore",
+              "direction": "se",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3080": {
+          "vnum": 3080,
+          "name": "The Forest of Evermore",
+          "description": "You are standing in a meager clearing with a small path that runs through the middle of the clearing, traveling deeper into the woods. The enchanted forest is quiet around you and you deem it a good idea to move on.",
+          "grid_x": -3,
+          "grid_y": -3,
+          "exits": {
+            "ne": {
+              "to_vnum": 3081,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "The Forest of Evermore",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3079,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "The Forest of Evermore",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3081": {
+          "vnum": 3081,
+          "name": "The Forest of Evermore",
+          "description": "Breaking the prolonged silence, a small furry creature slips from its precarious perch atop a tree and falls to the ground with a crash. Getting up hastily the creature dives from view into the bushes. A small path ends here leaving the only available exit to the southwest.",
+          "grid_x": -3,
+          "grid_y": -4,
+          "exits": {
+            "ne": {
+              "to_vnum": 3082,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "A Shrouded Dell",
+              "direction": "ne",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3082": {
+          "vnum": 3082,
+          "name": "A Shrouded Dell",
+          "description": "Pine needles adorn the ground in profusion creating mysterious patterns that addle the mind. Even more strangely the pine needles have all fallen to the side of a worn trail leading further into the dell.",
+          "grid_x": -2,
+          "grid_y": -5,
+          "exits": {
+            "n": {
+              "to_vnum": 3083,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "Path Through a Shrouded Dell",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "sw": {
+              "to_vnum": 3087,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "A Shrouded Dell",
+              "direction": "sw",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3083": {
+          "vnum": 3083,
+          "name": "Path Through a Shrouded Dell",
+          "description": "The pines start to thin as you near the center of the dell. Long shadows are cast by the towering pines enveloping you in a shroud of black. Birds in the distance call out to one another in strange melodies.",
+          "grid_x": -2,
+          "grid_y": -6,
+          "exits": {
+            "n": {
+              "to_vnum": 3084,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "Morelt Pool",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 3082,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "A Shrouded Dell",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Wolverine",
+              "description": "Ready to pounce upon its prey at any moment, a wolverine flashes an evil grin. A wolverine looks like an enormous weasel; it is a stocky, dark-furred, bushy tailed creature that has an enormous appetite.",
+              "unique": true
+            }
+          ]
+        },
+        "3084": {
+          "vnum": 3084,
+          "name": "Morelt Pool",
+          "description": "Abruptly devoid of any trees, the area here opens up into a large clearing. The small path ends at the edge of an opaque pool of water that stretches across the entire clearing, ending in more pines. In the center of the pool a figure walks upon the water coming closer then fading into nothingness.",
+          "grid_x": -2,
+          "grid_y": -7,
+          "exits": {
+            "s": {
+              "to_vnum": 3083,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "Path Through a Shrouded Dell",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 3085,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "A Submerged Tunnel",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Baby alligator",
+              "description": "It would be so adorable if not for those sharp pointy teeth, thick hide, long snout, and yellow eyes. Well, then again, maybe not.",
+              "unique": true
+            }
+          ]
+        },
+        "3086": {
+          "vnum": 3086,
+          "name": "An Opaque Pool",
+          "description": "Within the pool it is extremely cold, sending shivers down your spine. The water is almost crystal clear here, despite the pool's opaque exterior. Fish shy cautiously away as you enter into their domain. Barely perceptible at the bottom of the pool lies the opening of a small tunnel.",
+          "grid_x": 0,
+          "grid_y": 16,
+          "exits": {
+            "go out": {
+              "to_vnum": 3084,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "Morelt Pool",
+              "direction": "go out",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "3087": {
+          "vnum": 3087,
+          "name": "A Shrouded Dell",
+          "description": "",
+          "grid_x": -3,
+          "grid_y": -5,
+          "exits": {
+            "s": {
+              "to_vnum": 3080,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "The Forest of Evermore",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "2616": {
+          "vnum": 2616,
+          "name": "The Forest of Evermore",
+          "description": "The trees part at a small clearing as you arrive at the junction of several trails. Small blue stones line the serviceable trails that lead in northerly directions.",
+          "grid_x": -2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 3070,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "The Forest of Evermore",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 223,
+              "to_zone": "The Hills North of Mareldja",
+              "to_room_name": "The Forest of Evermore",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "3070": {
+          "vnum": 3070,
+          "name": "The Forest of Evermore",
+          "description": "A thin trail weaves among the pines and shrubbery leading you further into the forest. Blessed by Isvaelin, the forest flourishes and teems with life. Squirrels chatter playfully and the towering pines are healthy and robust. A small plume of smoke rises from the southeast.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "s": {
+              "to_vnum": 3071,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "The Forest of Evermore",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "se": {
+              "to_vnum": 3072,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "Before a Stone Cottage",
+              "direction": "se",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Beautiful faerie",
+              "description": "The faerie flashes you a dazzling smile, winks at you, than zips away in a hurry. She was one of the most beautiful creatures you have ever seen, one of",
+              "unique": true
+            },
+            {
+              "name": "Small beetle",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "3071": {
+          "vnum": 3071,
+          "name": "The Forest of Evermore",
+          "description": "",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 3070,
+              "to_zone": "Forest of Evermore",
+              "to_room_name": "The Forest of Evermore",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Wolf bitch",
+              "description": "potential meal for her young pups voracious appetites.",
+              "unique": true
+            },
+            {
+              "name": "Wolf pup",
+              "description": "",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -3,
+        "max_x": 0,
+        "min_y": -7,
+        "max_y": 16,
+        "room_count": 18
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 2616,
+      "to": 3070,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3070,
+      "to": 3071,
+      "direction": "s",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3070,
+      "to": 3072,
+      "direction": "se",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3072,
+      "to": 3074,
+      "direction": "n",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3072,
+      "to": 3073,
+      "direction": "s",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3074,
+      "to": 3075,
+      "direction": "w",
+      "from_grid": [
+        0,
+        -1
+      ],
+      "to_grid": [
+        -1,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3075,
+      "to": 3076,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        -1
+      ],
+      "to_grid": [
+        -1,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3076,
+      "to": 3077,
+      "direction": "w",
+      "from_grid": [
+        -1,
+        -2
+      ],
+      "to_grid": [
+        -2,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3077,
+      "to": 3078,
+      "direction": "s",
+      "from_grid": [
+        -2,
+        -2
+      ],
+      "to_grid": [
+        -2,
+        -1
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3078,
+      "to": 3079,
+      "direction": "nw",
+      "from_grid": [
+        -2,
+        -1
+      ],
+      "to_grid": [
+        -3,
+        -2
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3078,
+      "to": 2616,
+      "direction": "s",
+      "from_grid": [
+        -2,
+        -1
+      ],
+      "to_grid": [
+        -2,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3079,
+      "to": 3080,
+      "direction": "nw",
+      "from_grid": [
+        -3,
+        -2
+      ],
+      "to_grid": [
+        -3,
+        -3
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3080,
+      "to": 3081,
+      "direction": "ne",
+      "from_grid": [
+        -3,
+        -3
+      ],
+      "to_grid": [
+        -3,
+        -4
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3081,
+      "to": 3082,
+      "direction": "ne",
+      "from_grid": [
+        -3,
+        -4
+      ],
+      "to_grid": [
+        -2,
+        -5
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3082,
+      "to": 3083,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        -5
+      ],
+      "to_grid": [
+        -2,
+        -6
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3082,
+      "to": 3087,
+      "direction": "sw",
+      "from_grid": [
+        -2,
+        -5
+      ],
+      "to_grid": [
+        -3,
+        -5
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3083,
+      "to": 3084,
+      "direction": "n",
+      "from_grid": [
+        -2,
+        -6
+      ],
+      "to_grid": [
+        -2,
+        -7
+      ],
+      "floor": 0
+    },
+    {
+      "from": 3087,
+      "to": 3080,
+      "direction": "s",
+      "from_grid": [
+        -3,
+        -5
+      ],
+      "to_grid": [
+        -3,
+        -3
+      ],
+      "floor": 0
+    }
+  ]
+}

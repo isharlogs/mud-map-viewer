@@ -1,0 +1,1193 @@
+{
+  "zone_name": "Port Larceny",
+  "floor_count": 2,
+  "bounds": {
+    "min_x": -4,
+    "max_x": 2,
+    "min_y": -9,
+    "max_y": 300
+  },
+  "floors": {
+    "-1": {
+      "floor_id": -1,
+      "entry_vnum": 1697,
+      "rooms": {
+        "1709": {
+          "vnum": 1709,
+          "name": "Outside Port Larceny",
+          "description": "Nestled behind a tall natural hill of grey granite separating them from the coast, an array of large wooden buildings lies before you within a shallow, verdant valley. This can be none other than the infamous smuggling company of Fidel McGee.",
+          "grid_x": 1,
+          "grid_y": -2,
+          "exits": {
+            "s": {
+              "to_vnum": 1710,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Port Larceny",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1710": {
+          "vnum": 1710,
+          "name": "Port Larceny",
+          "description": "The hills are alive, with the sound of... smuggling. Among the rolling acclivities of the southwestern countryside, a band of sea-faring crooks have established their own trafficking haven. Loud negotiation in a variety of languages drifts to your ears from within an arrangement of warehouses and huts, supplemented with a constant chorus of grunting, cursing and the thudding and grating of heavy objects being moved.",
+          "grid_x": 1,
+          "grid_y": -1,
+          "exits": {
+            "s": {
+              "to_vnum": 1711,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Port Larceny",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1711": {
+          "vnum": 1711,
+          "name": "Port Larceny",
+          "description": "Tall sheds rise all around you, their wooden frames fresh and so far not tainted by the degrading influence of the elements, suggesting fairly recent construction. The wide doors of the structures to both your east and west are wide open, and an eruption of activity can be heard, and partially witnessed, within. You have lost 1440 experience.",
+          "grid_x": 1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1719,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Northeast Warehouse",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1719,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Northeast Warehouse",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1,
+              "to_zone": "City of Mareldja",
+              "to_room_name": "Reception",
+              "direction": "w",
+              "is_cross_zone": true,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1698": {
+          "vnum": 1698,
+          "name": "Rough Cliff Path",
+          "description": "Consistent pedestrian travel along this section of cliff has wrought a barren, dusty channel through the grass. Protruding plant roots and stones have been worn to a gem-like sheen by passing feet, though they still impinge on your progress, causing you to trip and stumble with some regularity.",
+          "grid_x": -4,
+          "grid_y": -8,
+          "exits": {
+            "s": {
+              "to_vnum": 1699,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Rough Cliff Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1699": {
+          "vnum": 1699,
+          "name": "Rough Cliff Path",
+          "description": "The biting marine winds are a lot more noticeable up here. Thin stalks of grey- green grass bend hard under the gusts rolling up the cliffs which numb the exposed parts of your body. The clifftop path peaks to the south, and a partially toppled wall of stacked slate rises to waist level, grass spewing from its worn interior.",
+          "grid_x": -4,
+          "grid_y": -7,
+          "exits": {
+            "s": {
+              "to_vnum": 1700,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Rough Cliff Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1700": {
+          "vnum": 1700,
+          "name": "Rough Cliff Path",
+          "description": "The raging ocean wind generates a backdrop of noise, a constant dull roar assailing your ears as you soldier along the clifftops. A low stone wall to your east runs parallel to the coastal precipice, restricting your travel to either the north or the south - the direction of the cliff path.",
+          "grid_x": -4,
+          "grid_y": -6,
+          "exits": {
+            "s": {
+              "to_vnum": 1701,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Dusty Clearing",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1701": {
+          "vnum": 1701,
+          "name": "Dusty Clearing",
+          "description": "The surrounding fertile ground has here been rendered bare, presumably via regular footfall. A stout wooden stile permits access into a wide field to the east while preventing animals from leaving - perhaps this area once had some agrarian purpose.",
+          "grid_x": -4,
+          "grid_y": -5,
+          "exits": {
+            "s": {
+              "to_vnum": 1702,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Steep Coastal Incline",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1704": {
+          "vnum": 1704,
+          "name": "Busy Coastal Path",
+          "description": "What was once lush meadow has been pounded into dry, red earth by the constant passage of feet here. The path you are standing on follows the natural slope between the expanse of pebble beach to your west and the verdent countryside around you. The cool, salty breeze from the west may not be appropriate for some flora, but tough, springy heather is eking out an existence without much trouble.",
+          "grid_x": -3,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 1705,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Busy Coastal Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1705": {
+          "vnum": 1705,
+          "name": "Busy Coastal Path",
+          "description": "Here the path weaves between a large outcrop of rock to the south and a derelict agricultural barrier of slate to the north. Wind blowing in from the sea to the west funnels through this natural bottleneck, chilling you a little.",
+          "grid_x": -2,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 1706,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Busy Coastal Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1706": {
+          "vnum": 1706,
+          "name": "Busy Coastal Path",
+          "description": "The butts of many a spent poonk cigarette litter the grassy boundaries of this well-trodden footpath. Most lie mummified by the dust, though some seem fresh, suggesting recent activity.",
+          "grid_x": -1,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 1707,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Busy Coastal Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1707": {
+          "vnum": 1707,
+          "name": "Busy Coastal Path",
+          "description": "This path traces the southern boundary of a long abandoned pasture here. Though for the most part the field is inaccesible, the wall directly to your north is damaged to such an extent that you could quite easily wander over its remains.",
+          "grid_x": 0,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 1708,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Before a Suspicious Shack",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1708": {
+          "vnum": 1708,
+          "name": "Before a Suspicious Shack",
+          "description": "In stark contrast to the ancient network of stone walls that snake around the fields in this area, the tall wooden structure immediately to your north seems to have been freshly constructed. What purpose it could serve escapes you, but its rugged and plain appearance suggests functionality rather than aesthetics.",
+          "grid_x": 1,
+          "grid_y": -3,
+          "exits": {
+            "s": {
+              "to_vnum": 1709,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Outside Port Larceny",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Formidable supervisor",
+              "description": "carrying sacks.  He stares coldly at the goings-on and barks the occasional order, careful to spot any filchers or slackers amongst his subordinates.",
+              "unique": true
+            }
+          ]
+        },
+        "1712": {
+          "vnum": 1712,
+          "name": "Northwest Warehouse",
+          "description": "Piled to the ceiling, robust wooden crates are constantly added to and taken from by an army of grimy smugglers. Gazing upward past the towering summits of the crate-stacks all around, you notice that a series of walkways amidst the rafters of this building create a first floor of sorts, allowing both for easier manipulation of the goods stored here and for more storage overall.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1711,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Port Larceny",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1713,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Northwest Warehouse",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Trained badger",
+              "description": "This vicious mustelid snarls periodically, bearing an array of menacing",
+              "unique": true
+            },
+            {
+              "name": "Warehouse grunt",
+              "description": "If these warehouses are the body of Port Larceny, this man and his colleagues are its blood.  He busily lugs plunder around, keeping the port in business on the most basic level.",
+              "unique": false
+            },
+            {
+              "name": "Zaznar the Bad",
+              "description": "Straight out of Hedros, Zaznar reputedly owed one of McGee's henchmen a few favours and picked up this port security gig in order to make amends.",
+              "unique": true
+            }
+          ]
+        },
+        "1713": {
+          "vnum": 1713,
+          "name": "Northwest Warehouse",
+          "description": "Unlike that of the rest of the complex, the floor here is cold, packed earth. Clearly those in charge of preparing the warehouse were unable to complete the decking which you see around its other parts before it was put into use. Crates of contraband are piled here despite this, though in somewhat lower quantity due to the unevenness of the ground.",
+          "grid_x": 0,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 1712,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Northwest Warehouse",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "w": {
+              "to_vnum": 1714,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Northwest Warehouse",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Shirtless human lackey",
+              "description": "Sweat glistens off his sun-browned back and face, drenching wisps of",
+              "unique": true
+            }
+          ]
+        },
+        "1719": {
+          "vnum": 1719,
+          "name": "Northeast Warehouse",
+          "description": "It is immediately obvious what cargo is kept in this vast shed, the smell is overpowering and unmistakable. Enough poonk to satisfy the whole poonk-smoking continent for a good few months is stashed inside the crates and sacks you see all around you, some actually warping for being packed so tightly.",
+          "grid_x": 2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1711,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Port Larceny",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Warehouse grunt",
+              "description": "If these warehouses are the body of Port Larceny, this man and his colleagues are its blood.  He busily lugs plunder around, keeping the port in business on the most basic level.",
+              "unique": false
+            }
+          ]
+        },
+        "1714": {
+          "vnum": 1714,
+          "name": "Northwest Warehouse",
+          "description": "A hybrid step and ladder arrangement here leads upward towards a haphazard first floor, where further loot lies, in a similar fashion to the plunder around you, concealed in broad crates of resilient wood. Wondering for a moment how such huge boxes could be carried up such a flimsy pseudo-staircase, you glance up and realise that a complex system of ropes and pulleys adorn the ceiling, enabling the vertical movement of smuggled goods.",
+          "grid_x": -1,
+          "grid_y": 1,
+          "exits": {
+            "e": {
+              "to_vnum": 1713,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Northwest Warehouse",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "n": {
+              "to_vnum": 1715,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Northwest Warehouse",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "u": {
+              "to_vnum": 1716,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Northwest Warehouse - First Floor",
+              "direction": "u",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": [
+            {
+              "name": "Gwyllim",
+              "description": "Possibly the most evil-looking gnome you have ever seen stares up at you, a wiry white chinstrap beard bursting from his ancient chin and cold, wild eyes darting in a frenzy of paranoia and anxiousness.",
+              "unique": true
+            }
+          ]
+        },
+        "1715": {
+          "vnum": 1715,
+          "name": "Northwest Warehouse",
+          "description": "Not much natural illumination enters through the small gaps in the simple wooden walls of this gargantuan smuggling cache, but the huge room is sufficiently lit by way of a series of classic Mareldjan light-emitting globes, presumably filched from the streets of the Crown on the Water itself.",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1712,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Northwest Warehouse",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "s": {
+              "to_vnum": 1714,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Northwest Warehouse",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Grody human mobster",
+              "description": "crop of greasy black hair and numerous facial scars.",
+              "unique": true
+            }
+          ]
+        },
+        "1720": {
+          "vnum": 1720,
+          "name": "Port Larceny",
+          "description": "The ground here must be rich in some natural fertiliser, as thin grasses spring up with remarkable vitality quite suddenly. A stench hangs in the air, wafting from the east and causing your nose to wrinkle involuntarily. The unpleasant aroma emanates from between the gaps in a rotten shack immediately to your east.",
+          "grid_x": 0,
+          "grid_y": 2,
+          "exits": {
+            "e": {
+              "to_vnum": 1721,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Port Larceny",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1721": {
+          "vnum": 1721,
+          "name": "Port Larceny",
+          "description": "Two paths intersect here, forming a crossroads between the four large warehouses of the Port. The ground is compacted and utterly dry, punished by the soles of smuggler footwear to a far greater extent than the rest of the Port.",
+          "grid_x": 2,
+          "grid_y": 1,
+          "exits": {
+            "w": {
+              "to_vnum": 1722,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Port Larceny",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Port employee",
+              "description": "Crime certainly isn't paying for this haggard member of McGee's cartel. By the looks of things, his line of work is exhausting.",
+              "unique": true
+            }
+          ]
+        },
+        "1722": {
+          "vnum": 1722,
+          "name": "Port Larceny",
+          "description": "A dusty track slices through the country from north to south, flanked by massive sheds on either side. Small cultures of grass at the bases of the buildings make a final stand against the ceaseless onslaught of feet, their central cousins worn into utter oblivion through excessive pedestrian activity.",
+          "grid_x": 1,
+          "grid_y": 1,
+          "exits": {
+            "n": {
+              "to_vnum": 1711,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Port Larceny",
+              "direction": "n",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1697": {
+          "vnum": 1697,
+          "name": "South of the Estuary",
+          "description": "Fresh water gushes through the estuary into the sea to the north, as if almost eager to escape the rotting jungle. The steep rise of a cliff path to the south divides the disgusting foliage from the beautiful ocean.",
+          "grid_x": -4,
+          "grid_y": -9,
+          "exits": {
+            "s": {
+              "to_vnum": 1698,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Rough Cliff Path",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1702": {
+          "vnum": 1702,
+          "name": "Steep Coastal Incline",
+          "description": "The soil on this sharp beachward grade is saturated with clay, preventing the growth of sea-grasses and other flora. Without the stabilising presence of plant roots, this section of cliff seems to be collapsing towards the ocean, providing a viable route to the sands. To both the west and east however, the lower concentration of clay is such that the cliffs remain fully intact.",
+          "grid_x": -4,
+          "grid_y": -4,
+          "exits": {
+            "s": {
+              "to_vnum": 1703,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Top of the Beach",
+              "direction": "s",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1703": {
+          "vnum": 1703,
+          "name": "Top of the Beach",
+          "description": "Shingle and earth mingle here as beach gradually becomes road. The rough track ascending inland to your east is more the result of the regular pedestrian transit which takes place here than of any deliberate construction effort - there seems to be a constant flow of traffic between the cove to your west and some destination at the end of the track.",
+          "grid_x": -4,
+          "grid_y": -3,
+          "exits": {
+            "e": {
+              "to_vnum": 1704,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Busy Coastal Path",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": [
+            {
+              "name": "Elira",
+              "description": "",
+              "unique": true
+            }
+          ]
+        }
+      },
+      "metadata": {
+        "min_x": -4,
+        "max_x": 2,
+        "min_y": -9,
+        "max_y": 2,
+        "room_count": 23
+      }
+    },
+    "0": {
+      "floor_id": 0,
+      "entry_vnum": 2727,
+      "rooms": {
+        "2727": {
+          "vnum": 2727,
+          "name": "Northeast... Warehouse?",
+          "description": "Feeling faint, you survey your surroundings as best you can, breathing lightly so as to avoid the stifling scent of stockpiled poonk. It is hard to find your bearings, but it seems a series of steps have been dug into the floor of the warehouse here, leading into an underground section. You feel somewhat dizzy and confused.",
+          "grid_x": 0,
+          "grid_y": 45,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Poonk elemental",
+              "description": "This spirit somehow incorporates the essence of poonk into its form.  It",
+              "unique": true
+            }
+          ]
+        },
+        "2725": {
+          "vnum": 2725,
+          "name": "Illicit Port",
+          "description": "Nestled behind the imposing rock face to your north, this cove is invisible to any passing vessel not specifically seeking it out. All around you, rugged maritime subordinates busily heave unlawful cargo ashore and drag it up the beach.",
+          "grid_x": 0,
+          "grid_y": 15,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Smuggling captain",
+              "description": "",
+              "unique": true
+            }
+          ]
+        },
+        "2726": {
+          "vnum": 2726,
+          "name": "Northeast Warehouse",
+          "description": "The walls of the warehouse seem to sway a little as you involuntarily inhale the pervasive fumes emanating from a huge pile of sacks in the corner here. The sacked poonk unleashes a much more powerful aroma than its boxed counterpart.",
+          "grid_x": 0,
+          "grid_y": 30,
+          "exits": {},
+          "npcs": []
+        },
+        "2732": {
+          "vnum": 2732,
+          "name": "Harbnar's Den",
+          "description": "Low, luxuriant cushions form a rough horseshoe around a central table here. The stench of stale smoke hangs in the air, and fresher wisps drift visibly around you. Expensive-looking rugs cover much of the cold stone floor, but these have turned dull with ash from countless poonk cigarettes.",
+          "grid_x": 0,
+          "grid_y": 120,
+          "exits": {},
+          "npcs": []
+        },
+        "2728": {
+          "vnum": 2728,
+          "name": "Northeast Warehouse",
+          "description": "The air is thick with the potent stench of bootlegged poonk. The walls of the warehouse rise to the west and south, blocking it in and preventing fresh air from diluting the smell at all. The concentration is so severe that the fumes alone are beginning to adversely affect you.",
+          "grid_x": 0,
+          "grid_y": 60,
+          "exits": {},
+          "npcs": []
+        },
+        "2729": {
+          "vnum": 2729,
+          "name": "Northeast Warehouse - Basement",
+          "description": "Walls of untidy brickwork hold back the earth in this underground room. a stairway leads up into a foul smelling warehouse, whose sturdy wooden floor provides a ceiling here. Besides the brick barriers which play a structural role, a further wall to your west seems, based on its less careful assembly, to exist purely for the concealment of another room.",
+          "grid_x": 0,
+          "grid_y": 75,
+          "exits": {},
+          "npcs": []
+        },
+        "2730": {
+          "vnum": 2730,
+          "name": "Northeast Warehouse - Basement",
+          "description": "",
+          "grid_x": 0,
+          "grid_y": 90,
+          "exits": {},
+          "npcs": []
+        },
+        "2731": {
+          "vnum": 2731,
+          "name": "Northeast Warehouse - Basement",
+          "description": "Poonk smoke wafts thickly into the room from an opening to the south, causing your eyes to water a little. Walls of crude brick block your way to the north and west, and you can see from between the cracks that they hold back solid earth.",
+          "grid_x": 0,
+          "grid_y": 105,
+          "exits": {},
+          "npcs": []
+        },
+        "2740": {
+          "vnum": 2740,
+          "name": "Cluttered Office",
+          "description": "Several polished tables are dotted around the room, each piled high with scrolls of paperwork. This is where the numbers are crunched, the losses and profits calculated, and the plunder equitably divided. One would never expect such a level of professionalism from such notorious criminals, but the careful bookkeeping and record taking you witness here is testament to the shrewdness of McGee's smugglers.",
+          "grid_x": 0,
+          "grid_y": 240,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Fretting accountant",
+              "description": "His mundane job might not share the glamour of the more notorious criminals in this establishment, but it's a vital part of the smooth",
+              "unique": true
+            }
+          ]
+        },
+        "2741": {
+          "vnum": 2741,
+          "name": "Bottom of the Stairs",
+          "description": "A slim staircase of polished wood glides up the eastern wall of this room, carpeted in rich burgundy. Paintings of grody, unsavoury looking characters grin down at you from their frames, hung alongside the stairs in an ascending row.",
+          "grid_x": 0,
+          "grid_y": 255,
+          "exits": {},
+          "npcs": []
+        },
+        "2742": {
+          "vnum": 2742,
+          "name": "Carpeted Landing",
+          "description": "The deep red of the carpet here is unsullied by age, suggesting either that it has been laid recently or has been consistently well cared for. Ornate patterns adorn the walls, representations of vines snaking across the surfaces.",
+          "grid_x": 0,
+          "grid_y": 270,
+          "exits": {},
+          "npcs": []
+        },
+        "2743": {
+          "vnum": 2743,
+          "name": "Grift's Office",
+          "description": "The first thing you notice as you wander into this spacious office is the desk - it dominates - a formidable wooden block of absurd size which spans almost the width of the room. Paper is stacked neatly along one edge, and a long quill dripping with ink rests in a metal beaker alongside the documents. Stale poonk smoke hangs in the air like a smelly spectre.",
+          "grid_x": 0,
+          "grid_y": 285,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Garfus Grift",
+              "description": "Greasy brown hair has been slicked back, revealing the shining temples of this rotund, well-dressed man in his late forties.  Short fingers sandwich a fat cigar of poonk, and thick lips part like curtains over a",
+              "unique": true
+            }
+          ]
+        },
+        "1716": {
+          "vnum": 1716,
+          "name": "Northwest Warehouse - First Floor",
+          "description": "A suspended platform of boards clings to the western wall of the warehouse, and it is upon this rather rickety construction which you now stand. A sturdy, well-made door, contrasting the spontaneous, hasty and low quality architecture of the rest of the building leads west, with a single square window set into it at face level. You have lost 2250 experience.",
+          "grid_x": 0,
+          "grid_y": 0,
+          "exits": {
+            "w": {
+              "to_vnum": 1718,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Spink's Office",
+              "direction": "w",
+              "is_cross_zone": false,
+              "is_portal": false
+            },
+            "d": {
+              "to_vnum": 1714,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Northwest Warehouse",
+              "direction": "d",
+              "is_cross_zone": false,
+              "is_portal": true
+            }
+          },
+          "npcs": []
+        },
+        "2733": {
+          "vnum": 2733,
+          "name": "Port Larceny",
+          "description": "The southern road of the Port leads away from the central crossroads and downhill between two buildings. The structure to your east is unremarkable - a simple shed of low quality wood - but the western building has clearly been more carefully constructed, with clean, even brickwork comprising the lower parts of the wall, and tidy beams of stained timber rising to connect it with the roof.",
+          "grid_x": 0,
+          "grid_y": 135,
+          "exits": {},
+          "npcs": []
+        },
+        "2734": {
+          "vnum": 2734,
+          "name": "Port Larceny",
+          "description": "You stand at the southernmost point of Port Larceny. Before you to the south, open coastal countryside rolls into the distance for many leagues. Beaches, fields and cliffs are rendered miniature in your vision by the natural laws of perspective. The buildings which flank you on either side to the east and west both have doors here. The smart west door is closed.",
+          "grid_x": 0,
+          "grid_y": 150,
+          "exits": {},
+          "npcs": []
+        },
+        "2735": {
+          "vnum": 2735,
+          "name": "Southeast Warehouse",
+          "description": "The products being manipulated in this warehouse clank as the smugglers heave them around, and judging by the cumbersome nature of the crates, the plunder has a lot of weight. Hung on the wall, for display rather than storage, an array of shields, armor and other military hardware can be seen.",
+          "grid_x": 0,
+          "grid_y": 165,
+          "exits": {},
+          "npcs": []
+        },
+        "1717": {
+          "vnum": 1717,
+          "name": "Storage Cupboard",
+          "description": "In a building whose sole purpose is storage, it strikes you as a little odd that such a room should exist. Nonetheless, this dark room is home to an abundance of shelves, though rather than the boxed plunder of the warehouse outside, they instead hold, among other things, mountains of paperwork, scroll after scroll of figures pertaining to the aforementioned booty.",
+          "grid_x": -2,
+          "grid_y": 0,
+          "exits": {
+            "e": {
+              "to_vnum": 1716,
+              "to_zone": "Port Larceny",
+              "to_room_name": "Northwest Warehouse - First Floor",
+              "direction": "e",
+              "is_cross_zone": false,
+              "is_portal": false
+            }
+          },
+          "npcs": []
+        },
+        "1718": {
+          "vnum": 1718,
+          "name": "Spink's Office",
+          "description": "The decor of this room immediately implies that the occupant is a wizard of some sort. A glass display box mounted on the wall showcases a variety of exotic wands, and a broad spectrum of scrolls and arcane literature are stored neatly along varnished wooden shelves. A desk, covered in financial documents, lies in the center of the room. A higher power shields Spink from the full force of your attack! (-38) Spink's eyes roll back in his head as a result of your wicked backstab! (56) Spink rolls his eyes and wounds you with his fist. (18)",
+          "grid_x": -1,
+          "grid_y": 0,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Spink",
+              "description": "In his time, this aged warlock must have committed to memory a wide array of incantations, though his involvement here as a purveyor of prohibited magic suggests that he never took the time to learn the",
+              "unique": true
+            }
+          ]
+        },
+        "2736": {
+          "vnum": 2736,
+          "name": "Southeast Warehouse",
+          "description": "A plethora of voulges, halberds and other exotic polearms obscures the northern wall - enough weaponry to equip an formidable army several times over. Dotted around the warehouse, full sets of armor are carefully arranged on wooden frames, and interestingly not all of them seem humanoid in design.",
+          "grid_x": 0,
+          "grid_y": 180,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Melis",
+              "description": "A short, attractive woman in her late twenties, she dilligently arranges the armored manequins around her, gleefully equipping them with all manner of gruesome and impressive tools of warfare.",
+              "unique": true
+            }
+          ]
+        },
+        "2737": {
+          "vnum": 2737,
+          "name": "Southeast Warehouse",
+          "description": "Laid out with military precision and discipline in a series of low cases, a selection of blades in many shapes and sizes shimmers impressively before your eyes. The wares here have been polished and sharpened with obsessive dilligence in order to entice prospective customers.",
+          "grid_x": 0,
+          "grid_y": 195,
+          "exits": {},
+          "npcs": []
+        },
+        "2738": {
+          "vnum": 2738,
+          "name": "Southeast Warehouse",
+          "description": "Crates and boxes have been pushed aside here, leaving a wide space of open wooden floor. A simple table lies in the middle of the room, and a wooden screen seperates the area from the section of warehouse to your west.",
+          "grid_x": 0,
+          "grid_y": 210,
+          "exits": {},
+          "npcs": []
+        },
+        "2739": {
+          "vnum": 2739,
+          "name": "Port Larceny Headquarters",
+          "description": "Sustained and profitable wheeling and dealing has enabled the upper echelons of the Port's chain of command to really pull out all the stops with the interior of this particular building. The floor of this foyer is neatly tiled, and the ornamental decoration of the walls and surfaces exudes affluence while avoiding gaudyness.",
+          "grid_x": 0,
+          "grid_y": 225,
+          "exits": {},
+          "npcs": [
+            {
+              "name": "Urglorf",
+              "description": "Defying old-fashioned bridge-guarding stereotypes, this troll appears to have been hired as some kind of bouncer for Port Larceny's sought-after",
+              "unique": true
+            }
+          ]
+        },
+        "2744": {
+          "vnum": 2744,
+          "name": "Treasury",
+          "description": "A series of iron chests line the northern wall of this dark, windowless room, secured to the floorboards with heavy bolts. Security has been the only goal in the design of this room, and the heavy padlocked eastern door, as well as the arrangement of the plunder-filled cases, testifies to this.",
+          "grid_x": 0,
+          "grid_y": 300,
+          "exits": {},
+          "npcs": []
+        }
+      },
+      "metadata": {
+        "min_x": -2,
+        "max_x": 0,
+        "min_y": 0,
+        "max_y": 300,
+        "room_count": 23
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": 1697,
+      "to": 1698,
+      "direction": "s",
+      "from_grid": [
+        -4,
+        -9
+      ],
+      "to_grid": [
+        -4,
+        -8
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1698,
+      "to": 1699,
+      "direction": "s",
+      "from_grid": [
+        -4,
+        -8
+      ],
+      "to_grid": [
+        -4,
+        -7
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1699,
+      "to": 1700,
+      "direction": "s",
+      "from_grid": [
+        -4,
+        -7
+      ],
+      "to_grid": [
+        -4,
+        -6
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1700,
+      "to": 1701,
+      "direction": "s",
+      "from_grid": [
+        -4,
+        -6
+      ],
+      "to_grid": [
+        -4,
+        -5
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1701,
+      "to": 1702,
+      "direction": "s",
+      "from_grid": [
+        -4,
+        -5
+      ],
+      "to_grid": [
+        -4,
+        -4
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1702,
+      "to": 1703,
+      "direction": "s",
+      "from_grid": [
+        -4,
+        -4
+      ],
+      "to_grid": [
+        -4,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1703,
+      "to": 1704,
+      "direction": "e",
+      "from_grid": [
+        -4,
+        -3
+      ],
+      "to_grid": [
+        -3,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1704,
+      "to": 1705,
+      "direction": "e",
+      "from_grid": [
+        -3,
+        -3
+      ],
+      "to_grid": [
+        -2,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1705,
+      "to": 1706,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        -3
+      ],
+      "to_grid": [
+        -1,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1706,
+      "to": 1707,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        -3
+      ],
+      "to_grid": [
+        0,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1707,
+      "to": 1708,
+      "direction": "e",
+      "from_grid": [
+        0,
+        -3
+      ],
+      "to_grid": [
+        1,
+        -3
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1708,
+      "to": 1709,
+      "direction": "s",
+      "from_grid": [
+        1,
+        -3
+      ],
+      "to_grid": [
+        1,
+        -2
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1709,
+      "to": 1710,
+      "direction": "s",
+      "from_grid": [
+        1,
+        -2
+      ],
+      "to_grid": [
+        1,
+        -1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1710,
+      "to": 1711,
+      "direction": "s",
+      "from_grid": [
+        1,
+        -1
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1711,
+      "to": 1719,
+      "direction": "e",
+      "from_grid": [
+        1,
+        0
+      ],
+      "to_grid": [
+        2,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1712,
+      "to": 1711,
+      "direction": "e",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1712,
+      "to": 1713,
+      "direction": "s",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        0,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1713,
+      "to": 1714,
+      "direction": "w",
+      "from_grid": [
+        0,
+        1
+      ],
+      "to_grid": [
+        -1,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1714,
+      "to": 1715,
+      "direction": "n",
+      "from_grid": [
+        -1,
+        1
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1715,
+      "to": 1712,
+      "direction": "e",
+      "from_grid": [
+        -1,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1716,
+      "to": 1718,
+      "direction": "w",
+      "from_grid": [
+        0,
+        0
+      ],
+      "to_grid": [
+        -1,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1717,
+      "to": 1716,
+      "direction": "e",
+      "from_grid": [
+        -2,
+        0
+      ],
+      "to_grid": [
+        0,
+        0
+      ],
+      "floor": 0
+    },
+    {
+      "from": 1720,
+      "to": 1721,
+      "direction": "e",
+      "from_grid": [
+        0,
+        2
+      ],
+      "to_grid": [
+        2,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1721,
+      "to": 1722,
+      "direction": "w",
+      "from_grid": [
+        2,
+        1
+      ],
+      "to_grid": [
+        1,
+        1
+      ],
+      "floor": -1
+    },
+    {
+      "from": 1722,
+      "to": 1711,
+      "direction": "n",
+      "from_grid": [
+        1,
+        1
+      ],
+      "to_grid": [
+        1,
+        0
+      ],
+      "floor": -1
+    }
+  ]
+}
