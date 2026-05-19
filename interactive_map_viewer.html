@@ -584,8 +584,41 @@
 
         /* ── Mobile ────────────────────────────────────────────────────── */
         @media (max-width: 768px) {
-            #npcSidebar { display: none; }
             :root { --sidebar-w: 100%; }
+
+            #npcSidebar {
+                position: fixed;
+                top: 0; right: 0;
+                bottom: 0;
+                z-index: 200;
+                width: 85vw;
+                max-width: 320px;
+                transform: translateX(100%);
+                transition: transform 0.25s ease;
+                display: flex;
+            }
+            #npcSidebar.open {
+                transform: translateX(0);
+                box-shadow: -4px 0 24px rgba(0,0,0,0.5);
+            }
+
+            #npcSidebarToggle {
+                position: fixed;
+                bottom: 126px;
+                right: 16px;
+                width: 48px; height: 48px;
+                border-radius: 50%;
+                background: var(--npc-unique);
+                border: none;
+                color: #fff;
+                font-size: 18px;
+                cursor: pointer;
+                z-index: 300;
+                box-shadow: 0 3px 12px rgba(0,0,0,0.4);
+                display: flex; align-items: center; justify-content: center;
+                transition: transform 0.15s;
+            }
+            #npcSidebarToggle:active { transform: scale(0.93); }
 
             .app { flex-direction: column; }
 
@@ -644,6 +677,7 @@
 
         @media (min-width: 769px) {
             #sidebarToggle { display: none !important; }
+            #npcSidebarToggle { display: none !important; }
             .sidebar-overlay { display: none !important; }
         }
     </style>
@@ -759,8 +793,9 @@
     </aside>
 </div>
 
-<!-- Mobile FAB -->
+<!-- Mobile FABs -->
 <button id="sidebarToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar">☰</button>
+<button id="npcSidebarToggle" aria-label="Toggle NPC panel" aria-expanded="false">⚔</button>
 
 <!-- NPC Detail Modal -->
 <div id="npcModal" style="display:none" role="dialog" aria-modal="true" aria-labelledby="npcModalName">
@@ -1042,11 +1077,13 @@
         }
 
         let _hideHoverTimeout = null;
+        let _suppressHide = false;
         function hideHoverCard() {
             document.getElementById('hoverCard').style.display = 'none';
             state._activeHoverNpc = null;
         }
         function scheduleHideHoverCard() {
+            if (_suppressHide) return;
             _hideHoverTimeout = setTimeout(hideHoverCard, 350);
         }
         function cancelHideHoverCard() {
@@ -1067,6 +1104,7 @@
             const data = state.npcData[npcName];
             if (!data) return;
             state._activeHoverNpc = npcName;
+            cancelHideHoverCard();
             const meta = [data.level && `Lvl ${data.level}`, data['class'], data.race].filter(Boolean).join(' · ');
             const loadsHtml = (data.loads || []).length > 0
                 ? `<div class="hc-loads">${data.loads.map(i =>
@@ -1074,6 +1112,7 @@
                   ).join('')}</div>`
                 : '';
             const card = document.getElementById('hoverCard');
+            _suppressHide = true;
             card.innerHTML = `
                 <div class="hc-name">${escapeHtml(npcName)}</div>
                 ${meta ? `<div class="hc-meta">${escapeHtml(meta)}</div>` : ''}
@@ -1083,9 +1122,10 @@
                 </div>
                 ${loadsHtml}
             `;
+            _suppressHide = false;
             card.querySelectorAll('.hc-load-chip').forEach(el => {
                 el.addEventListener('mouseenter', e => { cancelHideHoverCard(); showItemHoverCard(el.dataset.item, e); });
-                el.addEventListener('mouseleave', e => { cancelHideHoverCard(); showNpcHoverCard(state._activeHoverNpc, e); });
+                el.addEventListener('mouseleave', cancelHideHoverCard);
             });
             positionHoverCard(event);
             card.style.display = 'block';
@@ -1094,6 +1134,7 @@
         function showItemHoverCard(itemName, event) {
             const data = state.itemData[itemName];
             if (!data) return;
+            cancelHideHoverCard();
             const typeColor = data.type === 'armor' ? 'var(--accent)' : data.type === 'weapon' ? 'var(--red)' : 'var(--green)';
             let rows = '';
             if (data.type === 'armor') {
@@ -1116,11 +1157,13 @@
                 if (data.bound)   rows += `<div class="hc-row">Bound <span>${escapeHtml(data.bound)}</span></div>`;
             }
             const card = document.getElementById('hoverCard');
+            _suppressHide = true;
             card.innerHTML = `
                 <div class="hc-type" style="color:${typeColor}">${data.type}</div>
                 <div class="hc-name">${escapeHtml(itemName)}</div>
                 ${rows}
             `;
+            _suppressHide = false;
             positionHoverCard(event);
             card.style.display = 'block';
         }
@@ -2345,10 +2388,30 @@
         }
 
         toggleBtn.onclick = () => {
-            sidebarEl.classList.contains('open') ? closeSidebar() : openSidebar();
+            if (sidebarEl.classList.contains('open')) { closeSidebar(); }
+            else { closeNpcSidebar(); openSidebar(); }
         };
 
-        overlayEl.addEventListener('click', closeSidebar);
+        const npcSidebarEl  = document.getElementById('npcSidebar');
+        const npcToggleFab  = document.getElementById('npcSidebarToggle');
+
+        function openNpcSidebar() {
+            closeSidebar();
+            npcSidebarEl.classList.add('open');
+            overlayEl.classList.add('open');
+            npcToggleFab.setAttribute('aria-expanded', 'true');
+        }
+        function closeNpcSidebar() {
+            npcSidebarEl.classList.remove('open');
+            overlayEl.classList.remove('open');
+            npcToggleFab.setAttribute('aria-expanded', 'false');
+        }
+
+        npcToggleFab.onclick = () => {
+            npcSidebarEl.classList.contains('open') ? closeNpcSidebar() : openNpcSidebar();
+        };
+
+        overlayEl.addEventListener('click', () => { closeSidebar(); closeNpcSidebar(); });
 
         // Close sidebar after selecting an exit on mobile
         document.getElementById('exitsList').addEventListener('click', () => {
@@ -2356,7 +2419,7 @@
         });
 
         window.addEventListener('resize', () => {
-            if (window.innerWidth > 768) closeSidebar();
+            if (window.innerWidth > 768) { closeSidebar(); closeNpcSidebar(); }
         });
 
         // ── NPC toggle & search ───────────────────────────────────────────
