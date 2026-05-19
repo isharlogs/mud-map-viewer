@@ -4,463 +4,769 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUD Zone Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        /* ── CSS Variables ─────────────────────────────────────────────── */
+        :root {
+            --bg-deep:      #080b10;
+            --bg-panel:     #0e1318;
+            --bg-card:      #141b22;
+            --bg-hover:     #1a2530;
+            --border:       #1e2d3d;
+            --border-light: #253545;
+            --text-primary: #d4c9b8;
+            --text-muted:   #6b7a8a;
+            --text-dim:     #3d4f5e;
+            --accent:       #4a90c4;
+            --accent-glow:  rgba(74,144,196,0.18);
+            --accent-dim:   #1e3a52;
+            --gold:         #c9a84c;
+            --gold-dim:     #3d2e10;
+            --green:        #4caf82;
+            --green-dim:    #0f2e1e;
+            --red:          #c44a4a;
+            --red-dim:      #2e1010;
+            --node-base:    #1a2535;
+            --node-stroke:  #2d4460;
+            --node-sel:     #0f3355;
+            --node-sel-stroke: #4a90c4;
+            --node-entry:   #1e3020;
+            --node-entry-stroke: #4caf82;
+            --edge-ns:      rgba(196,84,84,0.7);
+            --edge-ew:      rgba(74,120,196,0.7);
+            --edge-ud:      rgba(76,175,130,0.7);
+            --edge-diag:    rgba(196,168,76,0.7);
+            --font-display: 'Cinzel', serif;
+            --font-body:    'Crimson Pro', serif;
+            --sidebar-w:    300px;
+            --header-h:     44px;
+            --controls-h:   52px;
+            --radius:       6px;
+            --radius-lg:    10px;
+            --npc-unique:   #cc44e0;
+            --npc-common:   #e05555;
         }
 
+        /* ── Reset ─────────────────────────────────────────────────────── */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* ── Base ──────────────────────────────────────────────────────── */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: #0a0a0a;
-            color: #fff;
+            font-family: var(--font-body);
+            font-size: 15px;
+            background: var(--bg-deep);
+            color: var(--text-primary);
             display: flex;
-            height: 100vh;
+            height: 100dvh;
             overflow: hidden;
         }
 
-        .container {
+        /* ── Focus ring — visible for keyboard nav ─────────────────────── */
+        :focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        /* ── Layout ─────────────────────────────────────────────────────── */
+        .app {
             display: flex;
             width: 100%;
             height: 100%;
-            gap: 0;
         }
 
-        .sidebar {
-            width: 280px;
-            background: #1a1a1a;
-            border-right: 1px solid #333;
+        /* ── Sidebar ────────────────────────────────────────────────────── */
+        #sidebar {
+            width: var(--sidebar-w);
+            min-width: var(--sidebar-w);
+            background: var(--bg-panel);
+            border-right: 1px solid var(--border);
             display: flex;
             flex-direction: column;
-            overflow-y: auto;
-            padding: 1rem;
+            overflow: hidden;
         }
 
-        .sidebar h3 {
-            font-size: 12px;
-            font-weight: 600;
-            color: #888;
+        .sidebar-header {
+            padding: 14px 16px 12px;
+            border-bottom: 1px solid var(--border);
+            flex-shrink: 0;
+        }
+
+        .app-title {
+            font-family: var(--font-display);
+            font-size: 13px;
+            letter-spacing: 2px;
+            color: var(--gold);
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
-        .zone-selector {
-            margin-bottom: 16px;
-        }
-
-        .zone-selector-label {
-            font-size: 12px;
-            font-weight: 500;
-            color: #888;
-            margin-bottom: 6px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            display: block;
-        }
-
+        /* Zone select */
         .zone-selector select {
             width: 100%;
-            padding: 10px;
-            background: #252525;
-            border: 1px solid #444;
-            border-radius: 6px;
-            color: #fff;
+            padding: 9px 10px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius);
+            color: var(--text-primary);
+            font-family: var(--font-body);
             font-size: 14px;
-            font-weight: 500;
             cursor: pointer;
-            transition: all 0.2s;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7a8a' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            padding-right: 30px;
+        }
+        .zone-selector select:hover { border-color: var(--accent); }
+        .zone-selector select:focus { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-glow); }
+
+        /* Floor tabs */
+        .floor-tabs {
+            display: flex;
+            gap: 4px;
+            padding: 10px 16px;
+            border-bottom: 1px solid var(--border);
+            flex-wrap: wrap;
+            flex-shrink: 0;
         }
 
-        .zone-selector select:hover {
-            border-color: #0066cc;
-            background: #2a2a2a;
+        .floor-tab {
+            padding: 5px 11px;
+            background: transparent;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius);
+            font-size: 12px;
+            font-family: var(--font-display);
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .floor-tab:hover { border-color: var(--accent); color: var(--text-primary); }
+        .floor-tab.active {
+            background: var(--accent-dim);
+            border-color: var(--accent);
+            color: var(--accent);
         }
 
-        .zone-selector select:focus {
-            outline: none;
-            border-color: #0066cc;
-            box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+        /* Scrollable content area */
+        .sidebar-scroll {
+            flex: 1;
+            overflow-y: auto;
+            padding: 14px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
         }
 
-        .zone-label {
-            font-size: 14px;
-            font-weight: 500;
-            color: #fff;
-            margin-bottom: 8px;
-            word-break: break-word;
+        /* Room card */
+        .room-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
         }
 
-        .room-info {
-            background: #252525;
-            border: 1px solid #333;
-            border-radius: 6px;
-            padding: 12px;
-            margin-bottom: 1rem;
+        .room-card-header {
+            padding: 10px 12px 8px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .room-vnum {
+            font-size: 10px;
+            font-family: var(--font-display);
+            letter-spacing: 1px;
+            color: var(--text-dim);
+            margin-bottom: 3px;
         }
 
         .room-name {
             font-size: 15px;
             font-weight: 500;
-            color: #fff;
-            margin-bottom: 8px;
+            color: var(--text-primary);
             line-height: 1.3;
         }
 
+        .room-desc-wrap {
+            padding: 10px 12px;
+        }
+
         .room-desc {
-            font-size: 12px;
-            color: #aaa;
-            line-height: 1.4;
-            margin-bottom: 0;
-            max-height: 60px;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            font-size: 13px;
+            font-style: italic;
+            color: var(--text-primary);
+            opacity: 0.8;
+            line-height: 1.55;
         }
 
-        .floor-tabs {
-            display: flex;
-            gap: 4px;
-            margin-bottom: 16px;
-            flex-wrap: wrap;
-        }
-
-        .floor-tab {
-            flex: 0 0 auto;
-            padding: 6px 12px;
-            background: transparent;
-            border: 1px solid #444;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.2s;
-            color: #888;
-        }
-
-        .floor-tab:hover {
-            border-color: #666;
-            color: #aaa;
-        }
-
-        .floor-tab.active {
-            background: #0066cc;
-            border-color: #0066cc;
-            color: #fff;
-        }
-
-        .exits-section h4 {
-            font-size: 11px;
-            font-weight: 600;
-            color: #888;
+        /* Section label */
+        .section-label {
+            font-family: var(--font-display);
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            color: var(--text-dim);
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 8px;
-            margin-top: 12px;
-        }
-
-        .exit-button {
-            display: block;
-            width: 100%;
-            text-align: left;
-            background: transparent;
-            border: 1px solid #333;
-            border-radius: 4px;
-            padding: 8px 10px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--border);
             margin-bottom: 6px;
-            font-size: 13px;
-            color: #ccc;
+        }
+
+        /* Exits */
+        .exits-list { display: flex; flex-direction: column; gap: 4px; }
+
+        .exit-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+            padding: 9px 11px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            font-size: 14px;
             cursor: pointer;
-            transition: all 0.2s;
-            font-family: inherit;
+            transition: all 0.15s;
+            text-align: left;
+        }
+        .exit-btn:hover {
+            background: var(--bg-hover);
+            border-color: var(--border-light);
         }
 
-        .exit-button:hover {
-            background: #1a3a52;
-            border-color: #0066cc;
-            color: #fff;
-        }
-
-        .exit-button.cross-zone {
-            border-color: #ffaa00;
-            background: #1a1a1a;
-        }
-
-        .exit-button.cross-zone:hover {
-            background: #2a2a2a;
-            border-color: #ffdd00;
-            box-shadow: 0 0 8px rgba(255, 170, 0, 0.5);
-        }
-
-        .exit-button.portal-exit {
-            border-color: #44cc88;
-            background: #1a1a1a;
-        }
-
-        .exit-button.portal-exit:hover {
-            background: #2a2a2a;
-            border-color: #66ff99;
-            box-shadow: 0 0 8px rgba(68, 204, 136, 0.5);
-        }
-
-        .exit-direction {
-            font-weight: 600;
-            color: #0099ff;
-            margin-right: 6px;
-        }
-
-        .exit-button.cross-zone .exit-direction {
-            color: #ff9900;
-        }
-
-        .floor-info {
-            margin-top: auto;
-            background: #252525;
-            border: 1px solid #333;
-            border-radius: 6px;
-            padding: 12px;
-            text-align: center;
-            font-size: 13px;
-        }
-
-        .floor-info-label {
-            color: #888;
+        .exit-dir {
+            font-family: var(--font-display);
             font-size: 11px;
-            margin-bottom: 4px;
-        }
-
-        .floor-info-value {
-            font-size: 18px;
             font-weight: 600;
-            color: #0099ff;
+            color: var(--accent);
+            background: var(--accent-dim);
+            border-radius: 3px;
+            padding: 2px 5px;
+            min-width: 26px;
+            text-align: center;
+            flex-shrink: 0;
         }
 
+        .exit-btn.portal { border-color: var(--green-dim); }
+        .exit-btn.portal:hover { border-color: var(--green); }
+        .exit-btn.portal .exit-dir { color: var(--green); background: var(--green-dim); }
+
+        .exit-btn.cross-zone { border-color: var(--gold-dim); }
+        .exit-btn.cross-zone:hover { border-color: var(--gold); }
+        .exit-btn.cross-zone .exit-dir { color: var(--gold); background: var(--gold-dim); }
+
+        .exit-dest { color: var(--text-primary); flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .exit-badge { font-size: 12px; flex-shrink: 0; }
+
+        /* Legend */
+        .legend { display: flex; flex-direction: column; gap: 5px; }
+        .legend-row { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-muted); }
+        .legend-line { width: 22px; height: 3px; border-radius: 2px; flex-shrink: 0; }
+        .legend-swatch { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; border: 1px solid rgba(255,255,255,0.1); }
+
+        /* ── Canvas area ────────────────────────────────────────────────── */
         .canvas-area {
             flex: 1;
             display: flex;
             flex-direction: column;
-            background: #000;
+            background: var(--bg-deep);
             overflow: hidden;
+            min-width: 0;
         }
 
+        /* Header bar */
         .map-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 12px 16px;
-            background: #111;
-            border-bottom: 1px solid #333;
-            font-size: 14px;
-            color: #888;
+            padding: 0 16px;
+            height: var(--header-h);
+            background: var(--bg-panel);
+            border-bottom: 1px solid var(--border);
+            flex-shrink: 0;
         }
 
-        .map-header-title {
-            color: #fff;
-            font-weight: 500;
+        .map-title {
+            font-family: var(--font-display);
+            font-size: 13px;
+            letter-spacing: 1px;
+            color: var(--text-primary);
         }
 
-        .map-container {
+        .room-count {
+            font-size: 12px;
+            color: var(--text-dim);
+            font-family: var(--font-display);
+            letter-spacing: 0.5px;
+        }
+
+        /* Map viewport */
+        #mapContainer {
             flex: 1;
-            background: #030512;
             position: relative;
             overflow: hidden;
             cursor: grab;
+            /* Subtle dot grid background */
+            background-color: var(--bg-deep);
+            background-image: radial-gradient(circle, #1e2d3d 1px, transparent 1px);
+            background-size: 28px 28px;
         }
 
-        .map-container.dragging {
-            cursor: grabbing;
-        }
+        #mapContainer.dragging { cursor: grabbing; }
 
-        svg {
+        #mapSvg {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 0; left: 0;
         }
 
+        /* SVG room nodes */
         .room-box {
-            fill: #353b52;
-            stroke: #ffffff;
-            stroke-width: 2;
+            fill: var(--node-base);
+            stroke: var(--node-stroke);
+            stroke-width: 1.5;
             cursor: pointer;
-            transition: fill 0.2s, stroke 0.2s;
+            transition: fill 0.15s, stroke 0.15s;
+            rx: 6;
         }
-
-        .room-box:hover {
-            fill: #404854;
-            stroke-width: 2.5;
-        }
-
-        .room-box.selected {
-            fill: #1a6b9a;
-            stroke: #00ccff;
-            stroke-width: 2.5;
-        }
+        .room-box:hover { fill: var(--bg-hover); stroke: var(--border-light); stroke-width: 2; }
+        .room-box.selected { fill: var(--node-sel); stroke: var(--node-sel-stroke); stroke-width: 2; }
+        .room-box.entry-room { fill: var(--node-entry); stroke: var(--node-entry-stroke); stroke-width: 1.5; }
+        .room-box.entry-room.selected { stroke: var(--node-sel-stroke); stroke-width: 2; }
 
         .room-text {
-            font-size: 11px;
-            fill: #ffffff;
+            font-size: 10.5px;
+            fill: var(--text-primary);
             pointer-events: none;
             text-anchor: middle;
             dominant-baseline: middle;
-            font-family: sans-serif;
-            font-weight: 500;
+            font-family: 'Crimson Pro', serif;
+            font-weight: 400;
+            letter-spacing: 0.2px;
         }
 
-        .exit-line {
-            stroke-width: 2;
-            fill: none;
-            pointer-events: none;
-        }
+        .room-text.selected-text { fill: #e8f4ff; }
+        .room-text.entry-text { fill: #a8dfc0; }
 
-        .exit-line.cardinal-ns {
-            stroke: #e05555;
-        }
-
-        .exit-line.cardinal-ew {
-            stroke: #5588e0;
-        }
-
-        .exit-line.vertical {
-            stroke: #44cc88;
-        }
-
-        .exit-line.diagonal {
-            stroke: #e0cc44;
-        }
-
+        /* ── Controls bar ──────────────────────────────────────────────── */
         .controls {
             display: flex;
-            gap: 8px;
             align-items: center;
-            padding: 12px 16px;
-            background: #111;
-            border-top: 1px solid #333;
-            font-size: 12px;
-            color: #888;
+            gap: 6px;
+            padding: 0 14px;
+            height: var(--controls-h);
+            background: var(--bg-panel);
+            border-top: 1px solid var(--border);
+            flex-shrink: 0;
         }
 
-        .btn {
-            padding: 6px 12px;
-            background: transparent;
-            border: 1px solid #444;
-            border-radius: 4px;
-            font-size: 12px;
-            color: #ccc;
+        .ctrl-btn {
+            height: 32px;
+            padding: 0 12px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius);
+            font-family: var(--font-body);
+            font-size: 13px;
+            color: var(--text-primary);
             cursor: pointer;
-            transition: all 0.2s;
-            font-family: inherit;
+            transition: all 0.15s;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
+        .ctrl-btn:hover { background: var(--bg-hover); border-color: var(--accent); }
+        .ctrl-btn:active { transform: scale(0.97); }
 
-        .btn:hover {
-            background: #1a1a1a;
-            border-color: #666;
-            color: #fff;
+        .ctrl-btn.danger {
+            background: var(--red-dim);
+            border-color: var(--red);
+            color: #f0a0a0;
         }
+        .ctrl-btn.danger:hover { background: #3d1010; }
 
         .zoom-level {
-            font-size: 12px;
-            color: #666;
-            min-width: 40px;
-        }
-
-        .spacer {
-            flex: 1;
-        }
-
-        .hint {
+            font-family: var(--font-display);
             font-size: 11px;
-            color: #555;
+            color: var(--text-muted);
+            min-width: 38px;
+            text-align: center;
+            letter-spacing: 0.5px;
         }
 
+        .ctrl-divider {
+            width: 1px;
+            height: 24px;
+            background: var(--border);
+            margin: 0 2px;
+        }
+
+        .ctrl-spacer { flex: 1; }
+
+        .breadcrumb {
+            font-size: 11px;
+            font-family: var(--font-display);
+            color: var(--text-dim);
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 220px;
+        }
+
+        .keyboard-hint {
+            font-size: 11px;
+            color: var(--text-dim);
+            white-space: nowrap;
+        }
+        .kbd {
+            display: inline-block;
+            padding: 1px 4px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 10px;
+        }
+
+        /* ── No rooms message ──────────────────────────────────────────── */
         .no-rooms {
             position: absolute;
-            top: 50%;
-            left: 50%;
+            top: 50%; left: 50%;
             transform: translate(-50%, -50%);
-            color: #555;
+            color: var(--text-dim);
             font-size: 14px;
             text-align: center;
             pointer-events: none;
+            font-family: var(--font-display);
+            letter-spacing: 1px;
         }
 
-        ::-webkit-scrollbar {
-            width: 8px;
+        /* ── Scrollbar ─────────────────────────────────────────────────── */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--text-dim); }
+
+        /* ── Right NPC Sidebar ─────────────────────────────────────────── */
+        #npcSidebar {
+            width: 260px;
+            min-width: 260px;
+            background: var(--bg-panel);
+            border-left: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .npc-sidebar-header {
+            padding: 12px 14px 10px;
+            border-bottom: 1px solid var(--border);
+            flex-shrink: 0;
+            font-family: var(--font-display);
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: var(--npc-unique);
+            text-transform: uppercase;
+        }
+        #npcsSection { margin-bottom: 4px; }
+
+        /* ── NPC Styles ─────────────────────────────────────────────────── */
+
+        .npc-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 9px 11px;
+            margin-bottom: 6px;
+            cursor: pointer;
+            transition: border-color 0.15s, background 0.15s;
+        }
+        .npc-card:hover { border-color: var(--border-light); background: var(--bg-hover); }
+        .npc-card.expanded { border-color: var(--gold); }
+        .npc-card-header { display: flex; align-items: center; gap: 8px; }
+        .npc-dot {
+            width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 10px; font-weight: bold; color: #fff; font-family: monospace;
+        }
+        .npc-name { font-size: 13px; color: var(--text-primary); font-weight: 500; line-height: 1.3; }
+        .npc-room-tag { font-size: 11px; color: var(--text-dim); margin-top: 2px; padding-left: 18px; }
+        .npc-desc {
+            font-size: 12px; color: var(--text-muted); margin-top: 5px;
+            padding-left: 18px; font-style: italic; line-height: 1.5; display: none;
+        }
+        .npc-card.expanded .npc-desc { display: block; }
+        .npc-empty { color: var(--text-dim); font-size: 13px; padding: 4px 0 8px; font-style: italic; }
+
+        .npc-badge-text {
+            font-size: 10px; font-family: monospace; font-weight: bold;
+            fill: #fff; text-anchor: middle; dominant-baseline: central;
+            pointer-events: none;
         }
 
-        ::-webkit-scrollbar-track {
-            background: #1a1a1a;
+        /* ── NPC Modal ─────────────────────────────────────────────────── */
+        #npcModal {
+            position: fixed; inset: 0;
+            background: rgba(0,0,0,0.65);
+            z-index: 1000;
+            display: flex; align-items: center; justify-content: center;
+        }
+        #npcModalCard {
+            background: var(--bg-panel);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 22px 26px;
+            max-width: 480px; width: 90%;
+            max-height: 80vh; overflow-y: auto;
+            position: relative;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+        }
+        #npcModalClose {
+            position: absolute; top: 12px; right: 14px;
+            background: none; border: none;
+            font-size: 22px; color: var(--text-muted); cursor: pointer; line-height: 1;
+        }
+        #npcModalClose:hover { color: var(--text-primary); }
+        .npc-modal-name { font-family: var(--font-display); font-size: 17px; color: var(--text-primary); margin-bottom: 6px; }
+        .npc-modal-meta { font-size: 13px; color: var(--text-muted); margin-bottom: 14px; }
+        .npc-modal-stats { display: flex; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+        .npc-stat { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 8px 14px; text-align: center; min-width: 70px; }
+        .npc-stat-label { font-size: 9px; font-family: var(--font-display); letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); margin-bottom: 4px; }
+        .npc-stat-value { font-size: 18px; color: var(--text-primary); font-weight: 600; }
+        .npc-modal-desc { font-size: 13px; color: var(--text-muted); font-style: italic; line-height: 1.65; margin-bottom: 14px; }
+        .npc-modal-section { margin-top: 12px; }
+        .npc-modal-loads { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
+        .load-chip {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 3px 9px;
+            font-size: 12px; color: var(--gold); cursor: default;
+            transition: border-color 0.12s;
+        }
+        .load-chip:hover { border-color: var(--gold); }
+        .npc-modal-jump {
+            margin-top: 16px; width: 100%;
+            padding: 8px; background: var(--accent-dim);
+            border: 1px solid var(--accent); border-radius: var(--radius);
+            color: var(--accent); font-family: var(--font-body); font-size: 13px;
+            cursor: pointer; transition: background 0.15s;
+        }
+        .npc-modal-jump:hover { background: #1a3a5c; }
+
+        /* ── Hover Card ────────────────────────────────────────────────── */
+        #hoverCard {
+            position: fixed; z-index: 2000;
+            background: var(--bg-panel);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 11px 14px;
+            min-width: 180px; max-width: 260px;
+            pointer-events: none;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.45);
+            font-size: 12px;
+        }
+        .hc-name { font-family: var(--font-display); font-size: 12px; color: var(--text-primary); margin-bottom: 5px; line-height: 1.3; }
+        .hc-meta { color: var(--text-muted); margin-bottom: 6px; }
+        .hc-stats { display: flex; gap: 12px; color: var(--text-muted); }
+        .hc-stat span { color: var(--text-primary); font-weight: 500; }
+        .hc-type { font-size: 9px; font-family: var(--font-display); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px; }
+        .hc-row { color: var(--text-muted); margin-top: 3px; }
+        .hc-row span { color: var(--accent); }
+        .hc-row.gold span { color: var(--gold); }
+
+        /* ── Mobile ────────────────────────────────────────────────────── */
+        @media (max-width: 768px) {
+            #npcSidebar { display: none; }
+            :root { --sidebar-w: 100%; }
+
+            .app { flex-direction: column; }
+
+            #sidebar {
+                position: fixed;
+                top: 0; left: 0; right: 0;
+                bottom: 0;
+                z-index: 200;
+                transform: translateX(-100%);
+                transition: transform 0.25s ease;
+                width: 85vw;
+                max-width: 340px;
+            }
+
+            #sidebar.open { transform: translateX(0); box-shadow: 4px 0 24px rgba(0,0,0,0.5); }
+
+            .sidebar-overlay {
+                display: none;
+                position: fixed;
+                inset: 0;
+                background: rgba(0,0,0,0.5);
+                z-index: 199;
+            }
+            .sidebar-overlay.open { display: block; }
+
+            .canvas-area { width: 100%; height: 100dvh; }
+
+            /* FAB to open sidebar */
+            #sidebarToggle {
+                position: fixed;
+                bottom: 70px;
+                right: 16px;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: var(--accent);
+                border: none;
+                color: #fff;
+                font-size: 20px;
+                cursor: pointer;
+                z-index: 300;
+                box-shadow: 0 3px 12px rgba(0,0,0,0.4);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: transform 0.15s;
+            }
+            #sidebarToggle:active { transform: scale(0.93); }
+
+            .keyboard-hint { display: none; }
+
+            .ctrl-btn { height: 40px; padding: 0 14px; font-size: 14px; }
+
+            .controls { gap: 8px; padding: 0 10px; }
         }
 
-        ::-webkit-scrollbar-thumb {
-            background: #444;
-            border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #555;
+        @media (min-width: 769px) {
+            #sidebarToggle { display: none !important; }
+            .sidebar-overlay { display: none !important; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- LEFT SIDEBAR -->
-        <div class="sidebar">
-            <h3>Zone</h3>
+<div class="app">
+
+    <!-- ── Sidebar overlay (mobile) ──────────────────────── -->
+    <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+
+    <!-- ── LEFT SIDEBAR ──────────────────────────────────── -->
+    <nav id="sidebar" role="navigation" aria-label="Zone navigation">
+
+        <div class="sidebar-header">
+            <div class="app-title" aria-label="MUD Zone Explorer">⚔ Zone Explorer</div>
             <div class="zone-selector">
-                <label class="zone-selector-label" for="zoneDropdown">Select Zone:</label>
-                <select id="zoneDropdown">
+                <label for="zoneDropdown" style="display:block; font-size:11px; font-family:'Cinzel',serif; letter-spacing:1px; color:var(--text-dim); text-transform:uppercase; margin-bottom:6px;">Zone</label>
+                <select id="zoneDropdown" aria-label="Select zone">
                     <option value="">Loading zones...</option>
                 </select>
             </div>
-            <div class="zone-label" id="zoneLabel">-</div>
-
-            <div class="room-info" id="roomInfo">
-                <div class="room-name">-</div>
-                <div class="room-desc">-</div>
-            </div>
-
-            <div class="floor-tabs" id="floorTabs"></div>
-
-            <div class="exits-section">
-                <h4>Exits</h4>
-                <div id="exitsList"></div>
-            </div>
-
-            <div class="floor-info">
-                <div class="floor-info-label">Current Floor</div>
-                <div class="floor-info-value" id="floorNumber">0 / 0</div>
-            </div>
         </div>
 
-        <!-- RIGHT CANVAS -->
-        <div class="canvas-area">
-            <div class="map-header">
-                <div>
-                    <span class="map-header-title" id="mapTitle">Loading...</span>
+        <!-- Floor tabs -->
+        <div class="floor-tabs" id="floorTabs" role="tablist" aria-label="Zone floors"></div>
+
+        <!-- Scrollable body -->
+        <div class="sidebar-scroll" role="main">
+
+            <!-- Room card -->
+            <div class="room-card" id="roomCard" aria-live="polite" aria-label="Selected room info">
+                <div class="room-card-header">
+                    <div class="room-vnum" id="roomVnum">—</div>
+                    <div class="room-name" id="roomName">Select a room</div>
                 </div>
-                <div id="roomCount" style="color: #666;">-</div>
+                <div class="room-desc-wrap">
+                    <div class="room-desc" id="roomDesc"></div>
+                </div>
             </div>
 
-            <div class="map-container" id="mapContainer">
-                <svg id="mapSvg"></svg>
-                <div class="no-rooms" id="noRooms" style="display: none;">
-                    No rooms on this floor
+            <!-- Exits -->
+            <div id="exitsSection">
+                <div class="section-label">Exits</div>
+                <div class="exits-list" id="exitsList" role="list" aria-label="Room exits"></div>
+            </div>
+
+            <!-- Legend -->
+            <div id="legendSection">
+                <div class="section-label">Legend</div>
+                <div class="legend" aria-label="Map legend">
+                    <div class="legend-row"><div class="legend-line" style="background:var(--edge-ns)"></div> North / South</div>
+                    <div class="legend-row"><div class="legend-line" style="background:var(--edge-ew)"></div> East / West</div>
+                    <div class="legend-row"><div class="legend-line" style="background:var(--edge-ud)"></div> Up / Down (portal)</div>
+                    <div class="legend-row"><div class="legend-line" style="background:var(--edge-diag)"></div> Diagonal</div>
+                    <div class="legend-row"><div class="legend-swatch" style="background:var(--node-entry); border-color:var(--green);"></div> Zone entry room</div>
+                    <div class="legend-row"><div class="legend-swatch" style="background:var(--node-sel); border-color:var(--accent);"></div> Selected room</div>
                 </div>
             </div>
 
-            <div class="controls">
-                <button class="btn" id="zoomOutBtn">− Zoom</button>
-                <span class="zoom-level" id="zoomLevel">100%</span>
-                <button class="btn" id="zoomInBtn">+ Zoom</button>
-                <button class="btn" id="resetBtn">Reset</button>
-                <button class="btn" id="returnBtn" style="display: none; background: #ff6644;">← Return</button>
-                <div class="spacer"></div>
-                <span class="hint" id="breadcrumb" style="font-size: 11px; color: #666;"></span>
-            </div>
+        </div>
+    </nav>
+
+    <!-- ── RIGHT CANVAS ───────────────────────────────────── -->
+    <div class="canvas-area">
+
+        <!-- Header -->
+        <header class="map-header" role="banner">
+            <span class="map-title" id="mapTitle">Loading…</span>
+            <span class="room-count" id="roomCount"></span>
+        </header>
+
+        <!-- Map -->
+        <div id="mapContainer" role="img" aria-label="Zone map" tabindex="0">
+            <svg id="mapSvg" aria-hidden="true"></svg>
+            <div class="no-rooms" id="noRooms" style="display:none;" aria-live="polite">No rooms on this floor</div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls" role="toolbar" aria-label="Map controls">
+            <button class="ctrl-btn" id="zoomOutBtn" aria-label="Zoom out (minus key)">−</button>
+            <span class="zoom-level" id="zoomLevel" aria-live="polite" aria-label="Zoom level">100%</span>
+            <button class="ctrl-btn" id="zoomInBtn" aria-label="Zoom in (plus key)">+</button>
+            <div class="ctrl-divider"></div>
+            <button class="ctrl-btn" id="resetBtn" aria-label="Reset view (R key)">Reset</button>
+            <button class="ctrl-btn danger" id="returnBtn" style="display:none;" aria-label="Return from portal">← Return</button>
+            <button class="ctrl-btn" id="npcToggleBtn" title="Toggle trash NPC badges on map">🗑 Trash</button>
+            <div class="ctrl-spacer"></div>
+            <span class="breadcrumb" id="breadcrumb" aria-live="polite"></span>
+            <span class="keyboard-hint" aria-hidden="true">
+                <kbd class="kbd">scroll</kbd> zoom &nbsp;
+                <kbd class="kbd">drag</kbd> pan &nbsp;
+                <kbd class="kbd">+/−</kbd> zoom
+            </span>
         </div>
     </div>
 
-    <script>
+    <!-- ── RIGHT NPC SIDEBAR ────────────────────────────────── -->
+    <aside id="npcSidebar" role="complementary" aria-label="NPC information">
+        <div class="npc-sidebar-header">⚔ NPCs</div>
+        <div class="sidebar-scroll">
+            <div id="npcsSection">
+                <div class="section-label">In Room</div>
+                <div id="npcRoomList"></div>
+            </div>
+            <div id="allNpcsSection">
+                <div class="section-label" style="display:flex;align-items:center;justify-content:space-between;">
+                    <span>Zone Unique</span>
+                    <span id="npcZoneCount" style="font-size:11px;color:var(--text-dim);font-family:var(--font-body);font-style:italic;"></span>
+                </div>
+                <div id="npcZoneList"></div>
+            </div>
+        </div>
+    </aside>
+</div>
+
+<!-- Mobile FAB -->
+<button id="sidebarToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar">☰</button>
+
+<!-- NPC Detail Modal -->
+<div id="npcModal" style="display:none" role="dialog" aria-modal="true" aria-labelledby="npcModalName">
+    <div id="npcModalCard">
+        <button id="npcModalClose" aria-label="Close">×</button>
+        <div id="npcModalContent"></div>
+    </div>
+</div>
+
+<!-- Hover Card -->
+<div id="hoverCard" style="display:none" aria-hidden="true"></div>
+
+<script>
         // Configuration
         const ROOM_WIDTH = 120;
         const ROOM_HEIGHT = 60;
@@ -485,7 +791,10 @@
             portalHistory: [],  // Track portal navigation: [{zone, room, exitDir}, ...]
             isInPortal: false,  // Whether currently viewing a portal map
             // go-portal view: null when not active, else { sourceVnum, portalVnum, direction }
-            goPortalView: null
+            goPortalView: null,
+            showNpcs:     false,
+            npcData:      {},
+            itemData:     {}
         };
 
         // ============================================================================
@@ -527,7 +836,7 @@
             const zone = state.allZones[state.currentZone];
             if (!zone) return;
 
-            // Go-portal view: sidebar shows portal room info, not the main floor
+            // Go-portal view: sidebar shows portal room info
             if (state.goPortalView) {
                 const { sourceVnum, portalVnum, direction } = state.goPortalView;
                 let floor = null;
@@ -538,19 +847,11 @@
                 const portalRoom = floor.rooms[String(portalVnum)];
                 if (!portalRoom) return;
 
-                document.getElementById('zoneLabel').textContent = state.currentZone;
-                document.getElementById('floorNumber').textContent = `Portal`;
-
-                // Hide floor tabs while in portal view
                 document.getElementById('floorTabs').innerHTML = '';
+                document.getElementById('roomVnum').textContent = `#${portalVnum}`;
+                document.getElementById('roomName').textContent = portalRoom.name;
+                document.getElementById('roomDesc').textContent = portalRoom.description || '';
 
-                const roomInfo = document.getElementById('roomInfo');
-                roomInfo.innerHTML = `
-                    <div class="room-name">${escapeHtml(portalRoom.name)}</div>
-                    <div class="room-desc">${escapeHtml(portalRoom.description || '')}</div>
-                `;
-
-                // Show exits from portal room, excluding the back-exit to sourceVnum
                 const exitsList = document.getElementById('exitsList');
                 exitsList.innerHTML = '';
                 const EXIT_ORDER = ['u','d','n','ne','nw','e','w','se','sw','s'];
@@ -560,13 +861,12 @@
                         const ai = EXIT_ORDER.indexOf(a.toLowerCase());
                         const bi = EXIT_ORDER.indexOf(b.toLowerCase());
                         if (ai === -1 && bi === -1) return a.localeCompare(b);
-                        if (ai === -1) return 1;
-                        if (bi === -1) return -1;
+                        if (ai === -1) return 1; if (bi === -1) return -1;
                         return ai - bi;
                     });
 
                 if (exits.length === 0) {
-                    exitsList.innerHTML = '<div style="color: #666; font-size: 12px;">No onward exits</div>';
+                    exitsList.innerHTML = '<div style="color:var(--text-dim);font-size:13px;">No onward exits</div>';
                 } else {
                     exits.forEach(([dir, exitData]) => {
                         const toZone = state.allZones[exitData.to_zone];
@@ -575,11 +875,8 @@
                             ? exitData.to_zone
                             : (destRoom ? destRoom.name : 'Unknown');
 
-                        const btn = document.createElement('button');
-                        btn.className = 'exit-button' + (exitData.is_cross_zone ? ' cross-zone' : '');
-                        btn.innerHTML = `<span class="exit-direction">[${escapeHtml(dir)}]</span> ${escapeHtml(destName)}`;
+                        const btn = makeExitBtn(dir, destName, exitData);
                         btn.onclick = () => {
-                            // Leaving the portal: exit the mini-view then navigate to destination
                             state.goPortalView = null;
                             if (exitData.is_cross_zone) {
                                 navigateCrossZone(exitData.to_vnum, exitData.to_zone);
@@ -596,25 +893,65 @@
             const floor = zone.floors[String(state.currentFloor)];
             if (!floor) return;
 
-            // Update zone label
-            document.getElementById('zoneLabel').textContent = state.currentZone;
-
-            // Update floor tabs
+            // Floor tabs - iterate over actual floor IDs (which can be negative)
             const tabsContainer = document.getElementById('floorTabs');
             tabsContainer.innerHTML = '';
-            for (let f = 0; f < zone.floor_count; f++) {
+            const floorIds = Object.keys(zone.floors)
+                .map(k => parseInt(k))
+                .sort((a, b) => b - a);  // highest floor first (0, -1, -2...)
+            
+            for (const f of floorIds) {
                 const tab = document.createElement('button');
                 tab.className = `floor-tab ${f === state.currentFloor ? 'active' : ''}`;
-                tab.textContent = `F${f}`;
+                tab.textContent = `Floor ${f}`;
+                tab.setAttribute('role', 'tab');
+                tab.setAttribute('aria-selected', f === state.currentFloor ? 'true' : 'false');
+                tab.setAttribute('aria-label', `Switch to floor ${f}`);
                 tab.onclick = () => switchFloor(f);
                 tabsContainer.appendChild(tab);
             }
 
-            // Update floor info
-            document.getElementById('floorNumber').textContent = `${state.currentFloor} / ${zone.floor_count - 1}`;
-
-            // Update room info and exits
             updateRoomInfo(floor);
+            updateZoneNpcList(zone);
+        }
+
+        function makeExitBtn(dir, destName, exitData) {
+            const btn = document.createElement('button');
+            const classes = ['exit-btn'];
+            if (exitData.is_cross_zone) classes.push('cross-zone');
+            else if (exitData.is_portal) classes.push('portal');
+            btn.className = classes.join(' ');
+            btn.setAttribute('role', 'listitem');
+            btn.setAttribute('data-is-portal', exitData.is_portal ? 'true' : 'false');
+            btn.setAttribute('data-is-cross', exitData.is_cross_zone ? 'true' : 'false');
+            btn.setAttribute('aria-label', `Go ${dir} to ${destName}`);
+
+            const dirSpan = document.createElement('span');
+            dirSpan.className = 'exit-dir';
+            dirSpan.textContent = dir.toUpperCase();
+
+            const destSpan = document.createElement('span');
+            destSpan.className = 'exit-dest';
+            destSpan.textContent = destName;
+
+            btn.appendChild(dirSpan);
+            btn.appendChild(destSpan);
+
+            if (exitData.is_portal) {
+                const badge = document.createElement('span');
+                badge.className = 'exit-badge';
+                badge.textContent = '🚪';
+                badge.setAttribute('aria-label', 'portal');
+                btn.appendChild(badge);
+            }
+            if (exitData.is_cross_zone) {
+                const badge = document.createElement('span');
+                badge.className = 'exit-badge';
+                badge.textContent = '🌍';
+                badge.setAttribute('aria-label', 'cross-zone');
+                btn.appendChild(badge);
+            }
+            return btn;
         }
 
         function updateRoomInfo(floor) {
@@ -628,14 +965,12 @@
                 state.selectedRoom = selectedRoom.vnum;
             }
 
-            const roomInfo = document.getElementById('roomInfo');
             const exitsList = document.getElementById('exitsList');
 
             if (selectedRoom) {
-                roomInfo.innerHTML = `
-                    <div class="room-name">${escapeHtml(selectedRoom.name)}</div>
-                    <div class="room-desc">${escapeHtml(selectedRoom.description)}</div>
-                `;
+                document.getElementById('roomVnum').textContent = `Room #${selectedRoom.vnum}`;
+                document.getElementById('roomName').textContent = selectedRoom.name;
+                document.getElementById('roomDesc').textContent = selectedRoom.description || '';
 
                 exitsList.innerHTML = '';
                 const EXIT_ORDER = ['u','d','n','ne','nw','e','w','se','sw','s'];
@@ -643,49 +978,29 @@
                     const ai = EXIT_ORDER.indexOf(a.toLowerCase());
                     const bi = EXIT_ORDER.indexOf(b.toLowerCase());
                     if (ai === -1 && bi === -1) return a.localeCompare(b);
-                    if (ai === -1) return 1;
-                    if (bi === -1) return -1;
+                    if (ai === -1) return 1; if (bi === -1) return -1;
                     return ai - bi;
                 });
 
                 if (exits.length === 0) {
-                    exitsList.innerHTML = '<div style="color: #666; font-size: 12px;">No exits</div>';
+                    exitsList.innerHTML = '<div style="color:var(--text-dim);font-size:13px;">No exits</div>';
                 } else {
                     exits.forEach(([direction, exitData]) => {
-                        const btn = document.createElement('button');
-                        const classNames = ['exit-button'];
-                        if (exitData.is_cross_zone) classNames.push('cross-zone');
-                        if (exitData.is_portal) classNames.push('portal-exit');
-                        btn.className = classNames.join(' ');
-                        btn.setAttribute('data-is-portal', exitData.is_portal ? 'true' : 'false');
-                        btn.setAttribute('data-is-cross', exitData.is_cross_zone ? 'true' : 'false');
-                        
                         let destName = '';
-                        
-                        // For cross-zone exits, show the zone name
                         if (exitData.is_cross_zone) {
                             destName = exitData.to_zone;
                         } else {
-                            // For same-zone exits, try to get the room name
                             const toZone = state.allZones[exitData.to_zone];
                             const destRoom = toZone ? getRoom(toZone, exitData.to_vnum) : null;
                             destName = destRoom ? destRoom.name : 'Unknown';
                         }
 
-                        let suffix = '';
-                        if (exitData.is_portal) {
-                            suffix = ` <span style="color: #44cc88; font-size: 10px;">🚪</span>`;
-                        }
-                        if (exitData.is_cross_zone) {
-                            suffix += ` <span style="color: #ffaa00; font-size: 10px;">🌍</span>`;
-                        }
-
-                        btn.innerHTML = `<span class="exit-direction">[${escapeHtml(direction)}]</span> ${escapeHtml(destName)}${suffix}`;
+                        const btn = makeExitBtn(direction, destName, exitData);
                         btn.onclick = () => {
-                            if (exitData.is_portal) {
-                                navigateToPortal(state.selectedRoom, exitData.to_vnum, direction);
-                            } else if (exitData.is_cross_zone) {
+                            if (exitData.is_cross_zone) {
                                 navigateCrossZone(exitData.to_vnum, exitData.to_zone);
+                            } else if (exitData.is_portal || direction.toLowerCase().startsWith('go')) {
+                                navigateToPortal(selectedRoom.vnum, exitData.to_vnum, direction);
                             } else {
                                 navigateToRoom(exitData.to_vnum, exitData.to_zone);
                             }
@@ -694,9 +1009,218 @@
                     });
                 }
             } else {
-                roomInfo.innerHTML = '<div class="room-name">No rooms</div>';
+                document.getElementById('roomVnum').textContent = '—';
+                document.getElementById('roomName').textContent = 'Select a room';
+                document.getElementById('roomDesc').textContent = '';
                 exitsList.innerHTML = '';
             }
+
+            updateNpcRoomPanel(selectedRoom);
+        }
+
+        // ============================================================================
+        // Hover Card & NPC Modal
+        // ============================================================================
+
+        function positionHoverCard(event) {
+            const card = document.getElementById('hoverCard');
+            const margin = 16;
+            let x = event.clientX + margin;
+            let y = event.clientY + margin;
+            if (x + 265 > window.innerWidth)  x = event.clientX - 265 - margin;
+            if (y + 160 > window.innerHeight) y = event.clientY - 160 - margin;
+            card.style.left = x + 'px';
+            card.style.top  = y + 'px';
+        }
+
+        function hideHoverCard() {
+            document.getElementById('hoverCard').style.display = 'none';
+        }
+
+        function showNpcHoverCard(npcName, event) {
+            const data = state.npcData[npcName];
+            if (!data) return;
+            const meta = [data.level && `Lvl ${data.level}`, data['class'], data.race].filter(Boolean).join(' · ');
+            const card = document.getElementById('hoverCard');
+            card.innerHTML = `
+                <div class="hc-name">${escapeHtml(npcName)}</div>
+                ${meta ? `<div class="hc-meta">${escapeHtml(meta)}</div>` : ''}
+                <div class="hc-stats">
+                    ${data.hp  != null ? `<div class="hc-stat">HP <span>${data.hp}</span></div>` : ''}
+                    ${data.xp  != null ? `<div class="hc-stat">XP <span>${data.xp}</span></div>` : ''}
+                </div>
+            `;
+            positionHoverCard(event);
+            card.style.display = 'block';
+        }
+
+        function showItemHoverCard(itemName, event) {
+            const data = state.itemData[itemName];
+            if (!data) return;
+            const typeColor = data.type === 'armor' ? 'var(--accent)' : data.type === 'weapon' ? 'var(--red)' : 'var(--green)';
+            let rows = '';
+            if (data.type === 'armor') {
+                if (data.slot)       rows += `<div class="hc-row">Slot <span>${escapeHtml(data.slot)}</span></div>`;
+                if (data.ac)         rows += `<div class="hc-row">AC <span>${data.ac}</span></div>`;
+                if (data.stat1)      rows += `<div class="hc-row"><span>${escapeHtml(data.stat1)}</span></div>`;
+                if (data.stat2)      rows += `<div class="hc-row"><span>${escapeHtml(data.stat2)}</span></div>`;
+                if (data.special)    rows += `<div class="hc-row">Special <span>${escapeHtml(data.special)}</span></div>`;
+                if (data.disenchant) rows += `<div class="hc-row gold">Disenchant <span>${data.disenchant}</span></div>`;
+            } else if (data.type === 'weapon') {
+                if (data.damage)     rows += `<div class="hc-row">Damage <span>${escapeHtml(data.damage)}</span>${data.avg ? ` · avg <span>${data.avg}</span>` : ''}</div>`;
+                if (data.wield)      rows += `<div class="hc-row">Wield <span>${escapeHtml(data.wield)}</span></div>`;
+                if (data.stat1)      rows += `<div class="hc-row"><span>${escapeHtml(data.stat1)}</span></div>`;
+                if (data.stat2)      rows += `<div class="hc-row"><span>${escapeHtml(data.stat2)}</span></div>`;
+                if (data.stat3)      rows += `<div class="hc-row"><span>${escapeHtml(data.stat3)}</span></div>`;
+                if (data.disenchant) rows += `<div class="hc-row gold">Disenchant <span>${data.disenchant}</span></div>`;
+            } else {
+                if (data.effect)  rows += `<div class="hc-row">Effect <span>${escapeHtml(data.effect)}</span></div>`;
+                if (data.charges) rows += `<div class="hc-row">Charges <span>${data.charges}</span></div>`;
+                if (data.bound)   rows += `<div class="hc-row">Bound <span>${escapeHtml(data.bound)}</span></div>`;
+            }
+            const card = document.getElementById('hoverCard');
+            card.innerHTML = `
+                <div class="hc-type" style="color:${typeColor}">${data.type}</div>
+                <div class="hc-name">${escapeHtml(itemName)}</div>
+                ${rows}
+            `;
+            positionHoverCard(event);
+            card.style.display = 'block';
+        }
+
+        function showNpcModal(npcName, roomVnum, floorId) {
+            const data = state.npcData[npcName] || {};
+            const meta = [data.level && `Level ${data.level}`, data['class'], data.race].filter(Boolean).join(' · ');
+            const stats = [
+                data.hp != null ? `<div class="npc-stat"><div class="npc-stat-label">HP</div><div class="npc-stat-value">${data.hp}</div></div>` : '',
+                data.xp != null ? `<div class="npc-stat"><div class="npc-stat-label">XP</div><div class="npc-stat-value">${data.xp}</div></div>` : '',
+            ].join('');
+            const loadsHtml = (data.loads || []).length > 0
+                ? `<div class="npc-modal-section">
+                       <div class="section-label" style="margin-bottom:8px;">Loads</div>
+                       <div class="npc-modal-loads">${(data.loads || []).map(i =>
+                           `<span class="load-chip" data-item="${escapeHtml(i)}">${escapeHtml(i)}</span>`
+                       ).join('')}</div>
+                   </div>`
+                : '';
+            const jumpHtml = roomVnum != null
+                ? `<button class="npc-modal-jump" id="npcModalJump">⟶ Jump to room</button>`
+                : '';
+
+            const content = document.getElementById('npcModalContent');
+            content.innerHTML = `
+                <div class="npc-modal-name">${escapeHtml(npcName)}</div>
+                ${meta ? `<div class="npc-modal-meta">${escapeHtml(meta)}</div>` : ''}
+                ${stats ? `<div class="npc-modal-stats">${stats}</div>` : ''}
+                ${data.description ? `<div class="npc-modal-desc">${escapeHtml(data.description)}</div>` : ''}
+                ${loadsHtml}
+                ${jumpHtml}
+            `;
+
+            content.querySelectorAll('.load-chip').forEach(el => {
+                el.addEventListener('mouseenter', e => showItemHoverCard(el.dataset.item, e));
+                el.addEventListener('mouseleave', hideHoverCard);
+                el.addEventListener('mousemove',  e => positionHoverCard(e));
+            });
+
+            if (roomVnum != null) {
+                document.getElementById('npcModalJump').onclick = () => {
+                    hideNpcModal();
+                    state.selectedRoom = roomVnum;
+                    if (state.currentFloor !== floorId) {
+                        state.currentFloor = floorId;
+                        state.goPortalView = null;
+                        resetView(false);
+                    }
+                    centerOnRoom(roomVnum);
+                    render();
+                };
+            }
+            document.getElementById('npcModal').style.display = 'flex';
+        }
+
+        function hideNpcModal() {
+            document.getElementById('npcModal').style.display = 'none';
+            hideHoverCard();
+        }
+
+        // ============================================================================
+        // NPC
+        // ============================================================================
+
+        function buildUniqueNpcIndex(zone) {
+            if (!zone) return [];
+            const result = [];
+            const floorIds = Object.keys(zone.floors).map(k => parseInt(k)).sort((a, b) => b - a);
+            for (const fid of floorIds) {
+                const floor = zone.floors[String(fid)];
+                const vnums = Object.keys(floor.rooms).map(k => parseInt(k)).sort((a, b) => a - b);
+                for (const vnum of vnums) {
+                    const room = floor.rooms[String(vnum)];
+                    for (const npc of (room.npcs || [])) {
+                        if (npc.unique) {
+                            result.push({ ...npc, roomName: room.name, roomVnum: vnum, floorId: fid, idx: result.length + 1 });
+                        }
+                    }
+                }
+            }
+            return result;
+        }
+
+        function makeNpcCard(npc, roomName) {
+            const card = document.createElement('div');
+            card.className = 'npc-card';
+            const color = npc.unique ? 'var(--npc-unique)' : 'var(--npc-common)';
+            const dotLabel = npc.idx != null ? String(npc.idx) : '';
+            card.innerHTML = `
+                <div class="npc-card-header">
+                    <div class="npc-dot" style="background:${color}">${escapeHtml(dotLabel)}</div>
+                    <div class="npc-name">${escapeHtml(npc.name)}</div>
+                </div>
+                ${roomName ? `<div class="npc-room-tag">${escapeHtml(roomName)}</div>` : ''}
+                ${npc.description ? `<div class="npc-desc">${escapeHtml(npc.description)}</div>` : ''}
+            `;
+            card.addEventListener('mouseenter', e => showNpcHoverCard(npc.name, e));
+            card.addEventListener('mouseleave', hideHoverCard);
+            card.addEventListener('mousemove',  e => positionHoverCard(e));
+            card.onclick = () => showNpcModal(npc.name, npc.roomVnum, npc.floorId);
+            return card;
+        }
+
+        function updateNpcRoomPanel(room) {
+            const list = document.getElementById('npcRoomList');
+            if (!list) return;
+            const uniqueNpcs = ((room && room.npcs) || []).filter(n => n.unique);
+            if (uniqueNpcs.length === 0) {
+                list.innerHTML = '<div class="npc-empty">No unique NPCs in this room</div>';
+                return;
+            }
+            list.innerHTML = '';
+            const zone = state.allZones[state.currentZone];
+            const zoneIndex = buildUniqueNpcIndex(zone);
+            uniqueNpcs.forEach(npc => {
+                const indexed = zoneIndex.find(n => n.name === npc.name && n.roomVnum === (room && room.vnum));
+                list.appendChild(makeNpcCard(indexed || npc, ''));
+            });
+        }
+
+        function updateZoneNpcList(zone) {
+            const list = document.getElementById('npcZoneList');
+            const countEl = document.getElementById('npcZoneCount');
+            if (!list || !zone) return;
+
+            const all = buildUniqueNpcIndex(zone);
+
+            countEl.textContent = all.length ? String(all.length) : '';
+            list.innerHTML = '';
+
+            if (all.length === 0) {
+                list.innerHTML = '<div class="npc-empty">No unique NPCs in this zone</div>';
+                return;
+            }
+            all.forEach(npc => {
+                list.appendChild(makeNpcCard(npc, npc.roomName));
+            });
         }
 
         function getRoom(zone, vnum) {
@@ -715,8 +1239,9 @@
                 
                 state.currentZone = toZone;
                 
-                // Find the floor with this room
-                for (let f = 0; f < data.floor_count; f++) {
+                // Find the floor with this room - iterate actual floor IDs
+                const floorIds = Object.keys(data.floors).map(k => parseInt(k));
+                for (const f of floorIds) {
                     if (data.floors[String(f)].rooms[String(toVnum)]) {
                         state.currentFloor = f;
                         break;
@@ -725,7 +1250,8 @@
             } else {
                 // Same zone, find floor with this room
                 const zone = state.allZones[state.currentZone];
-                for (let f = 0; f < zone.floor_count; f++) {
+                const floorIds = Object.keys(zone.floors).map(k => parseInt(k));
+                for (const f of floorIds) {
                     if (zone.floors[String(f)].rooms[String(toVnum)]) {
                         state.currentFloor = f;
                         break;
@@ -749,9 +1275,10 @@
                 return;
             }
 
-            // Find which floor contains the destination room
+            // Find which floor contains the destination room - iterate actual floor IDs
             let destFloor = 0;
-            for (let f = 0; f < data.floor_count; f++) {
+            const floorIds = Object.keys(data.floors).map(k => parseInt(k));
+            for (const f of floorIds) {
                 if (data.floors[String(f)].rooms[String(toVnum)]) {
                     destFloor = f;
                     break;
@@ -806,9 +1333,10 @@
             // u/d portals: switch floors within the same zone (existing behaviour).
             const zone = state.allZones[state.currentZone];
             
-            // Find which floor the destination room is on
+            // Find which floor the destination room is on - iterate actual floor IDs
             let destFloor = 0;
-            for (let f = 0; f < zone.floor_count; f++) {
+            const floorIds = Object.keys(zone.floors).map(k => parseInt(k));
+            for (const f of floorIds) {
                 if (zone.floors[String(f)].rooms[String(toVnum)]) {
                     destFloor = f;
                     break;
@@ -1104,6 +1632,111 @@
                 g.appendChild(line);
             });
 
+            // ── Ghost nodes for cross-zone exits ──────────────────────────
+            const DDELTA = {
+                n: [0,-1], s: [0,1], e: [1,0], w: [-1,0],
+                ne: [1,-1], nw: [-1,-1], se: [1,1], sw: [-1,1]
+            };
+            const realPositions = new Set(
+                Object.values(rooms).map(r => `${r.grid_x},${r.grid_y}`)
+            );
+            const ghostNodes = {};
+            Object.values(rooms).forEach(room => {
+                if (goPortalTargets.has(room.vnum)) return;
+                Object.values(room.exits || {}).forEach(ex => {
+                    if (!ex.is_cross_zone || ex.is_portal) return;
+                    const delta = DDELTA[ex.direction.toLowerCase()];
+                    if (!delta) return;
+                    const gx = room.grid_x + delta[0];
+                    const gy = room.grid_y + delta[1];
+                    const key = `${gx},${gy}`;
+                    if (realPositions.has(key) || ghostNodes[key]) return;
+                    ghostNodes[key] = {
+                        gx, gy,
+                        vnum: ex.to_vnum, zone: ex.to_zone,
+                        name: ex.to_room_name || ex.to_zone,
+                        srcGx: room.grid_x, srcGy: room.grid_y
+                    };
+                });
+            });
+
+            // Draw ghost edges first (under ghost nodes and rooms)
+            Object.values(ghostNodes).forEach(ghost => {
+                const x1 = originX + ghost.srcGx * GRID_STEP_X + ROOM_WIDTH / 2;
+                const y1 = originY + ghost.srcGy * GRID_STEP_Y + ROOM_HEIGHT / 2;
+                const x2 = originX + ghost.gx * GRID_STEP_X + ROOM_WIDTH / 2;
+                const y2 = originY + ghost.gy * GRID_STEP_Y + ROOM_HEIGHT / 2;
+                const ln = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                ln.setAttribute('x1', x1); ln.setAttribute('y1', y1);
+                ln.setAttribute('x2', x2); ln.setAttribute('y2', y2);
+                ln.setAttribute('stroke', 'var(--gold)');
+                ln.setAttribute('stroke-width', '1.5');
+                ln.setAttribute('stroke-opacity', '0.5');
+                ln.setAttribute('stroke-dasharray', '6 3');
+                g.appendChild(ln);
+            });
+
+            // Draw ghost nodes (before real rooms so real rooms render on top)
+            Object.values(ghostNodes).forEach(ghost => {
+                const gpx = originX + ghost.gx * GRID_STEP_X;
+                const gpy = originY + ghost.gy * GRID_STEP_Y;
+                const gcx = gpx + ROOM_WIDTH / 2;
+
+                const grpG = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+                grpG.style.cursor = 'pointer';
+                grpG.onclick = () => navigateCrossZone(ghost.vnum, ghost.zone);
+
+                const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+                rect.setAttribute('x', gpx); rect.setAttribute('y', gpy);
+                rect.setAttribute('width', ROOM_WIDTH); rect.setAttribute('height', ROOM_HEIGHT);
+                rect.setAttribute('rx', '6');
+                rect.setAttribute('fill', 'var(--gold-dim)');
+                rect.setAttribute('stroke', 'var(--gold)');
+                rect.setAttribute('stroke-width', '1');
+                rect.setAttribute('stroke-dasharray', '4 3');
+                rect.setAttribute('opacity', '0.75');
+                grpG.appendChild(rect);
+
+                // Zone name (wrapped across two lines if needed)
+                const words = ghost.zone.split(' ');
+                let ln1 = '', ln2 = '';
+                for (const w of words) {
+                    if ((ln1 + ' ' + w).trim().length <= 14) ln1 = (ln1 + ' ' + w).trim();
+                    else if (!ln2) ln2 = w;
+                    else if ((ln2 + ' ' + w).length <= 14) ln2 = (ln2 + ' ' + w).trim();
+                }
+                const cy = gpy + ROOM_HEIGHT / 2;
+                if (ln2) {
+                    [[ln1, -8], [ln2, 6]].forEach(([txt, dy]) => {
+                        const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                        t.setAttribute('x', gcx); t.setAttribute('y', cy + dy);
+                        t.setAttribute('class', 'room-text'); t.setAttribute('pointer-events', 'none');
+                        t.setAttribute('fill', 'var(--gold)'); t.setAttribute('opacity', '0.85');
+                        t.textContent = txt; grpG.appendChild(t);
+                    });
+                } else {
+                    const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                    t.setAttribute('x', gcx); t.setAttribute('y', cy + 4);
+                    t.setAttribute('class', 'room-text'); t.setAttribute('pointer-events', 'none');
+                    t.setAttribute('fill', 'var(--gold)'); t.setAttribute('opacity', '0.85');
+                    t.textContent = ghost.zone.length <= 16 ? ghost.zone : ghost.zone.substring(0, 15) + '…';
+                    grpG.appendChild(t);
+                }
+
+                const tip = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+                tip.textContent = `${ghost.name} — ${ghost.zone}`;
+                grpG.appendChild(tip);
+
+                g.appendChild(grpG);
+            });
+
+            // ── Build room → NPC number map for badge labels ───────────────
+            const roomNpcNums = {};
+            buildUniqueNpcIndex(zone).forEach(e => {
+                if (!roomNpcNums[e.roomVnum]) roomNpcNums[e.roomVnum] = [];
+                roomNpcNums[e.roomVnum].push(e.idx);
+            });
+
             // ── Draw rooms ─────────────────────────────────────────────────
             Object.entries(rooms).forEach(([vnumStr, room]) => {
                 const vnum = parseInt(vnumStr);
@@ -1123,16 +1756,24 @@
                     render(); 
                 };
 
+                const isEntry = (vnum === floor.entry_vnum);
+                const isSelected = (state.selectedRoom === vnum);
+                let roomClass = 'room-box';
+                if (isEntry) roomClass += ' entry-room';
+                if (isSelected) roomClass += ' selected';
+
                 const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
                 rect.setAttribute('x', px);
                 rect.setAttribute('y', py);
                 rect.setAttribute('width',  ROOM_WIDTH);
                 rect.setAttribute('height', ROOM_HEIGHT);
-                rect.setAttribute('class',
-                    `room-box ${state.selectedRoom === vnum ? 'selected' : ''}`);
+                rect.setAttribute('rx', '6');
+                rect.setAttribute('class', roomClass);
+                rect.setAttribute('aria-label', room.name);
                 grp.appendChild(rect);
 
                 // Room name — wrap across two lines if long
+                const textClass = `room-text${isSelected ? ' selected-text' : isEntry ? ' entry-text' : ''}`;
                 const words = room.name.split(' ');
                 let line1 = '', line2 = '';
                 for (const w of words) {
@@ -1147,18 +1788,18 @@
                 if (line2) {
                     const t1 = document.createElementNS('http://www.w3.org/2000/svg', 'text');
                     t1.setAttribute('x', cx); t1.setAttribute('y', cy - 8);
-                    t1.setAttribute('class', 'room-text'); t1.setAttribute('pointer-events','none');
+                    t1.setAttribute('class', textClass); t1.setAttribute('pointer-events','none');
                     t1.textContent = line1;
                     grp.appendChild(t1);
                     const t2 = document.createElementNS('http://www.w3.org/2000/svg', 'text');
                     t2.setAttribute('x', cx); t2.setAttribute('y', cy + 8);
-                    t2.setAttribute('class', 'room-text'); t2.setAttribute('pointer-events','none');
+                    t2.setAttribute('class', textClass); t2.setAttribute('pointer-events','none');
                     t2.textContent = line2;
                     grp.appendChild(t2);
                 } else {
                     const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
                     t.setAttribute('x', cx); t.setAttribute('y', cy + 4);
-                    t.setAttribute('class', 'room-text'); t.setAttribute('pointer-events','none');
+                    t.setAttribute('class', textClass); t.setAttribute('pointer-events','none');
                     t.textContent = room.name.length <= 16 ? room.name : room.name.substring(0,15) + '…';
                     grp.appendChild(t);
                 }
@@ -1252,6 +1893,69 @@
                     grp.appendChild(crossBadge);
                 }
 
+                // ── Unique NPC badge (bottom-left) — always visible ────────
+                const npcNums = roomNpcNums[vnum] || [];
+                if (npcNums.length > 0) {
+                    const label = npcNums.length === 1 ? String(npcNums[0]) : String(npcNums.length);
+                    const ubg = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                    ubg.setAttribute('cx', px + 12);
+                    ubg.setAttribute('cy', py + ROOM_HEIGHT - 10);
+                    ubg.setAttribute('r', 10);
+                    ubg.setAttribute('fill', 'var(--npc-unique)');
+                    ubg.setAttribute('opacity', '0.92');
+
+                    const utxt = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                    utxt.setAttribute('x', px + 12);
+                    utxt.setAttribute('y', py + ROOM_HEIGHT - 10);
+                    utxt.setAttribute('class', 'npc-badge-text');
+                    utxt.textContent = label;
+
+                    const utip = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+                    utip.textContent = (room.npcs || []).filter(n => n.unique).map(n => n.name).join(', ');
+
+                    const npcG = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+                    npcG.style.cursor = 'pointer';
+                    npcG.appendChild(ubg);
+                    npcG.appendChild(utxt);
+                    npcG.appendChild(utip);
+                    npcG.onclick = (e) => {
+                        e.stopPropagation();
+                        state.selectedRoom = vnum;
+                        render();
+                        setTimeout(() => {
+                            document.getElementById('npcsSection')
+                                ?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        }, 80);
+                    };
+                    grp.appendChild(npcG);
+                }
+
+                // ── Trash NPC badge (top-left) — visible when toggle is on ──
+                const trashNpcs = (room.npcs || []).filter(n => !n.unique);
+                if (trashNpcs.length > 0 && state.showNpcs) {
+                    const tbg = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                    tbg.setAttribute('cx', px + 12);
+                    tbg.setAttribute('cy', py + 10);
+                    tbg.setAttribute('r', 9);
+                    tbg.setAttribute('fill', 'var(--npc-common)');
+                    tbg.setAttribute('opacity', '0.8');
+
+                    const ttxt = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                    ttxt.setAttribute('x', px + 12);
+                    ttxt.setAttribute('y', py + 10);
+                    ttxt.setAttribute('class', 'npc-badge-text');
+                    ttxt.textContent = trashNpcs.length > 9 ? '9+' : String(trashNpcs.length);
+
+                    const ttip = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+                    ttip.textContent = trashNpcs.map(n => n.name).join(', ');
+
+                    const trashG = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+                    trashG.appendChild(tbg);
+                    trashG.appendChild(ttxt);
+                    trashG.appendChild(ttip);
+                    grp.appendChild(trashG);
+                }
+
                 g.appendChild(grp);
             });
 
@@ -1260,7 +1964,7 @@
             document.getElementById('mapTitle').textContent =
                 `${state.currentZone} — Floor ${state.currentFloor}`;
             document.getElementById('roomCount').textContent =
-                `${Object.keys(rooms).length} rooms`;
+                `${Object.keys(rooms).filter(v => !goPortalTargets.has(parseInt(v))).length} rooms`;
             document.getElementById('noRooms').style.display =
                 Object.keys(rooms).length === 0 ? 'block' : 'none';
         }
@@ -1329,12 +2033,14 @@
         document.getElementById('zoomInBtn').onclick = () => {
             state.zoom = Math.min(MAX_ZOOM, Math.round((state.zoom + ZOOM_STEP) * 10) / 10);
             updateZoomLevel();
+            if (state.selectedRoom) centerOnRoom(state.selectedRoom);
             render();
         };
 
         document.getElementById('zoomOutBtn').onclick = () => {
             state.zoom = Math.max(MIN_ZOOM, Math.round((state.zoom - ZOOM_STEP) * 10) / 10);
             updateZoomLevel();
+            if (state.selectedRoom) centerOnRoom(state.selectedRoom);
             render();
         };
 
@@ -1350,6 +2056,34 @@
                 returnFromPortal();
             }
         };
+
+        // ── Keyboard shortcuts ────────────────────────────────────────────
+        document.addEventListener('keydown', (e) => {
+            // Don't capture when typing in inputs
+            if (e.target.tagName === 'SELECT' || e.target.tagName === 'INPUT') return;
+            switch (e.key) {
+                case '+': case '=':
+                    state.zoom = Math.min(MAX_ZOOM, Math.round((state.zoom + ZOOM_STEP) * 10) / 10);
+                    updateZoomLevel();
+                    if (state.selectedRoom) centerOnRoom(state.selectedRoom);
+                    render();
+                    break;
+                case '-':
+                    state.zoom = Math.max(MIN_ZOOM, Math.round((state.zoom - ZOOM_STEP) * 10) / 10);
+                    updateZoomLevel();
+                    if (state.selectedRoom) centerOnRoom(state.selectedRoom);
+                    render();
+                    break;
+                case 'r': case 'R':
+                    resetView(); render();
+                    break;
+                case 'Escape':
+                    if (document.getElementById('npcModal').style.display !== 'none') { hideNpcModal(); }
+                    else if (state.goPortalView) { exitGoPortalView(); }
+                    else if (state.portalHistory.length > 0) { returnFromPortal(); }
+                    break;
+            }
+        });
 
         // Update breadcrumb and Return button visibility
         function updateBreadcrumb() {
@@ -1376,6 +2110,7 @@
             state.zoom = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM,
                 Math.round((state.zoom + delta) * 10) / 10));
             updateZoomLevel();
+            if (state.selectedRoom) centerOnRoom(state.selectedRoom);
             render();
         });
 
@@ -1421,13 +2156,17 @@
         async function init() {
             const zoneDropdown = document.getElementById('zoneDropdown');
 
-            // Try to fetch zones.json index (generated by exporter)
+            // Load zones, NPC stats, and item stats in parallel
             let zoneNames = [];
             try {
-                const resp = await fetch('zones.json');
-                if (resp.ok) {
-                    zoneNames = await resp.json();   // expects ["Zone A", "Zone B", ...]
-                }
+                const [zoneResp, npcResp, itemResp] = await Promise.all([
+                    fetch('zones.json'),
+                    fetch('npcs.json').catch(() => null),
+                    fetch('items.json').catch(() => null),
+                ]);
+                if (zoneResp.ok) zoneNames = await zoneResp.json();
+                if (npcResp?.ok)  state.npcData  = await npcResp.json();
+                if (itemResp?.ok) state.itemData = await itemResp.json();
             } catch (_) {}
 
             if (zoneNames.length === 0) {
@@ -1451,16 +2190,17 @@
             zoneDropdown.addEventListener('change', async (e) => {
                 const newZone = e.target.value;
                 if (newZone && newZone !== state.currentZone) {
-                    state.currentZone  = newZone;
-                    state.currentFloor = 0;
-                    state.goPortalView = null;
+                    state.currentZone   = newZone;
+                    state.goPortalView  = null;
                     state.portalHistory = [];
                     document.getElementById('mapTitle').textContent = 'Loading…';
                     const data = await loadZoneData(newZone);
                     if (data) {
-                        // Explicitly select and center on the entry room
-                        const entryVnum = data.floors['0']?.entry_vnum;
-                        state.selectedRoom = entryVnum || null;
+                        // Pick the highest floor id (surface = 0, underground = negative)
+                        const floorIds = Object.keys(data.floors).map(k => parseInt(k)).sort((a, b) => b - a);
+                        state.currentFloor = floorIds[0] ?? 0;
+                        const entryFloor = data.floors[String(state.currentFloor)];
+                        state.selectedRoom = entryFloor?.entry_vnum ?? null;
                         resetView(true);
                         render();
                     }
@@ -1473,9 +2213,127 @@
             zoneDropdown.value = first;
             document.getElementById('mapTitle').textContent = 'Loading…';
             const data = await loadZoneData(first);
-            if (data) { resetView(true); render(); }
-            else { document.getElementById('mapTitle').textContent = 'Error loading zone'; }
+            if (data) {
+                const floorIds = Object.keys(data.floors).map(k => parseInt(k)).sort((a, b) => b - a);
+                state.currentFloor = floorIds[0] ?? 0;
+                const entryFloor = data.floors[String(state.currentFloor)];
+                state.selectedRoom = entryFloor?.entry_vnum ?? null;
+                resetView(true);
+                render();
+            } else {
+                document.getElementById('mapTitle').textContent = 'Error loading zone';
+            }
         }
+
+        // ── Touch support ─────────────────────────────────────────────────
+        let lastTouchDist = null;
+        let lastTouchCenter = null;
+
+        mapContainer.addEventListener('touchstart', (e) => {
+            if (e.touches.length === 1) {
+                state.isDragging = true;
+                state.dragStart = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+            } else if (e.touches.length === 2) {
+                state.isDragging = false;
+                const dx = e.touches[0].clientX - e.touches[1].clientX;
+                const dy = e.touches[0].clientY - e.touches[1].clientY;
+                lastTouchDist = Math.sqrt(dx * dx + dy * dy);
+                lastTouchCenter = {
+                    x: (e.touches[0].clientX + e.touches[1].clientX) / 2,
+                    y: (e.touches[0].clientY + e.touches[1].clientY) / 2
+                };
+            }
+        }, { passive: true });
+
+        mapContainer.addEventListener('touchmove', (e) => {
+            e.preventDefault();
+            if (e.touches.length === 1 && state.isDragging && state.dragStart) {
+                const dx = e.touches[0].clientX - state.dragStart.x;
+                const dy = e.touches[0].clientY - state.dragStart.y;
+                state.panX += dx;
+                state.panY += dy;
+                state.dragStart = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+                render();
+            } else if (e.touches.length === 2 && lastTouchDist !== null) {
+                const dx = e.touches[0].clientX - e.touches[1].clientX;
+                const dy = e.touches[0].clientY - e.touches[1].clientY;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                const scale = dist / lastTouchDist;
+                const newZoom = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM,
+                    Math.round(state.zoom * scale * 10) / 10));
+                if (newZoom !== state.zoom) {
+                    state.zoom = newZoom;
+                    updateZoomLevel();
+                    if (state.selectedRoom) centerOnRoom(state.selectedRoom);
+                    render();
+                }
+                lastTouchDist = dist;
+            }
+        }, { passive: false });
+
+        mapContainer.addEventListener('touchend', () => {
+            state.isDragging = false;
+            lastTouchDist = null;
+        }, { passive: true });
+
+        // ── Mobile sidebar toggle ─────────────────────────────────────────
+        const sidebarEl = document.getElementById('sidebar');
+        const overlayEl = document.getElementById('sidebarOverlay');
+        const toggleBtn = document.getElementById('sidebarToggle');
+
+        function openSidebar() {
+            sidebarEl.classList.add('open');
+            overlayEl.classList.add('open');
+            toggleBtn.setAttribute('aria-expanded', 'true');
+            toggleBtn.textContent = '✕';
+        }
+
+        function closeSidebar() {
+            sidebarEl.classList.remove('open');
+            overlayEl.classList.remove('open');
+            toggleBtn.setAttribute('aria-expanded', 'false');
+            toggleBtn.textContent = '☰';
+        }
+
+        toggleBtn.onclick = () => {
+            sidebarEl.classList.contains('open') ? closeSidebar() : openSidebar();
+        };
+
+        overlayEl.addEventListener('click', closeSidebar);
+
+        // Close sidebar after selecting an exit on mobile
+        document.getElementById('exitsList').addEventListener('click', () => {
+            if (window.innerWidth <= 768) closeSidebar();
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) closeSidebar();
+        });
+
+        // ── NPC toggle & search ───────────────────────────────────────────
+        document.getElementById('npcModalClose').onclick = hideNpcModal;
+        document.getElementById('npcModal').addEventListener('click', e => {
+            if (e.target === document.getElementById('npcModal')) hideNpcModal();
+        });
+
+        const npcToggleBtn = document.getElementById('npcToggleBtn');
+        function updateNpcToggleStyle() {
+            if (state.showNpcs) {
+                npcToggleBtn.style.background  = 'var(--red-dim)';
+                npcToggleBtn.style.borderColor = 'var(--red)';
+                npcToggleBtn.style.color       = '#f0a0a0';
+            } else {
+                npcToggleBtn.style.background  = '';
+                npcToggleBtn.style.borderColor = '';
+                npcToggleBtn.style.color       = '';
+            }
+        }
+        updateNpcToggleStyle();
+        npcToggleBtn.onclick = () => {
+            state.showNpcs = !state.showNpcs;
+            updateNpcToggleStyle();
+            render();
+        };
 
         init();
     </script>
