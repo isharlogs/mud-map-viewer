@@ -1084,23 +1084,34 @@
         }
         function scheduleHideHoverCard() {
             if (_suppressHide) return;
-            _hideHoverTimeout = setTimeout(hideHoverCard, 350);
+            _hideHoverTimeout = setTimeout(hideHoverCard, 700);
         }
         function cancelHideHoverCard() {
             if (_hideHoverTimeout) { clearTimeout(_hideHoverTimeout); _hideHoverTimeout = null; }
         }
 
         function showMultiNpcHoverCard(uniqueNpcs, nums, event) {
+            cancelHideHoverCard();
             const card = document.getElementById('hoverCard');
-            const items = uniqueNpcs.map((npc, i) =>
-                `<div class="hc-row"><span style="color:var(--npc-unique)">${nums[i] || i + 1}</span>  ${escapeHtml(npc.name)}</div>`
-            ).join('');
-            card.innerHTML = `<div class="hc-meta" style="margin-bottom:4px;">Unique NPCs</div>${items}`;
+            _suppressHide = true;
+            card.innerHTML = `<div class="hc-meta" style="margin-bottom:4px;">Unique NPCs</div>` +
+                uniqueNpcs.map((npc, i) =>
+                    `<div class="hc-row" style="cursor:pointer;padding:3px 2px;" data-npc="${escapeHtml(npc.name)}">` +
+                    `<span style="color:var(--npc-unique);font-weight:bold">${nums[i] || i + 1}</span>` +
+                    ` ${escapeHtml(npc.name)}</div>`
+                ).join('');
+            _suppressHide = false;
+            card.querySelectorAll('.hc-row[data-npc]').forEach(row => {
+                row.addEventListener('mouseenter', e => {
+                    cancelHideHoverCard();
+                    showNpcHoverCard(row.dataset.npc, e, true);
+                });
+            });
             positionHoverCard(event);
             card.style.display = 'block';
         }
 
-        function showNpcHoverCard(npcName, event) {
+        function showNpcHoverCard(npcName, event, skipReposition = false) {
             const data = state.npcData[npcName];
             if (!data) return;
             state._activeHoverNpc = npcName;
@@ -1124,14 +1135,14 @@
             `;
             _suppressHide = false;
             card.querySelectorAll('.hc-load-chip').forEach(el => {
-                el.addEventListener('mouseenter', e => { cancelHideHoverCard(); showItemHoverCard(el.dataset.item, e); });
+                el.addEventListener('mouseenter', () => { cancelHideHoverCard(); showItemHoverCard(el.dataset.item); });
                 el.addEventListener('mouseleave', cancelHideHoverCard);
             });
-            positionHoverCard(event);
+            if (!skipReposition) positionHoverCard(event);
             card.style.display = 'block';
         }
 
-        function showItemHoverCard(itemName, event) {
+        function showItemHoverCard(itemName) {
             const data = state.itemData[itemName];
             if (!data) return;
             cancelHideHoverCard();
@@ -1164,7 +1175,6 @@
                 ${rows}
             `;
             _suppressHide = false;
-            positionHoverCard(event);
             card.style.display = 'block';
         }
 
@@ -1198,7 +1208,7 @@
             `;
 
             content.querySelectorAll('.load-chip').forEach(el => {
-                el.addEventListener('mouseenter', e => { cancelHideHoverCard(); showItemHoverCard(el.dataset.item, e); });
+                el.addEventListener('mouseenter', () => { cancelHideHoverCard(); showItemHoverCard(el.dataset.item); });
                 el.addEventListener('mouseleave', scheduleHideHoverCard);
                 el.addEventListener('mousemove',  e => positionHoverCard(e));
             });
